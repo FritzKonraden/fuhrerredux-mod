@@ -64,6 +64,8 @@ SER_valkist_party_long: "Organizacija Jugoslavenskih Nacionalista"
 SER_regent_prince_paul_tooltip:0 "§CPrince Peter accends the throne at age 13 as King Peter II. Prince Paul have been declared the regent during the King's minority.§!"
 SER_resistance_rising_tooltip:0 "§RResistance against the Serbian government have risen in Macedonian and Albanian areas§!"
 
+SER_bosnian_modernization_tooltip:0 "§GThe Effects of this focus will increase by gaining control over more Bosnian and Herzogovinian states§!"
+
 ### EVENTS ###
 
 serbia.1.t: "Crowned Eagle of Serbia"
