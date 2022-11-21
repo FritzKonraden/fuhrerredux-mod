@@ -530,35 +530,43 @@ spriteTypes = {
 	### SubIdeologies ###
 	spriteType = {
 		name = "GFX_ideology_ultranat_nichirenist_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/Valk_ultranational_nichirenism.png"
+		texturefile = "gfx/interface/ideologies/subideologies/valk_ultranational_nichirenism.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_feminist_socialist_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/Libsoc_Feminist_socialism.png"
+		texturefile = "gfx/interface/ideologies/subideologies/libsoc_Feminist_socialism.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_absolute_mon_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/Pataut_absolute_monarchy_group.png"
+		texturefile = "gfx/interface/ideologies/subideologies/pataut_absolute_monarchy_group.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_organnat_showaist_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/Natpop_organnat_state_showaism.png"
+		texturefile = "gfx/interface/ideologies/subideologies/natpop_organnat_state_showaism.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_revolutionary_showaist_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/Van_revolutionary_showaism.png"
+		texturefile = "gfx/interface/ideologies/subideologies/van_revolutionary_showaism.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_auth_duumvirism_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/duumvirism.png"
+		texturefile = "gfx/interface/ideologies/subideologies/duumvirism_group.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_pat_duumvirism_subtype"
-		texturefile = "gfx/interface/ideologies/subideologies/duumvirism.png"
+		texturefile = "gfx/interface/ideologies/subideologies/duumvirism_group.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_military_dictatorship_subtype"
-		texturefile = "gfx/interface/ideologies/subidologies/military_dictatorship.png"
+		name = "GFX_ideology_samurai_dictatorship_subtype"
+		texturefile = "gfx/interface/ideologies/subidologies/pataut_samurai_militarism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_monarchist_socialism_subtype"
+		texturefile = "gfx/interface/ideologies/subidologies/monsoc_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_utopian_libsoc_subtype"
+		texturefile = "gfx/interface/ideologies/subidologies/libsoc_utopian.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_unknown"

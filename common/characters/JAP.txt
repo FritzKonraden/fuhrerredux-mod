@@ -87,6 +87,14 @@ characters = {
 			}
 		}
 	}
+	JAP_Sanzo_Nosaka = {
+		name = "Sanzo Nosaka"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/Portrait_JAP_Sanzo_Nosaka.png"
+			}
+		}
+	}
 	JAP_Aso_Hisashi = {
 		name = "Aso Hisashi"
 		portraits = {
@@ -163,9 +171,10 @@ characters = {
 				hidden_trigger = { has_character_flag = JAP_Inoue_Nissho_hog_val_hired }
 			}
 			allowed = {
-				has_country_flag = JAP_Shogun_Regime 
+
 				NOT = {
 					has_character_flag = JAP_Tokugawa_Iesato_Not_Dead
+					has_country_flag = JAP_Shogun_Regime
 				}
 			}
 			idea_token = JAP_Inoue_Nissho_hog_val
