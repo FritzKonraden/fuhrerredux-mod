@@ -1023,7 +1023,7 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SER_stabalize_serbian_currency"
-			add_political_power = -50
+			add_political_power = -30
 			add_stability = 0.03
 			if = {
 				limit = {
@@ -1059,7 +1059,7 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SER_stabalize_serbian_currency"
-			add_political_power = -35
+			add_political_power = -30
 			random_owned_controlled_state = {
 				prioritize = { 107 }
 				limit = {
@@ -1098,6 +1098,33 @@ focus_tree = {
 		}
 		x = 18
 		y = 3
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_expand_construction_industry"
+			random_owned_controlled_state = {
+				prioritize = { 107 }
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = SER_expand_construction_industry
+				bonus = 1
+				uses = 1
+				category = construction_tech
+			}
+		}
 
 	}
 	focus = {
@@ -1109,6 +1136,40 @@ focus_tree = {
 		}
 		x = 17
 		y = 4
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_expand_construction_industry"
+			random_owned_controlled_state = {
+				prioritize = { 107 }
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = { building = arms_factory size > 0 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 108 }
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = { building = arms_factory size > 0 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -1120,6 +1181,29 @@ focus_tree = {
 		}
 		x = 18
 		y = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_new_mineral_mines"
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 107
+			}
+			add_resource = {
+				type = tungsten
+				amount = 7
+				state = 108
+			}
+			add_resource = {
+				type = aluminium
+				amount = 10
+				state = 105
+			}
+		}
 
 	}
 	focus = {
@@ -1134,6 +1218,23 @@ focus_tree = {
 		}
 		x = 17
 		y = 6
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_expand_fomu"
+			random_owned_controlled_state = {
+				prioritize = { 108 }
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = { building = arms_factory size > 0 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -1152,7 +1253,7 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SER_fund_rural_development"
-			add_political_power = -50
+			add_political_power = -30
 			add_stability = 0.03
 			if = {
 				limit = {
@@ -1169,6 +1270,20 @@ focus_tree = {
 					add_idea = SER_london_crash1_idea
 				}
 			}
+			random_owned_controlled_state = {
+				prioritize = { 108 }
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				prioritize = { 1038 }
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 
 	}
@@ -1181,6 +1296,48 @@ focus_tree = {
 		}
 		x = 21
 		y = 2
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_stabalize_serbian_currency"
+			add_political_power = -30
+			if = {
+				limit = {
+					owns_state = 108
+					108 = {
+						has_state_category = town
+					}
+				}
+				108 = {
+					set_state_category = large_town
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 106
+					106 = {
+						has_state_category = rural
+					}
+				}
+				106 = {
+					set_state_category = town
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 941
+					941 = {
+						has_state_category = pastoral
+					}
+				}
+				941 = {
+					set_state_category = rural
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -1219,6 +1376,30 @@ focus_tree = {
 		}
 		x = 19
 		y = 4
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_belgrade_modernization"
+			if = {
+				limit = {
+					owns_state = 107
+					107 = {
+						has_state_category = city
+					}
+				}
+				107 = {
+					set_state_category = large_city
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -1230,6 +1411,21 @@ focus_tree = {
 		}
 		x = 20
 		y = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_invest_university_of_belgrade_expantions"
+			add_research_slot = 1
+			add_tech_bonus = {
+				name = SER_invest_university_of_belgrade_expantions
+				bonus = 0.5
+				uses = 2
+				category = computing_tech
+			}
+		}
 
 	}
 	focus = {
@@ -1241,6 +1437,19 @@ focus_tree = {
 		}
 		x = 22
 		y = 3
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_railway_modernization"
+			if = {
+				limit = {
+					owns_state = 107
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -1252,6 +1461,32 @@ focus_tree = {
 		}
 		x = 21
 		y = 4
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_hydroelectric_expantion"
+			random_owned_controlled_state = {
+				prioritize = { 108 }
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -1722,6 +1957,180 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 						province = 11586
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 6634
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 3609
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 797
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 3956
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 108
+				}
+				108 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = 9906
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 630
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 9756
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 11887
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 13267
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 106
+				}
+				106 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 3882
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 11832
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 3865
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 867
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 1034
+				}
+				1034 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = 11899
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 606
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 6799
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 1035
+				}
+				1035 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 953
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 11845
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 1036
+				}
+				1036 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 6889
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 1
+						instant_build = yes
+						province = 6889
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 105
+				}
+				105 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 9809
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 1
+						instant_build = yes
+						province = 9809
 					}
 				}
 			}
