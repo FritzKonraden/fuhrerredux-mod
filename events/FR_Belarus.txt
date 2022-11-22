@@ -1417,5 +1417,6 @@ country_event = { # Elections
 			BLR_Adolf_Klimovic_eco_sco
 			BLR_Jan_Pazniak_sec_sco
 		}
+		set_country_flag = BLR_christian_democrats_victory_flag
 	}
 }
