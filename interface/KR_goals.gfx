@@ -2345,7 +2345,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_generic_elections"
-		texturefile = "gfx/interface/goals/goal_generic_elections.png"
+		texturefile = "gfx/interface/goals/generic_elections.png"
 	}
 	SpriteType = {
 		name = "GFX_PRF_address_council"

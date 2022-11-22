@@ -86,7 +86,7 @@ ideas = {
 		NOR_lower_corporate_tax_idea = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_lower_corporate_tax_idea"}
 			allowed = { original_tag = NOR }
-			picture = NOR_labour_agreement
+			picture = capital_outflow
 			modifier = {
 				political_power_gain = -0.07
 				production_factory_efficiency_gain_factor = 0.05
@@ -95,7 +95,7 @@ ideas = {
 		NOR_lower_corporate_tax_idea1 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_lower_corporate_tax_idea1"}
 			allowed = { original_tag = NOR }
-			picture = NOR_labour_agreement
+			picture = capital_outflow
 			modifier = {
 				political_power_gain = -0.07
 				production_factory_efficiency_gain_factor = 0.05
@@ -105,7 +105,7 @@ ideas = {
 		NOR_lower_corporate_tax_idea2 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_lower_corporate_tax_idea2"}
 			allowed = { original_tag = NOR }
-			picture = NOR_labour_agreement
+			picture = capital_outflow
 			modifier = {
 				political_power_gain = -0.12
 				production_factory_efficiency_gain_factor = 0.05

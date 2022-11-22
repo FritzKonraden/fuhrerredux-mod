@@ -165,3 +165,4 @@ if = {
 recruit_character = LIT_Stanisław_Narutowicz
 recruit_character = LIT_Augustinas_Voldemaras
 recruit_character = LIT_Antanas_Kaskelis
+recruit_character = LIT_Vytautas_II

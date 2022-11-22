@@ -8274,15 +8274,15 @@ country_event = { # Ukraine Corn
 	option = {
 		name = ger.233.a # yes
 		add_ideas = GER_corn_export
-			
 		GER = {
 			country_event = ger.234
 		}
 	}
 	
 	option = {
-		name = ger.233.a # yes
+		name = ger.233.b # no
 		GER = {
+			set_country_flag = GER_ukraine_no_food
 			country_event = ger.235
 		}
 	}

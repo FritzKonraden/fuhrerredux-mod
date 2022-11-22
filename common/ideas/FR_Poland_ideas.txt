@@ -406,7 +406,7 @@ ideas = {
 		}
 		POL_total_equality = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea POL_total_equality"}
-			picture = generic_constitutional_guarantee
+			picture = ROM_king_carol_ii_hedonist
 			modifier = {
 				conscription = 0.05
 				political_power_gain = 0.2
@@ -712,7 +712,7 @@ ideas = {
 		}
 		POL_in_defence_of_poland = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea POL_in_defence_of_poland"}
-			picture = idea_generic_fortify_the_borders
+			picture = generic_wall_line
 			modifier = {
 				army_infantry_defence_factor = 0.1
 				army_artillery_defence_factor = 0.1
@@ -721,7 +721,7 @@ ideas = {
 		}
 		POL_in_defence_of_poland2 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea POL_in_defence_of_poland2"}
-			picture = idea_generic_fortify_the_borders
+			picture = generic_wall_line
 			modifier = {
 				army_infantry_defence_factor = 0.1
 				army_artillery_defence_factor = 0.1

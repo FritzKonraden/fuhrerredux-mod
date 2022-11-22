@@ -79,10 +79,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/generic_morale_bonus.png"
 	}
 	spriteType = {
-		name = "GFX_idea_advisors_austria"
-		texturefile = "gfx/interface/ideas/ideas/advisors_austria.png"
-	}
-	spriteType = {
 		name = "GFX_idea_advisors_england"
 		texturefile = "gfx/interface/ideas/ideas/advisors_england.png"
 	}
@@ -95,16 +91,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ideas/advisors_germany.png"
 	}
 	spriteType = {
-		name = "GFX_idea_advisors_italianfed"
-		texturefile = "gfx/interface/ideas/ideas/advisors_italianfed.png"
+		name = "GFX_idea_advisors_italy"
+		texturefile = "gfx/interface/ideas/ideas/idea_advisors_italy.png"
 	}
 	spriteType = {
 		name = "GFX_idea_advisors_italysoc"
 		texturefile = "gfx/interface/ideas/ideas/advisors_italysoc.png"
 	}
 	spriteType = {
-		name = "GFX_idea_advisors_natfrance"
-		texturefile = "gfx/interface/ideas/ideas/advisors_natfrance.png"
+		name = "GFX_idea_advisors_commune_france"
+		texturefile = "gfx/interface/ideas/ideas/idea_advisors_commune_france.png"
+	}
+	spriteType = {
+		name = "GFX_idea_advisors_poland"
+		texturefile = "gfx/interface/ideas/ideas/idea_advisors_poland.png"
 	}
 	spriteType = {
 		name = "GFX_idea_advisors_portugal"

@@ -499,6 +499,13 @@ country_event = { # Fate of Belarus
     BLR = {
       if = {
         limit = {
+          has_idea = constitutional_monarchy
+        }
+
+        BLR_remove_monarchy = yes
+      }
+      if = {
+        limit = {
           ROOT = {
             tag = GER
             has_government = valkist
@@ -2443,7 +2450,6 @@ country_event = { # Fate of Pomerania
       POM = {
         add_state_core = 62
         add_state_core = 63
-        add_state_core = 785
         add_state_core = 786
       }
     }

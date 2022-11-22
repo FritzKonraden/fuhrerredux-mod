@@ -1797,7 +1797,7 @@ ideas = {
 		
 		ENG_rule_britannia = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ENG_rule_britannia"}
-			picture = generic_navy_bonus
+			picture = ENG_admiralty
 			
 			allowed = {
 				always = no

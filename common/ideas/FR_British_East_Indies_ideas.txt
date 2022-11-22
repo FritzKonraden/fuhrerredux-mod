@@ -106,7 +106,7 @@ ideas = {
 			}
 			
 			removal_cost = -1
-			picture = capital_outflow
+			picture = generic_foreign_capital
 			
 			modifier = {
 				political_power_gain = -0.20
