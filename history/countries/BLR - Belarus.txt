@@ -151,3 +151,4 @@ recruit_character = BLR_Mikalaj_Janicki
 recruit_character = BLR_Paval_Vent
 recruit_character = BLR_Hasan_Kanapatski
 recruit_character = BLR_Michal_Vituska
+recruit_character = BLR_Hieorhij_Khalasciakou

@@ -1390,7 +1390,7 @@ country_event = { # Elections
 			election_frequency = 48
 			elections_allowed = yes
 		}
-		increase_ruling_party_popularity_by_15 = yes
+		increase_ruling_party_popularity_by_20 = yes
 		remove_every_minister = yes
 		add_ideas = {
 			BLR_Anton_Boryk_hog_sde
@@ -1409,7 +1409,7 @@ country_event = { # Elections
 			election_frequency = 48
 			elections_allowed = yes
 		}
-		increase_ruling_party_popularity_by_15 = yes
+		increase_ruling_party_popularity_by_20 = yes
 		remove_every_minister = yes
 		add_ideas = {
 			BLR_Jazep_Hermanovic_hog_sco

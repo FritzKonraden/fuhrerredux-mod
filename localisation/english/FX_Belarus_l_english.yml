@@ -71,6 +71,7 @@ BLR_no_win_tt: "§Y[Root.GetName]§! will be §Rannexed§! by the @SOV [SOV.GetN
 BLR_home_guard_branch_tt: "§gThis focus will be automatically be bypassed when you play the perspective of the§! §PHome Guard§!"
 BLR_nat_soc_branch_tt: "§gThis focus will be automatically be bypassed when you play the perspective of the§! §7BNSP§!"
 BLR_power_struggle_resolved_tt: "The §YPower Struggle§! has been §Gresolved§!"
+BLR_power_struggle_resolved_tt_NOT: "The §YPower Struggle§! have §Rnot§! been resolved"
 BLR_black_wednesday: "The §YLondon Stock Market Crash§! has §Roccured§!"
 BLR_recover_from_black_wednesday_tt: "§GThe economy will continue to recover from the London Stock Market Crash§!\n"
 BLR_will_leave_faction_tt: "§RRefusing their German-backed claims means that we will be kicked out from the faction!§!"
@@ -80,6 +81,7 @@ BLR_owns_territories_lithuania_tt: "Currently owns §Gclaimed territories§! fro
 BLR_integration_tt: "Available territories to be integrated"
 BLR_hramada_victory_win_tt: "The §SHramada§! has won the Elections"
 BLR_christian_democrats_victory_win_tt: "The §cChristian Democrats§! has won the Elections"
+BLR_has_no_black_wednesday_tt: "The §YEconomic Catastrophe§! caused by the §CLondon Stock Market Crash§! has been resolved"
 
 ### Decisions
 BLR_power_struggle_category: "Power Struggle"

@@ -240,12 +240,6 @@ BLR_power_struggle_category = {
     visible = {
       has_country_flag = BLR_select_home_guard
     }
-    available = {
-      custom_trigger_tooltip = {
-        tooltip = BLR_has_3_nat_soc_tt
-        check_variable = { BLR.nat_soc_power > 2 }
-      }
-    }
     complete_effect = {
 			hidden_effect = {
 				add_political_power = -50
