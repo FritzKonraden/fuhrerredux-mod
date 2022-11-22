@@ -593,7 +593,7 @@ belarus.40.t: "Coronation of Vytautas II"
 belarus.40.d: "Our most righteous monarch has been crowned King. Upon his enthronement, church bells throughout the country rang and a day of celebration was declared."
 belarus.40.a: "Mocnaja Bielaruś!"
 belarus.41.t: "[GetYear] Elections"
-belarus.41.d: ""
+belarus.41.d: "According to the Constitution elections are to be held every three years. The ojm's term has expired and the time has come to elect a new parliament. There are 90 seats in the Sojm available and various political parties have begun their campaigns. Only three parties have a chance of gaining the majority, thus forming a new government. Which one shall prevail?"
 belarus.41.a: "Hramada Wins!"
 belarus.41.b: "Christian Democrat Wins!"
 
