@@ -9,7 +9,7 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 100 y = 1750 }
+	continuous_focus_position = { x = 1000 y = 1750 }
 
 	###############################################
 	# POWER STRUGGLE
@@ -1883,8 +1883,8 @@ focus_tree = {
 		prerequisite = { focus = BLR_promote_russophobia }
 		relative_position_id = BLR_promote_russophobia
 		completion_reward = {
-			add_stability = 0.15
-			add_war_support = 0.15
+			add_ideas = presidential_republic
+			add_political_power = 100
 		}
 	}
 
@@ -1895,14 +1895,23 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 6
-		available = [
+		available = {
 			has_capitulated = no
-		]
+		}
 		prerequisite = { focus = BLR_education_desecularization }
 		prerequisite = { focus = BLR_arsenals_of_the_state }
 		relative_position_id = BLR_education_desecularization
 		completion_reward = {
-			
+			remove_ideas = BLR_intense_paranoia
+			if = {
+				limit = {
+					has_template = "Pjahotnaja Dyvizija"
+				}
+				custom_effect_tooltip = BLR_the_peoples_army_tt
+				hidden_effect = {
+					load_oob = "BLR_focus"
+				}
+			}
 		}
 	}
 
@@ -1920,7 +1929,17 @@ focus_tree = {
 		prerequisite = { focus = BLR_bnsp_secures_power }
 		relative_position_id = BLR_bnsp_secures_power
 		completion_reward = {
-			custom_effect_tooltip = BLR_work_with_the_germans_tt
+			add_political_power = 100
+			GER = {
+				add_opinion_modifier = {
+          target = ROOT
+          modifier = CRU_improved_relations
+        }
+        reverse_add_opinion_modifier = {
+          target = ROOT
+          modifier = CRU_improved_relations
+        }
+			}
 		}
 	}
 
@@ -1998,6 +2017,574 @@ focus_tree = {
 	}
 
 	###############################################
+	# Democratic
+	###############################################
+
+	# The Home Guard in Control
+	focus = {
+		id = BLR_the_home_guard_in_control
+		icon = GFX_goal_RUS_white_legacy
+		x = 0
+		y = 2
+		available = {
+      hidden_trigger = {
+        always = no
+      }
+    }
+    bypass = {
+      custom_trigger_tooltip = {
+        tooltip = BLR_home_guard_win_tt
+        has_country_flag = BLR_home_guard_win
+      }
+    }
+		relative_position_id = BLR_the_new_belarus
+		completion_reward = {
+			custom_effect_tooltip = BLR_the_home_guard_in_control_tt
+		}
+	}
+
+	# Secure the New State
+	focus = {
+		id = BLR_secure_the_new_state
+		icon = GFX_goal_Centralised_Government
+		x = -1
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_the_home_guard_in_control }
+		relative_position_id = BLR_the_home_guard_in_control
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	# Purge the Ultra Radicals
+	focus = {
+		id = BLR_purge_the_ultra_radicals
+		icon = GFX_goal_generic_grim_reaper
+		x = 1
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_the_home_guard_in_control }
+		relative_position_id = BLR_the_home_guard_in_control
+		completion_reward = {
+			add_popularity = {
+				ideology = valkist
+				popularity = -0.15
+			}
+			add_stability = 0.05
+		}
+	}
+
+	# The New Elections
+	focus = {
+		id = BLR_the_new_elections
+		icon = GFX_goal_generic_elections
+		x = 1
+		y = 1 
+		cost = 6
+		prerequisite = { focus = BLR_secure_the_new_state }
+		prerequisite = { focus = BLR_purge_the_ultra_radicals }
+		relative_position_id = BLR_secure_the_new_state
+		completion_reward = {
+			country_event = { id = belarus.41 days = 1 }
+		}
+	}
+
+	# Hramada Victory
+	focus = {
+		id = BLR_hramada_victory
+		icon = GFX_goal_ideology_social_democrat
+		x = 4
+		y = 1
+		cost = 6
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+        tooltip = BLR_hramada_victory_win_tt
+        has_country_flag = BLR_hramada_victory_flag
+      }
+		}
+		mutually_exclusive = {
+			focus = BLR_christian_democrats_victory
+		}
+		prerequisite = { focus = BLR_the_new_elections }
+		relative_position_id = BLR_the_new_elections
+		completion_reward = {
+			custom_effect_tooltip = BLR_hramada_victory_tt
+		}
+	}
+
+	# Christian Democrats Victory
+	focus = {
+		id = BLR_christian_democrats_victory
+		icon = GFX_goal_ideology_social_conservative
+		x = -4
+		y = 1
+		cost = 6
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+        tooltip = BLR_christian_democrats_victory_win_tt
+        has_country_flag = BLR_christian_democrats_victory_flag
+      }
+		}
+		mutually_exclusive = {
+			focus = BLR_hramada_victory
+		}
+		prerequisite = { focus = BLR_the_new_elections }
+		relative_position_id = BLR_the_new_elections
+		completion_reward = {
+			custom_effect_tooltip = BLR_christian_democrats_victory_tt
+		}
+	}
+
+	# The Belarusian Central Bank
+	focus = {
+		id = BLR_the_central_bank
+		icon = GFX_focus_mex_privatisation
+		x = -1
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_christian_democrats_victory }
+		relative_position_id = BLR_christian_democrats_victory
+		completion_reward = {
+			add_ideas = BLR_central_bank
+		}
+	}
+
+	# Education Reforms
+	focus = {
+		id = BLR_education_reforms
+		icon = GFX_goal_KTG_Bookstack
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_the_central_bank }
+		relative_position_id = BLR_the_central_bank
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	# Industrial Subsidies
+	focus = {
+		id = BLR_industrial_subsidies
+		icon = GFX_goal_generic_cash_stimulus_plan
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_education_reforms }
+		relative_position_id = BLR_education_reforms
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BLR_central_bank
+				add_idea = BLR_central_bank_1
+			}
+		}
+	}
+
+	# Protect the Minorities
+	focus = {
+		id = BLR_protect_the_minorities
+		icon = GFX_goal_UKR_minority_rights
+		x = 1
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_christian_democrats_victory }
+		relative_position_id = BLR_christian_democrats_victory
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BLR_intense_paranoia
+				add_idea = BLR_intense_paranoia_1
+			}
+		}
+	}
+
+	# Defense Budget
+	focus = {
+		id = BLR_defense_budget
+		icon = GFX_DAH_Topke
+		x = 2
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_protect_the_minorities }
+		relative_position_id = BLR_protect_the_minorities
+		completion_reward = {
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+            free_building_slots = {
+              building = arms_factory
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = arms_factory
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+            free_building_slots = {
+              building = arms_factory
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = arms_factory
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+		}
+	}
+
+	# Promote Civic Nationalism
+	focus = {
+		id = BLR_promote_civic_nationalism
+		icon = GFX_goal_generic_paramilitary
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_defense_budget }
+		relative_position_id = BLR_defense_budget
+		completion_reward = {
+			add_ideas = BLR_nationalism
+		}
+	}
+
+	# Regulate the Financial Sector
+	focus = {
+		id = BLR_regulate_the_financial_sector
+		icon = GFX_goal_generic_foreign_investments
+		x = 0
+		y = 1
+		cost = 6
+		mutually_exclusive = { focus = BLR_the_free_market_bears_fruits }
+		prerequisite = { focus = BLR_promote_civic_nationalism }
+		relative_position_id = BLR_promote_civic_nationalism
+		completion_reward = {
+			add_ideas = BLR_regulations
+		}
+	}
+
+	# Bread and Butter
+	focus = {
+		id = BLR_bread_and_butter
+		icon = GFX_goal_generic_food
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_protect_the_minorities }
+		relative_position_id = BLR_protect_the_minorities
+		completion_reward = {
+			add_ideas = BLR_bread_butter
+		}
+	}
+
+	# Protect the Working Man
+	focus = {
+		id = BLR_protect_the_working_man
+		icon = GFX_goal_production
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_bread_and_butter }
+		relative_position_id = BLR_bread_and_butter
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BLR_bread_butter
+				add_idea = BLR_worker_reform
+			}
+		}
+	}
+
+	# The Free Market Bears Fruits
+	focus = {
+		id = BLR_the_free_market_bears_fruits
+		icon = GFX_goal_generic_shipyard
+		x = 1
+		y = 1
+		cost = 6
+		mutually_exclusive = { focus = BLR_regulate_the_financial_sector }
+		prerequisite = { focus = BLR_industrial_subsidies }
+		prerequisite = { focus = BLR_protect_the_working_man }
+		relative_position_id = BLR_industrial_subsidies
+		completion_reward = {
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+            free_building_slots = {
+              building = industrial_complex
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = industrial_complex
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+            free_building_slots = {
+              building = industrial_complex
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = industrial_complex
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+		}
+	}
+
+	# In Conserving Liberty
+	focus = {
+		id = BLR_in_conserving_liberty
+		icon = GFX_goal_liberty
+		x = 1
+		y = 1
+		cost = 6
+		mutually_exclusive = { focus = BLR_the_free_market_bears_fruits }
+		prerequisite = { 
+			focus = BLR_the_free_market_bears_fruits 
+			focus = BLR_regulate_the_financial_sector
+		}
+		relative_position_id = BLR_the_free_market_bears_fruits
+		completion_reward = {
+			custom_effect_tooltip = BLR_in_conserving_liberty_tt
+		}
+	}
+
+	# Guaranteed Liberties
+	focus = {
+		id = BLR_guaranteed_liberties
+		icon = GFX_goal_big_news
+		x = -1
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_hramada_victory }
+		relative_position_id = BLR_hramada_victory
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	# Introduce Work Code
+	focus = {
+		id = BLR_introduce_work_code
+		icon = GFX_goal_conspiracy
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_guaranteed_liberties }
+		relative_position_id = BLR_guaranteed_liberties
+		completion_reward = {
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+            free_building_slots = {
+              building = industrial_complex
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = industrial_complex
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+            free_building_slots = {
+              building = industrial_complex
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = industrial_complex
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+		}
+	}
+
+	# Reform the Taxation System
+	focus = {
+		id = BLR_reform_the_taxation_system
+		icon = GFX_goal_generic_austerity_measures
+		x = -2
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_guaranteed_liberties }
+		relative_position_id = BLR_guaranteed_liberties
+		completion_reward = {
+			add_ideas = BLR_reformed_taxation
+		}
+	}
+
+	# Provide National Healthcare
+	focus = {
+		id = BLR_provide_national_healthcare
+		icon = GFX_goal_generic_pharmaceuticals
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_reform_the_taxation_system }
+		relative_position_id = BLR_reform_the_taxation_system
+		completion_reward = {
+			add_ideas = BLR_improved_healthcare
+			add_political_power = 50
+		}
+	}
+
+	# Expand the Welfare State
+	focus = {
+		id = BLR_expand_the_welfare_state
+		icon = GFX_goal_SOV_labour_voucher_focus
+		x = 1
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_hramada_victory }
+		relative_position_id = BLR_hramada_victory
+		completion_reward = {
+			add_ideas = BLR_welfare
+		}
+	}
+
+	# Alleviate the Workers Stuggle
+	focus = {
+		id = BLR_alleviate_the_workers_stuggle
+		icon = GFX_goal_generic_enforce_labor_regulation
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_expand_the_welfare_state }
+		relative_position_id = BLR_expand_the_welfare_state 
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BLR_welfare
+				add_idea = BLR_welfare_1
+			}
+		}
+	}
+
+	# Reform the Police
+	focus = {
+		id = BLR_reform_the_police
+		icon = GFX_goal_generic_police_state
+		x = 1
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_introduce_work_code }
+		prerequisite = { focus = BLR_alleviate_the_workers_stuggle }
+		relative_position_id = BLR_introduce_work_code
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BLR_intense_paranoia
+				add_idea = BLR_intense_paranoia_1
+			}
+		}
+	}
+
+	# Belarussian Schools
+	focus = {
+		id = BLR_belarussian_schools
+		icon = GFX_goal_brain
+		x = -2
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_reform_the_police }
+		relative_position_id = BLR_reform_the_police
+		completion_reward = {
+			add_ideas = BLR_new_schools
+		}
+	}
+
+	# Farm Subsidies
+	focus = {
+		id = BLR_farm_subsidies
+		icon = GFX_focus_AUS_agriculture
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_reform_the_police }
+		relative_position_id = BLR_reform_the_police
+		completion_reward = {
+			add_tech_bonus = {
+				category = industry
+				category = electronics
+				bonus = 1.0
+				uses = 2
+			}
+		}
+	}
+
+	# Public Works Initiatives
+	focus = {
+		id = BLR_public_works_initiatives
+		icon = GFX_goal_workers_for_business
+		x = 2
+		y = 1 
+		cost = 6
+		prerequisite = { focus = BLR_reform_the_police }
+		relative_position_id = BLR_reform_the_police
+		completion_reward = {
+			add_ideas = BLR_public_works
+		}
+	}
+
+	# Socialism in One Nation
+	focus = {
+		id = BLR_socialism_in_one_nation
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = BLR_belarussian_schools }
+		prerequisite = { focus = BLR_farm_subsidies }
+		prerequisite = { focus = BLR_public_works_initiatives }
+		relative_position_id = BLR_farm_subsidies
+		completion_reward = {
+			custom_effect_tooltip = BLR_socialism_in_one_nation_tt
+		}
+	}
+
+	###############################################
 	# Foreign Policy
 	###############################################
 
@@ -2005,13 +2592,15 @@ focus_tree = {
 	focus = {
 		id = BLR_konigsberg_conference
 		icon = GFX_goal_BLR_conference
-		x = 0
+		x = -1
 		y = 2
 		cost = 6
 		available = {
 			hidden_trigger = {
 				OR = {
 					has_completed_focus = BLR_the_new_belarus
+					has_completed_focus = BLR_in_conserving_liberty
+					has_completed_focus = BLR_socialism_in_one_nation
 				}
 			}
 			has_capitulated = no
@@ -2091,6 +2680,10 @@ focus_tree = {
 				has_war_with = UKR
 			}
 		}
+		bypass = {
+			has_war_with = UKR
+		}
+		will_lead_to_war_with = UKR
 		prerequisite = { focus = BLR_dreams_of_litvinism }
 		relative_position_id = BLR_dreams_of_litvinism
 		completion_reward = {
@@ -2111,6 +2704,10 @@ focus_tree = {
 			is_in_faction = yes
 			country_exists = LIT
 		}
+		bypass = {
+			has_war_with = LIT
+		}
+		will_lead_to_war_with = LIT
 		prerequisite = { focus = BLR_dreams_of_litvinism }
 		relative_position_id = BLR_dreams_of_litvinism
 		completion_reward = {
@@ -2143,6 +2740,17 @@ focus_tree = {
 		available = {
 			country_exists = SOV
 		}
+		bypass = {
+			has_war_with = SOV
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				add = 200
+				NOT = { has_war_with = FRA }
+			}
+		}
+		will_lead_to_war_with = SOV
 		prerequisite = { focus = BLR_claims_in_ukraine }
 		prerequisite = { focus = BLR_demand_lithuanian_lands }
 		relative_position_id = BLR_claims_in_ukraine
@@ -2338,6 +2946,14 @@ focus_tree = {
 			owns_state = 243 
 			owns_state = 242
 		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				add = 200
+				NOT = { has_war_with = FRA }
+			}
+		}
+		will_lead_to_war_with = SOV
 		prerequisite = {
 			focus = BLR_join_the_stahlpakt
 			focus = BLR_trust_in_the_west
@@ -2363,6 +2979,49 @@ focus_tree = {
 		relative_position_id = BLR_demand_our_eastern_territories
 		completion_reward = {
 			custom_effect_tooltip = BLR_greater_belarus_restored_tt
+		}
+	}
+	
+	# Economic Mobilization
+	focus = {
+		id = BLR_economic_mobilization
+		icon = GFX_goal_generic_war_in_the_plate
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+			NOT = {
+				has_idea = tot_economic_mobilisation
+			}
+		}
+		prerequisite = {
+			focus = BLR_dreams_of_litvinism
+			focus = BLR_embrace_belarusian_identity
+		}
+		relative_position_id = BLR_demand_lithuanian_lands
+		completion_reward = {
+			increase_mobilisation = yes
+		}
+	}
+
+	# Cooperating with the Abwehr
+	focus = {
+		id = BLR_cooperating_with_the_abwehr
+		icon = GFX_goal_secret_agents
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+			country_exists = GER
+			is_in_faction_with = GER
+		}
+		prerequisite = { focus = BLR_economic_mobilization }
+		prerequisite = { focus = BLR_join_the_stahlpakt }
+		relative_position_id = BLR_economic_mobilization
+		completion_reward = {
+			add_ideas = BLR_abwehr_coop
 		}
 	}
 }

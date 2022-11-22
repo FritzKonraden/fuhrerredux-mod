@@ -566,3 +566,7 @@ NFQ_USA = {
 	color = rgb { 44 106 193 }
 	color_ui = rgb { 44 106 193 }
 }
+BLR_LITVINISM = {
+	color = rgb { 154 69 116 }
+	color_ui = rgb { 154 69 116 }
+}

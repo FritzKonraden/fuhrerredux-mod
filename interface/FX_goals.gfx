@@ -1,7 +1,19 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_goal_RUS_white_legacy"
+		texturefile = "gfx/interface/goals/RUS_white_legacy.png"
+	}
+	spriteType = {
+		name = "GFX_goal_UKR_minority_rights"
+		texturefile = "gfx/interface/goals/UKR_minority_rights.png"
+	}
+	spriteType = {
 		name = "GFX_goal_BLR_Litvin"
 		texturefile = "gfx/interface/goals/BLR_Litvin.png"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_food"
+		texturefile = "gfx/interface/goals/generic_food.png"
 	}
 	spriteType = {
 		name = "GFX_goal_generic_attack_lithuania"

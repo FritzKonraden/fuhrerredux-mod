@@ -67,6 +67,16 @@ ideas = {
 				attrition = -0.1
 			}
 		}
+		BLR_intense_paranoia_1 = {
+			allowed = { original_tag = BLR }
+			picture = trotskyite_plot
+			modifier = {
+				war_stability_factor = 0.25
+				surrender_limit = 0.15
+				army_core_defence_factor = 0.15
+				attrition = -0.1
+			}
+		}
 		BLR_diarchy_stable = {
 			allowed = { original_tag = BLR }
 			picture = generic_government
@@ -293,6 +303,111 @@ ideas = {
 			picture = vittoria_mutilata
 			modifier = {
 				industrial_capacity_factory = 0.05
+			}
+		}
+		BLR_abwehr_coop = {
+			allowed = { original_tag = BLR }
+			picture = generic_spy_intel
+			modifier = {
+				resistance_decay_on_our_occupied_states = -0.15
+				operative_slot = 1
+				decryption_power_factor = 0.05
+			}
+		}
+		# Christian Democrats
+		BLR_central_bank = {
+			allowed = { original_tag = BLR }
+			picture = generic_foreign_capital
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		BLR_central_bank_1 = {
+			allowed = { original_tag = BLR }
+			picture = generic_foreign_capital
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		BLR_bread_butter = {
+			allowed = { original_tag = BLR }
+			picture = raj_risk_of_famine
+			modifier = {
+				monthly_population = 0.15
+				supply_consumption_factor = -0.1
+			}
+		}
+		BLR_worker_reform = {
+			allowed = { original_tag = BLR }
+			picture = generic_production_bonus
+			modifier = {
+				monthly_population = 0.15
+				supply_consumption_factor = -0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		BLR_regulations = {
+			allowed = { original_tag = BLR }
+			picture = generic_neutrality_drift_bonus
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		# Hramada
+		BLR_welfare = {
+			allowed = { original_tag = BLR }
+			picture = generic_agrarian_society
+			modifier = {
+				monthly_population = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		BLR_welfare_1 = {
+			allowed = { original_tag = BLR }
+			picture = generic_agrarian_society
+			modifier = {
+				monthly_population = 0.1
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		BLR_reformed_taxation = {
+			allowed = { original_tag = BLR }
+			picture = ROM_king_carol_ii_hedonist
+			modifier = {
+				political_power_gain = 0.15
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		BLR_improved_healthcare = {
+      allowed = { original_tag = PHI }
+      picture = prc_low_popular_support3
+      modifier = {
+        monthly_population = 0.05
+      }
+      equipment_bonus = {
+				field_hospital = {
+					casualty_trickleback = 0.05
+					instant = yes
+				}
+			}
+    }
+		BLR_new_schools = {
+			allowed = { original_tag = BLR }
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		BLR_public_works = {
+			allowed = { original_tag = BLR }
+			picture = generic_build_infrastructure
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				industry_repair_factor = 0.1
 			}
 		}
 	}

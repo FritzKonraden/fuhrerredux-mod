@@ -627,6 +627,13 @@ country_event = { # Accepted territorial claims
 
 	option = {
 		name = belarus.20.a
+
+		remove_ideas = BLR_question_of_legitimacy
+		hidden_effect = {
+			random_other_country = {
+				news_event = { id = fxnews.45 days = 2 }
+			}
+		}
 	}
 }
 
@@ -639,7 +646,8 @@ country_event = { # Rejected territorial claims
 
 	option = {
 		name = belarus.21.a
-		add_political_power = 10
+		remove_ideas = BLR_question_of_legitimacy
+		add_political_power = -10
 	}
 }
 
@@ -899,6 +907,7 @@ country_event = { # Demand Soviet Lands
 			every_owned_state = {
 				limit = {
 					OR = {
+						state = 220
 						state = 242
 						state = 243
 						state = 948
@@ -947,6 +956,7 @@ country_event = { # Soviets Agree
 			every_owned_state = {
 				limit = {
 					OR = {
+						state = 220
 						state = 242
             state = 243
 						state = 948
@@ -984,7 +994,7 @@ country_event = { # Soviets Refuses
 			every_owned_state = {
 				limit = {
 					OR = {
-						state = 246
+						state = 220
 						state = 242
 						state = 948
 						state = 224
@@ -1015,7 +1025,7 @@ country_event = { # Honoring Belarusian Territorial Claims - SOV
 		every_owned_state = {
 			limit = {
 				OR = {
-					state = 246
+					state = 220
 					state = 242
 					state = 243
 					state = 948
@@ -1065,6 +1075,9 @@ country_event = { # Honoring Belarusian Territorial Claims - UKR
 				transfer_state = PREV
 				add_state_claim = PREV
 			}
+		}
+		hidden_effect = {
+			country_event = { id = annex.149 days = 2 }
 		}
 	}
 }
@@ -1359,5 +1372,50 @@ country_event = { # Coronation of Vytautas II
 			}
 		}
 		BLR_create_monarchy = yes
+	}
+}
+
+country_event = { # Elections
+	id = belarus.41
+	title = belarus.41.t
+	desc = belarus.41.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+
+	option = { # Hramada
+		name = belarus.41.a
+		set_politics = {
+			ruling_party = social_democrat
+			last_election = "[CURRENT_DATE]"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		increase_ruling_party_popularity_by_15 = yes
+		remove_every_minister = yes
+		add_ideas = {
+			BLR_Anton_Boryk_hog_sde
+			BLR_Anton_Lutskevic_for_sde
+			BLR_Jan_Sierada_eco_sli
+			BLR_Jazep_Lesik_sec_sde
+		}
+		set_country_flag = BLR_hramada_victory_flag
+	}
+
+	option = { # Christian Democrats
+		name = belarus.41.b
+		set_politics = {
+			ruling_party = social_conservative
+			last_election = "[CURRENT_DATE]"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		increase_ruling_party_popularity_by_15 = yes
+		remove_every_minister = yes
+		add_ideas = {
+			BLR_Jazep_Hermanovic_hog_sco
+			BLR_Adam_Stankievic_for_sco
+			BLR_Adolf_Klimovic_eco_sco
+			BLR_Jan_Pazniak_sec_sco
+		}
 	}
 }
