@@ -61,6 +61,21 @@ focus_tree = {
 		}
 		x = 3
 		y = 1
+		
+		available = {
+			NOT = {
+				has_country_flag = SER_government_national_unity_flag
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_abolish_constitution"
+			country_event = { id = serbia.20 days = 0 }
+		}
 
 	}
 	focus = {
@@ -72,6 +87,66 @@ focus_tree = {
 		}
 		x = 2
 		y = 2
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_repress_opposition_press"
+			add_stability = 0.03
+			add_popularity = { ideology = social_liberal popularity = -0.05 }
+			add_popularity = { ideology = social_democrat popularity = -0.02 }
+			add_popularity = { ideology = collectivist popularity = -0.02 }
+			if = {
+				limit = {
+					has_idea = SER_saving_grace1_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace1_idea
+					add_idea = SER_saving_grace2_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace2_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace2_idea
+					add_idea = SER_saving_grace3_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace3_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace3_idea
+					add_idea = SER_saving_grace4_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace4_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace4_idea
+					add_idea = SER_saving_grace5_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace5_idea
+				}
+				remove_ideas = SER_saving_grace5_idea
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = SER_saving_grace_idea
+					add_idea = SER_saving_grace1_idea
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -83,6 +158,65 @@ focus_tree = {
 		}
 		x = 1
 		y = 3
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_repress_opposition_press"
+			add_stability = 0.03
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.04 }
+			add_popularity = { ideology = paternal_autocrat popularity = -0.03 }
+			if = {
+				limit = {
+					has_idea = SER_saving_grace1_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace1_idea
+					add_idea = SER_saving_grace2_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace2_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace2_idea
+					add_idea = SER_saving_grace3_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace3_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace3_idea
+					add_idea = SER_saving_grace4_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace4_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace4_idea
+					add_idea = SER_saving_grace5_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace5_idea
+				}
+				remove_ideas = SER_saving_grace5_idea
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = SER_saving_grace_idea
+					add_idea = SER_saving_grace1_idea
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -94,6 +228,64 @@ focus_tree = {
 		}
 		x = 4
 		y = 2
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_appoint_loyal_cabinet"
+			add_stability = 0.03
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
+			if = {
+				limit = {
+					has_idea = SER_saving_grace1_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace1_idea
+					add_idea = SER_saving_grace2_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace2_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace2_idea
+					add_idea = SER_saving_grace3_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace3_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace3_idea
+					add_idea = SER_saving_grace4_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace4_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace4_idea
+					add_idea = SER_saving_grace5_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace5_idea
+				}
+				remove_ideas = SER_saving_grace5_idea
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = SER_saving_grace_idea
+					add_idea = SER_saving_grace1_idea
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -108,6 +300,15 @@ focus_tree = {
 		}
 		x = 3
 		y = 3
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_abolish_constitution"
+			country_event = { id = serbia.22 days = 0 }
+		}
 
 	}
 	focus = {
@@ -144,6 +345,65 @@ focus_tree = {
 		}
 		x = 5
 		y = 3
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_enlist_radical_politicians"
+			add_stability = 0.03
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.04 }
+			add_popularity = { ideology = social_conservative popularity = -0.04 }
+			if = {
+				limit = {
+					has_idea = SER_saving_grace1_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace1_idea
+					add_idea = SER_saving_grace2_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace2_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace2_idea
+					add_idea = SER_saving_grace3_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace3_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace3_idea
+					add_idea = SER_saving_grace4_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace4_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace4_idea
+					add_idea = SER_saving_grace5_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace5_idea
+				}
+				remove_ideas = SER_saving_grace5_idea
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = SER_saving_grace_idea
+					add_idea = SER_saving_grace1_idea
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -158,6 +418,15 @@ focus_tree = {
 		}
 		x = 4
 		y = 4
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_one_national_party"
+			country_event = { id = serbia.23 days = 0 }
+		}
 
 	}
 	focus = {
@@ -233,6 +502,21 @@ focus_tree = {
 		}
 		x = 8
 		y = 1
+		
+		available = {
+			NOT = {
+				has_country_flag = SER_abolish_constitution_flag
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_government_national_unity"
+			country_event = { id = serbia.21 days = 0 }
+		}
 
 	}
 	focus = {
@@ -1542,12 +1826,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SER_bosnian_modernization"
 			custom_effect_tooltip  = SER_bosnian_modernization_tooltip
-			random_owned_controlled_state = {
-				prioritize = { 1034 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
-				}
+			1034 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -2259,6 +2538,25 @@ focus_tree = {
 		}
 		x = 32
 		y = 1
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_restore_domestic_air_fields"
+			random_owned_controlled_state = {
+				prioritize = { 107 }
+				limit = {
+					free_building_slots = { building = air_base size > 1 include_locked = yes }
+				}
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -2270,6 +2568,34 @@ focus_tree = {
 		}
 		x = 34
 		y = 1
+		
+		available = {
+			if = {
+				limit = { has_dlc_bba = yes }
+				has_tech = basic_small_airframe
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_foreign_contracts"
+			if = {
+				limit = { has_dlc_bba = yes }
+				create_equipment_variant = {
+					name = "Ikarus IK-2"
+					type = small_plane_airframe_1
+					modules = {
+						fixed_main_weapon_slot = light_mg_2x
+						fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
+						engine_type_slot = engine_1_1x
+						special_type_slot_1 = empty
+					}
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -2284,6 +2610,30 @@ focus_tree = {
 		}
 		x = 32
 		y = 2
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_domestic_aviation_industry"
+			random_owned_controlled_state = {
+				prioritize = { 108 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -2298,6 +2648,21 @@ focus_tree = {
 		}
 		x = 34
 		y = 2
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_serbian_bombers"
+			add_tech_bonus = {
+				name = SER_serbian_bombers
+				bonus = 0.5
+				uses = 2
+				category = tactical_bomber
+				category = cat_strategic_bomber
+			}
+		}
 
 	}
 	focus = {
@@ -2312,6 +2677,21 @@ focus_tree = {
 		}
 		x = 33
 		y = 3
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_incorporate_air_force_studies"
+			air_experience = 15
+			add_tech_bonus = {
+				name = SER_incorporate_air_force_studies
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
 
 	}
 	focus = {
@@ -2326,6 +2706,20 @@ focus_tree = {
 		}
 		x = 32
 		y = 4
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_flying_shields"
+			add_tech_bonus = {
+				name = SER_flying_shields
+				bonus = 0.5
+				uses = 2
+				category = fighter_techs
+			}
+		}
 
 	}
 	focus = {
@@ -2337,6 +2731,20 @@ focus_tree = {
 		}
 		x = 34
 		y = 4
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_aggressive_aircrafts"
+			add_tech_bonus = {
+				name = SER_aggressive_aircrafts
+				bonus = 0.5
+				uses = 2
+				category = tactical_bomber
+			}
+		}
 
 	}
 	focus = {

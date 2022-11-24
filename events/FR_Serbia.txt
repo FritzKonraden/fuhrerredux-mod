@@ -441,3 +441,184 @@ country_event = { #Embolden resistance
 		}
 	}
 }
+
+country_event = {
+	id = serbia.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event serbia.20"}
+	title = serbia.20.t
+	desc = serbia.20.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SER
+	}
+
+	option = {
+		name = serbia.20.a
+		set_country_flag = SER_abolish_constitution_flag
+		set_politics = {
+			ruling_party = authoritarian_democrat elections_allowed = no
+		}
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
+		add_political_power = 75
+		swap_ideas = {
+			remove_idea = SER_saving_grace_idea
+			add_idea = SER_saving_grace1_idea
+		}
+		custom_effect_tooltip  = SER_abolish_constitution_tooltip
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = SER_serbian_constitutionalism_idea
+				add_idea = SER_serbian_constitutionalism_abolish_idea
+			}
+			clr_country_flag = coalition_authoritarian_democrat
+			set_country_flag = coalition_social_conservative
+			set_party_name = { 
+				ideology = authoritarian_democrat 
+				long_name = SER_kings_government_long 
+				name = SER_kings_government
+			}
+		}
+	}
+}
+
+country_event = {
+	id = serbia.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event serbia.21"}
+	title = serbia.21.t
+	desc = serbia.21.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SER
+	}
+
+	option = {
+		name = serbia.21.a
+		set_country_flag = SER_government_national_unity_flag
+		add_popularity = { ideology = social_conservative popularity = 0.03 }
+		add_popularity = { ideology = social_liberal popularity = 0.03 }
+		add_political_power = 75
+		swap_ideas = {
+			remove_idea = SER_saving_grace_idea
+			add_idea = SER_saving_grace1_idea
+		}
+		custom_effect_tooltip  = SER_government_national_unity_tooltip
+		hidden_effect = {
+			set_country_flag = coalition_social_liberal
+			set_country_flag = coalition_market_liberal
+		}
+	}
+}
+
+country_event = {
+	id = serbia.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event serbia.22"}
+	title = serbia.22.t
+	desc = serbia.22.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SER
+	}
+
+	option = {
+		name = serbia.22.a
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.03 }
+		swap_ideas = {
+			remove_idea = SER_serbian_constitutionalism_abolish_idea
+			add_idea = SER_serbian_constitutionalism_kings_idea
+		}
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = serbia.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event serbia.23"}
+	title = serbia.23.t
+	desc = serbia.23.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SER
+	}
+
+	option = {
+		name = serbia.23.a
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.03 }
+		add_political_power = 25
+		if = {
+			limit = {
+				has_idea = SER_saving_grace1_idea
+			}
+			swap_ideas = {
+				remove_idea = SER_saving_grace1_idea
+				add_idea = SER_saving_grace2_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SER_saving_grace2_idea
+			}
+			swap_ideas = {
+				remove_idea = SER_saving_grace2_idea
+				add_idea = SER_saving_grace3_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SER_saving_grace3_idea
+			}
+			swap_ideas = {
+				remove_idea = SER_saving_grace3_idea
+				add_idea = SER_saving_grace4_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SER_saving_grace4_idea
+			}
+			swap_ideas = {
+				remove_idea = SER_saving_grace4_idea
+				add_idea = SER_saving_grace5_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SER_saving_grace5_idea
+			}
+			remove_ideas = SER_saving_grace5_idea
+		}
+		else = {
+			swap_ideas = {
+				remove_idea = SER_saving_grace_idea
+				add_idea = SER_saving_grace1_idea
+			}
+		}
+		hidden_effect = {
+			set_party_name = { 
+				ideology = authoritarian_democrat 
+				long_name = SER_serbian_national_party_long 
+				name = SER_serbian_national_party
+			}
+		}
+	}
+}

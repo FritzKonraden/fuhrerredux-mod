@@ -75,6 +75,37 @@ ideas = {
 			removal_cost = -1
 		}
 		
+		SER_serbian_constitutionalism_abolish_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SER_serbian_constitutionalism_abolish_idea"}
+			
+			allowed = {	always = no	}
+			
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				political_power_gain = 0.05
+				drift_defence_factor = 0.05
+			}
+			picture = generic_constitutional_guarantees
+			removal_cost = -1
+		}
+		
+		SER_serbian_constitutionalism_kings_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SER_serbian_constitutionalism_kings_idea"}
+			
+			allowed = {	always = no	}
+			
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				political_power_gain = 0.10
+				drift_defence_factor = 0.10
+				authoritarian_democrat_drift = 0.02
+			}
+			picture = generic_constitutional_guarantees
+			removal_cost = -1
+		}
+		
 		SER_london_crash_idea = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SER_london_crash_idea"}
 			
@@ -176,6 +207,90 @@ ideas = {
 				stability_weekly = -0.001
 				compliance_growth = -0.75
 				resistance_growth = 0.25
+			}
+			picture = generic_crown
+			removal_cost = -1
+		}
+		
+		SER_saving_grace1_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SER_saving_grace1_idea"}
+			
+			allowed = {	always = no	}
+			
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				political_power_gain = -0.85
+				stability_weekly = -0.001
+				compliance_growth = -0.65
+				resistance_growth = 0.20
+			}
+			picture = generic_crown
+			removal_cost = -1
+		}
+		
+		SER_saving_grace2_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SER_saving_grace2_idea"}
+			
+			allowed = {	always = no	}
+			
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				political_power_gain = -0.70
+				stability_weekly = -0.001
+				compliance_growth = -0.55
+				resistance_growth = 0.15
+			}
+			picture = generic_crown
+			removal_cost = -1
+		}
+		
+		SER_saving_grace3_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SER_saving_grace3_idea"}
+			
+			allowed = {	always = no	}
+			
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				political_power_gain = -0.55
+				stability_weekly = -0.001
+				compliance_growth = -0.45
+				resistance_growth = 0.10
+			}
+			picture = generic_crown
+			removal_cost = -1
+		}
+		
+		SER_saving_grace4_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SER_saving_grace4_idea"}
+			
+			allowed = {	always = no	}
+			
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				political_power_gain = -0.40
+				stability_weekly = -0.001
+				compliance_growth = -0.35
+				resistance_growth = 0.05
+			}
+			picture = generic_crown
+			removal_cost = -1
+		}
+		
+		SER_saving_grace5_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SER_saving_grace5_idea"}
+			
+			allowed = {	always = no	}
+			
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				political_power_gain = -0.25
+				stability_weekly = -0.001
+				compliance_growth = -0.25
 			}
 			picture = generic_crown
 			removal_cost = -1

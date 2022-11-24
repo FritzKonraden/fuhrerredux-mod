@@ -37,27 +37,32 @@ SER_valkist_DEF: "Srpsko Carstvo"
 
 ### Parties
 SER_vanguardist_party: "Komunista"
-SER_vanguardist_party_long: "Savez Komunista Srbije"
+SER_vanguardist_party_long: "Savez Komunista Srbije                                          §gThe League of Communists of Serbia is the main far-left socialist movement in Serbia. While the movement has a minor role in Serbian politics, it has connections to other "Leagues of Communists" in the Western Balkans, and with the Soviet Union. The League seeks to establish a revolutionary socialist Yugoslav state.§!"
 SER_collectivist_party: "Komunista"
-SER_collectivist_party_long: "Savez Komunista Srbije"
+SER_collectivist_party_long: "Savez Komunista Srbije                                          §gThe League of Communists of Serbia is the main far-left socialist movement in Serbia. While the movement has a minor role in Serbian politics, it has connections to other "Leagues of Communists" in the Western Balkans, and with the Soviet Union. The League seeks to establish a revolutionary socialist Yugoslav state.§!"
 SER_libertarian_socialist_party: "Komunista"
-SER_libertarian_socialist_party_long: "Savez Komunista Srbije"
+SER_libertarian_socialist_party_long: "Savez Komunista Srbije                                          §gThe League of Communists of Serbia is the main far-left socialist movement in Serbia. While the movement has a minor role in Serbian politics, it has connections to other "Leagues of Communists" in the Western Balkans, and with the Soviet Union. The League seeks to establish a revolutionary socialist Yugoslav state.§!"
 SER_social_democrat_party: "Socijalistička"
-SER_social_democrat_party_long: "Socijalistička Partija Srbije"
+SER_social_democrat_party_long: "Socijalistička Partija Srbije                                    §gThe Socialist Party of Serbia was formed in 1921 from reformist members of what would come to be the League of Communists, along with other left-wing groups. Led, in Serbia, by Živko Topalović, the party want to establish a social democratic republican Yugoslavia. It is also seen as a home for members and figures from the banned League of Communists.§!"
 SER_social_liberal_party: "Demokratska"
-SER_social_liberal_party_long: "Demokratska Stranka"
+SER_social_liberal_party_long: "Demokratska Stranka                                         §gThe Democratic Party was formed in 1920, with strong support from the territories Serbia conquered after the Great War. Under the leadership of Ljubomir Davidović, the party have grown into the strongest opposition to the reigning Radical People's Party. The Democrats are liberals who seek a more democratic Serbian state, with less power to the King. In the Yugoslav question, it trends towards supporting a federal Yugoslav state.§!"
 SER_market_liberal_party: "Zemljoradnička"
-SER_market_liberal_party_long: "Zemljoradnička Stranka"
+SER_market_liberal_party_long: "Zemljoradnička Stranka                                       §gThe Agrarian Party was formed in 1919 and are a minor agrarian party in Serbia. While small, the Agrarians have begin to play the role of parliamentary ally to the reigning party. As it name inclines, the Agrarians promote agriculture and the rights of the Serbian farmer.§!"
 SER_social_conservative_party: "Narodna Radikalna"
-SER_social_conservative_party_long: "Narodna Radikalna Stranka"
+SER_social_conservative_party_long: "Narodna Radikalna Stranka                                 §gThe People's Radical Party is the main political party in Serbia. Founded in 1881 on a platform of a then left-wing radicalism among the peasants and the middle class, it has gradually become more and more conservative and nationalistic, as it became the main government party in Serbia. Originally defensive of parliamentary democracy, the party have begun to flirt with the authoritarian right. On the Yugoslav question, the Radicals trends towards a unitary Yugoslav state.§!"
 SER_authoritarian_democrat_party: "Narodna Radikalna"
-SER_authoritarian_democrat_party_long: "Narodna Radikalna Stranka (Bela Ruka Wing)"
+SER_authoritarian_democrat_party_long: "Narodna Radikalna Stranka (Bela Ruka Wing)       §gThe People's Radical Party is the main political party in Serbia. Founded in 1881 on a platform of a then left-wing radicalism among the peasants and the middle class, it has gradually become more and more conservative and nationalistic, as it became the main government party in Serbia. A portion of Radical politicians, military figures and King Alexander I himself are involved in the White Hand organization. The members of the White Hand are capable to establish a more authoritarian style of government.§!"
 SER_paternal_autocrat_party: "Narodna Odbrana"
-SER_paternal_autocrat_party_long: "Narodna Odbrana"
+SER_paternal_autocrat_party_long: "Narodna Odbrana                                              §gNational Defence is an Serbian nationalist organization led by Draža Mihailović. The organization seeks to create a Greater Serbian state under the leadership of the king. They seek to counquer all territories with Serbian populations in it and Serbianize the non-Serbian populations in these areas. While some Radicals holds symphaties with the organization, it is mostly seen as too radical.§!"
 SER_national_populist_party: "ZBOR"
-SER_national_populist_party_long: "Združena Borbena Organizacija Rada"
+SER_national_populist_party_long: "Združena Borbena Organizacija Rada                   §gThe United Militant Labour Organization was founded in 1935 as a far-right nationalist movement influenced by the teachings of German Valkism. The movement's leader, Dimitrije Ljotić, seeks to create a Yugoslav state united under a single ruler that deposes democracy and indivdualism in favor of Christianity, traditional values and corporatism.§!"
 SER_valkist_party: "ORJUNA"
-SER_valkist_party_long: "Organizacija Jugoslavenskih Nacionalista"
+SER_valkist_party_long: "Organizacija Jugoslavenskih Nacionalista              §gThe Organization of Yugoslav Nationalists is a political organization that seeks the creation of an integral Yugoslav state. While similar to ZBOR in it's Yugoslav nationalism, corporatism and opposition to democracy, the organization differs in it's rejection of Serbian and Croatian nationalism. ORJUNA is also more popular among the minority populations of Serbia.§!"
+
+SER_kings_government:0 "King's Government"
+SER_kings_government_long:0 "Živković's Government                                            §gAfter King Alexander I's abolishment of the constitution, he placed a loyal government in charge, headed by general Petar Živković. It is still too early to say what this new regime seek to accomplish in Serbia and on the Western Balkans.§!"
+SER_serbian_national_party:0 "Nacionalna"
+SER_serbian_national_party_long:0 "Srpska Nacionalna Stranka                                     §gThe Serbian National Party was formed by prime minister Petar Živković as a party loyal to the King and his regime. The party stresses the unity of the nation, centralized government and support the establishment of a unitary Yugoslav Kingdom.§!"
 
 ### Tooltips ###
 
@@ -65,6 +70,14 @@ SER_regent_prince_paul_tooltip:0 "§CPrince Peter accends the throne at age 13 a
 SER_resistance_rising_tooltip:0 "§RResistance against the Serbian government have risen in Macedonian and Albanian areas§!"
 
 SER_bosnian_modernization_tooltip:0 "§GThe Effects of this focus will increase by gaining control over more Bosnian and Herzogovinian states§!"
+
+SER_abolish_constitution_tooltip:0 "§CThe Serbian Constitution has been Abolished. General Petar Živković have been appointed Prime Minister With Emergency Powers§!"
+SER_government_national_unity_tooltip:0 "§CA National Unity Government has been Formed, including the People's Radical Party, the Democratic Party, the Agrarian Party and independents§!"
+
+### Flags ###
+
+SER_abolish_constitution_flag:0 "§GKing Alexander has Abolished the Constitution§!"
+SER_government_national_unity_flag:0 "§GA National Unity Government has been Formed§!"
 
 ### EVENTS ###
 
@@ -121,6 +134,22 @@ serbia.12.t:0 "Bankruptcy Rises Amongst the Farmers"
 serbia.12.d:0 "In the days following the economic crisis, many Serbian farmers have found it near impossible to sell off their products, leading to rising numbers of foreclosures and bankruptcy. Many farmers have become angry with the government, blaming us for being too inactive in helping them out. These news have helped fueling the opposition Agrarian and Democratic parties, who have issued statement of support with the agricultural sector of Serbia."
 serbia.12.a:0 "Alleviate Some of Their Worries!"
 
+serbia.20.t:0 "King Alexander I Abolish the Constitution"
+serbia.20.d:0 "Today, King Alexander have announced the abolishment of the current constitution of Serbia. Due to the political crisis generated from the attempted assassination on the monarch, the king see it as necessary to introduce temporary measures to strengthen his power and introduce a new constitution in the future. While some opposition figures voices their opposition to this, the government have been cooperative in the abolishment of the old constitution. General Petar Živković have been appointed by the King as the new prime minister, in a loyal cabinet."
+serbia.20.a:0 "A New State Shall Be Formed!"
+
+serbia.21.t:0 "A Government of National Unity"
+serbia.21.d:0 "On the orders of King Alexander I, the leading figures of both the government party and the opposition has been called in. The King was quite blunt in his wishes for the politicians. To set aside their differences and form a National Unity Government in order to secure stability in the realm. While both the Radicals and the Democrats have their reasons to not join this government, the King made it clear that the alternative would be to set aside the Constitution, along with the democratic liberties enjoyed today. After hours of negotiations, a new government could finally be announced, made up of Radicals, Democrats and even a couple of Agrarians and independents."
+serbia.21.a:0 "The King Need All His Advisors"
+
+serbia.22.t:0 "The [GetYear] Serbian Constitution"
+serbia.22.d:0 "King Alexander have called upon a Constitutional Assembly to author a new constitution for his new state. After many days and weeks with work, the Constitutional Assembly have presented the King with a new constitution. This new constitution, is seen as heavily royalist and opens for more restrictive civil liberties. Many outside observers view the new constitution as a framework that gives legality to an ever-increasing authoritarian state."
+serbia.22.a:0 "We See the Beginning of a New State"
+
+serbia.23.t:0 "The Formation of the Serbian National Party"
+serbia.23.d:0 "Prime minister Petar Živković have today officially established the Serbian National Party, a nationalist political party that will focus on bringing stability and national unity to the realm. The party are strong supporters of the new constitution and is viewed as an organization set up to further strengthen the new-found royalist regime in Serbia. Among the new party's founders and early members, are many former politicians from the People's Radical Party, as well as a few Democrats and members from more far-right nationalist organizations."
+serbia.23.a:0 "For the National Unity of All Serbia!"
+
 ### IDEAS ###
 
 ser_danube_research: "Danube Research Bloc Member"
@@ -142,6 +171,10 @@ SER_macedonian_internal_unrest_bad_idea_desc:0 "When Serbia solidified its contr
 
 SER_serbian_constitutionalism_idea:0 "Serbian Constitutionalism"
 SER_serbian_constitutionalism_idea_desc:0 "The Kingdom of Serbia is on paper a constitutional monarchy. While this is apparent with the existence of political parties, an elected parliament and democratic elections, it does not mean that our King is just a figurehead. The King in Serbia is yielding a fair bit of power and influence, and the current government is sitting there because of his will. (And, as some say, also by the will of secret organizations.)"
+SER_serbian_constitutionalism_abolish_idea:0 "Serbian Constitutionalism"
+SER_serbian_constitutionalism_abolish_idea_desc:0 "The Kingdom of Serbia is on paper a constitutional monarchy. While this is apparent with the existence of political parties, an elected parliament and democratic elections, it does not mean that our King is just a figurehead. The King in Serbia is yielding a fair bit of power and influence, and the current government is sitting there because of his will. With the consitution abolished, the King and his circle has begun centralizing power beneath themselves."
+SER_serbian_constitutionalism_kings_idea:0 "Serbian Constitutionalism"
+SER_serbian_constitutionalism_kings_idea_desc:0 "The Kingdom of Serbia is on paper a constitutional monarchy. However, with the centralization of power beneath the King and his loyalists, this has not become the case in practice. While elections are still being held and certain liberties are still uphold, future elections will likely only be there to strengthen the power of the King."
 
 SER_london_crash_idea:0 "Effect of the London Crash"
 SER_london_crash_idea_desc:0 "The London Stock Market Crash have made an impact upon the Serbian economy. Hopefully, we will be able to quickly recover."
@@ -163,6 +196,16 @@ SER_professionalize_mountaineers_idea:0 "Professional Mountaineers"
 
 SER_saving_grace_idea:0 "Assassination Crisis"
 SER_saving_grace_idea_desc:0 "While King Alexander survived the attempt on his life, the Kingdom has been thrown into chaos. Terrorist and separatist cells have gained new steam in Serbia, to the delight of foreign foes."
+SER_saving_grace1_idea:0 "Assassination Crisis"
+SER_saving_grace1_idea_desc:0 "While King Alexander survived the attempt on his life, the Kingdom has been thrown into chaos. Terrorist and separatist cells have gained new steam in Serbia, to the delight of foreign foes."
+SER_saving_grace2_idea:0 "Assassination Crisis"
+SER_saving_grace2_idea_desc:0 "While King Alexander survived the attempt on his life, the Kingdom has been thrown into chaos. Terrorist and separatist cells have gained new steam in Serbia, to the delight of foreign foes."
+SER_saving_grace3_idea:0 "Assassination Crisis"
+SER_saving_grace3_idea_desc:0 "While King Alexander survived the attempt on his life, the Kingdom has been thrown into chaos. Terrorist and separatist cells have gained new steam in Serbia, to the delight of foreign foes."
+SER_saving_grace4_idea:0 "Assassination Crisis"
+SER_saving_grace4_idea_desc:0 "While King Alexander survived the attempt on his life, the Kingdom has been thrown into chaos. Terrorist and separatist cells have gained new steam in Serbia, to the delight of foreign foes."
+SER_saving_grace5_idea:0 "Assassination Crisis"
+SER_saving_grace5_idea_desc:0 "While King Alexander survived the attempt on his life, the Kingdom has been thrown into chaos. Terrorist and separatist cells have gained new steam in Serbia, to the delight of foreign foes."
 
 SER_king_is_dead_idea:0 "Assassination Crisis"
 SER_king_is_dead_idea_desc:0 "With the success of King Alexander's assassination, the Kingdom has been thrown into chaos as the Regency tries to reestablish order. Terrorist and separatist cells have gained new steam in Serbia, to the delight of foreign foes."
