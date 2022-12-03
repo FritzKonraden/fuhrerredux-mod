@@ -1,137 +1,17 @@
 BLR_increase_home_guard = {
-  set_temp_variable = { BLR_home_guard_power_temp = BLR.home_guard_power }
-  set_temp_variable = { BLR_nat_soc_power_temp = BLR.nat_soc_power }
-  add_to_temp_variable = { var = BLR_home_guard_power_temp value = 1 }
-  add_to_temp_variable = { var = BLR_nat_soc_power_temp value = -1 }
-
-  if = {
-    limit = {
-      check_variable = { BLR_home_guard_power_temp = BLR_nat_soc_power_temp }
-    }
-    if = {
-      limit = { has_idea = BLR_power_struggle_nat_soc }
-      swap_ideas = {
-        remove_idea = BLR_power_struggle_nat_soc
-        add_idea = BLR_power_struggle
-      }
-    }
-    else_if = {
-      limit = { has_idea = BLR_power_struggle_home_guard }
-      swap_ideas = {
-        remove_idea = BLR_power_struggle_home_guard
-        add_idea = BLR_power_struggle
-      }
-    }
+  add_power_balance_value = {
+    id = BLR_power_balance
+    value = -0.1
+    tooltip_side = BLR_home_guard_side
   }
-  else_if = {
-    limit = {
-      check_variable = { BLR_home_guard_power_temp > BLR_nat_soc_power_temp }
-    }
-    if = {
-      limit = { has_idea = BLR_power_struggle_nat_soc }
-      swap_ideas = {
-        remove_idea = BLR_power_struggle_nat_soc
-        add_idea = BLR_power_struggle_home_guard
-      }
-    }
-    else_if = {
-      limit = { has_idea = BLR_power_struggle }
-      swap_ideas = {
-        remove_idea = BLR_power_struggle
-        add_idea = BLR_power_struggle_home_guard
-      }
-    }
-  }
-  else_if = {
-    limit = { 
-      check_variable = { BLR_home_guard_power_temp < BLR_nat_soc_power_temp }
-    }
-    if = {
-      limit = { has_idea = BLR_power_struggle }
-      swap_ideas = {
-        remove_idea = BLR_power_struggle
-        add_idea = BLR_power_struggle_nat_soc
-      }
-    }
-    else_if = {
-      limit = { has_idea = BLR_power_struggle_home_guard }
-      swap_ideas = {
-        remove_idea = BLR_power_struggle_home_guard
-        add_idea = BLR_power_struggle
-      }
-    }
-  }
-
-  add_to_variable = { var = BLR.home_guard_power value = 1 }
-  add_to_variable = { var = BLR.nat_soc_power value = -1 }
 }
 
 BLR_increase_nat_soc = {
-  set_temp_variable = { BLR_home_guard_power_temp = BLR.home_guard_power }
-  set_temp_variable = { BLR_nat_soc_power_temp = BLR.nat_soc_power }
-  add_to_temp_variable = { var = BLR_home_guard_power_temp value = -1 }
-  add_to_temp_variable = { var = BLR_nat_soc_power_temp value = 1 }
-
-  if = {
-    limit = {
-      check_variable = { BLR_home_guard_power_temp = BLR_nat_soc_power_temp }
-    }
-    if = {
-      limit = { has_idea = BLR_power_struggle_nat_soc }
-      swap_ideas = {
-        remove_idea = BLR_power_struggle_nat_soc
-        add_idea = BLR_power_struggle
-      }
-    }
-    else_if = {
-      limit = { has_idea = BLR_power_struggle_home_guard }
-      swap_ideas = {
-        remove_idea = BLR_power_struggle_home_guard
-        add_idea = BLR_power_struggle
-      }
-    }
+  add_power_balance_value = {
+    id = BLR_power_balance
+    value = 0.1
+    tooltip_side = BLR_bnsp_side
   }
-  else_if = {
-    limit = {
-      check_variable = { BLR_home_guard_power_temp > BLR_nat_soc_power_temp }
-    }
-    if = {
-      limit = { has_idea = BLR_power_struggle_nat_soc }
-      swap_ideas = {
-        remove_idea = BLR_power_struggle_nat_soc
-        add_idea = BLR_power_struggle_home_guard
-      }
-    }
-    else_if = {
-      limit = { has_idea = BLR_power_struggle }
-      swap_ideas = {
-        remove_idea = BLR_power_struggle
-        add_idea = BLR_power_struggle_home_guard
-      }
-    }
-  }
-  else_if = {
-    limit = { 
-      check_variable = { BLR_home_guard_power_temp < BLR_nat_soc_power_temp }
-    }
-    if = {
-      limit = { has_idea = BLR_power_struggle }
-      swap_ideas = {
-        remove_idea = BLR_power_struggle
-        add_idea = BLR_power_struggle_nat_soc
-      }
-    }
-    else_if = {
-      limit = { has_idea = BLR_power_struggle_home_guard }
-      swap_ideas = {
-        remove_idea = BLR_power_struggle_home_guard
-        add_idea = BLR_power_struggle
-      }
-    }
-  }
-
-  add_to_variable = { var = BLR.home_guard_power value = -1 }
-  add_to_variable = { var = BLR.nat_soc_power value = 1 }
 }
 
 BLR_improve_economy = {

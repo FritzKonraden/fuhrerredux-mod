@@ -23,10 +23,15 @@ country_event = { # Otaman Assassinated!
 		name = belarus.1.a
 		retire_character = BLR_Stanislaw_Bulak_Balachowicz
 		remove_ideas = BLR_diarchy_stable
-		add_ideas = BLR_power_struggle
 		set_country_flag = BLR_otaman_assassinated
 		set_country_flag = BLR_start_power_struggle
 		clr_country_flag = coalition_paternal_autocrat
+		set_power_balance = {
+			id = BLR_power_balance
+			left_side = BLR_home_guard_side # will keep the last set side if not specified
+			right_side = BLR_bnsp_side # will keep the last set side if not specified
+			set_default = yes # whether or not to reset the power balance to the initial value, default = no
+		}
 
 		BLR_Belarusian_National_Rada = {
 			add_country_leader_role = {
@@ -43,8 +48,6 @@ country_event = { # Otaman Assassinated!
 			}
 		}
 
-		set_variable = { var = BLR.home_guard_power value = 3 }
-		set_variable = { var = BLR.nat_soc_power value = 3 }
 		hidden_effect = {
 			country_event = { id = belarus.2 days = 4 }
 		}
@@ -260,7 +263,6 @@ country_event = {
 
 	option = { # What? Bail him out!
 		name = belarus.8.a
-		custom_effect_tooltip = BLR_increase_home_guard_tt
 		BLR_increase_home_guard = yes
 	}
 }
@@ -279,7 +281,6 @@ country_event = {
 
 	option = { # Bastards!
 		name = belarus.9.a
-		custom_effect_tooltip = BLR_increase_home_guard_tt
 		BLR_increase_home_guard = yes
 	}
 }
@@ -298,7 +299,6 @@ country_event = {
 
 	option = { # Dissapointing...
 		name = belarus.10.a
-		custom_effect_tooltip = BLR_increase_nat_soc_tt
 		BLR_increase_nat_soc = yes
 	}
 }
@@ -317,7 +317,6 @@ country_event = {
 
 	option = { # Dismiss the troops involved!
 		name = belarus.11.a
-		custom_effect_tooltip = BLR_increase_nat_soc_tt
 		BLR_increase_nat_soc = yes
 	}
 }
@@ -327,20 +326,7 @@ country_event = { # The Coup
 	title = belarus.12.t
 	desc = belarus.12.d
 	picture = GFX_report_event_BLR_officers
-	fire_only_once = yes
-	
-	trigger = {
-		tag = BLR
-		has_completed_focus = BLR_final_preparations
-		has_country_flag = BLR_select_home_guard
-		OR = {
-			check_variable = { BLR.home_guard_power = 6 }
-			check_variable = { BLR.home_guard_power > 5 }
-		}
-	}
-	mean_time_to_happen = {
-		days = 7
-	}
+	is_triggered_only = yes
 
 	option = { # That was close...
 		name = belarus.12.a
@@ -366,10 +352,8 @@ country_event = { # The Coup
 			set_country_flag = BLR_home_guard_win
 			clr_country_flag = BLR_start_power_struggle
 			increase_ruling_party_popularity_by_15 = yes
-			remove_ideas = {
-				BLR_power_struggle_nat_soc
-				BLR_power_struggle_home_guard
-				BLR_power_struggle
+			remove_power_balance = {
+				id = BLR_power_balance
 			}
 		}
 	}
@@ -380,20 +364,7 @@ country_event = { # BNSP Secures Control
 	title = belarus.13.t
 	desc = belarus.13.d
 	picture = GFX_report_event_BLR_astrouski_coup
-	fire_only_once = yes
-
-	trigger = {
-		tag = BLR
-		has_completed_focus = BLR_study_the_home_guard
-		has_country_flag = BLR_select_nat_soc
-		OR = {
-			check_variable = { BLR.nat_soc_power = 6 }
-			check_variable = { BLR.nat_soc_power > 5 }
-		}
-	}
-	mean_time_to_happen = {
-		days = 7
-	}
+	is_triggered_only = yes
 
 	option = { # That was close...
 		name = belarus.13.a
@@ -424,10 +395,8 @@ country_event = { # BNSP Secures Control
 			set_country_flag = BLR_nat_soc_win
 			clr_country_flag = BLR_start_power_struggle
 			increase_ruling_party_popularity_by_10 = yes
-			remove_ideas = {
-				BLR_power_struggle_nat_soc
-				BLR_power_struggle_home_guard
-				BLR_power_struggle
+			remove_power_balance = {
+				id = BLR_power_balance
 			}
 		}
 	}

@@ -86,29 +86,6 @@ ideas = {
 				army_org_factor = 0.05
 			}
 		}
-		BLR_power_struggle = {
-			allowed = { original_tag = BLR }
-			picture = generic_broken_champagne
-			modifier = {
-				political_power_cost = 0.05
-			}
-		}
-		BLR_power_struggle_home_guard = {
-			allowed = { original_tag = BLR }
-			picture = generic_broken_champagne
-			modifier = {
-				political_power_cost = 0.05
-				stability_factor = -0.15
-			}
-		}
-		BLR_power_struggle_nat_soc = {
-			allowed = { original_tag = BLR }
-			picture = generic_broken_champagne
-			modifier = {
-				political_power_cost = 0.05
-				planning_speed = -0.15
-			}
-		}
 		BLR_slashed_army_budget = {
 			allowed = { original_tag = BLR }
 			picture = generic_army_problems
@@ -173,15 +150,6 @@ ideas = {
 				consumer_goods_factor = 0.025
 				production_speed_buildings_factor = -0.1
 				industrial_capacity_factory = -0.05
-			}
-		}
-		BLR_thriving_economy = {
-			allowed = { original_tag = BLR }
-			picture = ROM_king_carol_ii_hedonist
-			modifier = {
-				production_factory_max_efficiency_factor = 0.1
-				production_speed_buildings_factor = 0.15
-				industrial_capacity_factory = 0.15
 			}
 		}
 		BLR_pilot_training_idea = {

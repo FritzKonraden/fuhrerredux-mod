@@ -4395,22 +4395,34 @@ focus_tree = {
 					has_country_flag = GER_east_is_first # Custom Rule
 				}
 			}
+			modifier = {
+				factor = 10
+				BLR = {
+					is_ai = no
+				}
+			}
 		}
 		
+		mutually_exclusive = {
+			focus = GER_ukraine_front
+		}
 		available = {
-			BLR = {
-				exists = yes
-			}			
+			country_exists = BLR			
 		}
 		
 		bypass = { 
-			BLR = {
-				OR = {
+			OR = {
+				BLR = {
 					exists = no
 					has_war_with = GER
 					is_in_faction_with = GER
-					is_in_faction_with = SOV
 					is_puppet_of = GER
+				}
+				custom_trigger_tooltip = {
+					tooltip = GER_accepted_belarusian_claims
+					BLR = {
+						has_country_flag = BLR_konigsberg_gut
+					}
 				}
 			}
 		}
@@ -4420,9 +4432,16 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			custom_effect_tooltip = GER_recognize_belarusian_claims
 			log = "[GetDateText]: [Root.GetName]: Focus GER_belarus_front"
 			BLR = {
 				country_event = ger.243
+			}
+			UKR = {
+				add_opinion_modifier = {
+					modifier = ITA_outraged
+					target = ROOT
+				}
 			}
 		}
 	}
@@ -4459,9 +4478,7 @@ focus_tree = {
 		}
 		
 		available = {
-			UKR = {
-				exists = yes
-			}			
+			country_exists = UKR		
 		}
 		
 		bypass = { 
@@ -4476,6 +4493,10 @@ focus_tree = {
 			}
 		}
 		
+		mutually_exclusive = {
+			focus = GER_belarus_front
+		}
+
 		prerequisite = {
 			focus = GER_east_friends
 		}
@@ -9099,7 +9120,9 @@ focus_tree = {
 				has_war_with = ENG
 			}
 		}
-		
+		available = {
+			NOT = { has_completed_focus = GER_kill_Goring }
+		}
 		prerequisite = { focus = GER_air_bases }
 		mutually_exclusive = {	focus = GER_richtofen_plan }
 		completion_reward = {

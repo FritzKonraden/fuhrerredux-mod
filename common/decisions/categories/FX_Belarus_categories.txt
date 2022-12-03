@@ -1,13 +1,10 @@
 BLR_power_struggle_category = {
 	allowed = { original_tag = BLR }
-	visible = {
-		OR = {
-			has_idea = BLR_power_struggle
-			has_idea = BLR_power_struggle_home_guard
-			has_idea = BLR_power_struggle_nat_soc
-		}
-	}
-
+	priority = 80
+	icon = GFX_decision_category_power_struggle
+}
+BLR_power_struggle_category_mission = {
+	allowed = { original_tag = BLR }
 	priority = 80
 	icon = GFX_decision_category_power_struggle
 }

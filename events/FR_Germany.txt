@@ -8543,45 +8543,16 @@ country_event = { # Belarus - Germany offers alliance
 
 	option = {
 		ai_chance = {
-			factor = 40
+			base = 80
 			modifier = {
-				factor = 1.5
-				has_government = paternal_autocrat
-			}
-			modifier = {
-				factor = 1.5
-				has_government = social_conservative
-			}
-			modifier = {
-				factor = 1.5
-				has_government = authoritarian_democrat
-			}
-			modifier = {
-				factor = 2
-				has_government = valkist
-			}
-			modifier = {
-				factor = 0.25
-				has_government = libertarian_socialist
-			}
-			modifier = {
-				factor = 0.25
-				has_government = collectivist
-			}
-			modifier = {
-				factor = 0.25
-				has_government = vanguardist
-			}
-			modifier = {
-				factor = 0.25
-				has_government = social_democrat
-			}
-			modifier = {
-				factor = 0.5
-				has_government = social_liberal
+				add = 10
+				surrender_progress < 20
 			}
 		}
 		name = ger.243.a # Sure
+		custom_effect_tooltip = GER_recognized_claims_belarus
+		set_country_flag = BLR_konigsberg_gut
+
 		GER = {
 			add_to_faction = BLR
 			country_event = ger.244
@@ -8590,43 +8561,7 @@ country_event = { # Belarus - Germany offers alliance
 
 	option = {
 		ai_chance = {
-			factor = 40
-			modifier = {
-				factor = 0.5
-				has_government = paternal_autocrat
-			}
-			modifier = {
-				factor = 0.5
-				has_government = social_conservative
-			}
-			modifier = {
-				factor = 0.5
-				has_government = authoritarian_democrat
-			}
-			modifier = {
-				factor = 0.25
-				has_government = valkist
-			}
-			modifier = {
-				factor = 4
-				has_government = libertarian_socialist
-			}
-			modifier = {
-				factor = 4
-				has_government = collectivist
-			}
-			modifier = {
-				factor = 4
-				has_government = vanguardist
-			}
-			modifier = {
-				factor = 4
-				has_government = social_democrat
-			}
-			modifier = {
-				factor = 4
-				has_government = social_liberal
-			}
+			base = 40
 		}
 		name = ger.243.b # No
 		GER = {
@@ -8649,6 +8584,12 @@ country_event = { # Belarus - accepts German alliance
 	option = {
 		name = ger.244.a
 		add_opinion_modifier = { target = BLR modifier = GER_accepted_alliance }
+		
+		hidden_effect = {
+			random_other_country = {
+				news_event = { id = fxnews.45 days = 1 }
+			}
+		}
 	}
 }
 	

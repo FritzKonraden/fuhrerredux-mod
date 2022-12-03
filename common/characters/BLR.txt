@@ -1010,7 +1010,7 @@ characters = {
 	}
 	BLR_Vaclau_Lastouski = {
 		name = "Vaclau Lastouski"
-		potraits = {
+		portraits = {
 			civilian = {
 				large = "gfx/leaders/BLR/Portrait_BLR_Vaclau_Lastouski.png"
 			}

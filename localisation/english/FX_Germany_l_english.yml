@@ -1907,9 +1907,6 @@ GER_refused_alliance: "Has refused to join Stahlpakt"
 GER_accepted_alliance: "Has agreed to join Stahlpakt"
 GER_eastern_initiative: "Germany looks Eastward"
 
-### Tooltips ###
-GER_france_warning: "§RThis Action May Spark French Intervention§"
-
 ### Comapnies
 # Industrial
 krupp: "Krupp"
@@ -2982,6 +2979,9 @@ GER_throught_switzerland: "The Unthinkable..."
 #####################Tooltip##########################
 ######################################################
 
+GER_recognize_belarusian_claims: "We will recognize @BLR §Y[BLR.GetAdjective]§! territorial claims. §RIsolating§! some of our potential allies.\n\n"
+GER_accepted_belarusian_claims: "We have recognized @BLR §Y[BLR.GetAdjective]§! territorial claims."
+GER_recognized_claims_belarus: "The Germans have §Gaccepted§! our territorial ambitions"
 GER_france_warning: "§RThis Action May Spark French Intervention§!"
 GER_united_kingdom_warning: "§RThis Action May Spark British Intervention§!"
 GER_soviet_warning: "§RThis Action May Spark Soviet Intervention§!"

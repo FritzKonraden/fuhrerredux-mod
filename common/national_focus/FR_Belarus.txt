@@ -147,7 +147,6 @@ focus_tree = {
 		relative_position_id = BLR_remember_his_legacy
 		completion_reward = {
 			add_political_power = 25
-			custom_effect_tooltip = BLR_increase_home_guard_tt
 			BLR_increase_home_guard = yes
 		}
 		search_filters = {
@@ -171,7 +170,6 @@ focus_tree = {
 		}
 		relative_position_id = BLR_ensure_unit_loyalty
 		completion_reward = {
-			custom_effect_tooltip = BLR_increase_home_guard_tt
 			BLR_increase_home_guard = yes
 			add_stability = 0.05
 			add_popularity = {
@@ -362,8 +360,7 @@ focus_tree = {
 		}
 		relative_position_id = BLR_dawn_of_a_new_belarus
 		completion_reward = {
-			custom_effect_tooltip = BLR_increase_nat_soc_tt
-			BLR_increase_home_guard = yes
+			BLR_increase_nat_soc = yes
 			add_stability = -0.05
 		}
 		search_filters = {
@@ -410,7 +407,6 @@ focus_tree = {
 		}
 		relative_position_id = BLR_dawn_of_a_new_belarus
 		completion_reward = {
-			custom_effect_tooltip = BLR_increase_nat_soc_tt
 			BLR_increase_nat_soc = yes
 			random_list = {
 				25 = {
@@ -1123,7 +1119,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_increase_food_exports }
 		relative_position_id = BLR_invest_in_hydroelectricity
 		completion_reward = {
-			add_ideas = BLR_thriving_economy
+			BLR_recover_from_black_wednesday = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_PRODUCTION
@@ -1960,7 +1956,7 @@ focus_tree = {
 		cost = 6
 		available = {
 			is_subject = no
-			is_in_faction = no
+			NOT = { has_war_with = GER }
 		}
 		prerequisite = { focus = BLR_bnsp_secures_power }
 		relative_position_id = BLR_bnsp_secures_power
@@ -1987,7 +1983,7 @@ focus_tree = {
 		y = 2
 		cost = 6
 		available = {
-			is_in_faction_with = GER
+			NOT = { has_war_with = GER }
 		}
 		prerequisite = { focus = BLR_work_with_the_germans }
 		relative_position_id = BLR_work_with_the_germans
@@ -2009,7 +2005,7 @@ focus_tree = {
 		cost = 6
 		available = {
 			has_capitulated = no
-			is_in_faction_with = GER
+			NOT = { has_war_with = GER }
 		}
 		prerequisite = { focus = BLR_work_with_the_germans }
 		relative_position_id = BLR_work_with_the_germans
@@ -2027,7 +2023,7 @@ focus_tree = {
 		cost = 6
 		available = {
 			has_capitulated = no
-			is_in_faction_with = GER
+			NOT = { has_war_with = GER }
 		}
 		prerequisite = { focus = BLR_work_with_the_germans }
 		relative_position_id = BLR_work_with_the_germans
@@ -2098,6 +2094,10 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 6
+		available = {
+			is_subject = no
+			has_capitulated = no
+		}
 		prerequisite = { focus = BLR_the_home_guard_in_control }
 		relative_position_id = BLR_the_home_guard_in_control
 		completion_reward = {
@@ -2112,12 +2112,22 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 6
+		available = {
+			is_subject = no
+			has_capitulated = no
+		}
 		prerequisite = { focus = BLR_the_home_guard_in_control }
 		relative_position_id = BLR_the_home_guard_in_control
 		completion_reward = {
 			add_popularity = {
 				ideology = valkist
 				popularity = -0.15
+			}
+			hidden_effect = {
+				add_popularity = {
+					ideology = paternal_autocrat
+					popularity = -0.15
+				}
 			}
 			add_stability = 0.05
 		}
@@ -2130,6 +2140,10 @@ focus_tree = {
 		x = 1
 		y = 1 
 		cost = 6
+		available = {
+			has_capitulated = no
+			is_subject = no
+		}
 		prerequisite = { focus = BLR_secure_the_new_state }
 		prerequisite = { focus = BLR_purge_the_ultra_radicals }
 		relative_position_id = BLR_secure_the_new_state
@@ -2682,6 +2696,12 @@ focus_tree = {
 				has_capitulated = no
 			}
 		}
+		bypass = {
+			OR = {
+				is_in_faction = yes
+				has_country_flag = BLR_konigsberg_gut
+			}
+		}
 		relative_position_id = BLR_open_new_universities
 		completion_reward = {
 			GER = {
@@ -3071,6 +3091,9 @@ focus_tree = {
 			NOT = {
 				has_idea = tot_economic_mobilisation
 			}
+		}
+		bypass = {
+			has_idea = tot_economic_mobilisation
 		}
 		prerequisite = {
 			focus = BLR_dreams_of_litvinism
