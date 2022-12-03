@@ -197,7 +197,7 @@ ideas = {
 		
 		POL_ukrainians_happy = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea POL_ukrainians_happy"}
-			picture = POL_ukrainians_happy
+			picture = minority_rights
 			modifier = {
 				consumer_goods_factor = -0.05
 				political_power_gain = 0.25

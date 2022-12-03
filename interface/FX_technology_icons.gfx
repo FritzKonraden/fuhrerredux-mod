@@ -6994,15 +6994,15 @@ spriteTypes = {
 	### Vehicles
 	SpriteType = {
 		name = "GFX_SAF_armored_car1_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_armored_car_equipment_1.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_armored_car_equipment_1.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_armored_car2_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_armored_car_equipment_2.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_armored_car_equipment_2.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_armored_car3_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_armored_car_equipment_3.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_armored_car_equipment_3.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_motorised_infantry_medium"
@@ -7014,11 +7014,11 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_SAF_mechanised_infantry_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_mechanized_equipment_1.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_mechanized_equipment_1.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_mechanised_infantry2_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_mechanized_equipment_2.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_mechanized_equipment_2.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_mechanised_infantry3_medium"
@@ -7026,7 +7026,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_SAF_amphibious_tank_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_amphibious_tank_1.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_amphibious_tank_1.png"
 	}
 
 	### Tanks
@@ -7036,195 +7036,195 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_SAF_basic_light_tank_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_basic_light_tank.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_basic_light_tank.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_improved_light_tank_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_improved_light_tank.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_improved_light_tank.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_advanced_light_tank_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_advanced_light_tank.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_advanced_light_tank.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_basic_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_basic_main_tank.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_basic_main_tank.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_improved_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_improved_main_tank.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_improved_main_tank.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_advanced_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_advanced_main_tank.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_advanced_main_tank.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_main_battle_tank_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_main_battle_tank.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_main_battle_tank.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_basic_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_basic_heavy_tank.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_basic_heavy_tank.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_improved_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_improved_heavy_tank.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_improved_heavy_tank.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_advanced_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_advanced_heavy_tank.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_advanced_heavy_tank.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_super_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_super_heavy_tank.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_super_heavy_tank.png"
 	}
 
 	### Artillery
 	SpriteType = {
 		name = "GFX_SAF_gw_artillery_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_Art_1.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_Art_1.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_artillery1_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_Art_2.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_Art_2.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_artillery4_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_Art_3.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_Art_3.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_interwar_antiair_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_AA_1.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_AA_1.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_antiair2_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_AA_2.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_AA_2.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_antiair5_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_AA_3.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_AA_3.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_interwar_antitank_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_AT_1.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_AT_1.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_antitank2_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_AT_2.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_AT_2.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_antitank5_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_AT_3.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_AT_3.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_rocket_artillery_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_Rocket_Art_1.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_Rocket_Art_1.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_rocket_artillery4_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_Rocket_Art_2.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_Rocket_Art_2.png"
 	}
 
 	### Aircraft
 	SpriteType = {
 		name = "GFX_SAF_CAS1_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_CAS1.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_CAS1.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_CAS2_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_CAS2.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_CAS2.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_CAS3_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_CAS3.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_CAS3.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_early_bomber_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_early_bomber.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_early_bomber.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_early_fighter.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_early_fighter.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_fighter1_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_fighter1.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_fighter1.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_fighter2_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_fighter2.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_fighter2.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_fighter3_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_fighter3.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_fighter3.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_jet_fighter1_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_jet_fighter1.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_jet_fighter1.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_jet_fighter2.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_jet_fighter2.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_heavy_fighter1_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_heavy_fighter1.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_heavy_fighter1.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_heavy_fighter2_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_heavy_fighter2.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_heavy_fighter2.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_heavy_fighter3_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_heavy_fighter3.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_heavy_fighter3.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_naval_bomber1_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_naval_bomber1.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_naval_bomber1.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_naval_bomber2_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_naval_bomber2.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_naval_bomber2.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_naval_bomber3_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_naval_bomber3.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_naval_bomber3.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_strategic_bomber1_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_strategic_bomber1.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_strategic_bomber1.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_strategic_bomber2_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_strategic_bomber2.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_strategic_bomber2.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_strategic_bomber3_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_strategic_bomber3.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_strategic_bomber3.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_jet_strategic_bomber1_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_jet_strategic_bomber1.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_jet_strategic_bomber1.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_tactical_bomber1.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_tactical_bomber1.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_tactical_bomber2.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_tactical_bomber2.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_tactical_bomber3_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_tactical_bomber3.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_tactical_bomber3.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_jet_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_jet_tactical_bomber1.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_jet_tactical_bomber1.png"
 	}
 	SpriteType = {
 		name = "GFX_SAF_jet_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/SouthAfrica/SAF_jet_tactical_bomber2.png"
+		texturefile = "gfx/interface/technologies/South_Africa/SAF_jet_tactical_bomber2.png"
 	}
 
 	###British Navy###

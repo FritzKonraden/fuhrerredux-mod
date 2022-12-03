@@ -1,5 +1,9 @@
 spriteTypes = {
 	spriteType = {
+    name = "GFX_idea_minority_rights"
+    texturefile = "gfx/interface/ideas/ideas/minority_rights.png"
+  }
+	spriteType = {
     name = "GFX_idea_capital_outflow"
     texturefile = "gfx/interface/ideas/ideas/capital_outflow.png"
   }
@@ -151,9 +155,13 @@ spriteTypes = {
 	  name = "GFX_idea_KNE_military_refugees"
 	  texturefile = "gfx/interface/ideas/KNE/KNE_military_refugees.png"
   }
-  spriteType = {
+	spriteType = {
       name = "GFX_idea_advisors_belarus"
       texturefile = "gfx/interface/ideas/ideas/advisors_belarus.png"
+  }
+  spriteType = {
+      name = "GFX_idea_advisors_italy"
+      texturefile = "gfx/interface/ideas/ideas/advisors_italy.png"
   }
   spriteType = {
 		name = "GFX_idea_advisors_germany_democratic"

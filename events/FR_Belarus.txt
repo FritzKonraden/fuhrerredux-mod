@@ -241,11 +241,6 @@ country_event = { # SOV - Capture Belarusian Lands
 			}
 			transfer_state = 207
 		}
-		hidden_effect = {
-			random_other_country = {
-				news_event = { id = fxnews.45 days = 2 }
-			}
-		}
 	}
 }
 
@@ -1387,5 +1382,35 @@ country_event = { # Elections
 			BLR_Jan_Pazniak_sec_sco
 		}
 		set_country_flag = BLR_christian_democrats_victory_flag
+	}
+}
+
+# Hidden Effect so that Belarus does not get annexed
+# everytime
+country_event = { 
+	id = belarus.42
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		is_ai = yes
+		date > 1936.12.25
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		if = {
+			limit = {
+				has_country_flag = BLR_select_home_guard
+			}
+
+			country_event = { id = belarus.12 days = 2 }
+		}
+		else = {
+			country_event = { id = belarus.13 days = 2 }
+		}
 	}
 }
