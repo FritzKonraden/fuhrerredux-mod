@@ -547,11 +547,6 @@ country_event = { # Join Entente
 		ai_chance = { base = 90 }
 		add_to_faction = FROM
 	}
-	option = {
-		name = usa.15.b
-		ai_chance = { base = 10 }
-		FROM = { country_event = usa.16 }
-	}
 }
 
 country_event = { # Entente Entry Denied

@@ -157,7 +157,7 @@ ideas = {
 				consumer_goods_factor = -0.05
 				political_power_cost = 0.1
 			}
-			picture = generic_industrial_concern_1
+			picture = HOL_labor_camps
 			removal_cost = -1
 		}
 		CAN_relief_idea_CPC = {#Relief Camps - CPC Plan
@@ -168,7 +168,7 @@ ideas = {
 				consumer_goods_factor = -0.1
 				political_power_cost = 0.05
 			}
-			picture = generic_industrial_concern_1
+			picture = HOL_labor_camps
 			removal_cost = -1
 		}
 		CAN_relief_idea_WUL = {#Relief Camps - WUL Plan
@@ -182,7 +182,7 @@ ideas = {
 				consumer_goods_factor = 0.025
 				political_power_cost = 0.05
 			}
-			picture = generic_industrial_concern_1
+			picture = HOL_labor_camps
 			removal_cost = -1
 		}
 		CAN_relief_idea_Strikers = {#Relief Camps - Direct Negotiations
@@ -193,7 +193,7 @@ ideas = {
 				production_speed_buildings_factor = 0.05
 				consumer_goods_factor = -0.025
 			}
-			picture = generic_industrial_concern_1
+			picture = HOL_labor_camps
 			removal_cost = -1
 		}
 		CAN_char_idea = {#The Charlottes Program

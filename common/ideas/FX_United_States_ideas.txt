@@ -128,10 +128,10 @@ ideas = {
       allowed = { original_tag = USA }
       picture = generic_economic_turmoil
       modifier = {
-        consumer_goods_factor = 0.2
+        consumer_goods_factor = 0.15
         production_factory_max_efficiency_factor = -0.1
-        industrial_capacity_factory = -0.15
-        industrial_capacity_dockyard = -0.15
+        industrial_capacity_factory = -0.05
+        industrial_capacity_dockyard = -0.05
       }
     }
     USA_malnourished_populace = {
