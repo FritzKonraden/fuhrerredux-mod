@@ -17,6 +17,13 @@ intelligence_agency = {
 	available = { original_tag = BEL }
 }
 intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_fx_blr
+	names = { "Operativnyy Otdel" }
+
+	default = { tag = WHR }
+	available = { original_tag = WHR }
+}
+intelligence_agency = {
 	picture = GFX_intelligence_agency_logo_fx_bul
 	names = { "DANS" }
 	

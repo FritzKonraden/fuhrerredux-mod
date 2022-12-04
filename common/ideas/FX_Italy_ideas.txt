@@ -1116,7 +1116,7 @@ ideas = {
 		ITA_officer_bonus = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_officer_bonus"}
 			allowed = { original_tag = ITA }
-			picture = generic_reserve_divisions
+			picture = advisors_italy
 			modifier = {
 				army_org_Factor = 0.05
 			}

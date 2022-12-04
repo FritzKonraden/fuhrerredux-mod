@@ -366,7 +366,6 @@ country_event = {
 			release = INC
 			ORI = {
 				add_state_core = 426
-				add_state_core = 812
 				add_state_core = 436
 				set_country_flag = ind_revolter
 			}

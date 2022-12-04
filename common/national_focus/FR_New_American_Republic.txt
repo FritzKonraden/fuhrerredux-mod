@@ -518,7 +518,7 @@ focus_tree = {
 	# Cement our Authority
 	focus = {
 		id = NAR_cement_our_authority
-		icon = GFX_goal_authoritarian
+		icon = GFX_goal_NAR_cement_power
 		x = 17
 		y = 0
 		cost = 6

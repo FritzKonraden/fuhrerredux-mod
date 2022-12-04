@@ -137,7 +137,7 @@ fra_in_new_desc: "Our doctrine has been revived, our army modernized, and our ge
 fra_invest_ic: "Investigation of the Capitalists"
 fra_invest_ic_desc: "The capitalists have long reigned without restrictions or supervision in France, it's about time we payed them a visit and asked them if they know anything about the shortage of funds."
 ###
-fra_give_land: "Redistribute Siezed Land"
+fra_give_land: "Redistribute Seized Land"
 fra_give_land_desc: "During the investigation of the capitalists, hundreds of acres of delapidated and illegally owned land were siezed and handed over to temporary government control with the intent of granting it back when available. It would appear that the time has now come, and several wealthy individuals have approchaed us in Normandy and Aquitaine with the intent to purchase this land from us."
 ###
 fra_invest_government: "Investigation of the Government"
@@ -207,7 +207,7 @@ fra_af_control: "Action Française"
 fra_af_control_desc: "With the provisional elections at an end, the Action Française has been democratically elected and the balance of power in the French political sphere has changed dramatically. We must reorganize the parliament in an equally dramatic measure to ensure a smooth transition of power."
 ###
 fra_papal_love: "Papal Reconciliation"
-fra_papal_love_desc: "The Republic has long sought to distance itself from the Pope, and since the days of the revolution the seperation of church and state has been one of the defining aspects of our nation. This period of hostility will come to an end with the new regime, and our relationship with Rome will be restored to its former pride."
+fra_papal_love_desc: "The Republic has long sought to distance itself from the Pope, and since the days of the revolution the separation of church and state has been one of the defining aspects of our nation. This period of hostility will come to an end with the new regime, and our relationship with Rome will be restored to its former pride."
 ###
 fra_army_loyalty: "Ensure Army Loyalty"
 fra_army_loyalty_desc: "Our relationship with the army as it stands is strained, to say the least. To ensure that a military coup does not occur, we must grant certain privilages to the military and promote officers in order to gain their trust and respect."
@@ -314,8 +314,8 @@ fra_unshakable_economics_desc: "We have managed to bring the French economy back
 fra_watch_rhine: "Watch on the Rhine"
 fra_watch_rhine_desc: "The Rhine river has been under French control since the end of the Great War in 1919, and we have left the area vastly under-protected due to the friendly republican regime in Germany. With the rise of Dresslers nationalistic and militaristic regime, we need to bolster our defenses on the river Rhine in case of a pre-emptive German attack, and ensure that not a single German boot steps onto French soil."
 ###
-fra_rhine_martial_law: "Declare Rhinish Martial Law"
-fra_rhine_martial_law_desc: "The Rhinish state is in chaos with fighting taking place both on the front line and around the countryside as German nationalists who are loyal to the Valkist regime attempt to disrupt supply lines and make life hard for our troops. We must take military control of the country in order to better organize our army and fight what soon may become a repeat of the first Great War."
+fra_rhine_martial_law: "Declare Rhenish Martial Law"
+fra_rhine_martial_law_desc: "The Rhenish state is in chaos with fighting taking place both on the front line and around the countryside as German nationalists who are loyal to the Valkist regime attempt to disrupt supply lines and make life hard for our troops. We must take military control of the country in order to better organize our army and fight what soon may become a repeat of the first Great War."
 ###
 fra_no_german: "Not a single Stahlhelm on French soil!"
 fra_no_german_desc: "The French people enduring an unbelievable amount of suffering during the first Great War, North-East France was permenantly scarred from the battles that took place. We must ensure that the barbaric Germans lay not a single step on our soil, lest they tarnish what unmolested territory we have left."
@@ -455,7 +455,7 @@ fra_expand_aquitaine_desc: "The factories we moved from the Northeast of our cou
 fra_expand_rhone: "Expand Industry Along the Rhone"
 fra_expand_rhone_desc: "The factories we moved from the Northeast of our country to the Rhone region have shown to be more efficiant and closer to the raw resources that they need to produce. Expanding existing factories and creating new ones will further increase our industrial capacity."
 ###
-fra_rheinish_industry: "Rheinish Industrial Initiative"
+fra_rheinish_industry: "Rhenish Industrial Initiative"
 fra_rheinish_industry_desc: "The Rhine protectorate is full of great minds, French and German alike. We must actively seek these people out and bring them back to France in order to improve our industrial methods and capacity."
 ###
 fra_french_industry: "A French Industry"
@@ -471,7 +471,7 @@ fra_quality_control: "Extensive Quality Control"
 fra_quality_control_desc: "Once the rifle leaves the factory, it needs to be extensively tested behind the front lines before it's shipped to the men in the field."
 ###
 fra_lower_costs: "Streamline Weapon Production"
-fra_lower_costs_desc: "Our current methods of producing weapons are complicated, slow,and  inefficiant; streamlining this will allow us to increase production of rifles and artillery pieces dramatically."
+fra_lower_costs_desc: "Our current methods of producing weapons are complicated, slow,and  inefficient; streamlining this will allow us to increase production of rifles and artillery pieces dramatically."
 ###
 fra_mas_contracts: "Contracts With MAS"
 fra_mas_contracts_desc: "The Manufacture d'armes de Saint-Étienne, or MAS, is a state-owned manufacturing company based in the town of Saint-Étienne. Signing arms contracts will allow us to develop better and more modern rifles."
@@ -708,7 +708,7 @@ fra_christ_dem: "Christian Democracy"
 fra_christ_dem_desc: "The Third Republic has fallen, and a new provisional republic has taken its place. With the PSF's emphasis on French nationalism and Christian democracy we will usher in a new age of politics not only in France but in Europe as a whole."
 ###
 fra_corporatism: "Begin Corporatism"
-fra_corporatism_desc: "Corporatism shares many parallels with syndicalism, and advocates that society be organized into specific corporations that are seperated by their jobs. The end goal of corporatism is for the different corporations to operate harmoniously as a single unit at maximum efficiancy, and while it may take time to reach that point, there's no better time to start than now."
+fra_corporatism_desc: "Corporatism shares many parallels with syndicalism, and advocates that society be organized into specific corporations that are separated by their jobs. The end goal of corporatism is for the different corporations to operate harmoniously as a single unit at maximum efficiancy, and while it may take time to reach that point, there's no better time to start than now."
 ###
 fra_bridge_gap: "Bridge the Ideological Gap"
 fra_bridge_gap_desc: "The French Right is a disparate and disorganized group, we should bring those that sit only slightly futher left or right of us into the fold and exclude those that do not wish to cooperate with us."
@@ -795,7 +795,7 @@ fra.14.d: "With the entirety of the country on our side, and our enemies unable 
 fra.14.a: "Vive le roi!"
 ###
 fra.15.t: "Workers in Poitou strike!"
-fra.15.d: "Despite our revokation of the legality of strikes in France, a group of working in La Rochelle have stopped showing up to work and have demanded increased safety regulations and a higher wage. This has presented somewhat of a crisis in our government, as accepting these demands would tarnish our name severly and cause a serious drop in our authority. However, sending in the military risks escalating the situation and causing more widespread strikes."
+fra.15.d: "Despite our revocation of the legality of strikes in France, a group of working in La Rochelle have stopped showing up to work and have demanded increased safety regulations and a higher wage. This has presented somewhat of a crisis in our government, as accepting these demands would tarnish our name severly and cause a serious drop in our authority. However, sending in the military risks escalating the situation and causing more widespread strikes."
 fra.15.a: "We must concede to their demands."
 fra.15.b: "Order the army to move in and disperse the strikers."
 ###
@@ -979,7 +979,7 @@ fra.57.d: "The effects of Black Wednesday have finally subsided and prices acros
 fra.57.a: "Is bread finally affordable again?"
 ###
 fra.58.t: "The Occupation of the Canaries"
-fra.58.d: "In the early morning hours of yesterday, a small strike force of French marines departed from Casablanca for the Canary Islands, presently held by the Spanish falangists. The operation lasted a total of 16 hours, and began with the seizure of the the island of Fuerteventura and Gran Canaria. Intense fighting was reported on the island of Tenerife, and the city of Santa Cruz de Tenerife held out despite being entirely surrounded for several hours.\n\nBy midday, the capital city had fallen and the marines had moved onto the final three Western islands in the chain. Small pockets of resistance held out in the forested mountains for over a day before finally being starved and coerced out into surrender. \n\nThe marines set up a local garrison upon the capture of the island chain, and were faced with only minor civilian resistance before finally handing the island chain over to the French government. A local administration is presently being set up and the islands will soon be fully integrated into the colonial sphere."
+fra.58.d: "In the early morning hours of yesterday, a small strike force of French marines departed from Casablanca for the Canary Islands, presently held by the Spanish Falangists. The operation lasted a total of 16 hours, and began with the seizure of the the island of Fuerteventura and Gran Canaria. Intense fighting was reported on the island of Tenerife, and the city of Santa Cruz de Tenerife held out despite being entirely surrounded for several hours.\n\nBy midday, the capital city had fallen and the marines had moved onto the final three Western islands in the chain. Small pockets of resistance held out in the forested mountains for over a day before finally being starved and coerced out into surrender. \n\nThe marines set up a local garrison upon the capture of the island chain, and were faced with only minor civilian resistance before finally handing the island chain over to the French government. A local administration is presently being set up and the islands will soon be fully integrated into the colonial sphere."
 fra.58.a: "A necessity in order to ensure peace."
 ###
 fra.59.t: "Occupation of the Pyrenees"
@@ -1116,8 +1116,8 @@ fra.93.b: "Spain? Do they even have a standing army?"
 fra.93.c: "The first step to reconciliation is the returning of their occupied lands."
 ###
 fra.94.t: "Fate of the Spanish Republic"
-fra.94.d: "The Second Spanish Republic was established in Al Rif after Republican forces were kicked off the mainland during the civil war, but with the rise of a new French Monarchy we find ourselves ideologically at odds with the Republic-in-exile. Many in the government believe that we should forcefully annex the Republic and administer it as part of the Protectorate or Morocco, while others believe that a sister Republic is still useful and may be more useful in restoring order to the Spanish peninsula. \n\nA select few members of the AF believe that we should transition the Second Republic into a monarchy which will rival the "
-fra.94.a: "The Republic dies for a second time!"
+fra.94.d: "The Third Spanish Republic was established in Al Rif after Republican forces were kicked off the mainland during the civil war, but with the rise of a new French Monarchy we find ourselves ideologically at odds with the Republic-in-exile. Many in the government believe that we should forcefully annex the Republic and administer it as part of the Protectorate or Morocco, while others believe that a sister Republic is still useful and may be more useful in restoring order to the Spanish peninsula. \n\nA select few members of the AF believe that we should transition the Second Republic into a monarchy which will rival the "
+fra.94.a: "The Republic dies for a final time!"
 fra.94.b: "The Republic is still useful to us."
 fra.94.c: "Convert the Republic into our own puppet monarchy!"
 ###
@@ -1197,7 +1197,7 @@ fra.110.e: ""
 ###
 fra.111.t: "Denmark in turmoil!"
 fra.111.d: "The Kiel Zone has recently been thrown into turmoil with the rise of an extremist far-left government, and this new "Hamburg Commune" has quickly assembled an army and encroached on Danish territory with the intention of controlling the entire region. As the Danes are a part of the Entente Council, we have an obligation to send them help in their struggle."
-fra.111.a: "Send them aid immedietly!"
+fra.111.a: "Send them aid immediately!"
 fra.111.b: "Send them little more than token aid."
 fra.111.c: "The Dane's have yet to earn our assistance."
 ###

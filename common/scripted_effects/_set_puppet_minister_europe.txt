@@ -1,5 +1,53 @@
 set_puppet_minister_europe = {
-  if = {
+	if = {
+		limit = { tag = BLR }
+		if = {
+			limit = { has_socialist_government = yes }
+			add_ideas = {
+				BLR_Paluta_Badunova_hog_col
+				BLR_Michas_Javar_for_van
+				BLR_Dmitry_Pryshchepau_eco_lib
+				BLR_Jafim_Bialievic_sec_col
+			}
+		}
+		else_if = {
+			limit = { has_democratic_left_government = yes }
+			add_ideas = {
+				BLR_Anton_Boryk_hog_sde
+				BLR_Anton_Lutskevic_for_sde
+				BLR_Jan_Sierada_eco_sli
+				BLR_Jazep_Lesik_sec_sde
+			}
+		}
+		else_if = {
+			limit = { has_democratic_right_government = yes }
+			add_ideas = {
+				BLR_Jazep_Hermanovic_hog_sco
+				BLR_Mitrofan_Dovnar_Zapolsky_for_mli
+				BLR_Adolf_Klimovic_eco_sco
+				BLR_Adam_Stankievic_for_sco
+			}
+		}
+		else_if = {
+			limit = { has_dictatorship_government = yes }
+			add_ideas = {
+				BLR_Panteleimon_Rozhnovsky_hog_pau
+				BLR_Ivan_Jermachenka_for_pau
+				BLR_Mikalaj_Skialionak_eco_npo
+				BLR_Francisak_Kusal_sec_pau
+			}
+		}
+		else_if = {
+			limit = { has_government = authoritarian_democrat }
+			add_ideas = {
+				BLR_Vasil_Zacharka_hog_ade
+				BLR_Klaudzij_Sciapanavic_Duz_Duseuski_for_ade
+				BLR_Symon_Kandybovic_eco_ade
+				BLR_Anton_Sokal_Kutylouski_sec_ade
+			}
+		}
+	}
+  else_if = {
     limit = { tag = HOL }
 		if = {
 			limit = { has_socialist_government = yes }

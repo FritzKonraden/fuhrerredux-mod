@@ -179,7 +179,7 @@ ideas = {
 		}
 		RHI_S_french_officers = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RHI_S_french_officers"}
-			picture= advisors_natfrance
+			picture= advisors_france
 			modifier = {
 			planning_speed= -0.1
 			max_planning= 0.25

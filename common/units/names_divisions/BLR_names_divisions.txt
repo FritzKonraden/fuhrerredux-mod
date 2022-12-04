@@ -160,7 +160,7 @@ BLR_MOT_01 =
 	}
 }
 
-BLR_BLR_01 = 
+BLR_ARM_01 = 
 {
 	name = "Armored Divisions"
 
