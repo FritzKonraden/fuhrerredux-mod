@@ -95,7 +95,6 @@ recruit_character = BLR_Michas_Javar
 recruit_character = BLR_Salamon_Kacenbohien
 recruit_character = BLR_Nicypar_Natalievic
 recruit_character = BLR_Jazep_Adamovic
-recruit_character = BLR_Jafim_Bialievic
 recruit_character = BLR_Tamas_Hryb
 recruit_character = BLR_Paluta_Badunova
 recruit_character = BLR_Nikolay_Gusarov

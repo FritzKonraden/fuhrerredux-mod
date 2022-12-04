@@ -25,8 +25,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Jazep_Adamovic_hog_van_hired }
 			}
 			idea_token = BLR_Jazep_Adamovic_hog_van
-			on_add = { set_country_flag = BLR_Jazep_Adamic_hog_van_hired }
-			on_remove = { clr_country_flag = BLR_Jazep_Adamic_hog_van_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Jazep_Adamovic_hog_van_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Jazep_Adamovic_hog_van_hired }
+			}
 			traits = {
 				vanguardist
 				hog_ambitious_union_boss
@@ -47,8 +51,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Michas_Javar_for_van_hired }
 			}
 			idea_token = BLR_Michas_Javar_for_van
-			on_add = { set_country_flag = BLR_Michas_Javar_for_van_hired }
-			on_remove = { clr_country_flag = BLR_Michas_Javar_for_van_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Michas_Javar_for_van_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Michas_Javar_for_van_hired }
+			}
 			traits = {
 				vanguardist
 				for_great_compromiser
@@ -69,8 +77,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Salamon_Kacenbohien_eco_van_hired }
 			}
 			idea_token = BLR_Salamon_Kacenbohien_eco_van
-			on_add = { set_country_flag = BLR_Salamon_Kacenbohien_eco_van_hired }
-			on_remove = { clr_country_flag = BLR_Salamon_Kacenbohien_eco_van_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Salamon_Kacenbohien_eco_van_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Salamon_Kacenbohien_eco_van_hired }
+			}
 			traits = {
 				vanguardist
 				eco_theoretical_scientist
@@ -91,8 +103,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Nicypar_Natalievic_sec_van_hired }
 			}
 			idea_token = BLR_Nicypar_Natalievic_sec_van
-			on_add = { set_country_flag = BLR_Nicypar_Natalievic_sec_van_hired }
-			on_remove = { clr_country_flag = BLR_Nicypar_Natalievic_sec_van_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Nicypar_Natalievic_sec_van_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Nicypar_Natalievic_sec_van_hired }
+			}
 			traits = {
 				vanguardist
 				sec_silent_lawyer
@@ -125,8 +141,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Paluta_Badunova_hog_col_hired }
 			}
 			idea_token = BLR_Paluta_Badunova_hog_col
-			on_add = { set_country_flag = BLR_Paluta_Badunova_hog_col_hired }
-			on_remove = { clr_country_flag = BLR_Paluta_Badunova_hog_col_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Paluta_Badunova_hog_col_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Paluta_Badunova_hog_col_hired }
+			}
 			traits = {
 				collectivist
 				hog_sincere_internationalist
@@ -139,8 +159,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Paluta_Badunova_for_col_hired }
 			}
 			idea_token = BLR_Paluta_Badunova_for_col
-			on_add = { set_country_flag = BLR_Paluta_Badunova_for_col_hired }
-			on_remove = { clr_country_flag = BLR_Paluta_Badunova_for_col_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Paluta_Badunova_for_col_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Paluta_Badunova_for_col_hired }
+			}
 			traits = {
 				collectivist
 				for_ideological_crusader
@@ -161,8 +185,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Nikolay_Gusarov_for_col_hired }
 			}
 			idea_token = BLR_Nikolay_Gusarov_for_col
-			on_add = { set_country_flag = BLR_Nikolay_Gusarov_for_col_hired }
-			on_remove = { clr_country_flag = BLR_Nikolay_Gusarov_for_col_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Nikolay_Gusarov_for_col_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Nikolay_Gusarov_for_col_hired }
+			}
 			traits = {
 				collectivist
 				for_moderate_among_radicals
@@ -183,8 +211,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Jauhien_Ladnou_for_col_hired }
 			}
 			idea_token = BLR_Jauhien_Ladnou_for_col
-			on_add = { set_country_flag = BLR_Jauhien_Ladnou_for_col_hired }
-			on_remove = { clr_country_flag = BLR_Jauhien_Ladnou_for_col_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Jauhien_Ladnou_for_col_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Jauhien_Ladnou_for_col_hired }
+			}
 			traits = {
 				collectivist
 				for_the_cloak_n_dagger_schemer
@@ -205,8 +237,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Adam_Bildziukievic_eco_col_hired }
 			}
 			idea_token = BLR_Adam_Bildziukievic_eco_col
-			on_add = { set_country_flag = BLR_Adam_Bildziukievic_eco_col_hired }
-			on_remove = { clr_country_flag = BLR_Adam_Bildziukievic_eco_col_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Adam_Bildziukievic_eco_col_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Adam_Bildziukievic_eco_col_hired }
+			}
 			traits = {
 				collectivist
 				eco_military_entrepreneur
@@ -227,8 +263,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Jafim_Bialievic_sec_col_hired }
 			}
 			idea_token = BLR_Jafim_Bialievic_sec_col
-			on_add = { set_country_flag = BLR_Jafim_Bialievic_sec_col_hired }
-			on_remove = { clr_country_flag = BLR_Jafim_Bialievic_sec_col_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Jafim_Bialievic_sec_col_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Jafim_Bialievic_sec_col_hired }
+			}
 			traits = {
 				collectivist
 				sec_efficient_sociopath
@@ -250,8 +290,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Aliaksandr_Charviakou_hog_lib_hired }
 			}
 			idea_token = BLR_Aliaksandr_Charviakou_hog_lib
-			on_add = { set_country_flag = BLR_Aliaksandr_Charviakou_hog_lib_hired }
-			on_remove = { clr_country_flag = BLR_Aliaksandr_Charviakou_hog_lib_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Aliaksandr_Charviakou_hog_lib_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Aliaksandr_Charviakou_hog_lib_hired }
+			}
 			traits = {
 				libertarian_socialist
 				hog_privileged_socialist
@@ -264,8 +308,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Aliaksandr_Charviakou_for_lib_hired }
 			}
 			idea_token = BLR_Aliaksandr_Charviakou_for_lib
-			on_add = { set_country_flag = BLR_Aliaksandr_Charviakou_for_lib_hired }
-			on_remove = { clr_country_flag = BLR_Aliaksandr_Charviakou_for_lib_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Aliaksandr_Charviakou_for_lib_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Aliaksandr_Charviakou_for_lib_hired }
+			}
 			traits = {
 				libertarian_socialist
 				for_general_staffer
@@ -286,8 +334,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Symon_Rak_Michajlouksi_hog_lib_hired }
 			}
 			idea_token = BLR_Symon_Rak_Michajlouksi_hog_lib
-			on_add = { set_country_flag = BLR_Symon_Rak_Michajlouksi_hog_lib_hired }
-			on_remove = { clr_country_flag = BLR_Symon_Rak_Michajlouksi_hog_lib_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Symon_Rak_Michajlouksi_hog_lib_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Symon_Rak_Michajlouksi_hog_lib_hired }
+			}
 			traits = {
 				libertarian_socialist
 				hog_red_chairmen
@@ -300,33 +352,15 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Symon_Rak_Michajlouksi_for_lib_hired }
 			}
 			idea_token = BLR_Symon_Rak_Michajlouksi_for_lib
-			on_add = { set_country_flag = BLR_Symon_Rak_Michajlouksi_for_lib_hired }
-			on_remove = { clr_country_flag = BLR_Symon_Rak_Michajlouksi_for_lib_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Symon_Rak_Michajlouksi_for_lib_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Symon_Rak_Michajlouksi_for_lib_hired }
+			}
 			traits = {
 				libertarian_socialist
 				for_biased_intellectual
-			}
-		}
-	}
-	BLR_Adam_Bildziukievic = {
-		name = "Adam Bildziukievic"
-		portraits = {
-			civilian = {
-				small = "gfx/interface/ministers/BLR/BLR_Adam_Bildziukievic.png"
-			}
-		}
-		advisor = {
-			cost = 150
-			slot = economy_minister
-			available = {
-				hidden_trigger = { has_country_flag = BLR_Adam_Bildziukievic_eco_col_hired }
-			}
-			idea_token = BLR_Adam_Bildziukievic_eco_col
-			on_add = { set_country_flag = BLR_Adam_Bildziukievic_eco_col_hired }
-			on_remove = { clr_country_flag = BLR_Adam_Bildziukievic_eco_col_hired }
-			traits = {
-				collectivist
-				eco_military_entrepreneur
 			}
 		}
 	}
@@ -344,8 +378,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Dmitry_Pryshchepau_eco_lib_hired }
 			}
 			idea_token = BLR_Dmitry_Pryshchepau_eco_lib
-			on_add = { set_country_flag = BLR_Dmitry_Pryshchepau_eco_lib_hired }
-			on_remove = { clr_country_flag = BLR_Dmitry_Pryshchepau_eco_lib_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Dmitry_Pryshchepau_eco_lib_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Dmitry_Pryshchepau_eco_lib_hired }
+			}
 			traits = {
 				libertarian_socialist
 				eco_administrative_genius
@@ -366,8 +404,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Pavel_Valoshin_sec_lib_hired }
 			}
 			idea_token = BLR_Pavel_Valoshin_sec_lib
-			on_add = { set_country_flag = BLR_Pavel_Valoshin_sec_lib_hired }
-			on_remove = { clr_country_flag = BLR_Pavel_Valoshin_sec_lib_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Pavel_Valoshin_sec_lib_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Pavel_Valoshin_sec_lib_hired }
+			}
 			traits = {
 				libertarian_socialist
 				sec_back_stabber
@@ -400,8 +442,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Anton_Lutskevic_hog_sde_hired }
 			}
 			idea_token = BLR_Anton_Lutskevic_hog_sde
-			on_add = { set_country_flag = BLR_Anton_Lutskevic_hog_sde_hired }
-			on_remove = { clr_country_flag = BLR_Anton_Lutskevic_hog_sde_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Anton_Lutskevic_hog_sde_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Anton_Lutskevic_hog_sde_hired }
+			}
 			traits = {
 				social_democrat
 				hog_naive_optimist
@@ -414,8 +460,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Anton_Lutskevic_for_sde_hired }
 			}
 			idea_token = BLR_Anton_Lutskevic_for_sde
-			on_add = { set_country_flag = BLR_Anton_Lutskevic_for_sde_hired }
-			on_remove = { clr_country_flag = BLR_Anton_Lutskevic_for_sde_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Anton_Lutskevic_for_sde_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Anton_Lutskevic_for_sde_hired }
+			}
 			traits = {
 				social_democrat
 				for_great_compromiser
@@ -436,8 +486,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Anton_Boryk_for_sde_hired }
 			}
 			idea_token = BLR_Anton_Boryk_hog_sde
-			on_add = { set_country_flag = BLR_Anton_Boryk_hog_sde_hired }
-			on_remove = { clr_country_flag = BLR_Anton_Boryk_hog_sde_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Anton_Boryk_hog_sde_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Anton_Boryk_hog_sde_hired }
+			}
 			traits = {
 				social_democrat
 				for_the_cloak_n_dagger_schemer
@@ -458,8 +512,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Ivan_Kraskouski_for_sde_hired }
 			}
 			idea_token = BLR_Ivan_Kraskouski_hog_sde
-			on_add = { set_country_flag = BLR_Ivan_Kraskouski_hog_sde_hired }
-			on_remove = { clr_country_flag = BLR_Ivan_Kraskouski_hog_sde_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Ivan_Kraskouski_hog_sde_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Ivan_Kraskouski_hog_sde_hired }
+			}
 			traits = {
 				social_democrat
 				for_general_staffer
@@ -480,8 +538,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Jazep_Lesik_sec_sde_hired }
 			}
 			idea_token = BLR_Jazep_Lesik_sec_sde
-			on_add = { set_country_flag = BLR_Jazep_Lesik_sec_sde_hired }
-			on_remove = { clr_country_flag = BLR_Jazep_Lesik_sec_sde_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Jazep_Lesik_sec_sde_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Jazep_Lesik_sec_sde_hired }
+			}
 			traits = {
 				social_democrat
 				sec_man_of_the_people
@@ -514,8 +576,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Jazep_Varonka_hog_sli_hired }
 			}
 			idea_token = BLR_Jazep_Varonka_hog_sli
-			on_add = { set_country_flag = BLR_Jazep_Varonka_hog_sli_hired }
-			on_remove = { clr_country_flag = BLR_Jazep_Varonka_hog_sli_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Jazep_Varonka_hog_sli_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Jazep_Varonka_hog_sli_hired }
+			}
 			traits = {
 				social_liberal
 				hog_charismatic_charmer
@@ -536,8 +602,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Jan_Sierada_eco_sli_hired }
 			}
 			idea_token = BLR_Jan_Sierada_eco_sli
-			on_add = { set_country_flag = BLR_Jan_Sierada_eco_sli_hired }
-			on_remove = { clr_country_flag = BLR_Jan_Sierada_eco_sli_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Jan_Sierada_eco_sli_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Jan_Sierada_eco_sli_hired }
+			}
 			traits = {
 				social_liberal
 				eco_reformer
@@ -558,8 +628,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Alyaksandr_Tsvikyevich_sec_sli_hired }
 			}
 			idea_token = BLR_Alyaksandr_Tsvikyevich_sec_sli
-			on_add = { set_country_flag = BLR_Alyaksandr_Tsvikyevich_sec_sli_hired }
-			on_remove = { clr_country_flag = BLR_Alyaksandr_Tsvikyevich_sec_sli_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Alyaksandr_Tsvikyevich_sec_sli_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Alyaksandr_Tsvikyevich_sec_sli_hired }
+			}
 			traits = {
 				social_liberal
 				sec_compassionate_gentleman
@@ -592,8 +666,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Raman_Skirmunt_hog_mli_hired }
 			}
 			idea_token = BLR_Raman_Skirmunt_hog_mli
-			on_add = { set_country_flag = BLR_Raman_Skirmunt_hog_mli_hired }
-			on_remove = { clr_country_flag = BLR_Raman_Skirmunt_hog_mli_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Raman_Skirmunt_hog_mli_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Raman_Skirmunt_hog_mli_hired }
+			}
 			traits = {
 				market_liberal
 				hog_corporate_suit
@@ -614,8 +692,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Mitrofan_Dovnar_Zapolsky_for_mli_hired }
 			}
 			idea_token = BLR_Mitrofan_Dovnar_Zapolsky_for_mli
-			on_add = { set_country_flag = BLR_Mitrofan_Dovnar_Zapolsky_for_mli_hired }
-			on_remove = { clr_country_flag = BLR_Mitrofan_Dovnar_Zapolsky_for_mli_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Mitrofan_Dovnar_Zapolsky_for_mli_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Mitrofan_Dovnar_Zapolsky_for_mli_hired }
+			}
 			traits = {
 				market_liberal
 				for_biased_intellectual
@@ -636,8 +718,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Karol_Niezabytowski_eco_mli_hired }
 			}
 			idea_token = BLR_Karol_Niezabytowski_eco_mli
-			on_add = { set_country_flag = BLR_Karol_Niezabytowski_eco_mli_hired }
-			on_remove = { clr_country_flag = BLR_Karol_Niezabytowski_eco_mli_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Karol_Niezabytowski_eco_mli_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Karol_Niezabytowski_eco_mli_hired }
+			}
 			traits = {
 				market_liberal
 				eco_resource_industrialist
@@ -658,8 +744,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Jerzy_Osmolowski_sec_mli_hired }
 			}
 			idea_token = BLR_Jerzy_Osmolowski_sec_mli
-			on_add = { set_country_flag = BLR_Jerzy_Osmolowski_sec_mli_hired }
-			on_remove = { clr_country_flag = BLR_Jerzy_Osmolowski_sec_mli_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Jerzy_Osmolowski_sec_mli_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Jerzy_Osmolowski_sec_mli_hired }
+			}
 			traits = {
 				market_liberal
 				sec_efficient_sociopath
@@ -680,8 +770,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Jazep_Hermanovic_hog_sco_hired }
 			}
 			idea_token = BLR_Jazep_Hermanovic_hog_sco
-			on_add = { set_country_flag = BLR_Jazep_Hermanovic_hog_sco_hired }
-			on_remove = { clr_country_flag = BLR_Jazep_Hermanovic_hog_sco_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Jazep_Hermanovic_hog_sco_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Jazep_Hermanovic_hog_sco_hired }
+			}
 			traits = {
 				social_conservative
 				hog_happy_amateur
@@ -707,8 +801,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Adam_Stankievic_for_sco_hired }
 			}
 			idea_token = BLR_Adam_Stankievic_for_sco
-			on_add = { set_country_flag = BLR_Adam_Stankievic_for_sco_hired }
-			on_remove = { clr_country_flag = BLR_Adam_Stankievic_for_sco_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Adam_Stankievic_for_sco_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Adam_Stankievic_for_sco_hired }
+			}
 			traits = {
 				social_conservative
 				for_ideological_crusader
@@ -729,8 +827,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Alieh_Vasilkouski_for_sco_hired }
 			}
 			idea_token = BLR_Alieh_Vasilkouski_for_sco
-			on_add = { set_country_flag = BLR_Alieh_Vasilkouski_for_sco_hired }
-			on_remove = { clr_country_flag = BLR_Alieh_Vasilkouski_for_sco_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Alieh_Vasilkouski_for_sco_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Alieh_Vasilkouski_for_sco_hired }
+			}
 			traits = {
 				social_conservative
 				for_general_staffer
@@ -751,8 +853,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Adolf_Klimovic_eco_sco_hired }
 			}
 			idea_token = BLR_Adolf_Klimovic_eco_sco
-			on_add = { set_country_flag = BLR_Adolf_Klimovic_eco_sco_hired }
-			on_remove = { clr_country_flag = BLR_Adolf_Klimovic_eco_sco_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Adolf_Klimovic_eco_sco_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Adolf_Klimovic_eco_sco_hired }
+			}
 			traits = {
 				social_conservative
 				eco_mixed_economy
@@ -773,8 +879,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Jan_Pazniak_sec_sco_hired }
 			}
 			idea_token = BLR_Jan_Pazniak_sec_sco
-			on_add = { set_country_flag = BLR_Jan_Pazniak_sec_sco_hired }
-			on_remove = { clr_country_flag = BLR_Jan_Pazniak_sec_sco_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Jan_Pazniak_sec_sco_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Jan_Pazniak_sec_sco_hired }
+			}
 			traits = {
 				social_conservative
 				sec_crime_fighter
@@ -800,8 +910,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Vasil_Zacharka_hog_ade_hired }
 			}
 			idea_token = BLR_Vasil_Zacharka_hog_ade
-			on_add = { set_country_flag = BLR_Vasil_Zacharka_hog_ade_hired }
-			on_remove = { clr_country_flag = BLR_Vasil_Zacharka_hog_ade_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Vasil_Zacharka_hog_ade_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Vasil_Zacharka_hog_ade_hired }
+			}
 			traits = {
 				authoritarian_democrat
 				hog_silent_workhorse
@@ -822,8 +936,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Klaudzij_Sciapanavic_Duz_Duseuski_for_ade_hired }
 			}
 			idea_token = BLR_Klaudzij_Sciapanavic_Duz_Duseuski_for_ade
-			on_add = { set_country_flag = BLR_Klaudzij_Sciapanavic_Duz_Duseuski_for_ade_hired }
-			on_remove = { clr_country_flag = BLR_Klaudzij_Sciapanavic_Duz_Duseuski_for_ade_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Klaudzij_Sciapanavic_Duz_Duseuski_for_ade_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Klaudzij_Sciapanavic_Duz_Duseuski_for_ade_hired }
+			}
 			traits = {
 				authoritarian_democrat
 				for_general_staffer
@@ -844,8 +962,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Symon_Kandybovic_eco_ade_hired }
 			}
 			idea_token = BLR_Symon_Kandybovic_eco_ade
-			on_add = { set_country_flag = BLR_Symon_Kandybovic_eco_ade_hired }
-			on_remove = { clr_country_flag = BLR_Symon_Kandybovic_eco_ade_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Symon_Kandybovic_eco_ade_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Symon_Kandybovic_eco_ade_hired }
+			}
 			traits = {
 				authoritarian_democrat
 				eco_construction_magnate
@@ -866,8 +988,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Anton_Sokal_Kutylouski_sec_ade_hired }
 			}
 			idea_token = BLR_Anton_Sokal_Kutylouski_sec_ade
-			on_add = { set_country_flag = BLR_Anton_Sokal_Kutylouski_sec_ade_hired }
-			on_remove = { clr_country_flag = BLR_Anton_Sokal_Kutylouski_sec_ade_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Anton_Sokal_Kutylouski_sec_ade_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Anton_Sokal_Kutylouski_sec_ade_hired }
+			}
 			traits = {
 				authoritarian_democrat
 				sec_secret_police_chief
@@ -888,8 +1014,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Panteleimon_Rozhnovsky_hog_pau_hired }
 			}
 			idea_token = BLR_Panteleimon_Rozhnovsky_hog_pau
-			on_add = { set_country_flag = BLR_Panteleimon_Rozhnovsky_hog_pau_hired }
-			on_remove = { clr_country_flag = BLR_Panteleimon_Rozhnovsky_hog_pau_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Panteleimon_Rozhnovsky_hog_pau_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Panteleimon_Rozhnovsky_hog_pau_hired }
+			}
 			traits = {
 				paternal_autocrat
 				hog_backroom_backstabber
@@ -910,8 +1040,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Ivan_Jermachenka_hog_pau_hired }
 			}
 			idea_token = BLR_Ivan_Jermachenka_hog_pau
-			on_add = { set_country_flag = BLR_Ivan_Jermachenka_hog_pau_hired }
-			on_remove = { clr_country_flag = BLR_Ivan_Jermachenka_hog_pau_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Ivan_Jermachenka_hog_pau_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Ivan_Jermachenka_hog_pau_hired }
+			}
 			traits = {
 				paternal_autocrat
 				hog_respected_war_hero
@@ -924,8 +1058,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Ivan_Jermachenka_for_pau_hired }
 			}
 			idea_token = BLR_Ivan_Jermachenka_for_pau
-			on_add = { set_country_flag = BLR_Ivan_Jermachenka_for_pau_hired }
-			on_remove = { clr_country_flag = BLR_Ivan_Jermachenka_for_pau_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Ivan_Jermachenka_for_pau_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Ivan_Jermachenka_for_pau_hired }
+			}
 			traits = {
 				paternal_autocrat
 				for_great_compromiser
@@ -946,8 +1084,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Anton_Adamovic_eco_pau_hired }
 			}
 			idea_token = BLR_Anton_Adamovic_eco_pau
-			on_add = { set_country_flag = BLR_Anton_Adamovic_eco_pau_hired }
-			on_remove = { clr_country_flag = BLR_Anton_Adamovic_eco_pau_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Anton_Adamovic_eco_pau_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Anton_Adamovic_eco_pau_hired }
+			}
 			traits = {
 				paternal_autocrat
 				eco_infantry_proponent
@@ -1033,8 +1175,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Uladzislau_Kazlouski_for_npo_hired }
 			}
 			idea_token = BLR_Uladzislau_Kazlouski_for_npo
-			on_add = { set_country_flag = BLR_Uladzislau_Kazlouski_for_npo_hired }
-			on_remove = { clr_country_flag = BLR_Uladzislau_Kazlouski_for_npo_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Uladzislau_Kazlouski_for_npo_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Uladzislau_Kazlouski_for_npo_hired }
+			}
 			traits = {
 				national_populist
 				for_biased_intellectual
@@ -1055,8 +1201,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Janka_Carapuk_for_npo_hired }
 			}
 			idea_token = BLR_Janka_Carapuk_for_npo
-			on_add = { set_country_flag = BLR_Janka_Carapuk_for_npo_hired }
-			on_remove = { clr_country_flag = BLR_Janka_Carapuk_for_npo_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Janka_Carapuk_for_npo_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Janka_Carapuk_for_npo_hired }
+			}
 			traits = {
 				national_populist
 				for_ideological_crusader
@@ -1077,8 +1227,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Mikalaj_Skialionak_eco_npo_hired }
 			}
 			idea_token = BLR_Mikalaj_Skialionak_eco_npo
-			on_add = { set_country_flag = BLR_Mikalaj_Skialionak_eco_npo_hired }
-			on_remove = { clr_country_flag = BLR_Mikalaj_Skialionak_eco_npo_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Mikalaj_Skialionak_eco_npo_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Mikalaj_Skialionak_eco_npo_hired }
+			}
 			traits = {
 				national_populist
 				eco_laissez_faire_capitalist
@@ -1099,8 +1253,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Juryj_Sabalieuski_sec_npo_hired }
 			}
 			idea_token = BLR_Juryj_Sabalieuski_sec_npo
-			on_add = { set_country_flag = BLR_Juryj_Sabalieuski_sec_npo_hired }
-			on_remove = { clr_country_flag = BLR_Juryj_Sabalieuski_sec_npo_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Juryj_Sabalieuski_sec_npo_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Juryj_Sabalieuski_sec_npo_hired }
+			}
 			traits = {
 				national_populist
 				sec_efficient_sociopath
@@ -1122,8 +1280,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Radasłaŭ_Astroŭski_hog_val_hired }
 			}
 			idea_token = BLR_Radasłaŭ_Astroŭski_hog_val
-			on_add = { set_country_flag = BLR_Radasłaŭ_Astroŭski_hog_val_hired }
-			on_remove = { clr_country_flag = BLR_Radasłaŭ_Astroŭski_hog_val_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Radasłaŭ_Astroŭski_hog_val_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Radasłaŭ_Astroŭski_hog_val_hired }
+			}
 			traits = {
 				valkist
 				hog_determined_populist
@@ -1144,8 +1306,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Fabijan_Ivanovich_Akintschyz_hog_val_hired }
 			}
 			idea_token = BLR_Fabijan_Ivanovich_Akintschyz_hog_val
-			on_add = { set_country_flag = BLR_Fabijan_Ivanovich_Akintschyz_hog_val_hired }
-			on_remove = { clr_country_flag = BLR_Fabijan_Ivanovich_Akintschyz_hog_val_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Fabijan_Ivanovich_Akintschyz_hog_val_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Fabijan_Ivanovich_Akintschyz_hog_val_hired }
+			}
 			traits = {
 				valkist
 				hog_accomplished_diplomat
@@ -1158,8 +1324,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Fabijan_Ivanovich_Akintschyz_for_val_hired }
 			}
 			idea_token = BLR_Fabijan_Ivanovich_Akintschyz_for_val
-			on_add = { set_country_flag = BLR_Fabijan_Ivanovich_Akintschyz_for_val_hired }
-			on_remove = { clr_country_flag = BLR_Fabijan_Ivanovich_Akintschyz_for_val_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Fabijan_Ivanovich_Akintschyz_for_val_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Fabijan_Ivanovich_Akintschyz_for_val_hired }
+			}
 			traits = {
 				valkist
 				for_biased_intellectual
@@ -1180,8 +1350,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Vladislav_Wenceslaus_Kozlowski_for_val_hired }
 			}
 			idea_token = BLR_Vladislav_Wenceslaus_Kozlowski_for_val
-			on_add = { set_country_flag = BLR_Vladislav_Wenceslaus_Kozlowski_for_val_hired }
-			on_remove = { clr_country_flag = BLR_Vladislav_Wenceslaus_Kozlowski_for_val_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Vladislav_Wenceslaus_Kozlowski_for_val_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Vladislav_Wenceslaus_Kozlowski_for_val_hired }
+			}
 			traits = {
 				valkist
 				for_foreign_sympathizer
@@ -1202,8 +1376,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Leon_Ivanovich_Dubeykovsky_eco_val_hired }
 			}
 			idea_token = BLR_Leon_Ivanovich_Dubeykovsky_eco_val
-			on_add = { set_country_flag = BLR_Leon_Ivanovich_Dubeykovsky_eco_val_hired }
-			on_remove = { clr_country_flag = BLR_Leon_Ivanovich_Dubeykovsky_eco_val_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Leon_Ivanovich_Dubeykovsky_eco_val_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Leon_Ivanovich_Dubeykovsky_eco_val_hired }
+			}
 			traits = {
 				valkist
 				eco_planned_economy_proponent
@@ -1237,8 +1415,12 @@ characters = {
 				hidden_trigger = { has_country_flag = BLR_Francisak_Kusal_sec_pau_hired }
 			}
 			idea_token = BLR_Francisak_Kusal_sec_pau
-			on_add = { set_country_flag = BLR_Francisak_Kusal_sec_pau_hired }
-			on_remove = { clr_country_flag = BLR_Francisak_Kusal_sec_pau_hired }
+			on_add = {
+				ROOT = { set_country_flag = BLR_Francisak_Kusal_sec_pau_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = BLR_Francisak_Kusal_sec_pau_hired }
+			}
 			traits = {
 				paternal_autocrat
 				sec_efficient_sociopath
