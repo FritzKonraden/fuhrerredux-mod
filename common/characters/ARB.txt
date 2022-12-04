@@ -776,30 +776,6 @@ characters = {
 			}
 		}
 	}
-  ARB_Ronald_Forbes_Adam = {
-    name = "Ronald Forbes Adam"
-    portraits = {
-      army = {
-        large = "gfx/leaders/ARB/Portrait_ARB_Ronald_Forbes_Adam.png"
-      }
-    }
-  }
-  ARB_Clement_Armitage = {
-    name = "Clement Armitage"
-    portraits = {
-      army = {
-        large = "gfx/leaders/ARB/Portrait_ARB_Clement_Armitage.png"
-      }
-    }
-  }
-  ARB_Herbert_Lumsdon = {
-    name = "Herbert Lumbsdon"
-    portraits = {
-      army = {
-        large = "gfx/leaders/ARB/Portrait_ARB_Herbert_Lumsdon.png"
-      }
-    }
-  }
   ARB_Nuri_al_Said = {
     name = "Nuri al-Said"
     portraits = {

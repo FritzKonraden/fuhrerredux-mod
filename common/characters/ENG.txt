@@ -2341,4 +2341,64 @@ characters = {
 			logistics_skill = 5
 		}
 	}
+	ENG_Ronald_Forbes_Adam = {
+    name = "Ronald Forbes Adam"
+    portraits = {
+      army = {
+        large = "gfx/leaders/ENG/Portrait_ENG_Ronald_Forbes_Adam.png"
+      }
+    }
+		corps_commander = {
+			traits = {
+				organizer
+				thorough_planner
+				infantry_leader
+				infantry_expert
+				old_guard
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+		}
+  }
+  ENG_Clement_Armitage = {
+    name = "Clement Armitage"
+    portraits = {
+      army = {
+        large = "gfx/leaders/ARB/Portrait_ENG_Clement_Armitage.png"
+      }
+    }
+		corps_commander = {
+			traits = {
+				infantry_leader
+				artillery_officer
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+  }
+  ENG_Herbert_Lumsdon = {
+    name = "Herbert Lumbsdon"
+    portraits = {
+      army = {
+        large = "gfx/leaders/ENG/Portrait_ENG_Herbert_Lumsdon.png"
+      }
+    }
+		corps_commander = {
+			traits = {
+				cavalry_officer
+				artillery_officer
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+  }
 }
