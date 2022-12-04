@@ -1031,6 +1031,7 @@ annex.2021.a: "Form the state of Mauritania."
 annexation_NGA_CONQ: "The Fate of Nigeria"
 annexation_NGA_CONQ_DESC: "The vast and rich colony of Nigeria is now under our control and with it comes the burden of having to administer it, could we delegate this task to an extent to a local puppet state?"
 annex.2022.a: "Form the state of Nigeria."
+annex.2022.b: "Transfer the lands to [NFA.GetName]"
 
 annexation_NGR_CONQ: "The Fate of Niger"
 annexation_NGR_CONQ_DESC: "The region of Niger has now been brought under our control. The former colonial administration fled the colony early and left us with an ungoverned territory occupied. Should we continue this occupation or should we form a new government?"

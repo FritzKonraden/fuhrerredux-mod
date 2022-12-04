@@ -74,12 +74,5 @@ country_event = {
 	option = {
 		name = "Meaningless lands only pursued by imperialist nations!"		# - Decisions will be activated for nations when UoB has that country flag
 		UOB = { country_event = { id = uob.1 hours = 1 } }
-		hidden_effect = {
-			set_country_flag = ded_empire
-			add_ideas = ENG_Clement_Attlee_hog
-			add_ideas = ENG_Herbert_Morrison1_for
-			add_ideas = ENG_Oswald_Mosley1_eco
-			add_ideas = ENG_William_Gallacher_sec
-		}
 	}
 }

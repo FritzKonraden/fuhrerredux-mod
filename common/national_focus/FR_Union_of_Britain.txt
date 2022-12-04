@@ -24,7 +24,7 @@ focus_tree = {
 	
 	focus = {	
 		id = UOB_moderate_app
-		icon = GFX_goal_tfv_burn_the_royal_portraits
+		icon = GFX_goal_ideology_libertarian_socialism
 		available = {
 			always = no
 			custom_trigger_tooltip = { tooltip = unlocked_later  }
@@ -162,7 +162,7 @@ focus_tree = {
 	
 	focus = {	
 		id = UOB_liberty_britons
-		icon = GFX_goal_continuous_boost_freedom
+		icon = GFX_goal_generic_enforce_labor_regulation
 		prerequisite = { focus = UOB_socialist_freedom }
 		prerequisite = { focus = UOB_marches_on }
 		available = {
@@ -187,7 +187,7 @@ focus_tree = {
 	
 	focus = {	
 		id = UOB_socialist_nation
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_ideology_collectivist
 		available = {
 			always = no
 			custom_trigger_tooltip = { tooltip = unlocked_later }
@@ -360,7 +360,7 @@ focus_tree = {
 	
 	focus = {	
 		id = UOB_fires_revo
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_ideology_vanguardist
 		available = {
 			always = no
 			custom_trigger_tooltip = { tooltip = unlocked_later }
@@ -637,7 +637,7 @@ focus_tree = {
 	
 	focus = {	
 		id = UOB_spread_revo
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_focus_ger_great_red_menace
 		prerequisite = { 
 			focus = UOB_liberty_britons
 			focus = UOB_new_britain
@@ -660,7 +660,7 @@ focus_tree = {
 	
 	focus = {	
 		id = UOB_join_three
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { 
 			focus = UOB_liberty_britons
 			focus = UOB_new_britain
@@ -709,7 +709,7 @@ focus_tree = {
 	
 	focus = {	
 		id = UOB_bring_france
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_attack_france
 		prerequisite = { 
 			focus = UOB_spread_revo
 			focus = UOB_join_three
@@ -799,7 +799,7 @@ focus_tree = {
 	
 	focus = {	
 		id = UOB_crush_valkism
-		icon = GFX_focus_generic_anti_fascist_diplomacy
+		icon = GFX_goal_generic_attack_german_reich
 		prerequisite = { 
 			focus = UOB_spread_revo
 			focus = UOB_join_three
@@ -821,7 +821,7 @@ focus_tree = {
 	
 	focus = {	
 		id = UOB_secure_nsea
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_goal_generic_attack_norway
 		prerequisite = { 
 			focus = UOB_spread_revo
 			focus = UOB_join_three
@@ -866,7 +866,7 @@ focus_tree = {
 	
 	focus = {	
 		id = UOB_union_army
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_goal_UOB_army
 		prerequisite = { focus = UOB_begin_purge }
 		available = {
 		}
@@ -947,7 +947,7 @@ focus_tree = {
 	
 	focus = {	
 		id = UOB_revo_guard
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_UOB_red
 		prerequisite = { focus = UOB_strat_plan }
 		prerequisite = { 
 			focus = UOB_modern_army
@@ -1007,7 +1007,7 @@ focus_tree = {
 	
 	focus = {	
 		id = UOB_union_air
-		icon = GFX_goal_generic_build_airforce
+		icon = GFX_goal_UOB_airforce
 		prerequisite = { focus = UOB_begin_purge }
 		available = {
 		}
@@ -1173,7 +1173,7 @@ focus_tree = {
 	
 	focus = {	
 		id = UOB_union_navy
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_goal_UOB_navy
 		prerequisite = { focus = UOB_begin_purge }
 		available = {
 		}

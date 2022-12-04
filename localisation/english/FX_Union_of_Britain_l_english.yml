@@ -10,9 +10,11 @@ UOB_collectivist_DEF: "Union of Britain"
 UOB_libertarian_socialist: "Union of Britain"
 UOB_libertarian_socialist_ADJ: "British"
 UOB_libertarian_socialist_DEF: "Union of Britain"
+UOB: "British Republic"
+UOB_ADJ: "British"
+UOB_DEF: "The Great British Republic"
 
 #### Political Parties ####
-
 UOB_internationalist_party: "WIL"
 UOB_internationalist_party_long: "Worker's International League"
 UOB_collectivist_party: "BSP"
@@ -36,33 +38,7 @@ UOB_national_populist_party_long: "Imperial Federation League"
 UOB_valkist_party: "PSPB"
 UOB_valkist_party_long: "People's Socialist Party of Britannia"
 
-#### Political Ministers ####
-
-UOB_Clement_Attlee_hog: "Clement Attlee, Prime Minister"
-UOB_Arthur_MacManus_hog: "Arthur MacManus, Prime Minister"
-UOB_Jock_Haston_hog: "Jock Haston, Prime Minister"
-
-UOB_Herbert_Morrison1_for: "Herbert Morrison, Foreign Secretary"
-UOB_James_Maxton_for: "James Maxton, Foreign Secretary"
-UOB_William_Rust_for: "William Rust, Foreign Secretary"
-
-UOB_Oswald_Mosley1_eco: "Oswald Mosley, Chancellor of the Exchequer"
-UOB_Aneurin_Bevan_eco: "Aneurin Bevan, Chancellor of the Exchequer"
-UOB_Wilfred_Risdon_eco: "Wilfred Risdon, Chancellor of the Exchequer"
-
-UOB_William_Gallacher_sec: "William Gallacher, Home Secretary"
-UOB_Stafford_Cripps_sec: "Stafford Cripps, Home Secretary"
-UOB_Clifford_Allen_sec: "Clifford Allen, Home Secretary"
-
-UOB_Fenner_Brockway_int: "Fenner Brockway, War Secretary"
-UOB_Rhys_Davies_int: "Rhys Davies, War Secretary"
-UOB_Arthur_Horner_int: "Arthur Horner, War Secretary"
-
-#####Relations Modifiers#####
-
-
 #####Ideas#####
-
 UOB_revo_recov: "Recovering from Revolution"
 UOB_eco_rev: "Economic Revival"
 UOB_eco_rev2: "Economic Revival"
@@ -76,6 +52,7 @@ UOB_eco_sr: "Economic Self-Reliance"
 UOB_bnu: "British National Union"
 UOB_mob_work: "Mobilised the Workers"
 UOB_soc_wpol: "Socialist Work Policies"
+UOB_sprevo: "The Red Torch"
 
 #####Tooltips#####
 
@@ -84,10 +61,9 @@ UOB_soc_wpol: "Socialist Work Policies"
 ## - Politics
 
 # - ILP
-
 UOB_moderate_app: "A Moderate Approach"
 UOB_eco_revival: "Economic Revival"
-UOB_UOB_lives: "England Lives!"
+UOB_eng_lives: "England Lives!"
 UOB_marches_on: "And Marches On!"
 UOB_diss_aristo: "Dissolve the Aristocracy"
 UOB_mob_union: "Mobilise the Unions"
@@ -95,7 +71,6 @@ UOB_socialist_freedom: "Socialist Freedom"
 UOB_liberty_britons: "Liberty of Britons"
 
 # - BSP
-
 UOB_socialist_nation: "Socialism in One Nation"
 UOB_no_gods: "No Gods..."
 UOB_no_masters: "...No Masters"
@@ -106,7 +81,6 @@ UOB_emergency_measures: "Emergency Measures"
 UOB_new_britain: "A New Britain"
 
 # - CPGB
-
 UOB_fires_revo: "The Fires of Revolution"
 UOB_establish_bnu: "Establish the BNU"
 UOB_mob_workers: "Mobilise the Workers"
@@ -118,7 +92,6 @@ UOB_war_prep: "War Preparations"
 UOB_perpetual_revo: "Perpetual Revolution"
 
 ## - Foreign
-
 UOB_spread_revo: "Spread the Revolution"
 UOB_join_three: "Join the Third International"
 UOB_reclaim_ireland: "Reclaiming Ireland"
@@ -130,11 +103,9 @@ UOB_crush_valkism: "Crush the Valkists!"
 UOB_secure_nsea: "Securing the North Sea"
 
 ## - Military
-
 UOB_begin_purge: "Begin the Purge"
 
 # - Army
-
 UOB_union_army: "Union Army"
 UOB_shells_soldiers: "Shells, not Soldiers"
 UOB_modern_army: "A Modern Army"
@@ -144,7 +115,6 @@ UOB_defence_britain: "In Defence of Britain"
 UOB_fist_union: "Fist of the Union"
 
 # - Air Force
-
 UOB_union_air: "Union Air Force"
 UOB_inter_force: "An Interception Force"
 UOB_bomb_defence: "Bomber Defence"
@@ -154,7 +124,6 @@ UOB_brit_bomb: "British Bombers"
 UOB_indust_target: "Industrial Targets"
 
 # - Navy
-
 UOB_union_navy: "Union Navy"
 UOB_our_shield: "Our Shield"
 UOB_defend_coast: "Defending our Coast"
@@ -163,6 +132,3 @@ UOB_land_force: "Landing Force"
 UOB_nav_trad: "Encourage Naval Tradition"
 UOB_our_sword: "Our Sword"
 UOB_asw_effort: "Anti-Submarine Effort"
-
-
-##### Events #####

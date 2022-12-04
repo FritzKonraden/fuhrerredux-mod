@@ -1404,6 +1404,11 @@ focus_tree = {
 				has_capitulated = no
 			}
 		}
+		bypass = {
+			RHI = {
+				is_subject = no
+			}
+		}
 		ai_will_do = {
 			factor = 2000
 		}
@@ -4568,7 +4573,7 @@ focus_tree = {
 	# Alone We are Weak
 	focus = {
 		id = fra_alone_weak
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_goal_FRA_Cut_Off_Capitalists
 		x = 1
 		y = 1
 		cost = 5
