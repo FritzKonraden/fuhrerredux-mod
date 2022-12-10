@@ -1,5 +1,17 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_goal_UOB_airforce"
+		texturefile = "gfx/interface/goals/UOB_airforce.png"
+	}
+	spriteType = {
+		name = "GFX_goal_UOB_army"
+		texturefile = "gfx/interface/goals/UOB_army.png"
+	}
+	spriteType = {
+		name = "GFX_goal_UOB_navy"
+		texturefile = "gfx/interface/goals/UOB_navy.png"
+	}
+	spriteType = {
 		name = "GFX_goal_RUS_white_legacy"
 		texturefile = "gfx/interface/goals/RUS_white_legacy.png"
 	}

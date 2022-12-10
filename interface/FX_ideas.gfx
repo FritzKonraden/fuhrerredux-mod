@@ -156,12 +156,16 @@ spriteTypes = {
 	  texturefile = "gfx/interface/ideas/KNE/KNE_military_refugees.png"
   }
 	spriteType = {
-      name = "GFX_idea_advisors_belarus"
-      texturefile = "gfx/interface/ideas/ideas/advisors_belarus.png"
+    name = "GFX_idea_advisors_mexico"
+    texturefile = "gfx/interface/ideas/ideas/advisors_mexico.png"
+  }
+	spriteType = {
+    name = "GFX_idea_advisors_belarus"
+    texturefile = "gfx/interface/ideas/ideas/advisors_belarus.png"
   }
   spriteType = {
-      name = "GFX_idea_advisors_italy"
-      texturefile = "gfx/interface/ideas/ideas/advisors_italy.png"
+    name = "GFX_idea_advisors_italy"
+    texturefile = "gfx/interface/ideas/ideas/advisors_italy.png"
   }
   spriteType = {
 		name = "GFX_idea_advisors_germany_democratic"

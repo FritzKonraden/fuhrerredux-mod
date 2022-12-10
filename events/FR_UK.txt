@@ -2307,18 +2307,6 @@ country_event = {							##### - TO DO: ADD MORE EVENTS FOR BREAK-UP OF THE EMPIR
 	
 	immediate = {
 		hidden_effect = {
-			EGY = { 
-				transfer_state = 446
-				transfer_state = 447
-				transfer_state = 452
-				transfer_state = 453
-				transfer_state = 457
-				transfer_state = 456
-				transfer_state = 551
-				transfer_state = 552
-				transfer_state = 745
-				transfer_state = 549
-			}
 			USA = {
 				transfer_state = 690
 				transfer_state = 693
@@ -2349,8 +2337,7 @@ country_event = {							##### - TO DO: ADD MORE EVENTS FOR BREAK-UP OF THE EMPIR
 				transfer_state = 636
 				transfer_state = 643
 				transfer_state = 639
-				transfer_state = 270
-				transfer_state = 771
+				transfer_state = 270 
 				transfer_state = 712
 				transfer_state = 710
 			}
@@ -2373,22 +2360,27 @@ country_event = {							##### - TO DO: ADD MORE EVENTS FOR BREAK-UP OF THE EMPIR
 				transfer_state = 656
 			}
 			SIA = {
-				transfer_state = 805
-				transfer_state = 336
 				transfer_state = 821
 				transfer_state = 820
-				transfer_state = 822
-				transfer_state = 823
 				transfer_state = 819
-				transfer_state = 640
-				transfer_state = 288
 				transfer_state = 733
+			}
+			BRM = {
+				transfer_state = 288
+				transfer_state = 640
+				transfer_state = 805
+				transfer_state = 812
+				transfer_state = 1007
 			}
 			BEL = {
 				transfer_state = 548
 			}
 			JAP = {
-				transfer_state = 333
+				transfer_state = 819
+				transfer_state = 336
+				transfer_state = 820
+				transfer_state = 821
+				transfer_state = 944
 			}
 			CHI = {
 				transfer_state = 326
@@ -2407,6 +2399,9 @@ country_event = {							##### - TO DO: ADD MORE EVENTS FOR BREAK-UP OF THE EMPIR
 				transfer_state = 707
 				transfer_state = 701
 				transfer_state = 709
+				transfer_state = 994
+				transfer_state = 957
+				transfer_state = 965
 			}
 			ITA = {
 				transfer_state = 116
@@ -2414,6 +2409,7 @@ country_event = {							##### - TO DO: ADD MORE EVENTS FOR BREAK-UP OF THE EMPIR
 				transfer_state = 547
 				transfer_state = 546
 				transfer_state = 769
+				transfer_state = 933
 			}
 			ETH = {
 				transfer_state = 269
@@ -2421,9 +2417,6 @@ country_event = {							##### - TO DO: ADD MORE EVENTS FOR BREAK-UP OF THE EMPIR
 			SPR = {
 				transfer_state = 118
 			}
-			#ANH = {
-			#	transfer_state = 894
-			#}
 		}
 	}
 	

@@ -407,7 +407,7 @@ if = {
 		}
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { FRA FRP }
+		nationalities = { FRA }
 	}
 	create_operative_leader = {
 		name = "Eugene Deloncle"
@@ -418,7 +418,7 @@ if = {
 		}
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { ENG EGL }
+		nationalities = { FRA }
 	}
 	create_operative_leader = {
 		name = "George Groussard"
@@ -428,6 +428,6 @@ if = {
 		}
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { ENG EGL }
+		nationalities = { FRA }
 	}
 }
