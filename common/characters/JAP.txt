@@ -107,6 +107,30 @@ characters = {
 			traits = { }
 		}
 	}
+	JAP_Shimazu_Tadashige = {
+		name = "Shimazu Tadashige"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/Portrait_JAP_Shimazu_Tadashige.png"
+			}
+		}
+	}
+	JAP_Toshinari_Maeda = {
+		name = "Toshinari Maeda"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/Portrait_JAP_Toshinari_Maeda.png"
+			}
+		}
+	}
+	JAP_Kacho_Hironobu = {
+		name = "Kacho Hironobu"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/Portrait_JAP_Kacho_Hironobu.png"
+			}
+		}
+	}
 	JAP_Oyama_Ikuo = {
 		name = "Ōyama Ikuo"
 		portraits = {

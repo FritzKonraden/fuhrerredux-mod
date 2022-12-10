@@ -254,7 +254,7 @@ shared_focus = {
 		focus = JAP_supremacy_of_ancient
 		focus = JAP_supremacy_of_new_world
 	}
-	cost = 5
+	cost = 1
 	completion_reward = {
 	
 	}
@@ -268,7 +268,7 @@ shared_focus = {
 	prerequisite = { 
 		focus = JAP_demand_fengtian_subjugation
 	}
-	cost = 5
+	cost = 1
 	completion_reward = {
 	
 	}
@@ -282,7 +282,7 @@ shared_focus = {
 	prerequisite = { 
 		focus = JAP_demand_fengtian_subjugation
 	}
-	cost = 5
+	cost = 1
 	completion_reward = {
 	
 	}
@@ -296,7 +296,7 @@ shared_focus = {
 	prerequisite = { 
 		focus = JAP_demand_fengtian_subjugation
 	}
-	cost = 5
+	cost = 1
 	completion_reward = {
 	
 	}
@@ -310,7 +310,7 @@ shared_focus = {
 	prerequisite = { 
 		focus = JAP_demand_fengtian_subjugation
 	}
-	cost = 5
+	cost = 1
 	completion_reward = {
 	
 	}
@@ -324,7 +324,7 @@ shared_focus = {
 	prerequisite = { 
 		focus = JAP_demand_fengtian_subjugation
 	}
-	cost = 5
+	cost = 1
 	completion_reward = {
 	
 	}
@@ -338,7 +338,7 @@ shared_focus = {
 	prerequisite = { 
 		focus = JAP_demand_fengtian_subjugation
 	}
-	cost = 5
+	cost = 1
 	completion_reward = {
 	
 	}
@@ -352,7 +352,7 @@ shared_focus = {
 	prerequisite = { 
 		focus = JAP_demand_fengtian_subjugation
 	}
-	cost = 5
+	cost = 1
 	completion_reward = {
 	
 	}
@@ -369,7 +369,7 @@ shared_focus = {
 	prerequisite = { focus = JAP_strike_chongqing }
 	prerequisite = { focus = JAP_seihoku_shinsen }
 	prerequisite = { focus = JAP_destroy_turks }
-	prerequisite = { focus = JAP_our_fruitation_from_sponsoring_zhili}
+	prerequisite = { focus = JAP_our_fruitation_from_sponsoring_zhili }
 	cost = 5
 	completion_reward = {
 	

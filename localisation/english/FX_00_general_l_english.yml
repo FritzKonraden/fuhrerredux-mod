@@ -144,10 +144,12 @@ pat_duumvirism_subtype: "Duumvirism"
 pat_duumvirism_subtype_desc: "§Y(Duumvirism)§!\n\n"
 samurai_dictatorship_subtype: "Samurai Dictatorship"
 samurai_dictatorship_subtype_desc: "§Y(Samurai Dictatorship)§!\n\n"
-monarchist_socialism_subtype: "Monarchist Socialism"
-monarchist_socialism_subtype_desc: "§Y(Monarchist Socialism)§!\n\n"
+monarchist_socialism_subtype: "Monarcho-Socialism"
+monarchist_socialism_subtype_desc: "§Y(Monarcho-Socialism)§!\n\n"
 utopian_libsoc_subtype: "Utopian Socialism"
 utopian_libsoc_subtype_desc: "§Y(Utopian Socialism)§!\n\n"
+anarcho_syndicalism_subtype: "Anarcho-Syndicalism"
+anarcho_syndicalism_subtype_desc: "§Y(Anarcho-Syndicalism)§!\n\n"
 
 
 ### Triggers

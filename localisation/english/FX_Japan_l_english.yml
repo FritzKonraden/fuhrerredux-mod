@@ -40,34 +40,41 @@ JAP_tohokai_national_populist_DEF: "Shikkenate of Japan"
 JAP_tohokai_pan_asianism: "Kyokutō Eien Rengō"
 JAP_tohokai_pan_asianism_DEF: "Far Eastern Eternal Union"
 JAP_tohokai_pan_asianism_ADJ: "Far Easterner"
+
 JAP_Shogunate: "Tokugawa Shogunate"
 JAP_Shogunate_DEF: "Tokugawa Shogunate"
 JAP_Shogunate_Kuniyuki: "Shogunate of Japan" 
 JAP_Shogunate_Kuniyuki_DEF: "Shogunate of Japan"
+
 JAP_Kumazawa_cosmetic: "Japanese Imperial State"
 JAP_Kumazawa_cosmetic_DEF: "Japanese Imperial State"
-JAP_Suiheisha_libertarian_socialist: "Democratic Confederation of Japan"
-JAP_Suiheisha_libertarian_socialist_DEF: "Democratic Confederation of Japan"
-JAP_socialist_league_libertarian_socialist: "Democratic Confederation of Japan"
-JAP_socialist_league_libertarian_socialist_DEF: "Democratic Confederation of Japan"
+
+JAP_MATSUMOTO_libertarian_socialist: "Democratic Confederation of Japan"
+JAP_MATSUMOTO_libertarian_socialist_DEF: "Democratic Confederation of Japan"
+
 JAP_Republican_libertarian_socialist: "Socialist Republic of Japan"
 JAP_Republican_libertarian_socialist_DEF: "Socialist Republic of Japan"
+
 JAP_Republican_collectivist: "Japanese Socialist Council Republic"
 JAP_Republican_collectivist_DEF: "Japanese Socialist Council Republic"
+
 JAP_Republican_vanguardist: "Japanese Revolutionary Communes"
 JAP_Republican_vanguardist_DEF: "Federation of Japanese Revolutionary Communes"
-JAP_Red_Empire: "Dai Nippon Kakumei Teikoku"
-JAP_Red_Empire_DEF: "Greater Revolutionary Japanese Empire"
-JAP_Social_Fem: "Federal Equality Republic of Japan"
-JAP_Social_Fem_DEF: "Federal Equality Republic of Japan"
 
-JPR: "Nagasaki Provisional Government"
-JPR_DEF: "Nagasaki Provisional Government"
-JPR_ADJ: "Japanese Rebels"
-JPR_paternal_autocrat_party: "Nagasaki Junta"
-JPR_paternal_autocrat_party_long: "Nagasaki Junta"
-JPR_national_populist_party: "Nagasaki Junta"
-JPR_national_populist_party_long: "Nagasaki Junta"
+JAP_KINGORO: "Dai Nippon Kakumei Teikoku"
+JAP_KINGORO_DEF: "Greater Revolutionary Japanese Empire"
+
+JAP_NOSAKA: "Imperial Union of Revolutionary Japan"
+JAP_NOSAKA_DEF: "Imperial Union of Revolutionary Japan"
+
+JAP_KIKUE: "Democratic Socialist Commune of Japan"
+JAP_KIKUE_DEF: "Democratic Socialist Commune of Japan"
+
+JAP_Republican_Fem: "Federal Equality Republic of Japan"
+JAP_Republican_Fem_DEF: "Federal Equality Republic of Japan"
+
+JAP_KANSON: "Federated Autonomous Communes of Japan"
+JAP_KANSON_DEF: "Federated Autonomous Communes of Japan"
 
 #### Political Parties ####
 JAP_vanguardist_party: "Shakai Zen'ei-ha" #社会前衛派
@@ -122,6 +129,8 @@ JAP_Red_Empire_vanguardist_party: "Shin Sakurakai"
 JAP_Red_Empire_vanguardist_party_long: "Shin Sakurakai (New Sakura Society)"
 JAP_Social_Fem_libertarian_socialist_party: "Jiritsu-ha"
 JAP_Social_Fem_libertarian_socialist_party_long: "Kyōsan-tō - Jiritsu-ha (Japanese Communist Party - Autonomist)"
+JAP_Republican_Kanson_party: "Sōsetsu-ha"
+JAP_Republican_Kanson_party_long: "Kyōsan-tō - Sōsetsu-ha (Japanese Communist Party - Founder Faction)"
 
 ###Daijo-kan Modifier###
 JAP_daijo_kan_modifier: "Chancellor of State"

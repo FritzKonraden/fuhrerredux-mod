@@ -50,8 +50,7 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.15
 				political_power_factor = 0.15
-				stability_weekly = 0.1
-				political_power_factor = 0.5
+				stability_weekly = 0.07
 				army_core_defence_factor = 0.2
 				opinion_gain_monthly_factor = 0.1
 				resistance_damage_to_garrison = -0.05
@@ -302,7 +301,8 @@ ideas = {
 			#picture = generic_manpower_bonus
 			allowed = { original_tag = JAP }
 			modifier = {
-				
+				experience_gain_army = 0.05
+				promote_cost_factor = -0.1
 			}
 		}
 		JAP_seperation_command_2 = {
@@ -310,7 +310,8 @@ ideas = {
 			#picture = generic_manpower_bonus
 			allowed = { original_tag = JAP }
 			modifier = {
-				
+				experience_gain_army = 0.1
+				promote_cost_factor = -0.2
 			}
 		}
 		JAP_intelligence_service_shogun = {
@@ -318,7 +319,8 @@ ideas = {
 			#picture = generic_manpower_bonus
 			allowed = { original_tag = JAP }
 			modifier = {
-				
+				operative_slot = 2
+				decryption_power_factor = 0.1
 			}
 		}
 		JAP_plant_the_shogunate_loyalty = {
@@ -326,7 +328,10 @@ ideas = {
 			#picture = generic_manpower_bonus
 			allowed = { original_tag = JAP }
 			modifier = {
-				
+				paternal_autocrat_drift = 0.02
+				send_volunteer_size = 2
+				non_core_manpower = 0.1
+				operative_death_on_capture_chance = 0.2
 			}
 		}
 		JAP_to_our_nostalgic_period_idea = {
@@ -334,7 +339,21 @@ ideas = {
 			#picture = generic_manpower_bonus
 			allowed = { original_tag = JAP }
 			modifier = {
-				
+				stability_factor = 0.2
+				political_power_factor = 0.2
+				consumer_goods_factor = -0.05
+			}
+		}
+		JAP_Tokyo_Market_slowly_restore = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_Tokyo_Market_slowly_restore"}
+			#picture = generic_manpower_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				political_power_gain = -0.2
+				weekly_manpower = -100
+				mobilization_speed = -0.05
+				production_lack_of_resource_penalty_factor = -0.1
+				production_speed_buildings_factor = 0.1
 			}
 		}
 		#####Original

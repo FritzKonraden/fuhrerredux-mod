@@ -91,7 +91,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			check_variable = { var:coalition_partners > 0 }
+			check_variable = { coalition_partners^num > 0 }
 		}
 		localization_key = "[?coalition_ruling_combined_pop|%0]"
 	}

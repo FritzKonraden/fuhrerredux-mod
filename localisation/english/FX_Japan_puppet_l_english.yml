@@ -1,0 +1,94 @@
+﻿l_english:
+####Fengtian
+FNG_JAP_Shogunate: "Shogunal Governorate of Manchuria"
+FNG_JAP_Shogunate_DEF: "Shogunal Governorate of Manchuria"
+FNG_JAP_Shogunate_ADJ: "Manchurian"
+FNG_JAP_Viceroyalty: "Viceroyalty of Tohoku"
+FNG_JAP_Viceroyalty_DEF: "Viceroyalty of Tohoku"
+FNG_JAP_Viceroyalty_ADJ: "Manchurian"
+FNG_JAP_national_populist: "Manchuria Region"
+FNG_JAP_national_populist_DEF: "Manchuria Region of Political Administrative Council"
+FNG_JAP_ADJ: "Manchurian"
+####China
+CHI_JAP_Shogunate: "Shogunal Commissariat of Guanzhong-Lingnan" 
+CHI_JAP_Shogunate_DEF: "Shogunal Commissariat of Guanzhong-Lingnan"
+CHI_JAP_Viceroyalty: "Military Commissariat of Guanzhong"
+CHI_JAP_Viceroyalty_DEF: "Military Commissariat of Guanzhong"
+CHI_JAP_national_populist: "Political Administrative Council of China"
+CHI_JAP_national_populist_DEF: "Political Administrative Council of China"
+CHI_JAP_valkist: "Chugen Jōdo Ōhogo-ryo" #中原浄土大护法领
+CHI_JAP_valkist_DEF: "Grand Purified Protectorate of China"
+####Sichuan
+SCH_JAP_Shogunate: "Shogunal Commissariat of Chongqing"
+SCH_JAP_Shogunate_DEF: "Shogunal Commissariat of Chongqing"
+SCH_JAP_Shogunate_ADJ: "Sichuanese"
+SCH_JAP_Viceroyalty: "Viceroyalty of Hanzhong"
+SCH_JAP_Viceroyalty_DEF: "Viceroyalty of Hanzhong"
+SCH_JAP_Viceroyalty_ADJ: "Sichuanese"
+SCH_JAP_national_populist: "Hanzhong Region"
+SCH_JAP_national_populist_DEF: "Hanzhong Region of Politican Administrative Council"
+SCH_JAP_valkist: "Ekishu Setsudo-shi"
+SCH_JAP_valkist_DEF: "Military Prefecture of Yizhou"
+SCH_JAP_ADJ: "Sichuanese"
+####Yunnan
+YUN_JAP_Shogunate: "Shogunal Commissariat of Kunming"
+YUN_JAP_Shogunate_DEF: "Shogunal Commissariat of Kunming"
+YUN_JAP_Shogunate_ADJ: "Yunnanese"
+YUN_JAP_Viceroyalty: "Viceroyalty of Yungui"
+YUN_JAP_Viceroyalty_DEF: "Viceroyalty of Yungui"
+YUN_JAP_Viceroyalty_ADJ: "Yunnanese"
+YUN_JAP_national_populist: "Dali Region"
+YUN_JAP_national_populist_DEF: "Dali Region of Politican Administrative Council"
+YUN_JAP_valkist: "Nancho Setsudo-shi"
+YUN_JAP_valkist_DEF: "Military Prefecture of Nanzhao"
+YUN_JAP_ADJ: "Yunnanese"
+####Tibet
+TIB_JAP: "Tibetan Provisional Authority"
+TIB_JAP_DEF: "Tibetan Provisional Authority"
+TIB_JAP_ADJ: "Tibetan"
+####Sinjiang
+SIK_JAP_Shogunate: "Grand Protectorate of Anxi"
+SIK_JAP_Shogunate_DEF: "Grand Protectorate of Anxi"
+SIK_JAP_Shogunate_ADJ: "Anxi"
+SIK_JAP_Viceroyalty: "Viceroyalty of Anxi"
+SIK_JAP_Viceroyalty_DEF: "Viceroyalty of Anxi"
+SIK_JAP_Viceroyalty_ADJ: "Anxi"
+SIK_JAP_national_populist: "Collective Administration of Anxi"
+SIK_JAP_national_populist_DEF: "Collective Administration of Anxi"
+SIK_JAP_national_populist_ADJ: "Anxi"
+SIK_JAP_valkist: "Ansei Shinsei Ōdohogo-ryo"
+SIK_JAP_valkist_DEF: "Greater Divine Protectorate of Anxi"
+SIK_JAP_ADJ: "Anxi"
+####Indochina
+ICR_JAP_paternal_autocrat: "Indoshina Bakufu-daikan-katsuku" #印度支那幕府代官辖区
+ICR_JAP_paternal_autocrat_DEF: "Grand Governing Office of Indochina"
+ICR_JAP_national_populist: "Indoshina Sanryoho" #印度支那三領法
+ICR_JAP_national_populist_DEF: "Tri-Domains of Indochina"
+ICR_JAP_valkist: "Kamizabu-sha Jichiryo"
+ICR_JAP_valkist_DEF: "Dominion of Theravada Buddhists"
+####Laos
+LAO_JAP_paternal_autocrat: "Shichidan Shirokasa Seisho"
+LAO_JAP_paternal_autocrat_DEF: "Governing Office of White Umbrella State" #七段白傘政所
+LAO_JAP_national_populist: "Raosu Jichikuni"
+LAO_JAP_national_populist_DEF: "Lao Autonomous State" 
+LAO_JAP_valkist: "Shichidan Shirokasa-shu"
+LAO_JAP_valkist_DEF: "Realm of Seven-Tiered White Umbrella" #七段白傘州
+####Cambodia
+CAM_JAP_paternal_autocrat: "Kanbojia Seisho"
+CAM_JAP_paternal_autocrat_DEF: "Governing Office of Kampuchea" #七段白傘政所
+CAM_JAP_national_populist: "Kanbojia Jichikuni"
+CAM_JAP_national_populist_DEF: "Kampuchean Autonomous State" 
+CAM_JAP_valkist: "Sangaku Ōshu Seifu"
+CAM_JAP_valkist_DEF: "Funan Royal Authority" #山岳王州政府
+####Vietnam
+VIN_JAP_paternal_autocrat: "Shizumi-gun Setsudo-shi"
+VIN_JAP_paternal_autocrat_DEF: "Military Prefecture of Jinghai Army" #静海军节度使
+VIN_JAP_national_populist: "Koshi Jichikuni"
+VIN_JAP_national_populist_DEF: "Jiaozhi Autonomous State" 
+VIN_JAP_valkist: "O-Raku Shu"
+VIN_JAP_valkist_DEF: "Realm of Au-Lac"
+####Mongolia
+MON_JAP: "Mengjiang"
+MON_JAP_DEF: "Mengjiang United Autonomous Government"
+MON_JAP_valkist: "Reihoku-jichisho"
+MON_JAP_valkist_DEF: "Lingbei Autonomous Province" 

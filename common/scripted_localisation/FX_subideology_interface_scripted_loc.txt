@@ -44,8 +44,26 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = military_dictatorship_subtype
+			has_country_leader_ideology = samurai_dictatorship_subtype
 		}
-		localization_key = military_dictatorship_subtype
+		localization_key = samurai_dictatorship_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = anarcho_syndicalism_subtype
+		}
+		localization_key = anarcho_syndicalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = utopian_libsoc_subtype
+		}
+		localization_key = utopian_libsoc_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = monarchist_socialism_subtype
+		}
+		localization_key = monarchist_socialism_subtype
 	}
 }

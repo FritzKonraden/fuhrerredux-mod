@@ -558,15 +558,19 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_samurai_dictatorship_subtype"
-		texturefile = "gfx/interface/ideologies/subidologies/pataut_samurai_militarism.png"
+		texturefile = "gfx/interface/ideologies/subideologies/pataut_samurai_militarism.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_monarchist_socialism_subtype"
-		texturefile = "gfx/interface/ideologies/subidologies/monsoc_group.png"
+		texturefile = "gfx/interface/ideologies/subideologies/monsoc_group.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_utopian_libsoc_subtype"
-		texturefile = "gfx/interface/ideologies/subidologies/libsoc_utopian.png"
+		texturefile = "gfx/interface/ideologies/subideologies/libsoc_utopian.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_anarcho_syndicalism_subtype"
+		texturefile = "gfx/interface/ideologies/subideologies/anarcho_syndicalism_group.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_unknown"

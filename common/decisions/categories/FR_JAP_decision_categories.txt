@@ -6,6 +6,12 @@ JAP_politics_of_japan = {
 	#scripted_gui = JAP_politics_of_japan_decision_ui
 	#visible_when_empty = no
 }
+JAP_expansionism_decision = {
+	allowed = {
+		original_tag = JAP 
+	}
+	priority = 99
+}
 JAP_urbanization_program = {
 	allowed = {
 		original_tag = JAP 

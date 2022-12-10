@@ -142,10 +142,12 @@ JAP_urbanization_program = {
 					is_valid_state_for_development = yes
 				}
 				prioritize = { 655 } #North Karafuto
-				add_resource = {
-					type = oil
-					amount = 2
-					state = 655
+				PREV = {
+					add_resource = {
+						type = oil
+						amount = 2
+						state = 655
+					}
 				}
 			}
 		}
@@ -231,7 +233,6 @@ JAP_urbanization_program = {
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
-					num_of_owned_factories < 2
 				}
 				prioritize = { 526 } #Okinawa
 				add_extra_state_shared_building_slots = 2
@@ -282,7 +283,6 @@ JAP_urbanization_program = {
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
-					num_of_owned_factories < 2
 				}
 				prioritize = { 645 } #Okinawa
 				add_extra_state_shared_building_slots = 2
@@ -300,267 +300,815 @@ JAP_urbanization_program = {
 		}
 	}
 }
-JAP_politics_of_japan = {
-	# unlock_gt = {
-	# 	limit = {
-	# 		is_debug = yes
-	# 		is_ai = no  
-	# 	}
-	# 	complete_effect = {
-	# 		set_country_flag = JAP_Iesato_Death
-	# 		set_country_flag = JAP_kuniyuki_reign
-	# 		set_country_flag = JAP_nakano_reign
-	# 		set_country_flag = JAP_inoue_reign
-	# 		mark_focus_tree_layout_dirty = yes 
-	# 	}
-	# }
-	# promote_kingoro = {
-	# 	limit = {
-	# 		is_debug = yes
-	# 		is_ai = no  
-	# 	}
-	# 	complete_effect = {
-	# 		JAP = {
-	# 			retire_ideology_leader = vanguardist	
-	# 			set_politics = {
-	# 				ruling_party = vanguardist 
-	# 				last_election = "1933.3.5"
-	# 				election_frequency = 48
-	# 				elections_allowed = no
-	# 			}
-	# 			add_country_leader_role = {
-	# 				character = JAP_Hashimoto_Kingoro
-	# 				promote_leader = yes
-	# 				country_leader = {
-	# 				  ideology = revolutionary_showaist_subtype
-	# 				  expire = "1965.1.1.1"
-	# 				  #traits = { war_industrialist }
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# }
-	# promote_kikue = {
-	# 	limit = {
-	# 		is_debug = yes
-	# 		is_ai = no 
-	# 	}
-	# 	complete_effect = {
-	# 		JAP = {
-	# 			retire_ideology_leader = libertarian_socialist
-	# 			set_politics = {
-	# 				ruling_party = libertarian_socialist 
-	# 				last_election = "1933.3.5"
-	# 				election_frequency = 48
-	# 				elections_allowed = no
-	# 			}
-	# 			add_country_leader_role = {
-	# 				character = JAP_Yamakawa_Kikue
-	# 				promote_leader = yes
-	# 				country_leader = {
-	# 				  ideology = feminist_socialist_subtype
-	# 				  expire = "1965.1.1.1"
-	# 				  #traits = { war_industrialist }
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# }
-	# promote_aso_hisashi = {
-	# 	limit = {
-	# 		is_debug = yes
-	# 		is_ai = no 
-	# 	}
-	# 	complete_effect = {
-	# 		JAP = {
-	# 			retire_ideology_leader = libertarian_socialist
-	# 			set_politics = {
-	# 				ruling_party = libertarian_socialist 
-	# 				last_election = "1933.3.5"
-	# 				election_frequency = 48
-	# 				elections_allowed = no
-	# 			}
-	# 			add_country_leader_role = {
-	# 				character = JAP_Aso_Hisashi
-	# 				promote_leader = yes
-	# 				country_leader = {
-	# 				  ideology = libertarian_socialist_subtype
-	# 				  expire = "1965.1.1.1"
-	# 				  #traits = { war_industrialist }
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# }
-	# promote_kanson = {
-	# 	limit = {
-	# 		is_debug = yes
-	# 		is_ai = no 
-	# 	}
-	# 	complete_effect = {
-	# 		JAP = {
-	# 			retire_ideology_leader = collectivist
-	# 			set_politics = {
-	# 				ruling_party = collectivist 
-	# 				last_election = "1933.3.5"
-	# 				election_frequency = 48
-	# 				elections_allowed = no
-	# 			}
-	# 			add_country_leader_role = {
-	# 				character = JAP_Arahata_Kanson
-	# 				promote_leader = yes
-	# 				country_leader = {
-	# 				  ideology = collectivist_subtype
-	# 				  expire = "1965.1.1.1"
-	# 				  #traits = { war_industrialist }
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# }
-	# promote_nissho = {
-	# 	limit = {
-	# 		is_debug = yes
-	# 		is_ai = no 
-	# 	}
-	# 	complete_effect = {
-	# 		JAP = {
-	# 			set_politics = {
-	# 				ruling_party = valkist 
-	# 				last_election = "1933.3.5"
-	# 				election_frequency = 48
-	# 				elections_allowed = no
-	# 			}
-	# 			promote_character = {
-	# 				character = JAP_Inoue_Nissho
-	# 				ideology = ultranat_nichirenist_subtype
-	# 			}
-	# 		}
-	# 	}
-	# }
-	# promote_matsumoto = {
-	# 	limit = {
-	# 		is_debug = yes
-	# 		is_ai = no 
-	# 	}
-	# 	complete_effect = {
-	# 		JAP = {
-	# 			retire_ideology_leader = libertarian_socialist
-	# 			set_politics = {
-	# 				ruling_party = libertarian_socialist 
-	# 				last_election = "1933.3.5"
-	# 				election_frequency = 48
-	# 				elections_allowed = no
-	# 			}
-	# 			add_country_leader_role = {
-	# 				character = JAP_Jiichiro_Matsumoto
-	# 				promote_leader = yes
-	# 				country_leader = {
-	# 				  ideology = libertarian_socialist_subtype
-	# 				  expire = "1965.1.1.1"
-	# 				  #traits = { war_industrialist }
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# }
-	# promote_seigo = {
-	# 	limit = {
-	# 		is_debug = yes
-	# 		is_ai = no 
-	# 	}
-	# 	complete_effect = {
-	# 		JAP = {
-	# 			retire_ideology_leader = national_populist
-	# 			set_politics = {
-	# 				ruling_party = national_populist 
-	# 				last_election = "1933.3.5"
-	# 				election_frequency = 48
-	# 				elections_allowed = no
-	# 			}
-	# 			add_country_leader_role = {
-	# 				character = JAP_Nakano_Seigo
-	# 				promote_leader = yes
-	# 				country_leader = {
-	# 				  ideology = organnat_showaist_subtype
-	# 				  expire = "1965.1.1.1"
-	# 				  #traits = { war_industrialist }
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# }
-	# promote_kumazawa = {
-	# 	limit = {
-	# 		is_debug = yes
-	# 		is_ai = no 
-	# 	}
-	# 	complete_effect = {
-	# 		JAP = {
-	# 			retire_ideology_leader = paternal_autocrat
-	# 			set_politics = {
-	# 				ruling_party = paternal_autocrat 
-	# 				last_election = "1933.3.5"
-	# 				election_frequency = 48
-	# 				elections_allowed = no
-	# 			}
-	# 			add_country_leader_role = {
-	# 				character = JAP_Kumazawa_Emperor
-	# 				promote_leader = yes
-	# 				country_leader = {
-	# 				  ideology = absolute_mon_subtype
-	# 				  expire = "1965.1.1.1"
-	# 				  #traits = { war_industrialist }
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# }
-	# promote_kuniyuki = {
-	# 	limit = {
-	# 		is_debug = yes
-	# 		is_ai = no 
-	# 	}
-	# 	complete_effect = {
-	# 		JAP = {
-	# 			retire_ideology_leader = paternal_autocrat
-	# 			set_politics = {
-	# 				ruling_party = paternal_autocrat 
-	# 				last_election = "1933.3.5"
-	# 				election_frequency = 48
-	# 				elections_allowed = no
-	# 			}
-	# 			add_country_leader_role = {
-	# 				character = JAP_Tokugawa_Kuniyuki
-	# 				promote_leader = yes
-	# 				country_leader = {
-	# 				  ideology = paternal_autocrat_subtype
-	# 				  expire = "1965.1.1.1"
-	# 				  #traits = { war_industrialist }
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# }
-	# promote_ikuo = {
-	# 	limit = {
-	# 		is_debug = yes
-	# 		is_ai = no 
-	# 	}
-	# 	complete_effect = {
-	# 		JAP = {
-	# 			retire_ideology_leader = collectivist
-	# 			set_politics = {
-	# 				ruling_party = collectivist 
-	# 				last_election = "1933.3.5"
-	# 				election_frequency = 48
-	# 				elections_allowed = no
-	# 			}
-	# 			promote_character = {
-	# 				character = JAP_Oyama_Ikuo
-	# 				ideology = collectivist_subtype
-	# 			}
-	# 		}
-	# 	}
-	# }
+JAP_expansionism_decision = {
+	JAP_Manchuria_Disintegrate = {
+		visible = {
+			tag = JAP
+			NOT = {
+				has_government = valkist 
+			}
+		}
+		available = {
+			AND = {
+				has_completed_focus = JAP_dismantle_chinese_warlord
+				FNG = {
+					exists = no 
+				}
+				JAP = {
+					any_state = {
+						is_core_of = FNG
+						is_fully_controlled_by = JAP
+					}
+					OR = {
+						608 = { is_fully_controlled_by = JAP }
+						328 = { is_fully_controlled_by = JAP }
+					}
+				}
+			}
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			release_autonomy = {
+				target = FNG 
+				autonomy_state = autonomy_puppet
+				freedom_level = 0.5
+			}
+			if = {
+				limit = {
+					JAP = {
+						has_country_flag = JAP_Shogun_Regime
+					}
+				}
+				FNG = {
+					set_cosmetic_tag = FNG_JAP_Shogunate
+				}
+			}
+			else_if = {
+				limit = {
+					JAP = {
+						has_completed_focus = JAP_southern_court
+					}
+				}
+				FNG = {
+					set_cosmetic_tag = FNG_JAP_Viceroyalty
+				}
+			}
+			else_if = {
+				limit = {
+					JAP = {
+						has_government = national_populist
+					}
+				}
+				FNG = {
+					set_cosmetic_tag = FNG_JAP
+				}
+			}
+		}
+	}
+	JAP_Manchuria_Expansion = {
+		visible = {
+			tag = JAP
+			NOT = {
+				has_government = valkist 
+			}
+		}
+		available = {
+			AND = {
+				has_completed_focus = JAP_dismantle_chinese_warlord
+				ZHI = {
+					exists = no
+				}
+				FNG = {
+					exists = yes 
+				}
+				JAP = {
+					any_state = {
+						is_core_of = ZHI
+						is_fully_controlled_by = JAP
+					}
+				}
+			}
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			FNG = {
+				every_state = {
+					limit = {
+						is_core_of = ZHI 
+						OR = {
+							is_controlled_by = FNG
+							is_controlled_by = JAP 
+						}
+					}
+					PREV = {
+						transfer_state = prev 
+					}
+					add_core_of = FNG
+					remove_core_of = ZHI 
+				}
+			}
+		}
+	}
+	JAP_Transfer_Coastal_China = {
+		visible = {
+			tag = JAP
+		}
+		available = {
+			AND = {
+				has_completed_focus = JAP_dismantle_chinese_warlord
+				CHI = {
+					is_puppet_of = JAP 
+				}
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_state = {
+				limit = { 
+					OR = {
+						state = 793
+						state = 932
+						state = 869
+						state = 1020
+						state = 613
+						state = 1025
+						state = 1026
+						state = 591
+						state = 893
+						state = 524
+						state = 596
+					}
+					NOT = {
+						is_fully_controlled_by = JAP 
+					}
+				}
+				JAP = {
+					add_state_claim = PREV 
+					transfer_state = PREV 
+				}
+			}
+		}
+	}
+	JAP_End_of_Illegal_Chinese_Authority = {
+		visible = {
+			tag = JAP
+		}
+		available = {
+			AND = {
+				has_completed_focus = JAP_dismantle_chinese_warlord
+				CHI = {
+					exists = no 
+				}
+				JAP = {
+					any_state = {
+						is_core_of = CHI
+						is_fully_controlled_by = JAP
+					}
+				}
+			}
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			release_autonomy = {
+				target = CHI  
+				autonomy_state = autonomy_puppet
+				freedom_level = 0.5
+			}
+			if = {
+				limit = {
+					OR = {
+						JAP = {
+							any_state = {
+								is_core_of = FNG
+								is_fully_controlled_by = JAP
+							}
+						}
+						FNG = {
+							exists = yes 
+							is_puppet_of = JAP
+						}
+					}
+				}
+				CHI = {
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = FNG
+								is_claimed_by = FNG 
+							}
+							is_fully_controlled_by = JAP 
+						}
+						PREV = {
+							transfer_state = prev 
+						}
+						add_core_of = CHI
+						remove_core_of = FNG 
+					}
+					annex_country = {
+						target = FNG 
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					JAP = {
+						any_state = {
+							is_core_of = ZHI
+							is_fully_controlled_by = JAP
+						}
+					}
+				}
+				CHI = {
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = ZHI
+								is_claimed_by = ZHI 
+							}
+							is_fully_controlled_by = JAP 
+						}
+						PREV = {
+							transfer_state = prev 
+						}
+						add_core_of = CHI
+						remove_core_of = ZHI 
+					}
+				}
+			}
+			if = {
+				limit = {
+					JAP = {
+						has_country_flag = JAP_Shogun_Regime
+					}
+				}
+				CHI = {
+					set_cosmetic_tag = CHI_JAP_Shogunate
+				}
+			}
+			else_if = {
+				limit = {
+					JAP = {
+						has_completed_focus = JAP_southern_court
+					}
+				}
+				CHI = {
+					set_cosmetic_tag = CHI_JAP_Viceroyalty
+				}
+			}
+			else = {
+				CHI = {
+					set_cosmetic_tag = CHI_JAP
+				}
+			}
+		}
+	}
+	JAP_Chongqing_Release = {
+		visible = {
+			tag = JAP
+		}
+		available = {
+			AND = {
+				has_completed_focus = JAP_dismantle_chinese_warlord
+				SCH = {
+					exists = no 
+				}
+				JAP = {
+					any_state = {
+						is_core_of = SCH
+						is_fully_controlled_by = JAP
+					}
+				}
+			}
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			release_autonomy = {
+				target = SCH 
+				autonomy_state = autonomy_puppet
+				freedom_level = 0.5
+			}
+			if = {
+				limit = {
+					JAP = {
+						has_country_flag = JAP_Shogun_Regime
+					}
+				}
+				SCH = {
+					set_cosmetic_tag = SCH_JAP_Shogunate
+				}
+			}
+			else_if = {
+				limit = {
+					JAP = {
+						has_completed_focus = JAP_southern_court
+					}
+				}
+				SCH = {
+					set_cosmetic_tag = SCH_JAP_Viceroyalty
+				}
+			}
+			else = {
+				SCH = {
+					set_cosmetic_tag = SCH_JAP
+				}
+			}		
+		}	
+	}
+	JAP_Shanxi_Annexation = {
+		visible = {
+			tag = JAP
+		}
+		available = {
+			AND = {
+				has_completed_focus = JAP_dismantle_chinese_warlord
+				SHX = {
+					exists = no 
+				}
+				CHI = {
+					exists = yes 
+				}
+				JAP = {
+					any_state = {
+						is_core_of = SHX
+						is_fully_controlled_by = JAP
+					}
+				}
+			}
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_core_of = SHX 
+					is_fully_controlled_by = JAP
+				}
+				CHI = {
+					transfer_state = PREV
+					PREV = {
+						remove_core_of = SHX 
+						add_core_of = CHI
+					}	
+				}
+			}
+		}	
+	}
+	JAP_Yunnan_Release = {
+		visible = {
+			tag = JAP
+		}
+		available = {
+			AND = {
+				has_completed_focus = JAP_dismantle_chinese_warlord
+				YUN = {
+					exists = no 
+				}
+				JAP = {
+					any_state = {
+						is_core_of = YUN
+						is_fully_controlled_by = JAP
+					}
+				}
+			}
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			release_autonomy = {
+				target = YUN 
+				autonomy_state = autonomy_puppet
+				freedom_level = 0.5
+			}
+			CHI = {
+				transfer_state = 603
+			}
+			if = {
+				limit = {
+					JAP = {
+						has_country_flag = JAP_Shogun_Regime
+					}
+				}
+				YUN = {
+					set_cosmetic_tag = YUN_JAP_Shogunate
+				}
+			}
+			else_if = {
+				limit = {
+					JAP = {
+						has_completed_focus = JAP_southern_court
+					}
+				}
+				YUN = {
+					set_cosmetic_tag = YUN_JAP_Viceroyalty
+				}
+			}
+			else = {
+				YUN = {
+					set_cosmetic_tag = YUN_JAP
+				}
+			}		
+		}	
+	}
+	JAP_Xibei_Disintegrate = {
+		visible = {
+			tag = JAP
+		}
+		available = {
+			AND = {
+				has_completed_focus = JAP_dismantle_chinese_warlord
+				XSM = {
+					exists = no 
+				}
+				JAP = {
+					any_state = {
+						is_core_of = XSM
+						is_fully_controlled_by = JAP
+					}
+				}
+			}
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			CHI = {
+				transfer_state = 616
+				transfer_state = 283
+				transfer_state = 939
+			}
+			set_country_flag = JAP_Xibei_Disintegrate_unlock
+		}	
+	}
+	JAP_Xibei_Disintegrate_Tibet = {
+		visible = {
+			tag = JAP
+			has_country_flag = JAP_Xibei_Disintegrate_unlock
+		}
+		available = {
+			AND = {
+				has_completed_focus = JAP_claim_xinjiang_tibet_hegemony
+				TIB = {
+					exists = no 
+				}
+				JAP = {
+					check_variable = {
+						num_owned_controlled_states@TIB > 1
+					}
+				}
+			}
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			release_autonomy = {
+				target = TIB 
+				autonomy_state = autonomy_puppet
+				freedom_level = 0.5
+			}
+			TIB = {
+				transfer_state = 1042
+				transfer_state = 604
+			}
+			TIB = {
+				set_cosmetic_tag = TIB_JAP
+			}
+		}	
+	}
+	JAP_Sinjiang_Release = {
+		visible = {
+			tag = JAP
+		}
+		available = {
+			AND = {
+				or = {
+					has_completed_focus = JAP_claim_xinjiang_tibet_hegemony
+					has_completed_focus = JAP_demand_fengtian_subjugation
+				}
+				SIK = {
+					exists = no 
+				}
+				TIB = {
+					is_puppet_of = JAP
+				}
+				JAP = {
+					any_state = {
+						is_core_of = SIK
+						is_fully_controlled_by = JAP
+					}
+				}
+			}
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			release_autonomy = {
+				target = SIK 
+				autonomy_state = autonomy_puppet
+				freedom_level = 0.5
+			}
+			if = {
+				limit = {
+					TIB = {
+						exists = yes
+						is_puppet_of = JAP 
+					}
+				}
+				SIK = {
+					annex_country = {
+						target = TIB 
+					}
+					every_state = {
+						limit = {
+							is_core_of = TIB 
+						}
+						PREV = {
+							add_state_claim = PREV 
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					TIB = {
+						exists = no  
+					}
+					JAP = {
+						any_controlled_state = {
+							is_core_of = TIB 
+						}
+					}
+				}
+				SIK = {
+					every_state = {
+						limit = {
+							is_core_of = TIB 
+							is_controlled_by = JAP 
+						}
+						PREV = {
+							transfer_state = PREV 
+							add_state_claim = PREV 
+						}
+					}
+					every_state = {
+						limit = {
+							or = {
+								state = 1042
+								state = 604
+							}
+							is_controlled_by = JAP 
+						}
+						PREV = {
+							transfer_state = PREV 
+							add_state_claim = PREV 
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					JAP = {
+						has_country_flag = JAP_Shogun_Regime
+					}
+				}
+				SIK = {
+					set_cosmetic_tag = SIK_JAP_Shogunate
+				}
+			}
+			else_if = {
+				limit = {
+					JAP = {
+						has_completed_focus = JAP_southern_court
+					}
+				}
+				SIK = {
+					set_cosmetic_tag = SIK_JAP_Viceroyalty
+				}
+			}
+			else = {
+				SIK = {
+					set_cosmetic_tag = SIK_JAP
+				}
+			}
+		}	
+	}
+	JAP_Mongolia_Release = {
+		visible = {
+			tag = JAP
+		}
+		available = {
+			AND = {
+				has_completed_focus = JAP_toward_mongolia
+				MON = {
+					exists = no 
+				}
+				JAP = {
+					any_state = {
+						is_core_of = MON
+						is_fully_controlled_by = JAP
+					}
+				}
+			}
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			release_autonomy = {
+				target = MON 
+				autonomy_state = autonomy_puppet
+				freedom_level = 0.5
+			}
+			CHI = {
+				transfer_state = 612
+			}
+			MON = {
+				set_cosmetic_tag = MON_JAP
+			}
+		}	
+	}
+	JAP_Indochina_Release = {
+		visible = {
+			tag = JAP
+			NOT = {
+				has_country_flag = JAP_indochina_puppet_done
+			}
+		}
+		available = {
+			AND = {
+				has_completed_focus = JAP_toward_indochina
+				FIC = {
+					exists = no 
+				}
+				JAP = {
+					any_state = {
+						is_core_of = FIC
+						is_fully_controlled_by = JAP
+					}
+				}
+			}
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_core_of = FIC 
+				}
+				ICR = {
+					add_state_core = PREV 
+					transfer_state = PREV 
+				}
+			}
+			set_autonomy = {
+				target = ICR
+				autonomy_state = autonomy_puppet
+				end_wars = no
+				end_civil_wars = no
+			}
+			ICR = {
+				set_cosmetic_tag = ICR_JAP
+			}
+			set_country_flag = JAP_indochina_puppet_done
+		}	
+	}
+	JAP_Indochina_Balkanized = {
+		visible = {
+			tag = JAP
+			NOT = {
+				has_country_flag = JAP_indochina_puppet_done
+			}
+		}
+		available = {
+			AND = {
+				has_completed_focus = JAP_toward_indochina
+				FIC = {
+					exists = no 
+				}
+				JAP = {
+					any_state = {
+						is_core_of = VIN
+						is_fully_controlled_by = JAP
+					}
+					any_state = {
+						is_core_of = CAM
+						is_fully_controlled_by = JAP
+					}
+					any_state = {
+						is_core_of = LAO
+						is_fully_controlled_by = JAP
+					}
+				}
+			}
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			release_autonomy = {
+				target = VIN 
+				autonomy_state = autonomy_puppet
+				freedom_level = 0.5
+			}
+			release_autonomy = {
+				target = LAO 
+				autonomy_state = autonomy_puppet
+				freedom_level = 0.5
+			}
+			release_autonomy = {
+				target = CAM 
+				autonomy_state = autonomy_puppet
+				freedom_level = 0.5
+			}
+			VIN = {
+				set_cosmetic_tag = VIN_JAP
+			}
+			CAM = {
+				set_cosmetic_tag = CAM_JAP
+			}
+			LAO = {
+				set_cosmetic_tag = LAO_JAP
+			}
+			set_country_flag = JAP_indochina_puppet_done
+		}	
+	}
+	JAP_India_Release = {
+		visible = {
+			tag = JAP
+			NOT = {
+				has_country_flag = JAP_india_puppet_done
+			}
+		}
+		available = {
+			AND = {
+				has_completed_focus = JAP_demand_delhi_subjugation
+				RAJ = {
+					exists = no 
+				}
+				JAP = {
+					any_state = {
+						is_core_of = RAJ
+						is_fully_controlled_by = JAP
+					}
+				}
+			}
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_core_of = RAJ 
+				}
+				IND = {
+					add_state_core = PREV 
+					transfer_state = PREV 
+				}
+			}
+			set_autonomy = {
+				target = IND
+				autonomy_state = autonomy_puppet
+				end_wars = no
+				end_civil_wars = no
+			}
+			IND = {
+				set_cosmetic_tag = IND_JAP
+			}
+			set_country_flag = JAP_india_puppet_done
+		}	
+	}
+	JAP_India_Balkanized = {
+		visible = {
+			tag = JAP
+			NOT = {
+				has_country_flag = JAP_india_puppet_done
+			}
+		}
+		available = {
+			AND = {
+				has_completed_focus = JAP_demand_delhi_subjugation
+				RAJ = {
+					exists = no 
+				}
+				JAP = {
+					any_state = {
+						is_core_of = IND
+						is_fully_controlled_by = JAP
+					}
+					any_state = {
+						is_core_of = PAK
+						is_fully_controlled_by = JAP
+					}
+				}
+			}
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			release_autonomy = {
+				target = IND 
+				autonomy_state = autonomy_puppet
+				freedom_level = 0.5
+			}
+			release_autonomy = {
+				target = PAK 
+				autonomy_state = autonomy_puppet
+				freedom_level = 0.5
+			}
+			IND = {
+				set_cosmetic_tag = IND_JAP
+			}
+			PAK = {
+				set_cosmetic_tag = PAK_JAP
+			}
+			set_country_flag = JAP_india_puppet_done
+		}	
+	}
 }

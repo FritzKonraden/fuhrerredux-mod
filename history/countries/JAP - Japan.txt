@@ -958,3 +958,4 @@ recruit_character = JAP_Kumazawa_Emperor
 recruit_character = JAP_Jiichiro_Matsumoto
 recruit_character = JAP_Yamakawa_Kikue
 recruit_character = JAP_Hashimoto_Kingoro
+recruit_character = JAP_Sanzo_Nosaka
