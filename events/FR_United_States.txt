@@ -756,15 +756,15 @@ country_event = { # Death of Eugene Debs
 
 	option = {
 		name = usa.26.a
-	retire_character = USA_Eugene_Debs
-	add_country_leader_role = {
-	  character = USA_Jack_Reed
-	  promote_leader = yes
-	  country_leader = {
-		ideology = libertarian_socialist_subtype
-		traits = {}
-	  }
-	}
+		retire_character = USA_Eugene_Debs
+		add_country_leader_role = {
+			character = USA_Jack_Reed
+			promote_leader = yes
+			country_leader = {
+				ideology = libertarian_socialist_subtype
+				traits = {}
+			}
+		}
 	}
 }
 

@@ -3599,6 +3599,9 @@ focus_tree = {
     }
     mutually_exclusive = { focus = USA_revive_old_alliances }
     prerequisite = { focus = USA_new_interventionism }
+    bypass = {
+      is_faction_leader = yes
+    }
     relative_position_id = USA_new_interventionism
     completion_reward = {
       create_faction = PHI_USA_faction
@@ -3635,6 +3638,9 @@ focus_tree = {
     }
     mutually_exclusive = { focus = USA_anti_imperialist_bulwark }
     prerequisite = { focus = USA_new_interventionism }
+    bypass = {
+      is_in_faction_with = FRA
+    }
     relative_position_id = USA_new_interventionism
     completion_reward = {
       every_other_country = {
