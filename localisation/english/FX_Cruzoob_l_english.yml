@@ -101,6 +101,7 @@ CRU_valkist_party_long: "Leales a la Revolución Maya"
 CRU_BOL_accord: "Pact of Indigenous Rejuvenation"
 
 ### Tooltips
+CRU_support_a_side_tt: "We will support §Y[From.GetName]§! in their war.\n"
 CRU_can_integrate_states: "§GWe can now integrate states from occupied territories§!"
 CRU_infiltrating_mexico: "Currently conducting operations in @MEX §YMexico§!"
 CRU_defence_tt: "§GWe will now deploy the reserve divisions.§!"
@@ -116,7 +117,7 @@ CRU_promote_anti_government_propaganda_tt: "§gWe will try to destablize the [ME
 CRU_steal_stockpiled_equipment: "Steal Stockpiled Equipment"
 CRU_steal_stockpiled_equipment_tt: "§gWe will try to steal some equipment from the [MEX.GetAdjective] stockpile§!"
 CRU_mexican_yucateco_war: "Mexican-Yucateco War"
-CRU_mexican_yucateco_war_desc: "Thousands of miles away from our homeland is a growing conflict in the central american region. The state of Cruzoob, a splinter state that rests on the Yucatan peninsula is fighting against the reclamation of Mexico. Mexico, on the other land sees the state of Cruzoob, as a breakaway state rules by Cristero rebels. We can support either side; and provide limited aide to our chosen side, or do nothing at all."
+CRU_mexican_yucateco_war_desc: "Thousands of miles away from our homeland is a growing conflict in the Central American region. The state of Cruzoob, a splinter state that rests on the Yucatan peninsula is fighting against the reclamation of Mexico. Mexico, on the other land sees the state of Cruzoob, as a breakaway state rules by Cristero rebels. We can support either side; and provide limited aide to our chosen side, or do nothing at all."
 CRU_support_a_side: "Support [From.GetName]"
 CRU_send_financial_aid: "Send Financial Aid to [From.GetName]"
 CRU_send_industrial_aid: "Send Industrial Aid to [From.GetName]"

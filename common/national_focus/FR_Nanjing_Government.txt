@@ -1502,8 +1502,8 @@ focus_tree = {
 		completion_reward = {
 			drop_cosmetic_tag = yes
 			every_state = {
-				limit = { is_core_of = MAL }
-				remove_core_of = MAL
+				limit = { is_core_of = MAN }
+				remove_core_of = MAN
 			}
 			every_state = {
 				limit = { is_core_of = ZHI }

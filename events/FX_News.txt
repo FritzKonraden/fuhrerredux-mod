@@ -817,3 +817,20 @@ news_event = { # Germany Recognises Belarusian Claims
 		name = fxnews.45.a
 	}
 }
+
+news_event = { # Red Dawn in Southeast Asia
+	id = fxnews.46
+	title = fxnews.46.t
+	desc = fxnews.46.d
+	picture = GFX_news_event_PHI_socialists_win
+	major = yes
+	is_triggered_only = yes
+
+	show_major = { 
+		NOT = { tag = PHI }
+	}
+
+	option = { 
+		name = fxnews.46.a
+	}
+}

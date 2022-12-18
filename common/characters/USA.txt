@@ -305,7 +305,7 @@ characters = {
 		name = "Thomas Dewey"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/USA/Portrait_USA_Thomas_Dewey.png"
+				large = "gfx/leaders/USA/Portrait_USA_Thomas_Dewey_fx.png"
 				small = "gfx/interface/ministers/USA/USA_Thomas_Dewey.png"
 			}
 		}

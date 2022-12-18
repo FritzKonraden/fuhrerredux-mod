@@ -1,5 +1,6 @@
 # Philippine Decisions
 # created by: dax0102
+
 PHI_form_confederation_cat = {
   PHI_convince_insulindia = {
     icon = GFX_decision_generic_political_discourse
@@ -446,6 +447,37 @@ PHI_anti_colonialist_crusade_cat = {
         has_completed_focus = PHI_the_co_prosperity_sphere
         has_completed_focus = PHI_support_the_kuomitang
       }
+    }
+    remove_effect = {
+      FROM = {
+        country_event = { id = philippines.70 days = 2 }
+      }
+    }
+  }
+  PHI_invite_commie_india_dec = {
+    icon = GFX_decision_generic_civil_support
+    days_remove = 7
+    fire_only_once = yes
+    ai_will_do = {
+      base = 80 # do as soon as possible
+      modifier = {
+        factor = 20
+        num_divisions > 80
+      }
+    }
+    allowed = { original_tag = PHI }
+    targets = { INC }
+    target_trigger = {
+      FROM = {
+        exists = yes
+      }
+    }
+    visible = { 
+      is_in_faction = yes
+      FROM = {
+        NOT = { is_in_faction_with = ROOT }
+      }
+      has_completed_focus = PHI_influence_india
     }
     remove_effect = {
       FROM = {

@@ -58,4 +58,20 @@ leader_traits = {
     recruitable_population_factor = 0.1
     weekly_manpower = 100
   }
+  PHI_the_surgeon = {
+		random = no
+		army_org_factor = 0.1
+		army_morale_factor = 0.1
+	}
+
+  PHI_the_union_man = {
+    random = no
+    production_factory_max_efficiency_factor = 0.05
+  }
+
+  PHI_father_of_the_filipino_language = {
+    random = no
+    political_power_gain = 0.15
+  }
+	
 }

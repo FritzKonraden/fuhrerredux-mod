@@ -432,3 +432,18 @@ PHI_start_korean_revolt = {
     custom_effect_tooltip = PHI_operation_korean_revolt_tt
   }
 }
+
+PHI_increase_market_socialism = {
+  if = {
+    limit = {
+      has_idea = PHI_market_socialism
+    }
+    swap_ideas = {
+      remove_idea = PHI_market_socialism
+      add_idea = PHI_market_socialism_1
+    }
+  }
+  else = {
+    add_ideas = PHI_market_socialism
+  }
+}
