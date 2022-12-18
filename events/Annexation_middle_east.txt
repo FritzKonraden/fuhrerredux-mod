@@ -928,6 +928,7 @@ country_event = { # Fate of Trucial States
     }
     set_temp_variable = { tag_to_release = TRU }
     658 = { transfer_state_and_add_core = yes }
+    release_targeted_tag = yes
   }
 
   option = { # Occupy

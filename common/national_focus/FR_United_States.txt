@@ -3536,6 +3536,9 @@ focus_tree = {
     ai_will_do = {
       factor = 400
     }
+    bypass = {
+      is_in_faction = yes
+    }
     mutually_exclusive = { focus = USA_continue_isolation }
     prerequisite = { focus = USA_america_on_the_world_stage }
     relative_position_id = USA_america_on_the_world_stage
@@ -3681,6 +3684,7 @@ focus_tree = {
         CUB = {
           is_in_faction_with = ROOT
           is_subject_of = ROOT
+          has_war_with = ROOT
         }
       }
     }
@@ -3709,14 +3713,17 @@ focus_tree = {
       country_exists = ENG
     }
     bypass = {
-      custom_trigger_tooltip = {
-        tooltip = USA_defeated_windsor_tt
-        OR = {
-          NOT = { country_exists = ENG }
-          EGL = {
-            exists = yes
-            is_subject_of = ROOT
-            is_in_faction_with = ROOT
+      OR = {
+        has_war_with = ENG
+        custom_trigger_tooltip = {
+          tooltip = USA_defeated_windsor_tt
+          OR = {
+            NOT = { country_exists = ENG }
+            EGL = {
+              exists = yes
+              is_subject_of = ROOT
+              is_in_faction_with = ROOT
+            }
           }
         }
       }

@@ -1,5 +1,6 @@
 # Philippine Decisions
 # created by: dax0102
+
 PHI_form_confederation_cat = {
   PHI_convince_insulindia = {
     icon = GFX_decision_generic_political_discourse

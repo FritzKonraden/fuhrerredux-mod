@@ -6128,7 +6128,11 @@ focus_tree = {
 		x = -5
 		y = 7
 		cost = 5
-		available = { always = no }
+		available = {
+			hidden_trigger = {
+				always = no 
+			}
+		}
 		bypass = { has_country_flag = GER_hitlers_right }
 		prerequisite = {
 			focus = GER_direction_of_the_economy
@@ -7382,7 +7386,11 @@ focus_tree = {
 		y = 7
 		cost = 5
 		
-		available = { always = no }
+		available = { 
+			hidden_trigger = {
+				always = no
+			}
+		}
 		
 		bypass = { has_country_flag = GER_strasser_right }
 		
