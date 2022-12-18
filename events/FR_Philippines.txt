@@ -836,6 +836,10 @@ country_event = { # Elections of 1937
       PHI_Carlos_P_Garcia_eco_sde
       PHI_Mariano_Balgos_sec_lib
     }
+    hidden_effect = {
+      set_country_flag = PHI_socialists_in_control
+      mark_focus_tree_layout_dirty = yes
+    }
   }
 }
 
