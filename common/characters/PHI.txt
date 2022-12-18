@@ -71,7 +71,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = libertarian_socialist_subtype
-			traits = { }
+			traits = { PHI_the_union_man }
 		}
 		advisor = {
 			cost = 150

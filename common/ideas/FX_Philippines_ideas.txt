@@ -5,11 +5,17 @@ ideas = {
   country = {
     PHI_catholic_nation = {
       allowed = { original_tag = PHI }
-      available = {
-        has_socialist_government = no
-      }
       picture = IRE_catholic
       modifier = {
+        monthly_population = 0.05
+        industrial_capacity_factory = 0.05
+      }
+    }
+    PHI_catholic_nation_1 = {
+      allowed = { original_tag = PHI }
+      picture = IRE_catholic
+      modifier = {
+        production_factory_max_efficiency_factor = 0.1
         monthly_population = 0.05
         industrial_capacity_factory = 0.05
       }
@@ -380,6 +386,49 @@ ideas = {
         army_org_regain = 0.15
       }
     }
+    # Laborista
+    PHI_social_security = {
+      allowed = { original_tag = PHI }
+      picture = capital_outflow
+      modifier = {
+        industrial_capacity_factory = 0.1
+      }
+    }
+    PHI_communal_farms = {
+      allowed = { original_tag = PHI }
+      picture = generic_agrarian_reform
+      modifier = {
+        supply_consumption_factor = -0.15
+        production_factory_max_efficiency_factor = 0.1
+      }
+    }
+    PHI_market_socialism = {
+      allowed = { original_tag = PHI }
+      picture = new_deal
+      modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+    }
+    PHI_market_socialism_1 = {
+      allowed = { original_tag = PHI }
+      picture = new_deal
+      modifier = {
+				production_factory_max_efficiency_factor = 0.10
+				industrial_capacity_factory = 0.10
+				line_change_production_efficiency_factor = 0.10
+			}
+    }
+    PHI_beacon_of_labour = {
+      allowed = { original_tag = PHI }
+      picture = FRA_communard_spirit
+      modifier = {
+        surrender_limit = 0.1
+        army_core_attack_factor = 0.05
+        army_core_defence_factor = 0.05
+      }
+    }
+
     # Foreign
     PHI_intervention_in_spain = {
       allowed = { original_tag = PHI }

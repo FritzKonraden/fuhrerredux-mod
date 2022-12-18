@@ -512,6 +512,7 @@ country_event = { # Scouts Expel Protesters in Mendiola
     name = philippines.24.a
     add_manpower = -50
     hidden_effect = {
+      set_country_flag = PHI_farmers_expelled
       if = {
         limit = {
           NOT = { has_government = paternal_autocrat }
@@ -818,6 +819,24 @@ country_event = { # Elections of 1937
       set_country_flag = PHI_sakdalista_party_victory
     }
   }
+  option = {
+    name = philippines.34.f
+    trigger = {
+      has_country_flag = PHI_farmers_expelled
+    }
+    set_politics = {
+      ruling_only = libertarian_socialist
+      elections_allowed = no
+    }
+    increase_ruling_party_popularity_by_20 = yes
+    remove_every_minister = yes
+    add_ideas = {
+      PHI_Crisanto_Evangelista_hog_lib
+      PHI_Guillermo_Capadocia_for_col
+      PHI_Carlos_P_Garcia_eco_sde
+      PHI_Mariano_Balgos_sec_lib
+    }
+  }
 }
 
 country_event = { # Operation Merdeka
@@ -1033,8 +1052,16 @@ country_event = { # The Filipino Language
 
   option = { # Mabuhay ang Pilipinas!
     name = philippines.45.a
-    add_stability = 0.15
-    add_political_power = 150
+    if = {
+      limit = {
+        has_country_leader = {
+          character = PHI_Manuel_Luis_Quezon
+          ruling_only = yes
+        }
+      }
+
+      add_country_leader_trait = PHI_father_of_the_filipino_language
+    }
   }
 }
 
@@ -1797,6 +1824,7 @@ country_event = { # France Accepts Philippines to the Entente
     FROM = {
       add_to_faction = ROOT
     }
+    mark_focus_tree_layout_dirty = yes
   }
 }
 
@@ -1813,6 +1841,7 @@ country_event = { # France Refuses Philippines to the Entente
       limit = { 
         FROM = { tag = FRA } 
       }
+      mark_focus_tree_layout_dirty = yes
       uncomplete_national_focus = {
         focus = PHI_look_to_the_west
         uncomplete_children = yes
@@ -1823,6 +1852,7 @@ country_event = { # France Refuses Philippines to the Entente
       limit = {
         FROM = { tag = JAP }
       }
+      mark_focus_tree_layout_dirty = yes
       uncomplete_national_focus = {
         focus = PHI_pivot_to_japan
         uncomplete_children = yes

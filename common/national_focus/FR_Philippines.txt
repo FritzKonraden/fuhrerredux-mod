@@ -1574,6 +1574,336 @@ focus_tree = {
     }
   }
 
+  # Revolution by Ballot
+  focus = {
+    id = PHI_revolution_by_ballot
+    icon = GFX_goal_ideology_libertarian_socialism
+    x = -1
+    y = 2
+    cost = 6
+    available = {
+      hidden_trigger = {
+        always = no
+      }
+    }
+    bypass = {
+      custom_trigger_tooltip = {
+        tooltip = PHI_socialists_in_control_tt
+        has_country_flag = PHI_socialists_in_control
+      }
+    }
+    allow_branch = {
+      has_country_flag = PHI_socialists_in_control
+    }
+    relative_position_id = PHI_new_antitrust_laws
+    completion_reward = {
+      custom_effect_tooltip = PHI_revolution_by_ballot_tt
+    }
+  }
+
+  # Secure our Control
+  focus = {
+    id = PHI_secure_our_control
+    icon = GFX_goal_generic_authoritarian_government
+    x = 0
+    y = 1
+    cost = 6
+    prerequisite = { focus = PHI_revolution_by_ballot }
+    available = {
+      has_capitulated = no
+      has_socialist_government = yes
+    }
+    relative_position_id = PHI_revolution_by_ballot
+    completion_reward = {
+      remove_ideas = PHI_lingering_sakdalistas
+    }
+  }
+
+  # Purge the Hardliners
+  focus = {
+    id = PHI_purge_the_hardliners
+    icon = GFX_goal_generic_grim_reaper
+    x = 0
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_socialist_government = yes
+    }
+    prerequisite = { focus = PHI_secure_our_control }
+    relative_position_id = PHI_secure_our_control
+    completion_reward = {
+      add_stability = 0.15
+      add_popularity = {
+        ideology = collectivist
+        popularity = -0.15
+      }
+      add_popularity = {
+        ideology = vanguardist
+        popularity = -0.15
+      }
+    }
+  }
+
+  # Nationalize the Haciendas
+  focus = {
+    id = PHI_nationalize_the_haciendas
+    icon = GFX_focus_rom_parties_end
+    x = -2
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_socialist_government = yes
+    }
+    prerequisite = { focus = PHI_secure_our_control }
+    relative_position_id = PHI_secure_our_control
+    completion_reward = {
+      increase_ruling_party_popularity_by_10 = yes
+      remove_ideas = PHI_hacienda_questions
+    }
+  }
+
+  # Christian Socialism
+  focus = {
+    id = PHI_christian_socialism
+    icon = GFX_BEL_Improve_Catholic_Relations
+    x = 2
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_socialist_government = yes
+    }
+    prerequisite = { focus = PHI_secure_our_control }
+    relative_position_id = PHI_secure_our_control
+    completion_reward = {
+      increase_ruling_party_popularity_by_5 = yes
+      swap_ideas = {
+        remove_idea = PHI_catholic_nation
+        add_idea = PHI_catholic_nation_1
+      }
+    }
+  }
+
+  # Literacy Programs
+  focus = {
+    id = PHI_literacy_programs
+    icon = GFX_focus_generic_socialist_science
+    x = 1
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_socialist_government = yes
+    }
+    prerequisite = { focus = PHI_nationalize_the_haciendas }
+    relative_position_id = PHI_nationalize_the_haciendas
+    completion_reward = {
+      add_research_slot = 1
+    }
+  }
+
+  # Nationwide Social Security
+  focus = {
+    id = PHI_nationwide_social_security
+    icon = GFX_DAH_Topke
+    x = -1
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_socialist_government = yes
+    }
+    prerequisite = { focus = PHI_christian_socialism }
+    relative_position_id = PHI_christian_socialism
+    completion_reward = {
+      add_ideas = PHI_social_security
+    }
+  }
+
+  # Establish PhilHealth
+  focus = {
+    id = PHI_establish_philhealth
+    icon = GFX_goal_generic_medical
+    x = 1
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_socialist_government = yes
+    }
+    prerequisite = { focus = PHI_christian_socialism }
+    relative_position_id = PHI_christian_socialism
+    completion_reward = {
+      add_ideas = PHI_improved_healthcare
+    }
+  }
+
+  # Townhall Democracy
+  focus = {
+    id = PHI_townhall_democracy
+    icon = GFX_goal_generic_enforce_labor_regulation
+    x = 1
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_socialist_government = yes
+    }
+    prerequisite = { focus = PHI_establish_philhealth }
+    prerequisite = { focus = PHI_nationwide_social_security }
+    relative_position_id = PHI_nationwide_social_security
+    completion_reward = {
+      increase_ruling_party_popularity_by_5 = yes
+      add_stability = 0.05
+      add_political_power = 100
+    }
+  }
+
+  # Communal Farms
+  focus = {
+    id = PHI_communal_farms
+    icon = GFX_focus_prc_agrarian_socialism
+    x = 2
+    y = 2
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_socialist_government = yes
+    }
+    prerequisite = { focus = PHI_nationalize_the_haciendas }
+    relative_position_id = PHI_nationalize_the_haciendas
+    completion_reward = {
+      add_ideas = PHI_communal_farms
+    }
+  }
+
+  # Publicly Owned Enterprise
+  focus = {
+    id = PHI_publicly_owned_enterprise
+    icon = GFX_goal_generic_food_processing
+    x = -1
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_socialist_government = yes
+    }
+    prerequisite = { focus = PHI_nationalize_the_haciendas }
+    relative_position_id = PHI_nationalize_the_haciendas
+    completion_reward = {
+      random_owned_controlled_state = {
+        if = {
+          limit = {
+            free_building_slots = {
+              building = industrial_complex
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+            type = industrial_complex
+            level = 2
+            instant_build = yes
+          }
+        }
+      }
+      random_owned_controlled_state = {
+        if = {
+          limit = {
+            free_building_slots = {
+              building = industrial_complex
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+            type = industrial_complex
+            level = 2
+            instant_build = yes
+          }
+        }
+      }
+      random_owned_controlled_state = {
+        if = {
+          limit = {
+            free_building_slots = {
+              building = industrial_complex
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = industrial_complex
+            level = 1
+            instant_build = yes
+          }
+        }
+      }
+    }
+  }
+
+  # Worker's Cooperatives
+  focus = {
+    id = PHI_workers_cooperatives
+    icon = GFX_goal_revolution_tools
+    x = -1
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_socialist_government = yes
+    }
+    prerequisite = { focus = PHI_publicly_owned_enterprise }
+    relative_position_id = PHI_publicly_owned_enterprise
+    completion_reward = {
+      PHI_increase_market_socialism = yes
+    }
+  }
+
+  # Protectionist Policies
+  focus = {
+    id = PHI_protectionist_policies
+    icon = GFX_goal_generic_banking_legislation
+    x = 1
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_socialist_government = yes
+    }
+    prerequisite = { focus = PHI_publicly_owned_enterprise }
+    relative_position_id = PHI_publicly_owned_enterprise
+    completion_reward = {
+      PHI_increase_market_socialism = yes
+    }
+  }
+
+  # Protecting the Revolution
+  focus = {
+    id = PHI_protecting_the_revolution
+    icon = GFX_goal_red_star_green_wreath
+    x = -1
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_socialist_government = yes
+    }
+    prerequisite = { focus = PHI_communal_farms }
+    prerequisite = { focus = PHI_townhall_democracy }
+    prerequisite = { focus = PHI_protectionist_policies }
+    prerequisite = { focus = PHI_workers_cooperatives }
+    relative_position_id = PHI_communal_farms
+    completion_reward = {
+      add_ideas = PHI_beacon_of_labour
+    }
+  }
+
   ######################################################
   #                                                    #
   #                      INDUSTRY                      #
@@ -2010,7 +2340,10 @@ focus_tree = {
       x = 10
       y = 4
       trigger = {
-        has_country_flag = PHI_junta_in_control
+       OR = {
+         has_country_flag = PHI_junta_in_control
+         has_country_flag = PHI_socialists_in_control
+       }
       }
     }
     available = {
@@ -2413,6 +2746,7 @@ focus_tree = {
     }
     available = {
       is_in_faction = no
+      has_socialist_government = no
       JAP = {
         exists = yes
         NOT = { is_in_faction_with = GER }
@@ -2473,7 +2807,13 @@ focus_tree = {
     prerequisite = { focus = PHI_into_the_world }
     relative_position_id = PHI_into_the_world
     completion_reward = {
-      create_faction = PHI_JAP_faction
+      if = {
+        limit = { has_socialist_government = no }
+        create_faction = PHI_manila_pact
+      }
+      else = {
+        create_faction = PHI_asian_federation_of_labour
+      }
     }
   }
 
@@ -2705,6 +3045,7 @@ focus_tree = {
     cost = 6
     available = {
       is_in_faction = yes
+      has_socialist_government = no
     }
     prerequisite = {
       focus = PHI_pivot_to_japan
@@ -2715,6 +3056,7 @@ focus_tree = {
       if = {
         limit = {
           NOT = { has_completed_focus = PHI_pivot_to_japan }
+          has_socialist_government = no
         }
         unlock_decision_tooltip = PHI_invite_china_dec
       }
@@ -2748,6 +3090,13 @@ focus_tree = {
         is_subject = no
         is_in_faction = no
         NOT = { has_war_with = ROOT }
+
+        if = {
+          limit = {
+            ROOT = { has_socialist_government = yes }
+          }
+          has_socialist_government = yes
+        }
       }
     }
     bypass = {
@@ -2833,18 +3182,44 @@ focus_tree = {
     y = 2
     cost = 6
     available = {
-      IND = {
-        exists = yes
-        is_subject = no
-        is_in_faction = no
-        NOT = { has_war_with = ROOT }
+      if = {
+        limit = {
+          has_socialist_government = yes
+        }
+        INC = {
+          exists = yes
+          is_subject = no
+          is_in_faction = no
+          NOT = { has_war_with = ROOT }
+        }
+      }
+      else = {
+        IND = {
+          exists = yes
+          is_subject = no
+          is_in_faction = no
+          NOT = { has_war_with = ROOT }
+        }
       }
     }
     bypass = {
-      IND = {
-        OR = {
-          is_subject_of = ROOT
-          is_in_faction_with = ROOT
+      if = {
+        limit = {
+          has_socialist_government = yes
+        }
+        INC = {
+          OR = {
+            is_subject_of = ROOT
+            is_in_faction_with = ROOT
+          }
+        }
+      }
+      else = {
+        IND = {
+           OR = {
+            is_subject_of = ROOT
+            is_in_faction_with = ROOT
+          }
         }
       }
     }
@@ -2858,7 +3233,15 @@ focus_tree = {
     }
     relative_position_id = PHI_support_the_kuomitang
     completion_reward = {
-      unlock_decision_tooltip = PHI_invite_india_dec
+      if = {
+        limit = {
+          has_socialist_government = yes
+        }
+        unlock_decision_tooltip = PHI_invite_commie_india_dec
+      }
+      else = {
+        unlock_decision_tooltip = PHI_invite_india_dec
+      }
     }
   }
 
