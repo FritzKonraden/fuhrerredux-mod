@@ -837,6 +837,9 @@ country_event = { # Elections of 1937
       PHI_Mariano_Balgos_sec_lib
     }
     hidden_effect = {
+      random_other_country = {
+        news_event = { id = fxnews.46 days = 2 }
+      }
       set_country_flag = PHI_socialists_in_control
       mark_focus_tree_layout_dirty = yes
     }
