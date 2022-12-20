@@ -445,6 +445,22 @@ country_event = { # Farmers Demands Government Help
   option = { # Refuse
     name = philippines.21.b
     add_stability = -0.15
+    add_popularity = {
+      ideology = social_democrat
+      popularity = 0.15
+    }
+    add_popularity = {
+      ideology = libertarian_socialist
+      popularity = 0.1
+    }
+    add_popularity = {
+      ideology = collectivist
+      popularity = 0.05
+    }
+    add_popularity = {
+      ideology = vanguardist
+      popularity = 0.05
+    }
     hidden_effect = {
       country_event = { id = philippines.23 days = 7 }
     }
@@ -511,6 +527,18 @@ country_event = { # Scouts Expel Protesters in Mendiola
   option = { # This is not good.
     name = philippines.24.a
     add_manpower = -50
+    add_popularity = {
+      ideology = libertarian_socialist
+      popularity = 0.1
+    }
+    add_popularity = {
+      ideology = collectivist
+      popularity = 0.05
+    }
+    add_popularity = {
+      ideology = vanguardist
+      popularity = 0.05
+    }
     hidden_effect = {
       set_country_flag = PHI_farmers_expelled
       if = {
@@ -825,7 +853,7 @@ country_event = { # Elections of 1937
       has_country_flag = PHI_farmers_expelled
     }
     set_politics = {
-      ruling_only = libertarian_socialist
+      ruling_party = libertarian_socialist
       elections_allowed = no
     }
     increase_ruling_party_popularity_by_20 = yes
@@ -840,8 +868,17 @@ country_event = { # Elections of 1937
       random_other_country = {
         news_event = { id = fxnews.46 days = 2 }
       }
+      set_country_flag = PHI_has_1937_elections
       set_country_flag = PHI_socialists_in_control
       mark_focus_tree_layout_dirty = yes
+      add_popularity = {
+        ideology = collectivist
+        popularity = 0.1
+      }
+      add_popularity = {
+        ideology = vanguardist
+        popularity = 0.1
+      }
     }
   }
 }

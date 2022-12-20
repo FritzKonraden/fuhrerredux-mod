@@ -974,6 +974,7 @@ PHI_san_miguel_corporation: "San Miguel"
 
 ### Faction
 PHI_USA_faction: "Freedom Alliance"
+PHI_JAP_faction: "Co-Prosperity Sphere"
 PHI_co_prosperity_sphere: "Co-Prosperity Sphere"
 PHI_asian_federation_of_labour: "Asian Federation of Labour"
 PHI_manila_pact: "Manila Pact"

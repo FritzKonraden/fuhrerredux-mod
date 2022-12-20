@@ -389,7 +389,7 @@ ideas = {
     # Laborista
     PHI_social_security = {
       allowed = { original_tag = PHI }
-      picture = capital_outflow
+      picture = generic_foreign_capital
       modifier = {
         industrial_capacity_factory = 0.1
       }
