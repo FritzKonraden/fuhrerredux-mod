@@ -3112,7 +3112,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_scandinavia_focus
-		icon = GFX_goal_NOR_nordic_council
+		icon = GFX_goal_GER_scandinavia_claims
 		x = 3
 		y = 14
 		cost = 5

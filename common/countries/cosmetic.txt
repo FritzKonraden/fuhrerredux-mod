@@ -558,6 +558,10 @@ PHI_CONFED = {
 	color = rgb { 204 81 39 }
 	color_ui = rgb { 204 81 39 }
 }
+PHI_HOLY = {
+	color = rgb { 242 242 142 }
+	color_ui = rgb { 242 242 142 }
+}
 NFA_USA = {
 	color = rgb { 44 106 193 }
 	color_ui = rgb { 44 106 193 }

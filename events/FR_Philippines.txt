@@ -865,6 +865,7 @@ country_event = { # Elections of 1937
       PHI_Mariano_Balgos_sec_lib
     }
     hidden_effect = {
+      country_event = { id = philippines.102 days = 48 }
       random_other_country = {
         news_event = { id = fxnews.46 days = 2 }
       }
@@ -2791,6 +2792,170 @@ country_event = { # President Quezon Assassinated
         news_event = { id = fxnews.44 days = 1 }
       }
       country_event = { id = philippines.24 days = 2 }
+    }
+  }
+}
+
+country_event = { # Assassination Attempt Against President Evangelista
+  id = philippines.102
+  title = philippines.102.t
+  desc = philippines.102.d
+  picture = GFX_report_event_PHI_aquino_speech
+  is_triggered_only = yes
+
+  option = {
+    name = philippines.102.a
+    add_stability = -0.15
+  }
+}
+
+country_event = { # Pope Arrives in the Philippines
+  id = philippines.103
+  title = philippines.103.t
+  picture = GFX_report_event_ITA_pope
+  fire_only_once = yes
+
+  trigger = {
+    tag = PHI
+    OR = {
+      has_country_flag = PHI_has_1937_elections
+      has_country_flag = PHI_junta_in_control
+    }
+    OR = {
+      ITA = {
+        AND = {
+          controls_state = 2
+          has_completed_focus = ITA_state_atheism
+          has_socialist_government = yes
+        }
+      }
+      ITP = {
+        AND = {
+          controls_state = 2
+          is_subject = yes
+          OR = {
+            has_government = valkist
+            has_socialist_government = yes
+          }
+        }
+      }
+    }
+  }
+
+  desc = {
+    text = philippines.103.d_ita
+    ITA = { controls_state = 2 }
+  }
+  desc = {
+    text = philippines.103.d_itp
+    ITP = { controls_state = 2 }
+  }
+  desc = {
+    text = philippines.103.d
+  }
+
+  option = { # We welcome, His Holiness
+    name = philippines.103.a
+    add_ideas = PHI_papacy_in_exile
+    set_country_flag = PHI_exiled_pope
+    hidden_effect = {
+      ITA = {
+        set_nationality = {
+          target_country = ROOT
+          character = ITA_Pope_Julius_IV
+        }
+      }
+      country_event = { id = philippines.104 days = 30 }
+    }
+  }
+}
+
+country_event = { # Death of Pius XII
+  id = philippines.104
+  title = philippines.104.t
+  desc = philippines.104.d
+  picture = GFX_report_event_ITA_pope_death
+  is_triggered_only = yes
+
+  option = { # Good Luck, Your Holiness
+    name = philippines.104.a
+    add_political_power = 20
+  }
+}
+
+country_event = { # Growing Political Catholic Church Influence
+  id = philippines.105
+  title = philippines.105.t
+  desc = philippines.105.d
+  picture = GFX_report_event_ITA_pope
+  is_triggered_only = yes
+
+  option = { # Every men can have their opinions expressed freely
+    name = philippines.105.a
+    set_country_flag = PHI_start_of_the_great_game
+    set_power_balance = {
+			id = PHI_power_balance
+			left_side = PHI_papacy_side # will keep the last set side if not specified
+			right_side = PHI_government_side # will keep the last set side if not specified
+			set_default = yes # whether or not to reset the power balance to the initial value, default = no
+		}
+  }
+}
+
+country_event = { # Pope 
+  id = philippines.106
+  title = philippines.106.t
+  desc = philippines.106.d
+  picture = GFX_report_event_ITA_pope
+  is_triggered_only = yes
+
+  option = { # Deus Vult!
+    name = philippines.106.a
+    add_country_leader_role = {
+      character = ITA_Pope_Julius_IV
+      promote_leader = yes
+      country_leader = {
+        ideology = national_populist_subtype
+        traits = { exiled_pope }
+      }
+    }
+    set_politics = {
+      ruling_party = national_populist
+      elections_allowed = no
+      election_frequency = 48
+      long_name = PHI_holy_party_long
+      name = PHI_holy_party
+    }
+    increase_ruling_party_popularity_by_20 = yes
+    remove_every_minister = yes
+    set_cosmetic_tag = PHI_HOLY
+    add_ideas = {
+      PHI_Andres_Soriano_hog_npo
+      PHI_Claro_M_Recto_for_ade
+      PHI_Enrique_Zobel_de_Ayala_eco_npo
+      PHI_Benigno_Aquino_Sr_sec_ade
+    }
+    hidden_effect = {
+      set_country_flag = PHI_pope_in_control
+      clr_country_flag = PHI_great_game
+      mark_focus_tree_layout_dirty = yes
+    }
+  }
+}
+
+country_event = { # Conspiracy of a Coup
+  id = philippines.107
+  title = philippines.107.t
+  desc = philippines.107.d
+  picture = GFX_report_event_PHI_scouts_1
+  is_triggered_only = yes
+
+  option = {
+    name = philippines.107.a
+    clr_country_flag = PHI_great_game
+    swap_ideas = {
+      remove_idea = PHI_papacy_in_exile
+      add_idea = PHI_papacy_in_exile_1
     }
   }
 }

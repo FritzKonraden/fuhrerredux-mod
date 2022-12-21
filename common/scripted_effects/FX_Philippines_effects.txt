@@ -447,3 +447,51 @@ PHI_increase_market_socialism = {
     add_ideas = PHI_market_socialism
   }
 }
+
+PHI_bop_high_increase_pope_side_effect = {
+  add_power_balance_value = {
+    id = PHI_power_balance
+    value = -0.15
+    tooltip_side = PHI_papacy_side
+  }
+}
+
+PHI_bop_medium_increase_pope_side_effect = {
+  add_power_balance_value = {
+    id = PHI_power_balance
+    value = -0.1
+    tooltip_side = PHI_papacy_side
+  }
+}
+
+PHI_bop_low_increase_pope_side_effect = {
+  add_power_balance_value = {
+    id = PHI_power_balance
+    value = -0.05
+    tooltip_side = PHI_papacy_side
+  }
+}
+
+PHI_bop_high_increase_government_side_effect = {
+  add_power_balance_value = {
+    id = PHI_power_balance
+    value = 0.15
+    tooltip_side = PHI_government_side
+  }
+}
+
+PHI_bop_medium_increase_government_side_effect = {
+  add_power_balance_value = {
+    id = PHI_power_balance
+    value = 0.1
+    tooltip_side = PHI_government_side
+  }
+}
+
+PHI_bop_low_increase_government_side_effect = {
+  add_power_balance_value = {
+    id = PHI_power_balance
+    value = 0.05
+    tooltip_side = PHI_government_side
+  }
+}

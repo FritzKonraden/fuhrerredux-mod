@@ -428,6 +428,18 @@ ideas = {
         army_core_defence_factor = 0.05
       }
     }
+    # Pope
+    PHI_papacy_in_exile = {
+      allowed = { original_tag = PHI }
+      picture = PAP_holy_see
+      modifier = {
+        political_power_gain = 0.1
+      }
+    }
+    PHI_papacy_in_exile_1 = {
+      allowed = { original_tag = PHI }
+      picture = PAP_holy_see
+    }
 
     # Foreign
     PHI_intervention_in_spain = {

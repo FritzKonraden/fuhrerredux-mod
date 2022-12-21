@@ -2052,4 +2052,12 @@ characters = {
 			logistics_skill = 2
 		}
 	}
+	ITA_Pope_Julius_IV = {
+		name = "Pope Julius IV"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ITA/Portrait_ITA_Pope_Julius_IV.png"
+			}
+		}
+	}
 }
