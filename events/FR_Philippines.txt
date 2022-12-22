@@ -2936,8 +2936,17 @@ country_event = { # Pope
       PHI_Benigno_Aquino_Sr_sec_ade
     }
     hidden_effect = {
+      add_stability = -0.20
+      add_ideas = {
+        elective_monarchy
+        PHI_resisting_muslim_minorities
+        PHI_uncooperative_protestants
+        PHI_guerilla_problem
+      }
       set_country_flag = PHI_pope_in_control
       clr_country_flag = PHI_great_game
+      clr_country_flag = PHI_junta_in_control
+      clr_country_flag = PHI_socialists_in_control
       mark_focus_tree_layout_dirty = yes
     }
   }
@@ -2957,5 +2966,18 @@ country_event = { # Conspiracy of a Coup
       remove_idea = PHI_papacy_in_exile
       add_idea = PHI_papacy_in_exile_1
     }
+  }
+}
+
+country_event = { # Manalo Arrested
+  id = philippines.108
+  title = philippines.108.t
+  desc = philippines.108.d
+  picture = GFX_report_event_PHI_protests
+  is_triggered_only = yes
+
+  option = {
+    name = philippines.108.a
+    add_political_power = -100
   }
 }

@@ -1,6 +1,66 @@
 # Philippine Decisions
 # created by: dax0102
 
+PHI_catholic_alliance_cat = {
+    PHI_invite_south_america = {
+    icon = GFX_decision_generic_form_nation
+    days_remove = 7
+    cost = 10
+    fire_only_once = yes
+    ai_will_do = {
+      base = 800
+    }
+    allowed = { original_tag = PHI }
+    target_array = global.countries
+    target_trigger = {
+      FROM = {
+        exists = yes
+        has_socialist_government = no
+        capital_scope = {
+          OR = {
+            is_on_continent = south_america
+            is_on_continent = north_america
+          }
+        }
+        NOT = {
+          has_government = valkist
+          tag = KNE
+          tag = USA
+          tag = CAN
+          tag = NFL
+        }
+      }
+    }
+    available = {
+      FROM = {
+        exists = yes
+        is_subject = no
+        has_socialist_government = no
+        NOT = {
+          has_war_with = ROOT
+        }
+      }
+    }
+    visible = { 
+      is_in_faction = yes
+      FROM = {
+        exists = yes
+        is_subject = no
+        has_socialist_government = no
+        NOT = { 
+          is_in_faction_with = ROOT
+          has_war_with = ROOT
+        }
+      }
+      has_completed_focus = PHI_catholic_dominion
+    }
+    remove_effect = {
+      FROM = {
+        country_event = { id = philippines.70 days = 2 }
+      }
+    }
+  }
+}
 PHI_form_confederation_cat = {
   PHI_convince_insulindia = {
     icon = GFX_decision_generic_political_discourse
@@ -645,6 +705,76 @@ PHI_anti_colonialist_crusade_cat = {
 }
 
 foreign_politics = {
+  PHI_take_back_jerusalem = {
+    icon = GFX_decision_generic_civil_support
+    days_remove = 60
+    fire_only_once = yes
+    targets_array = global.countries
+    target_trigger = {
+      FROM = {
+        exists = yes
+        owns_state = 454
+      }
+    }
+    available = {
+      is_subject = no
+      FROM = {
+        exists = yes
+        has_full_control_of_state = 454
+        NOT = { 
+          has_war_with = ROOT
+          is_in_faction_with = ROOT
+        }
+      }
+    }
+    visible = {
+      NOT = {
+        owns_state = 454
+      }
+      has_completed_focus = PHI_the_holy_lands
+    }
+    remove_effect = {
+      create_wargoal = {
+        target = FROM
+        type = annex_everything
+      }
+    }
+  }
+  PHI_take_back_rome = {
+    icon = GFX_decision_generic_civil_support
+    days_remove = 60
+    fire_only_once = yes
+    targets_array = global.countries
+    target_trigger = {
+      FROM = {
+        exists = yes
+        owns_state = 2
+      }
+    }
+    available = {
+      is_subject = no
+      FROM = {
+        exists = yes
+        has_full_control_of_state = 2
+        NOT = { 
+          has_war_with = ROOT
+          is_in_faction_with = ROOT
+        }
+      }
+    }
+    visible = {
+      NOT = {
+        owns_state = 2
+      }
+      has_completed_focus = PHI_the_holy_lands
+    }
+    remove_effect = {
+      create_wargoal = {
+        target = FROM
+        type = annex_everything
+      }
+    }
+  }
   PHI_guam_issue = {
     icon = GFX_decision_generic_ignite_civil_war
     is_good = no
