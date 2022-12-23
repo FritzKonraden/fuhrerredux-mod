@@ -2402,8 +2402,17 @@ focus_tree = {
           tooltip = PHI_junta_in_control_tt
           has_country_flag = PHI_junta_in_control
         }
+
+        if = {
+          limit = { has_country_flag = PHI_exiled_pope }
+          custom_trigger_tooltip = {
+            tooltip = PHI_pope_has_control_tt
+            has_country_flag = PHI_pope_in_control
+          }
+        }
       }
       threat > 0.2
+      
     }
     relative_position_id = PHI_new_antitrust_laws
     completion_reward = {
@@ -4660,7 +4669,7 @@ focus_tree = {
   # Purge Unbelievers
   focus = {
     id = PHI_purge_unbelievers
-    icon = GFX_goal_backstab
+    icon = GFX_goal_PHI_inquisition
     x = 0
     y = 1
     cost = 6
@@ -4724,7 +4733,7 @@ focus_tree = {
   # A Call to the Faithful
   focus = {
     id = PHI_a_call_to_the_faithful
-    icon = GFX_BEL_Improve_Catholic_Relations
+    icon = GFX_goal_PHI_call_to_the_faithful
     x = 0
     y = 1
     cost = 6

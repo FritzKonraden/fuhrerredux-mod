@@ -2818,14 +2818,9 @@ country_event = { # Pope Arrives in the Philippines
   trigger = {
     tag = PHI
     OR = {
-      has_country_flag = PHI_has_1937_elections
-      has_country_flag = PHI_junta_in_control
-    }
-    OR = {
       ITA = {
         AND = {
           controls_state = 2
-          has_completed_focus = ITA_state_atheism
           has_socialist_government = yes
         }
       }
@@ -2840,6 +2835,10 @@ country_event = { # Pope Arrives in the Philippines
         }
       }
     }
+  }
+
+  mean_time_to_happen = {
+    days = 7
   }
 
   desc = {
@@ -2880,6 +2879,9 @@ country_event = { # Death of Pius XII
   option = { # Good Luck, Your Holiness
     name = philippines.104.a
     add_political_power = 20
+    hidden_effect = {
+      country_event = { id = philippines.105 days = 14 }
+    }
   }
 }
 
@@ -2944,10 +2946,14 @@ country_event = { # Pope
         PHI_guerilla_problem
       }
       set_country_flag = PHI_pope_in_control
-      clr_country_flag = PHI_great_game
+      clr_country_flag = PHI_start_of_the_great_game
       clr_country_flag = PHI_junta_in_control
       clr_country_flag = PHI_socialists_in_control
       mark_focus_tree_layout_dirty = yes
+
+      remove_power_balance = {
+        id = PHI_power_balance
+      }
     }
   }
 }

@@ -495,3 +495,53 @@ PHI_bop_low_increase_government_side_effect = {
     tooltip_side = PHI_government_side
   }
 }
+
+PHI_create_papal_state = {
+  clr_country_flag = PHI_exiled_pope
+  
+  if = {
+    limit = {
+      2 = { is_core_of = ITA }
+    }
+
+    ITA = {
+      every_core_state = {
+        add_core_of = ITP
+        remove_core_of = ITA
+        add_claim_by = ITA
+        remove_claim_by = ROOT
+      }
+    }
+  }
+  every_state = {
+    limit = {
+      is_core_of = ITP
+      is_owned_by_ROOT_or_subject = yes
+    }
+    transfer_state_to = ITP
+  }
+  set_nationality = {
+    character = ITA_Pope_Julius_IV
+    target_country = ITP
+  }
+  ITP = {
+    set_cosmetic_tag = ITA_PAP
+    set_politics = {
+      ruling_party = national_populist
+      elections_allowed = no
+      name = ITP_pope_party
+      long_name = ITP_pope_party_long
+    }
+    add_popularity = {
+      ideology = national_populist
+      popularity = 0.45
+    }
+    ITA_Pope_Julius_IV = {
+      promote_character = yes
+      remove_trait = {
+        ideology = national_populist_subtype
+        trait = exiled_pope
+      }
+    }
+  }
+}

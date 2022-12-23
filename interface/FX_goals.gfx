@@ -4,6 +4,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/BRA_catholic_education.png"
 	}
 	spriteType = {
+		name = "GFX_goal_PHI_call_to_the_faithful"
+		texturefile = "gfx/interface/goals/PHI_call_to_the_faithful.png"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_inquisition"
+		texturefile = "gfx/interface/goals/PHI_inquisition.png"
+	}
+	spriteType = {
 		name = "GFX_goal_PHI_faitful_elites"
 		texturefile = "gfx/interface/goals/PHI_faitful_elites.png"
 	}

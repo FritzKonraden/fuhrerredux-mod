@@ -518,6 +518,10 @@ ITA_puppet_communist = {
 	color = rgb { 140 15 15 }
 	color_ui = rgb {140 15 15 }
 }
+ITA_PAP = {
+	color = rgb { 255 255 183 }
+	color_ui = rgb { 255 255 183 }
+}
 ITA_puppet = {
 	color = rgb { 40 40 40 }
 	color_ui = rgb { 40 40 40 }

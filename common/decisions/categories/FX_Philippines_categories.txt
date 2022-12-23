@@ -50,5 +50,12 @@ PHI_great_game = {
 PHI_catholic_alliance_cat = {
   allowed = { original_tag = PHI }
   priority = 70
-  icon = GFX_decision_category_saf_anti_colonialist_crusade
+  icon = GFX_decisions_cat_catholic_alliance
+}
+
+PHI_papacy_in_exile_cat = {
+  allowed = { original_tag = PHI }
+  priority = 80
+  icon = GFX_decisions_cat_papacy
+  picture = GFX_decision_cat_picture_papacy_in_exile
 }
