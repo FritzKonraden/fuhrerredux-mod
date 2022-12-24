@@ -1,10 +1,10 @@
 ﻿l_english:
 
-### Country Names
-JAP_vanguardist: "Federated Communal Republic of Japan" #日本公社連合共和国
+### Country Names ###
+JAP_vanguardist: "Federated Communal Republic of Japan" #日本公社联合共和国
 JAP_vanguardist_ADJ: "Japanese"
 JAP_vanguardist_DEF: "Federated Communal Republic of Japan" 
-JAP_collectivist: "United Provinces of Revolutionary Japan" #日本革命連邦共和国
+JAP_collectivist: "United Provinces of Revolutionary Japan" #日本革命联邦共和国
 JAP_collectivist_ADJ: "Japanese"
 JAP_collectivist_DEF: "United Provinces of Revolutionary Japan"
 JAP_libertarian_socialist: "Japanese Democratic People's Republic"
@@ -35,7 +35,7 @@ JAP_valkist: "Akitsushima Shinshū Seifu"
 JAP_valkist_ADJ: "Akitsushiman"
 JAP_valkist_DEF: "Divine State Administration of Akitsushima"
 
-JAP_tohokai_national_populist: "Shikkenate of Japan"
+JAP_tohokai_national_populist: "Nihon Shikken Seifu"
 JAP_tohokai_national_populist_DEF: "Shikkenate of Japan"
 JAP_tohokai_pan_asianism: "Kyokutō Eien Rengō"
 JAP_tohokai_pan_asianism_DEF: "Far Eastern Eternal Union"
@@ -61,8 +61,8 @@ JAP_Republican_collectivist_DEF: "Japanese Socialist Council Republic"
 JAP_Republican_vanguardist: "Japanese Revolutionary Communes"
 JAP_Republican_vanguardist_DEF: "Federation of Japanese Revolutionary Communes"
 
-JAP_KINGORO: "Dai Nippon Kakumei Teikoku"
-JAP_KINGORO_DEF: "Greater Revolutionary Japanese Empire"
+JAP_KINGORO: "Revolutionary Union State of Imperial Japan"
+JAP_KINGORO_DEF: "Revolutionary Union State of Imperial Japan"
 
 JAP_NOSAKA: "Imperial Union of Revolutionary Japan"
 JAP_NOSAKA_DEF: "Imperial Union of Revolutionary Japan"
@@ -123,14 +123,14 @@ JAP_Republican_libertarian_socialist_party: "Jinmin-kai"
 JAP_Republican_libertarian_socialist_party_long: "Saikō Jinmin Kumiai Hyōgi-kai (Supreme People's Union Council)"
 JAP_Republican_collectivist_party: "Seito-ha"
 JAP_Republican_collectivist_party_long: "Kyōsan-tō - Seito-ha (Japanese Communist Party - Orthodoxy)"
-JAP_Republican_vanguardist_party: "Zen'ei-sha"
-JAP_Republican_vanguardist_party_long: "Kyōsan-tō - Zen'ei-sha (Japanese Communist Party - Vanguardist)"
-JAP_Red_Empire_vanguardist_party: "Shin Sakurakai"
-JAP_Red_Empire_vanguardist_party_long: "Shin Sakurakai (New Sakura Society)"
+JAP_Republican_vanguardist_party: "Zen'ei-ha"
+JAP_Republican_vanguardist_party_long: "Kyōsan-tō - Zen'ei-ha (Japanese Communist Party - Vanguardist)"
 JAP_Social_Fem_libertarian_socialist_party: "Jiritsu-ha"
 JAP_Social_Fem_libertarian_socialist_party_long: "Kyōsan-tō - Jiritsu-ha (Japanese Communist Party - Autonomist)"
 JAP_Republican_Kanson_party: "Sōsetsu-ha"
-JAP_Republican_Kanson_party_long: "Kyōsan-tō - Sōsetsu-ha (Japanese Communist Party - Founder Faction)"
+JAP_Republican_Kanson_party_long: "Kyōsan-tō - Sōsetsu-ha (Japanese Communist Party - Founders Clique)"
+JAP_Red_Empire_vanguardist_party: "Shin Sakurakai"
+JAP_Red_Empire_vanguardist_party_long: "Shin Sakurakai (New Sakura Society)"
 
 ###Daijo-kan Modifier###
 JAP_daijo_kan_modifier: "Chancellor of State"
@@ -934,14 +934,36 @@ JAP_purge_the_moderates: "Purge the Moderates"
 JAP_ban_all_leftist_parties: "Ban All Leftist Parties"
 JAP_all_banners_under_shikken: "All Unite Under Shikken"
 JAP_rewrite_national_constitution: "Rewrite the Constitution"
-JAP_zaibutsu_incorporation: "Zaibutsu Incorporation"
+JAP_zaibutsu_incorporation: "Zaibatsu Incorporation"
 JAP_suppress_the_unnecessary_companies: "Suppress the SMEs"
 JAP_oath_of_future_generation: "Oath of Future Generation"
 JAP_koku_dai_shuin: "Koku Dai Shuin"
 JAP_entrust_the_future_to_our_next_gen: "Entrust the Future to the Next Gen"
 JAP_to_the_eternity: "To the Eternity"
 JAP_the_protector_assumed_shogunate: "The Protector Assumes the Shogunate"
-
+JAP_chase_the_dream_of_world_unity: "Chase the Dream of World Unity"
+JAP_severe_the_london_relationship: "Severe Relationship with Britain"
+JAP_meet_the_zaibatsu: "Meet the Zaibatsu"
+JAP_tokaido_oil_refinement: "Tokaido Oil Refinement"
+JAP_shinkansen_project: "Shinkansen Project"
+JAP_harbin_conference: "Harbin Conference"
+JAP_manchurian_economic_corridor: "Manchurian Economic Corridor"
+JAP_reform_mantetsu: "Reform Mantetsu"
+JAP_only_state_can_help: "Only State Can Help"
+JAP_great_seven_project: "Great Seven Project"
+JAP_holy_workers_policy: "Holy Workers' Policy"
+JAP_guidance_of_buddha_for_worker_prolet: "Buddha's Guidance for Workers and Proletariats"
+JAP_holy_voice_to_yamato: "Holy Voice to Yamato"
+JAP_nationalize_soka_gakkai: "Nationalize Soka Gakkai"
+JAP_ministry_of_true_faith: "Ministry of True Faith"
+JAP_bureau_of_faith_inquest_and_purify: "Bureau of Faith Inquest and Purify"
+JAP_bless_of_great_heaven: "Blessing of Great Heaven"
+JAP_absorb_the_heretics: "Absorb the Heretics"
+JAP_spirit_of_bodhisatva: "Spirit of Bodhisatva"
+JAP_meet_zen_monks: "Meet Zen Monks"
+JAP_materialize_pure_land_theory: "Materialize Pure Land Theory"
+JAP_one_true_buddhist_state: "One & True Buddhist State"
+JAP_nirvana_of_far_east: "Nirvana of Far East"
 
 
 #Country Flags
