@@ -48,7 +48,7 @@ shared_focus = {
 	id = JAP_restore_ritsuryo
 	icon = GFX_goal_JAP_ritsuryo_code
 	relative_position_id = JAP_great_council_of_state
-	x = -2
+	x = -3
 	y = 1
 	prerequisite = {
 		focus = JAP_great_council_of_state
@@ -67,7 +67,7 @@ shared_focus = {
 	id = JAP_empower_shogunal_authority
 	icon = GFX_goal_JAP_the_two_tokugawas
 	relative_position_id = JAP_great_council_of_state
-	x = 2
+	x = -1
 	y = 1
 	prerequisite = {
 		focus = JAP_great_council_of_state
@@ -87,8 +87,8 @@ shared_focus = {
 	id = JAP_kyujidai_doctrine
 	icon = GFX_goal_JAP_kyujidai
 	relative_position_id = JAP_great_council_of_state
-	x = -5
-	y = 2
+	x = 1
+	y = 1
 	prerequisite = {
 		focus = JAP_great_council_of_state
 	}
@@ -107,8 +107,8 @@ shared_focus = {
 	id = JAP_shinjidai_doctrine
 	icon = GFX_goal_JAP_shinjidai
 	relative_position_id = JAP_great_council_of_state
-	x = 5
-	y = 2
+	x = 3
+	y = 1
 	prerequisite = {
 		focus = JAP_great_council_of_state
 	}
@@ -127,7 +127,7 @@ shared_focus = {
 	id = JAP_supreme_tribunal_of_nagasaki
 	icon = GFX_goal_JAP_special_tribunal_nagasaki
 	relative_position_id = JAP_great_council_of_state
-	x = 0
+	x = -2
 	y = 2
 	prerequisite = {
 		focus = JAP_empower_shogunal_authority
@@ -151,7 +151,7 @@ shared_focus = {
 	id = JAP_the_ultranationalists
 	icon = GFX_goal_JAP_ultranat_question
 	relative_position_id = JAP_supreme_tribunal_of_nagasaki
-	x = -2 
+	x = -1 
 	y = 1
 	prerequisite = {
 		focus = JAP_supreme_tribunal_of_nagasaki
@@ -179,7 +179,7 @@ shared_focus = {
 	icon = GFX_goal_JAP_admiralty_question
 	relative_position_id = JAP_supreme_tribunal_of_nagasaki
 	x = 0
-	y = 1
+	y = 2
 	prerequisite = {
 		focus = JAP_supreme_tribunal_of_nagasaki
 	}
@@ -205,7 +205,7 @@ shared_focus = {
 	id = JAP_the_ultraroyalists
 	icon = GFX_goal_JAP_ultraroyal_question
 	relative_position_id = JAP_supreme_tribunal_of_nagasaki
-	x = 2
+	x = 1
 	y = 1
 	prerequisite = {
 		focus = JAP_supreme_tribunal_of_nagasaki
@@ -232,11 +232,21 @@ shared_focus = {
 	id = JAP_tribunal_final_phase
 	icon = GFX_goal_JAP_last_answer
 	relative_position_id = JAP_supreme_tribunal_of_nagasaki
-	x = 0
-	y = 2
-	prerequisite = { focus = JAP_the_ultranationalists }
+	x = 2
+	y = 3
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = "The questions in court have been answered"
+			has_completed_focus = JAP_admiralty_question
+			has_completed_focus = JAP_the_ultranationalists
+			has_completed_focus = JAP_the_ultraroyalists
+		}
+	}
+	prerequisite = {
+		focus = JAP_guilty_of_former_shogun
+		focus = JAP_new_legacy_of_iesato
+	}
 	prerequisite = { focus = JAP_admiralty_question }
-	prerequisite = { focus = JAP_the_ultraroyalists }
 	cost = 3
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_tribunal_final_phase"
@@ -247,7 +257,7 @@ shared_focus = {
 	id = JAP_restore_han_system
 	icon = GFX_goal_JAP_feudal_domain_return
 	relative_position_id = JAP_kyujidai_doctrine
-	x = 1
+	x = 0
 	y = 1
 	prerequisite = { focus = JAP_kyujidai_doctrine }
 	cost = 3
@@ -260,7 +270,7 @@ shared_focus = {
 	id = JAP_restore_military_authority
 	icon = GFX_goal_JAP_feudalism_returns
 	relative_position_id = JAP_kyujidai_doctrine
-	x = 2
+	x = 0
 	y = 2
 	prerequisite = { focus = JAP_restore_han_system }
 	cost = 3
@@ -273,7 +283,7 @@ shared_focus = {
 	id = JAP_guilty_of_former_shogun
 	icon = GFX_goal_JAP_sin_of_lastshogun
 	relative_position_id = JAP_kyujidai_doctrine
-	x = 3
+	x = 0
 	y = 3
 	prerequisite = { focus = JAP_restore_military_authority }
 	cost = 5
@@ -286,7 +296,7 @@ shared_focus = {
 	id = JAP_reform_kazoku_law
 	icon = GFX_goal_JAP_kazoku_election
 	relative_position_id = JAP_shinjidai_doctrine
-	x = -1
+	x = 0
 	y = 1
 	prerequisite = { focus = JAP_shinjidai_doctrine }
 	cost = 3
@@ -299,7 +309,7 @@ shared_focus = {
 	id = JAP_next_bastion_of_democracy
 	icon = GFX_goal_JAP_shogunal_democracy
 	relative_position_id = JAP_shinjidai_doctrine
-	x = -2
+	x = 0
 	y = 2
 	prerequisite = { focus = JAP_reform_kazoku_law }
 	cost = 3
@@ -312,7 +322,7 @@ shared_focus = {
 	id = JAP_new_legacy_of_iesato
 	icon = GFX_goal_JAP_new_legacy_of_tokugawa
 	relative_position_id = JAP_shinjidai_doctrine
-	x = -3
+	x = 0
 	y = 3
 	prerequisite = { focus = JAP_next_bastion_of_democracy }
 	cost = 3
@@ -341,10 +351,6 @@ shared_focus = {
 	x = 0
 	y = 2
 	prerequisite = { focus = JAP_report_to_the_emperor }
-	prerequisite = { 
-		focus = JAP_new_legacy_of_iesato 
-		focus = JAP_guilty_of_former_shogun
-	}
 	cost = 1
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_report_to_the_emperor"
