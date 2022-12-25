@@ -72,7 +72,7 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = JAP_amalgamize_ancient_laws
+	id = JAP_integrate_ancient_laws
 	icon = GFX_ 
 	relative_position_id = JAP_the_kingmaker_assumed_shogunate
 	x = -2
@@ -101,7 +101,7 @@ shared_focus = {
 	relative_position_id = JAP_extend_navy_budget
 	x = -1 
 	y = 1
-	prerequisite = { focus = JAP_amalgamize_ancient_laws }
+	prerequisite = { focus = JAP_integrate_ancient_laws }
 	prerequisite = { focus = JAP_extend_navy_budget }
 }
 shared_focus = {
@@ -116,7 +116,7 @@ shared_focus = {
 shared_focus = {
 	id = JAP_subordinate_democracy
 	icon = GFX_ 
-	relative_position_id = JAP_amalgamize_ancient_laws
+	relative_position_id = JAP_integrate_ancient_laws
 	x = 0
 	y = 2
 	prerequisite = { focus = JAP_embrace_neo_confucianism }
