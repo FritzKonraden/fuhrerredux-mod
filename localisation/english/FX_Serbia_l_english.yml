@@ -35,6 +35,11 @@ SER_valkist: "Srpsko Carstvo"
 SER_valkist_ADJ: "Srpski"
 SER_valkist_DEF: "Srpsko Carstvo"
 
+SER_YUG_authoritarian_democrat: "Kingdom of Yugoslavia"
+SER_YUG_authoritarian_democrat_ADJ: "Yugoslav"
+SER_YUG_authoritarian_democrat_DEF: "The Kingdom of Yugoslavia"
+
+
 ### Parties
 SER_vanguardist_party: "Komunista"
 SER_vanguardist_party_long: "Savez Komunista Srbije                                          §gThe League of Communists of Serbia is the main far-left socialist movement in Serbia. While the movement has a minor role in Serbian politics, it has connections to other "Leagues of Communists" in the Western Balkans, and with the Soviet Union. The League seeks to establish a revolutionary socialist Yugoslav state.§!"
@@ -75,6 +80,7 @@ SER_abolish_constitution_tooltip:0 "§CThe Serbian Constitution has been Abolish
 SER_government_national_unity_tooltip:0 "§CA National Unity Government has been Formed, including the People's Radical Party, the Democratic Party, the Agrarian Party and independents§!"
 
 SER_claim_yugoslav_crown_tooltip:0 "Serbia Gains Claims on All §YYugoslav§! States."
+SER_king_all_yugoslavia_tooltip:0 "The §YKingdom of Serbia§! will be renamed the §YKingdom of Yugoslavia§!."
 
 ### Flags ###
 
@@ -152,6 +158,10 @@ serbia.23.t:0 "The Formation of the Serbian National Party"
 serbia.23.d:0 "Prime minister Petar Živković have today officially established the Serbian National Party, a nationalist political party that will focus on bringing stability and national unity to the realm. The party are strong supporters of the new constitution and is viewed as an organization set up to further strengthen the new-found royalist regime in Serbia. Among the new party's founders and early members, are many former politicians from the People's Radical Party, as well as a few Democrats and members from more far-right nationalist organizations."
 serbia.23.a:0 "For the National Unity of All Serbia!"
 
+serbia.24.t:0 "The [GetYear] Parliamentary Elections"
+serbia.24.d:0 "The citizens of all parts of our country have now gone to the polls to elect their representatives to the National Assembly. After the abolishment of the previous constitution, the National Assembly of Serbia lost all its power and became sidelined by the royalist regime. With the introduction of these new elections, a return to constitutional normalcy seems to be setting in over Belgrade.\n\nAs the people entered the election booth, ready to pick a list to place in the ballot box, they were taken by surprise. In front of them, there only lay one single list. That of the governing Serbian National Party, led by prime minister Petar Živković. While some found this worrisome, most of the electorate did their civil duty and put this one list in the box. In return, this simple act has given the government much needed legitimacy both domestically and internationally."
+serbia.24.a:0 "Serbian National Party - 100% of the Vote"
+
 ### IDEAS ###
 
 ser_danube_research: "Danube Research Bloc Member"
@@ -169,6 +179,8 @@ SER_serbian_yugoslavism1_idea:0 "Serbian Yugoslavism"
 SER_serbian_yugoslavism1_idea_desc:0 "The Serbian flair of Yugoslavism is strong in Serbia. While the negotiations between Serbia and the State of Slovenes, Croats and Serbs failed, the gains that Serbia got still strengthened the dream of a unitary Yugoslavia. Many regional nationalists sees our brand of Yugoslavism more as a quest for a Greater Serbia."
 SER_serbian_yugoslavism2_idea:0 "Serbian Yugoslavism"
 SER_serbian_yugoslavism2_idea_desc:0 "The Serbian flair of Yugoslavism is strong in Serbia. While the negotiations between Serbia and the State of Slovenes, Croats and Serbs failed, the gains that Serbia got still strengthened the dream of a unitary Yugoslavia. Many regional nationalists sees our brand of Yugoslavism more as a quest for a Greater Serbia."
+SER_king_all_yugoslavia_idea:0 "The King's Yugoslavia"
+SER_king_all_yugoslavia_idea_desc:0 "Serbia has united the Southern Slavic peoples of Serbia, Croatia, Bosnia, Slovenia and other surrounding lands into one unified state."
 
 SER_macedonian_internal_unrest_idea:0 "Macedonian Internal Unrest"
 SER_macedonian_internal_unrest_idea_desc:0 "When Serbia solidified its control of it’s southern lands, it did also see new problems arising. This has been represented by a pro-Bulgarian organization by the name of the Internal Macedonian Revolutionary Organization. We need to get this area under control, and rid ourselves of these terrorists before they go too far."
@@ -181,6 +193,9 @@ SER_serbian_constitutionalism_abolish_idea:0 "Serbian Constitutionalism"
 SER_serbian_constitutionalism_abolish_idea_desc:0 "The Kingdom of Serbia is on paper a constitutional monarchy. While this is apparent with the existence of political parties, an elected parliament and democratic elections, it does not mean that our King is just a figurehead. The King in Serbia is yielding a fair bit of power and influence, and the current government is sitting there because of his will. With the consitution abolished, the King and his circle has begun centralizing power beneath themselves."
 SER_serbian_constitutionalism_kings_idea:0 "Serbian Constitutionalism"
 SER_serbian_constitutionalism_kings_idea_desc:0 "The Kingdom of Serbia is on paper a constitutional monarchy. However, with the centralization of power beneath the King and his loyalists, this has not become the case in practice. While elections are still being held and certain liberties are still uphold, future elections will likely only be there to strengthen the power of the King."
+
+SER_ally_serbian_church_idea:0 "Ties With the Church"
+SER_ally_muslims_and_catholics_idea:0 "Ties With the Religious Communities"
 
 SER_london_crash_idea:0 "Effect of the London Crash"
 SER_london_crash_idea_desc:0 "The London Stock Market Crash have made an impact upon the Serbian economy. Hopefully, we will be able to quickly recover."

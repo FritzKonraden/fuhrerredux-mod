@@ -202,10 +202,14 @@ recruit_character = SER_Josip_Broz_Tito
 recruit_character = SER_Zivorad_Jovanovic
 recruit_character = SER_Dragisa_Vasić
 recruit_character = SER_Milan_Grol
-recruit_character = SER_Ljubomir_Davidović
+recruit_character = SER_Ljubomir_Davidovic
 recruit_character = SER_Anton_Korosec
+recruit_character = SER_Nikola_Uzunovic
+
 recruit_character = SER_Alexander_I
 recruit_character = SER_Prince_Paul
+
+recruit_character = SER_Petar_Zivkovic
 recruit_character = SER_Milan_Stojadinović
 recruit_character = SER_Petar_Bojović
 recruit_character = SER_Danilo_Kalafatović
@@ -215,3 +219,5 @@ recruit_character = SER_Milorad_Petrović
 recruit_character = SER_Dusan_Trifunović
 recruit_character = SER_Petar_Kosić
 recruit_character = SER_Svetozar_Hadzić
+
+activate_advisor = SER_Nikola_Uzunovic_hog_sco

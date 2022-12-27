@@ -368,8 +368,8 @@ focus_tree = {
 			add_stability = 0.03
 			add_political_power = -50
 			swap_ideas = {
-				remove_idea = SER_serbian_yugoslavism_idea
-				add_idea = SER_serbian_yugoslavism1_idea
+				remove_idea = SER_serbian_yugoslavism1_idea
+				add_idea = SER_serbian_yugoslavism2_idea
 			}
 		}
 
@@ -476,6 +476,17 @@ focus_tree = {
 		}
 		x = 3
 		y = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_ally_serbian_church"
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
+			add_popularity = { ideology = social_conservative popularity = -0.03 }
+			add_ideas = SER_ally_serbian_church_idea
+		}
 
 	}
 	focus = {
@@ -487,6 +498,18 @@ focus_tree = {
 		}
 		x = 5
 		y = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_integrate_democrats"
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.07 }
+			add_popularity = { ideology = social_liberal popularity = -0.05 }
+			add_popularity = { ideology = social_democrat popularity = -0.01 }
+			add_popularity = { ideology = market_liberal popularity = -0.01 }
+		}
 
 	}
 	focus = {
@@ -501,6 +524,20 @@ focus_tree = {
 		}
 		x = 2
 		y = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_ally_muslims_and_catholics"
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
+			add_popularity = { ideology = social_conservative popularity = -0.03 }
+			swap_ideas = {
+				remove_idea = SER_ally_serbian_church_idea
+				add_idea = SER_ally_muslims_and_catholics_idea
+			}
+		}
 
 	}
 	focus = {
@@ -515,6 +552,26 @@ focus_tree = {
 		}
 		x = 4
 		y = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_empower_yugoslav_peasantry"
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.02 }
+			add_popularity = { ideology = market_liberal popularity = -0.02 }
+			every_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
 
 	}
 	focus = {
@@ -529,6 +586,29 @@ focus_tree = {
 		}
 		x = 3
 		y = 7
+		
+		available = {
+			owns_state = 109
+			owns_state = 103
+			owns_state = 102
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_king_all_yugoslavia"
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
+			swap_ideas = {
+				remove_idea = SER_serbian_yugoslavism2_idea
+				add_idea = SER_king_all_yugoslavia_idea
+			}
+			custom_effect_tooltip  = SER_king_all_yugoslavia_tooltip
+			hidden_effect = {
+				set_cosmetic_tag = SER_YUG
+			}
+		}
 
 	}
 	focus = {

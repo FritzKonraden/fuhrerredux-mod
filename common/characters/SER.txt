@@ -55,11 +55,30 @@ characters = {
 			}
 		}
 	}
-	SER_Ljubomir_Davidović = {
+	SER_Ljubomir_Davidovic = {
 		name = "Ljubomir Davidović"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/SER/Portrait_SER_Ljubomir_Davidović.png"
+				small = "gfx/interface/ministers/SER/SER_Ljubomir_Davidović.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = head_of_government
+			available = { 
+				hidden_trigger = { has_country_flag = SER_Ljubomir_Davidovic_hog_sli_hired }
+			}
+			idea_token = SER_Ljubomir_Davidovic_hog_sli
+			on_add = {
+				ROOT = { set_country_flag = SER_Ljubomir_Davidovic_hog_sli_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = SER_Ljubomir_Davidovic_hog_sli_hired }
+			}
+			traits = {
+				social_liberal
+				hog_pragmatic_statesman
 			}
 		}
 	}
@@ -68,6 +87,32 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/SER/Portrait_SER_Anton_Korosec.png"
+			}
+		}
+	}
+	SER_Nikola_Uzunovic = {
+		name = "Nikola Uzunović"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ministers/SER/SER_Nikola_Uzunovic.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = head_of_government
+			available = { 
+				hidden_trigger = { has_country_flag = SER_Nikola_Uzunovic_hog_sco_hired }
+			}
+			idea_token = SER_Nikola_Uzunovic_hog_sco
+			on_add = {
+				ROOT = { set_country_flag = SER_Nikola_Uzunovic_hog_sco_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = SER_Nikola_Uzunovic_hog_sco_hired }
+			}
+			traits = {
+				social_conservative
+				hog_old_compromiser
 			}
 		}
 	}
@@ -129,6 +174,44 @@ characters = {
 		country_leader = {
 			ideology = valkist_subtype
 			traits = { }
+		}
+	}
+	SER_Petar_Zivkovic = {
+		name = "Petar Živković"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SER/Portrait_SER_Petar_Zivkovic.png"
+			}
+			civilian = {
+				small = "gfx/interface/ministers/SER/SER_Petar_Zivkovic.png"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		advisor = {
+			cost = 150
+			slot = head_of_government
+			available = { 
+				hidden_trigger = { has_country_flag = SER_Petar_Zivkovic_hog_ade_hired }
+			}
+			idea_token = SER_Petar_Zivkovic_hog_ade
+			on_add = {
+				ROOT = { set_country_flag = SER_Petar_Zivkovic_hog_ade_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = SER_Petar_Zivkovic_hog_ade_hired }
+			}
+			traits = {
+				authoritarian_democrat
+				hog_iron_heel
+			}
 		}
 	}
 	SER_Petar_Bojović = {

@@ -58,6 +58,24 @@ ideas = {
 			removal_cost = -1
 		}
 		
+		SER_king_all_yugoslavia_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SER_king_all_yugoslavia_idea"}
+			
+			allowed = {	always = no	}
+			
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				political_power_gain = -0.10
+				conscription_factor = 0.10
+				army_morale_factor = 0.10
+				global_building_slots_factor = 0.10
+				compliance_growth = 0.15
+			}
+			picture = YUG_local_militias
+			removal_cost = -1
+		}
+		
 		SER_macedonian_internal_unrest_idea = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SER_macedonian_internal_unrest_idea"}
 			
@@ -326,6 +344,38 @@ ideas = {
 				compliance_growth = -0.25
 			}
 			picture = generic_crown
+			removal_cost = -1
+		}
+		
+		SER_ally_serbian_church_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SER_ally_serbian_church_idea"}
+			
+			allowed = {	always = no	}
+			
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				compliance_growth = 0.05
+				drift_defence_factor = 0.10
+				monthly_population = 0.05
+			}
+			picture = ROM_king_carol_ii_hedonist
+			removal_cost = -1
+		}
+		
+		SER_ally_muslims_and_catholics_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SER_ally_muslims_and_catholics_idea"}
+			
+			allowed = {	always = no	}
+			
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				compliance_growth = 0.15
+				drift_defence_factor = 0.20
+				monthly_population = 0.10
+			}
+			picture = ROM_king_carol_ii_hedonist
 			removal_cost = -1
 		}
 		
