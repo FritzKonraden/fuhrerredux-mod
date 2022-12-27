@@ -284,7 +284,7 @@ ideas = {
 			original_tag = "CZE"
 			}
 
-			picture = GFX_idea_generic_collectivism_rising
+			picture = generic_collectivism_rising
 			modifier = {				
 				war_support_factor = 0.05
 				political_power_gain = 0.05

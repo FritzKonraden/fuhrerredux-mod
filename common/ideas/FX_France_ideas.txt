@@ -196,7 +196,7 @@ ideas = {
 		}
 		FRA_christian_africa = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea fra_christian_africa"}
-			picture = generic_morale_bonus
+			picture = IRE_catholic
 			modifier = {
 				offence = 0.1
 			}

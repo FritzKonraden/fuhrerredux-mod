@@ -145,7 +145,6 @@ on_actions = {
 						original_tag = DEN
 						original_tag = LAT
 						original_tag = UKR
-						original_tag = BLR
 					}
 				}
 				add_ideas = GEN_entente_member

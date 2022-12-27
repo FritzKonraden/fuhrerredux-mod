@@ -2222,6 +2222,16 @@ SIA = {
 	 }
 	callsigns = { }
 }
+SCH = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
 CHI = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
@@ -2565,6 +2575,20 @@ MZB = {
 	}
 	surnames = {
 	  	"dos Santos" Tiago "N'zita" Vinama Chingunji Chilingutila Chitunda Chidondo "de Carvalho" Mingas Neto "da Cruz" Alves Machel
+	 }
+	callsigns = { }
+}
+RHO = {
+	male = {
+		names = { 
+			Desmond Abel Kadungure Sekuru Robert Lobengula Joshua Dumiso Leopold Joseph Gabriel Mqabuko Nyongolo Thomas Letswansto Ndabaningi
+		   }
+	}
+	female = {
+		names = { }
+	}
+	surnames = {
+	  	Tutu Muzorewa Nkomo Mapondera Kaguvi Khumalo Dabengwa Msika Takawira Masuku Sithole Tekere Nkala Nyagumbo
 	 }
 	callsigns = { }
 }

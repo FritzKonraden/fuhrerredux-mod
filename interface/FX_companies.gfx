@@ -15,6 +15,49 @@ spriteTypes = {
   }
 
 	################################################
+	# BLR
+	spriteType = {
+		name = "GFX_idea_BLR_gomel_radio_plant"
+		texturefile = "gfx/interface/ideas/BLR/companies/BLR_BRDUIR.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BLR_baranovichi_aviation_repair_plant"
+		texturefile = "gfx/interface/ideas/BLR/companies/BLR_Dziarzauny_Avijacyjny_Zavod.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BLR_belarus_state_university"
+		texturefile = "gfx/interface/ideas/BLR/companies/BLR_Mazyrski_Naftapierapracoucy_Zavod.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BLR_minsk_automobile_plant"
+		texturefile = "gfx/interface/ideas/BLR/companies/BLR_Minski_Autamabilny_Zavod.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BLR_pinsk_shipyard"
+		texturefile = "gfx/interface/ideas/BLR/companies/BLR_pinsk_shipyard.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BLR_mzkt"
+		texturefile = "gfx/interface/ideas/BLR/companies/BLR_MZKT.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BLR_bsvt"
+		texturefile = "gfx/interface/ideas/BLR/companies/BLR_bsvt.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BLR_belarusian_railway"
+		texturefile = "gfx/interface/ideas/BLR/companies/BLR_Bielyja_Rusinskaja_Zalieznyja_Darohi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BLR_belaz"
+		texturefile = "gfx/interface/ideas/BLR/companies/BLR_belaz.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BLR_maaz"
+		texturefile = "gfx/interface/ideas/BLR/companies/BLR_maaz.png"
+	}
+
+	################################################
 	# EST
 	spriteType = {
 		name = "GFX_idea_arsenal_tallinn"

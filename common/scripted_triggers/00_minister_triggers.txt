@@ -3,6 +3,7 @@ has_custom_ministers = {
     tag = AFG
     tag = ARG
     tag = BEL
+    tag = BLR
     tag = BOL
     tag = CAN
     tag = CHL

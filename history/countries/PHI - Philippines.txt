@@ -52,7 +52,7 @@ USA = {
 		limit = { has_dlc = "Together for Victory" }
 		set_autonomy = {
 			target = PHI
-			autonomous_state = autonomy_colony
+			autonomous_state = autonomy_dominion
 			freedom_level = 0.50
 		}
 	} 
@@ -186,6 +186,7 @@ recruit_character = PHI_Claro_M_Recto
 recruit_character = PHI_Jorge_Vargas
 recruit_character = PHI_Rafael_Alunan
 recruit_character = PHI_Camilio_Osias
+recruit_character = PHI_Enrique_Zobel_de_Ayala
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }

@@ -71,7 +71,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = libertarian_socialist_subtype
-			traits = { }
+			traits = { PHI_the_union_man }
 		}
 		advisor = {
 			cost = 150
@@ -1471,6 +1471,24 @@ characters = {
 		}
 		advisor = {
 			cost = 150
+			slot = head_of_government
+			available = {
+				hidden_trigger = { has_country_flag = PHI_Andres_Soriano_hog_npo_hired }
+			}
+			idea_token = PHI_Andres_Soriano_hog_npo
+			on_add = {
+				ROOT = { set_country_flag = PHI_Andres_Soriano_hog_npo_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = PHI_Andres_Soriano_hog_npo_hired }
+			}
+			traits = {
+				national_populist
+				hog_corporate_suit
+			}
+		}
+		advisor = {
+			cost = 150
 			slot = economy_minister
 			available = {
 				hidden_trigger = { has_country_flag = PHI_Andres_Soriano_eco_sco_hired }
@@ -2176,6 +2194,32 @@ characters = {
 			traits = {
 				social_conservative
 				eco_balanced_budget_economy
+			}
+		}
+	}
+	PHI_Enrique_Zobel_de_Ayala = {
+		name = "Enrique Zóbel de Ayala"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ministers/PHI/PHI_Enrique_Zobel_de_Ayala.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = economy_minister
+			available = {
+				hidden_trigger = { has_country_flag = PHI_Enrique_Zobel_de_Ayala_eco_npo_hired }
+			}
+			idea_token = PHI_Enrique_Zobel_de_Ayala_eco_npo
+			on_add = {
+				ROOT = { set_country_flag = PHI_Enrique_Zobel_de_Ayala_eco_npo_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = PHI_Enrique_Zobel_de_Ayala_eco_npo_hired }
+			}
+			traits = {
+				national_populist
+				eco_industrialiser
 			}
 		}
 	}

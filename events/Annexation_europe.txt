@@ -499,6 +499,13 @@ country_event = { # Fate of Belarus
     BLR = {
       if = {
         limit = {
+          has_idea = constitutional_monarchy
+        }
+
+        BLR_remove_monarchy = yes
+      }
+      if = {
+        limit = {
           ROOT = {
             tag = GER
             has_government = valkist
@@ -778,6 +785,9 @@ country_event = { # Fate of England
 
   option = { # Puppet - Monarchy
     name = annex.111.b
+    trigger = {
+      has_socialist_government = no
+    }
     ai_chance = {
       base = 100
     }
@@ -1174,7 +1184,16 @@ country_event = { # Fate of Great Britain
             state = 338
           }
         }
-        add_core_of = EGL
+        
+        if = {
+          limit = {
+            ROOT = { has_socialist_government = no }
+          }
+          add_core_of = EGL
+        }
+        else = {
+          add_core_of = UOB
+        }
       }
       add_to_temp_array = { core_removal_array = ENG }
       remove_all_cores_and_claims_of_tags = yes
@@ -1183,6 +1202,9 @@ country_event = { # Fate of Great Britain
 
   option = { # Puppet 
     name = annex.117.a
+    trigger = {
+      has_socialist_government = no
+    }
     ai_chance = {
       base = 60
     }
@@ -1202,6 +1224,18 @@ country_event = { # Fate of Great Britain
         set_cosmetic_tag = EGL_uk
       }
     }
+  }
+
+  option = { # Puppet 
+    name = annex.117.a
+    trigger = {
+      has_socialist_government = no
+    }
+    ai_chance = {
+      base = 60
+    }
+    set_temp_variable = { tag_to_release = UOB }
+    release_targeted_tag = yes
   }
 
   option = { # Split
@@ -2443,7 +2477,6 @@ country_event = { # Fate of Pomerania
       POM = {
         add_state_core = 62
         add_state_core = 63
-        add_state_core = 785
         add_state_core = 786
       }
     }

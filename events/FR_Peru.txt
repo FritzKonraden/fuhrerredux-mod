@@ -1045,11 +1045,11 @@ country_event = { #pawar
 	is_triggered_only = yes
 	option = {
 		name = pru.1339.a
-			start_civil_war = {
-				ideology = paternal_autocrat
-				size = 0.4
-				capital = 492
-			}
+		start_civil_war = {
+			ideology = paternal_autocrat
+			size = 0.4
+			capital = 492
+		}
 	}
 }
 country_event = { #vangwar

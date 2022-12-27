@@ -507,18 +507,3 @@ maximum_fort_level = {
 		allow_achievements = yes
 	}
 }
-enable_valkyrie = {
-	name = GER_ENABLE_VALKYRIE
-	group = RULE_GROUP_GAMEPLAY
-	default = {
-		name = DEFAULT
-		text = RULE_OPTION_GER_DEFAULT
-		desc = RULE_OPTION_GER_DEFAULT_DESC
-		allow_achievements = yes
-	}
-	option = {
-		name = VALKYRIE
-		text = RULE_OPTION_GER_VALKYRIE
-		desc = RULE_OPTION_GER_VALKYRIE_DESC
-	}
-}

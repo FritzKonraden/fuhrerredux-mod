@@ -11,6 +11,10 @@ spriteTypes = {
 	}
 
   ### West Europe
+	spriteType = {
+		name = "GFX_news_event_BLR_konigsberg_conference"
+		texturefile = "gfx/event_news_pictures/europe/news_event_BLR_konigsberg_conference.png"	
+  }
   spriteType = {
 		name = "GFX_news_event_GER_dressler"
 		texturefile = "gfx/event_news_pictures/europe/news_event_GER_dressler.png"	
@@ -194,6 +198,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_news_event_PHI_army_coup"
 		texturefile = "gfx/event_news_pictures/east_asia/news_event_PHI_army_coup.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_PHI_socialists_win"
+		texturefile = "gfx/event_news_pictures/east_asia/news_event_PHI_socialists_win.png"
 	}
   spriteType = {
 		name = "GFX_news_event_JAP_arrest"

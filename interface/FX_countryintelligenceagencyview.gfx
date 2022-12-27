@@ -9,6 +9,11 @@ SpriteTypes = {
 		texturefile = "gfx/interface/operatives/agencies/agency_logo_FX_Belgium.png"
 		noOfFrames = 2
 	}
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_fx_blr"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_FX_Belarus.png"
+		noOfFrames = 2
+	}
   spriteType = {
 		name = "GFX_intelligence_agency_logo_fx_bul"
 		texturefile = "gfx/interface/operatives/agencies/agency_logo_FX_Bulgaria.png"

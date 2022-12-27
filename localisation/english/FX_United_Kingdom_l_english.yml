@@ -1071,25 +1071,6 @@ ENG_defensive_planning_desc: "Our position on the front lines is tenuous at best
 IMP_defensive_planning: "Defensive Planning"
 IMP_defensive_planning_desc: "Our position on the front lines is tenuous at best, we need to prepare new defensive lines should we require them."
 
-### Imperial Administration ###
-
-ENG_imp_admin: "Imperial Administration"
-
-ENG_eafrica: "Create British East Africa"
-ENG_esudan: "Create British Egypt & Sudan"
-ENG_transfer_nengland: "Transfer New England to Canada"
-ENG_burma: "Create British Burma"
-ENG_malaya: "Create British Malaya"
-ENG_mesopotamia: "Create British Mesopotamia"
-ENG_persia: "Create British Persia"
-ENG_arabia: "Create British Arabia"
-ENG_transjordan: "Create British Transjordan"
-ENG_rhodesia_col: "Create British Rhodesia & Nyasaland"
-ENG_bechuanaland: "Transfer Bechuanaland to South Africa"
-ENG_siam: "Create British Siam"
-ENG_afghanistan: "Create British Afghanistan"
-ENG_transcaspia: "Create British Transcaspia"
-
 ### Foreign Intervention ###
 
 ENG_foreign_intervention: "Foreign Intervention"

@@ -1,5 +1,248 @@
 # Philippine Decisions
 # created by: dax0102
+
+PHI_papacy_in_exile_cat = {
+  PHI_bring_pope_home = {
+    icon = GFX_decision_eng_abdication_crisis
+    cost = 50
+    fire_only_once = yes
+    days_remove = 30
+    available = {
+      is_subject = no
+      has_socialist_government = no
+      has_character = ITA_Pope_Julius_IV
+    }
+    visible = {
+      owns_state = 2
+      has_country_flag = PHI_exiled_pope
+    }
+    remove_effect = {
+      PHI_create_papal_state = yes
+    }
+  }
+  PHI_take_back_jerusalem = {
+    icon = GFX_decision_generic_civil_support
+    days_remove = 60
+    fire_only_once = yes
+    targets_array = global.countries
+    target_trigger = {
+      FROM = {
+        exists = yes
+        owns_state = 454
+      }
+    }
+    available = {
+      is_subject = no
+      FROM = {
+        exists = yes
+        has_full_control_of_state = 454
+        NOT = { 
+          has_war_with = ROOT
+          is_in_faction_with = ROOT
+        }
+      }
+    }
+    ai_will_do = {
+      base = 0
+      modifier = {
+        add = 200
+        FROM = {
+          is_subject = no
+        }
+      }
+    }
+    visible = {
+      NOT = {
+        owns_state = 454
+      }
+      has_completed_focus = PHI_the_holy_lands
+    }
+    complete_effect = {
+      hidden_effect = {
+        add_state_claim = 454
+      }
+    }
+    remove_effect = {
+      create_wargoal = {
+        target = FROM
+        type = annex_everything
+      }
+    }
+  }
+  PHI_take_back_rome = {
+    icon = GFX_decision_generic_civil_support
+    days_remove = 60
+    fire_only_once = yes
+    targets_array = global.countries
+    target_trigger = {
+      FROM = {
+        exists = yes
+        owns_state = 2
+      }
+    }
+    available = {
+      is_subject = no
+      FROM = {
+        exists = yes
+        has_full_control_of_state = 2
+        NOT = { 
+          has_war_with = ROOT
+          is_in_faction_with = ROOT
+        }
+      }
+    }
+    visible = {
+      NOT = {
+        owns_state = 2
+      }
+      has_completed_focus = PHI_the_holy_lands
+    }
+    complete_effect = {
+      hidden_effect = {
+        add_state_claim = 2
+      }
+    }
+    remove_effect = {
+      create_wargoal = {
+        target = FROM
+        type = annex_everything
+      }
+    }
+  }
+}
+PHI_catholic_alliance_cat = {
+  PHI_invite_portugal = {
+    icon = GFX_decision_generic_form_nation
+    days_remove = 7
+    cost = 10
+    ai_will_do = {
+      base = 1000
+    }
+    targets = { POR PRR }
+    target_trigger = {
+      country_exists = FROM
+    }
+    available = {
+      FROM = {
+        has_socialist_government = no
+        is_in_faction = no
+        NOT = { has_war_with = ROOT }
+      }
+    }
+    visible = { 
+      is_faction_leader = yes
+      FROM = {
+        exists = yes
+        is_subject = no
+        has_socialist_government = no
+        NOT = { 
+          is_in_faction_with = ROOT
+          has_war_with = ROOT
+        }
+      }
+      has_completed_focus = PHI_catholic_dominion
+    }
+    remove_effect = {
+      FROM = {
+        country_event = { id = philippines.70 days = 2 }
+      }
+    }
+  }
+  PHI_invite_spain = {
+    icon = GFX_decision_generic_form_nation
+    days_remove = 7
+    cost = 10
+    ai_will_do = {
+      base = 1000
+    }
+    targets = { SPM SPF }
+    target_trigger = {
+      country_exists = FROM
+    }
+    available = {
+      FROM = {
+        has_socialist_government = no
+        is_in_faction = no
+        NOT = { has_war_with = ROOT }
+      }
+    }
+    visible = { 
+      is_faction_leader = yes
+      FROM = {
+        exists = yes
+        is_subject = no
+        has_socialist_government = no
+        NOT = { 
+          is_in_faction_with = ROOT
+          has_war_with = ROOT
+        }
+      }
+      has_completed_focus = PHI_catholic_dominion
+    }
+    remove_effect = {
+      FROM = {
+        country_event = { id = philippines.70 days = 2 }
+      }
+    }
+  }
+  PHI_invite_south_america = {
+    icon = GFX_decision_generic_form_nation
+    days_remove = 7
+    cost = 10
+    ai_will_do = {
+      base = 800
+    }
+    target_array = global.countries
+    target_trigger = {
+      FROM = {
+        exists = yes
+        has_socialist_government = no
+        NOT = { has_government = valkist }
+        capital_scope = {
+          OR = {
+            is_on_continent = south_america
+            is_on_continent = north_america
+          }
+        }
+        NOT = {
+          has_government = valkist
+          tag = KNE
+          tag = USA
+          tag = CAN
+          tag = NFL
+        }
+      }
+    }
+    available = {
+      FROM = {
+        exists = yes
+        is_subject = no
+        has_socialist_government = no
+        NOT = {
+          has_war_with = ROOT
+        }
+      }
+    }
+    visible = { 
+      is_faction_leader = yes
+      FROM = {
+        exists = yes
+        is_subject = no
+        has_socialist_government = no
+        NOT = { 
+          is_in_faction_with = ROOT
+          has_war_with = ROOT
+        }
+      }
+      has_completed_focus = PHI_catholic_dominion
+    }
+    remove_effect = {
+      FROM = {
+        country_event = { id = philippines.70 days = 2 }
+      }
+    }
+  }
+}
 PHI_form_confederation_cat = {
   PHI_convince_insulindia = {
     icon = GFX_decision_generic_political_discourse
@@ -446,6 +689,37 @@ PHI_anti_colonialist_crusade_cat = {
         has_completed_focus = PHI_the_co_prosperity_sphere
         has_completed_focus = PHI_support_the_kuomitang
       }
+    }
+    remove_effect = {
+      FROM = {
+        country_event = { id = philippines.70 days = 2 }
+      }
+    }
+  }
+  PHI_invite_commie_india_dec = {
+    icon = GFX_decision_generic_civil_support
+    days_remove = 7
+    fire_only_once = yes
+    ai_will_do = {
+      base = 80 # do as soon as possible
+      modifier = {
+        factor = 20
+        num_divisions > 80
+      }
+    }
+    allowed = { original_tag = PHI }
+    targets = { INC }
+    target_trigger = {
+      FROM = {
+        exists = yes
+      }
+    }
+    visible = { 
+      is_in_faction = yes
+      FROM = {
+        NOT = { is_in_faction_with = ROOT }
+      }
+      has_completed_focus = PHI_influence_india
     }
     remove_effect = {
       FROM = {
@@ -1364,6 +1638,167 @@ PHI_spanish_civil_war = {
         amount = 1000
       }
       FROM = { country_event = { id = philippines.39 days = 2 } }
+    }
+  }
+}
+
+PHI_great_game = {
+  PHI_propaganda_against_the_church = {
+    icon = GFX_decision_eng_propaganda_campaigns
+    cost = 80
+    days_remove = 90
+    days_re_enable = 180
+    available = {
+      power_balance_value = {
+        id = PHI_power_balance
+        value > 0.1
+      }
+    }
+    remove_effect = {
+      PHI_bop_high_increase_government_side_effect = yes
+    }
+  }
+  PHI_expose_church_crimes = {
+    icon = GFX_decision_generic_arrest
+    cost = 80
+    days_remove = 120
+    days_re_enable = 240
+    available = {
+      has_stability > 0.4
+      power_balance_value = {
+        id = PHI_power_balance
+        value < -0.4
+      }
+    }
+    remove_effect = {
+      PHI_bop_high_increase_government_side_effect = yes
+    }
+  }
+  PHI_attend_public_mass = {
+    icon = GFX_decision_hol_radio_oranje
+    cost = 10
+    days_re_enable = 30
+    available = {
+      has_socialist_government = no
+    }
+    complete_effect = {
+      add_political_power = 10
+      PHI_bop_low_increase_government_side_effect = yes
+    }
+  }
+  PHI_reaffirm_constitutional_secularism = {
+    icon = GFX_decision_eng_trade_unions_support
+    days_remove = 60
+    days_re_enable = 120
+    available = {
+      has_stability > 0.5
+    }
+    modifier = {
+      political_power_cost = 0.05
+    }
+    remove_effect = {
+      increase_ruling_party_popularity_by_5 = yes
+      PHI_bop_medium_increase_government_side_effect = yes
+    }
+  }
+  PHI_meet_with_the_elites = {
+    icon = GFX_decision_gre_investment_decisions
+    cost = 30
+    days_remove = 60
+    days_re_enable = 180
+    available = {
+      has_socialist_government = no
+    }
+    remove_effect = {
+      PHI_bop_medium_increase_government_side_effect = yes
+    }
+  }
+  PHI_condemn_valkism = {
+    icon = GFX_decision_ger_reichskommissariats
+    cost = 20
+    days_remove = 30
+    fire_only_once = yes
+    ai_will_do = {
+      base = 200
+    }
+    available = {
+      OR = {
+        has_government = valkist
+        valkist > 0.3
+      }
+    }
+    remove_effect = {
+      PHI_bop_medium_increase_pope_side_effect = yes
+    }
+  }
+  PHI_condemn_corruption = {
+    icon = GFX_decision_generic_political_rally
+    cost = 50
+    days_remove = 60
+    days_re_enable = 180
+    ai_will_do = {
+      base = 200
+    }
+    available = {
+      power_balance_value = {
+        id = PHI_power_balance
+        value < -0.1
+      }
+    }
+    remove_effect = {
+      PHI_bop_medium_increase_pope_side_effect = yes
+    }
+  }
+  PHI_sway_the_people = {
+    icon = GFX_decision_generic_speech
+    cost = 10
+    days_re_enable = 30
+    ai_will_do = {
+      base = 200
+    }
+    available = {
+      NOT = {
+        has_government = vanguardist
+        has_government = collectivist
+      }
+    }
+    complete_effect = {
+      PHI_bop_low_increase_pope_side_effect = yes
+    }
+  }
+  PHI_organize_public_appearances = {
+    icon = GFX_decision_generic_political_discourse
+    cost = 30
+    days_remove = 60
+    days_re_enable = 180
+    ai_will_do = {
+      base = 200
+    }
+    available = {
+      has_character = ITA_Pope_Julius_IV
+      has_stability > 0.5
+    }
+    modifier = {
+      political_power_cost = 0.05
+    }
+    remove_effect = {
+      PHI_bop_medium_increase_pope_side_effect = yes
+    }
+  }
+  PHI_tour_the_country = {
+    icon = GFX_decision_eng_blackshirt_march
+    cost = 50
+    days_remove = 60
+    days_re_enable = 180
+    fire_only_once = yes
+    ai_will_do = {
+      base = 200
+    }
+    available = {
+      has_character = ITA_Pope_Julius_IV
+    }
+    remove_effect = {
+      PHI_bop_medium_increase_pope_side_effect = yes
     }
   }
 }

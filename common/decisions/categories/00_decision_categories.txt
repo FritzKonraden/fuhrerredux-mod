@@ -189,10 +189,12 @@ economy_decisions = {
 	icon = generic_economy
 	
 	visible = {
-		NOT = { original_tag = ENG }
-		NOT = { original_tag = SOV }
+		NOT = {
+			original_tag = USA
+			original_tag = ENG
+			original_tag = SOV
+		}
 	}
-
 }
 
 prospect_for_resources = {

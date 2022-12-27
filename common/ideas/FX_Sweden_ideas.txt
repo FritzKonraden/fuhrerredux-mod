@@ -393,7 +393,7 @@ ideas = {
 		SWE_solitify_control_baltic_sea_idea = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWE_solitify_control_baltic_sea_idea"}
 			allowed = { original_tag = SWE }
-			picture = idea_generic_navy
+			picture = generic_coastal_defense_ships
 			modifier = {
 				navy_max_range_factor = 0.10
 				navy_capital_ship_attack_factor = 0.05
@@ -403,7 +403,7 @@ ideas = {
 		SWE_solitify_control_under_baltic_sea_idea = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWE_solitify_control_under_baltic_sea_idea"}
 			allowed = { original_tag = SWE }
-			picture = idea_generic_navy
+			picture = generic_coastal_defense_ships
 			modifier = {
 				navy_submarine_detection_factor = 0.10
 				navy_submarine_attack_factor = 0.10

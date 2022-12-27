@@ -1857,10 +1857,10 @@ gerhun.1.b: "Now is not the time to be taking on additional burdens."
 
 
 ### Flags ###
-GER_advisers_no: " China has refused our advisors."
+GER_advisers_no: "China has refused our advisors."
 GER_french_escapes: "The French flee to Algiers."
 GER_valkist_path: "We must purge opposition"
-GER_formed_tst: "The TST Have Been Expanded"
+GER_formed_tst: "The §YTST§! Have Been Expanded"
 GER_chamber_industry: "Reich Chamber of Industry Has Been Established"
 GER_industry_bla: "German Worker Reforms Have Been Started"
 GER_big_air_boi: "Airship has been constructed"
@@ -1876,9 +1876,9 @@ GER_picked_richthofen: "Has approved Richtofen's plan"
 GER_picked_goring: "Has approved Goring's plan"
 GER_picked_man: "Has approved MAN SE contract"
 GER_picked_db: "Has approved Daimler-Benz contract"
-GER_strasser_right: "Has appointed Otto Strasser as economic minster"
-GER_hitlers_right: "Has appointed Adolf Hitler as economic minster"
-GER_british_refuse: "British Refuse To Cooperative"
+GER_strasser_right: "Appointed §YOtto Strasser§! as Economic Minister"
+GER_hitlers_right: "Appointed §YAdolf Hitler§! as Economic Minister"
+GER_british_refuse: "The §Y[ENG.GetAdjective]§! Refuse To Cooperative"
 GER_supported_austria: "Protected Austria against Collectivism"
 GER_anti_brit: "Anti-British Policy"
 GER_pro_british: "Pro-British Policy"
@@ -1906,9 +1906,6 @@ FRA_heck_germany: "Germany has violated Versailles"
 GER_refused_alliance: "Has refused to join Stahlpakt"
 GER_accepted_alliance: "Has agreed to join Stahlpakt"
 GER_eastern_initiative: "Germany looks Eastward"
-
-### Tooltips ###
-GER_france_warning: "§RThis Action May Spark French Intervention§"
 
 ### Comapnies
 # Industrial
@@ -2982,6 +2979,9 @@ GER_throught_switzerland: "The Unthinkable..."
 #####################Tooltip##########################
 ######################################################
 
+GER_recognize_belarusian_claims: "We will recognize @BLR §Y[BLR.GetAdjective]§! territorial claims. §RIsolating§! some of our potential allies.\n\n"
+GER_accepted_belarusian_claims: "We have recognized @BLR §Y[BLR.GetAdjective]§! territorial claims."
+GER_recognized_claims_belarus: "The Germans have §Gaccepted§! our territorial ambitions"
 GER_france_warning: "§RThis Action May Spark French Intervention§!"
 GER_united_kingdom_warning: "§RThis Action May Spark British Intervention§!"
 GER_soviet_warning: "§RThis Action May Spark Soviet Intervention§!"

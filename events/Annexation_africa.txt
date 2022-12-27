@@ -707,11 +707,31 @@ country_event = { # Fate of Ghana
 
   option = { # Puppet
     name = annex.2014.a
+    trigger = {
+      NFA = {
+        NOT = { is_subject_of = ROOT }
+      }
+    }
     ai_chance = {
       base = 100
     }
     set_temp_variable = { tag_to_release = GHA }
     release_targeted_tag = yes
+  }
+
+  option = { # Transfer to NFA
+    name = annex.2014.b
+    trigger = {
+      NFA = {
+        is_subject_of = ROOT
+      }
+    }
+    ai_chance = {
+      base = 100
+    }
+    set_temp_variable = { tag_to_release = NFA }
+    274 = { transfer_state_and_add_claim = yes }
+    994 = { transfer_state_and_add_claim = yes }
   }
 
   option = { # Occupy
@@ -1067,11 +1087,32 @@ country_event = { # Fate of Nigeria
 
   option = { # Puppet
     name = annex.2022.a
+    trigger = {
+      NFA = {
+        NOT = { is_subject_of = ROOT }
+      }
+    }
     ai_chance = {
       base = 100
     }
     set_temp_variable = { tag_to_release = NGA }
     release_targeted_tag = yes
+  }
+
+  option = { # Give it to NFA
+    name = annex.2022.b
+    trigger = {
+      NFA = {
+        is_subject_of = ROOT
+      }
+    }
+    ai_chance = {
+      base = 100
+    }
+    set_temp_variable = { tag_to_release = NFA }
+    558 = { transfer_state_and_add_claim = yes }
+    957 = { transfer_state_and_add_claim = yes }
+    965 = { transfer_state_and_add_claim = yes }
   }
 
   option = { # Occupy

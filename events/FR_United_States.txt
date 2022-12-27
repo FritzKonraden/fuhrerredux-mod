@@ -547,11 +547,6 @@ country_event = { # Join Entente
 		ai_chance = { base = 90 }
 		add_to_faction = FROM
 	}
-	option = {
-		name = usa.15.b
-		ai_chance = { base = 10 }
-		FROM = { country_event = usa.16 }
-	}
 }
 
 country_event = { # Entente Entry Denied
@@ -761,15 +756,15 @@ country_event = { # Death of Eugene Debs
 
 	option = {
 		name = usa.26.a
-	retire_character = USA_Eugene_Debs
-	add_country_leader_role = {
-	  character = USA_Jack_Reed
-	  promote_leader = yes
-	  country_leader = {
-		ideology = libertarian_socialist_subtype
-		traits = {}
-	  }
-	}
+		retire_character = USA_Eugene_Debs
+		add_country_leader_role = {
+			character = USA_Jack_Reed
+			promote_leader = yes
+			country_leader = {
+				ideology = libertarian_socialist_subtype
+				traits = {}
+			}
+		}
 	}
 }
 
@@ -2125,7 +2120,7 @@ country_event = { # Demand African Territories
 				puppet = NFA
 				set_nationality = {
 					character = USA_Arthur_Vandenberg
-					target = NFA
+					target_country = NFA
 				}
 			}
 			NFA = {
@@ -2152,7 +2147,7 @@ country_event = { # Demand African Territories
 				puppet = NFQ
 				set_nationality = {
 					character = USA_Henry_Wilson_Temple
-					target = NFQ
+					target_country = NFQ
 				}
 			}
 			NFQ = {

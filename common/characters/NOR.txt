@@ -586,6 +586,7 @@ characters = {
 		name = "Carl Joachim Hambro"
 		portraits = {
 			civilian = {
+				large = "gfx/leaders/NOR/Portrait_NOR_Carl_Joachim_Hambro.png"
 				small = "gfx/interface/ministers/NOR/NOR_Carl_Joachim_Hambro.png"
 			}
 		}

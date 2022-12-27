@@ -1,4 +1,12 @@
 characters = {
+	LIT_Vytautas_II = {
+		name = "Vytautas II"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LIT/Portrait_LIT_Vytautas_II.png"
+			}
+		}
+	}
 	LIT_Stanisław_Narutowicz = {
 		name = "Stanisław Narutowicz"
 		portraits = {

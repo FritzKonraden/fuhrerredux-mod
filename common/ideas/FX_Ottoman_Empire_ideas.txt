@@ -257,7 +257,7 @@ ideas = {
 		}
 		TUR_an_inclusive_empire_idea = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TUR_an_inclusive_empire_idea"}
-			picture = TUR_solid_idea
+			picture = country_focus_army
 			modifier = {
 				political_power_factor = 0.05
 				stability_factor = 0.15

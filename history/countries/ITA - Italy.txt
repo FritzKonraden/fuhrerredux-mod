@@ -295,3 +295,4 @@ recruit_character = ITA_Italo_Gariboldi
 recruit_character = ITA_Venanzio_Gabriotti
 recruit_character = ITA_Fedele_de_Giorgis
 recruit_character = ITA_Enrico_Riccardi
+recruit_character = ITA_Pope_Julius_IV

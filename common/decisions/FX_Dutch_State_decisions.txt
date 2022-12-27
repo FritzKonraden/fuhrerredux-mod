@@ -62,6 +62,7 @@ foreign_politics = {
       }
     }
     available = {
+      is_subject = no
       FROM = {
         NOT = { 
           is_in_faction_with = ROOT
@@ -78,6 +79,10 @@ foreign_politics = {
   }
   HOL_operations_in_brussels = {
     allowed = { original_tag = HOL }
+    available = {
+      is_subject = no
+      has_capitulated = no
+    }
     visible = {
       has_completed_focus = HOL_covert_operations_in_belgium
     }
@@ -95,6 +100,10 @@ foreign_politics = {
   }
   HOL_espionage_in_france = {
     allowed = { original_tag = HOL }
+    available = {
+      is_subject = no
+      has_capitulated = no
+    }
     visible = {
       has_completed_focus = HOL_espionage_in_the_city_of_lights
     }
@@ -115,6 +124,10 @@ foreign_politics = {
   }
   HOL_unification_of_the_lowlands = {
     allowed = { original_tag = HOL }
+    available = {
+      is_subject = no
+      has_capitulated = no
+    }
     visible = {
       has_completed_focus = HOL_unify_the_lowlands
     }
@@ -149,6 +162,10 @@ foreign_politics = {
   }
   HOL_operation_fakkel_decision = {
     allowed = { original_tag = HOL }
+    available = {
+      is_subject = no
+      has_capitulated = no
+    }
     visible = { 
       has_completed_focus = HOL_operation_fakkel
       866 = {
@@ -189,6 +206,10 @@ foreign_politics = {
 political_actions = {
   HOL_smuggle_guns_from = {
     allowed = { original_tag = HOL }
+    available = {
+      is_subject = no
+      has_capitulated = no
+    }
     visible = { 
       has_completed_focus = HOL_smuggle_guns
       FROM = {
@@ -225,6 +246,10 @@ political_actions = {
   }
   HOL_crush_socialists = {
     allowed = { original_tag = HOL }
+    available = {
+      is_subject = no
+      has_capitulated = no
+    }
     visible = { 
       OR = {
         has_completed_focus = HOL_fight_the_leftists
@@ -277,6 +302,10 @@ political_actions = {
   }
   HOL_hunt_down_landwacht = {
     allowed = { original_tag = HOL }
+    available = {
+      is_subject = no
+      has_capitulated = no
+    }
     visible = {
       OR = {
         has_completed_focus = HOL_crush_the_remaining_landwacht

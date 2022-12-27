@@ -205,7 +205,7 @@ country_event = { # Fate of Lebanon
       remove_all_cores_and_claims_of_tags = yes
       PHN = {
         add_state_core = 553
-        add_state_core = 977
+        add_state_core = 677
         drop_cosmetic_tag = yes
       }
     }
@@ -928,6 +928,7 @@ country_event = { # Fate of Trucial States
     }
     set_temp_variable = { tag_to_release = TRU }
     658 = { transfer_state_and_add_core = yes }
+    release_targeted_tag = yes
   }
 
   option = { # Occupy

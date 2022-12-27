@@ -83,3 +83,21 @@ defined_text = {
 		localization_key = PHI_nbi
 	}
 }
+
+defined_text = {
+	name = GetAppropriateFactionName
+	text = {
+		trigger = {
+			is_in_faction_with = JAP
+		}
+		localization_key = PHI_co_prosperity_sphere
+	}
+	text = {
+		trigger = {
+			NOT = {
+				is_in_faction_with = JAP
+			}
+		}
+		localization_key = PHI_manila_pact
+	}
+}

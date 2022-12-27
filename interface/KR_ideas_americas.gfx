@@ -16,7 +16,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_BRA_faith_unity"
-		texturefile = "gfx/interface/ideas/BRA/BRA_faith_unity.png"
+		texturefile = "gfx/interface/ideas/ideas/BRA_faith_unity.png"
 	}
 
 	### USA ###

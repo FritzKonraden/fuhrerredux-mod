@@ -295,9 +295,12 @@ arabia.41.t: "Arabian Counter-Coup!"
 arabia.41.d: "Members of the Arab Independence Movements whom have gathered an influx of support when the British Mandate seized control of the country, have successfully launched a counter-coup against the new British Mandate Government."
 arabia.41.a: "Cast them all out!"
 arabia.42.t: "King [Root.GetLeader] Escapes to [ARB_escape_loc]"
-arabia.42.d: "The current Hashemite King, [Root.GetLeader] have reportedly escaped his Royal Palace in [679.GetCapitalVictoryPointName] and have proceeded to flee towards to country of [ARB_escape_loc]. Seen by the Arabs as their beloved King, our government's political legitimacy will plummet in his absence. However, we can still alliviate the situation by installing Prince Ghazi as our puppet King; but he can be unreliable as his cousin before him; and proclaiming an Arabian republic can increase our political control now, but can harm us in the long run."
+arabia.42.d: "The current Hashemite King, [Root.GetLeader] have reportedly escaped his Royal Palace in [679.Capital.GetCapitalVictoryPointName] and have proceeded to flee towards to country of [ARB_escape_loc]. Seen by the Arabs as their beloved King, our government's political legitimacy will plummet in his absence. However, we can still alliviate the situation by installing Prince Ghazi as our puppet King; but he can be unreliable as his cousin before him; and proclaiming an Arabian republic can increase our political control now, but can harm us in the long run."
 arabia.42.a: "Quick, proclaim a Republic!"
 arabia.42.b: "Hand the throne over to Prince Ghazi"
+arabia.43.t: "British Military Mission in [ARB.GetName]"
+arabia.43.d: "As the political and military mission have dramatically shifted in our favour in [ARB.GetName]; the new government have invited a couple of our commanders for a military mission in their country. These [ENG.GetName] Generals, that we will send, will reorganize the [ARB.GetAdjective] military drastically, allowing for a deeper control of the country."
+arabia.43.a: "Jolly good show!"
 
 ### Focus
 # Economy

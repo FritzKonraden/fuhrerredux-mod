@@ -1426,14 +1426,17 @@ country_event = { # Arab Counter-Coup!
         ARB_arab_resistance_1
         ARB_arab_resistance_2
       }
-      ARB_Ronald_Forbes_Adam = {
-        remove_unit_leader_role = yes
+      set_nationality = {
+        target_country = ENG
+        character = ENG_Clement_Armitage
       }
-      ARB_Clement_Armitage = {
-        remove_unit_leader_role = yes
+      set_nationality = {
+        target_country = ENG
+        character = ENG_Herbert_Lumsdon
       }
-      ARB_Herbert_Lumsdon = {
-        remove_unit_leader_role = yes
+      set_nationality = {
+        target_country = ENG
+        character = ENG_Ronald_Forbes_Adam
       }
       ARB_Zeid_bin_Hussein_al_Hashmid = {
         add_field_marshal_role = {
@@ -1506,5 +1509,29 @@ country_event = {
     ARB_add_ghazi = yes
     add_political_power = -100
     add_stability = 0.05
+  }
+}
+
+country_event = { # British Commanders
+  id = arabia.43
+  title = arabia.43.t
+  desc = arabia.43.d
+  picture = GFX_report_event_ARB_british_mandate
+  is_triggered_only = yes
+
+  option = { # 
+    name = arabia.43.a
+    set_nationality = {
+      target_country = ARB
+      character = ENG_Clement_Armitage
+    }
+    set_nationality = {
+      target_country = ARB
+      character = ENG_Herbert_Lumsdon
+    }
+    set_nationality = {
+      target_country = ARB
+      character = ENG_Ronald_Forbes_Adam
+    }
   }
 }

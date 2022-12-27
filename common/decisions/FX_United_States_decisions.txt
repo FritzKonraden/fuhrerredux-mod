@@ -448,10 +448,14 @@ foreign_politics = {
       NOT = { has_war_with = FROM }
     }
     visible = {
+      FROM = {
+        NOT = { has_country_flag = USA_demanded_atlantic_territories }
+      }
       has_completed_focus = USA_atlantic_outposts
     }
     remove_effect = {
       FROM = {
+        set_country_flag = USA_demanded_atlantic_territories
         country_event = usa.55
       }
     }
@@ -473,9 +477,13 @@ foreign_politics = {
       NOT = { has_war_with = FROM }
     }
     visible = {
+      NOT = {
+        has_country_flag = USA_has_purchased_greenland
+      }
       has_completed_focus = USA_demand_greenland
     }
     remove_effect = {
+      set_country_flag = USA_has_purchased_greenland
       FROM = {
         country_event = usa.52
       }
@@ -792,7 +800,7 @@ USA_dealing_with_the_great_depression = {
       PHI = {
         country_event = { id = philippines.1 days = 2 }
       }
-      increase_ruling_party_popularity_by_10 = yes
+      increase_ruling_party_popularity_by_5 = yes
     }
   }
 }
@@ -1026,7 +1034,7 @@ USA_rebuilding_europe = {
     cost = 20
     days_remove = 120
     fire_only_once = yes
-    target_array = faction_members
+    target_ array = faction_members
     target_trigger = {
 			FROM = {
 				has_socialist_government = no
@@ -1038,6 +1046,9 @@ USA_rebuilding_europe = {
 				NOT = {
 					tag = ROOT
 				}
+        any_core_state = {
+          is_on_continent = europe
+        }
 			}
 		}
     available = {
@@ -1046,8 +1057,18 @@ USA_rebuilding_europe = {
         has_socialist_government = no
 			}
     }
+    visible = {
+      FROM = {
+        NOT = {
+          has_country_flag = USA_provided_industrial_investments
+        }
+      }
+    }
     complete_effect = {
-      FROM = { country_event = usa.66 }
+      FROM = {
+        set_country_flag = USA_provided_industrial_investments
+        country_event = usa.66 
+      }
     }
   }
   USA_military_subsidies = {
@@ -1067,16 +1088,30 @@ USA_rebuilding_europe = {
 				NOT = {
 					tag = ROOT
 				}
+        any_core_state = {
+          is_on_continent = europe
+        }
 			}
 		}
     available = {
 			FROM = {
+        NOT = { has_idea = USA_advisors }
 				has_capitulated = no
         has_socialist_government = no
 			}
     }
+    visible = {
+      FROM = {
+        NOT = {
+          has_country_flag = USA_has_provided_military_subsidies
+        }
+      }
+    }
     complete_effect = {
-      FROM = { country_event = usa.65 }
+      FROM = {
+        set_country_flag = USA_has_provided_military_subsidies
+        country_event = usa.65 
+      }
     }
   }
 }
