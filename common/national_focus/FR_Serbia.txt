@@ -320,6 +320,30 @@ focus_tree = {
 		}
 		x = 2
 		y = 4
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_claim_yugoslav_crown"
+			add_war_support = 0.05
+			swap_ideas = {
+				remove_idea = SER_serbian_yugoslavism_idea
+				add_idea = SER_serbian_yugoslavism1_idea
+			}
+			custom_effect_tooltip  = SER_claim_yugoslav_crown_tooltip
+			hidden_effect = {
+				add_state_claim = 789
+				add_state_claim = 163
+				add_state_claim = 103
+				add_state_claim = 1039
+				add_state_claim = 109
+				add_state_claim = 102
+				add_state_claim = 767
+				add_state_claim = 917
+			}
+		}
 
 	}
 	focus = {
@@ -334,6 +358,20 @@ focus_tree = {
 		}
 		x = 1
 		y = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_reorganize_internal_divisions"
+			add_stability = 0.03
+			add_political_power = -50
+			swap_ideas = {
+				remove_idea = SER_serbian_yugoslavism_idea
+				add_idea = SER_serbian_yugoslavism1_idea
+			}
+		}
 
 	}
 	focus = {

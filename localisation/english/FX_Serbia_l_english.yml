@@ -45,7 +45,7 @@ SER_libertarian_socialist_party_long: "Savez Komunista Srbije                   
 SER_social_democrat_party: "Socijalistička"
 SER_social_democrat_party_long: "Socijalistička Partija Srbije                                    §gThe Socialist Party of Serbia was formed in 1921 from reformist members of what would come to be the League of Communists, along with other left-wing groups. Led, in Serbia, by Živko Topalović, the party want to establish a social democratic republican Yugoslavia. It is also seen as a home for members and figures from the banned League of Communists.§!"
 SER_social_liberal_party: "Demokratska"
-SER_social_liberal_party_long: "Demokratska Stranka                                         §gThe Democratic Party was formed in 1920, with strong support from the territories Serbia conquered after the Great War. Under the leadership of Ljubomir Davidović, the party have grown into the strongest opposition to the reigning Radical People's Party. The Democrats are liberals who seek a more democratic Serbian state, with less power to the King. In the Yugoslav question, it trends towards supporting a federal Yugoslav state.§!"
+SER_social_liberal_party_long: "Demokratska Stranka                                            §gThe Democratic Party was formed in 1920, with strong support from the territories Serbia conquered after the Great War. Under the leadership of Ljubomir Davidović, the party have grown into the strongest opposition to the reigning Radical People's Party. The Democrats are liberals who seek a more democratic Serbian state, with less power to the King. In the Yugoslav question, it trends towards supporting a federal Yugoslav state.§!"
 SER_market_liberal_party: "Zemljoradnička"
 SER_market_liberal_party_long: "Zemljoradnička Stranka                                       §gThe Agrarian Party was formed in 1919 and are a minor agrarian party in Serbia. While small, the Agrarians have begin to play the role of parliamentary ally to the reigning party. As it name inclines, the Agrarians promote agriculture and the rights of the Serbian farmer.§!"
 SER_social_conservative_party: "Narodna Radikalna"
@@ -73,6 +73,8 @@ SER_bosnian_modernization_tooltip:0 "§GThe Effects of this focus will increase 
 
 SER_abolish_constitution_tooltip:0 "§CThe Serbian Constitution has been Abolished. General Petar Živković have been appointed Prime Minister With Emergency Powers§!"
 SER_government_national_unity_tooltip:0 "§CA National Unity Government has been Formed, including the People's Radical Party, the Democratic Party, the Agrarian Party and independents§!"
+
+SER_claim_yugoslav_crown_tooltip:0 "Serbia Gains Claims on All §YYugoslav§! States."
 
 ### Flags ###
 
@@ -163,6 +165,10 @@ ser_interlaced_economy_desc: "We have made extensive efforts to connect our econ
 
 SER_serbian_yugoslavism_idea:0 "Serbian Yugoslavism"
 SER_serbian_yugoslavism_idea_desc:0 "The Serbian flair of Yugoslavism is strong in Serbia. While the negotiations between Serbia and the State of Slovenes, Croats and Serbs failed, the gains that Serbia got still strengthened the dream of a unitary Yugoslavia. Many regional nationalists sees our brand of Yugoslavism more as a quest for a Greater Serbia."
+SER_serbian_yugoslavism1_idea:0 "Serbian Yugoslavism"
+SER_serbian_yugoslavism1_idea_desc:0 "The Serbian flair of Yugoslavism is strong in Serbia. While the negotiations between Serbia and the State of Slovenes, Croats and Serbs failed, the gains that Serbia got still strengthened the dream of a unitary Yugoslavia. Many regional nationalists sees our brand of Yugoslavism more as a quest for a Greater Serbia."
+SER_serbian_yugoslavism2_idea:0 "Serbian Yugoslavism"
+SER_serbian_yugoslavism2_idea_desc:0 "The Serbian flair of Yugoslavism is strong in Serbia. While the negotiations between Serbia and the State of Slovenes, Croats and Serbs failed, the gains that Serbia got still strengthened the dream of a unitary Yugoslavia. Many regional nationalists sees our brand of Yugoslavism more as a quest for a Greater Serbia."
 
 SER_macedonian_internal_unrest_idea:0 "Macedonian Internal Unrest"
 SER_macedonian_internal_unrest_idea_desc:0 "When Serbia solidified its control of it’s southern lands, it did also see new problems arising. This has been represented by a pro-Bulgarian organization by the name of the Internal Macedonian Revolutionary Organization. We need to get this area under control, and rid ourselves of these terrorists before they go too far."
