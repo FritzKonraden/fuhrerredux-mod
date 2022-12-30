@@ -99,10 +99,6 @@ add_equipment_to_stockpile = { type = tac_bomber_equipment_0 amount = 3 producer
 
 
 add_ideas = {	
-	pretender_crisis
-	foreign_company_investment
-	parliament_with_officers
-	stable_bureaucrat
 	constitutional_monarchy
 }
 805 = { set_demilitarized_zone = yes }
@@ -130,9 +126,6 @@ set_popularities = {
 	national_populist = 3
 	valkist = 5
 }
-set_country_flag = coalition_social_conservative
-set_country_flag = can_replace_military_staff
-set_cosmetic_tag = SIA_provisional_government
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

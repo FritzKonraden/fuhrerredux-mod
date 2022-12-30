@@ -21,7 +21,7 @@ focus_tree = {
 #######Post Iesato Death Tree
 shared_focus = {
 	id = JAP_grand_triumvirate
-	icon = GFX_  
+	icon = GFX_goal_JAP_grand_triumvirate  
 	x = 16
 	y = 9
 	allow_branch = {
@@ -39,7 +39,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_meeting_of_three_officials
-	icon = GFX_ 
+	icon = GFX_goal_JAP_meeting_of_officials 
 	relative_position_id = JAP_grand_triumvirate
 	x = 0
 	y = 1
@@ -55,7 +55,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_the_kingmaker_assumed_shogunate
-	icon = GFX_ 
+	icon = GFX_goal_JAP_the_kingmaker 
 	relative_position_id = JAP_meeting_of_three_officials 
 	x = 0
 	y = 1
@@ -73,7 +73,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_integrate_ancient_laws
-	icon = GFX_ 
+	icon = GFX_goal_JAP_bugyo_guide 
 	relative_position_id = JAP_the_kingmaker_assumed_shogunate
 	x = -2
 	y = 1
@@ -81,7 +81,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_extend_navy_budget
-	icon = GFX_ 
+	icon = GFX_goal_JAP_increase_navy_budget 
 	relative_position_id = JAP_the_kingmaker_assumed_shogunate
 	x = 0
 	y = 1
@@ -89,7 +89,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_rebuild_the_commissions
-	icon = GFX_ 
+	icon = GFX_goal_JAP_public_address 
 	relative_position_id = JAP_the_kingmaker_assumed_shogunate
 	x = 2
 	y = 1
@@ -97,7 +97,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_embrace_neo_confucianism
-	icon = GFX_ 
+	icon = GFX_goal_confucius 
 	relative_position_id = JAP_extend_navy_budget
 	x = -1 
 	y = 1
@@ -106,7 +106,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_shin_fukoku_kyohei
-	icon = GFX_ 
+	icon = GFX_goal_JAP_fukoku_kyohei 
 	relative_position_id = JAP_extend_navy_budget
 	x = 1
 	y = 1
@@ -115,7 +115,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_subordinate_democracy
-	icon = GFX_ 
+	icon = GFX_goal_subordinate_parliament 
 	relative_position_id = JAP_integrate_ancient_laws
 	x = 0
 	y = 2
@@ -123,7 +123,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_make_parliament_our_rubberstamp
-	icon = GFX_ 
+	icon = GFX_goal_JAP_rubberstamp_parliament 
 	relative_position_id = JAP_subordinate_democracy
 	x = -2
 	y = 1
@@ -134,7 +134,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_samurai_code_of_law
-	icon = GFX_ 
+	icon = GFX_goal_JAP_samurai_law 
 	relative_position_id = JAP_make_parliament_our_rubberstamp
 	x = -1
 	y = 1
@@ -142,7 +142,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_send_parliament_to_hell
-	icon = GFX_ 
+	icon = GFX_goal_absolute_destroy_parliament 
 	relative_position_id = JAP_subordinate_democracy
 	x = 0
 	y = 1
@@ -153,7 +153,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_purge_the_old_politicians
-	icon = GFX_ 
+	icon = GFX_goal_purge_of_death_angel 
 	relative_position_id = JAP_send_parliament_to_hell
 	x = -1
 	y = 1
@@ -161,7 +161,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_taiheiyo_circuit_development
-	icon = GFX_ 
+	icon = GFX_goal_JAP_tokaido_dev 
 	relative_position_id = JAP_rebuild_the_commissions
 	x = 0
 	y = 2
@@ -169,7 +169,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_under_supervision_of_government
-	icon = GFX_ 
+	icon = GFX_goal_JAP_government_supervised_complex 
 	relative_position_id = JAP_taiheiyo_circuit_development
 	x = 0
 	y = 1
@@ -180,7 +180,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_shogunate_industry
-	icon = GFX_ 
+	icon = GFX_goal_JAP_shogunate_industry 
 	relative_position_id = JAP_under_supervision_of_government
 	x = 1
 	y = 1
@@ -188,7 +188,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_privatize_the_public_company
-	icon = GFX_ 
+	icon = GFX_goal_privatization 
 	relative_position_id = JAP_taiheiyo_circuit_development
 	x = 2
 	y = 1
@@ -199,7 +199,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_samurai_zaibatsu_megacollab
-	icon = GFX_ 
+	icon = GFX_goal_JAP_megacollab 
 	relative_position_id = JAP_privatize_the_public_company
 	x = 1
 	y = 1
@@ -207,7 +207,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_increase_navy_size
-	icon = GFX_ 
+	icon = GFX_goal_JAP_increase_navy_size 
 	relative_position_id = JAP_extend_navy_budget
 	x = 0
 	y = 2
@@ -215,7 +215,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_absolute_naval_power_state
-	icon = GFX_ 
+	icon = GFX_goal_JAP_maritime_superpower 
 	relative_position_id = JAP_extend_navy_budget
 	x = 0
 	y = 4
@@ -223,7 +223,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_extend_military_technology_budget
-	icon = GFX_ 
+	icon = GFX_goal_military_tech_research 
 	relative_position_id = JAP_absolute_naval_power_state
 	x = -2
 	y = 1
@@ -237,13 +237,13 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_even_military_can_run_business
-	icon = GFX_ 
+	icon = GFX_goal_military_mobillisation 
 	relative_position_id = JAP_absolute_naval_power_state
 	x = 2
 	y = 1
 	prerequisite = { 
 		focus = JAP_shogunate_industry
-		focus = JAP_samurai_zaibatsu_megacollaboration
+		focus = JAP_samurai_zaibatsu_megacollab
 	}
 	prerequisite = {
 		focus = JAP_absolute_naval_power_state
@@ -251,7 +251,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_long_live_true_justice
-	icon = GFX_ 
+	icon = GFX_goal_JAP_tokugawa_eternal_reign 
 	relative_position_id = JAP_absolute_naval_power_state
 	x = 0
 	y = 2
