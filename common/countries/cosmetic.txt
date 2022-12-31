@@ -582,6 +582,10 @@ ITA_puppet_communist = {
 	color = rgb { 140 15 15 }
 	color_ui = rgb {140 15 15 }
 }
+ITA_PAP = {
+	color = rgb { 255 255 183 }
+	color_ui = rgb { 255 255 183 }
+}
 ITA_puppet = {
 	color = rgb { 40 40 40 }
 	color_ui = rgb { 40 40 40 }
@@ -621,6 +625,10 @@ NAR_rust_belt = {
 PHI_CONFED = {
 	color = rgb { 204 81 39 }
 	color_ui = rgb { 204 81 39 }
+}
+PHI_HOLY = {
+	color = rgb { 242 242 142 }
+	color_ui = rgb { 242 242 142 }
 }
 NFA_USA = {
 	color = rgb { 44 106 193 }

@@ -205,7 +205,7 @@ country_event = { # Fate of Lebanon
       remove_all_cores_and_claims_of_tags = yes
       PHN = {
         add_state_core = 553
-        add_state_core = 977
+        add_state_core = 677
         drop_cosmetic_tag = yes
       }
     }

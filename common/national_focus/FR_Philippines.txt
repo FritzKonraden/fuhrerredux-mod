@@ -1617,6 +1617,9 @@ focus_tree = {
     completion_reward = {
       remove_ideas = PHI_lingering_sakdalistas
     }
+    search_filters = {
+      FOCUS_FILTER_POLITICAL
+    }
   }
 
   # Purge the Hardliners
@@ -1643,6 +1646,10 @@ focus_tree = {
         popularity = -0.15
       }
     }
+    search_filters = {
+      FOCUS_FILTER_POLITICAL
+      FOCUS_FILTER_STABILITY
+    }
   }
 
   # Nationalize the Haciendas
@@ -1661,6 +1668,9 @@ focus_tree = {
     completion_reward = {
       increase_ruling_party_popularity_by_10 = yes
       remove_ideas = PHI_hacienda_questions
+    }
+    search_filters = {
+      FOCUS_FILTER_INDUSTRY
     }
   }
 
@@ -1684,6 +1694,11 @@ focus_tree = {
         add_idea = PHI_catholic_nation_1
       }
     }
+    search_filters = {
+      FOCUS_FILTER_PRODUCTION
+      FOCUS_FILTER_MANPOWER
+      FOCUS_FILTER_INDUSTRY
+    }
   }
 
   # Literacy Programs
@@ -1701,6 +1716,9 @@ focus_tree = {
     relative_position_id = PHI_nationalize_the_haciendas
     completion_reward = {
       add_research_slot = 1
+    }
+    search_filters = {
+      FOCUS_FILTER_RESEARCH
     }
   }
 
@@ -1720,6 +1738,9 @@ focus_tree = {
     completion_reward = {
       add_ideas = PHI_social_security
     }
+    search_filters = {
+      FOCUS_FILTER_PRODUCTION
+    }
   }
 
   # Establish PhilHealth
@@ -1737,6 +1758,10 @@ focus_tree = {
     relative_position_id = PHI_christian_socialism
     completion_reward = {
       add_ideas = PHI_improved_healthcare
+    }
+    search_filters = {
+      FOCUS_FILTER_MANPOWER
+      FOCUS_FILTER_PRODUCTION
     }
   }
 
@@ -1759,6 +1784,10 @@ focus_tree = {
       add_stability = 0.05
       add_political_power = 100
     }
+    search_filters = {
+      FOCUS_FILTER_STABILITY
+      FOCUS_FILTER_POLITICAL
+    }
   }
 
   # Communal Farms
@@ -1776,6 +1805,9 @@ focus_tree = {
     relative_position_id = PHI_nationalize_the_haciendas
     completion_reward = {
       add_ideas = PHI_communal_farms
+    }
+    search_filters = {
+      FOCUS_FILTER_PRODUCTION
     }
   }
 
@@ -1845,6 +1877,10 @@ focus_tree = {
         }
       }
     }
+    search_filters = {
+      FOCUS_FILTER_PRODUCTION
+      FOCUS_FILTER_INDUSTRY
+    }
   }
 
   # Worker's Cooperatives
@@ -1863,6 +1899,10 @@ focus_tree = {
     completion_reward = {
       PHI_increase_market_socialism = yes
     }
+    search_filters = {
+      FOCUS_FILTER_INDUSTRY
+      FOCUS_FILTER_PRODUCTION
+    }
   }
 
   # Protectionist Policies
@@ -1880,6 +1920,10 @@ focus_tree = {
     relative_position_id = PHI_publicly_owned_enterprise
     completion_reward = {
       PHI_increase_market_socialism = yes
+    }
+    search_filters = {
+      FOCUS_FILTER_INDUSTRY
+      FOCUS_FILTER_PRODUCTION
     }
   }
 
@@ -1901,6 +1945,10 @@ focus_tree = {
     relative_position_id = PHI_communal_farms
     completion_reward = {
       add_ideas = PHI_beacon_of_labour
+    }
+    search_filters = {
+      FOCUS_FILTER_ARMY_BONUS
+      FOCUS_FILTER_POLITICAL
     }
   }
 
@@ -2343,6 +2391,7 @@ focus_tree = {
        OR = {
          has_country_flag = PHI_junta_in_control
          has_country_flag = PHI_socialists_in_control
+         has_country_flag = PHI_pope_in_control
        }
       }
     }
@@ -2353,8 +2402,17 @@ focus_tree = {
           tooltip = PHI_junta_in_control_tt
           has_country_flag = PHI_junta_in_control
         }
+
+        if = {
+          limit = { has_country_flag = PHI_exiled_pope }
+          custom_trigger_tooltip = {
+            tooltip = PHI_pope_has_control_tt
+            has_country_flag = PHI_pope_in_control
+          }
+        }
       }
       threat > 0.2
+      
     }
     relative_position_id = PHI_new_antitrust_laws
     completion_reward = {
@@ -4483,6 +4541,1091 @@ focus_tree = {
     search_filters = {
       FOCUS_FILTER_INDUSTRY
       FOCUS_FILTER_AIRFORCE_BONUS
+    }
+  }
+
+  
+  ######################################################
+  #                                                    #
+  #                PAPACY-IN-EXILE                     #
+  #                                                    #
+  ######################################################
+
+  # Sedes Es Patri
+  focus = {
+    id = PHI_sedes_es_patri
+    icon = GFX_goal_PHI_pope
+    x = -1
+    y = 2
+    cost = 6
+    available = {
+      hidden_trigger = {
+        always = no
+      }
+    }
+    bypass = {
+      custom_trigger_tooltip = {
+        tooltip = PHI_pope_has_control_tt
+        has_country_flag = PHI_pope_in_control
+      }
+    }
+    allow_branch = {
+      has_country_flag = PHI_pope_in_control
+    }
+    relative_position_id = PHI_crop_insurance
+    completion_reward = {
+      custom_effect_tooltip = PHI_pope_in_control_tt
+    }
+  }
+
+  # Reinforce Temporal Power
+  focus = {
+    id = PHI_reinforce_temporal_power
+    icon = GFX_goal_PHI_temporal_power
+    x = 0
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_country_leader = {
+        character = ITA_Pope_Julius_IV
+        ruling_only = yes
+      }
+    }
+    prerequisite = { focus = PHI_sedes_es_patri }
+    relative_position_id = PHI_sedes_es_patri
+    completion_reward = {
+      add_stability = 0.1
+      swap_ideas = {
+        remove_idea = elective_monarchy
+        add_idea = theocratic_dictatorship
+      }
+
+      if = {
+        limit = { has_idea = PHI_lingering_sakdalistas }
+        remove_ideas = PHI_lingering_sakdalistas
+      }
+    }
+    search_filters = {
+      FOCUS_FILTER_STABILITY
+      FOCUS_FILTER_POLITICAL
+    }
+  }
+
+  # Forced Conversions
+  focus = {
+    id = PHI_forced_conversions
+    icon = GFX_PAP_holy_war
+    x = -1
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_country_leader = {
+        character = ITA_Pope_Julius_IV
+        ruling_only = yes
+      }
+    }
+    prerequisite = { focus = PHI_reinforce_temporal_power }
+    relative_position_id = PHI_reinforce_temporal_power
+    completion_reward = {
+      increase_ruling_party_popularity_by_15 = yes
+      remove_ideas = PHI_uncooperative_protestants
+
+      hidden_effect = {
+        country_event = { id = philippines.108 days = 14 }
+      }
+    }
+    search_filters = {
+      FOCUS_FILTER_STABILITY
+      FOCUS_FILTER_POLITICAL
+    }
+  }
+
+  # Christian Education
+  focus = {
+    id = PHI_christian_education
+    icon = GFX_goal_BRA_catholic_education
+    x = 1
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_country_leader = {
+        character = ITA_Pope_Julius_IV
+        ruling_only = yes
+      }
+    }
+    prerequisite = { focus = PHI_reinforce_temporal_power }
+    relative_position_id = PHI_reinforce_temporal_power
+    completion_reward = {
+      add_research_slot = 1
+    }
+    search_filters = {
+      FOCUS_FILTER_RESEARCH
+    }
+  }
+
+  # Purge Unbelievers
+  focus = {
+    id = PHI_purge_unbelievers
+    icon = GFX_goal_PHI_inquisition
+    x = 0
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_country_leader = {
+        character = ITA_Pope_Julius_IV
+        ruling_only = yes
+      }
+    }
+    prerequisite = { focus = PHI_forced_conversions }
+    relative_position_id = PHI_forced_conversions
+    completion_reward = {
+      increase_ruling_party_popularity_by_5 = yes
+      remove_ideas = PHI_resisting_muslim_minorities
+    }
+    search_filters = {
+      FOCUS_FILTER_STABILITY
+      FOCUS_FILTER_POLITICAL
+    }
+  }
+
+  # Denounce Socialists
+  focus = {
+    id = PHI_denounce_socialists
+    icon = GFX_HOL_red_scare
+    x = -1
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_socialist_government = no
+      has_country_leader = {
+        character = ITA_Pope_Julius_IV
+        ruling_only = yes
+      }
+    }
+    prerequisite = { focus = PHI_purge_unbelievers }
+    relative_position_id = PHI_purge_unbelievers
+    completion_reward = {
+      remove_ideas = PHI_guerilla_problem
+      add_popularity = {
+        ideology = vanguardist
+        popularity = -0.2
+      }
+      add_popularity = {
+        ideology = collectivist
+        popularity = -0.2
+      }
+      add_popularity = {
+        ideology = libertarian_socialist
+        popularity = -0.2
+      }
+    }
+    search_filters = {
+      FOCUS_FILTER_STABILITY
+      FOCUS_FILTER_POLITICAL
+    }
+  }
+
+  # A Call to the Faithful
+  focus = {
+    id = PHI_a_call_to_the_faithful
+    icon = GFX_goal_PHI_call_to_the_faithful
+    x = 0
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_country_leader = {
+        character = ITA_Pope_Julius_IV
+        ruling_only = yes
+      }
+    }
+    prerequisite = { focus = PHI_christian_education }
+    relative_position_id = PHI_christian_education
+    completion_reward = {
+      add_ideas = PHI_call_people
+    }
+    search_filters = {
+      FOCUS_FILTER_MANPOWER
+    }
+  }
+
+  # Legionary Spirit
+  focus = {
+    id = PHI_legionary_spirit
+    icon = GFX_PAP_legionary_spirit
+    x = -1
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_country_leader = {
+        character = ITA_Pope_Julius_IV
+        ruling_only = yes
+      }
+    }
+    prerequisite = { focus = PHI_purge_unbelievers }
+    prerequisite = { focus = PHI_a_call_to_the_faithful }
+    relative_position_id = PHI_a_call_to_the_faithful
+    completion_reward = {
+      swap_ideas = {
+        remove_idea = PHI_call_people
+        add_idea = PHI_legionaires
+      }
+    }
+    search_filters = {
+      FOCUS_FILTER_ARMY_BONUS
+    }
+  }
+
+  # The Papal Knights
+  focus = {
+    id = PHI_the_papal_knights
+    icon = GFX_goal_PHI_knights
+    x = 1
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_country_leader = {
+        character = ITA_Pope_Julius_IV
+        ruling_only = yes
+      }
+    }
+    prerequisite = { focus = PHI_legionary_spirit }
+    relative_position_id = PHI_legionary_spirit
+    completion_reward = {
+      swap_ideas = {
+        remove_idea = PHI_legionaires
+        add_idea = PHI_legionaires_1
+      }
+    }
+    search_filters = {
+      FOCUS_FILTER_ARMY_BONUS
+    }
+  }
+
+  # Integrate Zouave Officers
+  focus = {
+    id = PHI_integrate_zouave_officers
+    icon = GFX_PAP_roman_army
+    x = 3
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_country_leader = {
+        character = ITA_Pope_Julius_IV
+        ruling_only = yes
+      }
+    }
+    prerequisite = { focus = PHI_legionary_spirit }
+    relative_position_id = PHI_legionary_spirit
+    completion_reward = {
+      army_experience = 15
+      add_ideas = PHI_zoauve_officers
+    }
+    search_filters = {
+      FOCUS_FILTER_ARMY_BONUS
+    }
+  }
+
+  # Deus Vult!
+  focus = {
+    id = PHI_deus_vult
+    icon = GFX_goal_PHI_deus_vult
+    x = 1
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_country_leader = {
+        character = ITA_Pope_Julius_IV
+        ruling_only = yes
+      }
+    }
+    prerequisite = { focus = PHI_the_papal_knights }
+    prerequisite = { focus = PHI_integrate_zouave_officers }
+    relative_position_id = PHI_the_papal_knights
+    completion_reward = {
+      custom_effect_tooltip = PHI_deus_vult_tt
+    }
+    search_filters = {
+      FOCUS_FILTER_POLITICAL
+    }
+  }
+
+  # Criminalise Liberalism
+  focus = {
+    id = PHI_criminalise_liberalism
+    icon = GFX_goal_PHI_no_liberals
+    x = 1
+    y = 2
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_country_leader = {
+        character = ITA_Pope_Julius_IV
+        ruling_only = yes
+      }
+    }
+    prerequisite = { focus = PHI_christian_education }
+    relative_position_id = PHI_christian_education
+    completion_reward = {
+      add_political_power = 100
+      add_popularity = {
+        ideology = market_liberal
+        popularity = -0.15
+      }
+      add_popularity = {
+        ideology = social_liberal
+        popularity = -0.15
+      }
+    }
+    search_filters = {
+      FOCUS_FILTER_POLITICAL
+    }
+  }
+
+  # Establish the Papal Gendarmarie
+  focus = {
+    id = PHI_establish_the_papal_gendarmerie
+    icon = GFX_PAP_palatine_guard
+    x = 2
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_country_leader = {
+        character = ITA_Pope_Julius_IV
+        ruling_only = yes
+      }
+    }
+    prerequisite = { focus = PHI_christian_education }
+    relative_position_id = PHI_christian_education
+    completion_reward = {
+      add_ideas = PHI_papal_gendarmarie
+      if = {
+        limit = { has_intelligence_agency = no }
+        custom_effect_tooltip = PHI_create_nbi_tt
+        hidden_effect = {
+          create_intelligence_agency = yes
+        }
+      }
+
+      if = {
+        limit = { 
+          NOT = { has_done_agency_upgrade = upgrade_passive_defense }
+        }
+        upgrade_intelligence_agency = upgrade_passive_defense
+      }
+      if = {
+        limit = {
+          NOT = { has_done_agency_upgrade = upgrade_anti_partisan }
+        }
+        upgrade_intelligence_agency = upgrade_anti_partisan
+      }
+      if = {
+        limit = {
+          NOT = { has_done_agency_upgrade = upgrade_interrogation_techniques }
+        }
+        upgrade_intelligence_agency = upgrade_interrogation_techniques
+      }
+      if = {
+        limit = {
+          NOT = { has_done_agency_upgrade = upgrade_psycho_warfare }
+        }
+        upgrade_intelligence_agency = upgrade_psycho_warfare
+      }
+    }
+    search_filters = {
+      FOCUS_FILTER_POLITICAL
+    }
+  }
+
+  # Ethical Economics
+  focus = {
+    id = PHI_ethical_economics
+    icon = GFX_focus_mex_privatisation
+    x = -3
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_country_leader = {
+        character = ITA_Pope_Julius_IV
+        ruling_only = yes
+      }
+    }
+    prerequisite = { focus = PHI_reinforce_temporal_power }
+    relative_position_id = PHI_reinforce_temporal_power
+    completion_reward = {
+      add_ideas = PHI_factory_incentives
+
+      if = {
+        limit = { has_idea = PHI_hacienda_questions }
+        remove_idea = PHI_hacienda_questions
+      }
+    }
+    search_filters = {
+      FOCUS_FILTER_INDUSTRY
+      FOCUS_FILTER_PRODUCTION
+    }
+  }
+
+  # Christian State Unions
+  focus = {
+    id = PHI_christian_state_unions
+    icon = GFX_goal_PHI_christian_unions
+    x = 0
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_country_leader = {
+        character = ITA_Pope_Julius_IV
+        ruling_only = yes
+      }
+    }
+    prerequisite = { focus = PHI_ethical_economics }
+    relative_position_id = PHI_ethical_economics
+    completion_reward = {
+      add_ideas = PHI_christian_unions
+    }
+    search_filters = {
+      FOCUS_FILTER_INDUSTRY
+      FOCUS_FILTER_PRODUCTION
+    }
+  }
+
+  # Labor Omnia Vincit
+  focus = {
+    id = PHI_labor_omnia_vincit
+    icon = GFX_goal_production
+    x = -1
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_country_leader = {
+        character = ITA_Pope_Julius_IV
+        ruling_only = yes
+      }
+    }
+    prerequisite = { focus = PHI_christian_state_unions }
+    relative_position_id = PHI_christian_state_unions
+    completion_reward = {
+      swap_ideas = {
+        remove_idea = PHI_christian_unions
+        add_idea = PHI_christian_unions_1
+      }
+    }
+    search_filters = {
+      FOCUS_FILTER_INDUSTRY
+      FOCUS_FILTER_PRODUCTION
+    }
+  }
+
+  # Per Aspera
+  focus = {
+    id = PHI_per_aspera
+    icon = GFX_goal_PHI_papal_research
+    x = 1
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_country_leader = {
+        character = ITA_Pope_Julius_IV
+        ruling_only = yes
+      }
+    }
+    prerequisite = { focus = PHI_labor_omnia_vincit }
+    relative_position_id = PHI_labor_omnia_vincit
+    completion_reward = {
+      add_ideas = PHI_per_aspera_ad_astra
+    }
+    search_filters = {
+      FOCUS_FILTER_RESEARCH
+    }
+  }
+
+  # Entrench Corporatism
+  focus = {
+    id = PHI_entrench_corporatism
+    icon = GFX_goal_Centralised_Government
+    x = 3
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_country_leader = {
+        character = ITA_Pope_Julius_IV
+        ruling_only = yes
+      }
+    }
+    prerequisite = { focus = PHI_labor_omnia_vincit }
+    relative_position_id = PHI_labor_omnia_vincit
+    completion_reward = {
+      random_owned_controlled_state = {
+        if = {
+          limit = {
+            free_building_slots = {
+              building = industrial_complex
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+            type = industrial_complex
+            level = 2
+            instant_build = yes
+          }
+        }
+      }
+      random_owned_controlled_state = {
+        if = {
+          limit = {
+            free_building_slots = {
+              building = industrial_complex
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+            type = industrial_complex
+            level = 2
+            instant_build = yes
+          }
+        }
+      }
+      random_owned_controlled_state = {
+        if = {
+          limit = {
+            free_building_slots = {
+              building = arms_factory
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+            type = arms_factory
+            level = 2
+            instant_build = yes
+          }
+        }
+      }
+      random_owned_controlled_state = {
+        if = {
+          limit = {
+            free_building_slots = {
+              building = arms_factory
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+            type = arms_factory
+            level = 2
+            instant_build = yes
+          }
+        }
+      }
+    }
+    search_filters = {
+      FOCUS_FILTER_INDUSTRY
+      FOCUS_FILTER_PRODUCTION
+    }
+  }
+
+  # Align Faithful Industrialists
+  focus = {
+    id = PHI_align_faithful_industrialists
+    icon = GFX_goal_PHI_faitful_elites
+    x = 1
+    y = 1
+    cost = 6
+    available = {
+      has_capitulated = no
+      has_country_leader = {
+        character = ITA_Pope_Julius_IV
+        ruling_only = yes
+      }
+    }
+    prerequisite = { focus = PHI_per_aspera }
+    prerequisite = { focus = PHI_entrench_corporatism }
+    relative_position_id = PHI_per_aspera
+    completion_reward = {
+      327 = { set_state_category = megapolis }
+      624 = { set_state_category = large_city }
+      625 = { set_state_category = large_city }
+      625 = { set_state_category = city }
+      627 = { set_state_category = large_city }
+    }
+    search_filters = {
+      FOCUS_FILTER_INDUSTRY
+      FOCUS_FILTER_PRODUCTION
+    }
+  }
+
+  # The Holy War
+  focus = {
+    id = PHI_the_holy_war
+    icon = GFX_goal_italy_julius
+    x = 4
+    y = 0
+    cost = 6
+    available = {
+      has_capitulated = no
+      is_subject = no
+      hidden_trigger = {
+        has_completed_focus = PHI_deus_vult
+      }
+    }
+    allow_branch = {
+      has_country_flag = PHI_pope_in_control
+    }
+    relative_position_id = PHI_sedes_es_patri
+    completion_reward = {
+      add_ideas = PHI_filipino_crusade
+    }
+  }
+
+  # Protect Insulindian Christians
+  focus = {
+    id = PHI_protect_insulindian_christians
+    icon = GFX_goal_skull_treaty
+    x = -1
+    y = 1
+    cost = 6
+    available = {
+      is_subject = no
+      OR = {
+        country_exists = INS
+        country_exists = BEA
+      }
+    }
+    bypass = {
+      if = {
+        limit = {
+          country_exists = BEA
+        }
+        BEA = {
+          has_war_with = ROOT
+        }
+        
+        else = {
+          OR = {
+            INS = {
+              has_war_with = ROOT
+              is_subject_of = ROOT
+              is_in_faction_with = ROOT
+            }
+            NOT = {
+              country_exists = BEA
+              country_exists = INS
+            }
+          }
+        }
+      }
+    }
+    prerequisite = { focus = PHI_the_holy_war }
+    relative_position_id = PHI_the_holy_war
+    completion_reward = {
+      if = {
+        limit = {
+          country_exists = BEA
+        }
+        create_wargoal = {
+          target = BEA
+          type = annex_everything
+        }
+      }
+
+      if = {
+        limit = {
+          country_exists = INS
+        }
+        create_wargoal = {
+          target = INS
+          type = annex_everything
+        }
+      }
+    }
+  }
+
+  # Mission to Indochina
+  focus = {
+    id = PHI_mission_to_indochina
+    icon = GFX_goal_volunteer_alliance
+    x = 1
+    y = 1
+    cost = 6
+    available = {
+      is_subject = no
+      OR = {
+        country_exists = VIN
+        country_exists = LAO
+        country_exists = CAM
+        country_exists = ICR
+        country_exists = FIC
+      }
+    }
+    bypass = {
+      if = {
+        limit = {
+          country_exists = FIC
+        }
+        FIC = {
+          has_war_with = ROOT
+        }
+        
+        else = {
+          OR = {
+            ICR = {
+              has_war_with = ROOT
+              is_subject_of = ROOT
+              is_in_faction_with = ROOT
+            }
+            VIN = {
+              has_war_with = ROOT
+              is_subject_of = ROOT
+              is_in_faction_with = ROOT
+            }
+            LAO = {
+              has_war_with = ROOT
+              is_subject_of = ROOT
+              is_in_faction_with = ROOT
+            }
+            CAM = {
+              has_war_with = ROOT
+              is_subject_of = ROOT
+              is_in_faction_with = ROOT
+            }
+            NOT = {
+              country_exists = ICR
+              country_exists = VIN
+              country_exists = LAO
+              country_exists = CAM
+              country_exists = FIC
+            }
+          }
+        }
+      }
+    }
+    prerequisite = { focus = PHI_the_holy_war }
+    relative_position_id = PHI_the_holy_war
+    completion_reward = {
+      if = {
+        limit = {
+          country_exists = FIC
+        }
+        create_wargoal = {
+          target = FIC
+          type = annex_everything
+        }
+      }
+
+      if = {
+        limit = {
+          country_exists = ICR
+        }
+        create_wargoal = {
+          target = ICR
+          type = annex_everything
+        }
+      }
+
+      if = {
+        limit = {
+          country_exists = VIN
+        }
+        create_wargoal = {
+          target = VIN
+          type = annex_everything
+        }
+      }
+
+      if = {
+        limit = {
+          country_exists = LAO
+        }
+        create_wargoal = {
+          target = LAO
+          type = annex_everything
+        }
+      }
+
+      if = {
+        limit = {
+          country_exists = CAM
+        }
+        create_wargoal = {
+          target = CAM
+          type = annex_everything
+        }
+      }
+    }
+  }
+
+  # Topple the Buddhist Kingdom
+  focus = {
+    id = PHI_topple_the_buddhist_kingdom
+    icon = GFX_goal_step_on_skull
+    x = 3
+    y = 1
+    cost = 6
+    available = {
+      is_subject = no
+      country_exists = SIA
+    }
+    bypass = {
+      SIA = {
+        OR = {
+          exists = no
+          has_war_with = ROOT
+          is_subject_of = ROOT
+          is_in_faction_with = ROOT
+        }
+      }
+    }
+    prerequisite = { focus = PHI_the_holy_war }
+    relative_position_id = PHI_the_holy_war
+    completion_reward = {
+      create_wargoal = {
+        target = SIA
+        type = annex_everything
+      }
+    }
+  }
+
+  # Legacy of the Boxer Rebellion
+  focus = {
+    id = PHI_legacy_of_the_boxer_rebellion
+    icon = GFX_goal_flames_of_rebellion
+    x = -1
+    y = 1
+    cost = 6
+    available = {
+      is_subject = no
+      any_other_country = {
+        is_chinese_tag = yes
+        exists = yes
+      }
+    }
+    prerequisite = { focus = PHI_mission_to_indochina }
+    relative_position_id = PHI_mission_to_indochina
+    completion_reward = {
+      every_other_country = {
+        limit = {
+          is_chinese_tag = yes
+        }
+
+        create_wargoal = {
+          target = THIS
+          type = annex_everything
+        }
+      }
+    }
+  }
+
+  # Pacify Burma
+  focus = {
+    id = PHI_pacify_burma
+    icon = GFX_goal_generic_political_pressure
+    x = 1
+    y = 1
+    cost = 6
+    available = {
+      is_subject = no
+      country_exists = BRM
+    }
+    bypass = {
+      BRM = {
+        OR = {
+          exists = no
+          has_war_with = ROOT
+          is_subject_of = ROOT
+          is_in_faction_with = ROOT
+        }
+      }
+    }
+    prerequisite = {
+      focus = PHI_topple_the_buddhist_kingdom
+      focus = PHI_mission_to_indochina
+    }
+    relative_position_id = PHI_mission_to_indochina
+    completion_reward = {
+      create_wargoal = {
+        target = BRM
+        type = annex_everything
+      }
+    }
+  }
+
+  # Punish the Shogunate
+  focus = {
+    id = PHI_punish_the_shogunate
+    icon = GFX_focus_generic_japanese_imperial_glory
+    x = 0
+    y = 2
+    cost = 6
+    available = {
+      is_subject = no
+      country_exists = JAP
+    }
+    bypass = {
+      JAP = {
+        OR = {
+          exists = no
+          is_subject_of = ROOT
+          has_war_with = ROOT
+          is_in_faction_with = ROOT
+        }
+      }
+    }
+    prerequisite = { focus = PHI_legacy_of_the_boxer_rebellion }
+    relative_position_id = PHI_legacy_of_the_boxer_rebellion
+    completion_reward = {
+      create_wargoal = {
+        target = JAP
+        type = annex_everything
+      }
+    }
+  }
+
+  # Christianity in the Himalayas
+  focus = {
+    id = PHI_christianity_in_the_himalayas
+    icon = GFX_goal_generic_mountain_warfare
+    x = 1
+    y = 1
+    cost = 6
+    available = {
+      is_subject = no
+      OR = {
+        country_exists = NEP
+        country_exists = BHU
+        country_exists = TIB
+      }
+    }
+    prerequisite = { 
+      focus = PHI_legacy_of_the_boxer_rebellion
+      focus = PHI_pacify_burma
+    }
+    relative_position_id = PHI_legacy_of_the_boxer_rebellion
+    completion_reward = {
+      every_other_country = {
+        limit = {
+          OR = {
+            tag = BHU
+            tag = TIB
+            tag = NEP
+          }
+        }
+
+        create_wargoal = {
+          target = THIS
+          type = annex_everything
+        }
+      }
+    }
+  }
+
+  # Crusade in India
+  focus = {
+    id = PHI_crusade_in_india
+    icon = GFX_focus_RAJ_seek_help_from_germany
+    x = 1
+    y = 1
+    cost = 6
+    available = {
+      is_subject = no
+      any_other_country = {
+        is_indian_or_splinter_tag = yes
+        exists = yes
+      }
+    }
+    prerequisite = {
+      focus = PHI_pacify_burma
+      focus = PHI_topple_the_buddhist_kingdom
+    }
+    relative_position_id = PHI_pacify_burma
+    completion_reward = {
+      every_other_country = {
+        limit = {
+          exists = yes
+          is_indian_or_splinter_tag = yes
+        }
+
+        create_wargoal = {
+          target = THIS
+          type = annex_everything
+        }
+      }
+    }
+  }
+
+  # Catholic Dominion
+  focus = {
+    id = PHI_catholic_dominion
+    icon = GFX_BEL_Improve_Catholic_Relations
+    x = 1
+    y = 1
+    cost = 6
+    available = {
+      is_in_faction = no
+      is_subject = no
+      custom_trigger_tooltip = {
+        tooltip = PHI_latin_countries_available_tt
+        any_other_country = {
+          capital_scope = {
+            OR = {
+              is_on_continent = south_america
+              is_on_continent = north_america
+            }
+          }
+          exists = yes
+          has_socialist_government = no
+        }
+      }
+    }
+    prerequisite = {
+      focus = PHI_christianity_in_the_himalayas
+      focus = PHI_crusade_in_india
+    }
+    relative_position_id = PHI_christianity_in_the_himalayas
+    completion_reward = {
+      create_faction = PHI_POPE_faction
+      custom_effect_tooltip = PHI_catholic_dominion_tt
+    }
+  }
+
+  # The Holy Lands
+  focus = {
+    id = PHI_the_holy_lands
+    icon = GFX_goal_PAP_crusade
+    x = 0
+    y = 1
+    cost = 6
+    available = {
+      is_subject = no
+      has_capitulated = no
+    }
+    prerequisite = {
+      focus = PHI_catholic_dominion
+    }
+    relative_position_id = PHI_catholic_dominion
+    completion_reward = {
+      custom_effect_tooltip = PHI_the_holy_lands_tt
     }
   }
 }

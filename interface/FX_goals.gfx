@@ -1,5 +1,53 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_goal_BRA_catholic_education"
+		texturefile = "gfx/interface/goals/BRA_catholic_education.png"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_call_to_the_faithful"
+		texturefile = "gfx/interface/goals/PHI_call_to_the_faithful.png"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_inquisition"
+		texturefile = "gfx/interface/goals/PHI_inquisition.png"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_faitful_elites"
+		texturefile = "gfx/interface/goals/PHI_faitful_elites.png"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_christian_unions"
+		texturefile = "gfx/interface/goals/PHI_christian_unions.png"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_papal_research"
+		texturefile = "gfx/interface/goals/PHI_papal_research.png"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_no_liberals"
+		texturefile = "gfx/interface/goals/PHI_no_liberals.png"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_deus_vult"
+		texturefile = "gfx/interface/goals/PHI_deus_vult.png"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_knights"
+		texturefile = "gfx/interface/goals/PHI_knights.png"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_temporal_power"
+		texturefile = "gfx/interface/goals/PHI_temporal_power.png"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_pope"
+		texturefile = "gfx/interface/goals/PHI_pope.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GER_scandinavia_claims"
+		texturefile = "gfx/interface/goals/GER_scandinavia_claims.png"
+	}
+	spriteType = {
 		name = "GFX_goal_UOB_airforce"
 		texturefile = "gfx/interface/goals/UOB_airforce.png"
 	}

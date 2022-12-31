@@ -34,8 +34,10 @@ on_actions = {
         }
 
         # Investments are pulled
-        ROOT = {
-          country_event = { id = philippines.7 days = 2 }
+        FROM = {
+          ROOT = {
+            country_event = { id = philippines.7 days = 2 }
+          }
         }
       }
     }

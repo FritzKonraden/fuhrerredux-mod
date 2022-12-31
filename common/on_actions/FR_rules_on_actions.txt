@@ -456,11 +456,11 @@ on_actions = {
 							rule = BLR_ai_behavior
 							option = BLR_RANDOM
 						}
-						set_country_flag = BLR_ai_chosen
-						random_list = {
-							50 = { set_country_flag = BLR_valkist_behavior }
-							50 = { set_country_flag = BLR_democratic_behavior }
-						}
+					}
+					set_country_flag = BLR_ai_chosen
+					random_list = {
+						50 = { set_country_flag = BLR_valkist_behavior }
+						50 = { set_country_flag = BLR_democratic_behavior }
 					}
 				}
 			}

@@ -1,5 +1,13 @@
 spriteTypes = {
   spriteType = {
+    name = "GFX_decisions_cat_catholic_alliance"
+    texturefile = "gfx/interface/decisions/decisions_categories/catholic_alliance.png"
+  }
+  spriteType = {
+    name = "GFX_decisions_cat_papacy"
+    texturefile = "gfx/interface/decisions/decisions_categories/papacy.png"
+  }
+  spriteType = {
     name = "GFX_decisions_cat_expand_landwacht"
     texturefile = "gfx/interface/decisions/decisions_categories/expand_landwacht.png"
   }

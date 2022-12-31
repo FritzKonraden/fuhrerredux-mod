@@ -52,10 +52,6 @@ focus_tree = {
 		
 		available = {
 			has_country_flag = NOR_ap_victory_flag
-			OR = {
-				has_idea = NOR_Aksel_Zachariassen_hog_lso
-				has_idea = NOR_Alfred_Madsen_hog_lso
-			}
 		}
 		
 		ai_will_do = {

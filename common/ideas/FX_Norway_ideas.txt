@@ -439,7 +439,7 @@ ideas = {
 		NOR_socialist_secret_police_idea = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_socialist_secret_police_idea"}
 			allowed = { original_tag = NOR }
-			picture = NOR_secret_police_spirit
+			picture = NOR_secret_police_idea_1
 			modifier = {
 				political_power_gain = 0.05
 				drift_defence_factor = 0.15

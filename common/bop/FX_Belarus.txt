@@ -4,6 +4,15 @@ BLR_power_balance = {
   right_side = BLR_bnsp_side
   decision_category = BLR_power_struggle_category
 
+  range = {
+		id = BLR_balance_range
+		min = -0.10
+		max = 0.10
+		modifier = { }
+		on_activate = { }
+		on_deactivate = { }
+	}
+
   side = {
     id = BLR_home_guard_side
     icon = GFX_bop_BLR_home_guard_side
@@ -16,8 +25,20 @@ BLR_power_balance = {
         political_power_cost = 0.05
         stability_factor = -0.05
       }
-      on_activate = {}
-      on_deactivate = {}
+      on_activate = {
+        set_power_balance_gfx = {
+          id = BLR_power_balance
+          side = BLR_home_guard_side
+          gfx = GFX_bop_BLR_home_guard_improved_side
+        }
+      }
+      on_deactivate = {
+        set_power_balance_gfx = {
+          id = BLR_power_balance
+          side = BLR_home_guard_side
+          gfx = GFX_bop_BLR_home_guard_side
+        }
+      }
     }
 
     range = {
@@ -28,8 +49,20 @@ BLR_power_balance = {
         political_power_cost = 0.1
         stability_factor = -0.05
       }
-      on_activate = {}
-      on_deactivate = {}
+      on_activate = {
+        set_power_balance_gfx = {
+          id = BLR_power_balance
+          side = BLR_home_guard_side
+          gfx = GFX_bop_BLR_home_guard_total_side
+        }
+      }
+      on_deactivate = {
+        set_power_balance_gfx = {
+          id = BLR_power_balance
+          side = BLR_home_guard_side
+          gfx = GFX_bop_BLR_home_guard_improved_side
+        }
+      }
     }
 
     range = {
@@ -45,7 +78,7 @@ BLR_power_balance = {
           country_event = { id = belarus.12 days = 7 }
         }
       }
-      on_deactivate = {}
+      on_deactivate = { }
     }
 
     range = {
@@ -73,8 +106,20 @@ BLR_power_balance = {
         max_command_power_mult = -0.05
         stability_factor = -0.05
       }
-      on_activate = {}
-      on_deactivate = {}
+      on_activate = {
+        set_power_balance_gfx = {
+          id = BLR_power_balance
+          side = BLR_bnsp_side
+          gfx = GFX_bop_BLR_bnsp_improved_side
+        }
+      }
+      on_deactivate = {
+        set_power_balance_gfx = {
+          id = BLR_power_balance
+          side = BLR_bnsp_side
+          gfx = GFX_bop_BLR_bnsp_side
+        }
+      }
     }
 
     range = {
@@ -85,8 +130,20 @@ BLR_power_balance = {
         max_command_power_mult = -0.1
         stability_factor = -0.05
       }
-      on_activate = {}
-      on_deactivate = {}
+      on_activate = {
+        set_power_balance_gfx = {
+          id = BLR_power_balance
+          side = BLR_bnsp_side
+          gfx = GFX_bop_BLR_bnsp_total_side
+        }
+      }
+      on_deactivate = {
+        set_power_balance_gfx = {
+          id = BLR_power_balance
+          side = BLR_bnsp_side
+          gfx = GFX_bop_BLR_bnsp_improved_side
+        }
+      }
     }
 
     range = {

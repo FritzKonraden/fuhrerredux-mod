@@ -4,6 +4,10 @@ ITP: "Republic of Italy"
 ITP_ADJ: "Italian"
 ITP_DEF: "The Republic of Italy"
 
+ITA_PAP: "Papal State"
+ITA_PAP_ADJ: "Papal"
+ITA_PAP_DEF: "the Papal State"
+
 ### Parties
 ITP_vanguardist_party: "PCI(CN)"
 ITP_vanguardist_party_long: "Partito Comunista Italiano (Collettivista Nazionale)"
@@ -27,3 +31,6 @@ ITP_national_populist_party: "ANI"
 ITP_national_populist_party_long: "Associazione Nazionalista Italiana"
 ITP_valkist_party: "FISN"
 ITP_valkist_party_long: "Fasci Italiani del Sindacalismo Nazionale"
+
+ITP_pope_party: "SE"
+ITP_pope_party_long: "Stato Ecclesiastico"
