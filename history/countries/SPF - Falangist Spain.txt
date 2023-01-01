@@ -165,6 +165,8 @@ declare_war_on = {
 	type = annex_everything
 }
 
+recruit_character = SPF_Javier_Borbon_Parma
+recruit_character = SPF_Infante_Jaime
 recruit_character = SPF_Jose_Maria_Albinana
 recruit_character = SPF_Jose_Antonio_Primo_de_Rivera
 recruit_character = SPF_Ramiro_Ledesma_Ramos

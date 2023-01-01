@@ -1229,7 +1229,7 @@ country_event = { # Fate of Great Britain
   option = { # Puppet 
     name = annex.117.a
     trigger = {
-      has_socialist_government = no
+      has_socialist_government = yes
     }
     ai_chance = {
       base = 60
@@ -3167,33 +3167,6 @@ country_event = { # Fate of Serbia
   desc = annexation_SER_CONQ_DESC
   picture = GFX_report_event_czech_soldiers_01
   is_triggered_only = yes
-
-  immediate = {
-    hidden_effect = {
-      add_to_temp_array = { core_removal_array = SER }
-      remove_all_cores_and_claims_of_tags = yes
-      SER = {
-        add_state_core = 45
-        add_state_core = 102
-        add_state_core = 103
-        add_state_core = 104
-        add_state_core = 105
-        add_state_core = 106
-        add_state_core = 107
-        add_state_core = 108
-        add_state_core = 109
-        add_state_core = 750
-        add_state_core = 767
-        add_state_core = 787
-        add_state_core = 788
-        add_state_core = 789
-        add_state_core = 941
-        add_state_core = 942
-        add_state_core = 985
-        drop_cosmetic_tag = yes
-      }
-    }
-  }
 
   option = { # Puppet
     name = annex.142.a

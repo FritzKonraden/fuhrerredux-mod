@@ -1,4 +1,20 @@
 characters = {
+	SPF_Javier_Borbon_Parma = {
+		name = "H.R.M. Javier I"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SPF/Portrait_SPF_Javier_Borbon_Parma.png"
+			}
+		}
+	}
+	SPF_Infante_Jaime = {
+		name = "H.R.M. Jaime III"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SPF/Portrait_SPF_Infante_Jaime.png"
+			}
+		}
+	}
 	SPF_Jose_Maria_Albinana = {
 		name = "José María Albiñana"
 		portraits = {

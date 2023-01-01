@@ -3143,6 +3143,12 @@ focus_tree = {
     available = {
       USA_has_great_depression = no
       USA_union_has_collapsed = no
+      MEX = {
+        OR = {
+          exists = no
+          is_subject = yes
+        }
+      }
     }
     completion_reward = {
       add_war_support = 0.10
