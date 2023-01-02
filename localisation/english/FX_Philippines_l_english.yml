@@ -93,6 +93,7 @@ PHI_owns_and_controls_malaya_tt: "@MAL §Y[MAL.GetAdjective] core states§! are 
 PHI_annex_australia_tt: "§RThe @PHI [PHI.GetName] will annex both Australia and New Zealand§!"
 PHI_homeguard_expansion_tt: "Multiple §GInfantry Units§! will be raised in various areas of the country."
 PHI_pope_has_control_tt: "The §YPapacy§! have assumed control"
+PHI_pope_has_control_NOT_tt: "The §YPapacy§! have §RNOT§! assumed control"
 PHI_pope_in_control_tt: "§GThis focus will be automatically bypass once the exiled Papacy have taken control of the apparatus of state.§!"
 PHI_latin_countries_available_tt: "§YLatin Countries§! in the Americas are available."
 

@@ -2406,8 +2406,8 @@ focus_tree = {
         if = {
           limit = { has_country_flag = PHI_exiled_pope }
           custom_trigger_tooltip = {
-            tooltip = PHI_pope_has_control_tt
-            has_country_flag = PHI_pope_in_control
+            tooltip = PHI_pope_has_control_NOT_tt
+            NOT = { has_country_flag = PHI_pope_in_control }
           }
         }
       }
@@ -5202,7 +5202,7 @@ focus_tree = {
   # Protect Insulindian Christians
   focus = {
     id = PHI_protect_insulindian_christians
-    icon = GFX_goal_skull_treaty
+    icon = GFX_goal_PHI_insulindian_christians
     x = -1
     y = 1
     cost = 6
@@ -5265,7 +5265,7 @@ focus_tree = {
   # Mission to Indochina
   focus = {
     id = PHI_mission_to_indochina
-    icon = GFX_goal_volunteer_alliance
+    icon = GFX_goal_PHI_mission_indochina
     x = 1
     y = 1
     cost = 6
@@ -5379,7 +5379,7 @@ focus_tree = {
   # Topple the Buddhist Kingdom
   focus = {
     id = PHI_topple_the_buddhist_kingdom
-    icon = GFX_goal_step_on_skull
+    icon = GFX_goal_PHI_kill_siam
     x = 3
     y = 1
     cost = 6
@@ -5410,7 +5410,7 @@ focus_tree = {
   # Legacy of the Boxer Rebellion
   focus = {
     id = PHI_legacy_of_the_boxer_rebellion
-    icon = GFX_goal_flames_of_rebellion
+    icon = GFX_goal_PHI_boxer_rebellion
     x = -1
     y = 1
     cost = 6
@@ -5440,7 +5440,7 @@ focus_tree = {
   # Pacify Burma
   focus = {
     id = PHI_pacify_burma
-    icon = GFX_goal_generic_political_pressure
+    icon = GFX_goal_PHI_attack_burma
     x = 1
     y = 1
     cost = 6
@@ -5474,7 +5474,7 @@ focus_tree = {
   # Punish the Shogunate
   focus = {
     id = PHI_punish_the_shogunate
-    icon = GFX_focus_generic_japanese_imperial_glory
+    icon = GFX_goal_PHI_punish_shogun
     x = 0
     y = 2
     cost = 6
