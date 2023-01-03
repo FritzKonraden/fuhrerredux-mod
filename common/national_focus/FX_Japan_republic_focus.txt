@@ -8,16 +8,14 @@ focus_tree = {
 		}
 	}
 	default = no 
-	shared_focus = JAP_alliance_triumphant
 	shared_focus = JAP_republic_proclaim
-	shared_focus = JAP_iesato_government
 	shared_focus = JAP_sgrp_foreign_tree
 }
 shared_focus = {
 	id = JAP_republic_proclaim
 	#icon = GFX_goal_JAP_taisho_lesson 
 	x = 19
-	y = 8
+	y = 0
 	allow_branch = {
 		has_country_flag = JAP_republic_was_proclaimed
 	}

@@ -1,5 +1,53 @@
 spriteTypes = {
 	SpriteType = {
+		name = "GFX_goal_heaven_blessing"
+		texturefile = "gfx/interface/goals/heaven_blessing.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_holy_sound"
+		texturefile = "gfx/interface/goals/holy_sound.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_amaterasu_blessing"
+		texturefile = "gfx/interface/goals/JAP_amaterasu_blessing.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_buddhist_state"
+		texturefile = "gfx/interface/goals/JAP_buddhist_state.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_committee_inquest"
+		texturefile = "gfx/interface/goals/JAP_committee_inquest.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_dream_comes_true"
+		texturefile = "gfx/interface/goals/JAP_dream_comes_true.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_meet_jap_monk"
+		texturefile = "gfx/interface/goals/JAP_meet_jap_monk.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_ministry_true_faith"
+		texturefile = "gfx/interface/goals/JAP_ministry_true_faith.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_nationalize_sgk"
+		texturefile = "gfx/interface/goals/JAP_nationalize_sgk.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_pure_land"
+		texturefile = "gfx/interface/goals/pure_land.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_spirit_bodhisatva"
+		texturefile = "gfx/interface/goals/spirit_bodhisatva.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_world_unity"
+		texturefile = "gfx/interface/goals/world_unity.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_privatization"
 		texturefile = "gfx/interface/goals/privatization.png"
 	}

@@ -62,7 +62,7 @@ shared_focus = {
 	allow_branch = {
 		custom_trigger_tooltip = {
 			tooltip = "The Kingmaker has assumed the power of Daijo-Daijin"
-			#has_country_flag = JAP_kuniyuki_reign
+			has_country_flag = JAP_kuniyuki_reign
 		}
 	}
 	prerequisite = { focus = JAP_meeting_of_three_officials }
@@ -626,7 +626,7 @@ shared_focus = {
 ###########National Purificationist###########
 shared_focus = {
 	id = JAP_the_protector_assumed_shogunate
-	icon = GFX_ 
+	icon = GFX_goal_JAP_the_protector 
 	relative_position_id = JAP_meeting_of_three_officials
 	x = 10
 	y = 1
@@ -635,7 +635,7 @@ shared_focus = {
 		y = 0
 		trigger = {
 			ROOT = {
-				has_country_flag = JAP_inoue_reign
+				#has_country_flag = JAP_inoue_reign
 				NOT = {
 					OR = {
 						has_country_flag = JAP_kuniyuki_reign
@@ -648,7 +648,7 @@ shared_focus = {
 	allow_branch = {
 		custom_trigger_tooltip = {
 			tooltip = "The Protector has assumed the power of Daijo-Daijin"
-			has_country_flag = JAP_inoue_reign
+			#has_country_flag = JAP_inoue_reign
 		}
 	}
 	prerequisite = { focus = JAP_meeting_of_three_officials }
@@ -659,7 +659,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_chase_the_dream_of_world_unity
-	icon = GFX_ 
+	icon = GFX_goal_world_unity 
 	relative_position_id = JAP_the_protector_assumed_shogunate
 	x = 0
 	y = 1
@@ -776,7 +776,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_holy_voice_to_yamato
-	icon = GFX_ 
+	icon = GFX_goal_holy_sound 
 	relative_position_id = JAP_chase_the_dream_of_world_unity
 	x = 3
 	y = 1
@@ -785,7 +785,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_nationalize_soka_gakkai
-	icon = GFX_ 
+	icon = GFX_goal_JAP_nationalize_sgk 
 	relative_position_id = JAP_holy_voice_to_yamato
 	x = -2
 	y = 1
@@ -794,7 +794,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_ministry_of_true_faith
-	icon = GFX_ 
+	icon = GFX_goal_JAP_ministry_true_faith 
 	relative_position_id = JAP_nationalize_soka_gakkai
 	x = 0
 	y = 1
@@ -803,7 +803,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_bureau_of_faith_inquest_and_purify
-	icon = GFX_ 
+	icon = GFX_goal_JAP_committee_inquest 
 	relative_position_id = JAP_nationalize_soka_gakkai
 	x = 0
 	y = 3
@@ -812,7 +812,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_bless_of_great_heaven
-	icon = GFX_ 
+	icon = GFX_goal_heaven_blessing 
 	relative_position_id = JAP_holy_voice_to_yamato
 	x = 1
 	y = 1
@@ -821,7 +821,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_absorb_the_heretics
-	icon = GFX_ 
+	icon = GFX_goal_JAP_amaterasu_blessing 
 	relative_position_id = JAP_bless_of_great_heaven
 	x = 0
 	y = 1
@@ -830,7 +830,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_spirit_of_bodhisatva
-	icon = GFX_ 
+	icon = GFX_goal_spirit_bodhisatva 
 	relative_position_id = JAP_absorb_the_heretics
 	x = -2 
 	y = 1
@@ -840,7 +840,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_meet_zen_monks
-	icon = GFX_ 
+	icon = GFX_goal_JAP_meet_jap_monk 
 	relative_position_id = JAP_bless_of_great_heaven
 	x = 2
 	y = 1
@@ -849,7 +849,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_materialize_pure_land_theory
-	icon = GFX_ 
+	icon = GFX_goal_pure_land 
 	relative_position_id = JAP_meet_zen_monks
 	x = -1
 	y = 1
@@ -858,7 +858,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_one_true_buddhist_state
-	icon = GFX_ 
+	icon = GFX_goal_JAP_buddhist_state 
 	relative_position_id = JAP_bless_of_great_heaven
 	x = 0
 	y = 3
@@ -868,7 +868,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_nirvana_of_far_east
-	icon = GFX_ 
+	icon = GFX_goal_JAP_dream_comes_true 
 	relative_position_id = JAP_one_true_buddhist_state
 	x = 0
 	y = 1
