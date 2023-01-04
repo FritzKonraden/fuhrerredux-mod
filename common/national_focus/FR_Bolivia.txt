@@ -1769,9 +1769,9 @@ focus = {
 		} 
 	}
 
-		focus = { 
+	focus = { 
 		id = BOL_diverse_yet_united
-		icon = GFX_goal_generic_national_unity_shine
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = BOL_control_the_opposition }
 		available = {
 			has_government = valkist
@@ -2749,14 +2749,18 @@ focus = {
 		x = 38
 		y = 5
 		cost = 5
-		available = { always = no }
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
  		ai_will_do = { factor = 20 }
 		bypass = {
 			has_country_flag = BOL_santosdead
 		}	
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BOL_death_of_the_general"
-
+			custom_effect_tooltip = BOL_death_of_the_general_tt
 		}		
 	}
 focus = {
