@@ -2700,6 +2700,7 @@ focus_tree = {
 			OR = {
 				is_in_faction = yes
 				has_country_flag = BLR_konigsberg_gut
+				NOT = { country_exists = GER }
 			}
 		}
 		relative_position_id = BLR_open_new_universities
@@ -2746,7 +2747,10 @@ focus_tree = {
 			}
 		}
 		bypass = {
-			has_country_flag = BLR_konigsberg_nicht_gut
+			OR = {
+				has_country_flag = BLR_konigsberg_nicht_gut
+				NOT = { country_exists = GER }
+			}
 		}
 		mutually_exclusive = { focus = BLR_dreams_of_litvinism }
 		prerequisite = { focus = BLR_konigsberg_conference }

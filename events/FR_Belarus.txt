@@ -1384,3 +1384,131 @@ country_event = { # Elections
 		set_country_flag = BLR_christian_democrats_victory_flag
 	}
 }
+
+country_event = { # Second Elections
+	id = belarus.42
+	title = belarus.42.t
+	desc = belarus.42.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+
+	trigger = {
+    tag = BLR
+    has_country_flag = BLR_has_second_elections
+  }
+
+	option = { # Hramada
+		name = belarus.42.a
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		}
+		increase_ruling_party_popularity_by_20 = yes
+		remove_every_minister = yes
+		add_ideas = {
+			BLR_Anton_Boryk_hog_sde
+			BLR_Anton_Lutskevic_for_sde
+			BLR_Jan_Sierada_eco_sli
+			BLR_Jazep_Lesik_sec_sde
+		}
+		set_country_flag = BLR_has_second_elections
+	}
+
+	option = { # Christian Democrats
+		name = belarus.42.b
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = yes
+		}
+		increase_ruling_party_popularity_by_20 = yes
+		remove_every_minister = yes
+		add_ideas = {
+			BLR_Jazep_Hermanovic_hog_sco
+			BLR_Adam_Stankievic_for_sco
+			BLR_Adolf_Klimovic_eco_sco
+			BLR_Jan_Pazniak_sec_sco
+		}
+		set_country_flag = BLR_has_second_elections
+	}
+
+	option = {  # People's Party
+		name = belarus.42.c
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		increase_ruling_party_popularity_by_20 = yes
+		remove_every_minister = yes
+		add_ideas = {
+			BLR_Jazep_Varonka_hog_sli_hired
+			BLR_Mitrofan_Dovnar_Zapolsky_for_mli
+			BLR_Jan_Sierada_eco_sli
+			BLR_Alyaksandr_Tsvikyevich_sec_sli
+		}
+		set_country_flag = BLR_has_second_elections
+	}
+}
+
+country_event = { # Third Elections
+	id = belarus.43
+	title = belarus.43.t
+	desc = belarus.43.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+
+	trigger = {
+    tag = BLR
+    has_country_flag = BLR_has_third_elections
+  }
+
+	option = { # Hramada
+		name = belarus.43.a
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		}
+		increase_ruling_party_popularity_by_20 = yes
+		remove_every_minister = yes
+		add_ideas = {
+			BLR_Anton_Boryk_hog_sde
+			BLR_Anton_Lutskevic_for_sde
+			BLR_Jan_Sierada_eco_sli
+			BLR_Jazep_Lesik_sec_sde
+		}
+		set_country_flag = BLR_has_third_elections
+	}
+
+	option = { # Christian Democrats
+		name = belarus.43.b
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = yes
+		}
+		increase_ruling_party_popularity_by_20 = yes
+		remove_every_minister = yes
+		add_ideas = {
+			BLR_Jazep_Hermanovic_hog_sco
+			BLR_Adam_Stankievic_for_sco
+			BLR_Adolf_Klimovic_eco_sco
+			BLR_Jan_Pazniak_sec_sco
+		}
+		set_country_flag = BLR_has_third_elections
+	}
+
+	option = {  # People's Party
+		name = belarus.43.c
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		increase_ruling_party_popularity_by_20 = yes
+		remove_every_minister = yes
+		add_ideas = {
+			BLR_Jazep_Varonka_hog_sli_hired
+			BLR_Mitrofan_Dovnar_Zapolsky_for_mli
+			BLR_Jan_Sierada_eco_sli
+			BLR_Alyaksandr_Tsvikyevich_sec_sli
+		}
+		set_country_flag = BLR_has_third_elections
+	}
+}

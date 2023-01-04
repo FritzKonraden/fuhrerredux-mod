@@ -2,6 +2,13 @@
 # created by: dax0102
 
 on_actions = {
+  on_new_term_election = {
+    effect = {
+      country_event = belarus.42
+      country_event = belarus.43
+    }
+  }
+
   on_peaceconference_ended = {
     effect = {
       if = {
