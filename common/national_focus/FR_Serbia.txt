@@ -646,6 +646,66 @@ focus_tree = {
 		}
 		x = 6
 		y = 2
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_anti_extremist_campaigns"
+			add_stability = 0.03
+			add_popularity = { ideology = collectivist popularity = -0.03 }
+			add_popularity = { ideology = national_populist popularity = -0.03 }
+			add_popularity = { ideology = valkist popularity = -0.03 }
+			if = {
+				limit = {
+					has_idea = SER_saving_grace1_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace1_idea
+					add_idea = SER_saving_grace2_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace2_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace2_idea
+					add_idea = SER_saving_grace3_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace3_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace3_idea
+					add_idea = SER_saving_grace4_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace4_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace4_idea
+					add_idea = SER_saving_grace5_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace5_idea
+				}
+				remove_ideas = SER_saving_grace5_idea
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = SER_saving_grace_idea
+					add_idea = SER_saving_grace1_idea
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -657,6 +717,66 @@ focus_tree = {
 		}
 		x = 8
 		y = 2
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_anti_extremist_campaigns"
+			add_stability = 0.03
+			add_political_power = -40
+			add_popularity = { ideology = social_conservative popularity = 0.02 }
+			add_popularity = { ideology = social_liberal popularity = 0.02 }
+			if = {
+				limit = {
+					has_idea = SER_saving_grace1_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace1_idea
+					add_idea = SER_saving_grace2_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace2_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace2_idea
+					add_idea = SER_saving_grace3_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace3_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace3_idea
+					add_idea = SER_saving_grace4_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace4_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace4_idea
+					add_idea = SER_saving_grace5_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace5_idea
+				}
+				remove_ideas = SER_saving_grace5_idea
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = SER_saving_grace_idea
+					add_idea = SER_saving_grace1_idea
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -671,6 +791,64 @@ focus_tree = {
 		}
 		x = 7
 		y = 3
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_enforce_kings_justice"
+			add_stability = 0.04
+			add_war_support = 0.04
+			if = {
+				limit = {
+					has_idea = SER_saving_grace1_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace1_idea
+					add_idea = SER_saving_grace2_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace2_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace2_idea
+					add_idea = SER_saving_grace3_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace3_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace3_idea
+					add_idea = SER_saving_grace4_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace4_idea
+				}
+				swap_ideas = {
+					remove_idea = SER_saving_grace4_idea
+					add_idea = SER_saving_grace5_idea
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SER_saving_grace5_idea
+				}
+				remove_ideas = SER_saving_grace5_idea
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = SER_saving_grace_idea
+					add_idea = SER_saving_grace1_idea
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -730,6 +908,15 @@ focus_tree = {
 		}
 		x = 10
 		y = 2
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SER_enforce_kings_justice"
+			country_event = { id = serbia.25 days = 0 }
+		}
 
 	}
 	focus = {

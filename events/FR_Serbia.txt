@@ -649,3 +649,74 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = serbia.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event serbia.25"}
+	title = serbia.25.t
+	desc = serbia.25.d
+	picture = GFX_report_event_ROM_generals
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SER
+	}
+
+	option = {
+		name = serbia.25.a
+		add_political_power = 40
+		if = {
+			limit = {
+				has_idea = SER_saving_grace1_idea
+			}
+			swap_ideas = {
+				remove_idea = SER_saving_grace1_idea
+				add_idea = SER_saving_grace2_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SER_saving_grace2_idea
+			}
+			swap_ideas = {
+				remove_idea = SER_saving_grace2_idea
+				add_idea = SER_saving_grace3_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SER_saving_grace3_idea
+			}
+			swap_ideas = {
+				remove_idea = SER_saving_grace3_idea
+				add_idea = SER_saving_grace4_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SER_saving_grace4_idea
+			}
+			swap_ideas = {
+				remove_idea = SER_saving_grace4_idea
+				add_idea = SER_saving_grace5_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SER_saving_grace5_idea
+			}
+			remove_ideas = SER_saving_grace5_idea
+		}
+		else = {
+			swap_ideas = {
+				remove_idea = SER_saving_grace_idea
+				add_idea = SER_saving_grace1_idea
+			}
+		}
+		hidden_effect = {
+		}
+	}
+}
