@@ -129,7 +129,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEA_continuation_of_british_rule
-		icon = GFX_goal_ideology_paternal_autocrat
+		icon = GFX_goal_BEA_continue_british_rule
 		cost = 5
 		x = 29
 		y = 0

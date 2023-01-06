@@ -4563,23 +4563,23 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_USA_america_economic_miracle"
-		texturefile = "gfx/interface/goals/goal_USA_america_economic_miracle.png"
+		texturefile = "gfx/interface/goals/USA_america_economic_miracle.png"
 	}
 	SpriteType = {
-		name = "GFX_goal_GFX_ITA_psdi"
-		texturefile = "gfx/interface/goals/GFX_ITA_psdi.png"
+		name = "GFX_goal_ITA_psdi"
+		texturefile = "gfx/interface/goals/ITA_psdi.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_air_red"
 		texturefile = "gfx/interface/goals/goal_air_red.png"
 	}
 	SpriteType = {
-		name = "GFX_goal_GFX_ITA_pli"
-		texturefile = "gfx/interface/goals/GFX_ITA_pli.png"
+		name = "GFX_goal_ITA_pli"
+		texturefile = "gfx/interface/goals/ITA_pli.png"
 	}
 	SpriteType = {
-		name = "GFX_goal_GFX_ITA_pp"
-		texturefile = "gfx/interface/goals/GFX_ITA_pp.png"
+		name = "GFX_goal_ITA_pp"
+		texturefile = "gfx/interface/goals/ITA_pp.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_American_Service"

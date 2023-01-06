@@ -33096,10 +33096,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_USA_america_economic_miracle_shine"
-		texturefile = "gfx/interface/goals/goal_USA_america_economic_miracle.png"
+		texturefile = "gfx/interface/goals/USA_america_economic_miracle.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_USA_america_economic_miracle.png"
+			animationmaskfile = "gfx/interface/goals/USA_america_economic_miracle.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -33112,7 +33112,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_USA_america_economic_miracle.png"
+			animationmaskfile = "gfx/interface/goals/USA_america_economic_miracle.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -33127,11 +33127,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_GFX_ITA_psdi_shine"
-		texturefile = "gfx/interface/goals/GFX_ITA_psdi.png"
+		name = "GFX_goal_ITA_psdi_shine"
+		texturefile = "gfx/interface/goals/ITA_psdi.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_ITA_psdi.png"
+			animationmaskfile = "gfx/interface/goals/ITA_psdi.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -33144,7 +33144,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_ITA_psdi.png"
+			animationmaskfile = "gfx/interface/goals/ITA_psdi.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -33191,11 +33191,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_GFX_ITA_pli_shine"
-		texturefile = "gfx/interface/goals/GFX_ITA_pli.png"
+		name = "GFX_goal_ITA_pli_shine"
+		texturefile = "gfx/interface/goals/ITA_pli.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_ITA_pli.png"
+			animationmaskfile = "gfx/interface/goals/ITA_pli.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -33208,7 +33208,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_ITA_pli.png"
+			animationmaskfile = "gfx/interface/goals/ITA_pli.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -33223,11 +33223,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_GFX_ITA_pp_shine"
-		texturefile = "gfx/interface/goals/GFX_ITA_pp.png"
+		name = "GFX_goal_ITA_pp_shine"
+		texturefile = "gfx/interface/goals/ITA_pp.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_ITA_pp.png"
+			animationmaskfile = "gfx/interface/goals/ITA_pp.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -33240,7 +33240,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_ITA_pp.png"
+			animationmaskfile = "gfx/interface/goals/ITA_pp.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

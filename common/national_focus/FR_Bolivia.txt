@@ -2217,7 +2217,7 @@ focus = {
 
 focus = {
 		id = BOL_preparing_our_wings
-		icon = GFX_goal_generic_air_production
+		icon = GFX_goal_generic_airports
 		x = 16
 		y = 3
 		cost = 10
@@ -2297,7 +2297,7 @@ focus = {
 	}
 focus = {
 		id = BOL_raid_their_coasts
-		icon = GFX_goal_generic_air_naval_bomber
+		icon = GFX_goal_generic_air_naval_bomber2_new
 		x = 17
 		y = 6
 		cost = 10
@@ -2317,7 +2317,7 @@ focus = {
 
 focus = {
 		id = BOL_bolivian_fighters
-		icon = GFX_goal_generic_air_fighter2
+		icon = GFX_goal_generic_air_fighter2_new
 		x = 15
 		y = 6
 		cost = 10
@@ -2338,7 +2338,7 @@ focus = {
 
 focus = {
 		id = BOL_aerial_expertise
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_goal_generic_air_command
 		x = 16
 		y = 7
 		cost = 10
