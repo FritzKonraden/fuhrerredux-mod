@@ -89,42 +89,44 @@ set_war_support = 0.20
 
 add_ideas = {
 	party_pop_0_30
-	UKR_famine_spook
-	UKR_language_problem
-	
 	parliamentary_republic
+
+	UKR_mutilated_victory
+	UKR_obsolete_agriculture
+	UKR_insufficient_industrialization
+	UKR_russian_issue
+	UKR_underfunded_army
 }
 
 set_politics = {	
 	ruling_party = social_democrat
-	last_election = "1935.9.8"
+	last_election = "1932.10.8"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_popularities = {
   vanguardist = 0
-  collectivist = 3
-  libertarian_socialist = 2
-  social_democrat = 38
-  social_liberal = 0
-  market_liberal = 31
-  social_conservative = 0
+  collectivist = 6
+  libertarian_socialist = 0
+  social_democrat = 23
+  social_liberal = 22
+  market_liberal = 11
+  social_conservative = 10
   authoritarian_democrat = 0
-  paternal_autocrat = 4
-  national_populist = 22
-  valkist = 0
+  paternal_autocrat = 22
+  national_populist = 0
+  valkist = 6
 }
 
-country_event = { id = ukraine.47 days = 98 }
-
-recruit_character = UKR_The_Central_Committee
+recruit_character = UKR_Yurii_Lapchynsky
 recruit_character = UKR_Andriy_Livytskyi
 recruit_character = UKR_Serhij_Jefremov
 recruit_character = UKR_Serhiy_Ostapenko
-recruit_character = UKR_Oleksander_Shulhyn
+recruit_character = UKR_Vyacheslav_Lypynsky
 recruit_character = UKR_Pavlo_Skoropadskyi
 recruit_character = UKR_Ivan_Chernyakhovsky
+recruit_character = UKR_Yevhen_Konovalets
 recruit_character = UKR_Dmitri_Dontsov
 recruit_character = UKR_Volodymyr_Shayan
 recruit_character = UKR_Semen_Goruk
@@ -197,6 +199,3 @@ recruit_character = UKR_Nikolai_Maximov
 recruit_character = UKR_Vladimir_Savchenko_Belski
 recruit_character = UKR_Grigori_Shtern
 recruit_character = UKR_Vyacheslav_Tkachev
-recruit_character = UKR_Stanislav_Kosior
-recruit_character = UKR_Nikita_Khruschev
-recruit_character = UKR_Nestor_Makhno

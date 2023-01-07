@@ -1,18 +1,41 @@
 characters = {
-	UKR_The_Central_Committee = {
-		name = "The Central Committee"
+	UKR_Stanislav_Kosior = {
+		name = "Stanislav Kosior"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/UKR/Portrait_UKR_The_Central_Committee.png"
+        large = "gfx/leaders/UKR/Portrait_UKR_Stanislav_Kosior.png"
+				small = "gfx/interface/ministers/UKR/UKR_Stanislav_Kosior.png"
 			}
 		}
 		country_leader = {
 			ideology = vanguardist_subtype
 			traits = { }
 		}
-		country_leader = {
-			ideology = collectivist_subtype
-			traits = { }
+		advisor = {
+			cost = 150
+			slot = foreign_minister
+			available = { 
+				hidden_trigger = { has_country_flag = UKR_Stanislav_Kosior_for_van_hired }
+			}
+			idea_token = UKR_Stanislav_Kosior_for_van
+			on_add = {
+				ROOT = { set_country_flag = UKR_Stanislav_Kosior_for_van_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = UKR_Stanislav_Kosior_for_van_hired }
+			}
+			traits = {
+				vanguardist
+				for_great_compromiser
+			}
+		}
+	}
+	UKR_Yurii_Lapchynsky = {
+		name = "Yurii Lapchynsky"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/Portrait_UKR_Yurii_Lapchynsky.png"
+			}
 		}
 		country_leader = {
 			ideology = libertarian_socialist_subtype
@@ -24,18 +47,6 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/UKR/Portrait_UKR_Andriy_Livytskyi.png"
-			}
-		}
-		country_leader = {
-			ideology = social_democrat_subtype
-			traits = { }
-		}
-	}
-	UKR_Serhij_Jefremov = {
-		name = "Serhij Jefremov"
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/Generic/Portrait_Europe_Generic_new_6.png"
 			}
 		}
 		country_leader = {
@@ -55,11 +66,11 @@ characters = {
 			traits = { }
 		}
 	}
-	UKR_Oleksander_Shulhyn = {
-		name = "Oleksander Shulhyn"
+	UKR_Vyacheslav_Lypynsky = {
+		name = "Vyacheslav Lypynsky"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/Generic/Portrait_Europe_Generic_new_8.png"
+				large = "gfx/leaders/UKR/Portrait_UKR_Vyacheslav_Lypynsky.png"
 			}
 		}
 		country_leader = {
@@ -79,15 +90,19 @@ characters = {
 			traits = { }
 		}
 	}
-	UKR_Ivan_Chernyakhovsky = {
-		name = "Ivan Chernyakhovsky"
+	UKR_Yevhen_Konovalets = {
+		name = "Yevhen Konovalets"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/UKR/Portrait_UKR_Ivan_Chernyakhovsky.png"
+				large = "gfx/leaders/UKR/Portrait_UKR_Yevhen_Konovalets.png"
 			}
 		}
 		country_leader = {
 			ideology = paternal_autocrat_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = national_populist
 			traits = { }
 		}
 	}
@@ -100,24 +115,24 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = national_populist_subtype
+			ideology = valkist_subtype
 			traits = { }
 		}
 		advisor = {
 			cost = 150
 			slot = head_of_government
 			available = { 
-				hidden_trigger = { has_country_flag = UKR_Dmitri_Dontsov_hog_npo_hired }
+				hidden_trigger = { has_country_flag = UKR_Dmitri_Dontsov_hog_val_hired }
 			}
-			idea_token = UKR_Dmitri_Dontsov_hog_npo
+			idea_token = UKR_Dmitri_Dontsov_hog_val
 			on_add = {
-				ROOT = { set_country_flag = UKR_Dmitri_Dontsov_hog_npo_hired }
+				ROOT = { set_country_flag = UKR_Dmitri_Dontsov_hog_val_hired }
 			}
 			on_remove = {
-				ROOT = { clr_country_flag = UKR_Dmitri_Dontsov_hog_npo_hired }
+				ROOT = { clr_country_flag = UKR_Dmitri_Dontsov_hog_val_hired }
 			}
 			traits = {
-				national_populist
+				valkist
 				hog_flamboyant_tough_guy
 			}
 		}
@@ -191,6 +206,25 @@ characters = {
 			defense_skill = 3
 			planning_skill = 4
 			logistics_skill = 3
+		}
+	}
+	UKR_Ivan_Chernyakhovsky = {
+		name = "Ivan Chernyakhovsky"
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/Portrait_UKR_Ivan_Chernyakhovsky.png"
+			}
+		}
+		corps_commander = {
+			traits = { 
+				organisational_leader 
+				armor_officer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
 		}
 	}
 	UKR_Vasyl_Dmytrovych_Bilinchak = {
@@ -577,33 +611,6 @@ characters = {
 			idea_token = UKR_Pavlo_Skoropadsky_cos_pau
 			traits = {
 				cos_school_of_psychology
-			}
-		}
-	}
-	UKR_Stanislav_Kosior = {
-		name = "Stanislav Kosior"
-		portraits = {
-			civilian = {
-        large = "gfx/leaders/UKR/Portrait_UKR_Stanislav_Kosior.png"
-				small = "gfx/interface/ministers/UKR/UKR_Stanislav_Kosior.png"
-			}
-		}
-		advisor = {
-			cost = 150
-			slot = foreign_minister
-			available = { 
-				hidden_trigger = { has_country_flag = UKR_Stanislav_Kosior_for_van_hired }
-			}
-			idea_token = UKR_Stanislav_Kosior_for_van
-			on_add = {
-				ROOT = { set_country_flag = UKR_Stanislav_Kosior_for_van_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Stanislav_Kosior_for_van_hired }
-			}
-			traits = {
-				vanguardist
-				for_great_compromiser
 			}
 		}
 	}
@@ -1677,20 +1684,5 @@ characters = {
 			}
 		}
 	}
-	UKR_Nikita_Khruschev = {
-		name = "Nikita Khruschev"
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/UKR/Portrait_UKR_Nikita_Khruschev.png"
-			}
-		}
-	}
-	UKR_Nestor_Makhno = {
-		name = "Nestor Makhno"
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/UKR/Portrait_UKR_Nestor_Makhno.png"
-			}
-		}
-	}
+	
 }

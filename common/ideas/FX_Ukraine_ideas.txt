@@ -1,305 +1,45 @@
-#######################
-# Ukraine Union Ideas #
-#########################
-# Made by darknight1342 #
-#########################
+# Ukraine Ideas, Ministers and Companies
+# created by: dax0102
 
 ideas = {
 	country = {
-		UKR_famine_spook = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_famine_spook"}
+		UKR_obsolete_agriculture = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_obsolete_agriculture"}
 			picture = raj_risk_of_famine
 			modifier = {
-				stability_factor = -0.03
+				supply_consumption_factor = 0.1
+				conscription_factor = -0.15
 			}
 		}
-		UKR_language_problem = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_language_problem"}
-			picture = great_depression
+		UKR_insufficient_industrialization = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_insufficient_industrialization"}
+			picture = UKR_industrialization
 			modifier = {
-				stability_factor = -0.03
+				production_factory_max_efficiency_factor = -0.15
 			}
 		}
-		UKR_modern_army = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_modern_army"}
-			picture = generic_manpower_bonus
+		UKR_russian_issue = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_russian_issue"}
+			picture = UKR_russia_issue
 			modifier = {
-				army_org = 3
-				max_planning = 0.10
-				defence = 0.1
+				stability_factor = -0.05
+				political_power_cost = 0.05
+				trade_deal_opinion_factor = -0.15
 			}
 		}
-		UKR_ger_modern_army = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_ger_modern_army"}
-			picture = generic_manpower_bonus
+		UKR_mutilated_victory = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_mutilated_victory"}
+			picture = UKR_ukraine_flag
 			modifier = {
-				army_org = 3
-				max_planning = 0.20
-				defence = 0.1
+				war_support_factor = 0.1
 			}
 		}
-		UKR_eng_modern_army = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_eng_modern_army"}
-			picture = generic_manpower_bonus
+		UKR_underfunded_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_underfunded_army"}
+			picture = generic_army_problems
 			modifier = {
-				army_org = 8
-				max_planning = 0.10
-				defence = 0.1
-			}
-		}
-		UKR_fra_modern_army = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_fra_modern_army"}
-			picture = generic_manpower_bonus
-			modifier = {
-				army_org = 3
-				max_planning = 0.10
-				defence = 0.3
-			}
-		}
-		UKR_fighter_quantity = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_fighter_quantity"}
-			picture = generic_air_bonus
-			equipment_bonus = {
-				fighter_equipment = {
-					instant = yes
-					build_cost_ic = -0.10
-				}
-			}
-		}
-		UKR_minority_happy = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_minority_happy"}
-			picture = generic_goods_red_bonus
-			modifier = {
-				consumer_goods_factor = 0.03
-			}
-		}
-		UKR_lsmc = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_lsmc"}
-			picture = the_great_depression
-			modifier = {
-				production_speed_buildings_factor = -0.1
-				production_speed_infrastructure_factor = -0.2
-				production_oil_factor = -0.5
-				consumer_goods_factor = 0.03
-			}
-		}
-		UKR_admin_reforms = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_admin_reforms"}
-			picture = HUN_treaty_of_triannon
-			modifier = {
-				political_power_gain = 0.05
-				#economy_cost_factor = 0.90 #The wiki says this is okay, but the error log says otherwise. -darknight 1342
-			}
-		}
-		UKR_german_economy = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_german_economy"}
-			picture = generic_goods_red_bonus
-			modifier = {
-				consumer_goods_factor = -0.02
-			}
-		}
-		UKR_admin_reforms2 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_admin_reforms2"}
-			picture = HUN_treaty_of_triannon
-			modifier = {
-				political_power_gain = 0.3
-#				economy_cost_factor = 0.80 #invalid modifier, increased pp gain from 0.2 to 0.3 to compensate
-			}
-		}
-		UKR_black_sea_ger = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_black_sea_ger"}
-			picture = hun_treaty_of_trianon
-			modifier = {
-				stability_factor = 0.02
-			}
-		}
-		UKR_culture = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_culture"}
-			picture = generic_army_war_college
-			modifier = {
-				stability_factor = 0.05
-			}
-		}
-		UKR_centralize = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_centralize"}
-			picture = generic_local_self_management
-			modifier = {
-				political_power_gain = 0.1
-			}
-		}
-		UKR_secret_police = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_secret_police"}
-			picture = ast_classify_aliens
-			modifier = {
-				resistance_damage_to_garrison = -0.2
-			}
-		}
-		UKR_state_militarism = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_state_militarism"}
-			picture = ast_volunteer_defence_corps
-			modifier = {
-				conscription_factor = 0.05
-			}
-		}
-		UKR_voting_reform = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_voting_reform"}
-			picture = generic_pp_unity_bonus
-			modifier = {
-				stability_factor = 0.05
-			}
-		}
-		UKR_big_corn = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_big_corn"}
-			picture = generic_agrarian_society
-			modifier = {
-				stability_factor = 0.05
-			}
-		}
-		UKR_left_coop = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_left_coop"}
-			picture = generic_deal_with_the_devil
-			modifier = {
-				political_power_gain = 0.03
-				libertarian_socialist_drift = 0.03
-			}
-		}
-		UKR_breadbasket = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_breadbasket"}
-			picture = generic_goods_red_bonus
-			modifier = {
-				local_resources_factor = 0.05
-			}
-		}
-		UKR_farmer_unions = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_farmer_unions"}
-			picture = generic_production_bonus
-			modifier = {
-				local_resources_factor = 0.03
-				political_power_gain = 0.01
-			}
-		}
-		UKR_agriculture_boost = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_agriculture_boost"}
-			picture = capital_outflow
-			modifier = {
-				consumer_goods_factor = -0.02
-			}
-		}
-		UKR_farm_money = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_farm_money"}
-			picture = capital_outflow
-			modifier = {
-				stability_factor = 0.03
-				out_of_supply_factor = -0.03
-			}
-		}
-		UKR_ukriane_language = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_ukriane_language"}
-			picture = generic_morale_bonus
-			modifier = {
-				stability_factor = 0.02
-			}
-		}
-		UKR_russian_language = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_russian_language"}
-			picture = generic_morale_bonus
-			modifier = {
-				stability_factor = 0.03
-			}
-		}
-		UKR_bilingual = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_bilingual"}
-			picture = generic_morale_bonus
-			modifier = {
-				stability_factor = 0.04
-			}
-		}
-		UKR_socialist_republic = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_socialist_republic"}
-			picture = FRA_scw_intervention_republicans_focus
-			modifier = {
-				stability_factor = 0.03
-			}
-		}
-		UKR_expansionism = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_expansionism"}
-			picture = generic_manpower_bonus
-			modifier = {
-				conscription_factor = 0.02
-			}
-		}
-		UKR_lsmc2 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_lsmc2"}
-			picture = the_great_depression
-			modifier = {
-				production_speed_buildings_factor = -0.1
-				production_speed_infrastructure_factor = -0.1
-				production_oil_factor = -0.4
-				consumer_goods_factor = 0.02
-			}
-		}
-		UKR_lsmc3 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_lsmc3"}
-			picture = the_great_depression
-			modifier = {
-				production_speed_buildings_factor = -0.1
-				production_oil_factor = -0.4
-				consumer_goods_factor = 0.02
-			}
-		}
-		UKR_lsmc4 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_lsmc4"}
-			picture = the_great_depression
-			modifier = {
-				production_speed_buildings_factor = -0.1
-				production_oil_factor = -0.4
-			}
-		}
-		UKR_economic_boost = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_economic_boost"}
-			picture = ROM_king_carol_ii_hedonist
-			modifier = {
-				consumer_goods_factor = -0.01
-				production_speed_buildings_factor = 0.1
-				stability_factor = 0.03
-			}
-		}
-		UKR_wartime_prep = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_wartime_prep"}
-			picture = FRA_factory_strikes
-			modifier = {
-				consumer_goods_factor = -0.03
-			}
-		}
-		UKR_infrastructure_effort = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_infrastructure_effort"}
-			picture = ast_all_in
-			modifier = {
-				production_speed_infrastructure_factor = 0.2
-			}
-		}
-		UKR_industrial_effort = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_industrial_effort"}
-			picture = generic_production_bonus
-			modifier = {
-				production_speed_industrial_complex_factor = 0.2
-			}
-		}
-		UKR_food_imports = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_food_imports"}
-			picture = raj_risk_of_famine
-			modifier = {
-				consumer_goods_factor = 0.05
-				production_speed_infrastructure_factor = 0.3
-				production_speed_industrial_complex_factor = 0.3
-			}
-		}
-		UKR_logistics = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_logistics"}
-			picture = generic_acquire_tanks
-			modifier = {
-				out_of_supply_factor = -0.15
-				supply_consumption_factor = -0.20
+				army_org_factor = -0.05
+				land_reinforce_rate = -0.2
 			}
 		}
 	}

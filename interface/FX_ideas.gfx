@@ -1,4 +1,16 @@
 spriteTypes = {
+  spriteType = {
+    name = "GFX_idea_UKR_industrialization"
+    texturefile = "gfx/interface/ideas/ideas/UKR_industrialization.png"
+  }
+  spriteType = {
+    name = "GFX_idea_UKR_russia_issue"
+    texturefile = "gfx/interface/ideas/ideas/UKR_russia_issue.png"
+  }
+  spriteType = {
+    name = "GFX_idea_UKR_ukraine_flag"
+    texturefile = "gfx/interface/ideas/ideas/UKR_ukraine_flag.png"
+  }
 	spriteType = {
     name = "GFX_idea_minority_rights"
     texturefile = "gfx/interface/ideas/ideas/minority_rights.png"
