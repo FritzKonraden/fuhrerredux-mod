@@ -1,0 +1,34 @@
+UKR_decrease_economic_crash = {
+  if = {
+    limit = { has_idea = UKR_economic_crash }
+    swap_ideas = {
+      remove_idea = UKR_economic_crash
+      add_idea = UKR_economic_crash_1
+    }
+  }
+  else_if = {
+    limit = { has_idea = UKR_economic_crash_1 }
+    swap_ideas = {
+      remove_idea = UKR_economic_crash_1
+      add_idea = UKR_economic_crash_2
+    }
+  }
+  else_if = {
+    limit = { has_idea = UKR_economic_crash_2 }
+    remove_ideas = UKR_economic_crash_2
+  }
+  else = {
+    meta_effect = {
+      text = {
+        remove_ideas = UKR_economic_crash
+      }
+    }
+    hidden_effect = {
+      remove_ideas = {
+        UKR_economic_crash
+        UKR_economic_crash_1
+        UKR_economic_crash_2
+      }
+    }
+  }
+}

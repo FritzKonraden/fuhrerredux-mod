@@ -1,10 +1,5 @@
-##############################
-## 	  Ukraine Focus Tree    ##
-##############################
-## Created by Darknight1342 ##
-##############################
-
-### NOTE: please contact me before touching this file.
+# Ukraine Focus Tree
+# created by: dax0102
 
 focus_tree = {
 	id = ukrainian_focus
@@ -16,7 +11,7 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 50 y = 2000 }
+	continuous_focus_position = { x = 200 y = 1000 }
 
 	######################################################
   #                                                    #
@@ -28,7 +23,7 @@ focus_tree = {
 	focus = {
 		id = UKR_review_the_ukrainian_armed_forces
 		icon = GFX_goal_UKR_review_military
-		x = 11
+		x = 10
 		y = 0
 		cost = 6
 		available = {
@@ -1111,25 +1106,615 @@ focus_tree = {
 		}
 	}
 
-	# Joint Naval-Air Command
+	######################################################
+  #                                                    #
+  #                      INDUSTRY                      #
+  #                                                    #
+  ######################################################
+
+	# Matters of the Economy
 	focus = {
-		id = UKR_joint_naval_air_command
-		icon = GFX_goal_generic_air_command
-		x = 1
-		y = 1 
+		id = UKR_matters_of_the_economy
+		icon = GFX_goal_generic_financial_markets
+		x = 13
+		y = 6
 		cost = 6
 		available = {
 			has_capitulated = no
 		}
-		prerequisite = { focus = UKR_carrier_prototypes }
-		prerequisite = { focus = UKR_purchase_german_naval_bombers }
-		relative_position_id = UKR_carrier_prototypes
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_joint_naval_air_command"
-			add_ideas = UKR_joint_command
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_matters_of_the_economy"
+			add_tech_bonus = {
+				name = UKR_matters_of_the_economy
+				technology = construction1
+				technology = construction2
+				technology = construction3
+				technology = construction4
+				technology = construction5
+				bonus = 1.0
+				uses = 1
+			}
 		}
-		search_filters = {
-			FOCUS_FILTER_AIRFORCE_BONUS
+	}
+
+	# Modern Wheat Processing
+	focus = {
+		id = UKR_modern_wheat_processing
+		icon = GFX_focus_AUS_agriculture
+		x = -1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_matters_of_the_economy }
+		relative_position_id = UKR_matters_of_the_economy
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_modern_wheat_processing"
+			add_tech_bonus = {
+				name = UKR_modern_wheat_processing
+				category = industry
+				bonus = 0.75
+				uses = 2
+			}
+		}
+	}
+
+	# New Processing Plants
+	focus = {
+		id = UKR_new_processing_plants
+		icon = GFX_goal_generic_food_processing
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_matters_of_the_economy }
+		relative_position_id = UKR_matters_of_the_economy
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_new_processing_plants"
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+            free_building_slots = {
+              building = industrial_complex
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = industrial_complex
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+            free_building_slots = {
+              building = industrial_complex
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = industrial_complex
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+		}
+	}
+
+	# Roads to the Farmlands
+	focus = {
+		id = UKR_roads_to_the_farmlands
+		icon = GFX_goal_generic_road
+		x = -1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_modern_wheat_processing }
+		relative_position_id = UKR_modern_wheat_processing
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_roads_to_the_farmlands"
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+            free_building_slots = {
+              building = infrastructure
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_building_construction = {
+            type = infrastructure
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+            free_building_slots = {
+              building = infrastructure
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_building_construction = {
+            type = infrastructure
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+            free_building_slots = {
+              building = infrastructure
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_building_construction = {
+            type = infrastructure
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+            free_building_slots = {
+              building = infrastructure
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_building_construction = {
+            type = infrastructure
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+            free_building_slots = {
+              building = infrastructure
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_building_construction = {
+            type = infrastructure
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+            free_building_slots = {
+              building = infrastructure
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_building_construction = {
+            type = infrastructure
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+		}
+	}
+
+	# Electrification Programs
+	focus = {
+		id = UKR_electrification_programs
+		icon = GFX_goal_generic_electricity
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_modern_wheat_processing }
+		prerequisite = { focus = UKR_new_processing_plants }
+		relative_position_id = UKR_modern_wheat_processing
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_electrification_programs"
+			add_tech_bonus = {
+				name = UKR_electrification_programs
+				category = electronics
+				bonus = 1.0
+				uses = 1
+			}
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+            free_building_slots = {
+              building = industrial_complex
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = industrial_complex
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+		}
+	}
+
+	# Subsidize Azovstal
+	focus = {
+		id = UKR_subsidize_azovstal
+		icon = GFX_goal_generic_capitalist_system
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_electrification_programs }
+		prerequisite = { focus = UKR_roads_to_the_farmlands }
+		relative_position_id = UKR_roads_to_the_farmlands
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_subsidize_azovstal"
+			custom_effect_tooltip = available_designer
+      show_ideas_tooltip = UKR_metallurgical_combine_azovstal
+		}
+	}
+
+	# Kharkiv Weapons Factories
+	focus = {
+		id = UKR_kharkiv_weapons_factories
+		icon = GFX_goal_generic_design_equipment_standards
+		x = -1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+			controls_state = 221
+		}
+		cancel_if_invalid = yes
+		prerequisite = { focus = UKR_subsidize_azovstal }
+		relative_position_id = UKR_subsidize_azovstal
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_kharkiv_weapons_factories"
+			221 = {
+				if = {
+          limit = {
+            free_building_slots = {
+              building = industrial_complex
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+            type = arms_factory
+            level = 2
+            instant_build = yes
+          }
+        }
+			}
+		}
+	}
+
+	# Farming Subsidies
+	focus = {
+		id = UKR_farming_subsidies
+		icon = GFX_goal_generic_agricultural_aid
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_subsidize_azovstal }
+		relative_position_id = UKR_subsidize_azovstal
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_farming_subsidies"
+			remove_ideas = UKR_obsolete_agriculture
+		}
+	}
+
+	# Urbanization Programs
+	focus = {
+		id = UKR_urbanization_programs
+		icon = GFX_goal_PHI_new_cities
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+			custom_trigger_tooltip = {
+				tooltip = UKR_economic_crash_removed_tt
+				NOT = {
+					has_idea = UKR_economic_crash
+					has_idea = UKR_economic_crash_1
+					has_idea = UKR_economic_crash_2
+				}
+			}
+		}
+		prerequisite = { focus = UKR_farming_subsidies }
+		prerequisite = { focus = UKR_kharkiv_weapons_factories }
+		relative_position_id = UKR_kharkiv_weapons_factories
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_urbanization_programs"
+			remove_ideas = UKR_insufficient_industrialization
+		}
+	}
+
+	# Railway Improvements
+	focus = {
+		id = UKR_railway_improvements
+		icon = GFX_goal_generic_railway_construction
+		x = -1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_kharkiv_weapons_factories }
+		relative_position_id = UKR_kharkiv_weapons_factories
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_railway_improvements"
+			build_railway = {
+				level = 2
+				path = { 476 9481 11490 504 525 1157 6498 11489 }
+				start_province = 476
+				target_province = 11489
+			}
+		}
+	}
+
+	# Increase Food Exports
+	focus = {
+		id = UKR_increase_food_exports
+		icon = GFX_goal_generic_food
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_farming_subsidies }
+		relative_position_id = UKR_farming_subsidies
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_increase_food_exports"
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+
+	# Odessa State University
+	focus = {
+		id = UKR_odessa_state_university
+		icon = GFX_goal_PHI_university
+		x = -1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_urbanization_programs }
+		relative_position_id = UKR_urbanization_programs
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_odessa_state_university"
+			add_research_slot = 1
+		}
+	}
+
+	# New Industrial Areas
+	focus = {
+		id = UKR_new_industrial_areas
+		icon = GFX_goal_generic_improve_industry
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_urbanization_programs }
+		relative_position_id = UKR_urbanization_programs
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_new_industrial_areas"
+			random_owned_controlled_state = {
+				prioritize = { 241 }
+				if = {
+          limit = {
+            free_building_slots = {
+              building = industrial_complex
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 2
+        }
+			}
+			random_owned_controlled_state = {
+				prioritize = { 137 }
+				if = {
+          limit = {
+            free_building_slots = {
+              building = industrial_complex
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 2
+        }
+			}
+			random_owned_controlled_state = {
+				prioritize = { 196 }
+				if = {
+          limit = {
+            free_building_slots = {
+              building = industrial_complex
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 2
+        }
+			}
+		}
+	}
+
+	# Mining Grants
+	focus = {
+		id = UKR_mining_grants
+		icon = GFX_goal_generic_construction2
+		x = 3
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_subsidize_azovstal }
+		relative_position_id = UKR_subsidize_azovstal
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_mining_grants"
+			add_tech_bonus = {
+				name = UKR_mining_grants
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+				bonus = 1.0
+				uses = 1
+			}
+		}
+	}
+
+	# Economic Recovery
+	focus = {
+		id = UKR_economic_recovery
+		icon = GFX_goal_generic_cash_stimulus_plan
+		x = 3
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+			hidden_trigger = {
+				always = no
+			}
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = UKR_economic_crash_tt
+				has_country_flag = UKR_economic_crash_flag
+			}
+		}
+		prerequisite = { focus = UKR_matters_of_the_economy }
+		relative_position_id = UKR_matters_of_the_economy
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_economic_recovery"
+			custom_effect_tooltip = UKR_economic_recovery_tt
+		}
+	}
+
+	# Fiscal Reforms
+	focus = {
+		id = UKR_fiscal_reforms
+		icon = GFX_goal_generic_austerity_measures
+		x = -1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+			custom_trigger_tooltip = {
+				tooltip = UKR_economic_crash_tt
+				OR = {
+					has_idea = UKR_economic_crash
+					has_idea = UKR_economic_crash_1
+					has_idea = UKR_economic_crash_2
+				}
+			}
+		}
+		prerequisite = { focus = UKR_economic_recovery }
+		relative_position_id = UKR_economic_recovery
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_fiscal_reforms"
+			UKR_decrease_economic_crash = yes
+		}
+	}
+
+	# Trade Tariffs
+	focus = {
+		id = UKR_trade_tariffs
+		icon = GFX_goal_generic_shipyard
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+			custom_trigger_tooltip = {
+				tooltip = UKR_economic_crash_tt
+				OR = {
+					has_idea = UKR_economic_crash
+					has_idea = UKR_economic_crash_1
+					has_idea = UKR_economic_crash_2
+				}
+			}
+		}
+		prerequisite = { focus = UKR_economic_recovery }
+		relative_position_id = UKR_economic_recovery
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_trade_tariffs"
+			UKR_decrease_economic_crash = yes
+		}
+	}
+
+	# Lift Interest Caps
+	focus = {
+		id = UKR_lift_interest_caps
+		icon = GFX_goal_generic_banking_legislation
+		x = 0
+		y = 2
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = UKR_economic_crash_tt
+				OR = {
+					has_idea = UKR_economic_crash
+					has_idea = UKR_economic_crash_1
+					has_idea = UKR_economic_crash_2
+				}
+			}
+		}
+		prerequisite = { focus = UKR_economic_recovery }
+		relative_position_id = UKR_economic_recovery
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_lift_interest_caps"
+			UKR_decrease_economic_crash = yes
 		}
 	}
 }

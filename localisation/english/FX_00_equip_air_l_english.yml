@@ -1636,6 +1636,117 @@ SWE_fighter_equipment_3: "SAAB J21"
 SWE_fighter_equipment_3_short: "SAAB J21"
 
 #######################################
+# UKR - Ukraine
+#######################################
+
+UKR_CAS_equipment_1: "Henschel Erdkampfflugzeug 123"
+UKR_CAS_equipment_1_short: "Hs 123"
+UKR_cv_CAS_equipment_1: "Henschel Träger-Sturzkampfbomber 123"
+UKR_cv_CAS_equipment_1_short: "Hs 123 T"
+UKR_CAS_equipment_2: "Henschel Erdkampfflugzeug 129"
+UKR_CAS_equipment_2_short: "Hs 129"
+UKR_cv_CAS_equipment_2: "Henschel Träger-Schlachtflugzeug 129"
+UKR_cv_CAS_equipment_2_short: "Hs 129 T"
+UKR_CAS_equipment_3: "Dornier Jagdbomber 355"
+UKR_CAS_equipment_3_short: "Do 355"
+UKR_cv_CAS_equipment_3: "Dornier Träger-Jagdbomber 355"
+UKR_cv_CAS_equipment_3_short: "Do 355 T"
+#Arado 68:
+UKR_fighter_equipment_0: "Flugzeugbau Friedrichshafen Jagdflugzeug 68"
+UKR_fighter_equipment_0_short: "Ff 68"
+UKR_cv_fighter_equipment_0: "Flugzeugbau Friedrichshafen Träger-Jagdflugzeug 68"
+UKR_cv_fighter_equipment_0_short: "Ff 68 T"
+UKR_fighter_equipment_1: "Bayerische Flugzeugwerke Jagdflugzeug 109"
+UKR_fighter_equipment_1_short: "Bf 109"
+UKR_cv_fighter_equipment_1: "Bayerische Flugzeugwerke Träger-Jagdflugzeug 109"
+UKR_cv_fighter_equipment_1_short: "Bf 109 T"
+UKR_fighter_equipment_2: "Focke-Wulf Jagdflugzeug 190"
+UKR_fighter_equipment_2_short: "Fw 190"
+UKR_cv_fighter_equipment_2: "Focke-Wulf Träger-Jagdflugzeug 190"
+UKR_cv_fighter_equipment_2_short: "Fw 190 T"
+#Ta 152:
+UKR_fighter_equipment_3: "Focke-Wulf Jagdflugzeug 152"
+UKR_fighter_equipment_3_short: "Fw 152"
+UKR_cv_fighter_equipment_3: "Focke-Wulf Träger-Jagdflugzeug 152"
+UKR_cv_fighter_equipment_3_short: "Fw 152 T"
+UKR_jet_fighter_equipment_1: "Bayerische Flugzeugwerke Jagdflugzeug 262"
+UKR_jet_fighter_equipment_1_short: "Bf 262"
+#Heinkel P.1079B:
+UKR_jet_fighter_equipment_2: "Hansa-Brandenburg Jagdflugzeug 179"
+UKR_jet_fighter_equipment_2_short: "Hb 179"
+
+UKR_nav_bomber_equipment_1: "Fieseler See-Mehrzweckflugzeug 167"
+UKR_nav_bomber_equipment_1_short: "Fi 167"
+UKR_cv_nav_bomber_equipment_1: "Fieseler Träger-Mehrzweck-Flugzeug 167"
+UKR_cv_nav_bomber_equipment_1_short: "Fi 167 T"
+#Fokker T.VIII:
+UKR_nav_bomber_equipment_2: "Fokker Wasserflugzeug 80"
+UKR_nav_bomber_equipment_2_short: "Fk 80"
+#Fokker T.VIII:
+UKR_cv_nav_bomber_equipment_2: "Fokker Träger-Mehrzweckflugzeug 80"
+UKR_cv_nav_bomber_equipment_2_short: "Fk 80 T"
+#P194:
+UKR_nav_bomber_equipment_3: "Blohm & Voss See-Mehrzweckflugzeug 194"
+UKR_nav_bomber_equipment_3_short: "Ha 194"
+#P194:
+UKR_cv_nav_bomber_equipment_3: "Blohm & Voss Träger-Mehrzweckflugzeug 194"
+UKR_cv_nav_bomber_equipment_3_short: "Ha 194 T"
+
+UKR_heavy_fighter_equipment_1: "Bayerische Flugzeugwerke Zerstörer 110"
+UKR_heavy_fighter_equipment_1_short: "Bf 110"
+UKR_heavy_fighter_equipment_2: "Junkers Zerstörer 88"
+UKR_heavy_fighter_equipment_2_short: "Ju 88"
+UKR_heavy_fighter_equipment_3: "Hansa-Brandenburg Zerstörer 219"
+UKR_heavy_fighter_equipment_3_short: "Hb 219"
+
+UKR_tac_bomber_equipment_0: "Junkers Mittlerer Bomber 86"
+UKR_tac_bomber_equipment_0_short: "Ju 86"
+#Heinkel He 111:
+UKR_tac_bomber_equipment_1: "Hansa-Brandenburg Mittlerer Bomber 111"
+UKR_tac_bomber_equipment_1_short: "Hb 111"
+UKR_tac_bomber_equipment_2: "Dornier Bomber 217"
+UKR_tac_bomber_equipment_2_short: "Do 217"
+UKR_tac_bomber_equipment_3: "Junkers Bomber 188"
+UKR_tac_bomber_equipment_3_short: "Ju 188"
+UKR_jet_tac_bomber_equipment_1: "Flugzeugbau Friedrichshafen Strahlgetriebener Bomber 234"
+UKR_jet_tac_bomber_equipment_1_short: "Ff 234"
+UKR_jet_tac_bomber_equipment_2: "Hansa-Brandenburg Strahlgetriebener Bomber 343"
+UKR_jet_tac_bomber_equipment_2_short: "Hb 343"
+
+UKR_strat_bomber_equipment_1: "Dornier Schwerer Bomber 19"
+UKR_strat_bomber_equipment_1_short: "Do 19"
+UKR_strat_bomber_equipment_2: "Hansa-Brandenburg Schwerer Bomber 177"
+UKR_strat_bomber_equipment_2_short: "Hb 177"
+UKR_strat_bomber_equipment_3: "Hansa-Brandenburg Langstreckenbomber 277"
+UKR_strat_bomber_equipment_3_short: "Hb 277"
+UKR_jet_strat_bomber_equipment_1: "Flugzeugbau Friedrichshafen Strahlgetriebener Bomber 555"
+UKR_jet_strat_bomber_equipment_1_short: "Ff 555"
+
+UKR_rocket_interceptor_equipment_1: "Bayerische Flugzeugwerke Objektschutzjäger 163"
+UKR_rocket_interceptor_equipment_1_short: "Bf 163"
+UKR_rocket_interceptor_equipment_2: "Bayerische Flugzeugwerke Objektschutzjäger 263"
+UKR_rocket_interceptor_equipment_2_short: "Bf 263"
+#Ba 349:
+UKR_rocket_interceptor_equipment_3: "Fieseler Objektschutzjäger 349"
+UKR_rocket_interceptor_equipment_3_short: "Fi 349"
+
+UKR_scout_plane_equipment_1: "Kharkiv R-10"
+UKR_scout_plane_equipment_1_short: "R-10"
+UKR_scout_plane_equipment_2: "Focke-Wulf Fw 189"
+UKR_scout_plane_equipment_2_short: "Fw 189"
+
+UKR_transport_plane_equipment_1: "Junkers Transportflugzeug Ju 52"
+UKR_transport_plane_equipment_1_short: "Ju 52"
+
+#Missile
+UKR_guided_missile_equipment_1: "Vergeltungswaffe-1"
+UKR_guided_missile_equipment_1_short: "V-1"
+UKR_guided_missile_equipment_2: "Vergeltungswaffe-2"
+UKR_guided_missile_equipment_2_short: "V-2"
+UKR_guided_missile_equipment_3: "Aggregat-10"
+UKR_guided_missile_equipment_3_short: "A-10"
+
+#######################################
 # USA - United States of America
 #######################################
 USA_fighter_equipment_0: "Curtiss P-1 Hawk"
