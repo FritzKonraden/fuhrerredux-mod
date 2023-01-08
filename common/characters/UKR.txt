@@ -30,6 +30,18 @@ characters = {
 			}
 		}
 	}
+	UKR_Mykola_Strypnyk = {
+		name = "Mykola Strypnyk"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Generic/Portrait_Europe_Generic_new_7.png"
+			}
+		}
+		country_leader = {
+			ideology = collectivist_subtype
+			traits = { }
+		}
+	}
 	UKR_Yurii_Lapchynsky = {
 		name = "Yurii Lapchynsky"
 		portraits = {
@@ -39,6 +51,18 @@ characters = {
 		}
 		country_leader = {
 			ideology = libertarian_socialist_subtype
+			traits = { }
+		}
+	}
+	UKR_Lev_Hankevych = {
+		name = "Lev Hankevych"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Generic/Portrait_Europe_Generic_new_7.png"
+			}
+		}
+		country_leader = {
+			ideology = social_democrat_subtype
 			traits = { }
 		}
 	}
@@ -54,8 +78,8 @@ characters = {
 			traits = { }
 		}
 	}
-	UKR_Serhiy_Ostapenko = {
-		name = "Serhiy Ostapenko"
+	UKR_Kost_Levytskyi = {
+		name = "Kost Levytskyi"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/Generic/Portrait_Europe_Generic_new_7.png"

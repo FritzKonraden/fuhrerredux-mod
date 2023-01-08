@@ -119,10 +119,11 @@ set_popularities = {
   valkist = 6
 }
 
+recruit_character = UKR_Mykola_Strypnyk
 recruit_character = UKR_Yurii_Lapchynsky
+recruit_character = UKR_Lev_Hankevych
 recruit_character = UKR_Andriy_Livytskyi
-recruit_character = UKR_Serhij_Jefremov
-recruit_character = UKR_Serhiy_Ostapenko
+recruit_character = UKR_Kost_Levytskyi
 recruit_character = UKR_Vyacheslav_Lypynsky
 recruit_character = UKR_Pavlo_Skoropadskyi
 recruit_character = UKR_Ivan_Chernyakhovsky

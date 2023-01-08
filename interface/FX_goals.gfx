@@ -1,5 +1,25 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_goal_generic_air_defense2"
+		texturefile = "gfx/interface/goals/generic_air_defense2.png"
+	}
+	spriteType = {
+		name = "GFX_goal_UKR_Expand_the_Kyiv_Officer_School"
+		texturefile = "gfx/interface/goals/UKR_Expand_the_Kyiv_Officer_School.png"
+	}
+	spriteType = {
+		name = "GFX_goal_UKR_Ukrainian_Officers"
+		texturefile = "gfx/interface/goals/UKR_Ukrainian_Officers.png"
+	}
+	spriteType = {
+		name = "GFX_goal_UKR_review_military"
+		texturefile = "gfx/interface/goals/UKR_review_military.png"
+	}
+	spriteType = {
+		name = "GFX_goal_UKR_shield"
+		texturefile = "gfx/interface/goals/UKR_shield.png"
+	}
+	spriteType = {
 		name = "GFX_goal_BEA_continue_british_rule"
 		texturefile = "gfx/interface/goals/BEA_continue_british_rule.png"
 	}

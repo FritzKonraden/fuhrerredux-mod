@@ -3,6 +3,7 @@
 
 ideas = {
 	country = {
+		### Starting Ideas
 		UKR_obsolete_agriculture = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_obsolete_agriculture"}
 			picture = raj_risk_of_famine
@@ -40,6 +41,77 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.05
 				land_reinforce_rate = -0.2
+			}
+		}
+
+		### Army
+
+		UKR_production_quotas_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_production_quotas_idea"}
+			picture = ast_volunteer_defence_corps
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		UKR_streamlined_production = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_streamlined_production"}
+			picture = ast_volunteer_defence_corps
+			picture = FRA_factory_strikes
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+			equipment_bonus = {
+        infantry_equipment = {
+          build_cost_ic = -0.05
+          instant = yes
+        }
+        artillery_equipment = {
+          build_cost_ic = -0.05
+          instant = yes
+        }
+      }
+		}
+		UKR_general_staff = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_general_staff"}
+			picture = advisors_ukraine
+			modifier = {
+				army_org_factor = 0.1
+				max_planning_factor = 0.1
+				command_power_gain_mult = 0.1
+			}
+		}
+		UKR_officer_school = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_officer_school"}
+			picture = generic_army_war_college
+			modifier = {
+				experience_gain_army_factor = 0.2
+				supply_consumption_factor = -0.15
+        army_leader_start_level = 2
+			}
+		}
+		UKR_mass_recruitment = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_mass_recruitment"}
+			picture = generic_reserve_divisions
+			modifier = {
+				army_attack_factor = 0.05
+				conscription_factor = 0.05
+			}
+		}
+		UKR_defense_training = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_defense_training"}
+			picture = guns_shield
+			modifier = {
+				supply_consumption_factor = -0.05
+				army_core_defence_factor = 0.1
+			}
+		}
+		UKR_joint_command = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_joint_command"}
+			picture = generic_air_payment
+			modifier = {
+				naval_coordination = 0.05
+				night_spotting_chance = 0.15
+				navy_carrier_air_targetting_factor = 0.1
 			}
 		}
 	}

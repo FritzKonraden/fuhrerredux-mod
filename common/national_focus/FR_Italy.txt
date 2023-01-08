@@ -588,7 +588,7 @@
 
 	shared_focus = {
 		id = ITA_progressive_coalition
-		icon = GFX_goal_ideology_social_democrat
+		icon = GFX_goal_ITA_psdi
 		x = 8
 		y = 5
 		cost = 5
@@ -867,7 +867,7 @@
 # liberals	
 	shared_focus = {
 		id = ITA_liberal_reforms
-		icon = GFX_goal_ideology_market_liberal
+		icon = GFX_goal_ITA_pli
 		x = 10
 		y = 6
 		cost = 5
@@ -1083,7 +1083,7 @@
 	
 	shared_focus = {
 		id = ITA_conservative_coalition
-		icon = GFX_goal_ideology_social_conservative
+		icon = GFX_goal_ITA_pp
 		x = 12
 		y = 5
 		cost = 5

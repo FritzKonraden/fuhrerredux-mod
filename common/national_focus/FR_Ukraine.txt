@@ -8,7 +8,6 @@
 
 focus_tree = {
 	id = ukrainian_focus
-
 	country = {
 		factor = 0
 		modifier = {
@@ -17,9 +16,1120 @@ focus_tree = {
 		}
 	}
 
-	default = no
-
 	continuous_focus_position = { x = 50 y = 2000 }
 
+	######################################################
+  #                                                    #
+  #                      MILITARY                      #
+  #                                                    #
+  ######################################################
 
+	# Review the Ukrainian Armed Forces
+	focus = {
+		id = UKR_review_the_ukrainian_armed_forces
+		icon = GFX_goal_UKR_review_military
+		x = 11
+		y = 0
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_review_the_ukrainian_armed_forces"
+			army_experience = 25
+		}
+		search_filters = { 
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+
+	#####################################
+	# ARMY
+	#####################################
+
+	# Reorganize the Army
+	focus = {
+		id = UKR_reorganize_the_army
+		icon = GFX_goal_UKR_army
+		x = -4
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_review_the_ukrainian_armed_forces }
+		relative_position_id = UKR_review_the_ukrainian_armed_forces
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_reorganize_the_army"
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = UKR
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+
+	# Armour and Speed
+	focus = {
+		id = UKR_armour_and_speed
+		icon = GFX_goal_generic_army_tanks2
+		x = -4
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		mutually_exclusive = { focus = UKR_shock_and_awe }
+		prerequisite = { focus = UKR_reorganize_the_army }
+		relative_position_id = UKR_reorganize_the_army
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_armour_and_speed"
+			add_doctrine_cost_reduction = {
+				name = UKR_armour_and_speed
+				category = cat_mobile_warfare
+        cost_reduction = 0.5
+        uses = 2
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+
+	# Shock and Awe
+	focus = {
+		id = UKR_shock_and_awe
+		icon = GFX_goal_generic_air_defense2
+		x = 2
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		mutually_exclusive = { focus = UKR_armour_and_speed }
+		prerequisite = { focus = UKR_reorganize_the_army }
+		relative_position_id = UKR_reorganize_the_army
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_shock_and_awe"
+			add_doctrine_cost_reduction = {
+				name = UKR_shock_and_awe
+        category = cat_superior_firepower
+        cost_reduction = 0.5
+        uses = 2
+      }
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+
+	# Logistics Improvements
+	focus = {
+		id = UKR_logistics_improvements
+		icon = GFX_goal_generic_position_armies
+		x = -2
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_armour_and_speed }
+		relative_position_id = UKR_armour_and_speed
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_logistics_improvements"
+			add_tech_bonus = {
+				name = UKR_logistics_improvements
+				category = logistics_tech
+				bonus = 1.0
+				uses = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+
+	# Reverse Engineering
+	focus = {
+		id = UKR_reverse_engineering
+		icon = GFX_goal_generic_production2
+		x = -1
+		y = 2
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_armour_and_speed }
+		relative_position_id = UKR_armour_and_speed
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_reverse_engineering"
+			add_tech_bonus = {
+				name = med_armor_bonus
+				ahead_reduction = 1
+				category = cat_medium_armor
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				category = armor
+				bonus = 1.0
+				uses = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+
+	# Utilize Motor Factories
+	focus = {
+		id = UKR_utilize_motor_factories
+		icon = GFX_goal_USA_auto_industry
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_armour_and_speed }
+		relative_position_id = UKR_armour_and_speed
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_utilize_motor_factories"
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 500
+				producer = UKR
+			}
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+						is_core_of = ROOT
+            free_building_slots = {
+              building = arms_factory
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = arms_factory
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+			FOCUS_FILTER_PRODUCTION
+		}
+	} 
+
+	# Expand the Armoured Corps
+	focus = {
+		id = UKR_expand_the_armoured_corps
+		icon = GFX_goal_generic_army_tanks3
+		x = 1
+		y = 2
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_armour_and_speed }
+		relative_position_id = UKR_armour_and_speed
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_expand_the_armoured_corps"
+			custom_effect_tooltip = UKR_expand_the_armoured_corps_tt
+			if = {
+				limit = {
+					NOT = { has_template = "Tankova dyviziya" }
+				}
+				hidden_effect = {
+					division_template = {
+						name = "Tankova dyviziya"
+						division_names_group = UKR_ARM_01
+						regiments = {
+							motorized = { x = 0 y = 0 }
+							motorized = { x = 0 y = 1 }
+							light_armor = { x = 1 y = 0 }
+							light_armor = { x = 1 y = 1 }
+						}
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"2 Tankova Dyviziya\" division_template = \"Tankova dyviziya\" start_experience_factor = 0.1"
+						owner = UKR
+						prioritize_location = 525
+					}
+					create_unit = {
+						division = "name = \"3 Tankova Dyviziya\" division_template = \"Tankova dyviziya\" start_experience_factor = 0.1"
+						owner = UKR
+						prioritize_location = 525
+					}
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+
+	# Armoured Infantry
+	focus = {
+		id = UKR_armoured_infantry
+		icon = GFX_goal_panzerwaffe
+		x = 0
+		y = 2
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_reverse_engineering }
+		prerequisite = { focus = UKR_expand_the_armoured_corps }
+		relative_position_id = UKR_utilize_motor_factories
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_armoured_infantry"
+			add_tech_bonus = {
+				name = UKR_armoured_infantry
+				bonus = 1.0
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+
+	# Modernize Artillery
+	focus = {
+		id = UKR_modernize_artillery
+		icon = GFX_goal_national_artillery
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_shock_and_awe }
+		relative_position_id = UKR_shock_and_awe
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_modernize_artillery"
+			add_tech_bonus = {
+				name = UKR_modernize_artillery
+				category = artillery
+				bonus = 1.0
+				uses = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+
+	# Production Quotas
+	focus = {
+		id = UKR_production_quotas
+		icon = GFX_goal_munitions_factories
+		x = 1
+		y = 2
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_shock_and_awe }
+		relative_position_id = UKR_shock_and_awe
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_production_quotas"
+			add_ideas = UKR_production_quotas_idea
+		}
+		search_filters = {
+			FOCUS_FILTER_PRODUCTION
+		}
+	}
+
+	# Weapons Production Lines
+	focus = {
+		id = UKR_weapons_production_lines
+		icon = GFX_goal_industry_air
+		x = 0
+		y = 2
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_modernize_artillery }
+		prerequisite = { focus = UKR_production_quotas }
+		relative_position_id = UKR_modernize_artillery
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_weapons_production_lines"
+			swap_ideas = {
+				remove_idea = UKR_production_quotas_idea
+				add_idea = UKR_streamlined_production
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_PRODUCTION
+		}
+	}
+
+	# Engineering Corps
+	focus = {
+		id = UKR_engineering_corps
+		icon = GFX_goal_generic_small_arms
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_production_quotas }
+		relative_position_id = UKR_production_quotas
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_engineering_corps"
+			add_tech_bonus = {
+				name = UKR_engineering_corps
+				category = engineers_tech
+				bonus = 1.0
+				uses = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+
+	# Anti-Air and Anti-Tank
+	focus = {
+		id = UKR_anti_air_and_anti_tank
+		icon = GFX_goal_artillery
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_engineering_corps }
+		relative_position_id = UKR_engineering_corps
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_anti_air_and_anti_tank"
+			add_tech_bonus = {
+				name = UKR_anti_air_and_anti_tank
+				category = cat_anti_air
+				bonus = 1.0
+				uses = 1
+			}
+			add_tech_bonus = {
+				name = UKR_anti_air_and_anti_tank
+				category = cat_anti_tank
+				bonus = 1.0
+				uses = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+
+	# Roll-out New Rifles
+	focus = {
+		id = UKR_roll_out_new_rifles
+		icon = GFX_goal_generic_military_equipment
+		x = -2
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = {
+			focus = UKR_armour_and_speed
+			focus = UKR_shock_and_awe
+		}
+		relative_position_id = UKR_shock_and_awe
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_roll_out_new_rifles"
+			add_tech_bonus = {
+				name = UKR_roll_out_new_rifles
+				category = infantry_weapons
+				bonus = 1.0
+				uses = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+
+	# Mountaineer Units
+	focus = {
+		id = UKR_mountaineer_units
+		icon = GFX_goal_generic_mountain_warfare2
+		x = -1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_roll_out_new_rifles }
+		relative_position_id = UKR_roll_out_new_rifles
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_mountaineer_units"
+			add_tech_bonus = {
+				category = mountaineers_tech
+				bonus = 1.0
+				uses = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+
+	# Behind Enemy Lines
+	focus = {
+		id = UKR_behind_enemy_lines
+		icon = GFX_focus_prc_infiltration
+		x = 0
+		y = 2
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_roll_out_new_rifles }
+		relative_position_id = UKR_roll_out_new_rifles
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_behind_enemy_lines"
+			add_doctrine_cost_reduction = {
+        category = land_doctrine
+        cost_reduction = 1
+        uses = 1
+      }
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+
+	# Expanding the Special Forces
+	focus = {
+		id = UKR_expanding_the_special_forces
+		icon = GFX_focus_eng_special_air_service
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_roll_out_new_rifles }
+		relative_position_id = UKR_roll_out_new_rifles
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_expanding_the_special_forces"
+			add_tech_bonus = {
+				name = UKR_expanding_the_special_forces
+				category = cat_special_units
+				bonus = 1.0
+				uses = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+
+	# The War Ministry
+	focus = {
+		id = UKR_the_war_ministry
+		icon = GFX_goal_UKR_Ukrainian_Officers
+		x = 2
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = {
+			focus = UKR_armour_and_speed
+			focus = UKR_shock_and_awe
+		}
+		relative_position_id = UKR_armour_and_speed
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_the_war_ministry"
+			add_ideas = UKR_general_staff
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+
+	# Expand the Kiev Military Academy
+	focus = {
+		id = UKR_expand_kiev_officer_school
+		icon = GFX_goal_UKR_Expand_the_Kyiv_Officer_School
+		x = 0
+		y = 2
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_the_war_ministry }
+		relative_position_id = UKR_the_war_ministry
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_expand_kiev_officer_school"
+			add_ideas = UKR_officer_school
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+
+	# A Call to the People
+	focus = {
+		id = UKR_a_call_to_the_people
+		icon = GFX_goal_generic_drafted_army
+		x = -1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		mutually_exclusive = { focus = UKR_basic_defense_scheme_for_civilians }
+		prerequisite = { focus = UKR_expand_kiev_officer_school }
+		relative_position_id = UKR_expand_kiev_officer_school
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_a_call_to_the_people"
+			add_ideas = UKR_mass_recruitment
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+
+	# Basic Defense Scheme for Civilians
+	focus = {
+		id = UKR_basic_defense_scheme_for_civilians
+		icon = GFX_goal_generic_barricades
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		mutually_exclusive = { focus = UKR_a_call_to_the_people }
+		prerequisite = { focus = UKR_expand_kiev_officer_school }
+		relative_position_id = UKR_expand_kiev_officer_school
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_basic_defense_scheme_for_civilians"
+			add_ideas = UKR_defense_training
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+
+	# Redouble Production
+	focus = {
+		id = UKR_redouble_production
+		icon = GFX_goal_production
+		x = -3
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_expand_kiev_officer_school }
+		relative_position_id = UKR_expand_kiev_officer_school
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_redouble_production"
+			random_owned_controlled_state = {
+				prioritize = { 192 }
+				if = {
+          limit = {
+						is_core_of = ROOT
+            free_building_slots = {
+              building = arms_factory
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = arms_factory
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+			random_owned_controlled_state = {
+				prioritize = { 201 }
+				if = {
+          limit = {
+						is_core_of = ROOT
+            free_building_slots = {
+              building = arms_factory
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = arms_factory
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+			random_owned_controlled_state = {
+				prioritize = { 202 }
+				if = {
+          limit = {
+						is_core_of = ROOT
+            free_building_slots = {
+              building = arms_factory
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = arms_factory
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+			FOCUS_FILTER_PRODUCTION
+		}
+	}
+
+	# The Science of War
+	focus = {
+		id = UKR_science_of_war
+		icon = GFX_goal_generic_scientific_exchange
+		x = 3
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_expand_kiev_officer_school }
+		relative_position_id = UKR_expand_kiev_officer_school
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_science_of_war"
+			add_research_slot = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+
+	#####################################
+	# NAVY
+	#####################################
+
+	# Reinforce Crimea
+	focus = {
+		id = UKR_reinforce_crimea
+		icon = GFX_goal_generic_naval_base
+		x = 3
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+			controls_state = 137
+			controls_state = 72
+		}
+		cancel_if_invalid = yes
+		prerequisite = { focus = UKR_review_the_ukrainian_armed_forces }
+		relative_position_id = UKR_review_the_ukrainian_armed_forces
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_reinforce_crimea"
+			137 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			72 = {
+				add_building_construction = {
+          type = coastal_bunker
+          level = 2
+          province = 3686
+          instant_build = yes
+        }
+				add_building_construction = {
+          type = naval_base
+          level = 2
+          province = 3686
+          instant_build = yes
+        }
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_NAVY_BONUS
+			FOCUS_FILTER_AIRFORCE_BONUS
+		}
+	}
+
+	# Start Naval Expansion
+	focus = {
+		id = UKR_start_naval_expansion
+		icon = GFX_goal_UKR_navy
+		x = -2
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_reinforce_crimea }
+		relative_position_id = UKR_reinforce_crimea
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_start_naval_expansion"
+			navy_experience = 25
+		}
+		search_filters = {
+			FOCUS_FILTER_NAVY_BONUS
+		}
+	}
+
+	# Repurpose Old Ships
+	focus = {
+		id = UKR_repurpose_old_ships
+		icon = GFX_goal_generic_naval_cruiser2
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_reinforce_crimea }
+		relative_position_id = UKR_reinforce_crimea
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_repurpose_old_ships"
+			add_tech_bonus = {
+				name = UKR_repurpose_old_ships
+				category = dd_tech
+				category = cl_tech
+				category = ca_tech
+				bonus = 0.5
+				uses = 2
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_NAVY_BONUS
+		}
+	}
+
+	# Submarines
+	focus = {
+		id = UKR_submarines
+		icon = GFX_goal_generic_navy_submarine
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = {
+			focus = UKR_repurpose_old_ships
+			focus = UKR_start_naval_expansion
+		}
+		relative_position_id = UKR_start_naval_expansion
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_submarines"
+			add_tech_bonus = {
+				name = UKR_submarines
+				category = ss_tech
+				bonus = 1.0
+				uses = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_NAVY_BONUS
+		}
+	}
+
+	# Black Sea Maneuvers
+	focus = {
+		id = UKR_black_sea_maneuvers
+		icon = GFX_goal_generic_black_sea
+		x = -1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_start_naval_expansion }
+		relative_position_id = UKR_start_naval_expansion
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_black_sea_maneuvers"
+			add_doctrine_cost_reduction = {
+				name = UKR_black_sea_maneuvers
+				category = naval_doctrine
+				cost_reduction = 1.0
+				uses = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_NAVY_BONUS
+		}
+	}
+
+	# Marine Training
+	focus = {
+		id = UKR_marine_training
+		icon = GFX_goal_generic_amphibious_assault
+		x = 0
+		y = 2
+		cost = 6
+		prerequisite = { focus = UKR_start_naval_expansion }
+		relative_position_id = UKR_start_naval_expansion
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_marine_training"
+			add_tech_bonus = {
+				name = UKR_marine_training
+				category = marine_tech
+				bonus = 1.0
+				uses = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_NAVY_BONUS
+		}
+	}
+
+	# Carrier Prototypes
+	focus = {
+		id = UKR_carrier_prototypes
+		icon = GFX_goal_generic_sea_focused_navy2
+		x = 0
+		y = 2
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_repurpose_old_ships }
+		relative_position_id = UKR_repurpose_old_ships
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_carrier_prototypes"
+			add_tech_bonus = {
+				name = UKR_carrier_prototypes
+				category = cv_tech
+				bonus = 1.0
+				uses = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_NAVY_BONUS
+		}
+	}
+
+	#####################################
+	# AIR-FORCE
+	#####################################
+
+	# Establish the Aviation Board
+	focus = {
+		id = UKR_establish_the_aviation_board
+		icon = GFX_goal_UKR_airforce
+		x = 2
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_reinforce_crimea }
+		relative_position_id = UKR_reinforce_crimea
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_establish_the_aviation_board"
+			air_experience = 25
+		}
+		search_filters = {
+			FOCUS_FILTER_AIRFORCE_BONUS
+		}
+	}
+
+	# Gomel Air Base
+	focus = {
+		id = UKR_gomel_air_base
+		icon = GFX_goal_generic_airports
+		x = -1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_establish_the_aviation_board }
+		relative_position_id = UKR_establish_the_aviation_board
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_gomel_air_base"
+			241 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_AIRFORCE_BONUS
+		}
+	}
+
+	# Purchase German Naval Bombers
+	focus = {
+		id = UKR_purchase_german_naval_bombers
+		icon = GFX_goal_generic_air_naval_bomber2_new
+		x = 0
+		y = 2
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_establish_the_aviation_board }
+		relative_position_id = UKR_establish_the_aviation_board
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_purchase_german_naval_bombers"
+			add_equipment_to_stockpile = {
+				type = nav_bomber_equipment_1
+				amount = 50
+				producer = GER
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_AIRFORCE_BONUS
+		}
+	}
+
+	# Deploy the New Fighter Prototypes
+	focus = {
+		id = UKR_deploy_the_new_fighter_prototypes
+		icon = GFX_goal_generic_air_fighter2
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_establish_the_aviation_board }
+		relative_position_id = UKR_establish_the_aviation_board
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_deploy_the_new_fighter_prototypes"
+			add_tech_bonus = {
+				name = UKR_deploy_the_new_fighter_prototypes
+				category = light_fighter
+				bonus = 1.0
+				uses = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_AIRFORCE_BONUS
+		}
+	}
+
+	# A Domestic Bomber Model
+	focus = {
+		id = UKR_a_domestic_bomber_model
+		icon = GFX_goal_generic_air_bomber
+		x = 3
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_establish_the_aviation_board }
+		relative_position_id = UKR_establish_the_aviation_board
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_a_domestic_bomber_model"
+			add_tech_bonus = {
+				name = UKR_a_domestic_bomber_model
+				category = tactical_bomber
+				bonus = 1.0
+				uses = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_AIRFORCE_BONUS
+		}
+	}
+
+	# Strategic Bomber Prototype
+	focus = {
+		id = UKR_strategic_bomber_prototype
+		icon = GFX_goal_generic_occupy_start_war
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_a_domestic_bomber_model }
+		relative_position_id = UKR_a_domestic_bomber_model
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_strategic_bomber_prototype"
+			add_tech_bonus = {
+				name = UKR_strategic_bomber_prototype
+				category = cat_strategic_bomber
+				bonus = 1.0
+				uses = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_AIRFORCE_BONUS
+		}
+	}
+
+	# Enhance Our Aviation Doctrine
+	focus = {
+		id = UKR_enhance_our_aviation_doctrine
+		icon = GFX_goal_generic_air_doctrine
+		x = 1
+		y = 2
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_deploy_the_new_fighter_prototypes }
+		prerequisite = { focus = UKR_strategic_bomber_prototype }
+		relative_position_id = UKR_deploy_the_new_fighter_prototypes
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_enhance_our_aviation_doctrine"
+			add_doctrine_cost_reduction = {
+				name = UKR_enhance_our_aviation_doctrine
+				category = air_doctrine
+				cost_reduction = 1.0
+				uses = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_AIRFORCE_BONUS
+		}
+	}
+
+	# Joint Naval-Air Command
+	focus = {
+		id = UKR_joint_naval_air_command
+		icon = GFX_goal_generic_air_command
+		x = 1
+		y = 1 
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_carrier_prototypes }
+		prerequisite = { focus = UKR_purchase_german_naval_bombers }
+		relative_position_id = UKR_carrier_prototypes
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_joint_naval_air_command"
+			add_ideas = UKR_joint_command
+		}
+		search_filters = {
+			FOCUS_FILTER_AIRFORCE_BONUS
+		}
+	}
 }

@@ -198,7 +198,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 14
 		}	
-		location = 3418
+		location = 3520
 		division_template = "Pikhotna Dyviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
