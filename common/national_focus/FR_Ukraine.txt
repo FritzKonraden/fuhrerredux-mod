@@ -1115,7 +1115,7 @@ focus_tree = {
 	# Matters of the Economy
 	focus = {
 		id = UKR_matters_of_the_economy
-		icon = GFX_goal_generic_financial_markets
+		icon = GFX_goal_UKR_matters_of_economy
 		x = 13
 		y = 6
 		cost = 6
@@ -1134,6 +1134,10 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_RESEARCH
 		}
 	}
 
@@ -1157,6 +1161,10 @@ focus_tree = {
 				bonus = 0.75
 				uses = 2
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_RESEARCH
 		}
 	}
 
@@ -1208,6 +1216,10 @@ focus_tree = {
           }
         }
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_PRODUCTION
 		}
 	}
 
@@ -1322,6 +1334,9 @@ focus_tree = {
         }
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 	}
 
 	# Electrification Programs
@@ -1363,6 +1378,9 @@ focus_tree = {
         }
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
 	}
 
 	# Subsidize Azovstal
@@ -1381,7 +1399,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_subsidize_azovstal"
 			custom_effect_tooltip = available_designer
-      show_ideas_tooltip = UKR_metallurgical_combine_azovstal
+      show_ideas_tooltip = metallurgical_combine_azovstal
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
 		}
 	}
 
@@ -1419,6 +1440,10 @@ focus_tree = {
         }
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_PRODUCTION
+		}
 	}
 
 	# Farming Subsidies
@@ -1430,12 +1455,23 @@ focus_tree = {
 		cost = 6
 		available = {
 			has_capitulated = no
+			custom_trigger_tooltip = {
+				tooltip = UKR_economic_crash_removed_tt
+				NOT = {
+					has_idea = UKR_economic_crash
+					has_idea = UKR_economic_crash_1
+					has_idea = UKR_economic_crash_2
+				}
+			}
 		}
 		prerequisite = { focus = UKR_subsidize_azovstal }
 		relative_position_id = UKR_subsidize_azovstal
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_farming_subsidies"
 			remove_ideas = UKR_obsolete_agriculture
+		}
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
 		}
 	}
 
@@ -1464,6 +1500,10 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_urbanization_programs"
 			remove_ideas = UKR_insufficient_industrialization
 		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_PRODUCTION
+		}
 	}
 
 	# Railway Improvements
@@ -1487,6 +1527,9 @@ focus_tree = {
 				target_province = 11489
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 	}
 
 	# Increase Food Exports
@@ -1508,6 +1551,9 @@ focus_tree = {
 				level = 1
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 	}
 
 	# Odessa State University
@@ -1525,6 +1571,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_odessa_state_university"
 			add_research_slot = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
 		}
 	}
 
@@ -1582,6 +1631,9 @@ focus_tree = {
         }
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 	}
 
 	# Mining Grants
@@ -1608,6 +1660,9 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_PRODUCTION
 		}
 	}
 
@@ -1636,6 +1691,10 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_economic_recovery"
 			custom_effect_tooltip = UKR_economic_recovery_tt
 		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_PRODUCTION
+		}
 	}
 
 	# Fiscal Reforms
@@ -1661,6 +1720,50 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_fiscal_reforms"
 			UKR_decrease_economic_crash = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_PRODUCTION
+		}
+	}
+
+	# Privatization Spree
+	focus = {
+		id = UKR_privatization_spree
+		icon = GFX_goal_generic_privatization
+		x = -1
+		y = 1
+		cost = 6
+		available = {
+			has_capitulated = no
+		}
+		prerequisite = {
+			focus = UKR_electrification_programs
+			focus = UKR_fiscal_reforms
+		}
+		relative_position_id = UKR_fiscal_reforms
+		completion_reward = {
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+            free_building_slots = {
+              building = industrial_complex
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+            type = industrial_complex
+            level = 2
+            instant_build = yes
+          }
+        }
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_PRODUCTION
 		}
 	}
 
@@ -1688,6 +1791,10 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_trade_tariffs"
 			UKR_decrease_economic_crash = yes
 		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_PRODUCTION
+		}
 	}
 
 	# Lift Interest Caps
@@ -1699,6 +1806,14 @@ focus_tree = {
 		cost = 6
 		available = {
 			has_capitulated = no
+			custom_trigger_tooltip = {
+				tooltip = UKR_economic_crash_tt
+				OR = {
+					has_idea = UKR_economic_crash
+					has_idea = UKR_economic_crash_1
+					has_idea = UKR_economic_crash_2
+				}
+			}
 		}
 		bypass = {
 			custom_trigger_tooltip = {
@@ -1715,6 +1830,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_lift_interest_caps"
 			UKR_decrease_economic_crash = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_PRODUCTION
 		}
 	}
 }

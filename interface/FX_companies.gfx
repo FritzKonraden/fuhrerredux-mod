@@ -345,6 +345,109 @@ spriteTypes = {
 	}
 
 	################################################
+	# UKR
+	spriteType = {
+		name = "GFX_idea_metallurgical_combine_azovstal"
+		texturefile = "gfx/interface/ideas/UKR/companies/metallurgical_combine_azovstal.png"
+	}
+	spriteType = {
+		name = "GFX_idea_fx_morozov_design_bureau"
+		texturefile = "gfx/interface/ideas/UKR/companies/fx_morozov_design_bureau.png"
+	}
+	spriteType = {
+		name = "GFX_idea_kharkiv_locomotive_factory"
+		texturefile = "gfx/interface/ideas/UKR/companies/kharkiv_locomotive_factory.png"
+	}
+	spriteType = {
+		name = "GFX_idea_fx_antonov"
+		texturefile = "gfx/interface/ideas/UKR/companies/fx_antonov.png"
+	}
+	spriteType = {
+		name = "GFX_idea_anatra"
+		texturefile = "gfx/interface/ideas/UKR/companies/anatra.png"
+	}
+	spriteType = {
+		name = "GFX_idea_motor_sich"
+		texturefile = "gfx/interface/ideas/UKR/companies/motor_sich.png"
+	}
+	spriteType = {
+		name = "GFX_idea_zaporizhia_automobile_plant"
+		texturefile = "gfx/interface/ideas/UKR/companies/zaporizhia_automobile_plant.png"
+	}
+	spriteType = {
+		name = "GFX_idea_fx_beriev"
+		texturefile = "gfx/interface/ideas/UKR/companies/fx_beriev.png"
+	}
+	spriteType = {
+		name = "GFX_idea_black_sea_shipyard"
+		texturefile = "gfx/interface/ideas/UKR/companies/black_sea_shipyard.png"
+	}
+	spriteType = {
+		name = "GFX_idea_kommunara_nikolayev_shipyards"
+		texturefile = "gfx/interface/ideas/UKR/companies/kommunara_nikolayev_shipyards.png"
+	}
+	spriteType = {
+		name = "GFX_idea_cb_central"
+		texturefile = "gfx/interface/ideas/UKR/companies/cb_central.png"
+	}
+	spriteType = {
+		name = "GFX_idea_concern_electron"
+		texturefile = "gfx/interface/ideas/UKR/companies/concern_electron.png"
+	}
+	spriteType = {
+		name = "GFX_idea_fiolent"
+		texturefile = "gfx/interface/ideas/UKR/companies/fiolent.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ukr_fort"
+		texturefile = "gfx/interface/ideas/UKR/companies/ukr_fort.png"
+	}
+	spriteType = {
+		name = "GFX_idea_iksra"
+		texturefile = "gfx/interface/ideas/UKR/companies/iksra.png"
+	}
+	spriteType = {
+		name = "GFX_idea_kyiv_tank_factory"
+		texturefile = "gfx/interface/ideas/UKR/companies/kyiv_tank_factory.png"
+	}
+	spriteType = {
+		name = "GFX_idea_zhytomyr_tank_factory"
+		texturefile = "gfx/interface/ideas/UKR/companies/zhytomyr_tank_factory.png"
+	}
+	spriteType = {
+		name = "GFX_idea_kraz_motorized"
+		texturefile = "gfx/interface/ideas/UKR/companies/kraz_motorized.png"
+	}
+	spriteType = {
+		name = "GFX_idea_mayak"
+		texturefile = "gfx/interface/ideas/UKR/companies/mayak.png"
+	}
+	spriteType = {
+		name = "GFX_idea_cb_luch"
+		texturefile = "gfx/interface/ideas/UKR/companies/cb_luch.png"
+	}
+	spriteType = {
+		name = "GFX_idea_pallada"
+		texturefile = "gfx/interface/ideas/UKR/companies/pallada.png"
+	}
+	spriteType = {
+		name = "GFX_idea_research_and_design_center_for_shipbuilding"
+		texturefile = "gfx/interface/ideas/UKR/companies/research_and_design_center_for_shipbuilding.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ukr_central_research_institute"
+		texturefile = "gfx/interface/ideas/UKR/companies/ukr_central_research_institute.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ukr_valar"
+		texturefile = "gfx/interface/ideas/UKR/companies/valar.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ukr_arsenal"
+		texturefile = "gfx/interface/ideas/UKR/companies/ukr_arsenal.png"
+	}
+
+	################################################
 	# USA
 	spriteType = {
 		name = "GFX_idea_fx_att"

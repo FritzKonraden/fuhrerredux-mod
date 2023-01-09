@@ -98,6 +98,9 @@ add_ideas = {
 	UKR_underfunded_army
 }
 
+set_country_flag = coalition_libertarian_socialist
+set_country_flag = coalition_social_liberal
+
 set_politics = {	
 	ruling_party = social_democrat
 	last_election = "1932.10.8"
@@ -108,16 +111,20 @@ set_politics = {
 set_popularities = {
   vanguardist = 0
   collectivist = 6
-  libertarian_socialist = 0
-  social_democrat = 23
+  libertarian_socialist = 3
+  social_democrat = 20
   social_liberal = 22
   market_liberal = 11
   social_conservative = 10
-  authoritarian_democrat = 0
-  paternal_autocrat = 22
+  authoritarian_democrat = 2
+  paternal_autocrat = 20
   national_populist = 0
   valkist = 6
 }
+
+country_event = { id = ukraine.1 days = 1 } # Intro Event
+country_event = { id = ukraine.3 days = 20 } # Disunity in the Pink-Orange Coalition
+country_event = { id = ukraine.4 days = 35 } # Clashes Between the OUN and PNIU
 
 recruit_character = UKR_Mykola_Strypnyk
 recruit_character = UKR_Yurii_Lapchynsky

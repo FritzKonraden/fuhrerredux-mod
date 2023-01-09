@@ -6,6 +6,9 @@ ideas = {
     }
     ROM_the_iron_guard = {
       allowed = { original_tag = ROM }
+      available = {
+        NOT = { has_government = valkist }
+      }
       picture = ROM_iron_guard
       modifier = {
         political_power_cost = 0.15

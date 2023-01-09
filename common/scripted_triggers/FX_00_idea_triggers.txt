@@ -98,6 +98,7 @@ has_no_unique_companies = {
       original_tag = RAJ
       original_tag = FIN
       original_tag = BLR
+      original_tag = UKR
     }
   }
 }

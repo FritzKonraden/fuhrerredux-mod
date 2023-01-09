@@ -700,10 +700,6 @@ ideas = {
       traits = { infantry_equipment_producer_assualt_1 }
       research_bonus = { infantry_weapons = 0.1 }
     }
-  }
-
-  # Tanks
-  tank_manufacturer = {
     PHI_brandt = {
       picture = brandt
       allowed = { original_tag = PHI }
@@ -726,6 +722,10 @@ ideas = {
       traits = { motorised_equipment_producer_mass_2 }
 			research_bonus = { motorized_equipment = 0.1 }
     }
+  }
+
+  # Tanks
+  tank_manufacturer = {
     PHI_rolls_royce = {
       picture = rolls_royce
       allowed = { original_tag = PHI }

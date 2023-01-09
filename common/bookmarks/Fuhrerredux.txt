@@ -174,17 +174,32 @@ bookmarks = {
         ROM_preservation_of_greater_romania
       }
     }
-    "GRE" = {
-      history = "GRE_FUHRERREDUX_DESC"
-      ideology = social_liberal
+    "UKR" = {
+      history = "UKR_FUHRERREDUX_DESC"
+      ideology = social_democrat
       minor = yes
       ideas = {
-        GRE_abysmal_economy
-        GRE_minority_unrests
-        GRE_anathema
+        UKR_mutilated_victory
+	      UKR_obsolete_agriculture
+        UKR_russian_issue
       }
       focuses = {
-
+        UKR_reinforce_crimea
+      }
+    }
+    "BLR" = {
+      history = "BLR_FUHRERREDUX_DESC"
+      ideology = valkist
+      minor = yes
+      ideas = {
+        BLR_agriarian_traditions
+        BLR_can_you_read_my_son
+        BLR_intense_paranoia
+      }
+      focuses = {
+        BLR_half_mast
+        BLR_konigsberg_conference
+        BLR_the_home_guard_in_control
       }
     }
 		"CRU" = {

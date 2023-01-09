@@ -32,3 +32,83 @@ country_event = { # London Stock Market Crash Reaches to Ukraine
     add_ideas = UKR_economic_crash
   }
 }
+
+country_event = { # Disunity in the Pink-Orange Coalition
+  id = ukraine.3
+  title = ukraine.3.t
+  desc = ukraine.3.d
+  picture = GFX_report_event_BLR_soldiers_flag
+  is_triggered_only = yes
+
+  option = { # Force a compromise
+    name = ukraine.3.a
+    add_political_power = 20
+  }
+
+  option = { # End the coalition
+    name = ukraine.3.b
+    custom_effect_tooltip = end_the_pink_orange_coalition_tt
+    clr_country_flag = coalition_social_liberal
+
+    add_popularity = {
+      ideology = social_liberal
+      popularity = 0.03
+    }
+  }
+}
+
+country_event = { # Clashes Between the OUN and PNIU
+  id = ukraine.4
+  title = ukraine.4.t
+  desc = ukraine.4.d
+  picture = GFX_report_event_BLR_officers
+  is_triggered_only = yes
+
+  option = { # Focus on OUN
+    name = ukraine.4.a
+    add_popularity = {
+      ideology = valkist
+      popularity = 0.05
+    }
+  }
+
+  option = { # Focus on NIPU
+    name = ukraine.4.b
+    add_popularity = {
+      ideology = paternal_autocrat
+      popularity = 0.05
+    }
+  }
+
+  option = { # Let them be
+    name = ukraine.4.c
+    add_popularity = {
+      ideology = paternal_autocrat
+      popularity = 0.03
+    }
+    add_popularity = {
+      ideology = valkist
+      popularity = 0.03
+    }
+  }
+}
+
+country_event = { # Dontsov Accusses Government of Wide-Scale Corruption
+  id = ukraine.5
+  title = ukraine.5.t
+  desc = ukraine.5.d
+  picture = GFX_report_event_BLR_sojm_meeting
+  is_triggered_only = yes
+
+  option = { # The government should answer these allegations
+    name = ukraine.5.a
+    add_popularity = {
+      ideology = valkist
+      popularity = 0.05
+    }
+  }
+
+  option = { # He's just talking nonsense
+    name = ukraine.5.b
+  }
+}

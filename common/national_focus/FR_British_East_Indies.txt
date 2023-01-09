@@ -54,7 +54,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEA_east_indies_navy
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_goal_BEA_navy
 		cost = 5
 		x = 14
 		y = 0
@@ -83,7 +83,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEA_establish_air_force
-		icon = GFX_goal_generic_build_airforce
+		icon = GFX_goal_BEA_air_force
 		cost = 5
 		x = 18
 		y = 0
@@ -111,7 +111,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEA_east_indies_army
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_BEA_army
 		cost = 5
 		x = 22
 		y = 0
@@ -179,7 +179,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEA_deal_with_banks
-		icon = GFX_focus_generic_self_management
+		icon = GFX_goal_generic_banking_legislation
 		cost = 8
 		prerequisite = {
 			focus = BEA_economic_crisis_hit_east_indies
@@ -224,7 +224,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEA_implement_austerity_messures
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_goal_generic_austerity_measures
 		cost = 8
 		prerequisite = {
 			focus = BEA_economic_crisis_hit_east_indies
@@ -350,7 +350,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEA_inland_rails_projects
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_generic_railroad
 		cost = 10
 		prerequisite = {
 			focus = BEA_deal_with_city_unemployment
@@ -778,7 +778,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEA_build_up_batavias_dockyards
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = GFX_goal_generic_shipyard
 		cost = 10
 		prerequisite = {
 			focus = BEA_invite_outside_investors

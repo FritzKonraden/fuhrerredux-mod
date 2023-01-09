@@ -137,8 +137,8 @@ ideas = {
 	industrial_concern = {
 		designer = yes
 
-		UKR_metallurgical_combine_azovstal = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea UKR_metallurgical_combine_azovstal" }
+		metallurgical_combine_azovstal = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea metallurgical_combine_azovstal" }
       allowed = { original_tag = UKR }
       available = { has_completed_focus = UKR_subsidize_azovstal }
       traits = { industrial_concern }
@@ -150,5 +150,205 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.15
 			}
     }
+		mayak = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea mayak" }
+      allowed = { original_tag = UKR }
+      traits = { electronics_manufacturer }
+      research_bonus = {
+        electronics = 0.15
+      }
+			modifier = {
+				production_speed_radar_station_factor = 0.05
+				civilian_intel_factor = 0.2
+				army_intel_factor = 0.1
+			}
+		}
+		fiolent = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea fiolent" }
+      allowed = { original_tag = UKR }
+      traits = { electronics_manufacturer }
+      research_bonus = {
+        electronics = 0.15
+      }
+			modifier = {
+				civilian_intel_factor = 0.2
+				army_intel_factor = 0.1
+			}
+		}
+	}
+
+	tank_manufacturer = {
+		designer = yes
+
+		fx_morozov_design_bureau = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea fx_morozov_design_bureau" }
+      allowed = { original_tag = UKR }
+      traits = { medium_tank_producer_offense_1 }
+      research_bonus = {
+        armor = 0.1
+      }
+		}
+		kharkiv_locomotive_factory = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kharkiv_locomotive_factory" }
+      allowed = { original_tag = UKR }
+      traits = { small_tank_producer_mass_1 }
+      research_bonus = {
+        armor = 0.1
+      }
+		}
+		zaporizhia_automobile_plant = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea zaporizhia_automobile_plant" }
+      allowed = { original_tag = UKR }
+      traits = { motorised_equipment_producer_mass_1 }
+      research_bonus = {
+        motorized = 0.1
+      }
+		}
+		kyiv_tank_factory = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kyiv_tank_factory" }
+      allowed = { original_tag = UKR }
+      traits = { small_ship_producer_mass_1 }
+      research_bonus = {
+        armor = 0.1
+      }
+		}
+		concern_electron = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea concern_electron" }
+      allowed = { original_tag = UKR }
+      traits = { motorised_equipment_producer_offense_0 }
+      research_bonus = {
+        motorized = 0.1
+      }
+		}
+		zhytomyr_tank_factory = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea zhytomyr_tank_factory" }
+      allowed = { original_tag = UKR }
+      traits = { small_tank_producer_defense_1 }
+      research_bonus = {
+        armor = 0.1
+      }
+		}
+		cb_central = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea cb_central" }
+      allowed = { original_tag = UKR }
+      traits = { artillery_producer_mass_1 }
+			research_bonus = { 
+				artillery = 0.1 
+			}
+		}
+		ukr_arsenal = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ukr_arsenal" }
+      allowed = { original_tag = UKR }
+      traits = { artillery_producer_offense_1 }
+			research_bonus = { 
+				artillery = 0.1 
+			}
+		}
+		cb_luch = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea cb_luch" }
+      allowed = { original_tag = UKR }
+      traits = { artillery_producer_defense_0 }
+			research_bonus = { 
+				artillery = 0.1 
+			}
+		}
+	}
+
+	weapons_manufacturer = {
+		designer = yes
+
+		ukr_valar = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ukr_valar" }
+      allowed = { original_tag = UKR }
+      traits = { infantry_equipment_producer_allround_1 }
+      research_bonus = { 
+				infantry_weapons = 0.1
+			}
+		}
+		ukr_fort = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ukr_fort" }
+      allowed = { original_tag = UKR }
+      traits = { infantry_equipment_producer_assualt_2 }
+      research_bonus = { 
+				infantry_weapons = 0.1
+			}
+		}
+		ukr_central_research_institute = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ukr_central_research_institute" }
+      allowed = { original_tag = UKR }
+      traits = { infantry_equipment_producer_mass_1 }
+      research_bonus = { 
+				infantry_weapons = 0.1
+			}
+		}
+	}
+
+	air_naval_manufacturer = {
+		designer = yes
+
+		anatra = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea anatra" }
+			allowed = { original_tag = UKR }
+			traits = { nav_cas_producer_mass_1 }
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+		fx_antonov = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea fx_antonov" }
+			allowed = { original_tag = UKR }
+			traits = { bomber_producer_defense_1 }
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+		motor_sich = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea motor_sich" }
+			allowed = { original_tag = UKR }
+			traits = { fighter_producer_offense_1 }
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+		fx_beriev = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kr_beriev" }
+			allowed = { original_tag = UKR }
+			traits = { bomber_producer_mass_0 }
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+		black_sea_shipyard = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea black_sea_shipyard" }
+			allowed = { original_tag = UKR }
+			traits = { cruiser_producer_offense_1 }
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+		}
+		kommunara_nikolayev_shipyards = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kommunara_nikolayev_shipyards" }
+			allowed = { original_tag = UKR }
+			traits = { small_ship_producer_mass_1 }
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+		}
+		pallada = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pallada" }
+			allowed = { original_tag = UKR }
+			traits = { cruiser_producer_defense_1 }
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+		}
+		research_and_design_center_for_shipbuilding = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea research_and_design_center_for_shipbuilding" }
+			allowed = { original_tag = UKR }
+			traits = { small_tank_producer_defense_1 }
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+		}
 	}
 }
