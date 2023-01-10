@@ -585,7 +585,7 @@ USA_mexican_american_war = {
       }
     }
     visible = { 
-      has_country_flag = ready_to_surrender
+      has_war_with = MEX
     }
     ai_will_do = {
       factor = 1000
