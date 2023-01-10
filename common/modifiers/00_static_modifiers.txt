@@ -141,19 +141,6 @@ resistance_effect = {
 	attrition = 0.25
 }
 
-# For compliance base + effect * compliance_level will be applied as a modifier.
-compliance_effect_base = {
-	#local_factories = -0.75
-	#local_manpower = -0.75
-	#local_resources = -0.75
-}
-
-compliance_effect = {
-	local_factories = 0.65
-	local_non_core_manpower = 0.18
-	local_resources = 0.60
-}
-
 # On States that are owned by a non-core country
 non_core = {
 }
@@ -301,6 +288,9 @@ war_support_bad_modifier = {
 	command_power_gain_mult = -0.95 
 }
 
+war_support_during_war = { #Applied during war, scaled from 0-100% with war support, not split.
+	stability_factor = -0.3
+}
 
 attache_sent = {
 	war_support_factor = 0.1
@@ -485,14 +475,6 @@ screening_bonus = {
 capital_screening_bonus = { 
   naval_retreat_speed = 0.2
   sortie_efficiency = 0.1
-}
-
-country_is_at_peace = {
-	decryption_power_factor = -0.5
-}
-
-country_is_at_war = {
-
 }
 
 # targeted modifiers that will apply when you have fully decrypted a country's cipher
