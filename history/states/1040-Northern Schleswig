@@ -1,0 +1,20 @@
+state= {
+	id=1040
+	name="STATE_1040"
+	manpower = 170982
+	
+	state_category = rural
+
+	history=
+	{
+		owner = DEN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = DEN
+	}
+	provinces=
+	{
+ 332 11251 	}
+}
