@@ -27,6 +27,7 @@ set_convoys = 40
 set_stability = 0.60
 set_war_support = 0.90
 
+recruit_character = BPS_Arthur_Bernardes
 recruit_character = BPS_Plinio_Correa
 recruit_character = BPS_Pedro_Aurelio_de_Gois_Monteiro
 recruit_character = BPS_Plinio_Tourinho
