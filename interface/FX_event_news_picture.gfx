@@ -260,5 +260,15 @@ spriteTypes = {
   spriteType = {
 		name = "GFX_news_event_ARB_revolt"
 		texturefile = "gfx/event_news_pictures/middle_east/news_event_ARB_revolt.png"
-	}	
+	}
+
+	### City Capture
+	spriteType = {
+		name = "GFX_news_event_capture_paris"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_paris.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_london"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_london.png"
+	}
 }

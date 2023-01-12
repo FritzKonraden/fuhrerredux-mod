@@ -1,0 +1,64 @@
+add_namespace = capture
+
+news_event = { # Capture of Paris
+  id = capture.1
+  title = capture.1.t
+  picture = GFX_news_event_capture_paris
+  major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+  desc = {
+    text = capture.1.d.ger
+    trigger = {
+      FROM = { tag = GER }
+    }
+  }
+  desc = {
+    text = capture.1.d.eng
+    trigger = {
+      FROM = { tag = ENG }
+    }
+  }
+  desc = {
+    text = capture.1.d.sov
+    trigger = {
+      FROM = { tag = SOV }
+    }
+  }
+  desc = {
+    text = capture.1.d
+    trigger = {
+      FROM = {
+        NOT = {
+          tag = GER
+          tag = ENG
+          tag = SOV
+        }
+      }
+    }
+  }
+
+  immediate = {
+		event_target:fallen_state = { set_state_flag = city_has_fallen_once }
+	}
+
+  option = {
+    name = capture.1.a
+    trigger = {
+      FROM = { tag = FRA }
+    }
+  }
+
+  option = {
+    name = capture.1.b
+    trigger = {
+      FROM = {
+        NOT = { tag = FRA }
+      }
+    }
+  }
+}

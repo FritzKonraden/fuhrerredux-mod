@@ -1,0 +1,29 @@
+on_actions = {
+  #ROOT is new controller
+	#FROM is old controller
+	#FROM.FROM is state ID
+
+  on_state_control_changed = {
+    effect = {
+      if = {
+        limit = {
+          has_war_with = FROM
+          FROM.FROM = {
+            is_owned_by = FROM
+            NOT = { has_state_flag = city_has_fallen_once }
+          }
+        }
+        FROM.FROM = { save_event_target_as = fallen_state }
+
+        # Paris
+        if = {
+					limit = {
+						FROM.FROM = { state = 16 }
+						ROOT = { controls_province = 11506 }
+					}
+					news_event = capture.1
+				}
+      }
+    }
+  }
+}
