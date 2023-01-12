@@ -579,13 +579,22 @@ USA_mexican_american_war = {
     allowed = { original_tag = USA }
     available = {
       MEX = {
+        controls_state = 484 # Baja California
+        controls_state = 375 # West Texas
+        controls_state = 921 # Transpecos
+        controls_state = 919 # East Texas
+        controls_state = 920 # Amarillo
+        controls_state = 376 # New Mexico
+        controls_state = 928 # Southern California
+        controls_state = 378 # Los Angeles Basin
+      }
+    }
+    visible = { 
+      MEX = {
         has_war_with = ROOT
         has_capitulated = no
         NOT = { is_subject_of = ROOT }
       }
-    }
-    visible = { 
-      has_war_with = MEX
     }
     ai_will_do = {
       factor = 1000
@@ -684,6 +693,7 @@ USA_american_unification = {
           tag = CLB
           tag = NEE
           tag = USA
+          tag = SRA
         }
       }
     }
@@ -731,18 +741,15 @@ USA_american_unification = {
       }
     }
     ai_will_do = {
-      factor = 40
-      modifier = {
-        factor = 0.2
-        OR = {
-          country_exists = NEE
-          country_exists = CLB
-          country_exists = NAR
-          country_exists = SRA
-        }
-      }
+      base = 40
     }
-    visible = { 
+    visible = {
+      NOT = {
+        country_exists = NAR
+        country_exists = NEE
+        country_exists = SRA
+        country_exists = CLB
+      }
       FROM = {
         is_neighbor_of = ROOT
         any_owned_state = { is_core_of = ROOT }
