@@ -1403,6 +1403,10 @@ country_event = {
 					target = POL
 					generator = { 86 }
 				}
+				add_named_threat = {
+					threat = 80
+					name = GER_reclaimation_of_poznan
+				}
 			}
 		}
 	}

@@ -180,200 +180,200 @@ news_event = { # Southern Agitation
 }
 
 news_event = { # Collapse of the United States
-		id = fxnews.9
-		title = fxnews.9.t
-		desc = fxnews.9.d
-		picture = GFX_report_news_event_USA_collapse
-		major = yes
-		is_triggered_only = yes
-		
-		show_major = { 
-				NOT = { tag = USA }
-		}
+	id = fxnews.9
+	title = fxnews.9.t
+	desc = fxnews.9.d
+	picture = GFX_report_news_event_USA_collapse
+	major = yes
+	is_triggered_only = yes
+	
+	show_major = { 
+			NOT = { tag = USA }
+	}
 
-		option = { 
-				name = fxnews.9.a
-		}
+	option = { 
+			name = fxnews.9.a
+	}
 }
 
 news_event = { # End the American Democracy
-		id = fxnews.10
-		title = fxnews.10.t
-		desc = fxnews.10.d
-		picture = GFX_report_news_event_USA_macarthur
-		major = yes
-		is_triggered_only = yes
-		
-		show_major = { 
-				NOT = { tag = USA }
-		}
+	id = fxnews.10
+	title = fxnews.10.t
+	desc = fxnews.10.d
+	picture = GFX_report_news_event_USA_macarthur
+	major = yes
+	is_triggered_only = yes
+	
+	show_major = { 
+			NOT = { tag = USA }
+	}
 
-		option = { 
-				name = fxnews.10.a
-		}
+	option = { 
+			name = fxnews.10.a
+	}
 }
 
 news_event = { # President Long
-		id = fxnews.11
-		title = fxnews.11.t
-		desc = fxnews.11.d
-		picture = GFX_report_news_event_USA_huey_long
-		major = yes
-		is_triggered_only = yes
-		
-		show_major = { 
-				NOT = { tag = USA }
-		}
+	id = fxnews.11
+	title = fxnews.11.t
+	desc = fxnews.11.d
+	picture = GFX_report_news_event_USA_huey_long
+	major = yes
+	is_triggered_only = yes
+	
+	show_major = { 
+			NOT = { tag = USA }
+	}
 
-		option = { 
-				name = fxnews.11.a
-		}
+	option = { 
+			name = fxnews.11.a
+	}
 }
 
 news_event = { # President Roosevelt
-		id = fxnews.12
-		title = fxnews.12.t
-		desc = fxnews.12.d
-		picture = GFX_report_news_event_USA_quentin_roosevelt
-		major = yes
-		is_triggered_only = yes
-		
-		show_major = { 
-				NOT = { tag = USA }
-		}
+	id = fxnews.12
+	title = fxnews.12.t
+	desc = fxnews.12.d
+	picture = GFX_report_news_event_USA_quentin_roosevelt
+	major = yes
+	is_triggered_only = yes
+	
+	show_major = { 
+			NOT = { tag = USA }
+	}
 
-		option = { 
-				name = fxnews.12.a
-		}
+	option = { 
+			name = fxnews.12.a
+	}
 }
 
 news_event = { # President Landon
-		id = fxnews.13
-		title = fxnews.13.t
-		desc = fxnews.13.d
-		picture = GFX_report_news_event_USA_alf_landon
-		major = yes
-		is_triggered_only = yes
-		
-		show_major = { 
-				NOT = { tag = USA }
-		}
+	id = fxnews.13
+	title = fxnews.13.t
+	desc = fxnews.13.d
+	picture = GFX_report_news_event_USA_alf_landon
+	major = yes
+	is_triggered_only = yes
+	
+	show_major = { 
+			NOT = { tag = USA }
+	}
 
-		option = { 
-				name = fxnews.13.a
-		}
+	option = { 
+			name = fxnews.13.a
+	}
 }
 
 news_event = { # President Garner
-		id = fxnews.14
-		title = fxnews.14.t
-		desc = fxnews.14.d
-		picture = GFX_report_news_event_USA_john_nance_garner
-		major = yes
-		is_triggered_only = yes
-		
-		show_major = { 
-				NOT = { tag = USA }
-		}
+	id = fxnews.14
+	title = fxnews.14.t
+	desc = fxnews.14.d
+	picture = GFX_report_news_event_USA_john_nance_garner
+	major = yes
+	is_triggered_only = yes
+	
+	show_major = { 
+		NOT = { tag = USA }
+	}
 
-		option = { 
-				name = fxnews.14.a
-		}
+	option = { 
+		name = fxnews.14.a
+	}
 }
 
 news_event = { # Restoration of Democracy in the US
-		id = fxnews.15
-		title = fxnews.15.t
-		desc = fxnews.15.d
-		picture = GFX_report_news_event_USA_victory_celebration
-		major = yes
-		is_triggered_only = yes
-		
-		show_major = { 
-				NOT = { tag = USA }
-		}
+	id = fxnews.15
+	title = fxnews.15.t
+	desc = fxnews.15.d
+	picture = GFX_report_news_event_USA_victory_celebration
+	major = yes
+	is_triggered_only = yes
+	
+	show_major = { 
+			NOT = { tag = USA }
+	}
 
-		option = { 
-				name = fxnews.15.a
-		}
+	option = { 
+		name = fxnews.15.a
+	}
 }
 
 news_event = { # Abdülmecid II Assassinated
-		id = fxnews.16
-		title = fxnews.16.t
-		desc = fxnews.16.d
-		picture = GFX_news_event_OTT_abdulmecid
-		major = yes
-		is_triggered_only = yes
+	id = fxnews.16
+	title = fxnews.16.t
+	desc = fxnews.16.d
+	picture = GFX_news_event_OTT_abdulmecid
+	major = yes
+	is_triggered_only = yes
 
-		show_major = { 
-				NOT = { tag = TUR }
-		}
+	show_major = { 
+		NOT = { tag = TUR }
+	}
 
-		option = { 
-				name = fxnews.16.a
-		}
+	option = { 
+		name = fxnews.16.a
+	}
 }
 
 news_event = { # Revolt in the New American Republic
-		id = fxnews.17
-		title = fxnews.17.t
-		desc = fxnews.17.d
-		picture = GFX_news_event_capture_chicago
-		major = yes
-		is_triggered_only = yes
+	id = fxnews.17
+	title = fxnews.17.t
+	desc = fxnews.17.d
+	picture = GFX_news_event_capture_chicago
+	major = yes
+	is_triggered_only = yes
 
-		show_major = {
-				NOT = { tag = NAR }
-				NOT = { tag = SRA }
-		}
+	show_major = {
+		NOT = { tag = NAR }
+		NOT = { tag = SRA }
+	}
 
-		option = {
-				name = fxnews.17.a
-		}
+	option = {
+		name = fxnews.17.a
+	}
 }
 
 news_event = { # SRA Victorious!
-		id = fxnews.18
-		title = fxnews.18.t
-		desc = fxnews.18.d
-		picture = GFX_news_event_capture_chicago
-		major = yes
-		is_triggered_only = yes
+	id = fxnews.18
+	title = fxnews.18.t
+	desc = fxnews.18.d
+	picture = GFX_news_event_capture_chicago
+	major = yes
+	is_triggered_only = yes
 
-		show_major = {
-				NOT = { tag = SRA }
-		}
+	show_major = {
+		NOT = { tag = SRA }
+	}
 
-		option = {
-				name = fxnews.18.a
-		}
+	option = {
+		name = fxnews.18.a
+	}
 }
 
 news_event = { # United Kingdom of the Netherlands Proclaimed
-		id = fxnews.19
-		title = fxnews.19.t
-		desc = fxnews.19.d
-		picture = GFX_news_event_herman_goring
-		major = yes
-		is_triggered_only = yes
+	id = fxnews.19
+	title = fxnews.19.t
+	desc = fxnews.19.d
+	picture = GFX_news_event_herman_goring
+	major = yes
+	is_triggered_only = yes
 
-		show_major = {
-				NOT = { tag = HOL }
-		}
+	show_major = {
+		NOT = { tag = HOL }
+	}
 
-		option = {
-				name = fxnews.19.a
-				trigger = {
-						NOT = { tag = KNE }
-				}
+	option = {
+		name = fxnews.19.a
+		trigger = {
+			NOT = { tag = KNE }
 		}
-		option = {
-				name = fxnews.19.b
-				trigger = {
-						tag = KNE
-				}
+	}
+	option = {
+		name = fxnews.19.b
+		trigger = {
+			tag = KNE
 		}
+	}
 }
 
 news_event = { # Dutch Exiles Joins in Entente
@@ -832,5 +832,39 @@ news_event = { # Red Dawn in Southeast Asia
 
 	option = { 
 		name = fxnews.46.a
+	}
+}
+
+news_event = { # King Edward VIII Ends Constitutionalism
+	id = fxnews.47
+	title = fxnews.47.t
+	desc = fxnews.47.d
+	picture = GFX_news_event_ENG_edward
+	major = yes
+	is_triggered_only = yes
+
+	show_major = { 
+		NOT = { tag = ENG }
+	}
+
+	option = { 
+		name = fxnews.47.a
+	}
+}
+
+news_event = { # Military Storms Houses of Parliament
+	id = fxnews.48
+	title = fxnews.48.t
+	desc = fxnews.48.d
+	picture = GFX_news_event_ENG_edward
+	major = yes
+	is_triggered_only = yes
+
+	show_major = { 
+		NOT = { tag = ENG }
+	}
+
+	option = { 
+		name = fxnews.48.a
 	}
 }

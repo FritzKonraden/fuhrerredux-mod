@@ -23,6 +23,214 @@ on_actions = {
 					}
 					news_event = capture.1
 				}
+        # Berlin
+        if = {
+          limit = {
+            FROM.FROM = { state = 64 }
+            ROOT = { controls_province = 6521 }
+          }
+          news_event = capture.2
+        }
+        # Rome
+        if = {
+          limit = {
+            FROM.FROM = { state = 2 }
+            ROOT = { controls_province = 9904 }
+          }
+          news_event = capture.3
+        }
+        # Washington
+        if = {
+          limit = {
+            FROM.FROM = { state = 361 }
+            ROOT = { controls_province = 3957 }
+          }
+          news_event = capture.4
+        }
+        # London
+        if = {
+          limit = {
+            FROM.FROM = { state = 126 }
+            ROOT = { controls_province = 6103 }
+          }
+          news_event = capture.5
+        }
+        # Amsterdam
+        if = {
+          limit = {
+            FROM.FROM = { state = 7 }
+            ROOT = { controls_province = 391 }
+          }
+          news_event = capture.6
+        }
+        # Barcelona
+        if = {
+          limit = {
+            FROM.FROM = { state = 165 }
+            ROOT = { controls_province = 9764 }
+          }
+          news_event = capture.7
+        }
+        # Bucherest
+        if = {
+          limit = {
+            FROM.FROM = { state = 46 }
+            ROOT = { controls_province = 9617 }
+          }
+          news_event = capture.8
+        }
+        # Constantinople
+        if = {
+          limit = {
+            FROM.FROM = { state = 314 }
+            ROOT = { controls_province = 9833 }
+          }
+          news_event = capture.9
+        }
+        # Dublin
+        if = {
+          limit = {
+            FROM.FROM = { state = 815 }
+            ROOT = { controls_province = 11293 }
+          }
+          news_event = capture.10
+        }
+        # Gibraltar
+        if = {
+          limit = {
+            FROM.FROM = { state = 118 }
+            ROOT = { controls_province = 13215 }
+          }
+          news_event = capture.11
+        }
+        # Kyiv
+        if = {
+          limit = {
+            FROM.FROM = { state = 202 }
+            ROOT = { controls_province = 525 }
+          }
+          news_event = capture.12
+        }
+        # Leningrad
+        if = {
+          limit = {
+            FROM.FROM = { state = 195 }
+            ROOT = { controls_province = 3151 }
+          }
+          news_event = capture.13
+        }
+        # Minsk
+        if = {
+          limit = {
+            FROM.FROM = { state = 206 }
+            ROOT = { controls_province = 11370 }
+          }
+          news_event = capture.14
+        }
+        # Moscow
+        if = {
+          limit = {
+            FROM.FROM = { state = 219 }
+            ROOT = { controls_province = 6380 }
+          }
+          news_event = capture.15
+        }
+        # Munich
+        if = {
+          limit = {
+            FROM.FROM = { state = 52 }
+            ROOT = { controls_province = 692 }
+          }
+          news_event = capture.16
+        }
+        # Narodnigrad
+        if = {
+          limit = {
+            FROM.FROM = { state = 217 }
+            ROOT = { controls_province = 3529 }
+          }
+          news_event = capture.17
+        }
+        # Vienna
+        if = {
+          limit = {
+            FROM.FROM = { state = 803 }
+            ROOT = { controls_province = 11666 }
+          }
+          news_event = capture.18
+        }
+        # Warsaw
+        if = {
+          limit = {
+            FROM.FROM = { state = 10 }
+            ROOT = { controls_province = 3544 }
+          }
+          news_event = capture.19
+        }
+        # Boston
+        if = {
+          limit = {
+            FROM.FROM = { state = 357 }
+            ROOT = { controls_province = 6732 }
+          }
+          news_event = capture.20
+        }
+        # Havana
+        if = {
+          limit = {
+            FROM.FROM = { state = 315 }
+            ROOT = { controls_province = 7622 }
+          }
+          news_event = capture.21
+        }
+        # Mexico City
+        if = {
+          limit = {
+            FROM.FROM = { state = 277 }
+            ROOT = { controls_province = 1965 }
+          }
+          news_event = capture.22
+        }
+        # New York
+        if = {
+          limit = {
+            FROM.FROM = { state = 358 }
+            ROOT = { controls_province = 3878 }
+          }
+          news_event = capture.23
+        }
+        # Manila
+        if = {
+          limit = {
+            FROM.FROM = { state = 327 }
+            ROOT = { controls_province = 10265 }
+          }
+          news_event = capture.24
+        }
+        # Buenos Aires
+        if = {
+          limit = {
+            FROM.FROM = { state = 327 }
+            ROOT = { controls_province = 10265 }
+          }
+          news_event = capture.25
+        }
+        # Rio de Janiero
+        if = {
+          limit = {
+            FROM.FROM = { state = 327 }
+            ROOT = { controls_province = 10265 }
+          }
+          news_event = capture.26
+        }
+        # Santiago
+        if = {
+          limit = {
+            FROM.FROM = { state = 327 }
+            ROOT = { controls_province = 10265 }
+          }
+          news_event = capture.27
+        }
       }
     }
   }
