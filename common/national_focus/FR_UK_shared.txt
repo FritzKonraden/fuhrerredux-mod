@@ -7347,7 +7347,7 @@
 	
 	shared_focus = {
 		id = ENG_london_conf
-		icon = GFX_goal_EGY_sultan_fleet
+		icon = GFX_goal_ENG_naval_conference
 		available = {
 			OR = {
 				AND = {

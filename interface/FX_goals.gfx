@@ -1,5 +1,9 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_goal_ENG_naval_conference"
+		texturefile = "gfx/interface/goals/ENG_naval_conference.png"
+	}
+	spriteType = {
 		name = "GFX_goal_BEA_continue_british_rule"
 		texturefile = "gfx/interface/goals/BEA_continue_british_rule.png"
 	}

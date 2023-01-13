@@ -231,6 +231,110 @@ on_actions = {
           }
           news_event = capture.27
         }
+        # Alexandria
+        if = {
+          limit = {
+            FROM.FROM = { state = 447 }
+            ROOT = { controls_province = 4076 }
+          }
+          news_event = capture.28
+        }
+        # Algiers
+        if = {
+          limit = {
+            FROM.FROM = { state = 459 }
+            ROOT = { controls_province = 1145 }
+          }
+          news_event = capture.29
+        }
+        # Cairo
+        if = {
+          limit = {
+            FROM.FROM = { state = 446 }
+            ROOT = { controls_province = 7011 }
+          }
+          news_event = capture.30
+        }
+        # Cape Town
+        if = {
+          limit = {
+            FROM.FROM = { state = 275 }
+            ROOT = { controls_province = 10400 }
+          }
+          news_event = capture.31
+        }
+        # Bangkok
+        if = {
+          limit = {
+            FROM.FROM = { state = 1014 }
+            ROOT = { controls_province = 7408 }
+          }
+          news_event = capture.32
+        }
+        # Batavia
+        if = {
+          limit = {
+            FROM.FROM = { state = 335 }
+            ROOT = { controls_province = 7381 }
+          }
+          news_event = capture.33
+        }
+        # Beijing
+        if = {
+          limit = {
+            FROM.FROM = { state = 608 }
+            ROOT = { controls_province = 9843 }
+          }
+          news_event = capture.34
+        }
+        # Hong Kong
+        if = {
+          limit = {
+            FROM.FROM = { state = 326 }
+            ROOT = { controls_province = 10062 }
+          }
+          news_event = capture.35
+        }
+        # Nanjing
+        if = {
+          limit = {
+            FROM.FROM = { state = 895 }
+            ROOT = { controls_province = 11913 }
+          }
+          news_event = capture.40
+        }
+        # Shanghai
+        if = {
+          limit = {
+            FROM.FROM = { state = 613 }
+            ROOT = { controls_province = 7014 }
+          }
+          news_event = capture.36
+        }
+        # Tokyo
+        if = {
+          limit = {
+            FROM.FROM = { state = 282 }
+            ROOT = { controls_province = 1182 }
+          }
+          news_event = capture.37
+        }
+        # Vladivostok
+        if = {
+          limit = {
+            FROM.FROM = { state = 408 }
+            ROOT = { controls_province = 957 }
+          }
+          news_event = capture.38
+        }
+        # Cape Town
+        if = {
+          limit = {
+            FROM.FROM = { state = 808 }
+            ROOT = { controls_province = 13218 }
+          }
+          news_event = capture.39
+        }
       }
     }
   }

@@ -1224,3 +1224,616 @@ news_event = { # Capture of Santiago
     }
   }
 }
+
+news_event = { # Capture of Alexandria
+  id = capture.28
+  title = capture.28.t
+  desc = capture.28.d
+  picture = GFX_news_event_capture_alexandria
+  major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+  immediate = {
+		event_target:fallen_state = { set_state_flag = city_has_fallen_once }
+	}
+
+  option = {
+    name = capture.28.a
+    trigger = {
+      tag = FROM.FROM
+    }
+  }
+
+  option = {
+    name = capture.28.b
+    trigger = {
+      tag = FROM
+    }
+  }
+
+  option = {
+    name = capture.28.c
+    trigger = {
+      NOT = {
+        tag = FROM.FROM
+        tag = FROM
+      }
+    }
+  }
+}
+
+news_event = { # Capture of Algiers
+  id = capture.29
+  title = capture.29.t
+  picture = GFX_news_event_capture_algiers
+  major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+  immediate = {
+		event_target:fallen_state = { set_state_flag = city_has_fallen_once }
+	}
+
+  desc = {
+    text = capture.29.d.fra
+    trigger = {
+      FROM.FROM = {
+        tag = FRA
+      }
+    }
+  }
+
+  desc = {
+    text = capture.29.d
+    trigger = {
+      NOT = { FROM.FROM = { tag = FRA } }
+    }
+  }
+
+  option = {
+    name = capture.29.a.fra
+    trigger = {
+      tag = FROM.FROM
+      FROM.FROM = { tag = FRA }
+    }
+  }
+
+  option = {
+    name = capture.29.a
+    trigger = {
+      tag = FROM.FROM
+      FROM.FROM = {
+        NOT = { tag = FRA }
+      }
+    }
+  }
+
+  option = {
+    name = capture.29.b.fra
+    trigger = {
+      tag = FROM
+      FROM.FROM = { tag = FRA }
+    }
+  }
+
+  option = {
+    name = capture.29.b
+    trigger = {
+      tag = FROM
+    }
+  }
+
+  option = {
+    name = capture.29.c
+    trigger = {
+      NOT = {
+        tag = FROM.FROM
+        tag = FROM
+      }
+    }
+  }
+}
+
+news_event = { # Capture of Cairo
+  id = capture.30
+  title = capture.30.t
+  desc = capture.30.d
+  picture = GFX_news_event_capture_cairo
+  major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+  immediate = {
+		event_target:fallen_state = { set_state_flag = city_has_fallen_once }
+	}
+
+  option = {
+    name = capture.30.a
+    trigger = {
+      tag = FROM.FROM
+    }
+  }
+
+  option = {
+    name = capture.30.b
+    trigger = {
+      tag = FROM
+    }
+  }
+
+  option = {
+    name = capture.30.c
+    trigger = {
+      NOT = {
+        tag = FROM.FROM
+        tag = FROM
+      }
+    }
+  }
+}
+
+news_event = { # Capture of Cape Town
+  id = capture.31
+  title = capture.31.t
+  desc = capture.31.d
+  picture = GFX_news_event_capture_capetown
+  major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+  immediate = {
+		event_target:fallen_state = { set_state_flag = city_has_fallen_once }
+	}
+
+  option = {
+    name = capture.31.a
+    trigger = {
+      tag = FROM.FROM
+    }
+  }
+
+  option = {
+    name = capture.31.b
+    trigger = {
+      tag = FROM
+    }
+  }
+
+  option = {
+    name = capture.31.c
+    trigger = {
+      NOT = {
+        tag = FROM.FROM
+        tag = FROM
+      }
+    }
+  }
+}
+
+news_event = { # Capture of Bangkok
+  id = capture.32
+  title = capture.32.t
+  picture = GFX_news_event_capture_bangkok
+  major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+  immediate = {
+		event_target:fallen_state = { set_state_flag = city_has_fallen_once }
+	}
+
+  desc = {
+		text = capture.32.d.eng
+		trigger = {
+			FROM = { tag = ENG }
+		}
+	}
+	desc = {
+		text = capture.32.d.jap
+		trigger = {
+			FROM = { tag = JAP }
+		}
+	}
+	desc = {
+		text = capture.32.d.usa
+		trigger = {
+			FROM = { tag = USA }
+		}
+	}
+	desc = {
+		text = capture.32.d.phi
+		trigger = {
+			FROM = { tag = PHI }
+		}
+	}
+  desc = {
+		text = capture.32.d
+		trigger = {
+			FROM = {
+				NOT = {
+					tag = CAN
+				}
+				NOT = {
+					tag = JAP
+				}
+				NOT = {
+					tag = GEA
+				}
+				NOT = {
+					tag = INC
+				}
+				NOT = {
+					tag = BRM
+				}
+			}
+		}
+	}
+
+  option = {
+    name = capture.32.a
+    trigger = {
+      tag = FROM.FROM
+    }
+  }
+
+  option = {
+    name = capture.32.b
+    trigger = {
+      tag = FROM
+    }
+  }
+
+  option = {
+    name = capture.32.c
+    trigger = {
+      NOT = {
+        tag = FROM.FROM
+        tag = FROM
+      }
+    }
+  }
+}
+
+news_event = { # Capture of Batavia
+  id = capture.33
+  title = capture.33.t
+  desc = capture.33.d
+  picture = GFX_news_event_capture_batavia
+  major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+  immediate = {
+		event_target:fallen_state = { set_state_flag = city_has_fallen_once }
+	}
+
+  option = {
+    name = capture.33.a
+    trigger = {
+      tag = FROM.FROM
+    }
+  }
+
+  option = {
+    name = capture.33.b
+    trigger = {
+      tag = FROM
+    }
+  }
+
+  option = {
+    name = capture.33.c
+    trigger = {
+      NOT = {
+        tag = FROM.FROM
+        tag = FROM
+      }
+    }
+  }
+}
+
+news_event = { # Capture of Beijing
+  id = capture.34
+  title = capture.34.t
+  desc = capture.34.d
+  picture = GFX_news_event_capture_beijing
+  major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+  immediate = {
+		event_target:fallen_state = { set_state_flag = city_has_fallen_once }
+	}
+
+  option = {
+    name = capture.34.a
+    trigger = {
+      tag = FROM.FROM
+    }
+  }
+
+  option = {
+    name = capture.34.b
+    trigger = {
+      tag = FROM
+    }
+  }
+
+  option = {
+    name = capture.34.c
+    trigger = {
+      NOT = {
+        tag = FROM.FROM
+        tag = FROM
+      }
+    }
+  }
+}
+
+news_event = { # Capture of Beijing
+  id = capture.35
+  title = capture.35.t
+  desc = capture.35.d
+  picture = GFX_news_event_capture_hongkong
+  major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+  immediate = {
+		event_target:fallen_state = { set_state_flag = city_has_fallen_once }
+	}
+
+  option = {
+    name = capture.35.a
+    trigger = {
+      tag = FROM.FROM
+    }
+  }
+
+  option = {
+    name = capture.35.b
+    trigger = {
+      tag = FROM
+    }
+  }
+
+  option = {
+    name = capture.35.c
+    trigger = {
+      NOT = {
+        tag = FROM.FROM
+        tag = FROM
+      }
+    }
+  }
+}
+
+news_event = { # Capture of Shanghai
+  id = capture.36
+  title = capture.36.t
+  desc = capture.36.d
+  picture = GFX_news_event_capture_shanghai
+  major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+  immediate = {
+		event_target:fallen_state = { set_state_flag = city_has_fallen_once }
+	}
+
+  option = {
+    name = capture.36.a
+    trigger = {
+      tag = FROM.FROM
+    }
+  }
+
+  option = {
+    name = capture.36.b
+    trigger = {
+      tag = FROM
+    }
+  }
+
+  option = {
+    name = capture.36.c
+    trigger = {
+      NOT = {
+        tag = FROM.FROM
+        tag = FROM
+      }
+    }
+  }
+}
+
+news_event = { # Capture of Tokyo
+  id = capture.37
+  title = capture.37.t
+  desc = capture.37.d
+  picture = GFX_news_event_capture_tokyo
+  major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+  immediate = {
+		event_target:fallen_state = { set_state_flag = city_has_fallen_once }
+	}
+
+  option = {
+    name = capture.37.a
+    trigger = {
+      tag = FROM.FROM
+    }
+  }
+
+  option = {
+    name = capture.37.b
+    trigger = {
+      tag = FROM
+    }
+  }
+
+  option = {
+    name = capture.37.c
+    trigger = {
+      NOT = {
+        tag = FROM.FROM
+        tag = FROM
+      }
+    }
+  }
+}
+
+news_event = { # Capture of Vladivostok
+  id = capture.38
+  title = capture.38.t
+  desc = capture.38.d
+  picture = GFX_news_event_capture_vladivostok
+  major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+  immediate = {
+		event_target:fallen_state = { set_state_flag = city_has_fallen_once }
+	}
+
+  option = {
+    name = capture.38.a
+    trigger = {
+      tag = FROM.FROM
+    }
+  }
+
+  option = {
+    name = capture.38.b
+    trigger = {
+      tag = FROM
+    }
+  }
+
+  option = {
+    name = capture.38.c
+    trigger = {
+      NOT = {
+        tag = FROM.FROM
+        tag = FROM
+      }
+    }
+  }
+}
+
+news_event = { # Capture of Sydney
+  id = capture.39
+  title = capture.39.t
+  desc = capture.39.d
+  picture = GFX_news_event_capture_sydney
+  major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+  immediate = {
+		event_target:fallen_state = { set_state_flag = city_has_fallen_once }
+	}
+
+  option = {
+    name = capture.39.a
+    trigger = {
+      tag = FROM.FROM
+    }
+  }
+
+  option = {
+    name = capture.39.b
+    trigger = {
+      tag = FROM
+    }
+  }
+
+  option = {
+    name = capture.39.c
+    trigger = {
+      NOT = {
+        tag = FROM.FROM
+        tag = FROM
+      }
+    }
+  }
+}
+
+news_event = { # Capture of Nanjing
+  id = capture.40
+  title = capture.40.t
+  desc = capture.40.d
+  picture = GFX_news_event_capture_nanjing
+  major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		wants_world_news = yes
+	}
+
+  immediate = {
+		event_target:fallen_state = { set_state_flag = city_has_fallen_once }
+	}
+
+  option = {
+    name = capture.40.a
+    trigger = {
+      tag = FROM.FROM
+    }
+  }
+
+  option = {
+    name = capture.40.b
+    trigger = {
+      tag = FROM
+    }
+  }
+
+  option = {
+    name = capture.40.c
+    trigger = {
+      NOT = {
+        tag = FROM.FROM
+        tag = FROM
+      }
+    }
+  }
+}
