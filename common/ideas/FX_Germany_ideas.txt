@@ -585,15 +585,15 @@ ideas = {
 		GER_wessel_dead = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GER_wessel_dead"}
 			picture = generic_secret_police
-			research_bonus = {
-				land_doctrine = -0.25
+			modifier = {
+				experience_gain_army_factor = -0.1
 			}
 		}
 		GER_goring_dead = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GER_goring_dead"}
 			picture = generic_secret_police
-			research_bonus = {
-				air_doctrine = -0.25
+			modifier = {
+				experience_gain_air_factor = -0.1
 			}
 		}
 		GER_loyal_generals = {
@@ -601,7 +601,6 @@ ideas = {
 			picture = advisors_germany
 			modifier = {
 				experience_gain_army_factor = 0.1
-				army_org_Factor = 0.05
 				planning_speed = 0.1
 			}
 		}

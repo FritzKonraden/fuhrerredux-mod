@@ -18,24 +18,24 @@ division_template = {
 }
 
 division= {	
-    name = "1. Experimentele Pantserdivisie"
-    location = 9498
-    division_template = "Panzer-Division"
-    start_experience_factor = 0.4
-    start_equipment_factor = 0.95
+	name = "1. Experimentele Pantserdivisie"
+	location = 9498
+	division_template = "Panzer-Division"
+	start_experience_factor = 0.4
+	start_equipment_factor = 0.95
 }
 division= {	
-    name = "2. Experimentele Pantserdivisie"
-    location = 9498
-    division_template = "Panzer-Division"
-    start_experience_factor = 0.4
-    start_equipment_factor = 0.95
+	name = "2. Experimentele Pantserdivisie"
+	location = 9498
+	division_template = "Panzer-Division"
+	start_experience_factor = 0.4
+	start_equipment_factor = 0.95
 }
 division= {	
-    name = "3. Experimentele Pantserdivisie"
-    location = 9498
-    division_template = "Panzer-Division"
-    start_experience_factor = 0.4
-    start_equipment_factor = 0.95
+	name = "3. Experimentele Pantserdivisie"
+	location = 9498
+	division_template = "Panzer-Division"
+	start_experience_factor = 0.4
+	start_equipment_factor = 0.95
 }
 

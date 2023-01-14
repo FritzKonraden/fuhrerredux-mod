@@ -601,7 +601,7 @@ country_event = { # Fate of Cuba
       remove_all_cores_and_claims_of_tags = yes
       CUB = {
         add_state_core = 315
-        add_state_core = 947
+        add_state_claim = 947
         drop_cosmetic_tag = yes
       }
     }

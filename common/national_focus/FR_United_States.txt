@@ -3645,6 +3645,9 @@ focus_tree = {
     ai_will_do = {
       factor = 200
     }
+    available = {
+      is_in_faction = no
+    }
     mutually_exclusive = { focus = USA_anti_imperialist_bulwark }
     prerequisite = { focus = USA_new_interventionism }
     bypass = {

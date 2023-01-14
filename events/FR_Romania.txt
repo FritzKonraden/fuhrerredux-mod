@@ -1341,9 +1341,9 @@ country_event = { # Iron Guard Coups the Government!
 		name = romania.25.a
 		add_political_power = 100
 		ai_chance = {
-			factor = 10
+			base = 10
 			modifier = {
-				factor = 100
+				add = 100
 				has_country_flag = ROM_democratic_behavior
 			}
 		}
@@ -1429,9 +1429,9 @@ country_event = { # Iron Guard Coups the Government!
 	option = { # The Coup Succeeds
 		name = romania.25.c
 		ai_chance = {
-			factor = 10
+			base = 10
 			modifier = {
-				factor = 100
+				add = 100
 				has_country_flag = ROM_valkist_behavior
 			}
 		}

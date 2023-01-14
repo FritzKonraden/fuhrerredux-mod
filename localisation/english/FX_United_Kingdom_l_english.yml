@@ -890,7 +890,7 @@ pol_conf_notif: "\n\nThe Dominion states will be notified of our choice. It many
 bw_tt: "\nOnly through swift management of economic affairs can this disaster be escaped before it engulfs our nation. The speed through which we deal with the effects of the London Market Collapse will depend on Government policy in the coming months and years."
 bw_tt2: "\n\n§RAs an immediate result of the economic crisis, several factories have been closed throughout the country.§"
 
-ENG_ra: "\nOfficially deploy the Royal Armoured Corps, composed of several armoured divisions, to London."
+ENG_ra: "§7Receive §Y[Root.GetAdjective] Armored§! template with the following composition:\n - 3 £GFX_unit_light_armor_icon_small battalions\n - 3 £GFX_unit_motorized_icon_small battalions;\nwith £GFX_unit_engineer_icon_small and £GFX_unit_recon_icon_small support batallions\n\nSpawn §Y6§! division with newly gained template§!\n"
 ENG_dep_terr: "Reform and deploy the Royal Territorials - ten divisions of Infantry - to several locations in Great Britain."
 
 ENG_beer: "Beer: §R-100§"
