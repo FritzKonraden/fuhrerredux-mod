@@ -18,8 +18,8 @@ Note: You can always get rejected, it is not guaranteed that you will get accept
 Here is the link:
 https://discord.gg/dVT7bHNVgY
 ## What else is there to know?
-We appreciate any help we can get, if you have any ideas for a specific country or path, consider joining our discord and telling us about it!
-If you have any portraits, flags or localisation for any event/decision/focus, consider also telling us!
+We appreciate any help we can get, if you have any ideas for a specific country or path or any form of icons/flags/portraits/localisation, that you fell we could use, consider joining our discord and telling us about it!
+We regularly post teasers on our discord server about new content!
 # TODO LIST
 ## Work In Progress
 - Greece
