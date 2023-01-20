@@ -2,11 +2,11 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/dax0102/fuhrerredux-mod)
 ![GitHub contributors](https://img.shields.io/github/contributors/dax0102/fuhrerredux-mod)
 ![Steam Views](https://img.shields.io/steam/views/2419457479?label=Steam%20Workshop%20Views)
-![GitHub Repo stars](https://img.shields.io/github/stars/dax0102/fuhrerredux-mod?style=social)
-![GitHub forks](https://img.shields.io/github/forks/dax0102/fuhrerredux-mod?style=social)
 ![GitHub repo file count](https://img.shields.io/github/directory-file-count/dax0102/fuhrerredux-mod)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/dax0102/fuhrerredux-mod)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/dax0102/fuhrerredux-mod)
+![GitHub Repo stars](https://img.shields.io/github/stars/dax0102/fuhrerredux-mod?style=social)
+![GitHub forks](https://img.shields.io/github/forks/dax0102/fuhrerredux-mod?style=social)
 # Führerredux Mod
 The required files for the mod Fuhrerredux for the Paradox game Hearts of Iron IV.
 ## How to become a developer?
