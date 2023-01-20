@@ -8,6 +8,9 @@ state={
 
 	history={
 		owner = GRE
+		victory_points = {
+			6864 4 
+		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -15,6 +18,7 @@ state={
 		}
 		add_core_of = TUR
 		add_core_of = GRE
+		
 	}
 
 	provinces={
