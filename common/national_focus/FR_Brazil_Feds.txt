@@ -73,6 +73,7 @@ focus_tree = {
 			 }
 			} 
 		}
+	}
 
 		focus = { 
 			id = BRA_conservadores
@@ -795,7 +796,116 @@ focus_tree = {
 													 FOCUS_FILTER_POLITICAL
 													 }
 													}
+			### Shogunate Tree
 
+			focus = { 
+				id = BRA_the_shogunate_consolidated
+				icon = GFX_wip
+		
+				 ai_will_do = { factor = 10 } 
+				 available = {
+					always = no
+				}
+				
+				bypass = {
+					
+				}
+				 x =8
+				 y =9
+				 cost = 8 
+		
+				available_if_capitulated = no
+				completion_reward = {
+					
+				}
+				search_filters = {
+				 FOCUS_FILTER_POLITICAL
+				 }
+				}
+
+		focus = { 
+				id = BRA_open_the_japanese_embassy
+				icon = GFX_wip
+		
+				 ai_will_do = { factor = 10 } 
+				 available = {
+					always = no
+				}
+				
+				bypass = {
+					
+				}
+				 x =8
+				 y =10
+				 cost = 8 
+		
+				available_if_capitulated = no
+				completion_reward = {
+					add_political_power = 100
+					add_opinion_modifier = {
+						target = JAP
+						modifier = medium_increase
+					}
+					
+					
+					reverse_add_opinion_modifier = {
+						target = JAP
+						modifier = medium_increase
+					}
+				}
+				search_filters = {
+				 FOCUS_FILTER_POLITICAL
+				 }
+				}
+
+				focus = { 
+					id = BRA_join_the_coprosperity_sphere
+					icon = GFX_focus_chi_collaboration_with_the_japanese
+			
+					 ai_will_do = { factor = 10 } 
+					 available = {
+						always = no
+					}
+					
+					bypass = {
+						
+					}
+					 x =8
+					 y =11
+					 cost = 8 
+			
+					available_if_capitulated = no
+					completion_reward = {
+						
+					}
+					search_filters = {
+					 FOCUS_FILTER_POLITICAL
+					 }
+					}
+					focus = { 
+						id = BRA_joint_japanese_military_exercises
+						icon = GFX_JAP_tank
+				
+						 ai_will_do = { factor = 10 } 
+						 available = {
+							always = no
+						}
+						
+						bypass = {
+							
+						}
+						 x =8
+						 y =12
+						 cost = 8 
+				
+						available_if_capitulated = no
+						completion_reward = {
+							
+						}
+						search_filters = {
+						 FOCUS_FILTER_POLITICAL
+						 }
+						}
 			
 			### Industry Tree	
 			
