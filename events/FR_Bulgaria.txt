@@ -38,3 +38,19 @@ country_event = { # Germany denies our entry
     add_political_power = -20
   }
 }
+## START OF EVENTS
+country_event = {
+  id = bulgaria.1
+  title = bulgaria.1.t 
+  desc = bulgaria.1.d
+  is_triggered_only = yes
+
+  option = { #peacefully
+    name = bulgaria.1.a
+    complete_national_focus = BUL_reclaim_peacefully
+  }
+  option = {
+    name = bulgaria.1.b 
+    complete_national_focus = BUL_man_the_guns
+  }
+}

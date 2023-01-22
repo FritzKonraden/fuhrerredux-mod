@@ -1,0 +1,190 @@
+#
+#
+#
+focus_tree = {
+	id = FR_bulgaria
+	country = { 
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BUL
+		}
+	}
+	continuous_focus_position = {
+		x = 1000
+		y = 1750
+	}
+
+	#RECLAMATION OF OLD LANDS PATH + Army
+	focus = {
+		id = BUL_expand_armed_forces
+		icon =  GFX_goal_refugee_management
+		x = 2
+		y = 0
+		cost = 2
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = BUL_reclamation
+		icon = GFX_goal_refugee_management
+		relative_position_id = BUL_expand_armed_forces
+		prerequisite = {
+			focus = BUL_expand_armed_forces
+		}
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.1
+			add_political_power =  100
+			army_experience = 10
+			navy_experience = 10
+			air_experience = 10
+			country_event = bulgaria.1
+		}
+	}
+	focus = {
+		id = BUL_reclaim_peacefully
+		icon = GFX_goal_refugee_management
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = BUL_reclamation
+		prerequisite = {
+			focus = BUL_reclamation
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = -0.05
+		}
+		available = {
+			always = no
+		}
+		mutually_exclusive = {
+			focus = BUL_man_the_guns
+		}
+	}
+	focus = {
+		id = BUL_man_the_guns
+		icon = GFX_goal_refugee_management
+		cost = 5
+		x = 2
+		y = 1
+		completion_reward = { 
+			add_stability = -0.05
+			add_war_support = 0.1
+			add_political_power = -50
+			army_experience = 10
+		}
+		relative_position_id = BUL_reclamation
+		prerequisite = {
+			focus = BUL_reclamation
+		}
+		mutually_exclusive = {
+			focus = BUL_reclaim_peacefully
+		}
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = BUL_territorial_ambitions_fulfilled
+		icon = GFX_goal_refugee_management
+		cost = 5
+		x = 0
+		y = 3
+		relative_position_id = BUL_reclamation
+		prerequisite = {
+			focus = BUL_reclamation
+		}
+		available = {
+			AND = {
+				BUL = {
+					controls_state = 77
+					controls_state = 787
+					controls_state = 106
+					controls_state = 763
+					controls_state = 184
+					controls_state = 942
+					controls_state = 731
+					controls_state = 342
+				}
+			}
+		}
+		completion_reward = {
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+		id = BUL_sabotage_serbia
+		icon = GFX_goal_refugee_management
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_man_the_guns
+		prerequisite = {
+			focus = BUL_man_the_guns
+		}
+		completion_reward = {
+			942 = {
+				add_dynamic_modifier = {
+					modifier = BUL_expansion
+				}
+				add_claim_by = BUL
+			}
+			787 = {
+				add_dynamic_modifier = {
+					modifier = BUL_expansion
+				}
+				add_claim_by = BUL
+			}
+	        106 = {
+				add_dynamic_modifier = {
+					modifier = BUL_expansion
+				}
+				add_claim_by = BUL
+			}
+			
+		}
+	}
+	focus = {
+		id = BUL_retake_serbian_lands
+		icon = GFX_goal_refugee_management
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_sabotage_serbia
+		prerequisite = {
+			focus = BUL_sabotage_serbia
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = SER
+				generator = {
+					787
+					106
+					942
+				}
+			}
+		}
+	}
+	focus = {
+		id = BUL_dobrudja
+		icon = GFX_goal_refugee_management
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = BUL_sabotage_serbia
+		completion_reward = { 
+		}
+		prerequisite = {
+			focus = BUL_sabotage_serbia
+		}
+	}
+
+}

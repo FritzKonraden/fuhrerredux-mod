@@ -1,0 +1,11 @@
+BUL_expansion = {
+	icon = GFX_goal_refugee_management
+	remove_trigger = {
+		is_controlled_by = BUL
+	}
+
+	local_resources = 0.25
+	local_manpower = 0.25
+	local_factory_sabotage = 0.1
+
+}
