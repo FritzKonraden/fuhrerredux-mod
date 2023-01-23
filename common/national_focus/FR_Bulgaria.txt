@@ -226,9 +226,6 @@ focus_tree = {
 		prerequisite = {
 			focus = BUL_territorial_ambitions_fulfilled
 		}
-		available = {
-			has_government = neutral 
-		}
 		completion_reward = {
 			
 		}
