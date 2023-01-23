@@ -41,6 +41,7 @@ country_event = { # Germany denies our entry
 ## START OF EVENTS
 country_event = {
   id = bulgaria.1
+  picture = BUL_expansion
   title = bulgaria.1.t 
   desc = bulgaria.1.d
   is_triggered_only = yes
@@ -52,5 +53,149 @@ country_event = {
   option = {
     name = bulgaria.1.b 
     complete_national_focus = BUL_man_the_guns
+  }
+}
+country_event = {
+  id = bulgaria.2
+  title = bulgaria.2.t
+  desc = bulgaria.2.d
+  is_triggered_only = yes
+
+  option = { #request south dobrudja from Romania
+    name = bulgaria.2.a
+    ROM = {
+      country_event = { id = romania.10000 days = 1}
+    }
+  }
+  option = { #request all of dobrudja
+    name = bulgaria.2.b
+    ROM = {
+      country_event = { id = romania.10001 days = 1}
+    }
+    add_war_support = 0.01
+    add_stability = -0.02
+  }
+}
+country_event = {
+  id = bulgaria.3
+  title = bulgaria.3.t
+  desc = bulgaria.3.d
+  is_triggered_only = yes
+  option = {
+    name = bulgaria.3.a
+    add_stability = 0.01
+    add_war_support = -0.01
+    BUL = {
+      give_guarantee = ROM
+      diplomatic_relation = {
+      country = ROM
+      relation = non_aggression_pact
+      active = yes
+      } 
+    }
+    
+  }
+}
+
+country_event = {
+  id = bulgaria.4
+  title = bulgaria.4.t
+  desc = bulgaria.4.d 
+  is_triggered_only = yes
+  option = {
+    name = bulgaria.4.a
+    add_war_support = 0.05
+    77 = {
+      add_core_of = BUL
+    }
+    create_wargoal = {
+      target = ROM
+      type = take_state_focus
+      generator = 77
+    }
+  }
+  option = {
+    name = bulgaria.4.b
+    add_stability = 0.02
+    77 = {
+      add_claim_by = BUL
+      add_dynamic_modifier = {
+        modifier = BUL_expansion
+      }
+    }
+    BUL = {
+      add_opinion_modifier = {
+        target = ROM
+        modifier = BUL_south_dobrudja
+      }
+    }
+    
+  }
+}
+country_event = {
+  id = bulgaria.5
+  title = bulgaria.5.t
+  desc = bulgaria.5.d 
+  is_triggered_only = yes
+  option = {
+    name = bulgaria.5.a
+    add_war_support = -0.02
+    77 = {
+      add_core_of = BUL
+      transfer_state_to = BUL
+    }
+    861 = {
+      add_core_of = BUL
+      transfer_state_to = BUL
+    }
+    give_guarantee = ROM
+    BUL = {
+      diplomatic_relation = {
+      country = ROM
+      relation = non_aggression_pact
+      active = yes
+      }
+      add_political_power = -250
+    }
+    ROM = {
+      add_political_power = 250
+    }
+  }
+}
+country_event = {
+  id = bulgaria.6
+  title = bulgaria.6.t
+  desc = bulgaria.6.d 
+  is_triggered_only = yes
+  option = {
+    name = bulgaria.6.a
+    add_war_support = 0.05
+    77 = {
+      add_core_of = BUL
+    }
+    861 = {
+      add_core_of = BUL
+    }
+    create_wargoal = {
+      target = ROM
+      type = take_state_focus
+      generator = { 77 861}
+    }
+  }
+  option = {
+    name = bulgaria.6.b
+    add_stability = 0.02
+    77 = {
+      add_claim_by = BUL
+      add_dynamic_modifier = {
+        modifier = BUL_expansion
+      }
+    }
+    861 = {
+      add_claim_by = BUL
+      add_dynamic_modifier = {
+        modifier = BUL_expansion
+      }
+    }
   }
 }

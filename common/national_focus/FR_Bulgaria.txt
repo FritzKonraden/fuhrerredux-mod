@@ -174,17 +174,63 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BUL_dobrudja
+		id = BUL_status_of_dobrudja
 		icon = GFX_goal_refugee_management
 		cost = 5
 		x = 2
 		y = 1
 		relative_position_id = BUL_sabotage_serbia
 		completion_reward = { 
+			country_event = bulgaria.2
 		}
 		prerequisite = {
 			focus = BUL_sabotage_serbia
 		}
 	}
-
+	focus = {
+		id = BUL_integrate_serbian_lands
+		prerequisite = {
+			focus = BUL_retake_serbian_lands
+		}
+		relative_position_id = BUL_retake_serbian_lands
+		cost = 5
+		x = 0
+		y = 1
+		icon = GFX_goal_refugee_management
+		available = {
+			BUL = {
+				controls_state = 942
+				controls_state = 106
+				controls_state = 787
+			}
+		}
+		completion_reward = {
+			942 = {
+				add_core_of = BUL
+			}
+			106 = {
+				add_core_of = BUL
+			}
+			787 = {
+				add_core_of = BUL
+			}
+		}
+	}
+	focus = {
+		id = BUL_proclaim_the_third_empire
+		icon = GFX_goal_refugee_management 
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = BUL_territorial_ambitions_fulfilled
+		prerequisite = {
+			focus = BUL_territorial_ambitions_fulfilled
+		}
+		available = {
+			has_government = neutral 
+		}
+		completion_reward = {
+			
+		}
+	}
 }

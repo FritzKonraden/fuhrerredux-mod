@@ -36,6 +36,9 @@ BUL_national_populist_DEF: "The Bulgarian Republic"
 BUL_valkist: "Legionalna Bŭlgariya"
 BUL_valkist_ADJ: "Bŭlgarski"
 BUL_valkist_DEF: "Legionalna Bŭlgariya"
+BUL_authoritarian_democrat:1 "Third Bulgarian Empire"
+BUL_authoritarian_democrat_DEF:1 "The Third Bulgarian Empire"
+BUL_authoritarian_democrat_ADJ:1 "Bulgarian"
 
 ### Parties
 BUL_vanguardist_party: "BANU"
@@ -73,6 +76,35 @@ bulgaria.101.t: "[From.GetName] Denies our Entry to the [From.GetFactionName]"
 bulgaria.101.d: "In a suprising turn of events, the [From.GetAdjective] Government have denied our proposal of entry to the [From.GetFactionName]."
 bulgaria.101.a: "Dissapointing."
 
+  bulgaria.1.t: "Ministers Argue for a Bulgarian ‘Reconquista’ "
+  bulgaria.1.d: "Powerful elements of the Cabinet and government recently have begun openly voicing support for the return of ethnic Bulgarian lands in the Balkans. While public opinion seems to sway in favor of such an action, the international community at large does not see the issue in any sunlight. Major world governments continue to warn against the potential consequences of moving Bulgaria down such a path. But whether or not they act on their threats is a matter to be seen. For now, both the government and the population at large find themselves wondering the same thing: Will Bulgaria strengthen its position on the world stage, or will it fall victim to the timeless effects of Western interventionism? "
+  bulgaria.1.a: "Perhaps it is best to listen to the giants, lest they wake from their peaceful slumbers"
+  bulgaria.1.b: "Bulgarians shall belong to Bulgaria."
+
+  #STATUS OF DOBRUDJA EVENTS
+  bulgaria.2.t: "Status of Dobrudja"
+  bulgaria.2.d: "South Dobrudja, was a part of Bulgaria. Many ethnic Bulgarians still live there. North Dobrudja was also a part of Bulgaria in the First Bulgarian Empire. Should we 'Request'  a part or all of  Dobrudja?"
+  bulgaria.2.a: "Request the return of South Dobrudja right now!"
+  bulgaria.2.b: "Request the return of all of Dobrudja this instant, or there will be dire consequences!"
+  bulgaria.3.t: "Romania granted us ownership of South Dobrudja!"
+  bulgaria.3.d: "The Bulgarian ambassador in Romania, today announced to the Romanian goverment that Bulgaria demands ownership of South Dobrudja, or there will be a war! The Romanian goverment, in the end, after a discussion, decided that they are going to give us South Dobrudja for a Non Agression Pact and a Guarantee of Independece. "
+  bulgaria.3.a: "Their demands are acceptable, today is a win for the Bulgarian Nation."
+  bulgaria.4.t: "The Romanians have refused to grant us ownerhip of South Dobrudja"
+  bulgaria.4.d: "The Bulgarian embassy to Romania, announced our demands to them. They weren't happy, and told that we can't have South Dobrudja. The goverment hasn't yet decided, if we are going to accept that, or go to war."
+  bulgaria.4.a: "Man the Guns boys, for we are going to war!"
+  bulgaria.4.b: "Just claim the land, we have other concerns for now."
+  bulgaria.5.t: "Bulgaria gave us ownership of Dobrudja!"
+  bulgaria.5.d: "After our embassador's announcement to the Romanian Goverment about our Demands to Dobrudja. They decided to grant us ownership, but we have to guarantee them, make a non agession pact with them."
+  bulgaria.5.a: "Their demands are acceptable, we shall give them what they want"
+  bulgaria.5.b: "What? They are trying to rob us! Arm the Guns Boys!"
+  bulgaria.6.t: "The Romanians didn't give us Dobrudja!"
+  bulgaria.6.d: "After our embassador's announcement to the goverment about our demands to dobrudja, they decided they didn't want to give us such a big amount of land without them winning anythin. They have therefore, rejected our demands"
+  bulgaria.6.a: "Those bastards, arm the guns boys!"
+  bulgaria.6.b: "Just claim the land for now, for we have other concerns."
+  
+
+
+
 ### Companies
 bdz: "BDZ"
 su_kliment_ohridski: "SU Kliment Ohridski"
@@ -81,3 +113,20 @@ vmz_sopot: "VMZ Sopot"
 darzhavna_voenna_fabrika: "Darzhavna Voenna Fabrika"
 darzhavna_aeroplanna_rabotilnitsa: "Darzhavna Aeroplanna Rabotilnitsa"
 kaproni_bulgarski: "Kaproni Bulgarski"
+
+### FOCUS
+
+  BUL_expand_armed_forces: "Expand Armed Forces"
+  BUL_reclamation: "Reclaim what we lost"
+  BUL_reclaim_peacefully: "The path of Diplomacy"
+  BUL_man_the_guns: "Man The Guns"
+  BUL_territorial_ambitions_fulfilled: "Territorial Ambitions Fulfilled"
+  BUL_sabotage_serbia: "Our connections in Serbia"
+  BUL_retake_serbian_lands: "Take old Bulgarian lands by Force"
+  BUL_status_of_dobrudja: "Status of Dobrudja"
+
+  ### DYNAMIC MODIFIERS
+  BUL_expansion: "Bulgarian Expansion"
+
+  ### OPINION MODIFIERS
+  BUL_south_dobrudja: "Opressor of Bulgars"

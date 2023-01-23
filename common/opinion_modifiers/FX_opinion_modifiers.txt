@@ -7,6 +7,7 @@ opinion_modifiers = {
 	BUL_friendship_with_serbia = { value = 50 }
 	BUL_yugoslavism = { value = -25 }
 	BUL_yugoslavism_ser = { value = 10 }
+  BUL_south_dobrudja = { value = -50 }
 	
 	###Serbia###
 	SER_vanguardism = { value = 40 }
