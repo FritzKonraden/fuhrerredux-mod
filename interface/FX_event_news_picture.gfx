@@ -35,6 +35,10 @@ spriteTypes = {
 		name = "GFX_news_event_ENG_parliament"
 		texturefile = "gfx/event_news_pictures/europe/news_event_ENG_parliament.png"
 	}
+	spriteType = {
+		name = "GFX_news_event_ENG_edward"
+		texturefile = "gfx/event_news_pictures/europe/news_event_ENG_edward.png"
+	}
   spriteType = {
 		name = "GFX_news_event_HOL_binnenhof"
 		texturefile = "gfx/event_news_pictures/europe/news_event_HOL_binnenhof.png"
@@ -260,5 +264,173 @@ spriteTypes = {
   spriteType = {
 		name = "GFX_news_event_ARB_revolt"
 		texturefile = "gfx/event_news_pictures/middle_east/news_event_ARB_revolt.png"
-	}	
+	}
+
+	### City Capture
+	# Europe
+	spriteType = {
+		name = "GFX_news_event_capture_amsterdam"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_amsterdam.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_barcelona"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_barcelona.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_berlin"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_berlin.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_bucharest"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_bucharest.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_constantinople"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_constantinople.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_dublin"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_dublin.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_gibraltar"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_gibraltar.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_kiev"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_kiev.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_leningrad"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_leningrad.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_london"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_london.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_minsk"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_minsk.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_moscow"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_moscow.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_munich"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_munich.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_narodnigrad"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_narodnigrad.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_paris"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_paris.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_rome"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_rome.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_vienna"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_vienna.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_warsaw"
+		texturefile = "gfx/event_news_pictures/europe/news_event_capture_warsaw.png"
+	}
+	# North America
+	spriteType = {
+		name = "GFX_news_event_capture_boston"
+		texturefile = "gfx/event_news_pictures/north_america/news_event_capture_boston.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_havana"
+		texturefile = "gfx/event_news_pictures/north_america/news_event_capture_havana.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_mexico"
+		texturefile = "gfx/event_news_pictures/north_america/news_event_capture_mexico.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_new_york"
+		texturefile = "gfx/event_news_pictures/north_america/news_event_capture_new_york.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_washington"
+		texturefile = "gfx/event_news_pictures/north_america/news_event_capture_washington.png"
+	}
+	# South America
+	spriteType = {
+		name = "GFX_news_event_capture_buenos_aires"
+		texturefile = "gfx/event_news_pictures/south_america/news_event_capture_buenos_aires.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_rio_de_janeiro"
+		texturefile = "gfx/event_news_pictures/south_america/news_event_capture_rio_de_janeiro.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_santiago"
+		texturefile = "gfx/event_news_pictures/south_america/news_event_capture_santiago.png"
+	}
+	# Africa
+	spriteType = {
+		name = "GFX_news_event_capture_alexandria"
+		texturefile = "gfx/event_news_pictures/africa/news_event_capture_alexandria.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_algiers"
+		texturefile = "gfx/event_news_pictures/africa/news_event_capture_algiers.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_cairo"
+		texturefile = "gfx/event_news_pictures/africa/news_event_capture_cairo.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_capetown"
+		texturefile = "gfx/event_news_pictures/africa/news_event_capture_capetown.png"
+	}
+	# Asia
+	spriteType = {
+		name = "GFX_news_event_capture_bangkok"
+		texturefile = "gfx/event_news_pictures/east_asia/news_event_capture_bangkok.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_batavia"
+		texturefile = "gfx/event_news_pictures/east_asia/news_event_capture_batavia.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_beijing"
+		texturefile = "gfx/event_news_pictures/east_asia/news_event_capture_beijing.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_hongkong"
+		texturefile = "gfx/event_news_pictures/east_asia/news_event_capture_hongkong.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_nanjing"
+		texturefile = "gfx/event_news_pictures/east_asia/news_event_capture_nanjing.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_manila"
+		texturefile = "gfx/event_news_pictures/east_asia/news_event_capture_manila.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_shanghai"
+		texturefile = "gfx/event_news_pictures/east_asia/news_event_capture_shanghai.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_tokyo"
+		texturefile = "gfx/event_news_pictures/east_asia/news_event_capture_tokyo.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_capture_vladivostok"
+		texturefile = "gfx/event_news_pictures/east_asia/news_event_capture_vladivostok.png"
+	}
+	# Oceania
+	spriteType = {
+		name = "GFX_news_event_capture_sydney"
+		texturefile = "gfx/event_news_pictures/east_asia/news_event_capture_sydney.png"
+	}
 }

@@ -2565,6 +2565,7 @@ characters = {
 		}
 	}
 	USA_Daniel_Edward_Barbey = {
+		name = "Daniel Edward Barbey"
 		portraits = {
 			army = {
 				large = "gfx/leaders/USA/Portrait_USA_Daniel_Edward_Barbey.png"
@@ -2582,6 +2583,7 @@ characters = {
 		}
 	}
 	USA_Harry_Wilbur_Hill = {
+		name = "Harry Wilbur Hill"
 		portraits = {
 			navy = {
 				large = "gfx/leaders/USA/Portrait_USA_Harry_Wilbur_Hill.png"

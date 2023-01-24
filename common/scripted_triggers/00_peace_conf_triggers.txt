@@ -148,15 +148,9 @@ is_germany = {
 
 is_mainland_china = {
 	OR = {
-		region = 165 # Every Chinese Region
-		region = 164
-		region = 143
-		region = 155
-		region = 200
-		region = 144
-		region = 152
-		region = 145
-		region = 146
+		is_han_chinese_region = yes
+		is_manchuria = yes 
+		is_xinjiang = yes 
 	}
 }
 

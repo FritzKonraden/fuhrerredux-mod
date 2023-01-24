@@ -438,7 +438,7 @@ country_event = {
 country_event = {
 	id = ukbw.1
 	immediate = {log = "[GetDateText]: [Root.GetName]: event ukbw.1"}
-	title = "Factory Closure"
+	title = ukbw.1.t
 	desc = ukbw.1.d
 	picture = GFX_report_event_generic_factory
 
@@ -461,15 +461,7 @@ country_event = {
 	mean_time_to_happen = { months = 12 }
 	
 	option = {
-		name = "Blast!"
-		random_list = {
-			25 = { 338 = { remove_building = { type = industrial_complex level = 1 } } }
-			25 = { 128 = { remove_building = { type = industrial_complex level = 1 } } }
-			15 = { 123 = { remove_building = { type = industrial_complex level = 1 } } }
-			15 = { 129 = { remove_building = { type = industrial_complex level = 1 } } }
-			15 = { 125 = { remove_building = { type = industrial_complex level = 1 } } }
-			5 = { 121 = { remove_building = { type = industrial_complex level = 1 } } }
-		}
+		name = ukbw.1.a
 	}
 }
 
@@ -2206,7 +2198,7 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = uk.38 days = 30 }
 			add_ideas = absolute_monarchy
-			BHU = { news_event = { id = uknews.17 } }
+			random_other_country = { news_event = fxnews.47 }
 			CAN = { country_event = { id = empire.3 hours = 8 } }
 			AST = { country_event = { id = empire.3 hours = 8 } }
 			SAF = { country_event = { id = empire.3 hours = 8 } }
@@ -2284,7 +2276,7 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = uk.110 days = 30 }
 			add_ideas = military_junta
-			BHU = { news_event = { id = uknews.17 } }
+			random_other_country = { news_event = fxnews.48 }
 			CAN = { country_event = { id = empire.3 hours = 8 } }
 			AST = { country_event = { id = empire.3 hours = 8 } }
 			SAF = { country_event = { id = empire.3 hours = 8 } }
@@ -11771,58 +11763,6 @@ news_event = {
 }
 
 news_event = {
-	id = uknews.17
-	immediate = {log = "[GetDateText]: [Root.GetName]: event uknews.17"}
-    title = {
-		trigger = {	
-			ENG = { has_government = paternal_autocrat }
-		}
-		text = "King Edward VIII Ends Constitutionalism"
-	}
-	title = {
-		trigger = {	
-			ENG = { has_government = authoritarian_democrat }
-		}
-		text = "Military Storms the Houses of Parliament"
-	}
-    desc = {
-		trigger = {	
-			ENG = { has_government = paternal_autocrat }
-		}
-		text = uknews.17a.d
-	}
-	desc = {
-		trigger = {	
-			ENG = { has_government = authoritarian_democrat }
-		}
-		text = uknews.17b.d
-	}
-    picture = GFX_news_event_generic_riot
-
-    major = yes
-
-	is_triggered_only = yes
-	
-	show_major = {
-		NOT = { tag = ENG }
-	}
-
-    option =  {
-		trigger = {
-			ENG = { has_government = paternal_autocrat }
-		}
-		name = "Is this the end of Democracy in Britain?"
-    }
-	
-	option =  {
-		trigger = {
-			ENG = { has_government = authoritarian_democrat }
-		}
-		name = "And will the Military ever give up this power?"
-    }
-}
-
-news_event = {
 	id = uknews.18
 	immediate = {log = "[GetDateText]: [Root.GetName]: event uknews.18"}
 	title = uknews.18.t
@@ -12506,14 +12446,6 @@ country_event = {
 	
 	option = {
 		name = "How the once mighty have fallen."
-		hidden_effect = {
-			random_other_country = {
-				limit = {
-					exists = yes
-				}
-				news_event = { id = uknews.100 }
-			}
-		}
 	}
 }
 
@@ -12534,14 +12466,6 @@ country_event = {
 	
 	option = {
 		name = "Germany will soon meet its end."
-		hidden_effect = {
-			random_other_country = {
-				limit = {
-					exists = yes
-				}
-				news_event = { id = uknews.101 }
-			}
-		}
 	}
 }
 
@@ -12562,14 +12486,6 @@ country_event = {
 	
 	option = {
 		name = "The Eternal City is now under our control"
-		hidden_effect = {
-			random_other_country = {
-				limit = {
-					exists = yes
-				}
-				news_event = { id = uknews.103 }
-			}
-		}
 	}
 }
 
@@ -12610,14 +12526,6 @@ country_event = {
 	
 	option = {
 		name = "I bet the Yanks aren't happy about this."
-		hidden_effect = {
-			random_other_country = {
-				limit = {
-					exists = yes
-				}
-				news_event = { id = uknews.104 }
-			}
-		}
 	}
 }
 
@@ -15472,184 +15380,6 @@ country_event = {
 			}
 			BEA = { transfer_state = PREV }
 		}
-	}
-}
-
-########################
-# - THE FALL OF X EVENTS
-########################
-
-news_event = {
-	id = uknews.100
-	immediate = {log = "[GetDateText]: [Root.GetName]: event uknews.100"}
-	title = "The Fall of Paris"
-	desc = uknews.100.d
-	picture = GFX_news_event_german_soldiers
-	
-	major = yes
-	
-	trigger = {
-		16 = { is_controlled_by = ENG }
-		16 = { is_owned_by = FRA }
-		FRA = { has_war_with = ENG }
-		NOT = { has_global_flag = fop_eng }
-	}
-	
-	fire_only_once = yes
-	
-	immediate = {
-		set_global_flag = fop_eng
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = "France's future is now in question"
-		trigger = {
-			NOT = {
-				TAG = ENG
-				TAG = FRA
-			}
-		}
-	}
-	option = {
-		name = "Splendid work gentlemen"
-		trigger = { TAG = ENG }
-	}
-	option = {
-		name = "We will reclaim Paris from those damn Brits!"
-		trigger = { TAG = FRA }
-	}
-}
-
-news_event = {
-	id = uknews.101
-	immediate = {log = "[GetDateText]: [Root.GetName]: event uknews.101"}
-	title = "The Fall of Berlin"
-	desc = uknews.101.d
-	picture = GFX_news_event_german_soldiers
-	
-	major = yes
-	
-	trigger = {
-		64 = { is_controlled_by = ENG }
-		64 = { is_owned_by = GER }
-		GER = { has_war_with = ENG }
-		NOT = { has_global_flag = fob_eng }
-	}
-	
-	immediate = {
-		set_global_flag = fob_eng
-	}
-	
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	option = {
-		name = "Once more the German's are on the cusp of defeat"
-		trigger = {
-			NOT = {
-				TAG = ENG
-				TAG = GER
-			}
-		}
-	}
-	option = {
-		name = "This time we will achieve total victory over the Germans"
-		trigger = { TAG = ENG }
-	}
-	option = {
-		name = "We will never surrender!"
-		trigger = { TAG = GER }
-	}
-}
-
-news_event = {
-	id = uknews.102
-	immediate = {log = "[GetDateText]: [Root.GetName]: event uknews.102"}
-	title = "The Fall of Rome"
-	desc = uknews.102.d
-	picture = GFX_news_event_german_soldiers
-	
-	major = yes
-	
-	trigger = {
-		2 = { is_controlled_by = ENG }
-		2 = { is_owned_by = ITA }
-		ITA = { has_war_with = ENG }
-		NOT = { has_global_flag = for_eng }
-	}
-	
-	immediate = {
-		set_global_flag = for_eng
-	}
-	
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	option = {
-		name = "Will the British advance into Europe be stopped?"
-		trigger = {
-			NOT = {
-				TAG = ENG
-				TAG = ITA
-			}
-		}
-	}
-	option = {
-		name = "The famed Eternal City is now under our control"
-		trigger = { TAG = ENG }
-	}
-	option = {
-		name = "We will never surrender!"
-		trigger = { TAG = ITA }
-	}
-}
-
-news_event = {
-	id = uknews.103
-	immediate = {log = "[GetDateText]: [Root.GetName]: event uknews.103"}
-	title = "The Fall of Washington"
-	desc = uknews.103.d
-	picture = GFX_news_event_german_soldiers
-	
-	major = yes
-	
-	trigger = {
-		361 = { is_controlled_by = ENG }
-		361 = { is_owned_by = USA }
-		USA = { has_war_with = ENG }
-		NOT = { has_global_flag = fow_eng }
-	}
-	
-	immediate = {
-		set_global_flag = fow_eng
-	}
-	
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	option = {
-		name = "Is this the end of the United States?"
-		trigger = {
-			NOT = {
-				TAG = ENG
-				TAG = USA
-			}
-		}
-	}
-	option = {
-		name = "And burn that wretched White House to the ground for good this time!"
-		trigger = { TAG = ENG }
-	}
-	option = {
-		name = "We won't give up our struggle for liberty and freedom!"
-		trigger = { TAG = USA }
 	}
 }
 

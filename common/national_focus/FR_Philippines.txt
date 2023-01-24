@@ -1097,9 +1097,9 @@ focus_tree = {
     }
   }
 
-  # Suspend Congress
+  # A Strong Leader
   focus = {
-    id = PHI_suspend_congress
+    id = PHI_a_strong_leader
     icon = GFX_goal_generic_council
     x = -1
     y = 1
@@ -1111,6 +1111,7 @@ focus_tree = {
     relative_position_id = PHI_the_army_in_control
     completion_reward = {
       add_political_power = 100
+      promote_character = PHI_Basilio_J_Valdez
       increase_ruling_party_popularity_by_10 = yes
     }
   }
@@ -1128,8 +1129,8 @@ focus_tree = {
     mutually_exclusive = {
       focus = PHI_populist_junta
     }
-    prerequisite = { focus = PHI_suspend_congress }
-    relative_position_id = PHI_suspend_congress
+    prerequisite = { focus = PHI_a_strong_leader }
+    relative_position_id = PHI_a_strong_leader
     completion_reward = {
       add_political_power = 150
     }
@@ -1148,8 +1149,8 @@ focus_tree = {
     mutually_exclusive = {
       focus = PHI_support_from_capitalists
     }
-    prerequisite = { focus = PHI_suspend_congress }
-    relative_position_id = PHI_suspend_congress
+    prerequisite = { focus = PHI_a_strong_leader }
+    relative_position_id = PHI_a_strong_leader
     completion_reward = {
       add_stability = 0.05
       add_war_support = 0.05
@@ -2406,8 +2407,8 @@ focus_tree = {
         if = {
           limit = { has_country_flag = PHI_exiled_pope }
           custom_trigger_tooltip = {
-            tooltip = PHI_pope_has_control_tt
-            has_country_flag = PHI_pope_in_control
+            tooltip = PHI_pope_has_control_NOT_tt
+            NOT = { has_country_flag = PHI_pope_in_control }
           }
         }
       }
@@ -4053,7 +4054,7 @@ focus_tree = {
   # Cruiser Development
   focus = {
     id = PHI_cruiser_development
-    icon = GFX_goal_generic_navy_cruiser
+    icon = GFX_goal_generic_coastal_navy2
     x = -1
     y = 1
     cost = 6
@@ -4180,7 +4181,7 @@ focus_tree = {
   # Construct the Davao Port
   focus = {
     id = PHI_construct_the_davao_port
-    icon = GFX_goal_generic_construction
+    icon = GFX_goal_generic_shipyard
     x = 1
     y = 1
     cost = 6
@@ -4216,7 +4217,7 @@ focus_tree = {
   # Refurbish American Ships
   focus = {
     id = PHI_refurbish_american_ships
-    icon = GFX_goal_generic_naval_cruiser2
+    icon = GFX_goal_generic_buy_ships
     x = 0
     y = 2
     cost = 6
@@ -4491,7 +4492,7 @@ focus_tree = {
   # Construct New Air Bases
   focus = {
     id = PHI_construct_new_air_bases
-    icon = GFX_goal_generic_air_production
+    icon = GFX_goal_generic_airports
     x = 0
     y = 1
     cost = 6
@@ -5202,7 +5203,7 @@ focus_tree = {
   # Protect Insulindian Christians
   focus = {
     id = PHI_protect_insulindian_christians
-    icon = GFX_goal_skull_treaty
+    icon = GFX_goal_PHI_insulindian_christians
     x = -1
     y = 1
     cost = 6
@@ -5265,7 +5266,7 @@ focus_tree = {
   # Mission to Indochina
   focus = {
     id = PHI_mission_to_indochina
-    icon = GFX_goal_volunteer_alliance
+    icon = GFX_goal_PHI_mission_indochina
     x = 1
     y = 1
     cost = 6
@@ -5379,7 +5380,7 @@ focus_tree = {
   # Topple the Buddhist Kingdom
   focus = {
     id = PHI_topple_the_buddhist_kingdom
-    icon = GFX_goal_step_on_skull
+    icon = GFX_goal_PHI_kill_siam
     x = 3
     y = 1
     cost = 6
@@ -5410,7 +5411,7 @@ focus_tree = {
   # Legacy of the Boxer Rebellion
   focus = {
     id = PHI_legacy_of_the_boxer_rebellion
-    icon = GFX_goal_flames_of_rebellion
+    icon = GFX_goal_PHI_boxer_rebellion
     x = -1
     y = 1
     cost = 6
@@ -5440,7 +5441,7 @@ focus_tree = {
   # Pacify Burma
   focus = {
     id = PHI_pacify_burma
-    icon = GFX_goal_generic_political_pressure
+    icon = GFX_goal_PHI_attack_burma
     x = 1
     y = 1
     cost = 6
@@ -5474,7 +5475,7 @@ focus_tree = {
   # Punish the Shogunate
   focus = {
     id = PHI_punish_the_shogunate
-    icon = GFX_focus_generic_japanese_imperial_glory
+    icon = GFX_goal_PHI_punish_shogun
     x = 0
     y = 2
     cost = 6

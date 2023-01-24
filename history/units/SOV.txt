@@ -468,7 +468,7 @@ units = {
 	}			
 	division= {			
 		name = "51ya 'Perekopskaya' Strelk. Div."		
-		location = 3520
+		location = 3225
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -486,7 +486,7 @@ units = {
 	# 1ya Kavaleriyskiy Korpus		
 	division= {			
 		name = "1ya 'Chernigov' Kav. Div."		
-		location = 6420
+		location = 3491
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85

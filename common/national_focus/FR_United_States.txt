@@ -3143,6 +3143,12 @@ focus_tree = {
     available = {
       USA_has_great_depression = no
       USA_union_has_collapsed = no
+      MEX = {
+        OR = {
+          exists = no
+          is_subject = yes
+        }
+      }
     }
     completion_reward = {
       add_war_support = 0.10
@@ -3639,6 +3645,9 @@ focus_tree = {
     ai_will_do = {
       factor = 200
     }
+    available = {
+      is_in_faction = no
+    }
     mutually_exclusive = { focus = USA_anti_imperialist_bulwark }
     prerequisite = { focus = USA_new_interventionism }
     bypass = {
@@ -3709,6 +3718,49 @@ focus_tree = {
     y = 1
     cost = 6
     will_lead_to_war_with = ENG
+    ai_will_do = {
+      base = 0
+      modifier = {
+        add = 100
+        ENG = {
+          has_government = authoritarian_democrat
+        }
+      }
+      modifier = {
+        add = 80
+        ENG = {
+          has_government = paternal_autocrat
+        }
+      }
+      modifier = {
+        add = 100
+        ENG = {
+          has_war_with = FRA
+        }
+      }
+      modifier = {
+        add = 100
+        ENG = {
+          has_war_with = ITA
+        }
+      }
+      modifier = {
+        add = 100
+        country_exists = BEA
+      }
+      modifier = {
+        add = 1000
+        ENG = {
+          is_in_faction_with = GER
+        }
+      }
+      modifier = {
+        add = -200
+        ENG = {
+          has_war_with = GER
+        }
+      }
+    }
     available = {
       country_exists = ENG
     }
@@ -3790,8 +3842,10 @@ focus_tree = {
       318 = { is_owned_by_ROOT_or_ally = yes }
       319 = { is_owned_by_ROOT_or_ally = yes }
     }
-    prerequisite = { focus = USA_secure_cuba }
-    prerequisite = { focus = USA_avenge_1812 }
+    prerequisite = { 
+      focus = USA_secure_cuba 
+      focus = USA_avenge_1812
+    }
     relative_position_id = USA_avenge_1812
     completion_reward = {
       if = {
@@ -4026,8 +4080,10 @@ focus_tree = {
         }
       }
     }
-    prerequisite = { focus = USA_avenge_1812 }
-    prerequisite = { focus = USA_demand_greenland }
+    prerequisite = { 
+      focus = USA_avenge_1812
+      focus = USA_demand_greenland
+    }
     relative_position_id = USA_avenge_1812
     completion_reward = {
       custom_effect_tooltip = USA_african_decolonization_tt
@@ -4301,7 +4357,10 @@ focus_tree = {
       is_subject = no
       controls_state = 638
     }
-    prerequisite = { focus = USA_avenge_1812 }
+    prerequisite = { 
+      focus = USA_carribean_lake
+    }
+    prerequisite = { focus = USA_african_decolonization }
     relative_position_id = USA_avenge_1812
     completion_reward = {
       638 = {

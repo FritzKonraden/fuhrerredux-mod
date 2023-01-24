@@ -791,7 +791,7 @@ country_event = { #the bombing of Bucharest
 
 	option = { #Dresden time
 		name = hun.28.a
-		43 = {
+		46 = {
 			damage_building = {
 				type = industrial_complex 
 				damage = 0.75

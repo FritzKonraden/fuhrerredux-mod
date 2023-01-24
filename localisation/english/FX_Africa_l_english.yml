@@ -920,9 +920,9 @@ VOL_paternal_autocrat_DEF: "The Burkinabe State"
 VOL_national_populist: "Burkina Faso"
 VOL_national_populist_ADJ: "Burkinabe"
 VOL_national_populist_DEF: "The Burkinabe Empire"
-VOL_valkist: "Manden Kurufaba"
-VOL_valkist_ADJ: "Burkina Faso"
-VOL_valkist_DEF: "Manden Kurufaba"
+VOL_valkist: "Wattara State"
+VOL_valkist_ADJ: "Wattaran"
+VOL_valkist_DEF: "Wattara State"
 
 # Western Sahara/Sahrawi
 WES_vanguardist: "Western Sahara"

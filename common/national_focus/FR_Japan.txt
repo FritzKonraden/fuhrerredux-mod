@@ -3761,7 +3761,7 @@ focus_tree = {
 	focus = {
 		id = jap_the_admiral_plot
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 0
+		cost = 5
 
 		x = 2
 		y = 1
@@ -3770,8 +3770,13 @@ focus_tree = {
 		prerequisite = {
 			focus = jap_internal_stabilization
 		}
-
 		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		bypass = {
 			has_country_flag = JAP_admiral_plot
 		}
 		
@@ -3788,7 +3793,7 @@ focus_tree = {
 	focus = {
 		id = jap_the_army_coup
 		icon = GFX_goal_JAP_toseiha
-		cost = 0
+		cost = 5
 
 		x = 4
 		y = 1
@@ -3798,6 +3803,12 @@ focus_tree = {
 		}
 
 		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		bypass = {
 			has_country_flag = JAP_army_coup
 		}
 		
@@ -5032,7 +5043,7 @@ focus_tree = {
 	}
 	focus = {
 		id = jap_pressure_siam
-		icon = GFX_goal_flag_siam
+		icon = GFX_SIA_constitution
 		cost = 5
 
 		x = 0
@@ -5086,7 +5097,7 @@ focus_tree = {
 	}
 	focus = {
 		id = jap_strike_indochina
-		icon = GFX_focus_AST_war_japan
+		icon = GFX_goal_generic_attack_indochina
 		will_lead_to_war_with = FIC
 		will_lead_to_war_with = FRA
 		will_lead_to_war_with = VIN

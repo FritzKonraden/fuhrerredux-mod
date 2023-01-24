@@ -1768,8 +1768,8 @@ FRA_swiss_attack_desc: "The nation of Switzerland is made up of no less than fou
 FRA_gabon_cameroon_rails: "Gabon-Cameroon Railroads"
 FRA_gabon_cameroon_rails_desc: "The infrastructure in Central Africa is appauling, but a combined effort between us and the Italians could improve this situation greatly."
 ###
-FRA_black_monday: "Response to Black Monday"
-FRA_black_monday_desc: "The banks have closed and many companies are filing for bankruptcy. Many citizens are demanding their money in cash, and our government is being denounced in the streets. Several plans have been put forward to resolve this crisis, but we have a very limited budget to work with due to the recent economic scandal which rocked the French economic and political scene. If we do not enact these decisions quickly and get our economy back on its feet, we may be faced with something far worse than falling stock prices. \n\nFree Budget: §G[?Root.frenchBudgetAmount] million§! Francs.\nInflation: §Y[?fra_var_inflation]%§!.\nUnemployment: §R[?fra_var_unemployment]%§!."
+FRA_black_monday: "Response to Black Wednesday"
+FRA_black_monday_desc: "The banks have closed and many companies are filing for bankruptcy. Many citizens are demanding their money in cash, and our government is being denounced in the streets. Several plans have been put forward to resolve this crisis, but we have a very limited budget to work with due to the recent economic scandal which rocked the French economic and political scene. If we do not enact these decisions quickly and get our economy back on its feet, we may be faced with something far worse than falling stock prices.\n\nTo effectively remove Black Wednesday effects you need to make unemployment to less than §Y2%§! and inflation at less than §Y15%§!.\n\nCurrently the values are:\n\nFree Budget: §G[?Root.frenchBudgetAmount] million§! Francs.\nInflation: §Y[?fra_var_inflation]%§!.\nUnemployment: §R[?fra_var_unemployment]%§!."
 ###
 FRA_black_protectionism: "Raise Tariffs"
 FRA_black_protectionism_desc: ""

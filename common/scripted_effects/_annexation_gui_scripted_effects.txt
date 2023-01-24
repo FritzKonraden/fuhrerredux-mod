@@ -969,7 +969,7 @@ check_potential_annexations_asia = {
   }
   else_if = {
     limit = { can_release_shanxxi = yes }
-    ROOT = { activate_mission = annexation_SCH_CONQ }
+    ROOT = { activate_mission = annexation_SHX_CONQ }
   }
   else_if = {
     limit = { can_release_siam = yes }
@@ -981,7 +981,7 @@ check_potential_annexations_asia = {
   }
   else_if = {
     limit = { can_release_tibet = yes }
-    ROOT = { activate_mission = annexation_SIK_CONQ }
+    ROOT = { activate_mission = annexation_TIB_CONQ }
   }
   else_if = {
     limit = { can_release_turkestan = yes }
@@ -998,10 +998,6 @@ check_potential_annexations_asia = {
   else_if = {
     limit = { can_release_yunnan = yes }
     ROOT = { activate_mission = annexation_YUN_CONQ }
-  }
-  else_if = {
-    limit = { can_release_zhili = yes }
-    ROOT = { activate_mission = annexation_ZHI_CONQ }
   }
   else_if = {
     limit = { can_release_sabah = yes }

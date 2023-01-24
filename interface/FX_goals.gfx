@@ -1,5 +1,49 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_goal_ENG_naval_conference"
+		texturefile = "gfx/interface/goals/ENG_naval_conference.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BEA_continue_british_rule"
+		texturefile = "gfx/interface/goals/BEA_continue_british_rule.png"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_capitalist_system"
+		texturefile = "gfx/interface/goals/generic_capitalist_system.png"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_bible"
+		texturefile = "gfx/interface/goals/generic_bible.png"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_road"
+		texturefile = "gfx/interface/goals/generic_road.png"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_boxer_rebellion"
+		texturefile = "gfx/interface/goals/PHI_boxer_rebellion.png"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_punish_shogun"
+		texturefile = "gfx/interface/goals/PHI_punish_shogun.png"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_attack_burma"
+		texturefile = "gfx/interface/goals/PHI_attack_burma.png"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_insulindian_christians"
+		texturefile = "gfx/interface/goals/PHI_insulindian_christians.png"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_kill_siam"
+		texturefile = "gfx/interface/goals/PHI_kill_siam.png"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_mission_indochina"
+		texturefile = "gfx/interface/goals/PHI_mission_indochina.png"
+	}
+	spriteType = {
 		name = "GFX_goal_BRA_catholic_education"
 		texturefile = "gfx/interface/goals/BRA_catholic_education.png"
 	}

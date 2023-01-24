@@ -825,7 +825,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-    fire_only_once = yes
+  fire_only_once = yes
 	
 	option = {
 		name = carspain.113.a
@@ -833,54 +833,49 @@ country_event = {
 		add_stability = 0.02
 		set_cosmetic_tag = SPF_kingdom
 		hidden_effect = {
-			create_country_leader = {
-				name = "HM Javier I"
-				desc = "POLITICS_JAVIER_DE_BORBON_PARMA_DESC"
-				picture = "Portrait_SPF_Javier_Borbon_Parma.png"
-				expire = "1965.1.1"
-				ideology = market_liberal_subtype
-				traits = {
-					#
+			SPF_Javier_Borbon_Parma = {
+				promote_character = yes
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = social_democrat_subtype
+						traits = {}
+					}
 				}
-			}
-			create_country_leader = {
-				name = "HM Javier I"
-				desc = "POLITICS_JAVIER_DE_BORBON_PARMA_DESC"
-				picture = "Portrait_SPF_Javier_Borbon_Parma.png"
-				expire = "1965.1.1"
-				ideology = social_conservative_subtype
-				traits = {
-					#
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = social_liberal_subtype
+						traits = {}
+					}
 				}
-			}
-			create_country_leader = {
-				name = "HM Javier I"
-				desc = "POLITICS_JAVIER_DE_BORBON_PARMA_DESC"
-				picture = "Portrait_SPF_Javier_Borbon_Parma.png"
-				expire = "1965.1.1"
-				ideology = authoritarian_democrat_subtype
-				traits = {
-					#
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = market_liberal_subtype
+						traits = {}
+					}
 				}
-			}
-			create_country_leader = {
-				name = "HM Javier I"
-				desc = "POLITICS_JAVIER_DE_BORBON_PARMA_DESC"
-				picture = "Portrait_SPF_Javier_Borbon_Parma.png"
-				expire = "1965.1.1"
-				ideology = paternal_autocrat_subtype
-				traits = {
-					#
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = social_conservative_subtype
+						traits = {}
+					}
 				}
-			}
-			create_country_leader = {
-				name = "HM Javier I"
-				desc = "POLITICS_JAVIER_DE_BORBON_PARMA_DESC"
-				picture = "Portrait_SPF_Javier_Borbon_Parma.png"
-				expire = "1965.1.1"
-				ideology = national_populist_subtype
-				traits = {
-					#
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = authoritarian_democrat_subtype
+						traits = {}
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = paternal_autocrat_subtype
+						traits = {}
+					}
 				}
 			}
 		}
@@ -904,54 +899,49 @@ country_event = {
 		add_stability = 0.02
 		set_cosmetic_tag = SPF_kingdom
 		hidden_effect = {
-			create_country_leader = {
-				name = "HM Jaime III"
-				desc = "POLITICS_JAIME_III_DESC"
-				picture = "Portrait_SPM_Infante_Jaime.png"
-				expire = "1965.1.1"
-				ideology = market_liberal_subtype
-				traits = {
-					#
+			SPF_Infante_Jaime = {
+				promote_character = yes
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = social_democrat_subtype
+						traits = {}
+					}
 				}
-			}
-			create_country_leader = {
-				name = "HM Jaime III"
-				desc = "POLITICS_JAIME_III_DESC"
-				picture = "Portrait_SPM_Infante_Jaime.png"
-				expire = "1965.1.1"
-				ideology = social_conservative_subtype
-				traits = {
-					#
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = social_liberal_subtype
+						traits = {}
+					}
 				}
-			}
-			create_country_leader = {
-				name = "HM Jaime III"
-				desc = "POLITICS_JAIME_III_DESC"
-				picture = "Portrait_SPM_Infante_Jaime.png"
-				expire = "1965.1.1"
-				ideology = authoritarian_democrat_subtype
-				traits = {
-					#
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = market_liberal_subtype
+						traits = {}
+					}
 				}
-			}
-			create_country_leader = {
-				name = "HM Jaime III"
-				desc = "POLITICS_JAIME_III_DESC"
-				picture = "Portrait_SPM_Infante_Jaime.png"
-				expire = "1965.1.1"
-				ideology = paternal_autocrat_subtype
-				traits = {
-					#
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = social_conservative_subtype
+						traits = {}
+					}
 				}
-			}
-			create_country_leader = {
-				name = "HM Jaime III"
-				desc = "POLITICS_JAIME_III_DESC"
-				picture = "Portrait_SPM_Infante_Jaime.png"
-				expire = "1965.1.1"
-				ideology = national_populist_subtype
-				traits = {
-					#
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = authoritarian_democrat_subtype
+						traits = {}
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = paternal_autocrat_subtype
+						traits = {}
+					}
 				}
 			}
 		}

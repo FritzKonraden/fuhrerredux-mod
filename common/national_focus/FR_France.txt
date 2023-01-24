@@ -1295,7 +1295,7 @@ focus_tree = {
 	# African Missionaries
 	focus = {
 		id = fra_africa_missionary
-		icon = GFX_BEL_Improve_Catholic_Relations
+		icon = GFX_goal_generic_bible
 		cost = 2
 		x = 2
 		y = 1
