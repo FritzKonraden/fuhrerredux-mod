@@ -178,11 +178,8 @@ annex.168.b: "Give it to Bulgaria"
 
 annexation_CHI_CONQ: "The Fate of China"
 annexation_CHI_CONQ_DESC: "After a long and hard-fought campaign in the vast expanses of China we've finally achieved a historic victory. Now that we've won the war, we must decide how to best secure the peace. How should we go about managing the Chinese lands we've conquered?"
-annex.4002.a: "Create a loyal Chinese puppet!"
-annex.4002.b: "Create a loyal Chinese puppet!"
-annex.4002.c: "Transfer the territory to our Chinese allies"
-annex.4002.d: "Integrate the territories"
-annex.4002.e: "Create a Collaborationist China!"
+annex.4022.a: "Install the Collaboration Government!"
+annex.4022.b: "Annex them!"
 
 annexation_CHL_CONQ: "The Fate of Chile"
 annexation_CHL_CONQ_DESC: "After a long campaign across the hostile Chilean Andes, we have finally managed to shatter the Chilean defences. Santiago is now in our hands! We must now decide on the future of Chile."
@@ -702,7 +699,7 @@ annex.139.c: "Transfer the territories to Germany"
 
 annexation_SCH_CONQ: "The Fate of Sichuan"
 annexation_SCH_CONQ_DESC: "We have taken control of the territories of Sichuan, and there is some degree of resistance among the locals. We must decide what to do with their lands."
-annex.4014.a: "Create a puppet state in Sichuan"
+annex.4014.a: "Give to the Chinese government"
 annex.4014.b: "Integrate the territories"
 
 annexation_SCO_CONQ: "The Fate of Scotland"
@@ -728,7 +725,7 @@ annex.141.c: "Transfer the territories to Germany"
 
 annexation_SHX_CONQ: "The Fate of Shanxi"
 annexation_SHX_CONQ_DESC: "We have taken control of the territories of Shanxi, and there is some degree of resistance among the locals. We must decide what to do with their lands."
-annex.4015.a: "Liberate Shanxi"
+annex.4015.a: "Give it to the Chinese government"
 annex.4015.b: "Integrate the territories"
 
 annexation_SIA_CONQ: "The Fate of Siam"
@@ -938,7 +935,7 @@ annex.167.b: "Give it to Bulgaria"
 
 annexation_XSM_CONQ: "The Fate of the Ma Clique"
 annexation_XSM_CONQ_DESC: "We have taken control of the territories of the Ma Clique, and there is some degree of resistance among the locals. We must decide what to do with their lands."
-annex.4025.a: "Puppet the Ma Region!"
+annex.4025.a: "Give to the Chinese government!"
 annex.4025.b: "Integrate the territories"
 
 annexation_YEM_CONQ: "The Fate of Yemen"
@@ -947,13 +944,8 @@ annex.3006.a: "Liberate Yemen!"
 
 annexation_YUN_CONQ: "The Fate of Yunnan"
 annexation_YUN_CONQ_DESC: "We have taken control of the territories of Yunan, and there is some degree of resistance among the locals. We must decide what to do with their lands."
-annex.4021.a: "Liberate a friendly government loyal to us!"
+annex.4021.a: "Give to the Chinese government!"
 annex.4021.b: "Integrate the territories"
-
-annexation_ZHI_CONQ: "The Fate of Zhili"
-annexation_ZHI_CONQ_DESC: "We have taken control of the territories of Zhili, and there is some degree of resistance among the locals. We must decide what to do with their lands."
-annex.4022.a: "Liberate a friendly government loyal to us!"
-annex.4022.b: "Integrate the territories"
 
 annexation_MAL_CONQ: "The Fate of Malaya"
 annexation_MAL_CONQ_DESC: "Our armies have managed to take control of Malaysia, and it is now occupied by us. We have a few options at this juncture. What shall we do?"

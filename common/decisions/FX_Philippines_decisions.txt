@@ -401,12 +401,12 @@ PHI_anti_colonialist_crusade_cat = {
     }
     complete_effect = {
       FROM = { get_current_government_type = yes }
+      add_to_war = { 
+        targeted_alliance = FROM 
+        enemy = BEA
+        hostility_reason = asked_to_join
+      }
       if = {
-        add_to_war = { 
-          targeted_alliance = FROM 
-          enemy = BEA
-          hostility_reason = asked_to_join
-        }
         limit = { has_dlc = "Together for Victory" }
         set_autonomy = {
           target = FROM
@@ -445,12 +445,12 @@ PHI_anti_colonialist_crusade_cat = {
     }
     complete_effect = {
       FROM = { get_current_government_type = yes }
+      add_to_war = { 
+        targeted_alliance = FROM 
+        enemy = FIC
+        hostility_reason = asked_to_join
+      }
       if = {
-        add_to_war = { 
-          targeted_alliance = FROM 
-          enemy = FIC
-          hostility_reason = asked_to_join
-        }
         limit = { has_dlc = "Together for Victory" }
         set_autonomy = {
           target = FROM
@@ -489,12 +489,12 @@ PHI_anti_colonialist_crusade_cat = {
     }
     complete_effect = {
       FROM = { get_current_government_type = yes }
+      add_to_war = { 
+        targeted_alliance = FROM 
+        enemy = JAP
+        hostility_reason = asked_to_join
+      }
       if = {
-        add_to_war = { 
-          targeted_alliance = FROM 
-          enemy = JAP
-          hostility_reason = asked_to_join
-        }
         limit = { has_dlc = "Together for Victory" }
         set_autonomy = {
           target = FROM
