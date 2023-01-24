@@ -568,6 +568,12 @@ foreign_politics = {
       NOT = { has_war_with = MEX }
     }
     remove_effect = {
+      hidden_effect = {
+        add_named_threat = {
+          threat = 10
+          name = USA_demand_mexican_submission
+        }
+      }
       MEX = { country_event = usa.4 }
     }
   }
