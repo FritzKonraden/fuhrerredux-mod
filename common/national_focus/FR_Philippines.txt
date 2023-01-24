@@ -1097,9 +1097,9 @@ focus_tree = {
     }
   }
 
-  # Suspend Congress
+  # A Strong Leader
   focus = {
-    id = PHI_suspend_congress
+    id = PHI_a_strong_leader
     icon = GFX_goal_generic_council
     x = -1
     y = 1
@@ -1111,6 +1111,7 @@ focus_tree = {
     relative_position_id = PHI_the_army_in_control
     completion_reward = {
       add_political_power = 100
+      promote_character = PHI_Basilio_J_Valdez
       increase_ruling_party_popularity_by_10 = yes
     }
   }
@@ -1128,8 +1129,8 @@ focus_tree = {
     mutually_exclusive = {
       focus = PHI_populist_junta
     }
-    prerequisite = { focus = PHI_suspend_congress }
-    relative_position_id = PHI_suspend_congress
+    prerequisite = { focus = PHI_a_strong_leader }
+    relative_position_id = PHI_a_strong_leader
     completion_reward = {
       add_political_power = 150
     }
@@ -1148,8 +1149,8 @@ focus_tree = {
     mutually_exclusive = {
       focus = PHI_support_from_capitalists
     }
-    prerequisite = { focus = PHI_suspend_congress }
-    relative_position_id = PHI_suspend_congress
+    prerequisite = { focus = PHI_a_strong_leader }
+    relative_position_id = PHI_a_strong_leader
     completion_reward = {
       add_stability = 0.05
       add_war_support = 0.05
