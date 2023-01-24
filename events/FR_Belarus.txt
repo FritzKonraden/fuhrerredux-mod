@@ -416,7 +416,7 @@ country_event = { # London Stock Market Crash
 		set_country_flag = BLR_black_wednesday
 	}
 }
-
+## ERROR FIXES
 country_event = { # Status of the Home Guard
 	id = belarus.15
 	title = belarus.15.t
@@ -435,18 +435,17 @@ country_event = { # Status of the Home Guard
 		increase_ruling_party_popularity_by_10 = yes
 	}
 }
-
 country_event = { # The Belarusian Home Guard
-	id = belarus.15
-	title = belarus.15.t
+	id = belarus.44
+	title = belarus.44.t
 	desc = {
-		text = belarus.15.d
+		text = belarus.44.d
 		trigger = {
 			NOT = { has_government = valkist }
 		}
 	}
 	desc = {
-		text = belarus.15.d.1
+		text = belarus.44.d.1
 		trigger = {
 			has_government = valkist
 		}
@@ -455,15 +454,15 @@ country_event = { # The Belarusian Home Guard
 	is_triggered_only = yes
 
 	option = { # Formalize them as the army
-		name = belarus.15.a
+		name = belarus.44.a
 		army_experience = 15
 	}
 	option = { # Maintain them as a reservist force
-		name = belarus.15.b
+		name = belarus.44.b
 		add_manpower = 15000
 	}
 	option = { # Disband them!
-		name = belarus.15.c
+		name = belarus.44.c
 		trigger = { 
 			has_government = valkist
 		}
