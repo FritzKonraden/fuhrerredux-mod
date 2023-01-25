@@ -635,7 +635,7 @@ shared_focus = {
 		y = 0
 		trigger = {
 			ROOT = {
-				#has_country_flag = JAP_inoue_reign
+				has_country_flag = JAP_inoue_reign
 				NOT = {
 					OR = {
 						has_country_flag = JAP_kuniyuki_reign
@@ -648,7 +648,7 @@ shared_focus = {
 	allow_branch = {
 		custom_trigger_tooltip = {
 			tooltip = "The Protector has assumed the power of Daijo-Daijin"
-			#has_country_flag = JAP_inoue_reign
+			has_country_flag = JAP_inoue_reign
 		}
 	}
 	prerequisite = { focus = JAP_meeting_of_three_officials }

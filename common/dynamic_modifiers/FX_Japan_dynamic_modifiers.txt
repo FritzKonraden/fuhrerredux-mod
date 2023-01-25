@@ -1,9 +1,7 @@
 JAP_daijo_kan_modifier = {
-	#icon = "GFX_idea_chi_war_of_resistance2"
 	remove_trigger = {
 		JAP = {
 			has_country_flag = JAP_shogunate_abolision
 		}
 	}
-  	
 }
