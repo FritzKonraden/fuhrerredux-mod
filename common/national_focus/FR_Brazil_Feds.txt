@@ -73,7 +73,6 @@ focus_tree = {
 			 }
 			} 
 		}
-	}
 
 		focus = { 
 			id = BRA_conservadores

@@ -13,6 +13,11 @@ ideas = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRA_political_instability"}
 			allowed = { original_tag = BRA }
 			picture = SPR_political_violence
+			modifier = {
+				stability_factor = -0.1	
+				drift_defence_factor = -0.15
+				stability_weekly = 0.01	
+			}
 		}
 		BRA_black_wednesday = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRA_black_wednesday"}
@@ -161,7 +166,16 @@ BRA_minor_drug_cartels = {
 	picture = BRA_scw_intervention_republicans_focus
 	modifier = {
 		stability_factor = -0.3
-		production_factory_max_efficiency_factor = 0.05
+		production_factory_max_efficiency_factor = -0.05
+}
+}
+BRA_back_in_time = {
+	allowed = { original_tag = BRA }
+	picture = generic_crippled_industry
+	modifier = {
+		production_speed_buildings_factor = -0.2
+		army_org_factor = -0.8
+		army_morale_factor = -0.1
 }
 }
 

@@ -95,6 +95,7 @@ add_ideas = {
 	limited_conscription
 	BRA_political_instability
 	BRA_minor_drug_cartels
+	BRA_back_in_time
 	presidential_republic
 }
 
