@@ -231,12 +231,12 @@ on_actions = {
 
 	# scope is operative
 	# from scope is the country
-	on_operative_created = {
-		effect = {
-			log = "[GetDateText]: ROOT: [Root.GetName] FROM: [From.GetName] on_operative_created"
-			add_operative_nationalities = yes
-		}
-	}
+	# on_operative_created = {
+	# 	effect = {
+	# 		log = "[GetDateText]: ROOT: [Root.GetName] FROM: [From.GetName] on_operative_created"
+	# 		add_operative_nationalities = yes
+	# 	}
+	# }
 
 	on_operation_completed = {
 		effect = {

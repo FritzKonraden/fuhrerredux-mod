@@ -437,12 +437,7 @@ ROOT_dont_start_major_faction_wars = {
 			overlord = { is_actual_major = yes }
 		}
 		AND = {
-			has_guarantor = yes
-			any_of_scopes = {
-				array = guarantor_array
-				has_guaranteed = PREV
-				is_actual_major = yes
-			}
+			is_guaranteed_by = global.v:majors
 		}
 	}
 }
@@ -602,7 +597,7 @@ overlord_is_stronger_than_ROOT_and_not_vulnerable_consider_naval_strength = {
 
 #on the target's scope
 guarantor_is_stronger_than_ROOT_and_not_vulnerable = {
-	has_guarantor = yes
+	#has_guarantor = yes
 	any_of_scopes = {
 		array = guarantor_array
 		has_guaranteed = PREV

@@ -368,7 +368,7 @@ GER_super_boost_light_for_med_armor = {
 
 	# lets do changes more often during this period too
 	ai_strategy = {
-		type = template_xp_reserve 
+		type = land_xp_spend_priority 
 		value = -125
 	}
 
@@ -407,7 +407,7 @@ GER_super_boost_light_for_modern_armor = {
 
 	# lets do changes more often during this period too
 	ai_strategy = {
-		type = template_xp_reserve 
+		type = land_xp_spend_priority 
 		value = -125
 	}
 
