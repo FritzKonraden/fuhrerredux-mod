@@ -608,8 +608,10 @@ determine_chinese_releaser = {
 	}
 	else_if = {
 		limit = {
-			has_authoritarian_government = yes 
-			has_democratic_right_government = yes 
+			OR = {
+				has_authoritarian_government = yes 
+				has_democratic_right_government = yes
+			} 
 		}
 		if = {
 			limit = {
