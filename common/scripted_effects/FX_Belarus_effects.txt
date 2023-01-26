@@ -41,7 +41,7 @@ BLR_improve_economy = {
     remove_ideas = BLR_agriarian_traditions_3
   }
   else = {
-    hidden_effects = {
+    hidden_effect = {
       remove_ideas = {
         BLR_agriarian_traditions
         BLR_agriarian_traditions_1
@@ -81,7 +81,7 @@ BLR_recover_from_black_wednesday = {
     remove_ideas = BLR_black_wednesday_idea_3
   }
   else = {
-    hidden_effects = {
+    hidden_effect = {
       remove_ideas = {
         BLR_black_wednesday_idea
         BLR_black_wednesday_idea_1

@@ -194,12 +194,12 @@ ideas = {
 		BLR_repair_facilities = {
 			allowed = { original_tag = BLR }
 			picture = generic_license_production
-			equipment_bonus = {
-        motorized = {
-          build_cost_ic = -0.15
-          instant = yes
-        }
-      }
+			equipment_bonus = { #Doesn't work and cause bug, please find new buff asap
+				motorized = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+      		}
 		}
 		BLR_defensive_maneuvers = {
 			allowed = { original_tag = BLR }

@@ -4969,7 +4969,7 @@ focus_tree = {
 
       if = {
         limit = { has_idea = PHI_hacienda_questions }
-        remove_idea = PHI_hacienda_questions
+        remove_ideas = PHI_hacienda_questions
       }
     }
     search_filters = {
@@ -5165,7 +5165,7 @@ focus_tree = {
     prerequisite = { focus = PHI_entrench_corporatism }
     relative_position_id = PHI_per_aspera
     completion_reward = {
-      327 = { set_state_category = megapolis }
+      327 = { set_state_category = megalopolis }
       624 = { set_state_category = large_city }
       625 = { set_state_category = large_city }
       625 = { set_state_category = city }
