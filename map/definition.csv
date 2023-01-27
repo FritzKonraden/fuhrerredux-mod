@@ -6835,7 +6835,7 @@
 6834;88;24;236;sea;false;ocean;0
 6835;88;26;232;sea;false;ocean;0
 6836;88;27;41;land;false;plains;1
-6837;88;27;146;land;true;hills;6
+6837;88;27;146;land;false;hills;6
 6838;88;27;191;land;false;hills;6
 6839;88;28;240;sea;false;ocean;0
 6840;88;29;248;sea;false;ocean;0
