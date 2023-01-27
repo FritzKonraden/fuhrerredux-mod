@@ -1552,7 +1552,7 @@ characters = {
 		advisor = {
 			cost = 150
 			slot = army_chief
-			idea = BLR_Paval_Vent_carm
+			idea_token = BLR_Paval_Vent_carm
 			traits = {
 				carm_armoured_spearhead_doctrine
 			}

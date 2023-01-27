@@ -2688,7 +2688,6 @@ country_event = { # Codreanu Criticises the Government
 		}
 	}
 	picture = GFX_report_event_carol_meeting
-	is_triggered_only = yes
 
 	trigger = {
 		tag = ROM
@@ -2704,7 +2703,7 @@ country_event = { # Codreanu Criticises the Government
 	mean_time_to_happen = {
 		days = 4
 	}
-
+	fire_only_once = yes 
 	option = {
 		name = romania.50.a
 		add_political_power = -20
