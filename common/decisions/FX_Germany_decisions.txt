@@ -541,6 +541,7 @@ GER_foreign_diplomacy = {
         }
 			has_completed_focus = GER_a_helping_hand
     }
+  }
     remove_effect = {
       GER = {
         if = {
