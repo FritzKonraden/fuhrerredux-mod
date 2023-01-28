@@ -3010,19 +3010,25 @@ country_event = {
 	desc = romania.10000.d
 	is_triggered_only = yes
 	option = {
+		ai_chance = {
+			factor = 0
+		}
 		name = romania.10000.a 
 		77 = {
 			add_core_of = BUL 
 			transfer_state_to = BUL
-			BUL = {
-				country_event = {
-					id = bulgaria.3
-					days = 1
-				}
+		}
+		BUL = {
+			country_event = {
+				id = bulgaria.3
+				days = 1
 			}
 		} 		
 	}
 	option = {
+		ai_chance = {
+			factor = 1
+		}
 		name = romania.10000.b 
 		BUL = {
 			country_event = {

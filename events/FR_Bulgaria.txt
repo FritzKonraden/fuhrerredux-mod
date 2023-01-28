@@ -41,7 +41,7 @@ country_event = { # Germany denies our entry
 ## START OF EVENTS
 country_event = {
   id = bulgaria.1
-  picture = BUL_expansion
+  picture = report_event_BUL_expansion
   title = bulgaria.1.t 
   desc = bulgaria.1.d
   is_triggered_only = yes
@@ -111,7 +111,7 @@ country_event = {
     create_wargoal = {
       target = ROM
       type = take_state_focus
-      generator = 77
+      generator = { 77 }
     }
   }
   option = {
@@ -197,5 +197,82 @@ country_event = {
         modifier = BUL_expansion
       }
     }
+  }
+}
+country_event = {
+  id = bulgaria.7
+  title = bulgaria.7.t
+  desc = bulgaria.7.d
+  is_triggered_only = yes
+  option = {
+    name = bulgaria.7.a
+    create_wargoal = {
+      target = GRE
+      type = take_state_focus
+      generator = { 763 342}
+    }
+    add_war_support = 0.05
+
+  }
+  option = {
+    name = bulgaria.7.b
+    763 = {
+      add_claim_by = BUL
+      add_dynamic_modifier = {
+        modifier = BUL_expansion_thrace
+      }
+    }
+    342 = {
+      add_claim_by = BUL
+      add_dynamic_modifier = {
+        modifier = BUL_expansion_thrace
+      }
+    }
+  }
+}
+country_event = {
+  id = bulgaria.8
+  title = bulgaria.8.t
+  desc = bulgaria.8.d
+  is_triggered_only = yes
+  option = {
+    name = bulgaria.8.a
+    BUL = {
+      give_guarantee = ROM
+      diplomatic_relation = {
+        country = ROM
+        relation = non_aggression_pact
+        active = yes
+        }
+        add_political_power = -250
+    }
+    GRE = {
+      add_political_power = 250
+    }
+    342 = {
+      transfer_state_to = BUL
+    }
+    763 = {
+      transfer_state_to = BUL
+    }
+  }
+  option = {
+    name = bulgaria.8.b
+    create_wargoal = {
+      target = GRE
+      type = take_state_focus
+      generator = { 863 342 }
+    }
+  }
+}
+country_event = {
+  id = bulgaria.9
+  title = bulgaria.9.t 
+  desc = bulgaria.9.d 
+  is_triggered_only = yes
+  option = {
+    name = bulgaria.9.a
+    add_stability = 0.1 
+    add_war_support = 0.1
   }
 }

@@ -384,4 +384,8 @@ spriteTypes = {
 		name = "GFX_idea_zavod_Krasny_Putilovets"
 		texturefile = "gfx/interface/ideas/SOV/companies/zavod_Krasny_Putilovets.png"
 	}
+	spriteType = {
+		name = "GFX_idea_BUL_expansion_modifier"
+		texturefile = "gfx/interface/ideas/ideas/BUL_expansion_modifier.png"
+	}
 }

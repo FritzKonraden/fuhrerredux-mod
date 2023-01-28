@@ -98,10 +98,24 @@ bulgaria.101.a: "Dissapointing."
   bulgaria.5.a: "Their demands are acceptable, we shall give them what they want"
   bulgaria.5.b: "What? They are trying to rob us! Arm the Guns Boys!"
   bulgaria.6.t: "The Romanians didn't give us Dobrudja!"
-  bulgaria.6.d: "After our embassador's announcement to the goverment about our demands to dobrudja, they decided they didn't want to give us such a big amount of land without them winning anythin. They have therefore, rejected our demands"
+  bulgaria.6.d: "After our embassador's announcement to the goverment about our demands to dobrudja, they decided they didn't want to give us such a big amount of land without them winning anything. They have therefore, rejected our demands"
   bulgaria.6.a: "Those bastards, arm the guns boys!"
   bulgaria.6.b: "Just claim the land for now, for we have other concerns."
-  
+  bulgaria.7.t: "The Greek reject to give us Thrace"
+  bulgaria.7.d: "Our embassador, Mr. Julian Juliettus, told the Greek goverment about our demands. They weren't happy to say the least. What should we do now? "
+  bulgaria.7.a: "Declare War."
+  bulgaria.7.b: "Just claim the land."
+  bulgaria.8.t: "Greeks decide to cave in our demands."
+  bulgaria.8.d: "After our embassador's speech, about the demands we posed, the coward Greek Nation, decided they'd be better of giving us Thrace, than risking a war. For this to happen, they want specific things. They demanded we Guarantee their Independence, enact a non aggression pact with them, and also pay them."
+  bulgaria.8.a: "Alright, their demands are acceptable"
+  bulgaria.8.b: "They call this a fair deal? Arm the Guns Boys!"
+  bulgaria.9.t: "The Formation of a new Empire"
+  bulgaria.9.d: "More than 500 years ago the Ottomans ended the second Bulgarian Empire, by conquering it all. Yet despite all the struggle and hardship the people had in these times for their freedom, for a Bulgarian state that contained all of the Bulgarians, they didn't lose their spirit, their national identity, their language, and foremost their religion. The Bulgarian state was under Ottoman rule, untill  3rd March 1878, when they became free from the Ottomans. Today, [?global.date.GetDateStringNoHourLong], our leader [BUL.GetLeader] announced the formation of the Third Empire.
+  The world looks with shock and awe upon the valiant people of this Balkan nation who, despite all odds managed to reclaim their birthright and empire. A new juggernaut of the east has risen, the Third Bulgarian Empire."
+  bulgaria.9.a: "This day, shall be celebrated with pride. Long live the Third Bulgarian Empire."
+  fxnews.49.t: "The formation of the Third Bulgarian Empire"
+  fxnews.49.d: "This Day, the Bulgarian Government, after a series of stunning victories and territorial gains, announced the formation of the Third Bulgarian Empire, a title modelled after the medieval realm which was ended by the Ottomans. It is yet to see if this Empire will fall to foreign forces like its predecessor or if it will rule the future of the Balkans. Whatever the future holds for the new Empire, its neighbours must now decide their stance towards this rising power."
+  fxnews.49.a: "Concerning..."
 
 
 
@@ -127,6 +141,17 @@ kaproni_bulgarski: "Kaproni Bulgarski"
 
   ### DYNAMIC MODIFIERS
   BUL_expansion: "Bulgarian Expansion"
+  BUL_expansion_thrace: "Bulgarian Expansion"
+  BUL_expansion_dobrudja: "Bulgarian Expansion"
 
   ### OPINION MODIFIERS
   BUL_south_dobrudja: "Opressor of Bulgars"
+
+  ### TOOLTIPS
+  1_bul_tt: "§G Any state that has the Bulgarian Expansion modifier,is in Macedonia and is owned by Bulgaris gets cored. Current states: §! "
+  2_bul_tt: "§R IF BULGARIA COMPLETES THIS FOCUS, THEY WON'T BE ABLE TO FORM THE ROMAN EMPIRE OF GREEKS AND BULGARS!!! §! "
+
+  #COSMETIC TAGS
+  BUL_third_empire: "Third Bulgarian Empire"
+  BUL_third_empire_ADJ: "Bulgarian"
+  BUL_third_empire_DEF: "The Third Bulgarian Empire"

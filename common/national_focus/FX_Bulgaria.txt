@@ -18,7 +18,7 @@ focus_tree = {
 	#RECLAMATION OF OLD LANDS PATH + Army
 	focus = {
 		id = BUL_expand_armed_forces
-		icon =  GFX_goal_refugee_management
+		icon =  GFX_goal_BUL_armed_forces
 		x = 2
 		y = 0
 		cost = 2
@@ -106,11 +106,7 @@ focus_tree = {
 					controls_state = 77
 					controls_state = 787
 					controls_state = 106
-					controls_state = 763
-					controls_state = 184
 					controls_state = 942
-					controls_state = 731
-					controls_state = 342
 				}
 			}
 		}
@@ -185,12 +181,14 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = BUL_sabotage_serbia
+			focus = BUL_question_of_thrace
 		}
 	}
 	focus = {
-		id = BUL_integrate_serbian_lands
+		id = BUL_integrate_macedonia
 		prerequisite = {
 			focus = BUL_retake_serbian_lands
+			focus = BUL_demand_salonica
 		}
 		relative_position_id = BUL_retake_serbian_lands
 		cost = 5
@@ -199,20 +197,26 @@ focus_tree = {
 		icon = GFX_goal_refugee_management
 		available = {
 			BUL = {
-				controls_state = 942
-				controls_state = 106
-				controls_state = 787
+				OR = {
+					controls_state = 942
+					controls_state = 106
+					controls_state = 787
+					controls_state = 184
+					controls_state = 731
+				}
 			}
 		}
 		completion_reward = {
-			942 = {
-				add_core_of = BUL
-			}
-			106 = {
-				add_core_of = BUL
-			}
-			787 = {
-				add_core_of = BUL
+			custom_effect_tooltip = 1_bul_tt
+			BUL = {
+				every_owned_state = {
+					limit = {
+						has_dynamic_modifier = {
+							modifier = BUL_expansion
+						}
+					}
+					add_core_of =  BUL
+				}
 			}
 		}
 	}
@@ -226,8 +230,90 @@ focus_tree = {
 		prerequisite = {
 			focus = BUL_territorial_ambitions_fulfilled
 		}
+		available = {
+			OR = {
+				has_government = authoritarian_democrat
+				has_government = paternal_autocrat
+			}
+		}
 		completion_reward = {
-			
+			set_cosmetic_tag = BUL_third_empire
+			country_event = bulgaria.9
+			news_event = fxnews.49
+		}
+	}
+	focus = {
+		id = BUL_question_of_thrace
+		icon = GFX_goal_refugee_management
+		cost = 5
+		x = 2
+		y = 0
+		relative_position_id = BUL_man_the_guns
+		prerequisite = {
+			focus = BUL_man_the_guns
+		}
+		completion_reward = {
+			custom_effect_tooltip = 2_bul_tt
+			342 = {
+				add_dynamic_modifier = {
+					modifier = BUL_expansion_thrace
+				}
+				add_claim_by = BUL
+			}
+			763 = {
+				add_dynamic_modifier = {
+					modifier = BUL_expansion_thrace
+				}
+			}
+		}
+	}
+	focus = {
+		id = BUL_demand_thrace
+		icon = GFX_goal_refugee_management
+		cost = 5
+		x = 2
+		y = 0
+		relative_position_id = BUL_question_of_thrace
+		prerequisite = {
+			focus = BUL_question_of_thrace
+		}
+		completion_reward = {
+			GRE = {
+				country_event = gre.4
+			}
+		}
+	}
+	focus = {
+		id = BUL_integrate_thrace
+		icon = GFX_goal_refugee_management
+		cost = 5
+		x = 2
+		y = 0
+		relative_position_id = BUL_demand_thrace
+		prerequisite = {
+			focus = BUL_demand_thrace
+		}
+		completion_reward = {
+			863 = {
+				add_core_of = BUL
+			}
+			342 = {
+				add_core_of = BUL
+			}
+		}
+	}
+	focus = {
+		id = BUL_demand_salonica
+		icon = GFX_goal_refugee_management
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_demand_thrace
+		prerequisite = {
+			focus = BUL_demand_thrace
+		}
+		completion_reward = {
+			custom_effect_tooltip = 2_bul_tt
 		}
 	}
 }
