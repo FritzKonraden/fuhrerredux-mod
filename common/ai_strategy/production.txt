@@ -287,6 +287,9 @@ higher_armored_production = {
 }
 
 more_armor_focused_nation = {
+	enable = {
+		num_of_military_factories > 20
+	}
 	allowed = {
 		country_has_armor_focus = yes
 	}

@@ -2841,11 +2841,15 @@ country_event = { # Pope Arrives in the Philippines
 
   desc = {
     text = philippines.103.d_ita
-    ITA = { controls_state = 2 }
+    trigger = {
+      ITA = { controls_state = 2 }
+    }
   }
   desc = {
     text = philippines.103.d_itp
-    ITP = { controls_state = 2 }
+    trigger = {
+      ITP = { controls_state = 2 }
+    }
   }
   desc = {
     text = philippines.103.d

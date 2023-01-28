@@ -1177,7 +1177,7 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						NOT = { has_tech = cat_mechanized_equipment }
+						NOT = { has_tech = mechanised_infantry }
 					}
 					set_technology = {
 					  mechanised_infantry = 1

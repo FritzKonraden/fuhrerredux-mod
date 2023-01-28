@@ -1363,9 +1363,7 @@ ideas = {
 		nissan = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea nissan" }
 			allowed = { original_tag = JAP }
-			available = {
-				NOT = { has_completed_focus = JAP_NAT_ZAI }
-			}
+
 			traits = {
 				small_tank_producer_offense_1
 			}
@@ -1430,9 +1428,7 @@ ideas = {
 		mitsubishi = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea mitsubishi" }
 			allowed = { original_tag = JAP }
-			available = {
-				NOT = { has_completed_focus = JAP_NAT_ZAI }
-			}
+			
 			traits = {
 				fighter_producer_offense_2
 			}
@@ -1473,9 +1469,7 @@ ideas = {
 		fx_nakajima = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea fx_nakajima" }
 			allowed = { original_tag = JAP }
-			available = {
-				NOT = { has_completed_focus = JAP_NAT_ZAI }
-			}
+			
 			traits = {
 				bomber_producer_defense_1
 			}
@@ -1562,9 +1556,7 @@ ideas = {
 		kawasaki = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kawasaki" }
 			allowed = { original_tag = JAP }
-			available = {
-				NOT = { has_completed_focus = JAP_NAT_ZAI }
-			}
+			
 			traits = {
 				industrial_manufacturer
 			}
@@ -1589,9 +1581,7 @@ ideas = {
 		nichitsu = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea nichitsu" }
 			allowed = { original_tag = JAP }
-			available = {
-				NOT = { has_completed_focus = JAP_NAT_ZAI }
-			}
+			
 			traits = {
 				chemical_producer
 			}
@@ -1615,9 +1605,7 @@ ideas = {
 		sumitomo = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea sumitomo" }
 			allowed = { original_tag = JAP }
-			available = {
-				NOT = { has_completed_focus = JAP_NAT_ZAI }
-			}
+			
 			traits = {
 				electronics_manufacturer
 			}
@@ -1638,9 +1626,7 @@ ideas = {
 		Nihon_Musen = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea Nihon_Musen" }
 			allowed = { original_tag = JAP }
-			available = {
-				NOT = { has_completed_focus = JAP_NAT_ZAI }
-			}
+			
 			traits = {
 				electronics_manufacturer
 			}

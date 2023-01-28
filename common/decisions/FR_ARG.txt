@@ -384,9 +384,8 @@ SAM_SCW_matters = {
 				}
  			}
  			has_war = no
-			stockpile_ratio = {
-				archetype = fighter_equipment
-				ratio > 0.2
+			has_equipment = {
+				small_plane_airframe > 50
 			}
  	 		OR = {
  	 			has_government = valkist
@@ -442,7 +441,7 @@ SAM_SCW_matters = {
  			}
  			has_war = no
 			 stockpile_ratio = {
-				archetype = fighter_equipment
+				archetype = small_plane_airframe
 				ratio > 0.2
 			}
  	 		OR = {
@@ -502,7 +501,7 @@ SAM_SCW_matters = {
  			}
  			has_war = no
 			 stockpile_ratio = {
-				archetype = fighter_equipment
+				archetype = small_plane_airframe
 				ratio > 0.2
 			}
  	 		OR = {
@@ -912,7 +911,7 @@ SAM_BCW_matters = {
  			}
  			has_war = no
 			 stockpile_ratio = {
-				archetype = fighter_equipment
+				archetype = small_plane_airframe
 				ratio > 0.2
 			}
  	 		OR = {
@@ -963,7 +962,7 @@ SAM_BCW_matters = {
  			}
  			has_war = no
 			 stockpile_ratio = {
-				archetype = fighter_equipment
+				archetype = small_plane_airframe
 				ratio > 0.2
 			}
  	 		OR = {
@@ -1017,7 +1016,7 @@ SAM_BCW_matters = {
  			}
  			has_war = no
 			 stockpile_ratio = {
-				archetype = fighter_equipment
+				archetype = small_plane_airframe
 				ratio > 0.2
 			}
  	 		OR = {

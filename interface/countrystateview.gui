@@ -2553,16 +2553,16 @@ guiTypes = {
 				
 				#### BOTDE ####
 				
-				iconType = {
-					name = "terrain_ceske_budejovice_icon"
-					spriteType = "GFX_terrain_ceske_budejovice"
-					alwaystransparent = yes
-				}
-				iconType = {
-					name = "terrain_jihlava_icon"
-					spriteType = "GFX_terrain_jihlava"
-					alwaystransparent = yes
-				}	
+				# iconType = {
+				# 	name = "terrain_ceske_budejovice_icon"
+				# 	spriteType = "GFX_terrain_ceske_budejovice"
+				# 	alwaystransparent = yes
+				# }
+				# iconType = {
+				# 	name = "terrain_jihlava_icon"
+				# 	spriteType = "GFX_terrain_jihlava"
+				# 	alwaystransparent = yes
+				# }	
 				
 				# VANILLA
 

@@ -133,7 +133,60 @@ leader_traits = {
 		planning_skill_factor = 1
 		logistics_skill_factor = 1
 	}
+	engineer_officer = { 
+		type = land
+		trait_type = personality_trait
+		
+		trait_xp_factor = {
+			trait_engineer = 1     #+100%
+		}
+		
+		unit_trigger = {
+			OR = {
+				division_has_battalion_in_template = engineer
+				division_has_battalion_in_template = light_flame_tank
+				division_has_battalion_in_template = medium_flame_tank
+				division_has_battalion_in_template = heavy_flame_tank
+				owner = {
+					has_idea = superior_firepower_academy_spirit
+				}
+			}
+			owner = {
+				NOT = {
+					OR = {
+						has_idea = best_of_the_best_spirit
+						has_idea = academy_scholarships_spirit
+					}
+				}
+			}
+		}
+		
+		new_commander_weight = {
+			factor = 1
+			
+			modifier = {
+				FROM = { has_idea = superior_firepower_academy_spirit }
+				factor = 2
+			}
 
+			modifier = {
+				FROM = { has_idea = best_of_the_best_spirit }
+				factor = 0
+			}
+			modifier = {
+				FROM = { has_idea = academy_scholarships_spirit }
+				factor = 0
+			}
+			
+			modifier = {
+				FROM = { has_dlc = "By Blood Alone" }
+				factor = 0
+			}
+			
+		}
+		attack_skill_factor = 1
+		planning_skill_factor = 1
+	}
 	trait_cautious = { 
 		type = land
 		trait_type = personality_trait
