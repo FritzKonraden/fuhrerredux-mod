@@ -163,7 +163,7 @@ BRA_recovering_from_the_civil_war_ten = {
 }
 BRA_minor_drug_cartels = {
 	allowed = { original_tag = BRA }
-	picture = BRA_scw_intervention_republicans_focus
+	picture = idea_generic_deal_with_the_devil2
 	modifier = {
 		stability_factor = -0.3
 		production_factory_max_efficiency_factor = -0.05
@@ -171,7 +171,7 @@ BRA_minor_drug_cartels = {
 }
 BRA_back_in_time = {
 	allowed = { original_tag = BRA }
-	picture = generic_crippled_industry
+	picture = idea_generic_crippled_industry
 	modifier = {
 		production_speed_buildings_factor = -0.2
 		army_org_factor = -0.8

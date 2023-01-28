@@ -19,7 +19,7 @@ focus_tree = {
 			### Post Civil War ###
 		focus = { 
 			id = BRA_post_civil_war_elections
-			icon = GFX_goal_flag_brazil
+			icon = goal_flag_brazil
 	
 			 ai_will_do = { factor = 10 } 
 	
@@ -37,7 +37,7 @@ focus_tree = {
 	
 			completion_reward = {
 				hidden_effect = { 
-					country_event = { id = bra.27 }
+					
 				}
 				search_filters = {
 				 FOCUS_FILTER_POLITICAL
@@ -65,7 +65,7 @@ focus_tree = {
 			prerequisite = { focus = BRA_post_civil_war_elections }
 			mutually_exclusive = { focus = BRA_conservadores }
 			mutually_exclusive = { focus = BRA_socialistas }
-			mutually_exclusive = { focus = BRA_continacao_militar }
+			mutually_exclusive = { focus = BRA_status_quo }
 			completion_reward = {
 				}
 			search_filters = {
@@ -93,7 +93,7 @@ focus_tree = {
 			available_if_capitulated = no
 			prerequisite = { focus = BRA_post_civil_war_elections }
 			mutually_exclusive = { focus = BRA_socialistas }
-			mutually_exclusive = { focus = BRA_continacao_militar }
+			mutually_exclusive = { focus = BRA_status_quo}
 			mutually_exclusive = { focus = BRA_liberais }
 			completion_reward = {
 				}
@@ -121,7 +121,7 @@ focus_tree = {
 				available_if_capitulated = no
 				prerequisite = { focus = BRA_post_civil_war_elections }
 				mutually_exclusive = { focus = BRA_conservadores }
-				mutually_exclusive = { focus = BRA_continacao_militar }
+				mutually_exclusive = { focus = BRA_status_quo }
 				mutually_exclusive = { focus = BRA_liberais }
 				completion_reward = {
 				}
