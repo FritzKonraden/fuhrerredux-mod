@@ -11,6 +11,7 @@ focus_tree = {
 			tag = BRA
 		}
 	}
+}
 
 	default = no
 
@@ -40,10 +41,9 @@ focus_tree = {
 					
 				}
 				search_filters = {
-				 FOCUS_FILTER_POLITICAL
-				 }
-			} 
-		}
+					FOCUS_FILTER_POLITICAL
+					}
+				   } 
 
 		focus = { 
 			id = BRA_liberais
