@@ -3032,7 +3032,7 @@ country_event = { #sam help falangists
 		ai_chance = { factor = 100 }
 		FROM = {
 		send_equipment = {
-			target = SPF type = fighter_equipment amount = 50
+			target = SPF equipment = small_plane_airframe amount = 50
 			}
 		}
 	}
@@ -3049,7 +3049,7 @@ country_event = { #sam help republic
 		ai_chance = { factor = 100 }
 		FROM = {
 		send_equipment = {
-			target = SPR type = fighter_equipment amount = 50
+			target = SPR equipment = small_plane_airframe amount = 50
 			}
 		}
 	}
@@ -3066,7 +3066,7 @@ country_event = { #sam help collies
 		ai_chance = { factor = 100 }
 		FROM = {
 		send_equipment = {
-			target = SPA type = fighter_equipment amount = 50
+			target = SPA equipment = small_plane_airframe amount = 50
 			}
 		}
 	}
@@ -3122,7 +3122,7 @@ country_event = { #sam help bepis
 		ai_chance = { factor = 100 }
 		FROM = {
 		send_equipment = {
-			target = BPS type = infantry_equipment amount = 1000
+			target = BPS equipment = infantry_equipment amount = 1000
 			}
 		}
 	}
@@ -3139,7 +3139,7 @@ country_event = { #sam help republic
 		ai_chance = { factor = 100 }
 		FROM = {
 		send_equipment = {
-			target = BRA type = infantry_equipment amount = 1000
+			target = BRA equipment = infantry_equipment amount = 1000
 			}
 		}
 	}
@@ -3156,7 +3156,7 @@ country_event = { #sam help collies
 		ai_chance = { factor = 100 }
 		FROM = {
 		send_equipment = {
-			target = UBR type = infantry_equipment amount = 1000
+			target = UBR equipment = infantry_equipment amount = 1000
 			}
 		}
 	}
@@ -3173,7 +3173,7 @@ country_event = { #sam help bepis
 		ai_chance = { factor = 100 }
 		FROM = {
 		send_equipment = {
-			target = BPS type = fighter_equipment amount = 50
+			target = BPS equipment = small_plane_airframe amount = 50
 			}
 		}
 	}
@@ -3190,7 +3190,7 @@ country_event = { #sam help republic
 		ai_chance = { factor = 100 }
 		FROM = {
 		send_equipment = {
-			target = BRA type = fighter_equipment amount = 50
+			target = BRA equipment = small_plane_airframe amount = 50
 			}
 		}
 	}
@@ -3207,7 +3207,7 @@ country_event = { #sam help collies
 		ai_chance = { factor = 100 }
 		FROM = {
 		send_equipment = {
-			target = UBR type = fighter_equipment amount = 50
+			target = UBR equipment = small_plane_airframe amount = 50
 			}
 		}
 	}

@@ -250,6 +250,7 @@ on_actions = {
       add_to_array = { global.annexation_relevant_states = 670.id } # Vientiane
       add_to_array = { global.annexation_relevant_states = 336.id } # Kuala Lumpur
       add_to_array = { global.annexation_relevant_states = 608.id } # Beijing
+      add_to_array = { global.annexation_relevant_states = 328.id } # Hsinking
       add_to_array = { global.annexation_relevant_states = 330.id } # Mongolia
       add_to_array = { global.annexation_relevant_states = 327.id } # Manila
       add_to_array = { global.annexation_relevant_states = 785.id } # Sabah
@@ -262,7 +263,6 @@ on_actions = {
       add_to_array = { global.annexation_relevant_states = 405.id } # Turkestan
       add_to_array = { global.annexation_relevant_states = 604.id } # Xibei San Ma
       add_to_array = { global.annexation_relevant_states = 325.id } # Yunnan
-      add_to_array = { global.annexation_relevant_states = 597.id } # Zhili
       add_to_array = { global.annexation_relevant_states = 673.id } # Sulawesi
       add_to_array = { global.annexation_relevant_states = 668.id } # Moluccas
     } 

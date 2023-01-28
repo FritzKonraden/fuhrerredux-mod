@@ -41,6 +41,49 @@ occupy_massive_country = {
 }
 
 # state scope
+occupy_state = {
+	set_state_flag = occupied_by_@PREV
+	recheck_annexations = yes
+}
+
+# state scope
+transfer_and_occupy_state = {
+	transfer_state_to = PREV
+	set_state_flag = occupied_by_@PREV
+	recheck_annexations = yes
+}
+
+# state scope
+occupy_state_temporary = {
+	set_state_flag = occupied_by_@PREV
+	set_state_flag = temporarily_occupied_by_@PREV
+	recheck_annexations = yes
+}
+
+# state scope
+transfer_and_occupy_state_temporary = {
+	transfer_state_to = PREV
+	set_state_flag = occupied_by_@PREV
+	set_state_flag = temporarily_occupied_by_@PREV
+	recheck_annexations = yes
+}
+
+# state scope
+clear_occupy_state = {
+	clr_state_flag = occupied_by_@PREV
+	clr_state_flag = temporarily_occupied_by_@PREV
+	recheck_annexations = yes
+}
+
+# state scope
+state_given_notification_effect = {
+	hidden_effect = {
+		save_event_target_as = granted_land
+		state_event = { id = annex.2 trigger_for = owner }
+	}
+}
+
+# state scope
 retain_state = {
 	set_state_flag = { flag = retain_state_@PREV days = 16 value = 1 }
 	set_temp_variable = { retain_state_@THIS = 1 }
@@ -254,8 +297,13 @@ add_core_or_claim_of_target_and_transfer_if_owned = {
 }
 
 # country scope = {
-set_transfer_target = {
+set_transfer_target_cores = {
 	set_temp_variable = { transfer_target_@THIS = 1 }
+}
+
+# state scope = {
+set_transfer_target_state = {
+	set_temp_variable = { state_transfer_target_@THIS = 1 }
 }
 
 # global scope
@@ -279,7 +327,7 @@ remove_all_cores_and_claims_of_tags = {
 }
 
 # global scope
-transfer_territory_from_core_regions = {
+transfer_targeted_territory = {
 	if = {
 		limit = { has_war = yes }
 		every_owned_state = {
@@ -287,7 +335,10 @@ transfer_territory_from_core_regions = {
 				is_claim_or_core_of_ROOT = no
 				NOT = { has_state_flag = retain_state_@PREV }
 				NOT = { has_variable = retain_state_@THIS }
-				any_country_with_core = { has_variable = transfer_target_@THIS }
+				OR = {
+					has_variable = state_transfer_target_@THIS
+					any_country_with_core = { has_variable = transfer_target_@THIS }
+				}
 			}
 			transfer_state_without_overriding_occupation = yes
 		}
@@ -298,7 +349,10 @@ transfer_territory_from_core_regions = {
 				is_claim_or_core_of_ROOT = no
 				NOT = { has_state_flag = retain_state_@PREV }
 				NOT = { has_variable = retain_state_@THIS }
-				any_country_with_core = { has_variable = transfer_target_@THIS }
+				OR = {
+					has_variable = state_transfer_target_@THIS
+					any_country_with_core = { has_variable = transfer_target_@THIS }
+				}
 			}
 			transfer_state_to = var:tag_to_release
 		}
@@ -308,7 +362,7 @@ transfer_territory_from_core_regions = {
 }
 
 # global scope
-transfer_territory_from_core_regions_and_add_claims = {
+transfer_targeted_territory_and_add_claims = {
 	if = {
 		limit = { has_war = yes }
 		every_owned_state = {
@@ -316,7 +370,10 @@ transfer_territory_from_core_regions_and_add_claims = {
 				is_claim_or_core_of_ROOT = no
 				NOT = { has_state_flag = retain_state_@PREV }
 				NOT = { has_variable = retain_state_@THIS }
-				any_country_with_core = { has_variable = transfer_target_@THIS }
+				OR = {
+					has_variable = state_transfer_target_@THIS
+					any_country_with_core = { has_variable = transfer_target_@THIS }
+				}
 			}
 			if = {
 				limit = { NOT = { is_core_of = var:tag_to_release } }
@@ -331,7 +388,10 @@ transfer_territory_from_core_regions_and_add_claims = {
 				is_claim_or_core_of_ROOT = no
 				NOT = { has_state_flag = retain_state_@PREV }
 				NOT = { has_variable = retain_state_@THIS }
-				any_country_with_core = { has_variable = transfer_target_@THIS }
+				OR = {
+					has_variable = state_transfer_target_@THIS
+					any_country_with_core = { has_variable = transfer_target_@THIS }
+				}
 			}
 			if = {
 				limit = { NOT = { is_core_of = var:tag_to_release } }
@@ -345,7 +405,7 @@ transfer_territory_from_core_regions_and_add_claims = {
 }
 
 # global scope
-transfer_territory_from_core_regions_and_add_cores = {
+transfer_targeted_territory_and_add_cores = {
 	if = {
 		limit = { has_war = yes }
 		every_owned_state = {
@@ -353,7 +413,10 @@ transfer_territory_from_core_regions_and_add_cores = {
 				is_claim_or_core_of_ROOT = no
 				NOT = { has_state_flag = retain_state_@PREV }
 				NOT = { has_variable = retain_state_@THIS }
-				any_country_with_core = { has_variable = transfer_target_@THIS }
+				OR = {
+					has_variable = state_transfer_target_@THIS
+					any_country_with_core = { has_variable = transfer_target_@THIS }
+				}
 			}
 			add_core_of = var:tag_to_release
 			transfer_state_without_overriding_occupation = yes
@@ -365,7 +428,10 @@ transfer_territory_from_core_regions_and_add_cores = {
 				is_claim_or_core_of_ROOT = no
 				NOT = { has_state_flag = retain_state_@PREV }
 				NOT = { has_variable = retain_state_@THIS }
-				any_country_with_core = { has_variable = transfer_target_@THIS }
+				OR = {
+					has_variable = state_transfer_target_@THIS
+					any_country_with_core = { has_variable = transfer_target_@THIS }
+				}
 			}
 			add_core_of = var:tag_to_release
 			transfer_state_to = var:tag_to_release
@@ -377,13 +443,13 @@ transfer_territory_from_core_regions_and_add_cores = {
 
 # global scope
 release_targeted_tag_from_core_regions = {
-	transfer_territory_from_core_regions = yes
+	transfer_targeted_territory = yes
 	puppet_released_tag = yes
 }
 
 # global scope
 release_targeted_tag_from_core_regions_and_add_cores = {
-	transfer_territory_from_core_regions_and_add_cores = yes
+	transfer_targeted_territory_and_add_cores = yes
 	puppet_released_tag = yes
 }
 
@@ -583,7 +649,117 @@ core_india_for_faction = {
     add_state_core = 988
   }
 }
-
+determine_chinese_releaser = {
+	if = {
+		limit = {
+			tag = JAP 
+		}
+		if = {
+			limit = {
+				ZHI = {
+					exists = yes 
+					is_in_faction_with = JAP 
+				}
+			}
+			ZHI = { save_event_target_as = china_ally_target }
+		}
+		else_if = {
+			limit = {
+				ZHI = {
+					exists = no  
+				}
+			}
+			ZHI = { save_event_target_as = china_release_target }
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_authoritarian_government = yes 
+				has_democratic_right_government = yes
+			} 
+		}
+		if = {
+			limit = {
+				AND = {
+					CHI = {
+						exists = yes 
+						OR = {
+							is_in_faction_with = GER
+							is_in_faction_with = RUS
+						} 
+					}
+				}
+			}
+			CHI = { save_event_target_as = china_ally_target }
+		}
+		else_if = {
+			limit = {
+				AND = {
+					CHI = {
+						exists = no  
+					}
+				}
+			}
+			CHI = { save_event_target_as = china_release_target }
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_socialist_government = yes
+				has_democratic_left_government = yes 
+			} 
+		}
+		if = {
+			limit = {
+				AND = {
+					KMT = {
+						exists = yes 
+						is_in_faction_with = JAP 
+					}
+				}
+			}
+			KMT = { save_event_target_as = china_ally_target }
+		}
+		else_if = {
+			limit = {
+				AND = {
+					KMT = {
+						exists = no  
+					}
+				}
+			}
+			KMT = { save_event_target_as = china_release_target }
+		}
+	}
+}
+determine_ally_china = {
+	if = {
+        limit = {
+          ZHI = {
+            is_puppet = yes 
+          }
+        }
+        ZHI = { save_event_target_as = china_ally_target }
+      }
+      else_if = {
+        limit = {
+          CHI = {
+            is_puppet = yes 
+          }
+        }
+        CHI = { save_event_target_as = china_ally_target }
+      }
+      else_if = { 
+        limit = {
+          KMT = {
+            is_puppet = yes 
+          }
+       }
+       KMT = { save_event_target_as = china_ally_target }
+      }
+}
 release_chinese_government = {
   every_owned_state = {
     limit = {

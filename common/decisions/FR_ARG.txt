@@ -384,7 +384,9 @@ SAM_SCW_matters = {
 				}
  			}
  			has_war = no
- 	 		has_equipment = { fighter_equipment > 50 } 
+			has_equipment = {
+				small_plane_airframe > 50
+			}
  	 		OR = {
  	 			has_government = valkist
  	 			has_government = national_populist
@@ -438,7 +440,10 @@ SAM_SCW_matters = {
 				}
  			}
  			has_war = no
- 	 		has_equipment = { fighter_equipment > 50 } 
+			 stockpile_ratio = {
+				archetype = small_plane_airframe
+				ratio > 0.2
+			}
  	 		OR = {
  	 			has_government = social_democrat
  	 			has_government = social_liberal
@@ -495,7 +500,10 @@ SAM_SCW_matters = {
 				}
  			}
  			has_war = no
- 	 		has_equipment = { fighter_equipment > 50 } 
+			 stockpile_ratio = {
+				archetype = small_plane_airframe
+				ratio > 0.2
+			}
  	 		OR = {
  	 			has_government = libertarian_socialist
  	 			has_government = collectivist
@@ -902,7 +910,10 @@ SAM_BCW_matters = {
 				}
  			}
  			has_war = no
- 	 		has_equipment = { fighter_equipment > 50 } 
+			 stockpile_ratio = {
+				archetype = small_plane_airframe
+				ratio > 0.2
+			}
  	 		OR = {
  	 			has_government = valkist
  	 			has_government = national_populist
@@ -950,7 +961,10 @@ SAM_BCW_matters = {
 				}
  			}
  			has_war = no
- 	 		has_equipment = { fighter_equipment > 50 } 
+			 stockpile_ratio = {
+				archetype = small_plane_airframe
+				ratio > 0.2
+			}
  	 		OR = {
  	 			has_government = social_democrat
  	 			has_government = social_liberal
@@ -1001,7 +1015,10 @@ SAM_BCW_matters = {
 				}
  			}
  			has_war = no
- 	 		has_equipment = { fighter_equipment > 50 } 
+			 stockpile_ratio = {
+				archetype = small_plane_airframe
+				ratio > 0.2
+			}
  	 		OR = {
  	 			has_government = libertarian_socialist
  	 			has_government = collectivist

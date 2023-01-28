@@ -1,4 +1,15 @@
 characters = {
+  PHI_Armed_Forces_Command = {
+    name = "Armed Forces Command"
+    portraits = {
+      civilian = {
+        large = "gfx/leaders/PHI/Portrait_PHI_Armed_Forces_Command.png"
+      }
+    }
+    country_leader = {
+      ideology = paternal_autocrat_subtype
+    }
+  }
 	PHI_Luis_Taruc = {
 		name = "Luis Taruc"
 		portraits = {

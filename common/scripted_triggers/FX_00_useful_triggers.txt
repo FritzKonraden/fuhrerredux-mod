@@ -586,6 +586,7 @@ is_chinese_tag = {
 		tag = XSM
 		tag = SIK
 		tag = PRC
+		tag = KMT 
 	}
 }
 is_dutch_tag = {
@@ -929,3 +930,108 @@ is_british_colonial_claim = {
 		state = 270
 	}
 }	
+is_han_chinese_region = {
+	OR = {
+		#Zhili
+		state = 609
+		state = 608
+		state = 932
+		state = 874
+		state = 614
+		#Shanxi
+		state = 983
+		state = 615
+		#Shaanxi
+		state = 622
+		state = 890
+		#Suiyuan
+		state = 621
+		state = 982
+		#Shandong (except 894 / 869)
+		state = 597
+		state = 1020
+		#Henan
+		state = 891
+		state = 607
+		#Anhui
+		state = 606
+		state = 934
+		#Jiangsu
+		state = 598
+		state = 895
+		#Shanghai 
+		state = 613
+		#Zhejiang
+		state = 596
+		state = 1026
+		state = 1027
+		state = 1028
+		state = 1025
+		#Hubei
+		state = 620
+		state = 984
+		#Hunan
+		state = 892
+		state = 1023
+		state = 1022
+		state = 602
+		state = 1024
+		#Jiangxi
+		state = 600
+		#Fujian 
+		state = 595
+		#Guangdong
+		state = 593
+		state = 592
+		state = 893
+		state = 591
+		#Guangxi
+		state = 599
+		state = 594
+		#Yunnan
+		state = 325
+		state = 1008
+		#Guizhou
+		state = 603
+		#Sichuan
+		state = 605
+		#Xikang
+		state = 601
+		#Ningxia
+		state = 939
+		#Gansu
+		state = 616
+		state = 283
+		#Qinghai
+		state = 604
+		#Chahar
+		state = 612
+		state = 611
+	}
+}
+is_manchuria = {
+	or = {
+		state = 930
+		state = 610
+		state = 870
+		state = 872
+		state = 714
+		state = 715
+		state = 716
+		state = 879
+		state = 880
+		state = 717
+		state = 328
+		state = 929
+		state = 871
+	}
+}
+is_xinjiang = {
+	or = {
+		state = 618
+		state = 617
+		state = 975
+		state = 287
+		state = 619
+	}
+}

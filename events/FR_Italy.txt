@@ -8584,7 +8584,7 @@ country_event = { # Italy - relations with Greece?
 		name = ita.144.b
 		add_opinion_modifier = { target = GRE modifier = ITA_praises_us }
 		add_equipment_to_stockpile = {
-			type = fighter_equipment
+			type = small_plane_airframe
 			amount = -25
 			producer = ITA
 		}		
@@ -8621,7 +8621,7 @@ country_event = { # Greece - Italy praises us and offers aircraft
 	option = {
 		name = ita.146.a
 		add_equipment_to_stockpile = {
-			type = fighter_equipment
+			type = small_plane_airframe
 			amount = 25
 			producer = ITA
 		}			

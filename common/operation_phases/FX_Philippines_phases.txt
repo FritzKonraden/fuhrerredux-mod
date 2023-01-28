@@ -27,11 +27,11 @@ PHI_infiltration_train_vietminh_fighters = {
 
   requirements = {
     ROOT = {
-      has_equipment = { infantry_equipment_1 > 0 }
+      has_equipment = { infantry_equipment > 0 }
     }
   }
   equipment = {
-    infantry_equipment_1 = 1000
+    infantry_equipment = 1000
   }
 }
 
@@ -44,11 +44,11 @@ PHI_infiltration_train_insulindian_fighters = {
 
   requirements = {
     ROOT = {
-      has_equipment = { infantry_equipment_1 > 0 }
+      has_equipment = { infantry_equipment > 0 }
     }
   }
   equipment = {
-    infantry_equipment_1 = 1000
+    infantry_equipment = 1000
   }
 }
 
@@ -61,10 +61,10 @@ PHI_infiltration_train_korean_fighters = {
 
   requirements = {
     ROOT = {
-      has_equipment = { infantry_equipment_1 > 0 }
+      has_equipment = { infantry_equipment > 0 }
     }
   }
   equipment = {
-    infantry_equipment_1 = 1000
+    infantry_equipment = 1000
   }
 }
