@@ -16,7 +16,10 @@ The required files for the mod Fuhrerredux for the Paradox game Hearts of Iron I
 4)Take all of its contents and put them in the folder of the mod you created previously           
 5)When prompted to replace files, say yes
 6)In the mod file, there should be a .mod file with the name of the mod you created. Edit this file to include the following in the end:
-```
+<details><summary>CLICK ME</summary>
+<p>
+
+```lua
 replace_path="common/abilities"
 replace_path="common/ai_areas"
 replace_path="common/ai_equipment"
@@ -76,7 +79,10 @@ replace_path="map/strategicregions"
 replace_path="portraits"
 replace_path="tests"
 ```
-Note: you need to include them, so you don't need to delete anything else.
+</p>
+</details>
+
+Note: you need to **include them**, so you don't need to delete anything else.
 ## How to become a developer?
 To become a developer, you need to join our Discord Server and do the application on the #recruitment channel! Then dm @dax#0254, so he can review and accept your
 application!
@@ -103,3 +109,38 @@ We regularly post teasers on our discord server about new content!
 - Dutch Royalists
 ## Released
 - Belarus
+
+#### if your read this far, congrats!
+##### ENJOY A TRIANGLE
+```stl
+solid bulgaria_flag
+  facet normal 0.0 -1.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 1.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+  facet normal 0.0 0.0 -1.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 1.0 0.0 0.0
+    endloop
+  endfacet
+  facet normal -1.0 0.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+      vertex 0.0 1.0 0.0
+    endloop
+  endfacet
+  facet normal 0.577 0.577 0.577
+    outer loop
+      vertex 1.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+endsolid
+```
