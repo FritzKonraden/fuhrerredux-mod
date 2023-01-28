@@ -790,22 +790,12 @@ country_event = {
 	option = {
 		name = "Thee the plague to destroy the emperor, we must execute in no time"
 		set_country_flag = JAP_ultraroy_1
-		JAP_Akira_Muto = {
-			retire_character = THIS 
-		}
-		JAP_Sadao_Araki = {
-			retire_character = THIS
-		}
-		JAP_Shigeru_Honjo = {
-			retire_character = THIS 
-		}
-		JAP_Masaki_Jinzaburo = {
-			retire_character = THIS 
-		}
+		retire_character = JAP_Akira_Muto
+		retire_character = JAP_Sadao_Araki
+		retire_character = JAP_Shigeru_Honjo
+		retire_character = JAP_Masaki_Jinzaburo
 		hidden_effect = {
-			JAP_Araki_Sadao = {
-				retire_character = THIS
-			}
+			retire_character = JAP_Araki_Sadao
 		}
 		country_event = {
 			id = jap_shogundom.3
@@ -815,16 +805,10 @@ country_event = {
 	option = {
 		name = "No need to kill, show some mercy"
 		set_country_flag = JAP_ultraroy_2
-		JAP_Sadao_Araki = {
-			retire_character = THIS
-		}
-		JAP_Masaki_Jinzaburo = {
-			retire_character = THIS 
-		}
+		retire_character = JAP_Sadao_Araki
+		retire_character = JAP_Masaki_Jinzaburo
 		hidden_effect = {
-			JAP_Araki_Sadao = {
-				retire_character = THIS
-			}
+			retire_character = JAP_Araki_Sadao
 		}
 		country_event = {
 			id = jap_shogundom.3
@@ -842,12 +826,8 @@ country_event = {
 	option = {
 		name = "Thee the root of bringing nation on disadvantage, we must execute in no time"
 		set_country_flag = JAP_ultranat_1
-		JAP_Kenji_Doihara = {
-			retire_character = THIS
-		}
-		JAP_Konoe_Fumimaro = {
-			retire_character = THIS
-		}
+		retire_character = JAP_Kenji_Doihara
+		retire_character = JAP_Konoe_Fumimaro
 		country_event = {
 			id = jap_shogundom.4
 			days = 1 
@@ -856,9 +836,7 @@ country_event = {
 	option = {
 		name = "No need to kill, show some mercy"
 		set_country_flag = JAP_ultranat_2
-		JAP_Kenji_Doihara = {
-			retire_character = THIS
-		}
+		retire_character = JAP_Kenji_Doihara
 		country_event = {
 			id = jap_shogundom.4
 			days = 1 

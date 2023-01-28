@@ -961,6 +961,7 @@ is_han_chinese_region = {
 		#Henan
 		state = 891
 		state = 607
+		state = 1041
 		#Anhui
 		state = 606
 		state = 934
@@ -1012,6 +1013,7 @@ is_han_chinese_region = {
 		state = 283
 		#Qinghai
 		state = 604
+		state = 1042
 		#Chahar
 		state = 612
 		state = 611

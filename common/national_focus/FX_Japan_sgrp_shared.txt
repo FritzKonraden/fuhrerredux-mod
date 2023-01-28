@@ -755,10 +755,11 @@ shared_focus = {
 	cost = 4
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: JAP_military_disintegration"
+		add_stability = -0.03
 		add_ideas = JAP_seperation_command_1
 		every_unit_leader = {
 			limit = {
-				tag = JAP 
+				has_nationality = JAP 
 			}
 			add_skill_level = 1
 		}
@@ -776,6 +777,7 @@ shared_focus = {
 	cost = 4
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: JAP_uphold_prefecturare_imperium"
+		add_stability = -0.05
 		swap_ideas = {
 			remove_idea = JAP_seperation_command_1
 			add_idea = JAP_seperation_command_2
