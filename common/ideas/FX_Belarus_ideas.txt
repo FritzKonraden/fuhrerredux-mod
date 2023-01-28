@@ -195,7 +195,7 @@ ideas = {
 			allowed = { original_tag = BLR }
 			picture = generic_license_production
 			equipment_bonus = { #Doesn't work and cause bug, please find new buff asap
-				motorized = {
+				motorized_equipment = {
 					build_cost_ic = -0.15
 					instant = yes
 				}
