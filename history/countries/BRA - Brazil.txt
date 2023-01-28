@@ -90,15 +90,15 @@ set_popularities = {
     authoritarian_democrat = 5
 	valkist = 5
 }
-
 add_ideas = {
 	party_pop_0_30
 	limited_conscription
-	BRA_political_instability
+	presidential_republic
 	BRA_minor_drug_cartels
 	BRA_back_in_time
-	presidential_republic
+	BRA_political_instability
 }
+
 
 set_convoys = 40
 set_stability = 0.30

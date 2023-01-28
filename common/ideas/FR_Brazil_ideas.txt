@@ -39,7 +39,7 @@ ideas = {
 				army_org_factor = 0.05
 			}
 		}
-	}
+	
 	BRA_recovering_from_the_civil_war = {
 		allowed = { original_tag = BRA }
 		picture = BRA_scw_intervention_republicans_focus
@@ -176,6 +176,7 @@ BRA_back_in_time = {
 		production_speed_buildings_factor = -0.2
 		army_org_factor = -0.8
 		army_morale_factor = -0.1
+}
 }
 }
 
