@@ -25,7 +25,7 @@ shared_focus = {
 	x = 16
 	y = 9
 	allow_branch = {
-		#has_country_flag = JAP_Iesato_Death
+		has_country_flag = JAP_Iesato_Death
 		always = yes 
 	}
 	cost = 5

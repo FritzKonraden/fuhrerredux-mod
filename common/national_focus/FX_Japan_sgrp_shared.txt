@@ -59,7 +59,7 @@ shared_focus = {
 		add_stability = 0.05
 		add_popularity = {
 			ideology = authoritarian_democrat
-			popularity = 0.1
+			popularity = 0.05
 		}
 	}
 }
@@ -79,7 +79,7 @@ shared_focus = {
 		add_war_support = 0.05
 		add_popularity = {
 			ideology = authoritarian_democrat
-			popularity = 0.1
+			popularity = 0.05
 		}
 	}
 }
@@ -419,11 +419,8 @@ shared_focus = {
 			ruling_party = authoritarian_democrat
    			elections_allowed = no
 		}
-		recruit_character = JAP_Tokugawa_Iemasa
-		hidden_effect = {
-			remove_every_hog_trait = yes  
-			activate_advisor = JAP_Tokugawa_Iemasa_hog_ade
-		}
+		remove_every_hog_trait = yes  
+		activate_advisor = JAP_Tokugawa_Iemasa_hog_ade
 	}
 }
 shared_focus = {
@@ -670,7 +667,8 @@ shared_focus = {
 		}
 		set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
 		remove_from_coalition = yes 
-		recruit_character = JAP_Matsudaira_Tsuneo
+		remove_every_for_trait = yes  
+		activate_advisor = JAP_Matsudaira_Tsuneo_for_ade
 		hidden_effect = {
 			add_country_leader_role = {
 				character = JAP_Hirohito 
@@ -680,8 +678,6 @@ shared_focus = {
 				  expire = "1965.1.1.1"
 				}
 			}
-			remove_every_for_trait = yes  
-			activate_advisor = JAP_Matsudaira_Tsuneo_for_ade
 		}
 	}
 }
@@ -711,9 +707,16 @@ shared_focus = {
 	}
 	cost = 4
 	select_effect = {
-		recruit_character = JAP_Shimazu_Tadashige
-		recruit_character = JAP_Toshinari_Maeda
-		recruit_character = JAP_Kacho_Hironobu
+		every_unit_leader = {
+			limit = {
+				OR = {
+					character = JAP_Shimazu_Tadashige
+					character = JAP_Toshinari_Maeda
+					character = JAP_Kacho_Hironobu
+				}
+			}
+			set_character_flag = JAP_leader
+		}
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: JAP_reinstall_dismissals"
@@ -759,7 +762,7 @@ shared_focus = {
 		add_ideas = JAP_seperation_command_1
 		every_unit_leader = {
 			limit = {
-				has_nationality = JAP 
+				has_character_flag = JAP_leader
 			}
 			add_skill_level = 1
 		}
@@ -839,7 +842,7 @@ shared_focus = {
 	cost = 4
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: JAP_bureaucrat_reform"
-		add_stability = 0.1
+		add_stability = 0.05
 	}
 }
 shared_focus = {
@@ -1136,7 +1139,7 @@ shared_focus = {
 	cost = 4
 	completion_reward = {
 		ENG = {
-			country_event = jap_foreign.1 
+			country_event = jap_foreign.2 
 		}
 	}
 }
@@ -1284,7 +1287,7 @@ shared_focus = {
 	cost = 4
 	completion_reward = {
 		SOV = {
-			country_event = jap_foreign.1 
+			country_event = jap_foreign.3 
 		}
 	}
 }
@@ -1300,7 +1303,21 @@ shared_focus = {
 	}
 	cost = 4
 	completion_reward = {
-
+		random_country = {
+			limit = {
+				AND = {
+					is_in_faction_with = JAP 
+					is_faction_leader = yes
+					NOT = {
+						has_socialist_government = yes 
+					}
+				} 
+			}
+			add_ideas = JAP_foreign_liaison_office
+		}
+		JAP = {
+			add_ideas = JAP_foreign_liaison_office
+		}
 	}
 }
 shared_focus = {
@@ -1315,7 +1332,7 @@ shared_focus = {
 	}
 	cost = 4
 	completion_reward = {
-
+		add_ideas = JAP_overseas_affairs_office_idea
 	}
 }
 shared_focus = {
@@ -1329,7 +1346,17 @@ shared_focus = {
 	}
 	cost = 4
 	completion_reward = {
-
+		random_country = {
+			limit = {
+				AND = {
+					tag = SOV 
+					is_in_faction_with = JAP 
+					is_faction_leader = yes
+				} 
+			}
+			add_ideas = JAP_comintern_far_east_office
+		}
+		JAP = { add_ideas = JAP_comintern_far_east_office }
 	}
 }
 shared_focus = {
@@ -1344,7 +1371,7 @@ shared_focus = {
 	}
 	cost = 4
 	completion_reward = {
-		#add_ideas = JAP_beating_the_war_drum
+		add_ideas = JAP_beating_the_war_drum
 	}
 }
 shared_focus = {
@@ -1361,13 +1388,7 @@ shared_focus = {
 		every_country = {
 			limit = {
 				or = {
-					tag = CHI 
-					tag = MAN 
-					tag = ZHI 
-					tag = XSM
-					tag = SHX 
-					tag = YUN
-					tag = SCH
+					is_chinese_tag = yes
 				}
 				exists = yes 
 			}
@@ -1458,7 +1479,12 @@ shared_focus = {
 	}
 	cost = 4
 	completion_reward = {
-
+		SIA = {
+			country_event = {
+				id = jap_foreign.4
+				days = 7
+			}
+		}
 	}
 }
 shared_focus = {
@@ -1517,7 +1543,10 @@ shared_focus = {
 	}
 	cost = 4
 	completion_reward = {
-
+		country_event = {
+			id = jap_foreign.7
+			days = 7 
+		}
 	}
 }
 shared_focus = {

@@ -1,5 +1,5 @@
 capital = 282
-load_focus_tree = FR_Japan
+load_focus_tree = FR_Japan_Tree
 oob = "JAP"
 
 set_convoys = 400
@@ -959,3 +959,12 @@ recruit_character = JAP_Jiichiro_Matsumoto
 recruit_character = JAP_Yamakawa_Kikue
 recruit_character = JAP_Hashimoto_Kingoro
 recruit_character = JAP_Sanzo_Nosaka
+recruit_character = JAP_Shimazu_Tadashige
+recruit_character = JAP_Toshinari_Maeda
+recruit_character = JAP_Kacho_Hironobu
+recruit_character = JAP_Matsudaira_Tsuneo
+recruit_character = JAP_Tokugawa_Iemasa
+###
+every_unit_leader = {
+	set_character_flag = JAP_leader
+}

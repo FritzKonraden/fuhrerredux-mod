@@ -4,7 +4,7 @@
 
 focus_tree = {
 
-	id = FR_JAP
+	id = FR_Japan_Tree
 
 	country = {
 		factor = 0

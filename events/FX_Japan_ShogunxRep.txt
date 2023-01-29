@@ -1466,7 +1466,7 @@ country_event = {
 country_event = {
 	id = jap_foreign.2
 	title = "Japanese Government seeks the diplomatic alliance with Britain"
-	desc = jap_foreign.1.d 
+	desc = jap_foreign.2.d 
 
 	is_triggered_only = yes 
 
@@ -1478,12 +1478,166 @@ country_event = {
 country_event = {
 	id = jap_foreign.3
 	title = "Japanese Government seeks the diplomatic alliance with Moscow Authority"
-	desc = jap_foreign.1.d 
+	desc = jap_foreign.3.d 
 
 	is_triggered_only = yes 
 
 	option = {
 		name = "Comrade, welcome to the great home of revolution"
 		SOV = { add_to_faction = JAP }
+	}
+}
+country_event = {
+	id = jap_foreign.4
+	title = "Telegram from Tokyo"
+	desc = jap_foreign.4.d
+
+	is_triggered_only = yes 
+	
+	option = {
+		name = "It's time of Asian to be stronger"
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				SIA = { is_faction_leader = no } 
+			}
+		}
+		JAP = {
+			country_event = jap_foreign.5
+		}
+		if = {
+			limit = {
+				JAP = {
+					is_faction_leader = yes 
+				}
+			}
+			JAP = { add_to_faction = SIA }
+		}
+		else_if = {
+			limit = {
+				any_country = {
+					AND = {
+						is_in_faction_with = JAP
+						is_faction_leader = yes
+						is_major = yes 
+					} 
+				}
+			}
+			random_country = {
+				limit = {
+					AND = {
+						is_in_faction_with = JAP
+						is_faction_leader = yes
+						is_major = yes 
+					} 
+				}
+				add_to_faction = SIA 
+			}
+		}
+	}
+	option = {
+		name = "We want to be alone"
+		add_stability = -0.03
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				SIA = { is_faction_leader = yes } 
+			}
+		}
+		JAP = {
+			country_event = jap_foreign.6
+		}
+	}
+}
+country_event = {
+	id = jap_foreign.5
+	title = "Siam Accepted Our Alliance"
+	desc = jap_foreign.5.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "Good!!"
+		add_stability = 0.01
+	}
+}
+country_event = {
+	id = jap_foreign.6
+	title = "Siam Denied Our Alliance"
+	desc = jap_foreign.6.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "Don't take it seriously"
+		add_stability = -0.01
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = "Now, it's time to use our force"
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.10
+		create_wargoal = {
+			type = annex_everything
+			target = SIA 
+		}
+	}
+}
+country_event = {
+	id = jap_foreign.7
+	title = "Ultimatum from Tokyo"
+	desc = jap_foreign.7.d
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "We accept this ultimatum"
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 10
+				RUS = {
+					OR = {
+						has_dictatorial_government = yes
+						has_democratic_right_government = yes
+					} 
+				}
+			}
+		}
+		JAP = {
+			set_autonomy = {
+				target = RUS
+				autonomy_state = autonomy_puppet
+			}
+		}
+	}
+	option = {
+		name = "We are what we were!! Fight the Japanese"
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 10
+				RUS = {
+					NOT = {
+						OR = {
+							has_dictatorial_government = yes
+							has_democratic_right_government = yes 
+						} 
+					} 
+				}
+			}
+		}
+		JAP = {
+			create_wargoal = {
+				type = annex_everything
+				target = RUS 
+			}
+		}
 	}
 }
