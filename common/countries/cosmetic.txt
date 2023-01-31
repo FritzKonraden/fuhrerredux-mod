@@ -578,3 +578,7 @@ BLR_LITVINISM = {
 	color = rgb { 154 69 116 }
 	color_ui = rgb { 154 69 116 }
 }
+BUL_balkan_union_UNIFIED = {
+	color = rgb { 11 11 11 }
+	color_ui = rgb { 11 11 11 }
+}

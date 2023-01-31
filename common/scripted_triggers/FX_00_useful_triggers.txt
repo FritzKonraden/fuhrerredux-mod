@@ -1035,3 +1035,46 @@ is_xinjiang = {
 		state = 619
 	}
 }
+is_balkan_state = {
+	OR = {
+		is_core_of = BUL
+		is_core_of = GRE
+		is_core_of = ALB
+		is_core_of = ROM
+		is_core_of = TUR
+		is_core_of = SER
+		state = 796
+		state = 163
+		state = 736
+		state = 917
+		state = 770
+
+	}
+	is_on_continent = europe
+	#state = 341
+}
+is_balkan_island_state = {
+	OR = {
+		state = 187
+		state = 164
+		state = 182
+	}
+
+}
+is_balkan_island_state_or_cyprus = {
+	OR = {
+		state = 187
+		state = 164
+		state = 182
+		state = 183
+	}
+}
+is_original_bulgarian_state = {
+	OR = {
+		state = 764
+		state = 48
+		state = 212
+		state = 211
+		state = 766
+	}
+}

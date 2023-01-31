@@ -2,7 +2,7 @@
 #
 #
 focus_tree = {
-	id = FR_bulgaria
+	id = FX_bulgaria
 	country = { 
 		factor = 0
 		modifier = {
@@ -18,7 +18,7 @@ focus_tree = {
 	#RECLAMATION OF OLD LANDS PATH + Army
 	focus = {
 		id = BUL_expand_armed_forces
-		icon =  GFX_goal_BUL_armed_forces
+		icon = GFX_goal_BUL_armed_forces
 		x = 2
 		y = 0
 		cost = 2
@@ -68,6 +68,25 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = BUL_NO_SHIT_HERE_TOODALU
+		icon = GFX_NO_ICON_FOR_YOU
+		cost = 0
+		x = 0
+		y = 1
+		relative_position_id = BUL_reclaim_peacefully
+		prerequisite = {
+			focus = BUL_reclaim_peacefully
+		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = BUL_man_the_guns
+			}
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
 		id = BUL_man_the_guns
 		icon = GFX_goal_refugee_management
 		cost = 5
@@ -93,7 +112,7 @@ focus_tree = {
 	focus = {
 		id = BUL_territorial_ambitions_fulfilled
 		icon = GFX_goal_refugee_management
-		cost = 5
+		cost = 2
 		x = 0
 		y = 3
 		relative_position_id = BUL_reclamation
@@ -183,6 +202,30 @@ focus_tree = {
 			focus = BUL_sabotage_serbia
 			focus = BUL_question_of_thrace
 		}
+		available = {
+			NOT = {
+				77 = {
+					owner = {
+						original_tag = BUL
+					}
+				}
+				861 = {
+					owner = {
+						original_tag = BUL
+					}
+				}
+			}
+		}
+		bypass = {
+			if = {
+				limit = {
+					BUL = {
+						owns_state = 77
+						owns_state = 861
+					}
+				}
+			}
+		}
 	}
 	focus = {
 		id = BUL_integrate_macedonia
@@ -223,18 +266,12 @@ focus_tree = {
 	focus = {
 		id = BUL_proclaim_the_third_empire
 		icon = GFX_goal_refugee_management 
-		cost = 10
+		cost = 7
 		x = 0
 		y = 1
 		relative_position_id = BUL_territorial_ambitions_fulfilled
 		prerequisite = {
 			focus = BUL_territorial_ambitions_fulfilled
-		}
-		available = {
-			OR = {
-				has_government = authoritarian_democrat
-				has_government = paternal_autocrat
-			}
 		}
 		completion_reward = {
 			set_cosmetic_tag = BUL_third_empire
@@ -316,4 +353,177 @@ focus_tree = {
 			custom_effect_tooltip = 2_bul_tt
 		}
 	}
+	focus = {
+		id = BUL_future_of_empire
+		icon = GFX_goal_BUL_armed_forces
+		cost = 3
+		x = 0
+		y = 2
+		relative_position_id = BUL_proclaim_the_third_empire
+		prerequisite = {
+			focus = BUL_proclaim_the_third_empire
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_war_support = 0.1
+			add_stability = 0.1
+			army_experience = 50
+			navy_experience = 50
+			air_experience = 50
+		}
+	}
+	focus = {
+		id = BUL_empire_bulgarian
+		icon = GFX_goal_refugee_management
+		relative_position_id = BUL_future_of_empire
+		prerequisite = {
+			focus = BUL_future_of_empire
+		}
+		mutually_exclusive = {			
+			focus = BUL_empire_greek_bulgarian
+			focus = BUL_empire_balkan
+		}
+		x = -2
+		y = 1
+	}
+	# BALKAN EMPIRE FOCUSES HERE 
+	focus = {
+		id = BUL_empire_balkan
+		icon = GFX_goal_refugee_management
+		mutually_exclusive = {
+			focus = BUL_empire_bulgarian
+			focus = BUL_empire_greek_bulgarian
+		}
+		relative_position_id = BUL_future_of_empire
+		prerequisite = {
+			focus = BUL_future_of_empire
+		}
+		available = {
+			BUL = {
+				OR = {
+					has_government = collectivist
+					has_government = libertarian_socialist
+					has_government = social_democrat 
+				}
+
+			}
+		}
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = BUL_subjucate_balkans
+		icon = GFX_goal_refugee_management
+		relative_position_id = BUL_empire_balkan
+		prerequisite = {
+			focus = BUL_empire_balkan
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			BUL = {
+				create_wargoal = {
+					target = GRE
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ROM
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = SER
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ALB
+					type = annex_everything
+				}
+			}
+		}
+	}
+	focus = {
+		id = BUL_integrate_balkans
+		icon = GFX_goal_refugee_management
+		cost = 5
+		x = -2
+		y = 0
+		relative_position_id = BUL_subjucate_balkans
+		prerequisite = {
+			focus = BUL_subjucate_balkans
+		}
+		available = {
+			any_owned_state = {
+				is_balkan_state = yes
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = 3_bul_tt
+			every_owned_state = {
+				limit = {
+					is_balkan_state = yes
+					controller = {
+						original_tag = BUL
+					}
+				}
+				add_core_of = BUL
+			}
+		}
+	}
+	focus = {
+		id = BUL_the_balkan_empire
+		icon = GFX_goal_refugee_management
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_integrate_balkans
+		prerequisite = {
+			focus = BUL_integrate_balkans
+		}
+		completion_reward = {
+			set_cosmetic_tag = BUL_balkan_union_UNIFIED
+		}
+	}
+	focus = {
+		id = BUL_the_balkan_spirit
+		icon = GFX_goal_refugee_management
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_the_balkan_empire
+		prerequisite = {
+			focus = BUL_the_balkan_empire
+		}
+		completion_reward = {
+			add_ideas = BUL_balkan_spirit
+		}
+	}
+	focus = {
+		id = BUL_puppet_things
+		icon = GFX_goal_refugee_management
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_the_balkan_spirit
+		prerequisite = {
+			focus = BUL_the_balkan_spirit
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = BUL_empire_greek_bulgarian
+		icon = GFX_goal_refugee_management
+		relative_position_id = BUL_future_of_empire
+		prerequisite = {
+			focus = BUL_future_of_empire
+		}
+		mutually_exclusive = {			
+			focus = BUL_empire_bulgarian
+			focus = BUL_empire_balkan
+		}
+		x = 2
+		y = 1
+	}
+
 }

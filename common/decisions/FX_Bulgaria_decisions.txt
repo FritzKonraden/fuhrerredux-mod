@@ -32,4 +32,26 @@ foreign_politics = {
       }
     }
   }
+
 }
+  #Balkan empire shit
+BUL_manage_balkans_category = {
+	BUL_manage_balkans = {
+		allowed = {
+			original_tag = BUL
+		}
+		available = {
+			FROM = {
+				has_completed_focus = BUL_puppet_things
+				NOT = {
+					has_government = national_populist
+			  }
+			}
+		  }
+		visible = {
+			FROM = {
+				has_completed_focus = BUL_puppet_things
+			}
+		}
+	}
+  }

@@ -1,5 +1,36 @@
 ideas = {
   country = {
+	#Balkan Empire ideas
+	BUL_balkan_spirit = {
+		on_add = {
+			log = "[GetDateText]: [Root.GetName]: add idea BUL_balkan_spirit"
+		}
+		allowed = {
+			original_tag = BUL
+		}
+		removal_cost = -1
+		picture = bul_the_fate_of_the_balkans
+		modifier = {
+			stability_factor = 0.1
+			war_support_factor = 0.1
+			conscription_factor = 0.1
+			command_power_gain_mult = 0.1
+			consumer_goods_factor = -0.05
+			political_power_factor = 0.1
+			monthly_population = 0.02
+			surrender_limit = 1.5
+			trade_opinion_factor = 0.05
+			guarantee_tension = 0.1
+			annex_cost_factor = 0.1
+			puppet_cost_factor = -0.1
+			offence = 0.05
+			defence = 0.15
+			resistance_damage_to_garrison = -0.1
+			resistance_growth = -0.2
+			compliance_gain = 0.05
+
+		}
+	}
     BUL_national_catastrophe = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BUL_national_catastrophe"}
 			allowed = {
@@ -502,7 +533,10 @@ ideas = {
 
 	}
 	
-		
+	#Balkan Empire ideas
+	BUL_balkan_spirit = {
+		removal_cost = -1
+	}	
 	
 ##############
 # Companies
