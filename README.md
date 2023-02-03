@@ -8,7 +8,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/dax0102/fuhrerredux-mod?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/dax0102/fuhrerredux-mod?style=social)
 ### BULGARIA DEVELOPMENT BRANCH
-- [ ] BULGARIAN EXPANSION PATHS FOR BASE GAME
+- [x] BULGARIAN EXPANSION PATHS FOR BASE GAME
 - [ ] BULGARIAN DIPLOMATIC EXPANSION PATHS
 - [ ] BULGARIAN OTHER EXPANSION PATHS (NOT GIVING SPOILERS)
 - [ ] IDEAS FOR START OF GAME
