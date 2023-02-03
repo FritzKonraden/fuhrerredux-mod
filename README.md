@@ -7,8 +7,14 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/dax0102/fuhrerredux-mod)
 ![GitHub Repo stars](https://img.shields.io/github/stars/dax0102/fuhrerredux-mod?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/dax0102/fuhrerredux-mod?style=social)
-# Führerredux Mod
-The required files for the mod Fuhrerredux for the Paradox game Hearts of Iron IV.
+### BULGARIA DEVELOPMENT BRANCH
+- [x] BULGARIAN EXPANSION PATHS FOR BASE GAME
+- [ ] BULGARIAN DIPLOMATIC EXPANSION PATHS
+- [ ] BULGARIAN OTHER EXPANSION PATHS (NOT GIVING SPOILERS)
+- [ ] IDEAS FOR START OF GAME
+- [ ] INDUSTRY BRANCH
+- [ ] POLITICAL BRANCH
+
 ## How to install the github version?
 1)Create a new mod through the Paradox Launcher                   
 2)Download the zip folder using the Green Button              
