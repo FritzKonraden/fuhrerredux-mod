@@ -8,21 +8,21 @@ country_event = { # Join Stahlpakt
   is_triggered_only = yes
 
   option = {
-    name = bulgaria.100.a
-    ai_chance = {
-      base = 100
-    }
-    add_to_faction = FROM
+	name = bulgaria.100.a
+	ai_chance = {
+	  base = 100
+	}
+	add_to_faction = FROM
   }
 
   option = {
-    name = bulgaria.100.b
-    ai_chance = {
-      base = 0
-    }
-    FROM = {
-      country_event = { id = bulgaria.101 days = 2 }
-    }
+	name = bulgaria.100.b
+	ai_chance = {
+	  base = 0
+	}
+	FROM = {
+	  country_event = { id = bulgaria.101 days = 2 }
+	}
   }
 }
 
@@ -34,8 +34,8 @@ country_event = { # Germany denies our entry
   is_triggered_only = yes
 
   option = { # Dissapointing
-    name = bulgaria.101.a
-    add_political_power = -20
+	name = bulgaria.101.a
+	add_political_power = -20
   }
 }
 ## START OF EVENTS
@@ -47,12 +47,12 @@ country_event = {
   is_triggered_only = yes
 
   option = { #peacefully
-    name = bulgaria.1.a
-    complete_national_focus = BUL_reclaim_peacefully
+	name = bulgaria.1.a
+	complete_national_focus = BUL_reclaim_peacefully
   }
   option = {
-    name = bulgaria.1.b 
-    complete_national_focus = BUL_man_the_guns
+	name = bulgaria.1.b 
+	complete_national_focus = BUL_man_the_guns
   }
 }
 country_event = {
@@ -62,18 +62,18 @@ country_event = {
   is_triggered_only = yes
 
   option = { #request south dobrudja from Romania
-    name = bulgaria.2.a
-    ROM = {
-      country_event = { id = romania.10000 days = 1}
-    }
+	name = bulgaria.2.a
+	ROM = {
+	  country_event = { id = romania.10000 days = 1}
+	}
   }
   option = { #request all of dobrudja
-    name = bulgaria.2.b
-    ROM = {
-      country_event = { id = romania.10001 days = 1}
-    }
-    add_war_support = 0.01
-    add_stability = -0.02
+	name = bulgaria.2.b
+	ROM = {
+	  country_event = { id = romania.10001 days = 1}
+	}
+	add_war_support = 0.01
+	add_stability = -0.02
   }
 }
 country_event = {
@@ -82,18 +82,18 @@ country_event = {
   desc = bulgaria.3.d
   is_triggered_only = yes
   option = {
-    name = bulgaria.3.a
-    add_stability = 0.01
-    add_war_support = -0.01
-    BUL = {
-      give_guarantee = ROM
-      diplomatic_relation = {
-      country = ROM
-      relation = non_aggression_pact
-      active = yes
-      } 
-    }
-    
+	name = bulgaria.3.a
+	add_stability = 0.01
+	add_war_support = -0.01
+	BUL = {
+	  give_guarantee = ROM
+	  diplomatic_relation = {
+	  country = ROM
+	  relation = non_aggression_pact
+	  active = yes
+	  } 
+	}
+	
   }
 }
 
@@ -103,33 +103,33 @@ country_event = {
   desc = bulgaria.4.d 
   is_triggered_only = yes
   option = {
-    name = bulgaria.4.a
-    add_war_support = 0.05
-    77 = {
-      add_core_of = BUL
-    }
-    create_wargoal = {
-      target = ROM
-      type = take_state_focus
-      generator = { 77 }
-    }
+	name = bulgaria.4.a
+	add_war_support = 0.05
+	77 = {
+	  add_core_of = BUL
+	}
+	create_wargoal = {
+	  target = ROM
+	  type = take_state_focus
+	  generator = { 77 }
+	}
   }
   option = {
-    name = bulgaria.4.b
-    add_stability = 0.02
-    77 = {
-      add_claim_by = BUL
-      add_dynamic_modifier = {
-        modifier = BUL_expansion
-      }
-    }
-    BUL = {
-      add_opinion_modifier = {
-        target = ROM
-        modifier = BUL_south_dobrudja
-      }
-    }
-    
+	name = bulgaria.4.b
+	add_stability = 0.02
+	77 = {
+	  add_claim_by = BUL
+	  add_dynamic_modifier = {
+		modifier = BUL_expansion
+	  }
+	}
+	BUL = {
+	  add_opinion_modifier = {
+		target = ROM
+		modifier = BUL_south_dobrudja
+	  }
+	}
+	
   }
 }
 country_event = {
@@ -138,28 +138,28 @@ country_event = {
   desc = bulgaria.5.d 
   is_triggered_only = yes
   option = {
-    name = bulgaria.5.a
-    add_war_support = -0.02
-    77 = {
-      add_core_of = BUL
-      transfer_state_to = BUL
-    }
-    861 = {
-      add_core_of = BUL
-      transfer_state_to = BUL
-    }
-    give_guarantee = ROM
-    BUL = {
-      diplomatic_relation = {
-      country = ROM
-      relation = non_aggression_pact
-      active = yes
-      }
-      add_political_power = -250
-    }
-    ROM = {
-      add_political_power = 250
-    }
+	name = bulgaria.5.a
+	add_war_support = -0.02
+	77 = {
+	  add_core_of = BUL
+	  transfer_state_to = BUL
+	}
+	861 = {
+	  add_core_of = BUL
+	  transfer_state_to = BUL
+	}
+	give_guarantee = ROM
+	BUL = {
+	  diplomatic_relation = {
+	  country = ROM
+	  relation = non_aggression_pact
+	  active = yes
+	  }
+	  add_political_power = -250
+	}
+	ROM = {
+	  add_political_power = 250
+	}
   }
 }
 country_event = {
@@ -168,35 +168,35 @@ country_event = {
   desc = bulgaria.6.d 
   is_triggered_only = yes
   option = {
-    name = bulgaria.6.a
-    add_war_support = 0.05
-    77 = {
-      add_core_of = BUL
-    }
-    861 = {
-      add_core_of = BUL
-    }
-    create_wargoal = {
-      target = ROM
-      type = take_state_focus
-      generator = { 77 861}
-    }
+	name = bulgaria.6.a
+	add_war_support = 0.05
+	77 = {
+	  add_core_of = BUL
+	}
+	861 = {
+	  add_core_of = BUL
+	}
+	create_wargoal = {
+	  target = ROM
+	  type = take_state_focus
+	  generator = { 77 861}
+	}
   }
   option = {
-    name = bulgaria.6.b
-    add_stability = 0.02
-    77 = {
-      add_claim_by = BUL
-      add_dynamic_modifier = {
-        modifier = BUL_expansion
-      }
-    }
-    861 = {
-      add_claim_by = BUL
-      add_dynamic_modifier = {
-        modifier = BUL_expansion
-      }
-    }
+	name = bulgaria.6.b
+	add_stability = 0.02
+	77 = {
+	  add_claim_by = BUL
+	  add_dynamic_modifier = {
+		modifier = BUL_expansion
+	  }
+	}
+	861 = {
+	  add_claim_by = BUL
+	  add_dynamic_modifier = {
+		modifier = BUL_expansion
+	  }
+	}
   }
 }
 country_event = {
@@ -205,29 +205,29 @@ country_event = {
   desc = bulgaria.7.d
   is_triggered_only = yes
   option = {
-    name = bulgaria.7.a
-    create_wargoal = {
-      target = GRE
-      type = take_state_focus
-      generator = { 763 342}
-    }
-    add_war_support = 0.05
+	name = bulgaria.7.a
+	create_wargoal = {
+	  target = GRE
+	  type = take_state_focus
+	  generator = { 763 342}
+	}
+	add_war_support = 0.05
 
   }
   option = {
-    name = bulgaria.7.b
-    763 = {
-      add_claim_by = BUL
-      add_dynamic_modifier = {
-        modifier = BUL_expansion_thrace
-      }
-    }
-    342 = {
-      add_claim_by = BUL
-      add_dynamic_modifier = {
-        modifier = BUL_expansion_thrace
-      }
-    }
+	name = bulgaria.7.b
+	763 = {
+	  add_claim_by = BUL
+	  add_dynamic_modifier = {
+		modifier = BUL_expansion_thrace
+	  }
+	}
+	342 = {
+	  add_claim_by = BUL
+	  add_dynamic_modifier = {
+		modifier = BUL_expansion_thrace
+	  }
+	}
   }
 }
 country_event = {
@@ -236,33 +236,33 @@ country_event = {
   desc = bulgaria.8.d
   is_triggered_only = yes
   option = {
-    name = bulgaria.8.a
-    BUL = {
-      give_guarantee = ROM
-      diplomatic_relation = {
-        country = ROM
-        relation = non_aggression_pact
-        active = yes
-        }
-        add_political_power = -250
-    }
-    GRE = {
-      add_political_power = 250
-    }
-    342 = {
-      transfer_state_to = BUL
-    }
-    763 = {
-      transfer_state_to = BUL
-    }
+	name = bulgaria.8.a
+	BUL = {
+	  give_guarantee = ROM
+	  diplomatic_relation = {
+		country = ROM
+		relation = non_aggression_pact
+		active = yes
+		}
+		add_political_power = -250
+	}
+	GRE = {
+	  add_political_power = 250
+	}
+	342 = {
+	  transfer_state_to = BUL
+	}
+	763 = {
+	  transfer_state_to = BUL
+	}
   }
   option = {
-    name = bulgaria.8.b
-    create_wargoal = {
-      target = GRE
-      type = take_state_focus
-      generator = { 863 342 }
-    }
+	name = bulgaria.8.b
+	create_wargoal = {
+	  target = GRE
+	  type = take_state_focus
+	  generator = { 863 342 }
+	}
   }
 }
 country_event = {
@@ -271,8 +271,96 @@ country_event = {
   desc = bulgaria.9.d 
   is_triggered_only = yes
   option = {
-    name = bulgaria.9.a
-    add_stability = 0.1 
-    add_war_support = 0.1
+	name = bulgaria.9.a
+	add_stability = 0.1 
+	add_war_support = 0.1
   }
+}
+country_event = {
+  id = bulgaria.10
+  title = bulgaria.10.t
+  desc = bulgaria.10.d
+  is_triggered_only = yes
+  option = {
+	name = bulgaria.10.a
+	137 = {
+		transfer_state_to = BUL
+	}
+	72 = {
+		transfer_state_to = BUL
+	}
+	BUL = {
+		give_military_access = SOV
+		diplomatic_relation = {
+			country = SOV
+			relation = non_aggression_pact
+		}
+		add_political_power = -369
+	}
+	SOV = {
+		add_political_power = 369
+	}
+  }
+}
+country_event = {
+	id = bulgaria.11
+	title = bulgaria.11.t
+	desc = bulgaria.11.d
+	is_triggered_only = yes 
+	option = {
+		name = bulgaria.11.a
+		add_war_support = -0.02
+	}
+	option = {
+		name = bulgaria.11.b
+		add_stability = 0.02
+	}
+}
+country_event = {
+	id = bulgaria.12
+	title = bulgaria.12.t
+	desc = bulgaria.12.d
+	is_triggered_only = yes 
+	option = {
+		name = bulgaria.12.a
+		set_capital = {
+			state = 341
+		}
+		341 = {
+			set_demilitarized_zone = no
+			set_state_name = Constantinople
+			set_province_name = {
+				id = 9833
+				name = Constantinople
+			}
+		}
+	}
+	option = {
+		name = bulgaria.12.b
+		set_capital = {
+			state = 731
+		}
+	}
+	option = {
+		name = bulgaria.12.c
+		set_capital = {
+			state = 47
+		}
+	}
+	option = {
+		name = bulgaria.12.d
+		set_capital = {
+			state = 107
+		}
+	}
+	option = {
+		name = bulgaria.12.e
+		set_capital = {
+			state = 339
+		}
+	}
+	option = {
+		name = bulgaria.12.f
+		add_stability = 0.05
+	}
 }

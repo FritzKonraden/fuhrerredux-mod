@@ -7178,3 +7178,25 @@ country_event = {
 			add_command_power = -15
    		}
    	}
+	country_event = {
+		id = soviet.10000
+		immediate = {
+			log = "[GetDateText]: [Root.GetName]: event soviet.10000"
+		}
+		title = soviet.10000.t
+		desc = soviet.10000.d
+		is_triggered_only = yes 
+
+		option = { #accept
+			name = soviet.10000.a
+			BUL = {
+				country_event = bulgaria.10
+			}
+		}
+		option = { #no
+			name = soviet.10000.b
+			BUL = {
+				country_event = bulgaria.11
+			}
+		}
+	}

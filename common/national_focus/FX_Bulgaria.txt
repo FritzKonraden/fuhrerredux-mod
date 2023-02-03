@@ -511,6 +511,7 @@ focus_tree = {
 			
 		}
 	}
+	#GRECO-BULGARIAN EMPIRE FOCUSES HERE
 	focus = {
 		id = BUL_empire_greek_bulgarian
 		icon = GFX_goal_refugee_management
@@ -524,6 +525,76 @@ focus_tree = {
 		}
 		x = 2
 		y = 1
+        available = {
+            NOT = {
+                has_completed_focus = BUL_question_of_thrace
+            }
+            OR = {
+                has_government = paternal_autocrat
+                has_government = authoritarian_democrat
+                has_government = national_populist
+            }
+
+        }
 	}
+	focus = {
+		id = BUL_incite_monarchist_uprising_gre
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+        relative_position_id = BUL_empire_greek_bulgarian
+        prerequisite = {
+            focus = BUL_empire_greek_bulgarian
+        }
+		completion_reward = {
+
+        }
+	}
+    focus = {
+        id = BUL_alliance_greece
+        icon = none
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = BUL_incite_monarchist_uprising_gre
+        prerequisite = {
+            focus = BUL_incite_monarchist_uprising_gre
+        }
+        completion_reward = {
+            create_faction = "Greco-Bulgarian Accord"
+            add_to_faction = GRE
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    focus = {
+        id = BUL_united_kingdom
+        icon = none
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = BUL_alliance_greece
+        prerequisite = {
+            focus = BUL_alliance_greece
+        }
+        completion_reward = {
+            BUL = {
+                every_state = {
+                    limit = {
+                        is_controlled_by = GRE
+                        is_core_of = GRE
+                    }
+                    add_core_of = BUL
+                }
+                annex_country = {
+                    target = GRE
+                }
+                leave_faction = yes
+            }
+        }
+    }
+
 
 }
