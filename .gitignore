@@ -2,4 +2,8 @@
 
 descriptor.mod
 *.mod
+<<<<<<< HEAD
+=======
+*.md
+>>>>>>> origin/main
 readme.md
