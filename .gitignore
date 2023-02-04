@@ -1,5 +1,6 @@
 /.vscode/*
 
+descriptor.mod
 *.mod
 *.md
 readme.md
