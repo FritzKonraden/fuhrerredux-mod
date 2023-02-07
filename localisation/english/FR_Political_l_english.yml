@@ -18,6 +18,9 @@ EFFECT_CHANGE_LAW_stability: "Change our country's stability to '$NAME|Y$' which
 tooltip_stability_good: "Countries that are at average stability may upgrade to good stability"
 tooltip_stability_very_good: "Countries that are at good stability may upgrade to very good stability"
 
+##BOP
+power_balance_button_disabled: "There is no available balance of power"
+
 ### Popularity ###
 party_pop_0_00: "0-10% Party Popularity"
 party_pop_0_10: "10-20% Party Popularity"

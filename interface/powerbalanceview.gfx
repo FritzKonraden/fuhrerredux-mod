@@ -1,10 +1,14 @@
 spriteTypes = {
 
 	spriteType = {
-		name = "GFX_show_power_balance_button"
-		textureFile = "gfx/interface/government_in_exile/countryview_government_in_exile_bg.dds"
+		name = "GFX_power_balance_button"
+		textureFile = "gfx/interface/power_balance_button_kr.png"
 	}
-
+	spriteType = {
+		name = "GFX_power_balance_icon"
+		textureFile = "gfx/interface/power_balance_icon_kr.png"
+	}
+	
 	frameAnimatedSpriteType = {
 		name = "GFX_bop_glow_effect"
 		texturefile = "gfx/interface/bop/bop_glow_effect.dds"
