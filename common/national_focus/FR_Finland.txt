@@ -46,7 +46,7 @@ focus {
 
 focus {
 	id = FIN_strengthening_the_mannerheim_line
-	icon = GFX_mannerheim_line
+	icon = GFX_goal_generic_construct_military
 	cost = 3
 	prerequisite = {
 		FIN_finlands_bold_opportunity
@@ -195,43 +195,8 @@ focus {
 				
 				
 			}
-		}
-		focus {
-			id = FIN_preparing_the_airforce
-			icon = GFX_aviation_training
-			cost = 3
-			prerequisite = {
-				FIN_strengthening_the_mannerheim_line
-			}
-			x = 23
-			y = 2 
-	
-			available = {
-				is_puppet = no
-	
-				has_vanguardist_government = no
-	
-				has_collectivist_government = no
-	
-				has_libertarian_socialist_government = no
-		}
-			ai_will_do = {
-				factor = 10
-			}
-	
-			completion_reward = {
-				air_experience = 50
-
-				add_equipment_to_stockpile = {
-					type = light_fighter
-					amount = 70
-					producer = FIN
-				}
-				
-				
-				
-			}
-		}
+		}			
+	}
 
 		focus {
 			id = FIN_construction_of_military_factories
@@ -474,7 +439,4 @@ focus {
 									type = annex_everything
 								}								
 								}
-						}		
-					
-		
-					}
+						}
