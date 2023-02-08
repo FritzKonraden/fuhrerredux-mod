@@ -110,12 +110,18 @@ bulgaria.101.a: "Dissapointing."
 	bulgaria.8.a: "Alright, their demands are acceptable"
 	bulgaria.8.b: "They call this a fair deal? Arm the Guns Boys!"
 	bulgaria.9.t: "The Formation of a new Empire"
-	bulgaria.9.d: "More than 500 years ago the Ottomans ended the second Bulgarian Empire, by conquering it all. Yet despite all the struggle and hardship the people had in these times for their freedom, for a Bulgarian state that contained all of the Bulgarians, they didn't lose their spirit, their national identity, their language, and foremost their religion. The Bulgarian state was under Ottoman rule, untill  3rd March 1878, when they became free from the Ottomans. Today, our leader [BUL.GetLeader] announced the formation of the Third Empire. The world looks with shock and awe upon the valiant people of this Balkan nation who, despite all odds managed to reclaim their birthright and empire. A new juggernaut of the east has risen, the Third Bulgarian Empire."
+	bulgaria.9.d: "More than 500 years ago the Ottomans ended the second Bulgarian Empire, by conquering it all. Yet despite all the struggle and hardship the people had in these times for their freedom, for a Bulgarian state that contained all of the Bulgarians, they didn't lose their spirit, their national identity, their language, and foremost their religion. The Bulgarian state was under Ottoman rule, untill  3rd March 1878, when they became free from the Ottomans. Today [GetDateStringNoHourLong], our leader [BUL.GetLeader] announced the formation of the Third Empire. The world looks with shock and awe upon the valiant people of this Balkan nation who, despite all odds managed to reclaim their birthright and empire. A new juggernaut of the east has risen, the Third Bulgarian Empire."
 	bulgaria.9.a: "This day, shall be celebrated with pride. Long live the Third Bulgarian Empire."
 	fxnews.49.t: "The formation of the Third Bulgarian Empire"
 	fxnews.49.d: "This Day, the Bulgarian Government, after a series of stunning victories and territorial gains, announced the formation of the Third Bulgarian Empire, a title modelled after the medieval realm which was ended by the Ottomans. It is yet to see if this Empire will fall to foreign forces like its predecessor or if it will rule the future of the Balkans. Whatever the future holds for the new Empire, its neighbours must now decide their stance towards this rising power."
 	fxnews.49.a: "Concerning..."
-
+	bulgaria.14.t: "Striking Our Mortal Enemies"
+	bulgaria.14.d: "Today, our leader, [BUL.GetLeader] annouced our claims to Turkey. The Turks, are yet to respond, so our leader decided to intervene and occupy Constantinople and some neighbour regions. The Turkish nation is a Fake Nation that stole our precious land and enslaved our kind. We shall obliterate and destroy this scum of a country, that dares to name itself, under the same name as an animal, Turkey."
+	bulgaria.14.a: "Turkey, delenda est."
+	bulgaria.14.b: "Under God we shall!"
+	bulgaria.14.c: "Let's show these scums who is the real God!"
+	bulgaria.14.d: "How dare they?"
+	bulgaria.14.e: "[TUR.GetName] is no more."
 
 
 ### Companies
@@ -139,7 +145,7 @@ kaproni_bulgarski: "Kaproni Bulgarski"
 	BUL_territorial_ambitions_fulfilled: "Territorial Ambitions Fulfilled"
 	BUL_territorial_ambitions_fulfilled_desc: "Throughout the centuries, Bulgaria has been forced to surrender its rightful lands at the hands of powers far greater than ourselves. From the Kievan Rus and the Byzantines, to the Ottomans and the Germans, we have been forced too many times into servitude. But no longer. Through skilled leadership and the decisive force of our military, we have reclaimed lands long thought lost. Never again will we kneel to foreign masters. Bulgaria is for Bulgarians, now and forever."
 	BUL_sabotage_serbia: "Our connections in Serbia"
-	BUL_retake_serbian_lands: "Take old Bulgarian lands by Force"
+	BUL_retake_serbian_lands: "Macedonia is Bulgaria"
 	BUL_status_of_dobrudja: "Status of Dobrudja"
 
 	### DYNAMIC MODIFIERS
@@ -152,13 +158,18 @@ kaproni_bulgarski: "Kaproni Bulgarski"
 
 	### TOOLTIPS
 	1_bul_tt: "§G Any state that has the Bulgarian Expansion modifier,is in Macedonia and is owned by Bulgaris gets cored. Current states: §! "
-	2_bul_tt: "§R IF BULGARIA COMPLETES THIS FOCUS, THEY WON'T BE ABLE TO FORM THE ROMAN EMPIRE OF GREEKS AND BULGARS!!! §! "
+	2_bul_tt: "§R If [BUL.GetFlag][BUL.GetName] completed this focus, they won't be able to form: \n 'The Roman Empire of Greeks and Bulgars'! §! "
 	3_bul_tt: "§G All states that are in the Balkan Region, and are controlled by Bulgaria get cored. §!"
+	4_bul_tt: "§G If [GRE.GetFlag][GRE.GetName]:§! \n §Y National Populist support §! §G >  40 §! "
+	5_bul_tt: "Every state that [BUL.GetFlag][BUL.GetName] controls, that is in asia, is a core of Turkey and not a core of either Armenia, Georgia, French Levant or Kurdistan gets cored"
 
 	#COSMETIC TAGS
 	BUL_third_empire: "Third Bulgarian Empire"
 	BUL_third_empire_ADJ: "Bulgarian"
 	BUL_third_empire_DEF: "The Third Bulgarian Empire"
+	BUL_byzantium: "Roman Empire of Greeks and Bulgars"
+	BUL_byzantium_def: "The Roman Empire of Greeks and Bulgars"
+	BUL_byzantium_adj: "Roman"
 	#BALKAN UNION
 	BUL_balkan_union_UNIFIED: "Balkan Union"
 	BUL_balkan_union_UNIFIED_ADJ: "Balkan"

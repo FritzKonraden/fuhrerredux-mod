@@ -330,6 +330,14 @@ focus_tree = {
 		prerequisite = {
 			focus = BUL_demand_thrace
 		}
+		available = {
+			BUL = {
+				AND = {
+					controls_state = 863
+					controls_state = 342
+				}
+			}
+		}
 		completion_reward = {
 			863 = {
 				add_core_of = BUL
@@ -349,8 +357,29 @@ focus_tree = {
 		prerequisite = {
 			focus = BUL_demand_thrace
 		}
+		available = {
+			BUL = {
+				AND = {
+					controls_state = 863
+					controls_state = 342
+				}
+				731 = {
+					any_neighbor_state = {
+						is_core_of = BUL
+					}
+				}
+				184 = {
+					any_neighbor_state = {
+						is_core_of = BUL
+					}
+				}
+			}
+		}
 		completion_reward = {
 			custom_effect_tooltip = 2_bul_tt
+			GRE = {
+				country_event = gre.5
+			}
 		}
 	}
 	focus = {
@@ -515,6 +544,7 @@ focus_tree = {
 	focus = {
 		id = BUL_empire_greek_bulgarian
 		icon = GFX_goal_refugee_management
+		cost = 0
 		relative_position_id = BUL_future_of_empire
 		prerequisite = {
 			focus = BUL_future_of_empire
@@ -547,8 +577,19 @@ focus_tree = {
         prerequisite = {
             focus = BUL_empire_greek_bulgarian
         }
+		available = {
+			BUL = {
+				has_government = national_populist
+			}
+		}
 		completion_reward = {
-
+			GRE = {
+				add_ideas = BUL_fascist_support
+				add_popularity = {
+					ideology = national_populist
+					popularity = 0.05
+				}
+			}
         }
 	}
     focus = {
@@ -561,14 +602,37 @@ focus_tree = {
         prerequisite = {
             focus = BUL_incite_monarchist_uprising_gre
         }
+		available = {
+			if = {
+				limit = {
+					GRE = {
+						check_variable = {
+							party_popularity@national_populist > 0.4
+						}
+					}
+				}
+			}
+		}
         completion_reward = {
-            create_faction = "Greco-Bulgarian Accord"
-            add_to_faction = GRE
-        }
-        ai_will_do = {
+			custom_effect_tooltip = 4_bul_tt
+			if = {
+				limit = {
+					GRE = {
+						check_variable = {
+							party_popularity@national_populist > 0.4
+						}
+					}
+				}
+				create_faction = "Greco-Bulgarian Accord"
+				add_to_faction = GRE
+				country_event = bulgaria.13
+			}
+		}
+		ai_will_do = {
             factor = 0
         }
     }
+        
     focus = {
         id = BUL_united_kingdom
         icon = none
@@ -580,6 +644,11 @@ focus_tree = {
             focus = BUL_alliance_greece
         }
         completion_reward = {
+			GRE = {
+				transfer_navy = {
+					target = BUL
+				}
+			}
             BUL = {
                 every_state = {
                     limit = {
@@ -590,11 +659,124 @@ focus_tree = {
                 }
                 annex_country = {
                     target = GRE
+					transfer_troops = yes
+					
                 }
-                leave_faction = yes
+                dismantle_faction = yes
+				set_cosmetic_tag = BUL_byzantium
+				add_state_core = 341
+				add_state_core = 164
+				set_capital = {
+					state = 731
+				}
+				add_victory_points = {
+					province = 11818
+					value = 20
+				}
             }
         }
     }
-
-
+	focus = {
+		id = BUL_demand_constantinople
+		icon = none
+		cost = 5
+		x = 2
+		y = 0
+		relative_position_id = BUL_united_kingdom
+		prerequisite = {
+			focus = BUL_united_kingdom
+		}
+		completion_reward = {
+			BUL = {
+				add_state_core = 347
+				add_state_core = 776
+				add_state_claim = 343
+				add_state_claim = 777
+				country_event = bulgaria.14
+			}
+			TUR = {
+				country_event = tur.1000
+			}
+		}
+	}
+	focus = {
+		id = BUL_question_of_turkey
+		icon = none
+		cost = 5
+		x = 2
+		y = 0
+		relative_position_id = BUL_demand_constantinople
+		prerequisite = {
+			focus = BUL_demand_constantinople
+		}
+		completion_reward = {
+			country_event = bulgaria.17
+		}
+	}
+	focus = {
+		id = BUL_integrate_anatolia
+		icon = none
+		cost = 2
+		x = -2
+		y = 1
+		relative_position_id = BUL_question_of_turkey
+		prerequisite = {
+			focus = BUL_question_of_turkey
+			focus = BUL_demand_constantinople
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = 5_bul_tt
+			}
+			any_owned_state = {
+				is_on_continent = asia
+				is_core_of = TUR
+				NOT = {
+					is_core_of = ARM
+					is_core_of = GEO
+					is_core_of = PHN
+					is_core_of = KUR
+				}
+			}
+		}
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_on_continent = asia
+					is_core_of = TUR
+					NOT = {
+						is_core_of = ARM
+						is_core_of = GEO
+						is_core_of = PHN
+						is_core_of = KUR
+					}
+				}
+				add_core_of = BUL
+			}
+		}
+	}
+	focus = {
+		id = BUL_remaining_balkans
+		icon = none
+		cost = 5
+		x = -2
+		y = 0
+		relative_position_id = BUL_united_kingdom
+		prerequisite = {
+			focus = BUL_united_kingdom
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = ROM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SER
+				type = annex_everything
+			}
+			ITA = {
+				country_event = ita.10000
+			}
+		}
+	}
 }

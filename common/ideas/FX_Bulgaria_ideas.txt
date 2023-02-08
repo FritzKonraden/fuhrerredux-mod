@@ -530,12 +530,17 @@ ideas = {
 				resistance_damage_to_garrison = 0.5
 			}
 		}
+#GRECO-BULGARIAN EMPIRE IDEAS
+		BUL_fascist_support = {
+			picture = generic_fascism_drift_bonus
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_coup_gre"
+			}
+			modifier = {
+				national_populist_drift = 0.02
+			}
+		}
 
-	}
-	
-	#Balkan Empire ideas
-	BUL_balkan_spirit = {
-		removal_cost = -1
 	}	
 	
 ##############

@@ -594,3 +594,7 @@ MOL_balkan_union_BUL = {
 	color = rgb { 15 15 15 }
 	color_ui = rgb { 15 15 15 }
 }
+BUL_byzantium = {
+	color = rgb { 143 12 125 }
+	color_ui = rgb { 143 12 125 }
+}

@@ -8,3 +8,13 @@ BUL_balkan_union_category = {
 		has_cosmetic_tag = BUL_balkan_union_UNIFIED
 	}
 }
+BUL_integrate_states_category = {
+	allowed = {
+		original_tag = BUL
+	}
+	icon = GFX_decision_eng_trade_unions_support
+	priority = 100
+	visible = {
+		original_tag = BUL
+	}
+}

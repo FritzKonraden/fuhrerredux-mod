@@ -1,4 +1,5 @@
 add_namespace = bulgaria
+add_namespace = bulexp
 
 country_event = { # Join Stahlpakt
   id = bulgaria.100
@@ -362,5 +363,216 @@ country_event = {
 	option = {
 		name = bulgaria.12.f
 		add_stability = 0.05
+	}
+}
+country_event = {
+	id = bulgaria.13
+	title = bulgaria.13.t
+	desc = bulgaria.13.d
+	is_triggered_only = yes
+	option = {
+		name = bulgaria.13.a
+		add_stability = 0.02
+	}
+}
+country_event = {
+	id = bulgaria.14
+	title = bulgaria.14.t
+	desc = bulgaria.14.d
+	is_triggered_only = yes
+	option = {
+		name = bulgaria.14.a
+		add_war_support = 0.1
+		add_ideas = war_economy
+	}
+	option = {
+		name = bulgaria.14.b
+		add_war_support = 0.1
+		add_ideas = war_economy
+	}
+	option = {
+		name = bulgaria.14.c
+		add_war_support = 0.1
+		add_ideas = war_economy
+	}
+	option = {
+		name = bulgaria.14.d
+		add_war_support = 0.1
+		add_ideas = war_economy
+	}
+	option = {
+		name = bulgaria.14.e
+		add_war_support = 0.1
+		add_ideas = war_economy
+	}
+}
+country_event = {
+	id = bulgaria.15
+	title = bulgaria.15.t
+	desc = bulgaria.15.d
+	is_triggered_only = yes
+	option = {
+		name = bulgaria.15.a
+		add_stability = 0.02
+		341 = {
+			set_state_name = "Konstantinoupolis"
+			set_province_name = {
+				id = 9833
+				name = "Konstantinoupolis"
+			}
+		}
+		347 = {
+			set_state_name = "Nicomedeia"
+			set_province_name = {
+				id = 11811
+				name = "Nicomedeia"
+			}
+		}
+		776 = {
+			set_state_name = "Proussa"
+			set_province_name = {
+				id = 947
+				name = "Proussa"
+			}
+		}
+		activate_decision = BUL_choose_capital
+	}
+}
+country_event = {
+	id = bulgaria.16
+	title = bulgaria.16.t
+	desc = bulgaria.16.d
+	is_triggered_only = yes
+	option = {
+		name = bulgaria.16.a
+		add_war_support = 0.02
+	}
+}
+country_event = {
+	id = bulgaria.17
+	title = bulgaria.17.t
+	desc = bulgaria.17.d
+	is_triggered_only = yes
+	option = {
+		name = bulgaria.17.a
+		BUL = {
+			every_state = {
+				limit = {
+					AND = {
+						is_controlled_by = TUR
+						is_core_of = TUR
+						is_in_asia = yes
+					}
+				}
+				add_core_of = BUL
+			}
+			TUR = {
+				transfer_navy = {
+					target = BUL
+				}
+			}
+			annex_country = {
+				target = TUR
+				transfer_troops = yes
+			}
+			
+		}
+	}
+	option = {
+		name = bulgaria.17.b
+		BUL = {
+			BUL = {
+				set_autonomy = {
+					target = TUR
+					autonomy_state = autonomy_thema
+				}
+			}
+			TUR = {
+				every_state = {
+					limit = {
+						AND = {
+							is_controlled_by = TUR
+							is_core_of = TUR
+							is_in_asia = yes
+						}
+						NOT = {
+							state = 374
+							state = 776
+							state = 343
+							state = 777
+							state = 49
+						}
+					}
+					transfer_state_to = TUR
+				}
+			}
+			transfer_state = 374
+			transfer_state = 776
+			transfer_state = 343
+			transfer_state = 777
+			transfer_state = 49
+			add_state_core = 374
+			add_state_core = 776
+			add_state_core = 343
+			add_state_core = 777
+			add_state_core = 49
+			add_state_core = 347
+		}
+	}
+}
+country_event = {
+	id = bulgaria.18
+	title = bulgaria.18.d
+	desc = bulgaria.18.t
+	is_triggered_only = yes 
+	option = {
+		name = bulgaria.18.a
+		create_wargoal = {
+			target = GRE
+			type = take_state_focus
+			generator = { 731 184 }
+		}
+		add_war_support = 0.03
+	}
+	option = {
+		name = bulgaria.18.b
+		add_stability = 0.02
+		add_war_support = -0.02
+	}
+}
+country_event = {
+	id = bulgaria.19
+	title = bulgaria.19.d
+	desc = bulgaria.19.t
+	is_triggered_only = yes 
+	option = {
+		name = bulgaria.19.a
+	}
+}
+country_event = {
+	id = bulexp.20
+	title = bulexp.20.t
+	desc = bulexp.20.d
+	is_triggered_only = yes
+	option = {
+		name = bulexp.20.a
+	}
+}
+country_event = {
+	id = bulexp.21
+	title = bulexp.21.t
+	desc = bulexp.21.d
+	is_triggered_only = yes
+	option = {
+		name = bulexp.21.a
+		create_wargoal = {
+			target = ALB
+			type = annex_everything
+		}
+		add_state_claim = 44
+		add_state_claim = 96
+	}
+	option = {
+		name = bulexp.21.b
 	}
 }
