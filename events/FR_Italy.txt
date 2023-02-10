@@ -16609,8 +16609,8 @@ country_event = {
 			diplomatic_relation = {
 				country = ITA
 				relation = docking_rights
-				country = bulexp.x
 			}
+			country_event = bulexp.20
 		}
 	}
 	option = {

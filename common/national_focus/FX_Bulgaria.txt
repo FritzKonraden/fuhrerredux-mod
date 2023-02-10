@@ -427,7 +427,6 @@ focus_tree = {
 		prerequisite = {
 			focus = BUL_future_of_empire
 		}
-		
 		available = {
 			BUL = {
 				OR = {
@@ -779,5 +778,135 @@ focus_tree = {
 				country_event = ita.10000
 			}
 		}
+	}
+	focus = {
+		id = BUL_egypt_and_levant
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_remaining_balkans
+		prerequisite = {
+			focus = BUL_remaining_balkans
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = PHN
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ISR
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = IRQ
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = EGY
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = BUL_conquer_iberia
+		icon = none 
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_egypt_and_levant
+		prerequisite = {
+			focus = BUL_egypt_and_levant
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = BUL_ally_russia
+		icon = none 
+		cost = 5
+		x = 2
+		y = 0
+		relative_position_id = BUL_egypt_and_levant
+		prerequisite = {
+			focus = BUL_egypt_and_levant
+			focus = BUL_integrate_anatolia
+		}
+		completion_reward = {
+			#wip
+		}
+	}
+	focus = {
+		id = BUL_italy_france
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_ally_russia
+		prerequisite = {
+			focus = BUL_ally_russia
+		}
+		bypass = {
+			AND = {
+				FRA = {
+					exists = no
+				}
+				ITA = {
+					exists = no
+				}
+			}
+			
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					FRA = {
+						exists = no
+					}
+				}
+				create_wargoal = {
+					target = ITA
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					ITA = {
+						exists = no
+					}
+				}
+				create_wargoal = {
+					target = FRA
+					type = annex_everything
+				}
+			}
+		}
+	}
+	focus = {
+		id = BUL_pan_orthodoxism
+		icon = none
+		cost = 10
+		x = 2
+		y = 0
+		relative_position_id = BUL_italy_france
+		prerequisite = {
+			focus = BUL_italy_france
+		}
+		completion_reward = {
+			#wip
+		}
+	}
+	focus = {
+		id = BUL_greece_bulgaria_culture
+		icon = none
+		cost = 5
+		x = 2
+		y = 0
+		relative_position_id = BUL_pan_orthodoxism
+		prerequisite = {
+			focus = BUL_pan_orthodoxism
+		}
+		completion_reward = { }
 	}
 }
