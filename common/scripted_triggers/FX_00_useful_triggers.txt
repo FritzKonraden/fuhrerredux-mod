@@ -1078,3 +1078,16 @@ is_original_bulgarian_state = {
 		state = 766
 	}
 }
+is_romanian_state_no_transylvania = {
+	OR = {
+		state = 82
+		state = 81
+		state = 46
+		state = 77
+		state = 861
+		state = 853
+		state = 78
+		state = 79
+		state = 80
+	}
+}
