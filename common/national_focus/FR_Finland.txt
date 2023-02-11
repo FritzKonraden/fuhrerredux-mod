@@ -16,7 +16,7 @@ focus_tree = {
 ##    WINTER WAR TREE    ##
 ###########################
 
-focus {
+focus = {
 	id = FIN_finlands_bold_opportunity
 	icon = GFX_integrate_karelia
 	cost = 3
@@ -25,17 +25,11 @@ focus {
 
 	available = {
 		is_puppet = no
-
-		has_vanguardist_government = no
-
-		has_collectivist_government = no
-
-		has_libertarian_socialist_government = no
-
-	GER = {
-		has_war_with = SOV
+		has_socialist_government = no 
+		GER = {
+			has_war_with = SOV
+		}
 	}
-}
 	ai_will_do = {
 		factor = 10
 	}
@@ -44,7 +38,7 @@ focus {
 	}
 }
 
-focus {
+focus = {
 	id = FIN_strengthening_the_mannerheim_line
 	icon = GFX_goal_generic_construct_military
 	cost = 3
@@ -57,14 +51,10 @@ focus {
 	available = {
 		is_puppet = no
 
-		has_vanguardist_government = no
-
-		has_collectivist_government = no
-
-		has_libertarian_socialist_government = no
+		has_socialist_government = no
 
 		owns_state = 146
-}
+	}
 	ai_will_do = {
 		factor = 10
 	}
@@ -81,7 +71,7 @@ focus {
 	}
 }
 
-focus {
+focus = {
 	id = FIN_expanding_the_army
 	icon = GFX_army_training
 	cost = 3
@@ -94,11 +84,7 @@ focus {
 	available = {
 		is_puppet = no
 
-		has_vanguardist_government = no
-
-		has_collectivist_government = no
-
-		has_libertarian_socialist_government = no
+		has_socialist_government = no
 
 }
 	ai_will_do = {
@@ -132,7 +118,7 @@ focus {
 		}
 	}
 
-		focus {
+		focus = {
 			id = FIN_preparing_the_economy
 			icon = GFX_econ-red
 			cost = 3
@@ -145,12 +131,8 @@ focus {
 			available = {
 				is_puppet = no
 	
-				has_vanguardist_government = no
-	
-				has_collectivist_government = no
-	
-				has_libertarian_socialist_government = no
-		}
+				has_socialist_government = no
+			}
 			ai_will_do = {
 				factor = 10
 			}
@@ -160,7 +142,7 @@ focus {
 			}
 		}
 
-		focus {
+		focus = {
 			id = FIN_preparing_the_airforce
 			icon = GFX_aviation_training
 			cost = 3
@@ -173,11 +155,7 @@ focus {
 			available = {
 				is_puppet = no
 	
-				has_vanguardist_government = no
-	
-				has_collectivist_government = no
-	
-				has_libertarian_socialist_government = no
+				has_socialist_government = no
 		}
 			ai_will_do = {
 				factor = 10
@@ -198,7 +176,7 @@ focus {
 		}			
 	}
 
-		focus {
+		focus = {
 			id = FIN_construction_of_military_factories
 			icon = GFX_mils-pdn
 			cost = 3
@@ -211,11 +189,7 @@ focus {
 			available = {
 				is_puppet = no
 	
-				has_vanguardist_government = no
-	
-				has_collectivist_government = no
-	
-				has_libertarian_socialist_government = no
+				has_socialist_government = no
 		}
 			ai_will_do = {
 				factor = 10
@@ -345,7 +319,7 @@ focus {
 			}
 			
 
-			focus {
+			focus = {
 				id = FIN_winter_war
 				icon = GFX_winter_war
 				cost = 3
@@ -356,11 +330,7 @@ focus {
 				available = {
 					is_puppet = no
 		
-					has_vanguardist_government = no
-		
-					has_collectivist_government = no
-		
-					has_libertarian_socialist_government = no
+					has_socialist_government = no
 			}
 				ai_will_do = {
 					factor = 10
@@ -374,58 +344,55 @@ focus {
 					
 				}
 
-				focus {
-					id = FIN_declare_our_claims
-					icon = GFX_bold_opportunity
-					cost = 3
-					prerequisite = { FIN_expanding_the_army }
-				prerequisite = { FIN_construction_of_military_factories }
-				prerequisite = { FIN_preparing_the_airforce }
-					}
-					x = 25
-					y = 3 
-			
-					available = {
-						is_puppet = no
-			
-						has_vanguardist_government = no
-			
-						has_collectivist_government = no
-			
-						has_libertarian_socialist_government = no
+focus = {
+	id = FIN_declare_our_claims
+	icon = GFX_bold_opportunity
+	cost = 3
+	prerequisite = { FIN_expanding_the_army }
+	prerequisite = { FIN_construction_of_military_factories }
+	prerequisite = { FIN_preparing_the_airforce }
+	
+	x = 25
+	y = 3 
+
+	available = {
+		is_puppet = no
+
+		has_socialist_government = no
+	}
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+		add_state_claim = 195
+		every_owned_state = {
+			limit = {
+				or = {
+					state = 216
+					state = 215
+					state = 213
+					state = 722
 				}
-					ai_will_do = {
-						factor = 10
-					}
-			
-					completion_reward = {
-						add_state_claim = 195
-						}
-						add_state_core = { 216
-						}
-						add_state_core = { 215
-						}
-						add_state_core = { 213
-						}
-						add_state_core = { 722
-						}
-					
-						focus {
-							id = FIN_for_victory!
+			}
+			ROOT = {
+				add_state_core = PREV
+			}
+		}
+	}
+}
+						focus = {
+							id = FIN_for_victory
 							icon = GFX_preparation_for_war
 							cost = 3
-							prerequisite = { FIN_declare_our_claims }
+							prerequisite = { focus = FIN_declare_our_claims }
 							x = 23
 							y = 2 
 					
 							available = {
 								is_puppet = no
 					
-								has_vanguardist_government = no
-					
-								has_collectivist_government = no
-					
-								has_libertarian_socialist_government = no
+								has_socialist_government = no
 
 								country_exists = SOV
 						}
