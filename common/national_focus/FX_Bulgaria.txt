@@ -11,15 +11,15 @@ focus_tree = {
 		}
 	}
 	continuous_focus_position = {
-		x = 1000
-		y = 1750
+		x = 100
+		y = 3000
 	}
 
 	#RECLAMATION OF OLD LANDS PATH + Army
 	focus = {
 		id = BUL_expand_armed_forces
 		icon = GFX_goal_BUL_armed_forces
-		x = 2
+		x = 10
 		y = 0
 		cost = 2
 		completion_reward = {
@@ -411,8 +411,9 @@ focus_tree = {
 		mutually_exclusive = {			
 			focus = BUL_empire_greek_bulgarian
 			focus = BUL_empire_balkan
+			focus = BUL_empire_romania_bulgaria
 		}
-		x = -2
+		x = -4
 		y = 1
 	}
 	# BALKAN EMPIRE FOCUSES HERE 
@@ -422,6 +423,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = BUL_empire_bulgarian
 			focus = BUL_empire_greek_bulgarian
+			focus = BUL_empire_romania_bulgaria
 		}
 		relative_position_id = BUL_future_of_empire
 		prerequisite = {
@@ -437,7 +439,7 @@ focus_tree = {
 
 			}
 		}
-		x = 0
+		x = -2
 		y = 1
 	}
 	focus = {
@@ -552,8 +554,9 @@ focus_tree = {
 		mutually_exclusive = {			
 			focus = BUL_empire_bulgarian
 			focus = BUL_empire_balkan
+			focus = BUL_empire_romania_bulgaria
 		}
-		x = 2
+		x = 4
 		y = 1
         available = {
             NOT = {
@@ -909,5 +912,266 @@ focus_tree = {
 			focus = BUL_pan_orthodoxism
 		}
 		completion_reward = { }
+	}
+	#BULGARIAN-ROMANIAN EMPIRE FOCUSES HERE
+	focus = {
+		id = BUL_empire_romania_bulgaria
+		icon = none
+		cost = 0
+		relative_position_id = BUL_future_of_empire
+		x = 2
+		y = 1
+		mutually_exclusive = {
+			focus = BUL_empire_balkan
+			focus = BUL_empire_bulgarian
+			focus = BUL_empire_greek_bulgarian
+		}
+		prerequisite = {
+			focus = BUL_future_of_empire
+		}
+		available = {
+			OR = {
+				has_government = paternal_autocrat
+				has_government = authoritarian_democrat
+				has_government = vanguardist
+				has_government = collectivist
+				has_government = libertarian_socialist
+			}
+		}
+		completion_reward = {
+			#none
+		}
+	}
+	focus = {
+		id = BUL_boost_romania
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_empire_romania_bulgaria
+		prerequisite = {
+			focus = BUL_empire_romania_bulgaria
+		}
+		available = {
+			BUL = {
+				OR = {
+					has_government = collectivist
+					has_government = libertarian_socialist
+					has_government = vanguardist
+				}
+			}
+			ROM = {
+				OR = {
+					has_government = collectivist
+					has_government = libertarian_socialist
+					has_government = vanguardist
+				}
+			}
+			
+		}
+		completion_reward = {
+			ROM = {
+				if = {
+					limit = {
+						BUL = {
+							has_government = collectivist
+						}
+					}
+					add_ideas = BUL_collectivist_support
+					add_popularity = {
+						ideology = collectivist
+						popularity = 5
+					}
+				}
+				if = {
+					limit = {
+						BUL = {
+							has_government = libertarian_socialist
+						}
+					}
+					add_ideas = BUL_libertarian_socialist_support
+					add_popularity = {
+						ideology = libertarian_socialist
+						popularity = 5
+					}
+				}
+				if = {
+					limit = {
+						BUL = {
+							has_government = vanguardist
+						}
+					}
+					add_ideas = BUL_vanguardist_support
+					add_popularity = {
+						ideology = vanguardist
+						popularity = 5
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = BUL_coup_rom
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_boost_romania
+		prerequisite = {
+			focus = BUL_boost_romania
+		}
+		available = {
+			BUL = {
+				OR = {
+					has_government = collectivist
+					has_government = libertarian_socialist
+					has_government = vanguardist
+				}
+			}
+			ROM = {
+				exists = yes
+				has_opinion = {
+					target = BUL
+					value > 45
+				}
+				if = {
+					limit = {
+						AND = {
+							BUL = {
+								has_government = collectivist
+							}
+							ROM = {
+								check_variable = {
+									party_popularity@collectivist > 40
+								}
+							}
+						}
+						
+					}
+					
+				}
+				if = {
+					limit = {
+						AND = {
+							BUL = {
+								has_government = libertarian_socialist
+							}
+							ROM = {
+								check_variable = {
+									party_popularity@libertarian_socialist > 40
+								}
+							}
+						}	
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+							BUL = {
+								has_government = vanguardist
+							}
+							ROM = {
+								check_variable = {
+									party_popularity@vanguardist > 40
+								}
+							}
+						}
+						
+					}	
+				}
+				OR = {
+					has_government = collectivist
+					has_government = libertarian_socialist
+					has_government = vanguardist
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					BUL = {
+						has_government = authoritarian_democrat
+					}
+				}
+				BUL = {
+					create_faction = "Bulgarian-Romanian Accord"
+					add_to_faction = ROM
+				}
+				ROM = {
+					set_politics = {
+						ruling_party = authoritarian_democrat
+					}
+				}
+			}
+			if = {
+				limit = {
+					BUL = {
+						has_government = paternal_autocrat
+					}
+				}
+				BUL = {
+					create_faction = "Bulgarian-Romanian Accord"
+					add_to_faction = ROM
+				}
+				ROM = {
+					set_politics = {
+						ruling_party = paternal_autocrat
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = BUL_unite_bulgaria_romania
+		icon = none
+		cost = 7
+		x = -2
+		y = 0
+		relative_position_id = BUL_coup_rom
+		prerequisite = {
+			focus = BUL_coup_rom
+		}
+		available = {
+			ROM = {
+				is_in_faction_with = BUL
+			}
+		}
+		completion_reward = {
+			ROM = {
+				every_owned_state = {
+					limit = {
+						is_core_of = ROM
+						is_owned_and_controlled_by = ROM
+					}
+					add_core_of = BUL
+				}
+				transfer_navy = {
+					target = BUL
+				}
+				every_unit_leader = {
+					set_nationality = BUL
+				}
+			}
+			BUL = {
+				annex_country = {
+					target = ROM
+					transfer_troops = yes
+				}
+				leave_faction = yes
+				set_cosmetic_tag = BUL_romanian_bulgarian_union_UNIFIED
+			}
+		}
+	}
+	focus = {
+		id = BUL_romania_bulgaria_expand
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_unite_bulgaria_romania
+		prerequisite = {
+			focus = BUL_unite_bulgaria_romania
+		}
+		completion_reward = {}
 	}
 }

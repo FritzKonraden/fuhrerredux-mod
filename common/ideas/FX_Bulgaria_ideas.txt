@@ -534,10 +534,71 @@ ideas = {
 		BUL_fascist_support = {
 			picture = generic_fascism_drift_bonus
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea BUL_coup_gre"
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_fascist_support"
 			}
 			modifier = {
 				national_populist_drift = 0.02
+			}
+		}
+		#Romania-bulgaria ideas
+		BUL_collectivist_support = {
+			picture = generic_communism_drift_bonus
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_collectivist_support"
+			}
+			targeted_modifier = {
+				tag = ROM
+			}
+			modifier = {
+				collectivist_drift = 0.02
+			}
+		}
+		BUL_libertarian_socialist_support = {
+			picture = generic_communism_drift_bonus
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_libertarian_socialist_support"
+			}
+			targeted_modifier = {
+				tag = ROM
+			}
+			modifier = {
+				libertarian_socialist_drift = 0.02
+			}
+		}
+		BUL_vanguardist_support = {
+			picture = generic_communism_drift_bonus
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_vanguardist_support"
+			}
+			targeted_modifier = {
+				tag = ROM
+			}
+			modifier = {
+				vanguardist_drift = 0.02
+			}
+		}
+		BUL_paternal_autocrat_support = {
+			picture = generic_communism_drift_bonus
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_paternal_autocrat_support"
+			}
+			targeted_modifier = {
+				tag = ROM
+			}
+			modifier = {
+				paternal_autocrat_drift = 0.02
+			}
+		}
+		BUL_authoritarian_democrat_support = {
+			picture = generic_communism_drift_bonus
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_authoritarian_democrat_support"
+			}
+			targeted_modifier = {
+				tag = ROM
+			}
+			modifier = {
+				authoritarian_democrat_drift = 0.02
 			}
 		}
 

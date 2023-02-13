@@ -170,6 +170,13 @@ kaproni_bulgarski: "Kaproni Bulgarski"
 	BUL_byzantium: "Roman Empire of Greeks and Bulgars"
 	BUL_byzantium_def: "The Roman Empire of Greeks and Bulgars"
 	BUL_byzantium_adj: "Roman"
+	#romanian-bulgarian union/empire
+	BUL_romanian_bulgarian_union_UNIFIED: "Romanian-Bulgarian Empire"
+	BUL_romanian_bulgarian_union_UNIFIED_adj: "Bulgarian"
+	BUL_romanian_bulgarian_union_UNIFIED_def: "The Romanian-Bulgarian Empire"
+	BUL_romanian_bulgarian_union_UNIFIED_collectivist: "Romanian-Bulgarian Union"
+	BUL_romanian_bulgarian_union_UNIFIED_collectivist_adj: "Bulgarian"
+	BUL_romanian_bulgarian_union_UNIFIED_collectivist_def: "The Romanian-Bulgarian Union"
 	#BALKAN UNION
 	BUL_balkan_union_UNIFIED: "Balkan Union"
 	BUL_balkan_union_UNIFIED_ADJ: "Balkan"

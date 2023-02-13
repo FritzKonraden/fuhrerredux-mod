@@ -598,3 +598,7 @@ BUL_byzantium = {
 	color = rgb { 143 12 125 }
 	color_ui = rgb { 143 12 125 }
 }
+BUL_romanian_bulgarian_union_UNIFIED = {
+	color = rgb{ 128 255 191 }
+	color_ui = rgb { 128 255 191 }
+}
