@@ -1817,3 +1817,27 @@ country_event = { # Land movie
     name = ukraine.47.a
   }
 }
+#EVENTS FOR BULGARIA
+#MADE BY THANASISLANARAS
+country_event = {
+	id = ukraine.10000
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event ukraine.10000"
+	}
+	title = ukraine.10000.t
+	desc = ukraine.10000.d
+	is_triggered_only = yes 
+
+	option = { #accept
+		name = ukraine.10000.a
+		BUL = {
+			country_event = bulgaria.10
+		}
+	}
+	option = { #no
+		name = ukraine.10000.b
+		BUL = {
+			country_event = bulgaria.11
+		}
+	}
+}

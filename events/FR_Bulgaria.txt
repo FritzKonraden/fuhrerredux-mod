@@ -291,14 +291,14 @@ country_event = {
 		transfer_state_to = BUL
 	}
 	BUL = {
-		give_military_access = SOV
+		give_military_access = UKR
 		diplomatic_relation = {
-			country = SOV
+			country = UKR
 			relation = non_aggression_pact
 		}
 		add_political_power = -369
 	}
-	SOV = {
+	UKR = {
 		add_political_power = 369
 	}
   }
@@ -574,5 +574,50 @@ country_event = {
 	}
 	option = {
 		name = bulexp.21.b
+	}
+}
+country_event = {
+	id = bulexp.22
+	title = bulexp.22.t
+	desc = bulexp.22.d
+	is_triggered_only = yes
+	option = {
+		name = bulexp.22.a
+		BUL = {
+			add_political_power = -100
+			diplomatic_relation = {
+				country = ENG
+				relation = non_aggression_pact
+			}
+		}
+		ENG = {
+			add_political_power = 100
+			diplomatic_relation = {
+				country = BUL
+				relation = military_access
+			}
+			183 = {
+				transfer_state_to = BUL
+			}
+		}
+	}
+}
+country_event = {
+	id = bulexp.23
+	title = bulexp.23.t
+	desc = bulexp.23.d
+	is_triggered_only = yes
+	option = {
+		name = bulexp.23.a
+		add_war_support = -0.01
+	}
+	option = {
+		name = bulexp.23.b
+		add_war_support = 0.01
+		create_wargoal = {
+			target = ENG
+			type = take_state_focus
+			generator = { 183 }
+		}
 	}
 }

@@ -1,6 +1,6 @@
 #
-#
-#
+#BULGARIAN NATIONAL FOCUS TREEE
+#CREATED BY thanasislanaras FOR MOD FUHRERREDUX
 focus_tree = {
 	id = FX_bulgaria
 	country = { 
@@ -476,8 +476,8 @@ focus_tree = {
 		id = BUL_integrate_balkans
 		icon = GFX_goal_refugee_management
 		cost = 5
-		x = -2
-		y = 0
+		x = 0
+		y = 1
 		relative_position_id = BUL_subjucate_balkans
 		prerequisite = {
 			focus = BUL_subjucate_balkans
@@ -529,7 +529,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BUL_puppet_things
+		id = BUL_balkan_decisions
 		icon = GFX_goal_refugee_management
 		cost = 5
 		x = 0
@@ -733,20 +733,22 @@ focus_tree = {
 				tooltip = 5_bul_tt
 			}
 			any_owned_state = {
-				is_on_continent = asia
-				is_core_of = TUR
-				NOT = {
-					is_core_of = ARM
-					is_core_of = GEO
-					is_core_of = PHN
-					is_core_of = KUR
+				AND = {
+					is_on_continent = middle_east
+					is_core_of = TUR
+					NOT = {
+						is_core_of = ARM
+						is_core_of = GEO
+						is_core_of = PHN
+						is_core_of = KUR
+					}
 				}
 			}
 		}
 		completion_reward = {
 			every_owned_state = {
 				limit = {
-					is_on_continent = asia
+					is_on_continent = middle_east
 					is_core_of = TUR
 					NOT = {
 						is_core_of = ARM
