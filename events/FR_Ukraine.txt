@@ -1841,3 +1841,25 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = ukraine.10001
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event ukraine.10001"
+	}
+	title = "The [BUL.GetName] ask us to join the Pan-Orthodox Union"
+	desc = ukraine.10001.d
+	is_triggered_only = yes 
+	option = { #accept
+		name = "With all our blessings."
+		custom_effect_tooltip = 1_panorth_tt
+		BUL = {
+			country_event = panorth.1
+		}
+	}
+	option = { #no
+		name = "We won't give our liberty away for this scum!"
+		BUL = {
+			country_event = panorth.2
+		}
+	}
+}

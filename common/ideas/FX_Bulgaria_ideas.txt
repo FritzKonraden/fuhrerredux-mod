@@ -594,11 +594,27 @@ ideas = {
 			on_add = {
 				log = "[GetDateText]: [Root.GetName]: add idea BUL_authoritarian_democrat_support"
 			}
-			targeted_modifier = {
-				tag = ROM
-			}
 			modifier = {
 				authoritarian_democrat_drift = 0.02
+			}
+		}
+		BUL_greco_bulgarian_culture = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_greco_bulgarian_culture"
+			}
+			modifier = {
+				weekly_manpower = 100
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				consumer_goods_factor = -0.3
+				compliance_gain = 0.025
+				resistance_growth = -0.05
+				stability_weekly_factor = 0.01
+				offence = 0.1
+				defence = 0.1
+				occupation_cost = -0.1
+				production_factory_max_efficiency_factor = 1
+				army_speed_factor = 0.2
 			}
 		}
 

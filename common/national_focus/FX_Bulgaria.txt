@@ -265,7 +265,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BUL_proclaim_the_third_empire
-		icon = GFX_goal_refugee_management 
+		icon = GFX_goal_BUL_third_bulgarian_empire
 		cost = 7
 		x = 0
 		y = 1
@@ -333,7 +333,7 @@ focus_tree = {
 		available = {
 			BUL = {
 				AND = {
-					controls_state = 863
+					controls_state = 763
 					controls_state = 342
 				}
 			}
@@ -413,9 +413,24 @@ focus_tree = {
 			focus = BUL_empire_balkan
 			focus = BUL_empire_romania_bulgaria
 		}
+		available = {
+			has_government = valkist
+			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+		}
 		x = -4
 		y = 1
 	}
+	focus = {
+		id = BUL_empire_subjucate_balkan
+		icon = none 
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_empire_bulgarian
+		completion_reward = { }
+	}
+	
 	# BALKAN EMPIRE FOCUSES HERE 
 	focus = {
 		id = BUL_empire_balkan
@@ -825,7 +840,14 @@ focus_tree = {
 			focus = BUL_egypt_and_levant
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				target = POR
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SPR
+				type = annex_everything
+			}
 		}
 	}
 	focus = {
@@ -839,8 +861,15 @@ focus_tree = {
 			focus = BUL_egypt_and_levant
 			focus = BUL_integrate_anatolia
 		}
+		available = {
+			SOV = {
+				has_opinion = {
+					target = BUL
+					value > 80
+				}
+			}
+		}
 		completion_reward = {
-			#wip
 		}
 	}
 	focus = {
@@ -887,6 +916,22 @@ focus_tree = {
 					type = annex_everything
 				}
 			}
+			if = {
+				limit = {
+					AND = {
+						FRA = { exists = yes}
+						ITA = { exists = yes}
+					}
+				}
+				create_wargoal = {
+					target = ITA
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = FRA
+					type = annex_everything
+				}
+			}
 		}
 	}
 	focus = {
@@ -899,8 +944,51 @@ focus_tree = {
 		prerequisite = {
 			focus = BUL_italy_france
 		}
+		available = {
+			OR = {
+				has_government = paternal_autocrat
+				has_government = authoritarian_democrat
+				has_government = national_populist
+			}
+			original_tag = BUL
+			UKR = {
+				has_opinion = {
+					target = BUL
+					value > 80
+				}
+				OR = {
+					has_government = paternal_autocrat
+					has_government = authoritarian_democrat
+					has_government = national_populist
+				}
+				
+			}
+			SOV = {
+				has_opinion = {
+					target = BUL
+					value > 80
+				}
+				OR = {
+					has_government = paternal_autocrat
+					has_government = authoritarian_democrat
+					has_government = national_populist
+				}
+			}
+		}
 		completion_reward = {
-			#wip
+			custom_effect_tooltip = 2_panorth_tt
+			BUL = {
+				set_cosmetic_tag = BUL_pan_orthodox
+			}
+			UKR = {
+				country_event = ukraine.10001
+			}
+			SOV = {
+				country_event = soviet.1001
+			}
+			ARM = {
+				
+			}
 		}
 	}
 	focus = {
@@ -913,7 +1001,53 @@ focus_tree = {
 		prerequisite = {
 			focus = BUL_pan_orthodoxism
 		}
-		completion_reward = { }
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = BUL
+						is_core_of = FRA
+						is_core_of = ROM
+						is_core_of = SER
+						is_core_of = ALB
+						is_core_of = ITA
+						is_core_of = SPR
+						is_core_of = POR
+						is_core_of = SPM
+						is_core_of = EGY
+						is_core_of = ISR
+						is_core_of = KUR
+						is_core_of = SOV
+						is_core_of = UKR
+						is_core_of = GEO
+						is_core_of = ARM
+						is_core_of = AZR
+						is_core_of = IRQ
+						is_core_of = CYP
+						is_core_of = MOR
+						is_core_of = GOR
+						is_core_of = ERI
+						is_core_of = PHN
+						state = 116
+						state = 922
+						state = 459
+						state = 513
+						state = 460
+						state = 458
+						state = 665
+						state = 448
+						state = 661
+						state = 449
+						state = 662
+						state = 150
+						state = 863
+						state = 451
+					}
+				}
+				add_core_of = BUL
+			}
+			add_ideas = BUL_greco_bulgarian_culture
+		}
 	}
 	#BULGARIAN-ROMANIAN EMPIRE FOCUSES HERE
 	focus = {

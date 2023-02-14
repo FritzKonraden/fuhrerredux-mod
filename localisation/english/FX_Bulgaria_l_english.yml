@@ -141,12 +141,17 @@ kaproni_bulgarski: "Kaproni Bulgarski"
 	BUL_reclaim_peacefully: "The path of Diplomacy"
 	BUL_reclaim_peacefully_desc: "The Balkans: For too long a powder keg and hotspot for international conflicts and proxy wars. Our history is riddled with significant military miracles, and horrifying defeats at the hands of our enemies. But yet it has been decided. It is time we showed the world our capabilities, and restored peace to this troubled region, once and for all."
 	BUL_man_the_guns: "Man The Guns"
-	BUL_man_the_guns: "Western interventionism and frequent military conflicts between various ethnic groups has decimated a region once capable of prosperity. As of now, peace in the Balkans is but a dream - something philosophers imagine in their past time; something seemingly unreachable. If we are to ever achieve unity in the region, then we must put an end to these petty conflicts. The military is ready. It is time for the last great push. It is time to show the world what we are truly capable of."
+	BUL_man_the_guns_desc: "Western interventionism and frequent military conflicts between various ethnic groups has decimated a region once capable of prosperity. As of now, peace in the Balkans is but a dream - something philosophers imagine in their past time; something seemingly unreachable. If we are to ever achieve unity in the region, then we must put an end to these petty conflicts. The military is ready. It is time for the last great push. It is time to show the world what we are truly capable of."
 	BUL_territorial_ambitions_fulfilled: "Territorial Ambitions Fulfilled"
 	BUL_territorial_ambitions_fulfilled_desc: "Throughout the centuries, Bulgaria has been forced to surrender its rightful lands at the hands of powers far greater than ourselves. From the Kievan Rus and the Byzantines, to the Ottomans and the Germans, we have been forced too many times into servitude. But no longer. Through skilled leadership and the decisive force of our military, we have reclaimed lands long thought lost. Never again will we kneel to foreign masters. Bulgaria is for Bulgarians, now and forever."
 	BUL_sabotage_serbia: "Our connections in Serbia"
 	BUL_retake_serbian_lands: "Macedonia is Bulgaria"
 	BUL_status_of_dobrudja: "Status of Dobrudja"
+	BUL_question_of_thrace: "Question of Thrace"
+	BUL_demand_thrace: "Demand Thrace"
+	BUL_integrate_thrace: "Integrate Thrace"
+	BUL_demand_salonica: "Demand Salonica"
+	BUL_integrate_macedonia: "Integrate Macedonia"
 
 	### DYNAMIC MODIFIERS
 	BUL_expansion: "Bulgarian Expansion"
@@ -162,6 +167,8 @@ kaproni_bulgarski: "Kaproni Bulgarski"
 	3_bul_tt: "§G All states that are in the Balkan Region, and are controlled by Bulgaria get cored. §!"
 	4_bul_tt: "§G If [GRE.GetFlag][GRE.GetName]:§! \n §Y National Populist support §! §G >  40 §! "
 	5_bul_tt: "Every state that [BUL.GetFlag][BUL.GetName] controls, that is in asia, is a core of Turkey and not a core of either Armenia, Georgia, French Levant or Kurdistan gets cored"
+	1_panorth_tt: "§R THE GAME WILL END FOR [ROOT.GetName]§!"
+	2_panorth_tt: "Bulgaria Shall Request every Orthodox country to join... "
 
 	#COSMETIC TAGS
 	BUL_third_empire: "Third Bulgarian Empire"
@@ -195,5 +202,8 @@ kaproni_bulgarski: "Kaproni Bulgarski"
 	MOL_balkan_union_UNIFIED_BUL: "AR Moldova"
 	MOL_balkan_union_UNIFIED_BUL_DEF: "The Autonomous Region of Moldova"
 	MOL_balkan_union_UNIFIED_BUL_ADJ: "Moldovan"
-
+	#PAN ORTHODOXISM
+	BUL_pan_orthodox: "Orthodox Empire"
+	BUL_pan_orthodox_DEF: "The Orthodox empire"
+	BUL_pan_orthodox_ADJ: "Orthodox"
 	## DECISIONS
