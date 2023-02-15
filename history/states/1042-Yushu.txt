@@ -1,0 +1,22 @@
+state={
+	id=1042
+	name="STATE_1042"
+	history={
+		owner = XSM
+		add_core_of = XSM
+		add_claim_by = CHI
+		add_claim_by = MAN
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+
+	}
+	provinces={
+		1882 4914 4964 7940 8018 8037 12899 
+	}
+	manpower=562369
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

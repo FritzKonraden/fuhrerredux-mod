@@ -15,12 +15,14 @@ state={
 		add_core_of = IND
 		add_core_of = RAJ
 		add_core_of = TIB
+
 	}
 
 	provinces={
-		10810 12730 
+		1996 10810 12730 
 	}
 	manpower=200000
 	buildings_max_level_factor=1.000
 	state_category=wasteland
+	local_supplies=0.000
 }
