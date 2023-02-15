@@ -167,6 +167,7 @@ kaproni_bulgarski: "Kaproni Bulgarski"
 	3_bul_tt: "§G All states that are in the Balkan Region, and are controlled by Bulgaria get cored. §!"
 	4_bul_tt: "§G If [GRE.GetFlag][GRE.GetName]:§! \n §Y National Populist support §! §G >  40 §! "
 	5_bul_tt: "Every state that [BUL.GetFlag][BUL.GetName] controls, that is in asia, is a core of Turkey and not a core of either Armenia, Georgia, French Levant or Kurdistan gets cored"
+	6_bul_tt: "§G [BUL.GetFlag][BUL.GetName] will get claims on every Balkan state.§!"
 	1_panorth_tt: "§R THE GAME WILL END FOR [ROOT.GetName]§!"
 	2_panorth_tt: "Bulgaria Shall Request every Orthodox country to join... "
 

@@ -82,9 +82,7 @@ focus_tree = {
 				has_completed_focus = BUL_man_the_guns
 			}
 		}
-		completion_reward = {
-
-		}
+		completion_reward = {}
 	}
 	focus = {
 		id = BUL_man_the_guns
@@ -144,6 +142,23 @@ focus_tree = {
 		prerequisite = {
 			focus = BUL_man_the_guns
 		}
+		bypass = {
+			OR = {
+				SER = {
+					OR = {
+						is_in_faction_with = BUL
+						is_guaranteed_by = BUL
+						is_puppet_of = BUL
+					}
+				}
+				BUL = {
+					controls_state = 942
+					controls_state = 787
+					controls_state = 106
+				}
+			}
+
+		}
 		completion_reward = {
 			942 = {
 				add_dynamic_modifier = {
@@ -176,6 +191,23 @@ focus_tree = {
 		prerequisite = {
 			focus = BUL_sabotage_serbia
 		}
+		bypass = {
+			OR = {
+				SER = {
+					OR = {
+						is_in_faction_with = BUL
+						is_guaranteed_by = BUL
+						is_puppet_of = BUL
+					}
+				}
+				BUL = {
+					controls_state = 942
+					controls_state = 787
+					controls_state = 106
+				}
+			}
+
+		}
 		completion_reward = {
 			create_wargoal = {
 				type = take_state_focus
@@ -201,6 +233,23 @@ focus_tree = {
 		prerequisite = {
 			focus = BUL_sabotage_serbia
 			focus = BUL_question_of_thrace
+		}
+		bypass = {
+			OR = {
+				ROM = {
+					OR = {
+						is_in_faction_with = BUL
+						is_guaranteed_by = BUL
+						is_puppet_of = BUL
+					}
+				}
+				BUL = {
+					OR = {
+						controls_state = 77
+						controls_state = 861
+					}
+				}
+			}
 		}
 		available = {
 			NOT = {
@@ -289,6 +338,17 @@ focus_tree = {
 		prerequisite = {
 			focus = BUL_man_the_guns
 		}
+		bypass = {
+			OR = {
+				GRE = {
+					OR = {
+						is_in_faction_with = BUL
+						is_guaranteed_by = BUL
+						is_puppet_of = BUL
+					}
+				}
+			}
+		}
 		completion_reward = {
 			custom_effect_tooltip = 2_bul_tt
 			342 = {
@@ -314,6 +374,23 @@ focus_tree = {
 		prerequisite = {
 			focus = BUL_question_of_thrace
 		}
+		bypass = {
+			OR = {
+				GRE = {
+					OR = {
+						is_in_faction_with = BUL
+						is_guaranteed_by = BUL
+						is_puppet_of = BUL
+					}
+				}
+				BUL = {
+					OR = {
+						controls_state = 763
+						controls_state = 342
+					}
+				}
+			}
+		}
 		completion_reward = {
 			GRE = {
 				country_event = gre.4
@@ -329,6 +406,24 @@ focus_tree = {
 		relative_position_id = BUL_demand_thrace
 		prerequisite = {
 			focus = BUL_demand_thrace
+		}
+		bypass = {
+			OR = {
+				GRE = {
+					OR = {
+						is_in_faction_with = BUL
+						is_puppet_of = BUL
+						is_guaranteed_by = BUL	
+					}
+				}
+				BUL = {
+					OR = {
+						controls_state = 763
+						controls_state = 342
+					}
+				}
+
+			}
 		}
 		available = {
 			BUL = {
@@ -356,6 +451,24 @@ focus_tree = {
 		relative_position_id = BUL_demand_thrace
 		prerequisite = {
 			focus = BUL_demand_thrace
+		}
+		bypass = {
+			OR = {
+				GRE = {
+					OR = {
+						is_in_faction_with = BUL
+						is_puppet_of = BUL
+						is_guaranteed_by = BUL	
+					}
+				}
+				BUL = {
+					OR = {
+						controls_state = 731
+						controls_state = 184
+					}
+				}
+
+			}
 		}
 		available = {
 			BUL = {
@@ -428,7 +541,18 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BUL_empire_bulgarian
-		completion_reward = { }
+		prerequisite = {
+			focus = BUL_empire_bulgarian
+		}
+		completion_reward = {
+			custom_effect_tooltip = 6_bul_tt
+			every_state = {
+				limit = {
+					BUL_is_balkan_state = yes
+				}
+				add_claim_by = BUL
+			}
+		}
 	}
 	
 	# BALKAN EMPIRE FOCUSES HERE 
@@ -839,6 +963,9 @@ focus_tree = {
 		prerequisite = {
 			focus = BUL_egypt_and_levant
 		}
+		available = {
+			spanish_civil_war_end = yes
+		}
 		completion_reward = {
 			create_wargoal = {
 				target = POR
@@ -860,6 +987,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BUL_egypt_and_levant
 			focus = BUL_integrate_anatolia
+			focus = BUL_united_kingdom
 		}
 		available = {
 			SOV = {
@@ -870,6 +998,9 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			SOV = {
+				country_event = soviet.1002
+			}
 		}
 	}
 	focus = {
@@ -1047,6 +1178,8 @@ focus_tree = {
 				add_core_of = BUL
 			}
 			add_ideas = BUL_greco_bulgarian_culture
+			add_stability = 0.3
+			add_war_support = 0.1
 		}
 	}
 	#BULGARIAN-ROMANIAN EMPIRE FOCUSES HERE

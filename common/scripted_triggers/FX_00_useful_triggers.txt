@@ -1091,3 +1091,40 @@ is_romanian_state_no_transylvania = {
 		state = 80
 	}
 }
+spanish_civil_war_end = {
+	custom_trigger_tooltip = {
+		tooltip = "Spanish Civil War has ended"
+		AND = {
+			AND = {
+				SPR = {
+					AND = {
+						has_war_with = SPM
+						has_war_with = SPA
+						has_war_with = SPF
+					}
+				}
+				SPM = {
+					AND = {
+						has_war_with = SPR
+						has_war_with = SPA
+						has_war_with = SPF
+					}
+				}
+				SPF = {
+					AND = {
+						has_war_with = SPR
+						has_war_with = SPA
+						has_war_with = SPM
+					}
+				}
+				SPA = {
+					AND = {
+						has_war_with = SPR
+						has_war_with = SPF
+						has_war_with = SPM
+					}
+				}
+			}
+		}
+	}
+}

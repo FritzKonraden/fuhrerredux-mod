@@ -329,11 +329,6 @@ country_event = {
 		}
 		341 = {
 			set_demilitarized_zone = no
-			set_state_name = Constantinople
-			set_province_name = {
-				id = 9833
-				name = Constantinople
-			}
 		}
 	}
 	option = {
@@ -499,7 +494,7 @@ country_event = {
 							state = 374
 							state = 776
 							state = 343
-							state = 777
+							state = 77
 							state = 49
 						}
 					}
@@ -509,12 +504,12 @@ country_event = {
 			transfer_state = 374
 			transfer_state = 776
 			transfer_state = 343
-			transfer_state = 777
+			transfer_state = 77
 			transfer_state = 49
 			add_state_core = 374
 			add_state_core = 776
 			add_state_core = 343
-			add_state_core = 777
+			add_state_core = 77
 			add_state_core = 49
 			add_state_core = 347
 		}
@@ -607,6 +602,12 @@ country_event = {
 	title = bulexp.23.t
 	desc = bulexp.23.d
 	is_triggered_only = yes
+	trigger = {
+		BUL = {
+			has_completed_focus = BUL_question_of_turkey
+		}
+	}
+	major = yes 
 	option = {
 		name = bulexp.23.a
 		add_war_support = -0.01
@@ -621,6 +622,36 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = bulexp.24
+	title = bulexp.24.t
+	desc = bulexp.24.d
+	is_triggered_only = yes
+	option = {
+		name = bulexp.24.a
+		BUL = {
+			add_to_faction = SOV
+		}
+	}
+}
+country_event = {
+	id = bulexp.25
+	title = bulexp.25.t
+	desc = bulexp.25.d
+	is_triggered_only = yes
+	option = {
+		name = bulexp.25.a
+		add_stability = -0.01
+	}
+	option = {
+		name = bulexp.25.b
+		create_wargoal = {
+			target = SOV
+			type = annex_everything
+		}
+	}
+}
+
 
 add_namespace = panorth
 country_event = {
