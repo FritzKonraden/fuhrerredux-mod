@@ -27,10 +27,13 @@ can_release_cambodia = {
 #Beijing - annexation_CHI_CONQ
 can_release_china = {
   NOT = { is_claimed_by = ROOT }
-  state = 608 # Beijing
+  OR = {
+    state = 608 # Beijing
+    state = 895 # Nanjing
+  }
   NOT = {
     OR = {
-      country_exists = ROC 
+      country_exists = CHI 
       country_exists = ZHI 
     }
   }
@@ -121,8 +124,8 @@ can_release_manchuria = {
   NOT = { is_claimed_by = ROOT }
   ROOT = {
     NOT = {
-      country_exists = MAL
-      has_country_flag = MAL_CONQ
+      country_exists = MAN
+      has_country_flag = MAN_CONQ
     }
   }
 }
@@ -184,8 +187,10 @@ can_release_sichuan = {
   state = 605
   NOT = { is_claimed_by = ROOT }
   ROOT = {
-    is_chinese_tag = no
-    NOT = { has_country_flag = SCH_CONQ }
+    NOT = { 
+      country_exists = SCH
+      has_country_flag = SCH_CONQ 
+    }
   }
 }
 
@@ -194,8 +199,10 @@ can_release_shanxxi = {
   state = 615
   NOT = { is_claimed_by = ROOT }
   ROOT = {
-    is_chinese_tag = no
-    NOT = { has_country_flag = SHX_CONQ }
+    NOT = { 
+      has_country_flag = SHX_CONQ
+      country_exists = SHX
+    }
   }
 }
 
@@ -216,14 +223,16 @@ can_release_sinkiang = {
   state = 617
   NOT = { is_claimed_by = ROOT }
   ROOT = {
-    is_chinese_tag = no
-    NOT = { has_country_flag = SIK_CONQ }
+    NOT = { 
+      country_exists = SIK
+      has_country_flag = SIK_CONQ 
+    }
   }
 }
 
 #Tibet - annexation_TIB_CONQ
 can_release_tibet = {
-  state = 332
+  state = 322
   NOT = { is_claimed_by = ROOT }
   ROOT = {
     NOT = { 
@@ -264,8 +273,10 @@ can_release_xibei_san_ma = {
   state = 604
   NOT = { is_claimed_by = ROOT }
   ROOT = {
-    is_chinese_tag = no
-    NOT = { has_country_flag = XSM_CONQ }
+    NOT = { 
+      country_exists = XSM
+      has_country_flag = XSM_CONQ
+    }
   }
 }
 
@@ -274,8 +285,10 @@ can_release_yunnan = {
   state = 325
   NOT = { is_claimed_by = ROOT }
   ROOT = {
-    is_chinese_tag = no
-    NOT = { has_country_flag = YUN_CONQ }
+    NOT = { 
+      country_exists = YUN
+      has_country_flag = YUN_CONQ 
+    }
   }
 }
 
