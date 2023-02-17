@@ -1959,7 +1959,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "date"
-					position = { x = -170 y = 75 }
+					position = { x = -184 y = 62 }
 					font = "hoi_24header"
 					borderSize = {x = 4 y = 4}
 					text = "Pikku Saippuakauppias Itkee!!"	
@@ -1970,7 +1970,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "name"
-					position = { x = -184 y = 110 }
+					position = { x = -190 y = 82 }
 					font = "hoi_24header"
 					borderSize = {x = 4 y = 4}
 					text = "Pikku Saippuakauppias Itkee!!"	

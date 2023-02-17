@@ -1,3 +1,4 @@
+
 state={
 	id=102
 	name="STATE_102"
@@ -11,15 +12,16 @@ state={
 		}
 		victory_points = {
 			9627 3 
-		}	
+		}
 		add_core_of = SER
 
 	}
 
 	provinces={
-		3631 6650 9596 9627 
+		3631 6650 9627 
 	}
 	manpower=1144300
 	buildings_max_level_factor=1.000
 	state_category=town
+	local_supplies=0.000
 }
