@@ -16,8 +16,7 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	fuel_silos = 1
-
-  basic_train = 1
+	basic_train = 1
 }
 
 if = {
@@ -80,6 +79,21 @@ set_popularities = {
 	paternal_autocrat = 0
 	national_populist = 4
 	valkist = 0
+}
+
+# DIPLOMACY
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = COG
+		autonomous_state = autonomy_colony
+		freedom_level = 0.5
+	}
+	else = {
+		puppet = COG
+	}
 }
 
 recruit_character = BEL_King_Albert_I

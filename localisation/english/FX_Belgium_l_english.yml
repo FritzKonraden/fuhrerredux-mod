@@ -257,7 +257,20 @@ BEL_goal_small_arms: "Fund FN Herstal Research"
 BEL_goal_small_arms_desc: "Small arms are as important as the soldiers themselves. Investing in better equipment and a more streamlined production is vital to the Belgian war machine, especially when FN Herstal is involved and our industry can profit from funded research."
 BEL_goal_artillery: "Artillery Focus"
 BEL_goal_artillery_desc: "Artillery is the backbone of any good army. Artillery breaks through the enemy lines and clears the way for infantry to move in and finish the job."
-
+#congo
+BEL_good_governor: "The Good Governor"
+BEL_goal_fight_rebels: "Fight Back the Rebels"
+BEL_goal_provide_equipment: "Provide Equipment"
+BEL_goal_expand_force_publique: "Expand the Force Publique"
+BEL_military_drills: "Military Drills"
+BEL_goal_congo_industry: "Industrialisaton"
+BEL_congo_arms_production: "Kickstart the Arms Production"
+BEL_force_european_exports: "Force Imports From Europe"
+BEL_colonialism_human_face: "Colonialism with Human Face"
+BEL_civilize_people: "Civilize the People"
+BEL_provide_education: "Provide Education"
+BEL_fix_numbers: "Let's Fix Some Numbers..."
+BEL_integration: "Integration"
 
 #####Events#####
 bel.1.t: "Belgium after the Great War"
@@ -374,6 +387,11 @@ bel.32.t: "Collectivists remain in control"
 bel.32.d: "The National Collectivists of the KPB/PCB remain steadily in control of the new Belgian state. Though their victory in the Revolution, they will bring peace and prosperity to the peoples of Flanders and Wallonia."
 bel.32.a: "Long live the Revolution!"
 
+##### Belgisch Centraal-Afrika
+bca.1.t: "Belgisch Centraal-Afrika"
+bca.1.d: "On 18 October 1908, the Belgian Parliament voted in favour of annexing the Congo as a Belgian colony. After our victory in the Great War the Ruanda-Urundi also fell into our hands. De jure it was a League of Nations mandate, but de facto Belgium had a free hand there. In 1933, Congo and Ruanda-Urundi merged to form Belgian Central Africa. The new African government was given greater autonomy in exchange for one demand: the BCA has until 1939 to prepare for annexation by Belgium. The plan is to 'civilise' and develop the country while making it dependent on Europe until it is ready for integration as a federal region. Will Pierre Ryckman's strategy satisfy the Belgian government?"
+bca.1.a: "Time Will Tell"
+bcaintro_tt: "§RThe Deadline is January 1939§!"
 #####Decisions#####
 BEL_economy: "The Belgian Economy"
 BEL_economy_desc: "Our national industry is important for the wealth and strength of our nation. Our government needs to do everything in its power to improve and build upon the current infrastructure."
