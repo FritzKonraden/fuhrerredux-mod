@@ -141,19 +141,6 @@ units = {
 		location = 11407  # St Hubert
 		division_template = "Division de Cavalerie"
 		start_experience_factor = 0.2
-
-	}
-
-
-	### Belgian Congo ###
-	division= {	
-		name = "Force Publique du Congo Belge"
-		location = 10968  # Leopoldville
-		division_template = "Division Coloniale"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "BEL" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
 	}
 }
 

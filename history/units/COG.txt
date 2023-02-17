@@ -13,14 +13,29 @@
 	}
 }
 
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_0
-			creator = "COG"
-		}
-		requested_factories = 2
-		progress = 0.1
-		efficiency = 50
+units = {
+	division= {	
+		name = "1ère Division de Force Publique"
+		location = 5117  # Leopoldville
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "2ème Division de Force Publique"
+		location = 5117  # Leopoldville
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "3ème Division de Force Publique"
+		location = 191  # Elisabethville
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "4ème Division de Force Publique"
+		location = 9962  # Kigali
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
 	}
 }

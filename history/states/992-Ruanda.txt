@@ -5,9 +5,8 @@ state={
 
 	history={
 		add_core_of = RWA
-		owner = BEL
-    add_claim_by = BEL
-		add_claim_by = ENG
+		add_core_of = COG
+		owner = COG
 		buildings = {
 			infrastructure = 2
 		}

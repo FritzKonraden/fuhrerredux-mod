@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = BEL
+		owner = COG
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -24,7 +24,6 @@ state={
 			5117 10
 		}
 		add_core_of = COG
-    add_claim_by = BEL
 	}
 
 	provinces={
