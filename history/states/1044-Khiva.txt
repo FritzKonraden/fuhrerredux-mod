@@ -1,0 +1,25 @@
+state={
+	id=1044
+	name="STATE_1044"
+	history={
+		owner = TRK
+		add_core_of = TRK
+		add_claim_by = SOV
+		add_claim_by = RUS
+		victory_points = {
+			12324 5 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+
+	}
+	provinces={
+		10395 10435 10485 12324 12454 12465 
+	}
+	manpower=745780
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

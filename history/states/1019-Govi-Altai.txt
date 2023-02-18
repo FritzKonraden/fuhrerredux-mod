@@ -7,7 +7,8 @@ state={
 	}
 
 	history={
-		owner = MON
+		owner = SIK
+		add_core_of = SIK
 		add_core_of = MON
 		buildings = {
 			infrastructure = 2
@@ -17,7 +18,7 @@ state={
 	}
 
 	provinces={
-		1781 1855 4858 7864 10560 10634 12614 
+		1774 4751 7808 7870 10539 
 	}
 	manpower=44213
 	buildings_max_level_factor=1.000
