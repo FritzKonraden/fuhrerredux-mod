@@ -1,6 +1,9 @@
 ﻿capital = 295
 
 oob = "COG"
+set_cosmetic_tag = COG_BCA
+
+recruit_character = COG_Pierre_Ryckmans
 
 # Starting tech
 set_technology = {
@@ -8,9 +11,9 @@ set_technology = {
 	tech_mountaineers = 1
 }
 
-set_convoys = 5
+set_convoys = 10
 set_stability = 0.50
-set_war_support = 0.50
+set_war_support = 0.20
 
 set_politics = {	
 	ruling_party = authoritarian_democrat
@@ -27,13 +30,13 @@ set_popularities = {
   social_liberal = 0
   market_liberal = 0
   social_conservative = 0
-  authoritarian_democrat = 75
-  paternal_autocrat = 25
+  authoritarian_democrat = 100
+  paternal_autocrat = 0
   national_populist = 0
   valkist = 0
 }
 
 add_ideas = {
 	party_pop_0_70
-	semi_presidential_republic
+	constitutional_monarchy
 }

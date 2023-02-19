@@ -4154,4 +4154,64 @@ spriteType = {
 		name = "GFX_goal_Red_Star_Torch_White"
 		texturefile = "gfx/interface/goals/Red_Star_Torch_White.png"
 	}
+	SpriteType = {
+       name = "GFX_goal_BEL_good_governor"
+       texturefile = "gfx/interface/goals/BEL_good_governor.png"
+    }
+    SpriteType = {
+       name = "GFX_goal_BEL_goal_fight_rebels"
+       texturefile = "gfx/interface/goals/BEL_goal_fight_rebels.png"
+    }
+    SpriteType = {
+       name = "GFX_goal_BEL_goal_expand_force_publique"
+       texturefile = "gfx/interface/goals/BEL_goal_expand_force_publique.png"
+    }
+    SpriteType = {
+       name = "GFX_goal_BEL_military_drills"
+       texturefile = "gfx/interface/goals/BEL_military_drills.png"
+    }
+    SpriteType = {
+       name = "GFX_goal_BEL_goal_resource_extraction"
+       texturefile = "gfx/interface/goals/BEL_goal_resource_extraction.png"
+    }
+    SpriteType = {
+       name = "GFX_goal_BEL_goal_tungsten"
+       texturefile = "gfx/interface/goals/BEL_goal_tungsten.png"
+    }
+    SpriteType = {
+       name = "GFX_goal_BEL_goal_copper"
+       texturefile = "gfx/interface/goals/BEL_goal_copper.png"
+    }
+    SpriteType = {
+       name = "GFX_goal_BEL_goal_rubber"
+       texturefile = "gfx/interface/goals/BEL_goal_rubber.png"
+    }
+    SpriteType = {
+       name = "GFX_goal_BEL_goal_uranium"
+       texturefile = "gfx/interface/goals/BEL_goal_uranium.png"
+    }
+    SpriteType = {
+       name = "GFX_goal_BEL_force_european_exports"
+       texturefile = "gfx/interface/goals/BEL_force_european_exports.png"
+    }
+    SpriteType = {
+       name = "GFX_goal_BEL_colonialism_human_face"
+       texturefile = "gfx/interface/goals/BEL_colonialism_human_face.png"
+    }
+    SpriteType = {
+       name = "GFX_goal_BEL_civilize_people"
+       texturefile = "gfx/interface/goals/BEL_civilize_people.png"
+    }
+    SpriteType = {
+       name = "GFX_goal_BEL_provide_education"
+       texturefile = "gfx/interface/goals/BEL_provide_education.png"
+    }
+    SpriteType = {
+       name = "GFX_goal_BEL_fix_numbers"
+       texturefile = "gfx/interface/goals/BEL_fix_numbers.png"
+    }
+    SpriteType = {
+       name = "GFX_goal_BEL_integration"
+       texturefile = "gfx/interface/goals/BEL_integration.png"
+    }
 }

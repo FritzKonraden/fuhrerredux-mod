@@ -4,3 +4,9 @@ BEL_economy = {
 		original_tag = BEL
 	}
 }
+BEL_congo_decisions = {
+	icon = GFX_decision_category_generic_industry
+	allowed = {
+		original_tag = BEL
+	}
+}

@@ -11,10 +11,6 @@ characters = {
 			traits = { }
 		}
 		country_leader = {
-			ideology = collectivist_subtype
-			traits = { }
-		}
-		country_leader = {
 			ideology = vanguardist_subtype
 			traits = { }
 		}

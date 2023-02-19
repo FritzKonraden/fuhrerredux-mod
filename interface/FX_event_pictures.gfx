@@ -262,6 +262,13 @@ spriteTypes = {
     texturefile = "gfx/event_pictures/Southeast_Asia/Philippines/report_event_PHI_rizal_park.png"
   }
   ###############################################
+  # Belgium
+  ###############################################
+  spriteType = {
+    name = "GFX_BEL_bca_intro"
+    texturefile = "gfx/event_pictures/Europe/Belgium/BEL_bca_intro.png"
+  }
+  ###############################################
   # Generic
   ###############################################
   spriteType = {

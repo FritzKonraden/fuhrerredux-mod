@@ -9,12 +9,11 @@ state={
 		rubber=5.0
 	}
 	history={
-		owner = BEL
+		owner = COG
 		buildings = {
 			infrastructure = 1
 		}
 		add_core_of = COG
-    add_claim_by = BEL
 	}
 
 	provinces={
