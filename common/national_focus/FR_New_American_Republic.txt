@@ -437,7 +437,19 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
-
+	# Absorb the Black Legion
+	focus = {
+		id = NAR_absorb_the_black_legion
+		icon = GFX_goal_skull_treaty
+		x = 1
+		y = 1
+		cost = 6
+		prerequisite = { focus = NAR_white_welfare }
+		relative_position_id = NAR_white_welfare
+		completion_reward = {
+			add_manpower = 5000
+		}
+	}
 	# Forced Labour
 	focus = {
 		id = NAR_forced_labour
@@ -453,19 +465,6 @@ focus_tree = {
 		}
 	}
 
-	# Absorb the Black Legion
-	focus = {
-		id = NAR_absorb_the_black_legion
-		icon = GFX_goal_skull_treaty
-		x = 1
-		y = 1
-		cost = 6
-		prerequisite = { focus = NAR_white_welfare }
-		relative_position_id = NAR_white_welfare
-		completion_reward = {
-			add_manpower = 5000
-		}
-	}
 
 	# Christian Work Ethics
 	focus = {
@@ -1938,6 +1937,29 @@ focus_tree = {
 	}
 
 	#################################################################
+	#our own domain	
+	focus = {
+		id = NAR_our_own_domain
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 13
+		y = 6
+		cost = 6
+		available = {
+		  is_subject = no
+			NOT = { has_idea = NAR_illegitimate_government }
+		}
+		mutually_exclusive = {
+			focus = NAR_favour_the_reich
+			focus = NAR_choose_the_entente
+		}
+		#relative_position_id = NAR_join_the_entente
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = washington_accord
+		}
+	}
 
 	# Choose the Entente
 	focus = {
@@ -1969,28 +1991,7 @@ focus_tree = {
 	}
 
 	# Our Own Domain
-	focus = {
-		id = NAR_our_own_domain
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = 13
-		y = 6
-		cost = 6
-		available = {
-		  is_subject = no
-			NOT = { has_idea = NAR_illegitimate_government }
-		}
-		mutually_exclusive = {
-			focus = NAR_favour_the_reich
-			focus = NAR_choose_the_entente
-		}
-		relative_position_id = NAR_join_the_entente
-		completion_reward = {
-			set_rule = {
-				can_create_factions = yes
-			}
-			create_faction = washington_accord
-		}
-	}
+
 
 	# Favour the Reich
 	focus = {

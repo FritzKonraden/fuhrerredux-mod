@@ -2384,7 +2384,12 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 6
-		mutually_exclusive = { focus = BLR_regulate_the_financial_sector }
+		mutually_exclusive = {
+
+			 focus = BLR_regulate_the_financial_sector
+			focus = BLR_in_conserving_liberty
+			
+		}
 		prerequisite = { focus = BLR_industrial_subsidies }
 		prerequisite = { focus = BLR_protect_the_working_man }
 		relative_position_id = BLR_industrial_subsidies
