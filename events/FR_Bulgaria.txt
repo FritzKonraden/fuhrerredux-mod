@@ -375,6 +375,12 @@ country_event = {
 	title = bulgaria.14.t
 	desc = bulgaria.14.d
 	is_triggered_only = yes
+	trigger = {
+		BUL = {
+			has_completed_focus = BUL_demand_constantinople
+			
+		}
+	}
 	option = {
 		name = bulgaria.14.a
 		add_war_support = 0.1

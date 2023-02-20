@@ -9,7 +9,7 @@ ideas = {
 			original_tag = BUL
 		}
 		removal_cost = -1
-		picture = bul_the_fate_of_the_balkans
+		picture = GFX_idea_BUL_balkan_spirit
 		modifier = {
 			stability_factor = 0.1
 			war_support_factor = 0.1

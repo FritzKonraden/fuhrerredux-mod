@@ -323,4 +323,8 @@ spriteTypes = {
 	  name = "GFX_idea_CLB_surounded"
 	  texturefile = "gfx/interface/ideas/ideas/CLB_surounded.png"
   }
+  spriteType = {
+	name = "GFX_idea_BUL_balkan_spirit"
+	textureFile = "gfx/interface/ideas/ideas/BUL_balkan_spirit.png"
+  }
 }

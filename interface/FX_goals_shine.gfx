@@ -15146,7 +15146,7 @@ spriteTypes = {
     legacy_lazy_load = no
   }
   spriteType = {
-    name = "GFX_goal_BUL_armed_forces"
+    name = "GFX_goal_BUL_armed_forces_shine"
     texturefile = "gfx/interface/goals/BUL_armed_forces.png"
     effectFile = "gfx/FX/buttonstate.lua"
     animation = {
@@ -15176,6 +15176,5 @@ spriteTypes = {
     }
     legacy_lazy_load = no
   }
-    
 }
   

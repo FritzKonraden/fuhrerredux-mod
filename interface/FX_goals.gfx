@@ -1859,4 +1859,17 @@ spriteTypes = {
 		name = "GFX_goal_BUL_third_bulgarian_empire"
 		texturefile = "gfx/interface/goals/BUL_third_bulgarian_empire.png"
 	}
+	spriteType = {
+		name = "GFX_goal_BUL_a_balkan_empire"
+		textureFile = "gfx/interface/goals/BUL_a_balkan_empire.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_the_balkan_empire"
+		textureFile = "gfx/interface/goals/BUL_the_balkan_empire.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_balkan_subjucate_balkans"
+		textureFile = "gfx/interface/goals/BUL_balkan_subjucate_balkans.png"
+	}
+
 }
