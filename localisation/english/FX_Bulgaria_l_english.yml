@@ -192,6 +192,8 @@ kaproni_bulgarski: "Kaproni Bulgarski"
 	6_bul_tt: "§G [BUL.GetFlag][BUL.GetName] will get claims on every Balkan state.§!"
 	7_bul_tt: "§G [BUL.GetFlag][BUL.GetName] will core all Balkan states except Transylvania, and claim all Italian and Turkish original states §!"
 	8_bul_tt: "§Y[GRE.GetFlag][GRE.GetName]:§! \n National Populist support §Ymore§! than §C40§!"
+	9_bul_tt: "[BUL.GetName] will claim all Middle-eastern states and core all Balkan states it currently controls"
+	10_bul_tt: "[BUL.GetName] will core all middle-eastern states "
 	1_panorth_tt: "§R THE GAME WILL END FOR [ROOT.GetName]§!"
 	2_panorth_tt: "Bulgaria Shall Request every Orthodox country to join... "
 

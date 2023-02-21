@@ -1086,6 +1086,11 @@ focus_tree = {
 		prerequisite = {
 			focus = BUL_remaining_balkans
 		}
+		# available = {
+		# 	BUL = {
+		# 		controls_all_balkan_states = yes
+		# 	}
+		# }
 		completion_reward = {
 			create_wargoal = {
 				target = PHN
@@ -1103,6 +1108,30 @@ focus_tree = {
 				target = EGY
 				type = annex_everything
 			}
+			BUL = {
+				custom_effect_tooltip = 9_bul_tt
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = PHN
+							is_core_of = ISR
+							is_core_of = IRQ
+							is_core_of = EGY
+						}
+						
+					}
+					add_claim_by = BUL
+				}
+				every_owned_state = {
+					limit = {
+						OR = {
+							is_balkan_state = yes
+						}
+					}
+					add_core_of = BUL
+				}
+			}
+			
 		}
 	}
 	focus = {
@@ -1119,6 +1148,7 @@ focus_tree = {
 			spanish_civil_war_end = yes
 		}
 		completion_reward = {
+			custom_effect_tooltip = 10_bul_tt
 			create_wargoal = {
 				target = POR
 				type = annex_everything
@@ -1126,6 +1156,17 @@ focus_tree = {
 			create_wargoal = {
 				target = SPR
 				type = annex_everything
+			}
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = PHN
+						is_core_of = ISR
+						is_core_of = IRQ
+						is_core_of = EGY
+					}
+				}
+				add_core_of = BUL
 			}
 		}
 	}

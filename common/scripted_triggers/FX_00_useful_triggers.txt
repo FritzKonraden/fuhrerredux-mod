@@ -1128,3 +1128,35 @@ spanish_civil_war_end = {
 		}
 	}
 }
+
+controls_all_balkan_states = {
+	custom_trigger_tooltip = {
+		tooltip = "Controlls all Balkan States"
+		all_state = {
+			AND = {
+				is_balkan_state = yes
+				is_controlled_by = root
+			}
+		}
+		# ROOT = {
+		# 	OR = {
+		# 		is_core_of = GRE
+		# 		is_core_of = ALB
+		# 		is_core_of = BUL
+		# 		is_core_of = ROM
+		# 		is_core_of = SER
+		# 		state = 796
+		# 		state = 163
+		# 		state = 736
+		# 		state = 917
+		# 		state = 770
+		# 		NOT = {
+		# 			OR = {
+		# 				state = 340
+		# 				state = 339
+		# 			}
+		# 		}
+		# 	}
+		# }
+	}
+}
