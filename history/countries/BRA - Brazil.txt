@@ -81,20 +81,24 @@ set_politics = {
 
 set_popularities = {
     social_conservative = 10
-    market_liberal = 30
-    paternal_autocrat = 20
+    market_liberal = 25
+	social_liberal = 5
+    paternal_autocrat = 15
     valkist = 5
     collectivist = 25
     libertarian_socialist = 5
     authoritarian_democrat = 5
+	valkist = 5
 }
-
 add_ideas = {
 	party_pop_0_30
 	limited_conscription
-	BRA_political_instability
 	presidential_republic
+	BRA_minor_drug_cartels
+	BRA_back_in_time
+	BRA_political_instability
 }
+
 
 set_convoys = 40
 set_stability = 0.30

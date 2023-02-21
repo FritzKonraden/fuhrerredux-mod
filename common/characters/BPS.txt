@@ -1,4 +1,28 @@
 characters = {
+	BPS_Arthur_Bernardes = {
+		name = "Arthur Bernardes"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BPS/Portrait_BPS_Arthur_Bernardes.png"
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_democrat_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = paternal_autocrat_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = national_populist_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = valkist_subtype
+			traits = { }
+		}
+	}
 	BPS_Plinio_Correa = {
 		name = "Plinio Correa"
 		portraits = {
@@ -8,10 +32,6 @@ characters = {
 		}
 		country_leader = {
 			ideology = authoritarian_democrat_subtype
-			traits = { }
-		}
-		country_leader = {
-			ideology = paternal_autocrat_subtype
 			traits = { }
 		}
 		country_leader = {

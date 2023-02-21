@@ -1550,7 +1550,7 @@ ideas = {
 
 	
 
-#### Finnish Winter War Branch #### = {
+#### New Finnish Winter War Branch #### = {
 		FIN_winter_war = {
 		on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_winter_war"}
 

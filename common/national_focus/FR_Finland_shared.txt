@@ -2169,3 +2169,470 @@
 
 	}
 
+###########################
+##  NEW WINTER WAR TREE  ##
+###########################
+
+shared_focus {
+	id = FIN_finlands_bold_opportunity
+	icon = GFX_integrate_karelia
+	cost = 3
+	x = 25
+	y = 0 
+
+	available = {
+		is_puppet = no
+
+		has_vanguardist_government = no
+
+		has_collectivist_government = no
+
+		has_libertarian_socialist_government = no
+
+	GER = {
+		has_war_with = SOV
+	}
+}
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+	}
+}
+
+shared_focus {
+	id = FIN_strengthening_the_mannerheim_line
+	icon = GFX_mannerheim_line
+	cost = 3
+	prerequisite = {
+		FIN_finlands_bold_opportunity
+	}
+	x = 23
+	y = 1 
+
+	available = {
+		is_puppet = no
+
+		has_vanguardist_government = no
+
+		has_collectivist_government = no
+
+		has_libertarian_socialist_government = no
+
+		owns_state = 146
+}
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+		9100 = {
+			bunker =  [3]
+			}
+	
+
+	9105 = {
+		bunker =  [3]
+		}
+	}
+}
+
+shared_focus {
+	id = FIN_expanding_the_army
+	icon = GFX_army_training
+	cost = 3
+	prerequisite = {
+		FIN_finlands_bold_opportunity
+	}
+	x = 25
+	y = 1
+
+	available = {
+		is_puppet = no
+
+		has_vanguardist_government = no
+
+		has_collectivist_government = no
+
+		has_libertarian_socialist_government = no
+
+}
+	ai_will_do = {
+		factor = 10
+	}
+
+	completion_reward = {
+		army_experience = 50
+	
+
+		create_unit = {
+			division =  "Jalkavakidivisioona" start_experience_factor = 0.5 start_equipment_factor = 0.5
+		owner = GER 
+		}
+		create_unit = {
+			division =  "Jalkavakidivisioona" start_experience_factor = 0.5 start_equipment_factor = 0.5
+		owner = GER
+		}
+		create_unit = {
+			division =  "Jalkavakidivisioona" start_experience_factor = 0.5 start_equipment_factor = 0.5
+		owner = GER
+		}
+		create_unit = {
+			division =  "Jalkavakidivisioona" start_experience_factor = 0.5 start_equipment_factor = 0.5
+		owner = GER
+		}
+		create_unit = {
+			division =  "Jalkavakidivisioona" start_experience_factor = 0.5 start_equipment_factor = 0.5
+		owner = GER
+		}
+		}
+	}
+
+		shared_focus {
+			id = FIN_preparing_the_economy
+			icon = GFX_econ-red
+			cost = 3
+			prerequisite = {
+				FIN_finlands_bold_opportunity
+			}
+			x = 27
+			y = 1 
+	
+			available = {
+				is_puppet = no
+	
+				has_vanguardist_government = no
+	
+				has_collectivist_government = no
+	
+				has_libertarian_socialist_government = no
+		}
+			ai_will_do = {
+				factor = 10
+			}
+	
+			completion_reward = {
+				add_ideas = idea_war_economy
+			}
+		}
+
+		shared_focus {
+			id = FIN_preparing_the_airforce
+			icon = GFX_aviation_training
+			cost = 3
+			prerequisite = {
+				FIN_strengthening_the_mannerheim_line
+			}
+			x = 23
+			y = 2 
+	
+			available = {
+				is_puppet = no
+	
+				has_vanguardist_government = no
+	
+				has_collectivist_government = no
+	
+				has_libertarian_socialist_government = no
+		}
+			ai_will_do = {
+				factor = 10
+			}
+	
+			completion_reward = {
+				air_experience = 50
+
+				add_equipment_to_stockpile = {
+					type = light_fighter
+					amount = 70
+					producer = FIN
+				}
+				
+				
+				
+			}
+		}
+
+		shared_focus {
+			id = FIN_preparing_the_airforce
+			icon = GFX_aviation_training
+			cost = 3
+			prerequisite = {
+				FIN_strengthening_the_mannerheim_line
+			}
+			x = 23
+			y = 2 
+	
+			available = {
+				is_puppet = no
+	
+				has_vanguardist_government = no
+	
+				has_collectivist_government = no
+	
+				has_libertarian_socialist_government = no
+		}
+			ai_will_do = {
+				factor = 10
+			}
+	
+			completion_reward = {
+				air_experience = 50
+
+				add_equipment_to_stockpile = {
+					type = light_fighter
+					amount = 70
+					producer = FIN
+				}
+				
+				
+				
+			}
+		}
+
+		shared_focus {
+			id = FIN_construction_of_military_factories
+			icon = GFX_mils-pdn
+			cost = 3
+			prerequisite = {
+				FIN_preparing_the_economy
+			}
+			x = 27
+			y = 2 
+	
+			available = {
+				is_puppet = no
+	
+				has_vanguardist_government = no
+	
+				has_collectivist_government = no
+	
+				has_libertarian_socialist_government = no
+		}
+			ai_will_do = {
+				factor = 10
+			}
+	
+			completion_reward = {
+				random_owned_controlled_state = {
+					limit = {
+					free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+					}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+					random_owned_controlled_state = {
+						limit = {
+						free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+						}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+						}
+						random_owned_controlled_state = {
+							limit = {
+							free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+							}
+							}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+							}
+							random_owned_controlled_state = {
+								limit = {
+								free_building_slots = {
+								building = arms_factory
+								size > 0
+								include_locked = yes
+								}
+								}
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+								}
+								random_owned_controlled_state = {
+									limit = {
+									free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+									}
+									}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+									}
+									random_owned_controlled_state = {
+										limit = {
+										free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+										}
+										}
+										add_extra_state_shared_building_slots = 1
+										add_building_construction = {
+										type = arms_factory
+										level = 1
+										instant_build = yes
+										}
+										random_owned_controlled_state = {
+											limit = {
+											free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+											}
+											}
+											add_extra_state_shared_building_slots = 1
+											add_building_construction = {
+											type = arms_factory
+											level = 1
+											instant_build = yes
+											}
+											random_owned_controlled_state = {
+												limit = {
+												free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+												}
+												}
+												add_extra_state_shared_building_slots = 1
+												add_building_construction = {
+												type = arms_factory
+												level = 1
+												instant_build = yes
+												}
+											}													
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			
+
+			shared_focus {
+				id = FIN_winter_war
+				icon = GFX_winter_war
+				cost = 3
+				prerequisite = { FIN_expanding_the_army }}
+				x = 23
+				y = 2 
+		
+				available = {
+					is_puppet = no
+		
+					has_vanguardist_government = no
+		
+					has_collectivist_government = no
+		
+					has_libertarian_socialist_government = no
+			}
+				ai_will_do = {
+					factor = 10
+				}
+		
+				completion_reward = {
+					add_ideas = FX_winter_war
+					}
+					
+					
+					
+				}
+
+				shared_focus {
+					id = FIN_declare_our_claims
+					icon = GFX_bold_opportunity
+					cost = 3
+					prerequisite = { FIN_expanding_the_army }
+				prerequisite = { FIN_construction_of_military_factories }
+				prerequisite = { FIN_preparing_the_airforce }
+					}
+					x = 25
+					y = 3 
+			
+					available = {
+						is_puppet = no
+			
+						has_vanguardist_government = no
+			
+						has_collectivist_government = no
+			
+						has_libertarian_socialist_government = no
+				}
+					ai_will_do = {
+						factor = 10
+					}
+			
+					completion_reward = {
+						add_state_claim = 195
+						}
+						add_state_core = { 216
+						}
+						add_state_core = { 215
+						}
+						add_state_core = { 213
+						}
+						add_state_core = { 722
+						}
+					
+						shared_focus {
+							id = FIN_for_victory!
+							icon = GFX_preparation_for_war
+							cost = 3
+							prerequisite = { FIN_declare_our_claims }
+							x = 23
+							y = 2 
+					
+							available = {
+								is_puppet = no
+					
+								has_vanguardist_government = no
+					
+								has_collectivist_government = no
+					
+								has_libertarian_socialist_government = no
+
+								country_exists = SOV
+						}
+							ai_will_do = {
+								factor = 10
+							}
+					
+							completion_reward = {
+								declare_war_on = {
+									target = SOV
+									type = annex_everything
+								}								
+								}
+						}		
+					
+		
+		
