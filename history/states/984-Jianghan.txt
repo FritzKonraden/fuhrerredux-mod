@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = CHI
+		owner = ZHI
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2
@@ -24,6 +24,8 @@ state={
 			7167 5 
 		}
 		add_core_of = CHI
+		add_core_of = ZHI
+		add_core_of = MAN
 	}
 
 	provinces={
@@ -32,4 +34,5 @@ state={
 	manpower=21401000
 	buildings_max_level_factor=1.000
 	state_category=city
+	local_supplies=0.000
 }
