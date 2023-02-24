@@ -1,4 +1,5 @@
 spriteTypes = {
+<<<<<<< HEAD
 
 	### Temps, fill empty slots in the UI ###
 	### DDS files intentionally don't exist to take advantage of a UI bug and not appear in the interface ###
@@ -602,6 +603,8 @@ spriteTypes = {
 		name = "GFX_idea_BUL_expansion_modifier"
 		texturefile = "gfx/interface/ideas/ideas/BUL_expansion_modifier.png"
 	}
+=======
+>>>>>>> parent of 58b241224 (,)
 	spriteType = {
     name = "GFX_idea_minority_rights"
     texturefile = "gfx/interface/ideas/ideas/minority_rights.png"
