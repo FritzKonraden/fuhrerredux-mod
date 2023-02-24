@@ -1127,6 +1127,7 @@ spanish_civil_war_end = {
 			}
 		}
 	}
+<<<<<<< HEAD
 }
 
 controls_all_balkan_states = {
@@ -1165,4 +1166,6 @@ is_thema_of = {
 		tooltip = "Is a Thema of: [Root.GetName]"
 		prev = { has_autonomy_state = autonomy_thema}
 	}
+=======
+>>>>>>> parent of a722a5715 (...)
 }
