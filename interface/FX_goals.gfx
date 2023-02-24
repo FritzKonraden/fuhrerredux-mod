@@ -1852,6 +1852,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/SPA_Chairwoman_Ibarruri.png"
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	spriteType = {
 		name = "GFX_goal_BUL_armed_forces"
 		texturefile = "gfx/interface/goals/BUL_armed_forces.png"
@@ -3949,6 +3950,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/Red_Star_Torch_White.png"
 	}
 
+=======
+>>>>>>> parent of 834d387ae (Merge branch 'main' of https://github.com/dax0102/fuhrerredux-mod)
 =======
 >>>>>>> parent of 834d387ae (Merge branch 'main' of https://github.com/dax0102/fuhrerredux-mod)
 }
