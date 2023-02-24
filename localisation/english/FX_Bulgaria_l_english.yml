@@ -218,6 +218,7 @@ kaproni_bulgarski: "Kaproni Bulgarski"
 	BUL_pan_orthodox_DEF: "The Orthodox empire"
 	BUL_pan_orthodox_ADJ: "Orthodox"
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	#Roman Empire
 	IRQ_roman_thema: "Thema Messopotamias"
@@ -232,15 +233,20 @@ kaproni_bulgarski: "Kaproni Bulgarski"
 	SPR_north_iberia_syntrofos: "Sintrofos ot Severna Iberiya"
 	SPR_iberia_syntrofos: "Sintrofos ot Iberiya"
 
+=======
+>>>>>>> parent of f6d4b2e77 (some stuff smh)
 	## DECISIONS
 
 #IDEAS
 	BUL_fascist_support: "Bulgarian Fascists Coup"
 	BUL_paternal_autocrat_support: "Paternal Autocrat Support"
 	BUL_authoritarian_democrat_support: "Authoritarian Democrat Support"
+<<<<<<< HEAD
 
 #FLAGS
 	BUL_formed_roman_empire: "Has Formed the Roman Empire of Greeks and Bulgarians"
 =======
 	## DECISIONS
 >>>>>>> parent of 4c6eafdca (a lot of stuff tbh)
+=======
+>>>>>>> parent of f6d4b2e77 (some stuff smh)

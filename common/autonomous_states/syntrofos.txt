@@ -1,9 +1,8 @@
 autonomy_state = {
 	id = autonomy_syntrofos
 	default = yes
-	min_freedom_level = 0.7
+	min_freedom_level = 0.4
 	manpower_influence = 0.9
-	is_puppet = yes
 	rule = {
 		can_not_declare_war = yes
 		can_decline_call_to_war = no
@@ -39,15 +38,9 @@ autonomy_state = {
 		}
 	}
 	can_take_level = {
-		custom_trigger_tooltip = {
-			tooltip = can_raise_autonomy_level
-			has_country_flag = FX_can_raise_autonomy_level
-		}
+		always = no
 	}
 	can_lose_level = {
-		custom_trigger_tooltip = {
-			tooltip = can_lower_autonomy_level
-			always = no
-		}
+		#o
 	}
 }

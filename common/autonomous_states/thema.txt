@@ -1,9 +1,8 @@
 autonomy_state = {
 	id = autonomy_thema
 	default = yes
-	min_freedom_level = 0.2
+	min_freedom_level = 0.4
 	manpower_influence = 0.9
-	is_puppet = yes
 	
 	rule = {
 		can_not_declare_war = yes
@@ -29,7 +28,7 @@ autonomy_state = {
 	}
 	
 	ai_overlord_wants_lower = {
-		factor = 0.0
+		factor = 1.0
 	}
 
 	ai_overlord_wants_garrison = {
@@ -37,16 +36,13 @@ autonomy_state = {
 	}
 
 	allowed = {
-		OVERLORD = { 
-			original_tag = BUL
-			has_global_flag = BUL_formed_roman_empire
-		}
+		OVERLORD = { original_tag = BUL }
 	}
 	can_take_level = {
-		#o
+		always = no
 	}
 
 	can_lose_level = {
-		always = no
+		#trigger here
 	}
 }

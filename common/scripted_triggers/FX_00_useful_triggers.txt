@@ -1160,6 +1160,7 @@ controls_all_balkan_states = {
 		# 	}
 		# }
 	}
+<<<<<<< HEAD
 }
 is_thema_of = {
 	custom_trigger_tooltip = {
@@ -1168,4 +1169,6 @@ is_thema_of = {
 	}
 =======
 >>>>>>> parent of a722a5715 (...)
+=======
+>>>>>>> parent of f6d4b2e77 (some stuff smh)
 }
