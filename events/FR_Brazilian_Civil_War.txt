@@ -13,13 +13,9 @@ country_event = { #Collies Rise up
 	trigger = {
 		tag = BRA
 		OR = {
-			882 = { is_owned_and_controlled_by = BRA } #Acre
-			495 = { is_owned_and_controlled_by = BRA } #Amazonas
-			280 = { is_owned_and_controlled_by = BRA } #Mato Grosso
-			505 = { is_owned_and_controlled_by = BRA } #Goias
 			497 = { is_owned_and_controlled_by = BRA } #Maranhao
 			498 = { is_owned_and_controlled_by = BRA } #Rio Grande
-			901 = { is_owned_and_controlled_by = BRA } #Manaus
+			499 = { is_owned_and_controlled_by = BRA } #Bahia
 		}
 		has_country_flag = BCW_begins
 		NOT = { has_country_flag = BCW_collies_risen }
@@ -208,7 +204,7 @@ country_event = { #Staters Rise up
 		}
 	}
 	option = {
-		name = bcw.4.b #Fight for the nation (Play as the State)
+		name = bcw.3.b #Fight for the nation (Play as the State)
 		trigger = { is_ai = no }
 		load_oob = BCW_BRA2
 		BPS = {

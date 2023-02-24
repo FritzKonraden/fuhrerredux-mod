@@ -13,6 +13,11 @@ ideas = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRA_political_instability"}
 			allowed = { original_tag = BRA }
 			picture = SPR_political_violence
+			modifier = {
+				stability_factor = -0.1	
+				drift_defence_factor = -0.15
+				stability_weekly = 0.01	
+			}
 		}
 		BRA_black_wednesday = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRA_black_wednesday"}
@@ -34,5 +39,159 @@ ideas = {
 				army_org_factor = 0.05
 			}
 		}
+	
+	BRA_recovering_from_the_civil_war = {
+		allowed = { original_tag = BRA }
+		picture = BRA_scw_intervention_republicans_focus
+		modifier = {
+			add_stability = -0.25
+			production_speed_buildings_factor = -0.25 
+			production_factory_start_efficiency_factor = -0.25 
+			production_factory_max_efficiency_factor = -0.15 
+			consumer_goods_factor = 0.15
 	}
+}
+	BRA_recovering_from_the_civil_war_one = {
+		allowed = { original_tag = BRA }
+		picture = BRA_scw_intervention_republicans_focus
+		modifier = {
+			add_stability = -0.20
+			production_speed_buildings_factor = -0.25 
+			production_factory_start_efficiency_factor = -0.2 
+			production_factory_max_efficiency_factor = -0.1 
+			consumer_goods_factor = 0.15
+	}
+}
+BRA_recovering_from_the_civil_war_two = {
+	allowed = { original_tag = BRA }
+	picture = BRA_scw_intervention_republicans_focus
+	modifier = {
+		add_stability = -0.15
+		production_speed_buildings_factor = -0.20 
+		production_factory_start_efficiency_factor = -0.15 
+		production_factory_max_efficiency_factor = -0.1 
+		consumer_goods_factor = 0.15
+}
+}
+BRA_welfare_systems = {
+	allowed = { original_tag = BRA }
+	picture = BRA_bcw_welfare_systems
+	modifier = {
+		consumer_goods_factor = 0.03
+		add_stability = 0.05
+
+}
+}
+BRA_recovering_from_the_civil_war_three = {
+	allowed = { original_tag = BRA }
+	picture = BRA_scw_intervention_republicans_focus
+	modifier = {
+		add_stability = -0.10
+		production_speed_buildings_factor = -0.20 
+		production_factory_start_efficiency_factor = -0.15 
+		production_factory_max_efficiency_factor = -0.1 
+		consumer_goods_factor = 0.10
+}
+}
+BRA_recovering_from_the_civil_war_four = {
+	allowed = { original_tag = BRA }
+	picture = BRA_scw_intervention_republicans_focus
+	modifier = {
+		production_speed_buildings_factor = -0.05
+		production_factory_start_efficiency_factor = -0.05 
+}
+}
+BRA_recovering_from_the_civil_war_five = {
+	allowed = { original_tag = BRA }
+	picture = BRA_scw_intervention_republicans_focus
+	modifier = {
+		add_stability = -0.15
+		production_speed_buildings_factor = -0.25 
+		production_factory_start_efficiency_factor = -0.25 
+		production_factory_max_efficiency_factor = -0.15 
+		consumer_goods_factor = 0.10
+}
+}
+BRA_recovering_from_the_civil_war_six = {
+	allowed = { original_tag = BRA }
+	picture = BRA_scw_intervention_republicans_focus
+	modifier = {
+		add_stability = -0.10
+		production_speed_buildings_factor = -0.25 
+		production_factory_start_efficiency_factor = -0.20 
+		production_factory_max_efficiency_factor = -0.1
+		consumer_goods_factor = 0.10
+}
+}
+BRA_recovering_from_the_civil_war_seven = {
+	allowed = { original_tag = BRA }
+	picture = BRA_scw_intervention_republicans_focus
+	modifier = {
+		add_stability = -0.10
+		production_speed_buildings_factor = -0.2
+		production_factory_start_efficiency_factor = -0.15 
+		production_factory_max_efficiency_factor = -0.05
+		consumer_goods_factor = 0.05
+}
+}
+BRA_recovering_from_the_civil_war_eight = {
+	allowed = { original_tag = BRA }
+	picture = BRA_scw_intervention_republicans_focus
+	modifier = {
+		add_stability = -0.10
+		production_speed_buildings_factor = -0.15
+		production_factory_start_efficiency_factor = -0.1
+		consumer_goods_factor = 0.05
+}
+}
+BRA_recovering_from_the_civil_war_nine = {
+	allowed = { original_tag = BRA }
+	picture = BRA_scw_intervention_republicans_focus
+	modifier = {
+		production_speed_buildings_factor = -0.15
+		production_factory_start_efficiency_factor = -0.1
+		consumer_goods_factor = 0.05
+}
+}
+BRA_recovering_from_the_civil_war_ten = {
+	allowed = { original_tag = BRA }
+	picture = BRA_scw_intervention_republicans_focus
+	modifier = {
+		production_speed_buildings_factor = -0.1
+		production_factory_start_efficiency_factor = -0.05
+}
+}
+BRA_minor_drug_cartels = {
+	allowed = { original_tag = BRA }
+	picture = idea_generic_deal_with_the_devil2
+	modifier = {
+		stability_factor = -0.3
+		production_factory_max_efficiency_factor = -0.05
+}
+}
+BRA_back_in_time = {
+	allowed = { original_tag = BRA }
+	picture = idea_generic_crippled_industry
+	modifier = {
+		production_speed_buildings_factor = -0.2
+		army_org_factor = -0.8
+		army_morale_factor = -0.1
+}
+}
+}
+
+	### Companies
+	industrial_concern = {
+		designer = yes
+		BRA_companhia_siderúrgica_nacional = {
+		  allowed = { original_tag = BRA }
+		  picture = bra_idea_csn
+		  traits = { mining_company }
+		  research_bonus = {
+			industry = 0.15
+		  }
+		  modifier = {
+		}
+}
+}
 }

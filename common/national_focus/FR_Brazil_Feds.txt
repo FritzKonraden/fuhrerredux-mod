@@ -1,0 +1,1045 @@
+### Brazilian National Focus tree by TheDetailedBread
+
+focus_tree = {
+	id = brazil_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = BRA
+		}
+	}
+}
+
+	default = no
+
+	continuous_focus_position = { x = 16 y = 1600 }
+
+			### Post Civil War ###
+		focus = { 
+			id = BRA_post_civil_war_elections
+			icon = goal_flag_brazil
+	
+			 ai_will_do = { factor = 10 } 
+	
+			 x =15
+			 y =0 
+			 cost = 1  
+			 available = {
+				has_country_flag = BRA_bcw_ended
+			}
+			
+			bypass = {
+				
+			}
+			available_if_capitulated = no
+	
+			completion_reward = {
+				hidden_effect = { 
+					
+				}
+				search_filters = {
+					FOCUS_FILTER_POLITICAL
+					}
+				   } 
+
+		focus = { 
+			id = BRA_liberais
+			icon = GFX_goal_ideology_market_liberal
+	
+			 ai_will_do = { factor = 10 } 
+	
+			 x =9
+			 y =1 
+			 cost = 0  
+			 available = {
+				always = no
+			}
+			
+			bypass = {
+				
+			}
+			available_if_capitulated = no
+			prerequisite = { focus = BRA_post_civil_war_elections }
+			mutually_exclusive = { focus = BRA_conservadores }
+			mutually_exclusive = { focus = BRA_socialistas }
+			mutually_exclusive = { focus = BRA_status_quo }
+			completion_reward = {
+				}
+			search_filters = {
+			 FOCUS_FILTER_POLITICAL
+			 }
+			} 
+		}
+
+		focus = { 
+			id = BRA_conservadores
+			icon = GFX_goal_ideology_social_conservative
+	
+			 ai_will_do = { factor = 10 } 
+			 available = {
+				always = no
+			}
+			
+			bypass = {
+				
+			}
+			 x =14
+			 y =1 
+			 cost = 0  
+	
+			available_if_capitulated = no
+			prerequisite = { focus = BRA_post_civil_war_elections }
+			mutually_exclusive = { focus = BRA_socialistas }
+			mutually_exclusive = { focus = BRA_status_quo}
+			mutually_exclusive = { focus = BRA_liberais }
+			completion_reward = {
+				}
+			search_filters = {
+			 FOCUS_FILTER_POLITICAL
+			 }
+			}
+
+			focus = { 
+				id = BRA_socialistas
+				icon = GFX_goal_ideology_social_democrat
+		
+				 ai_will_do = { factor = 10 } 
+				 available = {
+					always = no
+				}
+				
+				bypass = {
+					
+				}
+				 x =20
+				 y =1 
+				 cost = 0  
+		
+				available_if_capitulated = no
+				prerequisite = { focus = BRA_post_civil_war_elections }
+				mutually_exclusive = { focus = BRA_conservadores }
+				mutually_exclusive = { focus = BRA_status_quo }
+				mutually_exclusive = { focus = BRA_liberais }
+				completion_reward = {
+				}
+				search_filters = {
+				 FOCUS_FILTER_POLITICAL
+				 }
+				}
+
+		focus = { 
+			id = BRA_status_quo
+			icon = GFX_goal_ideology_authoritarian_democrat
+	
+			 ai_will_do = { factor = 10 } 
+			 available = {
+				always = no
+			}
+			
+			bypass = {
+				
+			}
+			 x =25
+			 y =1 
+			 cost = 0  
+	
+			available_if_capitulated = no
+			prerequisite = { focus = BRA_post_civil_war_elections }
+			mutually_exclusive = { focus = BRA_conservadores }
+			mutually_exclusive = { focus = BRA_socialistas }
+			mutually_exclusive = { focus = BRA_liberais }
+			completion_reward = {
+			}
+			search_filters = {
+			 FOCUS_FILTER_POLITICAL
+			 }
+			}
+
+	### Liberal Branch
+	
+	focus = { 
+		id = BRA_together_we_will_remain
+		icon = GFX_goal_patching_brazil
+
+		 ai_will_do = { factor = 10 } 
+		 available = {
+			has_government = market_liberal
+		}
+		
+		bypass = {
+			
+		}
+		 x =9
+		 y =2
+		 cost = 8 
+
+		available_if_capitulated = no
+		prerequisite = { focus = BRA_liberais }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BRA_recovering_from_the_civil_war
+				add_idea = BRA_recovering_from_the_civil_war_one
+			}
+		}
+		search_filters = {
+		 FOCUS_FILTER_POLITICAL
+		 }
+		}
+
+	focus = { 
+		id = BRA_deals_with_the_socialists
+		icon = GFX_goal_deal_soclib
+
+		 ai_will_do = { factor = 10 } 
+		 available = {
+			has_government = market_liberal
+		}
+		
+		bypass = {
+			
+		}
+		 x =7
+		 y =2
+		 cost = 8 
+
+		available_if_capitulated = no
+		prerequisite = { focus = BRA_liberais }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BRA_recovering_from_the_civil_war_one
+				add_idea = BRA_recovering_from_the_civil_war_two
+			}
+			
+			
+			add_popularity = {
+				ideology = collectivism
+				popularity = 0.03
+			}
+		}
+		search_filters = {
+		 FOCUS_FILTER_POLITICAL
+		 }
+
+		 focus = { 
+			id = BRA_deals_with_the_conservatives
+			icon = GFX_goal_deal_soccon
+	
+			 ai_will_do = { factor = 10 } 
+			 available = {
+				has_government = market_liberal
+			}
+			
+			bypass = {
+				
+			}
+			 x =5
+			 y =3
+			 cost = 8 
+	
+			available_if_capitulated = no
+			prerequisite = { focus = BRA_deals_with_the_socialists }
+			prerequisite = { focus = BRA_together_we_will_remain }
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = BRA_recovering_from_the_civil_war_two
+					add_idea = BRA_recovering_from_the_civil_war_three
+				}
+				
+				
+				add_popularity = {
+					ideology = social_conservative
+					popularity = 0.03
+					ideology = paternal_autocrat
+					popularity = 0.01
+				}
+			}
+			search_filters = {
+			 FOCUS_FILTER_POLITICAL
+			 }
+		}
+
+		focus = { 
+			id = BRA_minority_rights
+			icon = GFX_goal_minority_rights
+	
+			 ai_will_do = { factor = 10 } 
+			 available = {
+				has_government = market_liberal
+			}
+			
+			bypass = {
+				
+			}
+			 x =7
+			 y =3
+			 cost = 8 
+	
+			available_if_capitulated = no
+			prerequisite = { focus = BRA_deals_with_the_socialists }
+			prerequisite = { focus = BRA_together_we_will_remain }
+			completion_reward = {
+				country_event = {
+					id = bra.29
+					days = 0
+					random = 50
+					random_days = 10
+				}
+			}
+			search_filters = {
+			 FOCUS_FILTER_POLITICAL
+			 }
+		}
+
+		focus = { 
+			id = BRA_military_in_the_government
+			icon = GFX_goal_military_government_question
+	
+			 ai_will_do = { factor = 10 } 
+			 available = {
+				has_government = market_liberal
+			}
+			
+			bypass = {
+				
+			}
+			 x =9
+			 y =3
+			 cost = 8 
+	
+			available_if_capitulated = no
+			prerequisite = { focus = BRA_deals_with_the_socialists }
+			prerequisite = { focus = BRA_together_we_will_remain }
+			completion_reward = {
+				country_event = {
+					id = bra.28
+					days = 0
+					random = 50
+					random_days = 10
+				}
+			}
+			search_filters = {
+			 FOCUS_FILTER_POLITICAL
+			 }
+		}
+
+	focus = { 
+		id = BRA_welfare_systems
+			icon = GFX_goal_welfare_brazil
+	
+			 ai_will_do = { factor = 10 } 
+			 available = {
+				has_government = market_liberal
+			}
+			
+			bypass = {
+				
+			}
+			 x =5
+			 y =4
+			 cost = 8 
+	
+			available_if_capitulated = no
+			prerequisite = { focus = BRA_military_in_the_government }
+			prerequisite = { focus = BRA_minority_rights }
+			prerequisite = { focus = BRA_deals_with_the_conservatives }
+			completion_reward = {
+				country_event = {
+					id = bra.bra.31
+					days = 0
+					random = 50
+					random_days = 10
+				}
+			}
+			search_filters = {
+			 FOCUS_FILTER_POLITICAL
+			 }
+	}
+
+	focus = { 
+		id = BRA_patch_our_scars
+  		icon = GFX_goal_brazil_back_in_action
+	
+			 ai_will_do = { factor = 10 } 
+			 available = {
+				has_government = market_liberal
+			}
+			
+			bypass = {
+				
+			}
+			 x =7
+			 y =4
+			 cost = 8 
+	
+			available_if_capitulated = no
+			prerequisite = { focus = BRA_military_in_the_government }
+			prerequisite = { focus = BRA_minority_rights }
+			prerequisite = { focus = BRA_deals_with_the_conservatives }
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = BRA_recovering_from_the_civil_war_three
+					add_idea = BRA_recovering_from_the_civil_war_four
+				
+			}
+		}
+			search_filters = {
+			 FOCUS_FILTER_POLITICAL
+			 }
+	}
+}
+	focus = { 
+		id = BRA_womens_suffrage
+  		icon = GFX_goal_generic_female_rights
+	
+			 ai_will_do = { factor = 10 } 
+			 available = {
+				has_government = market_liberal
+			}
+			
+			bypass = {
+				
+			}
+			 x =9
+			 y =4
+			 cost = 8 
+	
+			available_if_capitulated = no
+			prerequisite = { focus = BRA_military_in_the_government }
+			prerequisite = { focus = BRA_minority_rights }
+			prerequisite = { focus = BRA_deals_with_the_conservatives }
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = BRA_recovering_from_the_civil_war_three
+					add_idea = BRA_recovering_from_the_civil_war_four
+				
+			}
+			remove_idea = BRA_minor_drug_cartels
+			}
+			search_filters = {
+			 FOCUS_FILTER_POLITICAL
+			 }
+		}
+
+	focus = { 
+		id = BRA_upholding_legitimacy
+  		icon = GFX_goal_brazil_legit
+	
+			 ai_will_do = { factor = 10 } 
+			 available = {
+				has_government = market_liberal
+			}
+			
+			bypass = {
+				
+			}
+			 x =7
+			 y =5
+			 cost = 8 
+	
+			available_if_capitulated = no
+			prerequisite = { focus = BRA_womens_suffrage }
+			prerequisite = { focus = BRA_patch_our_scars }
+			prerequisite = { focus = BRA_welfare_systems }
+			completion_reward = {
+				add_political_power = 100
+				add_stability = 0.1
+			}
+			search_filters = {
+			 FOCUS_FILTER_POLITICAL
+			 }
+
+			 focus = { 
+				id = BRA_support_from_all_sides
+				  icon = GFX_goal_support_all_sides
+			
+					 ai_will_do = { factor = 10 } 
+					 available = {
+						has_government = market_liberal
+					}
+					
+					bypass = {
+						
+					}
+					 x =7
+					 y =6
+					 cost = 8 
+			
+					available_if_capitulated = no
+					prerequisite = { focus = BRA_upholding_legitimacy }
+					completion_reward = {
+						remove_idea = BRA_recovering_from_the_civil_war_four
+					}
+					search_filters = {
+					 FOCUS_FILTER_POLITICAL
+					 }
+		}
+
+		### Conservative Branch
+
+		focus = { 
+			id = BRA_upholding_of_tradition
+			icon = GFX_goal_volunteer_alliance
+	
+			 ai_will_do = { factor = 10 } 
+			 available = {
+				has_government = social_conservative
+			}
+			
+			bypass = {
+				
+			}
+			 x =14
+			 y =2
+			 cost = 8 
+	
+			available_if_capitulated = no
+			prerequisite = { focus = BRA_conservadores }
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = BRA_recovering_from_the_civil_war
+					add_idea = BRA_recovering_from_the_civil_war_five
+				}
+			}
+			search_filters = {
+			 FOCUS_FILTER_POLITICAL
+			 }
+			}
+
+			focus = { 
+				id = BRA_god_as_our_witness
+				icon = GFX_goal_shx_christian_influence
+		
+				 ai_will_do = { factor = 10 } 
+				 available = {
+					has_government = social_conservative
+				}
+				
+				bypass = {
+					
+				}
+				 x =14
+				 y =2
+				 cost = 8 
+		
+				available_if_capitulated = no
+				prerequisite = { focus = BRA_conservadores }
+				completion_reward = {
+					swap_ideas = {
+						remove_idea = BRA_recovering_from_the_civil_war_five
+						add_idea = BRA_recovering_from_the_civil_war_six
+					}
+				}
+				search_filters = {
+				 FOCUS_FILTER_POLITICAL
+				 }
+				}
+
+				focus = { 
+					id = BRA_god_as_our_witness
+					icon = GFX_goal_shx_christian_influence
+			
+					 ai_will_do = { factor = 10 } 
+					 available = {
+						has_government = social_conservative
+					}
+					
+					bypass = {
+						
+					}
+					 x =12
+					 y =2
+					 cost = 8 
+			
+					available_if_capitulated = no
+					prerequisite = { focus = BRA_conservadores }
+					completion_reward = {
+						swap_ideas = {
+							remove_idea = BRA_recovering_from_the_civil_war_five
+							add_idea = BRA_recovering_from_the_civil_war_six
+						}
+					}
+					search_filters = {
+					 FOCUS_FILTER_POLITICAL
+					 }
+					}
+
+					focus = { 
+						id = BRA_tax_cuts
+						icon = GFX_goal_dah_topke
+				
+						 ai_will_do = { factor = 10 } 
+						 available = {
+							has_government = social_conservative
+						}
+						
+						bypass = {
+							
+						}
+						 x =16
+						 y =2
+						 cost = 8 
+				
+						available_if_capitulated = no
+						prerequisite = { focus = BRA_conservadores }
+						completion_reward = {
+							swap_ideas = {
+								remove_idea = BRA_recovering_from_the_civil_war_six
+								add_idea = BRA_recovering_from_the_civil_war_seven
+							}
+						}
+						search_filters = {
+						 FOCUS_FILTER_POLITICAL
+						 }
+						}
+
+						focus = { 
+							id = BRA_lower_government_spending
+							icon = GFX_goal_bag_of_money
+					
+							 ai_will_do = { factor = 10 } 
+							 available = {
+								has_government = social_conservative
+							}
+							
+							bypass = {
+								
+							}
+							 x =12
+							 y =3
+							 cost = 8 
+					
+							available_if_capitulated = no
+							prerequisite = { focus = BRA_conservadores }
+							completion_reward = {
+								swap_ideas = {
+									remove_idea = BRA_recovering_from_the_civil_war_seven
+									add_idea = BRA_recovering_from_the_civil_war_eight
+								}
+							}
+							search_filters = {
+							 FOCUS_FILTER_POLITICAL
+							 }
+							}
+
+							focus = { 
+								id = BRA_lower_government_spending
+								icon = GFX_goal_gold_up
+						
+								 ai_will_do = { factor = 10 } 
+								 available = {
+									has_government = social_conservative
+								}
+								
+								bypass = {
+									
+								}
+								 x =14
+								 y =3
+								 cost = 8 
+						
+								available_if_capitulated = no
+								prerequisite = { focus = BRA_conservadores }
+								completion_reward = {
+									swap_ideas = {
+										remove_idea = BRA_recovering_from_the_civil_war_seven
+										add_idea = BRA_recovering_from_the_civil_war_eight
+									}
+								}
+								search_filters = {
+								 FOCUS_FILTER_POLITICAL
+								 }
+								}
+
+								focus = { 
+									id = BRA_cut_down_cartels
+									icon = GFX_goal_step_on_skull
+							
+									 ai_will_do = { factor = 10 } 
+									 available = {
+										has_government = social_conservative
+									}
+									
+									bypass = {
+										
+									}
+									 x =16
+									 y =3
+									 cost = 8 
+							
+									available_if_capitulated = no
+									prerequisite = { focus = BRA_conservadores }
+									completion_reward = {
+										swap_ideas = {
+											remove_idea = BRA_recovering_from_the_civil_war_eight
+											add_idea = BRA_recovering_from_the_civil_war_nine
+										}
+										remove_idea = BRA_minor_drug_cartels
+									}
+									search_filters = {
+									 FOCUS_FILTER_POLITICAL
+									 }
+									}
+
+									focus = { 
+										id = BRA_upholding_of_capitalism
+										icon = GFX_goal_generic_positive_trade_relations
+								
+										 ai_will_do = { factor = 10 } 
+										 available = {
+											has_government = social_conservative
+										}
+										
+										bypass = {
+											
+										}
+										 x =13
+										 y =5
+										 cost = 8 
+								
+										available_if_capitulated = no
+										prerequisite = { focus = BRA_conservadores }
+										completion_reward = {
+											swap_ideas = {
+												remove_idea = BRA_recovering_from_the_civil_war_nine
+												add_idea = BRA_recovering_from_the_civil_war_ten
+											}
+										}
+										search_filters = {
+										 FOCUS_FILTER_POLITICAL
+										 }
+										}
+
+
+										focus = { 
+											id = BRA_we_are_all_brazilians
+											icon = GFX_goal_bra_cooperation
+									
+											 ai_will_do = { factor = 10 } 
+											 available = {
+												has_government = social_conservative
+											}
+											
+											bypass = {
+												
+											}
+											 x =13
+											 y =5
+											 cost = 8 
+									
+											available_if_capitulated = no
+											prerequisite = { focus = BRA_conservadores }
+											completion_reward = {
+												swap_ideas = {
+													remove_idea = BRA_recovering_from_the_civil_war_nine
+													add_idea = BRA_recovering_from_the_civil_war_ten
+												}
+											}
+											search_filters = {
+											 FOCUS_FILTER_POLITICAL
+											 }
+											}
+
+											focus = { 
+												id = BRA_unity_is_possible
+												icon = GFX_goal_bra_cooperation
+										
+												 ai_will_do = { factor = 10 } 
+												 available = {
+													has_government = social_conservative
+												}
+												
+												bypass = {
+													
+												}
+												 x =14
+												 y =5
+												 cost = 8 
+										
+												available_if_capitulated = no
+												prerequisite = { focus = BRA_conservadores }
+												completion_reward = {
+														add_stability = 0.10
+													
+												}
+												search_filters = {
+												 FOCUS_FILTER_POLITICAL
+												 }
+												}
+
+												focus = { 
+													id = BRA_a_brazil_for_all_brazilians
+													icon = GFX_goal_bra_cooperation
+											
+													 ai_will_do = { factor = 10 } 
+													 available = {
+														has_government = social_conservative
+													}
+													
+													bypass = {
+														
+													}
+													 x =14
+													 y =6
+													 cost = 8 
+											
+													available_if_capitulated = no
+													prerequisite = { focus = BRA_conservadores }
+													completion_reward = {
+															add_stability = 0.10
+														
+													}
+													search_filters = {
+													 FOCUS_FILTER_POLITICAL
+													 }
+													}
+			### Shogunate Tree
+
+			focus = { 
+				id = BRA_the_shogunate_consolidated
+				icon = GFX_wip
+		
+				 ai_will_do = { factor = 10 } 
+				 available = {
+					always = no
+				}
+				
+				bypass = {
+					
+				}
+				 x =8
+				 y =9
+				 cost = 8 
+		
+				available_if_capitulated = no
+				completion_reward = {
+					
+				}
+				search_filters = {
+				 FOCUS_FILTER_POLITICAL
+				 }
+				}
+
+		focus = { 
+				id = BRA_open_the_japanese_embassy
+				icon = GFX_wip
+		
+				 ai_will_do = { factor = 10 } 
+				 available = {
+					always = no
+				}
+				
+				bypass = {
+					
+				}
+				 x =8
+				 y =10
+				 cost = 8 
+		
+				available_if_capitulated = no
+				completion_reward = {
+					add_political_power = 100
+					add_opinion_modifier = {
+						target = JAP
+						modifier = medium_increase
+					}
+					
+					
+					reverse_add_opinion_modifier = {
+						target = JAP
+						modifier = medium_increase
+					}
+				}
+				search_filters = {
+				 FOCUS_FILTER_POLITICAL
+				 }
+				}
+
+				focus = { 
+					id = BRA_join_the_coprosperity_sphere
+					icon = GFX_focus_chi_collaboration_with_the_japanese
+			
+					 ai_will_do = { factor = 10 } 
+					 available = {
+						always = no
+					}
+					
+					bypass = {
+						
+					}
+					 x =8
+					 y =11
+					 cost = 8 
+			
+					available_if_capitulated = no
+					completion_reward = {
+						
+					}
+					search_filters = {
+					 FOCUS_FILTER_POLITICAL
+					 }
+					}
+					focus = { 
+						id = BRA_joint_japanese_military_exercises
+						icon = GFX_JAP_tank
+				
+						 ai_will_do = { factor = 10 } 
+						 available = {
+							always = no
+						}
+						
+						bypass = {
+							
+						}
+						 x =8
+						 y =12
+						 cost = 8 
+				
+						available_if_capitulated = no
+						completion_reward = {
+							
+						}
+						search_filters = {
+						 FOCUS_FILTER_POLITICAL
+						 }
+						}
+			
+			### Industry Tree	
+			
+			focus = { 
+				id = BRA_companhia_siderúrgica_nacional
+				icon = GFX_bra_csn_hiring
+		
+				 ai_will_do = { factor = 10 } 
+				 available = {
+					has_government = social_conservative
+				}
+				
+				bypass = {
+					
+				}
+				 x =35
+				 y =0
+				 cost = 8 
+		
+				available_if_capitulated = no
+				completion_reward = {
+					add_ideas = BRA_companhia_siderúrgica_nacional
+
+					random_owned_controlled_state = {
+						limit = {
+						is_in_home_area = yes
+						}
+						add_resource = {
+						type = steel
+						amount = 8
+						state = 896
+						}
+				}
+				search_filters = {
+				 FOCUS_FILTER_INDUSTRY
+				 }
+				}
+			
+			focus = { 
+				id = BRA_new_road_works
+				icon = GFX_goal_generic_construct_infrastructure
+			
+				 ai_will_do = { factor = 10 } 
+				 available = {
+					owns_state = 500
+				}
+					
+				bypass = {
+						
+				}
+				 x =33
+				 y =1
+				 cost = 8 
+			
+				available_if_capitulated = no
+				completion_reward = {
+					random_owned_controlled_state = {
+						limit = {
+						free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+						}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+						}
+					
+				}
+					
+				}
+						
+				}
+				search_filters = {
+				 FOCUS_FILTER_INDUSTRY
+				 }
+
+				 focus = { 
+					id = BRA_the_forests_above
+					icon = GFX_goal_trees
+				
+					 ai_will_do = { factor = 10 } 
+					 available = {
+						owns_state = 500
+					}
+						
+					bypass = {
+							
+					}
+					 x =35
+					 y =1
+					 cost = 8 
+				
+					available_if_capitulated = no
+					completion_reward = {
+						495 = {
+								limit = {
+								free_building_slots = {
+								building = infrastructure
+								size > 0
+								include_locked = yes
+								}
+								}
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+								}
+							
+						}
+						495 = {
+							limit = {
+							free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+							}
+							}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+							}
+						
+					}
+							
+					}
+					search_filters = {
+					 FOCUS_FILTER_INDUSTRY
+					 }
+			}
+		}
+	}

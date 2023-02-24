@@ -1,5 +1,6 @@
 ﻿### Republic of Brazil events ###
 #by matixzun (Trimeon)#
+#and TheDetailedBread from FX#
 
 add_namespace = bra
 
@@ -490,7 +491,6 @@ country_event = { #Military Coup
 		has_country_flag = BRA_bcw_ended
 		}
 		has_country_flag = brazilian_civil_war
-		has_stability < 0.35
 	}
 	option = {
 		name = bra.26.a
@@ -511,9 +511,149 @@ country_event = { #Military Coup
 		}
 		add_stability = 0.05
 	}
+	
+	}
+
+	country_event = { # victorycivilwarelections
+	id = bra.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.27"}
+	title = bra.27.t
+	desc = bra.27.d
+	picture = news_event_generic_rally2
+	trigger = {
+		tag = BRA
+	}
+
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
 	option = {
-		name = bra.26.b
-		ai_chance = { factor = 50 }
-		add_political_power = -50
+		name = bra.27.a
+		unlock_national_focus = BRA_liberais
+		add_ideas = BRA_recovering_from_the_civil_war
+	}
+
+	option = {
+		name = bra.27.b
+		unlock_national_focus = BRA_conservadores
+		add_ideas = BRA_recovering_from_the_civil_war
+	}
+
+	option = {
+		name = bra.27.c
+		unlock_national_focus = BRA_socialistas
+		add_ideas = BRA_recovering_from_the_civil_war
+	}
+
+	option = {
+		name = bra.27.d
+		unlock_national_focus = BRA_status_quo
+		add_ideas = BRA_recovering_from_the_civil_war
+
+	option = {
+		name = bra.27.e
+		unlock_national_focus = BRA_the_shogunate_consolidated
+		add_ideas = BRA_recovering_from_the_civil_war
+		retire_country_leader = yes
+		set_party_name = { 
+    	ideology = paternal_autocrat 
+    	long_name = Burajiru no shōgunzu rīgu
+    	name = BSR
+}
+
+add_stability = -0.1
+
+add_popularity = {
+    ideology = paternal_autocrat 
+    popularity = 0.1
+	}
+}
+}
+}
+
+country_event = { # militaryingovernmentquestionfocus
+	id = bra.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.28"}
+	title = bra.28.t
+	desc = bra.28.d
+	picture = news_event_generic_rally2
+	trigger = {
+		tag = BRA
+	}
+
+	mean_time_to_happen = { days = 0 }
+	fire_only_once = yes
+	option = {
+		name = bra.28.a
+		add_stability = 0.05
+	}
+
+	option = {
+		name = bra.28.b
+		add_political_power = 100
+	}
+}
+
+country_event = { # minorityrights
+	id = bra.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.29"}
+	title = bra.29.t
+	desc = bra.29.d
+	picture = news_event_generic_rally2
+	trigger = {
+		tag = BRA
+	}
+
+	mean_time_to_happen = { days = 0 }
+	fire_only_once = yes
+	option = {
+		name = bra.29.a
+		add_stability = 0.05
+		add_manpower = 10000
+	}
+
+	option = {
+		name = bra.29.b
+		add_political_power = 100
+		add_stability = -0.05
+	}
+}
+
+country_event = { # pathsguide
+	id = bra.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.30"}
+	title = bra.30.t
+	desc = bra.30.d
+	picture = news_event_generic_rally2
+	trigger = {
+		tag = BRA
+	}
+
+	mean_time_to_happen = { days = 0 }
+	fire_only_once = yes
+	option = {
+		name = bra.30.a
+	}
+}
+
+country_event = { # welfaresystems
+	id = bra.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.30"}
+	title = bra.31.t
+	desc = bra.31.d
+	picture = news_event_generic_rally2
+	trigger = {
+		tag = BRA
+	}
+
+	mean_time_to_happen = { days = 0 }
+	fire_only_once = yes
+	option = {
+		name = bra.31.a
+		add_ideas = BRA_welfare_systems
+	}
+	option = {
+		name = bra.31.b
+		add_stability = -0.5
+		add_political_power = 25
 	}
 }
