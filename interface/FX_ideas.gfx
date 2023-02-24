@@ -926,6 +926,7 @@ spriteTypes = {
 	  name = "GFX_idea_CLB_surounded"
 	  texturefile = "gfx/interface/ideas/ideas/CLB_surounded.png"
   }
+<<<<<<< HEAD
   spriteType = {
 	name = "GFX_idea_BUL_balkan_spirit"
 	textureFile = "gfx/interface/ideas/ideas/BUL_balkan_spirit.png"
@@ -1314,4 +1315,6 @@ spriteTypes = {
 		name = "GFX_idea_zavod_Krasny_Putilovets"
 		texturefile = "gfx/interface/ideas/SOV/companies/zavod_Krasny_Putilovets.png"
 	}
+=======
+>>>>>>> parent of 834d387ae (Merge branch 'main' of https://github.com/dax0102/fuhrerredux-mod)
 }

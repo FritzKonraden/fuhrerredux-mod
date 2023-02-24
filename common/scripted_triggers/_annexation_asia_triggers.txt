@@ -27,13 +27,10 @@ can_release_cambodia = {
 #Beijing - annexation_CHI_CONQ
 can_release_china = {
   NOT = { is_claimed_by = ROOT }
-  OR = {
-    state = 608 # Beijing
-    state = 895 # Nanjing
-  }
+  state = 608 # Beijing
   NOT = {
     OR = {
-      country_exists = CHI 
+      country_exists = ROC 
       country_exists = ZHI 
     }
   }
@@ -124,8 +121,8 @@ can_release_manchuria = {
   NOT = { is_claimed_by = ROOT }
   ROOT = {
     NOT = {
-      country_exists = MAN
-      has_country_flag = MAN_CONQ
+      country_exists = MAL
+      has_country_flag = MAL_CONQ
     }
   }
 }
@@ -187,10 +184,8 @@ can_release_sichuan = {
   state = 605
   NOT = { is_claimed_by = ROOT }
   ROOT = {
-    NOT = { 
-      country_exists = SCH
-      has_country_flag = SCH_CONQ 
-    }
+    is_chinese_tag = no
+    NOT = { has_country_flag = SCH_CONQ }
   }
 }
 
@@ -199,10 +194,8 @@ can_release_shanxxi = {
   state = 615
   NOT = { is_claimed_by = ROOT }
   ROOT = {
-    NOT = { 
-      has_country_flag = SHX_CONQ
-      country_exists = SHX
-    }
+    is_chinese_tag = no
+    NOT = { has_country_flag = SHX_CONQ }
   }
 }
 
@@ -223,16 +216,14 @@ can_release_sinkiang = {
   state = 617
   NOT = { is_claimed_by = ROOT }
   ROOT = {
-    NOT = { 
-      country_exists = SIK
-      has_country_flag = SIK_CONQ 
-    }
+    is_chinese_tag = no
+    NOT = { has_country_flag = SIK_CONQ }
   }
 }
 
 #Tibet - annexation_TIB_CONQ
 can_release_tibet = {
-  state = 322
+  state = 332
   NOT = { is_claimed_by = ROOT }
   ROOT = {
     NOT = { 
@@ -273,10 +264,8 @@ can_release_xibei_san_ma = {
   state = 604
   NOT = { is_claimed_by = ROOT }
   ROOT = {
-    NOT = { 
-      country_exists = XSM
-      has_country_flag = XSM_CONQ
-    }
+    is_chinese_tag = no
+    NOT = { has_country_flag = XSM_CONQ }
   }
 }
 
@@ -285,10 +274,8 @@ can_release_yunnan = {
   state = 325
   NOT = { is_claimed_by = ROOT }
   ROOT = {
-    NOT = { 
-      country_exists = YUN
-      has_country_flag = YUN_CONQ 
-    }
+    is_chinese_tag = no
+    NOT = { has_country_flag = YUN_CONQ }
   }
 }
 

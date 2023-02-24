@@ -1,26 +1,23 @@
-
-state={
-	id=1019
+state = {	
+	id= 1019
 	name="STATE_1019"
+	manpower = 44213
 	resources={
-		steel=3.000
+		steel= 3.0
+
 	}
+	
+	state_category = wasteland
 
 	history={
 		owner = MON
 		add_core_of = MON
 		buildings = {
 			infrastructure = 2
-
 		}
-
 	}
 
 	provinces={
-		1781 1855 4858 7864 10560 10634 12614 
+		1781 7808 7864 10560
 	}
-	manpower=44213
-	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=0.000
 }
