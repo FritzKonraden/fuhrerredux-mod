@@ -237,9 +237,26 @@ kaproni_bulgarski: "Kaproni Bulgarski"
 	BUL_pan_orthodox: "Orthodox Empire"
 	BUL_pan_orthodox_DEF: "The Orthodox empire"
 	BUL_pan_orthodox_ADJ: "Orthodox"
+
+	#Roman Empire
+	IRQ_roman_thema: "Thema Messopotamias"
+	EGY_roman_thema: "Thema Aegyptou"
+	EGY_roman_north_africa_thema: "Thema Boreias Afrikis"
+	ITA_north_syntrofos: "Sintrofos ot Italiya"
+	ITA_south_thema: "Katapanate of Italia"
+	FRA_roman_syntrofos: "Sintrofos ot Frantsiya"
+	SPR_north_syntrofos: "Sintrofos ot Ispaniya"
+	SPF_south_iberia_thema: "Thema tis Ibirikis"
+	POR_roman_syntrofos: "Sintrofos ot Portugaliya"
+	SPR_north_iberia_syntrofos: "Sintrofos ot Severna Iberiya"
+	SPR_iberia_syntrofos: "Sintrofos ot Iberiya"
+
 	## DECISIONS
 
 #IDEAS
 	BUL_fascist_support: "Bulgarian Fascists Coup"
 	BUL_paternal_autocrat_support: "Paternal Autocrat Support"
 	BUL_authoritarian_democrat_support: "Authoritarian Democrat Support"
+
+#FLAGS
+	BUL_formed_roman_empire: "Has Formed the Roman Empire of Greeks and Bulgarians"

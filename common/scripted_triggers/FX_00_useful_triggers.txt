@@ -1160,3 +1160,9 @@ controls_all_balkan_states = {
 		# }
 	}
 }
+is_thema_of = {
+	custom_trigger_tooltip = {
+		tooltip = "Is a Thema of: [Root.GetName]"
+		prev = { has_autonomy_state = autonomy_thema}
+	}
+}

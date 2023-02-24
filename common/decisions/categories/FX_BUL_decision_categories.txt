@@ -14,3 +14,19 @@ BUL_expansion_paths_balkan_category = {
 		}
 	}
 }
+BUL_roman_expand_category_puppets_category = {
+	allowed = {
+		original_tag = BUL
+	}
+	available = {
+		has_completed_focus = BUL_remaining_balkans
+	}
+	icon = none
+	priority = 150
+	visible = {
+		original_tag = BUL
+		BUL = {
+			has_completed_focus = BUL_remaining_balkans
+		}
+	}
+}
