@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of a630f9db3 (huge revert)
 spriteTypes = {
 
 	#SpriteType = {
@@ -2078,6 +2081,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/Red_Star_Torch_White.png"
 	}
 }
+<<<<<<< HEAD
 =======
 spriteTypes = {
 
@@ -4159,3 +4163,5 @@ spriteTypes = {
 	}
 }
 >>>>>>> parent of 834d387ae (Merge branch 'main' of https://github.com/dax0102/fuhrerredux-mod)
+=======
+>>>>>>> parent of a630f9db3 (huge revert)

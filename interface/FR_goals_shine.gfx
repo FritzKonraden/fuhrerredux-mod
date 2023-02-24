@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of a630f9db3 (huge revert)
 spriteTypes = {
 	#########################################
 	###            Mod Shines             ###
@@ -16042,6 +16045,7 @@ spriteTypes = {
 	}
 
 }
+<<<<<<< HEAD
 =======
 spriteTypes = {
 	#########################################
@@ -32087,3 +32091,5 @@ spriteTypes = {
 
 }
 >>>>>>> parent of 834d387ae (Merge branch 'main' of https://github.com/dax0102/fuhrerredux-mod)
+=======
+>>>>>>> parent of a630f9db3 (huge revert)

@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 spriteTypes = {
 
 	############
@@ -777,6 +778,8 @@ spriteTypes = {
 }
 >>>>>>> parent of 834d387ae (Merge branch 'main' of https://github.com/dax0102/fuhrerredux-mod)
 =======
+=======
+>>>>>>> parent of a630f9db3 (huge revert)
 spriteTypes = {
 
 	############
@@ -1163,9 +1166,8 @@ spriteTypes = {
 		name = "GFX_idea_zavod_Krasny_Putilovets"
 		texturefile = "gfx/interface/ideas/SOV/companies/zavod_Krasny_Putilovets.png"
 	}
-	spriteType = {
-		name = "GFX_idea_BUL_expansion_modifier"
-		texturefile = "gfx/interface/ideas/ideas/BUL_expansion_modifier.png"
-	}
 }
+<<<<<<< HEAD
 >>>>>>> parent of 58b241224 (,)
+=======
+>>>>>>> parent of a630f9db3 (huge revert)

@@ -1976,7 +1976,7 @@ at_conference_no_war_with_PREV = {
 # 			# 101 = { is_owned_or_claimed_by_ROOT = yes } #Coastal Greenland
 # 		# }
 # 		# OR = {
-# 			# NOT = { state = 967 } #Mauritanian 
+# 			# NOT = { state = 967 } #Mauritanian Desert
 # 			# 968 = { is_owned_or_claimed_by_ROOT = yes } #Adrar
 # 		# }
 # 		# OR = {

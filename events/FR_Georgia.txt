@@ -2321,25 +2321,3 @@ country_event = { #Gerzel Baazov writes a nice book
 		add_political_power = 10
 	}
 }
-#events used by bulgaria
-#made by thanasislanaras
-country_event = { 
-	id = ge.69420
-	immediate = {log = "[GetDateText]: [Root.GetName]: event ge.69420"}
-	title = "[BUL.GetName] invites us to the Pan-Orthodox Union"
-	desc = soviet.1001.d
-	is_triggered_only = yes
-	option = { # sure
-		name = "We, as true Orthodox, shall Join this union."
-		custom_effect_tooltip = 1_panorth_tt
-		BUL = {
-			country_event = panorth.7
-		}
-	}
-	option = { # no
-		name = "Who gives a fuck?"
-		BUL = {
-			country_event = panorth.8
-		}
-	}
-}

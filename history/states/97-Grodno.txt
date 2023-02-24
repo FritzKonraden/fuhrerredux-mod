@@ -12,7 +12,6 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 3
-
 		}
 		add_core_of = BLR
 		add_core_of = SOV
@@ -20,10 +19,9 @@ state={
 	}
 
 	provinces={
-		318 3281 3366 3393 11247 
+		318 3256 3281 3393 6306 11247 
 	}
 	manpower=1598900
 	buildings_max_level_factor=1.000
 	state_category=town
-	local_supplies=0.000
 }
