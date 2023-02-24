@@ -32,4 +32,398 @@ foreign_politics = {
       }
     }
   }
+
+}
+  #Expansion Paths Decisions
+BUL_expansion_paths_balkan_category = {
+	BUL_puppet_transylvania_BALKAN = {
+		icon = GFX_decision_generic_army_support
+		cost = 30
+		allowed = {
+			original_tag = BUL
+			BUL = {
+				OR = {
+					controls_state = 84
+					controls_state = 76
+					controls_state = 762
+					controls_state = 83
+					controls_state = 154
+				}
+				has_completed_focus = BUL_balkan_decisions
+				
+			}
+		}
+		visible = {
+			has_completed_focus = BUL_empire_balkan
+		}
+		fire_only_once = yes
+		remove_effect = {
+			BUL = {
+				set_autonomy = {
+					target = TRA
+					autonomy_state = autonomy_integrated_puppet
+				}
+			}
+			TRA = {
+				add_state_core = 84
+				add_state_core = 76
+				add_state_core = 762
+				add_state_core = 83
+				add_state_core = 154
+				set_cosmetic_tag = TRA_balkan_union_BUL
+			}
+			BUL = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 84
+							state = 76
+							state = 762
+							state = 83
+							state = 154
+						}
+						
+					}
+					transfer_state_to = TRA
+				}	
+			}
+		}
+	}
+	BUL_cede_slavic_transylvania = {
+		icon = GFX_decision_category_power_struggle
+		fire_only_once = yes
+		cost = 10
+		allowed = {
+			original_tag = BUL
+			BUL = {
+				OR = {
+					controls_state = 82
+					controls_state = 750
+				}
+			}
+			TRA = {
+				exists = yes
+				is_puppet_of = BUL
+			}
+		}
+		visible = {
+			BUL = {
+				has_completed_focus = BUL_balkan_decisions
+			}
+		}
+		remove_effect = {
+			TRA = {
+				add_state_core = 82
+				add_state_core = 750
+			}
+			BUL = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 82
+							state = 750
+						}
+						
+					}
+					transfer_state_to = TRA
+				}
+			}
+		}
+	}
+	BUL_puppet_romania = {
+		icon = GFX_decision_eng_trade_unions_support
+		fire_only_once = yes
+		cost = 10
+		allowed = {
+			original_tag = BUL
+			BUL = {
+				OR = {
+					controls_state = 81
+					controls_state = 46
+					controls_state = 79
+					controls_state = 80
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = BUL_balkan_decisions
+		}
+		remove_effect = {
+			BUL = {
+				set_autonomy = {
+					target = ROM
+					autonomy_state = autonomy_integrated_puppet
+				}
+			}
+			ROM = {
+				add_state_core = 46
+				add_state_core = 79
+				add_state_core = 81
+				add_state_core = 80
+				set_cosmetic_tag = ROM_balkan_union_BUL
+			}
+			BUL = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 46
+							state = 79
+							state = 81
+							state = 80
+						}
+					}
+					transfer_state_to = ROM
+				}
+			}
+		}
+	}
+	BUL_give_moldova_romania = {
+		icon = GFX_decision_generic_construction
+		fire_only_once = yes
+		cost = 10
+		allowed = {
+			original_tag = BUL
+			ROM = {
+				exists = yes
+				is_puppet_of = BUL
+			}
+			BUL = {
+				OR = {
+					controls_state = 78
+					controls_state = 853
+				}
+				
+			}
+		}
+		visible = {
+			has_completed_focus = BUL_balkan_decisions
+		}
+		remove_effect = {
+			ROM = {
+				add_state_core = 78
+				add_state_core = 853
+			}
+			BUL = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 78
+							state = 853
+						}
+					}
+					transfer_state_to = ROM
+				}
+			}
+		}
+	}
+	BUL_puppet_moldova = {
+		icon = GFX_decision_generic_construction
+		fire_only_once = yes
+		cost = 10
+		allowed = {
+			original_tag = BUL
+			BUL = {
+				OR = {
+					controls_state = 78
+					controls_state = 853
+				}
+				NOT = {
+					ROM = {
+						OR = {
+							controls_state = 78
+							controls_state = 853
+						}
+					}
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = BUL_balkan_decisions
+		}
+		remove_effect = {
+			BUL = {
+				set_autonomy = {
+					target = MOL
+					autonomy_state = autonomy_integrated_puppet
+				}
+			}
+			MOL = {
+				add_state_core = 78
+				add_state_core = 853
+				set_cosmetic_tag = MOL_balkan_union_BUL
+			}
+			BUL = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 78
+							state = 853
+						}
+					}
+					transfer_state_to = MOL
+				}
+			}
+			
+		}
+	}
+	BUL_take_crimea = {
+		icon = GFX_decision_category_power_struggle
+		fire_only_once = yes
+		cost = 75
+		allowed = {
+			original_tag = BUL
+			UKR = {
+				has_opinion = {
+					target = BUL
+					value > 90
+				}
+				exists = yes
+			}
+		}
+		visible = {
+			has_completed_focus = BUL_balkan_decisions
+		}
+		remove_effect = {
+			UKR = {
+				country_event = ukraine.10000
+			}
+		}
+	}
+	BUL_choose_capital = {
+		icon = GFX_decision_category_power_struggle
+		fire_only_once = yes
+		cost = 10
+		allowed = {
+			original_tag = BUL
+		}
+		visible = {
+			has_completed_focus = BUL_balkan_decisions
+		}
+		remove_effect = {
+			country_event = bulgaria.12
+		}
+	}
+	BUL_cyprus_issue = {
+		icon = none
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			original_tag = BUL
+			has_completed_focus = BUL_balkan_decisions
+			183 = {
+				is_owned_by = ENG
+			}
+			ENG = {
+				has_opinion = {
+					target = BUL
+					value > 75
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = BUL_balkan_decisions
+		}
+		remove_effect = {
+			ENG = {
+				country_event = ukcyp.69420
+			}
+		}
+	}
+}
+BUL_integrate_states_category = {
+	BUL_byz_integrate_serbia = {
+		fire_only_once = yes
+		cost = 50
+		allowed = {
+			original_tag = BUL
+			has_cosmetic_tag = BUL_byzantium
+		}
+		visible = {
+			any_owned_state = {
+				is_core_of = SER
+				is_owned_by = BUL
+			}
+		}
+		remove_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = SER
+					is_controlled_by = BUL
+				}
+				add_core_of = BUL
+			}
+		}
+	}
+	BUL_byz_integrate_north_epirus = {
+		icon = GFX_decision_category_power_struggle
+		cost = 10
+		allowed = {
+			original_tag = BUL
+			owns_state = 765
+			NOT = {
+				765 = {
+					is_core_of = BUL
+				}
+			}
+		}
+		visible = {
+			original_tag = BUL
+			owns_state = 765
+			NOT = {
+				765 = {
+					is_core_of = BUL
+				}
+			}
+		}
+		remove_effect = {
+			add_state_core = 765
+		}
+	}
+	BUL_byz_integrate_romania = {
+		cost = 50
+		fire_only_once = yes
+		allowed = {
+			original_tag = BUL
+			any_owned_state = {
+				is_core_of = ROM
+				is_controlled_by = BUL
+				NOT = {
+					state = 76
+					state = 84
+					state = 164
+					state = 762
+					state = 83
+				}
+			}
+		}
+		visible = {
+			original_tag = BUL
+			any_owned_state = {
+				is_core_of = ROM
+				is_controlled_by = BUL
+				is_romanian_state_no_transylvania = yes
+			}
+		}
+		remove_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = ROM
+					is_controlled_by = BUL
+					is_romanian_state_no_transylvania = yes
+				}
+				add_core_of = BUL
+			}
+		}
+	}
+	BUL_byz_force_hungary = {
+		cost = 200
+		allowed = {
+			original_tag = BUL
+		}
+		visible = {
+			original_tag = BUL
+			has_cosmetic_tag = BUL_byzantine
+			
+		}
+	}
 }

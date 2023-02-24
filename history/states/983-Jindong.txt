@@ -1,3 +1,4 @@
+
 state={
 	id=983
 	name="STATE_983"
@@ -14,13 +15,16 @@ state={
 			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 1
+
 		}
+
 	}
 
 	provinces={
-		1027 1180 1203 1438 1519 1575 4208 4469 4538 4606 4634 7571 10053 10421 10480 12078 12344 
+		1027 1180 1203 1438 1519 4208 4469 4538 4606 4634 7158 7571 10053 10421 10480 12078 12344 
 	}
 	manpower=3971500
 	buildings_max_level_factor=1.000
 	state_category=rural
+	local_supplies=0.000
 }

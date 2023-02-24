@@ -1035,3 +1035,140 @@ is_xinjiang = {
 		state = 619
 	}
 }
+is_balkan_state = {
+	OR = {
+		is_core_of = BUL
+		is_core_of = GRE
+		is_core_of = ALB
+		is_core_of = ROM
+		is_core_of = TUR
+		is_core_of = SER
+		state = 796
+		state = 163
+		state = 736
+		state = 917
+		state = 770
+
+	}
+	is_on_continent = europe
+	#state = 341
+}
+is_balkan_island_state = {
+	OR = {
+		state = 187
+		state = 164
+		state = 182
+	}
+
+}
+is_balkan_island_state_or_cyprus = {
+	OR = {
+		state = 187
+		state = 164
+		state = 182
+		state = 183
+	}
+}
+is_original_bulgarian_state = {
+	OR = {
+		state = 764
+		state = 48
+		state = 212
+		state = 211
+		state = 766
+	}
+}
+is_romanian_state_no_transylvania = {
+	OR = {
+		state = 82
+		state = 81
+		state = 46
+		state = 77
+		state = 861
+		state = 853
+		state = 78
+		state = 79
+		state = 80
+	}
+}
+spanish_civil_war_end = {
+	custom_trigger_tooltip = {
+		tooltip = "Spanish Civil War has ended"
+		AND = {
+			AND = {
+				SPR = {
+					AND = {
+						has_war_with = SPM
+						has_war_with = SPA
+						has_war_with = SPF
+					}
+				}
+				SPM = {
+					AND = {
+						has_war_with = SPR
+						has_war_with = SPA
+						has_war_with = SPF
+					}
+				}
+				SPF = {
+					AND = {
+						has_war_with = SPR
+						has_war_with = SPA
+						has_war_with = SPM
+					}
+				}
+				SPA = {
+					AND = {
+						has_war_with = SPR
+						has_war_with = SPF
+						has_war_with = SPM
+					}
+				}
+			}
+		}
+	}
+<<<<<<< HEAD
+}
+
+controls_all_balkan_states = {
+	custom_trigger_tooltip = {
+		tooltip = "Controlls all Balkan States"
+		all_state = {
+			AND = {
+				is_balkan_state = yes
+				is_controlled_by = root
+			}
+		}
+		# ROOT = {
+		# 	OR = {
+		# 		is_core_of = GRE
+		# 		is_core_of = ALB
+		# 		is_core_of = BUL
+		# 		is_core_of = ROM
+		# 		is_core_of = SER
+		# 		state = 796
+		# 		state = 163
+		# 		state = 736
+		# 		state = 917
+		# 		state = 770
+		# 		NOT = {
+		# 			OR = {
+		# 				state = 340
+		# 				state = 339
+		# 			}
+		# 		}
+		# 	}
+		# }
+	}
+<<<<<<< HEAD
+}
+is_thema_of = {
+	custom_trigger_tooltip = {
+		tooltip = "Is a Thema of: [Root.GetName]"
+		prev = { has_autonomy_state = autonomy_thema}
+	}
+=======
+>>>>>>> parent of a722a5715 (...)
+=======
+>>>>>>> parent of f6d4b2e77 (some stuff smh)
+}

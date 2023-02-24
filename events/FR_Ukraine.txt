@@ -1817,3 +1817,49 @@ country_event = { # Land movie
     name = ukraine.47.a
   }
 }
+#EVENTS FOR BULGARIA
+#MADE BY THANASISLANARAS
+country_event = {
+	id = ukraine.10000
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event ukraine.10000"
+	}
+	title = ukraine.10000.t
+	desc = ukraine.10000.d
+	is_triggered_only = yes 
+
+	option = { #accept
+		name = ukraine.10000.a
+		BUL = {
+			country_event = bulgaria.10
+		}
+	}
+	option = { #no
+		name = ukraine.10000.b
+		BUL = {
+			country_event = bulgaria.11
+		}
+	}
+}
+country_event = {
+	id = ukraine.10001
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event ukraine.10001"
+	}
+	title = "The [BUL.GetName] ask us to join the Pan-Orthodox Union"
+	desc = ukraine.10001.d
+	is_triggered_only = yes 
+	option = { #accept
+		name = "With all our blessings."
+		custom_effect_tooltip = 1_panorth_tt
+		BUL = {
+			country_event = panorth.1
+		}
+	}
+	option = { #no
+		name = "We won't give our liberty away for this scum!"
+		BUL = {
+			country_event = panorth.2
+		}
+	}
+}
