@@ -1861,6 +1861,7 @@ spriteTypes = {
 		name = "GFX_goal_BUL_third_bulgarian_empire"
 		texturefile = "gfx/interface/goals/BUL_third_bulgarian_empire.png"
 	}
+<<<<<<< HEAD
 	spriteType = {
 		name = "GFX_goal_BUL_a_balkan_empire"
 		textureFile = "gfx/interface/goals/BUL_a_balkan_empire.png"
@@ -3954,4 +3955,6 @@ spriteTypes = {
 >>>>>>> parent of 834d387ae (Merge branch 'main' of https://github.com/dax0102/fuhrerredux-mod)
 =======
 >>>>>>> parent of 834d387ae (Merge branch 'main' of https://github.com/dax0102/fuhrerredux-mod)
+=======
+>>>>>>> parent of 4c6eafdca (a lot of stuff tbh)
 }

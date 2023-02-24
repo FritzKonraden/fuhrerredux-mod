@@ -603,6 +603,6 @@ BUL_romanian_bulgarian_union_UNIFIED = {
 	color_ui = rgb { 128 255 191 }
 }
 BUL_pan_orthodox = {
-	color = rgb{ 05 05  05 }
-	color_ui = rgb{ 05 05 05 }
+	color = rgb{ 05, 05 , 05 }
+	color_ui = rgb{ 05, 05 , 05 }
 }
