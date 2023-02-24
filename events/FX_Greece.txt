@@ -99,3 +99,82 @@ country_event = {
 		}
 	}
 }
+
+### GREEK EVENTS MADE BY THANASISLANARAS WITH BULGARIA CONTENT
+#LOC NOT YET ADDED 
+add_namespace = bulgaria
+
+country_event = {
+	id = gre.4
+	desc = gre.4.d
+	title = gre.4.t
+	is_triggered_only = yes
+
+	option = {
+		name = gre.4.a #reject
+		ai_chance = {
+			factor = 100
+		}
+		GRE = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+		BUL = {
+			country_event = bulgaria.7
+		}
+	}
+	option = {
+		name = gre.4.b #yes
+		ai_chance = {
+			factor = 0
+		}
+		GRE = {
+			add_stability = -0.02
+		}
+		BUL = {
+			country_event = bulgaria.8
+		}
+	}
+}
+country_event = {
+	id = gre.5
+	desc = gre.5.d
+	title = gre.5.t
+	is_triggered_only = yes
+	option = { #reject
+		BUL = {
+			add_war_support = 0.02
+			184 = {
+				add_dynamic_modifier = {
+				modifier = BUL_expansion
+				}
+			}
+			731 = {
+				add_dynamic_modifier = {
+				modifier = BUL_expansion
+				}
+			}
+			country_event = bulgaria.18
+		}
+		GRE = {
+			add_war_support = 0.05
+			add_stability = 0.02
+		}
+	}
+	option = { #yes
+		GRE = {
+			transfer_state = 731
+			transfer_state = 184
+			add_political_power = 100
+		}
+		BUL = {
+			add_political_power = -100
+			give_guarantee = GRE 
+			diplomatic_relation = {
+				country = GRE
+				relation = non_aggression_pact
+			}
+			country_event = bulgaria.19
+		}
+	}
+}

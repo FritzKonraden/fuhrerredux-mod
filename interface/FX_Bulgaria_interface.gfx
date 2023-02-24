@@ -1,0 +1,7 @@
+#EventPics
+SpriteTypes = {
+    SpriteType = {
+		name = "report_event_BUL_expansion"
+		texturefile = "gfx/event_pictures/report_event_BUL_expansion.png"
+	}
+}

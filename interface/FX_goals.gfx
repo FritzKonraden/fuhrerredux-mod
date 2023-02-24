@@ -2078,6 +2078,26 @@ spriteType = {
 		name = "GFX_goal_SPA_Chairwoman_Ibarruri"
 		texturefile = "gfx/interface/goals/SPA_Chairwoman_Ibarruri.png"
 	}
+	spriteType = {
+		name = "GFX_goal_BUL_armed_forces"
+		texturefile = "gfx/interface/goals/BUL_armed_forces.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_third_bulgarian_empire"
+		texturefile = "gfx/interface/goals/BUL_third_bulgarian_empire.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_a_balkan_empire"
+		textureFile = "gfx/interface/goals/BUL_a_balkan_empire.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_the_balkan_empire"
+		textureFile = "gfx/interface/goals/BUL_the_balkan_empire.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_balkan_subjucate_balkans"
+		textureFile = "gfx/interface/goals/BUL_balkan_subjucate_balkans.png"
+	}
 #SpriteType = {
 		#name = "GFX_ENG_buckingham"
 		#texturefile = "gfx/interface/goals/ENG_buckingham.png"
@@ -4154,4 +4174,5 @@ spriteType = {
 		name = "GFX_goal_Red_Star_Torch_White"
 		texturefile = "gfx/interface/goals/Red_Star_Torch_White.png"
 	}
+
 }
