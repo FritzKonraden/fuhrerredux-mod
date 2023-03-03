@@ -30,3 +30,19 @@ BUL_roman_expand_category_puppets_category = {
 		}
 	}
 }
+BUL_roman_expand_panorth_expand_category = {
+	allowed = {
+		original_tag = BUL
+	}
+	available = {
+		has_completed_focus = BUL_pan_orthodoxism
+	}
+	icon = none
+	priority = 75
+	visible = {
+		original_tag = BUL
+		BUL = {
+			has_completed_focus = BUL_pan_orthodoxism
+		}
+	}
+}

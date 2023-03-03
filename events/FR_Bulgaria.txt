@@ -739,25 +739,15 @@ country_event = {
 	}
 }
 country_event = {
-	id = panorth.5 #russian invitation / SAID YES
+	id = panorth.5 #armenian invitation / SAID YES
 	title = panorth.5.t
 	desc = panorth.5.d
 	is_triggered_only = yes
 	option = {
 		name = panorth.5.a
-		ARM = {
-			every_unit_leader = {
-				set_nationality = BUL
-			}
-			transfer_navy = {
-				target = BUL
-			}
-		}
 		BUL = {
-			annex_country = {
-				target = ARM
-				transfer_troops = yes
-			}
+			add_to_faction = ARM
+			give_guarantee = ARM
 		}
 	}
 }
@@ -769,34 +759,24 @@ country_event = {
 	option = {
 		name = panorth.6.a
 	}
-	option = {
-		name = panorth.6.b
-		create_wargoal = {
-			target = ARM
-			type = annex_everything
-		}
-	}
+	# option = {
+	# 	name = panorth.6.b
+	# 	create_wargoal = {
+	# 		target = ARM
+	# 		type = annex_everything
+	# 	}
+	# }
 }
 country_event = {
 	id = panorth.7 #georgian invitation / SAID YES
-	title = panorth.5.t
-	desc = panorth.5.d
+	title = panorth.7.t
+	desc = panorth.7.d
 	is_triggered_only = yes
 	option = {
-		name = panorth.5.a
-		GEO = {
-			every_unit_leader = {
-				set_nationality = BUL
-			}
-			transfer_navy = {
-				target = BUL
-			}
-		}
+		name = panorth.7.a
 		BUL = {
-			annex_country = {
-				target = GEO
-				transfer_troops = yes
-			}
+			add_to_faction = GEO
+			give_guarantee = GEO
 		}
 	}
 }
@@ -808,11 +788,48 @@ country_event = {
 	option = {
 		name = panorth.8.a
 	}
-	option = {
-		name = panorth.8.b
-		create_wargoal = {
-			target = GEO
-			type = annex_everything
-		}
-	}
+	# option = {
+	# 	name = panorth.8.b
+	# 	create_wargoal = {
+	# 		target = GEO
+	# 		type = annex_everything
+	# 	}
+	# }
 }
+# country_event = {
+# 	id = panorth.9 #kurdistan said no to being annexed
+# 	title = panorth.9.t
+# 	desc = panorth.9.d
+# 	is_triggered_only = yes
+# 	option = {
+# 		name = panorth.9.a
+# 		declare_war_on = {
+# 			target = KUR
+# 		}
+# 		ARM = {
+# 			declare_war_on = {
+# 				target = KUR
+# 			}
+# 		}
+# 	}
+# }
+# country_event = {
+# 	id = panorth.10 #kurdistan said yes to being annexed
+# 	title = panorth.10.t
+# 	desc = panorth.10.d
+# 	is_triggered_only = yes
+# 	option = {
+# 		name = panorth.10.a
+# 		ARM = {
+# 			annex_country = {
+# 				target = KUR
+# 			}
+# 			every_owned_state = {
+# 				limit = {
+# 					is_core_of = KUR
+# 				}
+# 				add_core_of = ARM
+# 			}
+# 		}
+# 	}
+# }

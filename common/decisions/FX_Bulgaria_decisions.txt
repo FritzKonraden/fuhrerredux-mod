@@ -735,39 +735,6 @@ BUL_roman_expand_category_puppets_category = {
 			}
 		}
 	}
-	BUL_roman_give_egypt_eritrea = {
-		fire_only_once = yes
-		allowed = {
-			original_tag = BUL
-		}
-		visible = {
-			has_completed_focus = BUL_italy_france
-		}
-		available = {
-			BUL = {
-				AND = {
-					has_global_flag = BUL_formed_roman_empire
-					controls_state = 550
-					controls_state = 559
-				}
-			}
-			EGY = {
-				is_puppet_of = BUL
-			}
-		}
-		remove_effect = {
-			550 = {
-				transfer_state_to = EGY
-				add_core_of = EGY
-				remove_claim_by = BUL
-			}
-			559 = {
-				transfer_state_to = EGY
-				add_core_of = EGY
-				remove_claim_by = BUL
-			}
-		}
-	}
 	BUL_roman_puppet_south_italy = {
 		fire_only_once = yes
 		allowed = {
@@ -1159,8 +1126,11 @@ BUL_roman_expand_category_puppets_category = {
 			BUL = {
 				every_owned_state = {
 					limit = {
-						is_core_of = SPR
-						state = 833
+						OR = {
+							is_core_of = SPR
+							state = 833
+						}
+						
 						NOT = { 
 							state = 169
 							state = 834
@@ -1460,4 +1430,56 @@ BUL_roman_expand_category_puppets_category = {
 			}
 		}
 	}
+	BUL_roman_create_faction = {
+		allowed = {
+			original_tag = BUL
+		}
+		available = {
+			AND = {
+				EGY = {
+					is_puppet_of = BUL
+				}
+				IRQ = {
+					is_puppet_of = BUL
+				}
+				BUL = {
+					NOT = {
+						is_in_faction = yes
+					}
+				}
+			}
+		}
+		remove_effect = {
+			BUL = {
+				create_faction = "Roman Imperial Alliance"
+			}
+		}
+	}
+}
+BUL_roman_expand_panorth_expand_category = {
+	BUL_panorth_help_armenia_kurdistan = {
+		fire_only_once = yes
+		allowed = {
+			original_tag = BUL
+		}
+		visible = {
+			ARM = {
+				is_in_faction_with = BUL
+			}
+		}
+		available = {
+			ARM = {
+				any_neighbor_country = {
+					tag = KUR
+				}
+			}
+			BUL = {has_completed_focus = BUL_pan_orthodoxism}
+		}
+		remove_effect = {
+			KUR = {
+				country_event = kur.1
+			}
+		}
+	}
+
 }

@@ -1,0 +1,22 @@
+########
+# Made by Thanasis Lanaras (thanasislanaras)
+########
+add_namespace = kur
+country_event = {
+	id = kur.1
+	title = "Armenia requests immediate subjucation"
+	fire_only_once = yes
+	desc = "[ARM.GetName], backed up by [BUL.GetName], demands our immediate subjucation to their forces. They say they are going to take care of our people, what should we do?"
+	option = {
+		name = "Who gives a fuck? If these bastards want to take our land, then they shall try!"
+		BUL = {
+			country_event = panorth.9
+		}
+	}
+	option = {
+		name = "That is a decision, in which we can't do much. We should be annexed, rather than being destroyed.. :("
+		BUL = {
+			country_event = panorth.10
+		}
+	}
+}

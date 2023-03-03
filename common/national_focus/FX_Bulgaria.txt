@@ -624,7 +624,7 @@ focus_tree = {
 	# BALKAN EMPIRE SUBCATEGORY FOCUSES HERE 
 	focus = {
 		id = BUL_empire_balkan
-		icon = none
+		icon = GFX_goal_BUL_balkan_empire
 		cost = 0
 		relative_position_id = BUL_realise_balkan_ideals
 		prerequisite = {
@@ -682,7 +682,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BUL_integrate_balkans
-		icon = GFX_goal_refugee_management
+		icon = GFX_goal_BUL_balkan_integrate_balkans
 		cost = 5
 		x = 0
 		y = 1
@@ -732,7 +732,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BUL_the_balkan_spirit
-		icon = GFX_goal_refugee_management
+		icon = GFX_goal_BUL_balkan_the_balkan_spirit
 		cost = 5
 		x = 0
 		y = 1
@@ -751,7 +751,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BUL_balkan_decisions
-		icon = GFX_goal_refugee_management
+		icon = GFX_goal_BUL_balkan_decisions
 		cost = 5
 		x = 0
 		y = 1
@@ -1205,6 +1205,7 @@ focus_tree = {
 		relative_position_id = BUL_ally_russia
 		prerequisite = {
 			focus = BUL_ally_russia
+			focus = BUL_conquer_iberia
 		}
 		bypass = {
 			AND = {
@@ -1267,6 +1268,7 @@ focus_tree = {
 		relative_position_id = BUL_italy_france
 		prerequisite = {
 			focus = BUL_italy_france
+			focus = BUL_integrate_anatolia
 		}
 		available = {
 			OR = {
@@ -1275,43 +1277,78 @@ focus_tree = {
 				has_government = national_populist
 			}
 			original_tag = BUL
-			UKR = {
-				has_opinion = {
-					target = BUL
-					value > 80
-				}
-				OR = {
-					has_government = paternal_autocrat
-					has_government = authoritarian_democrat
-					has_government = national_populist
-				}
+			# commented because of change of plans :)
+			# cntrl + / to uncomment if needed in the future
+			# if it is future me, i hope you alr :)
+			# UKR = {
+			# 	has_opinion = {
+			# 		target = BUL
+			# 		value > 80
+			# 	}
+			# 	OR = {
+			# 		has_government = paternal_autocrat
+			# 		has_government = authoritarian_democrat
+			# 		has_government = national_populist
+			# 	}
 				
-			}
-			SOV = {
-				has_opinion = {
-					target = BUL
-					value > 80
-				}
-				OR = {
-					has_government = paternal_autocrat
-					has_government = authoritarian_democrat
-					has_government = national_populist
-				}
-			}
+			# }
+			# SOV = {
+			# 	has_opinion = {
+			# 		target = BUL
+			# 		value > 80
+			# 	}
+			# 	OR = {
+			# 		has_government = paternal_autocrat
+			# 		has_government = authoritarian_democrat
+			# 		has_government = national_populist
+			# 	}
+			# }
 		}
 		completion_reward = {
 			custom_effect_tooltip = 2_panorth_tt
 			BUL = {
-				set_cosmetic_tag = BUL_pan_orthodox
+				# set_cosmetic_tag = BUL_pan_orthodox
+				custom_effect_tooltip = 3_panorth_tt
+				if = {
+					limit = {
+						is_faction_leader = yes
+					}
+					dismantle_faction = yes
+					create_faction = "Pan Orthodox Alliance"
+					else_if = {
+						limit = {
+							AND = {
+								is_in_faction = yes
+								NOT = {
+									is_faction_leader = yes
+								}
+							}
+						}
+						leave_faction = yes
+						create_faction = "Pan Orthodox Alliance"
+					}
+					else = {
+						create_faction = "Pan Orthodox Alliance"
+					}
+				}
+				# if = {
+				# 	limit = {
+				# 		is_in_faction = yes
+				# 	}
+				# 	leave_faction = yes
+				# }
 			}
-			UKR = {
-				country_event = ukraine.10001
-			}
-			SOV = {
-				country_event = soviet.1001
-			}
+			# UKR = {
+			# 	country_event = ukraine.10001
+			# }
+			# SOV = {
+			# 	country_event = soviet.1001
+			# }
 			ARM = {
-				
+				country_event = armenia.1
+			}
+			GEO = {
+				country_event = ge.69420
 			}
 		}
 	}
