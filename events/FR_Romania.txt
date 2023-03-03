@@ -1957,7 +1957,9 @@ country_event = { # Accepted Faction Join
 
 	option = {
 		name = romania.39.a
-		trigger = { tag = FRA }
+		trigger = {
+      FROM = { tag = FRA }
+    }
 
 		FROM = {
 			add_to_faction = ROOT
@@ -1965,7 +1967,9 @@ country_event = { # Accepted Faction Join
 	}
 	option = {
 		name = romania.39.b
-		trigger = { tag = GER }
+		trigger = {
+      FROM = { tag = GER }
+    }
 
 		FROM = {
 			add_to_faction = ROOT
@@ -1973,7 +1977,9 @@ country_event = { # Accepted Faction Join
 	}
 	option = {
 		name = romania.39.c
-		trigger = { tag = SOV }
+		trigger = {
+      FROM = { tag = SOV }
+    }
 
 		FROM = {
 			add_to_faction = ROOT
