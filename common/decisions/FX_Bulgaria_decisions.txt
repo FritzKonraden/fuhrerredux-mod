@@ -445,12 +445,13 @@ BUL_roman_expand_category_puppets_category = {
 						controls_state = 676
 					}
 				}
+				has_completed_focus = BUL_egypt_and_levant
 			}
 		}
 		visible = {
 			original_tag = BUL
 			has_global_flag = BUL_formed_roman_empire
-			has_completed_focus = BUL_remaining_balkans
+			has_completed_focus = BUL_egypt_and_levant
 		}
 		cost = 0
 		fire_only_once = yes
@@ -487,13 +488,20 @@ BUL_roman_expand_category_puppets_category = {
 			original_tag = BUL
 		}
 		visible = {
-			original_tag = BUL
-			has_global_flag = BUL_formed_roman_empire
+			AND = {
+				original_tag = BUL
+				has_global_flag = BUL_formed_roman_empire
+				has_completed_focus = BUL_egypt_and_levant
+				IRQ = {
+					is_subject_of = BUL
+				}
+			}
 		}
 		available = {
 			AND = {
 				original_tag = BUL
 				has_global_flag = BUL_formed_roman_empire
+				has_completed_focus = BUL_egypt_and_levant
 				656 = {
 					is_controlled_by = BUL
 				}
@@ -504,16 +512,9 @@ BUL_roman_expand_category_puppets_category = {
 							controls_state = 291
 						}
 						has_autonomy_state = autonomy_thema
+						is_subject_of = BUL
 					}
-					
 				}
-			}
-		}
-		visible = {
-			has_completed_focus = BUL_remaining_balkans
-			has_global_flag = BUL_formed_roman_empire
-			IRQ = {
-				is_subject_of = BUL
 			}
 		}
 		fire_only_once = yes
@@ -531,7 +532,7 @@ BUL_roman_expand_category_puppets_category = {
 			original_tag = BUL
 		}
 		visible = {
-			has_completed_focus = BUL_remaining_balkans
+			has_completed_focus = BUL_egypt_and_levant
 		}
 		available = {
 			BUL = {
@@ -549,7 +550,7 @@ BUL_roman_expand_category_puppets_category = {
 				every_owned_state = {
 					limit = {
 						is_core_of = EGY
-						NOT = { 
+						NOT = {
 							state = 813 
 							state = 447
 						}
@@ -579,7 +580,10 @@ BUL_roman_expand_category_puppets_category = {
 			original_tag = BUL
 		}
 		visible = {
-			has_completed_focus = BUL_remaining_balkans
+			has_completed_focus = BUL_egypt_and_levant
+			EGY = {
+				is_subject_of = BUL
+			}
 		}
 		available = {
 			BUL = {
@@ -595,6 +599,7 @@ BUL_roman_expand_category_puppets_category = {
 			}
 			EGY = {
 				has_autonomy_state = autonomy_thema
+				is_subject_of = BUL
 			}
 		}
 		remove_effect = {
@@ -627,7 +632,7 @@ BUL_roman_expand_category_puppets_category = {
 			original_tag = BUL
 		}
 		visible = {
-			has_completed_focus = BUL_remaining_balkans
+			has_completed_focus = BUL_egypt_and_levant
 		}
 		available = {
 			BUL = {
@@ -639,6 +644,7 @@ BUL_roman_expand_category_puppets_category = {
 			}
 			EGY = {
 				has_autonomy_state = autonomy_thema
+				is_subject_of = BUL
 			}
 
 		}
@@ -687,6 +693,11 @@ BUL_roman_expand_category_puppets_category = {
 					controls_state = 157
 					controls_state = 39
 					controls_state = 968
+				}
+			}
+			NOT = {
+				ITA = {
+					is_subject_of = BUL
 				}
 			}
 		}
@@ -792,6 +803,9 @@ BUL_roman_expand_category_puppets_category = {
 		}
 		visible = {
 			has_completed_focus = BUL_italy_france
+			UPC = {
+				is_puppet_of = BUL
+			}
 		}
 		available = {
 			BUL = {
@@ -799,6 +813,9 @@ BUL_roman_expand_category_puppets_category = {
 					has_global_flag = BUL_formed_roman_empire
 					controls_state = 116
 				}
+			}
+			UPC = {
+				is_puppet_of = BUL
 			}
 		}
 		remove_effect = {
@@ -817,7 +834,13 @@ BUL_roman_expand_category_puppets_category = {
 			original_tag = BUL
 		}
 		visible = {
-			has_completed_focus = BUL_italy_france
+			AND = {
+				has_completed_focus = BUL_italy_france
+				EGY = {
+					is_puppet_of = BUL
+				}
+			}
+			
 		}
 		available = {
 			BUL = {
@@ -826,6 +849,9 @@ BUL_roman_expand_category_puppets_category = {
 					controls_state = 550
 					controls_state = 559
 				}
+			}
+			EGY = {
+				is_puppet_of = BUL
 			}
 		}
 		remove_effect = {
@@ -1430,6 +1456,253 @@ BUL_roman_expand_category_puppets_category = {
 			}
 		}
 	}
+	BUL_roman_puppet_transylvania = {
+		allowed = {
+			original_tag = BUL
+		}
+		available = {
+			AND = {
+				controls_state = 84
+				controls_state = 76
+				controls_state = 82
+				controls_state = 83
+				controls_state = 762
+				controls_state = 154
+			}
+		}
+		visible = {
+			has_completed_focus = BUL_remaining_balkans
+		}
+		fire_only_once = yes
+		remove_effect = {
+			TRA = {
+				transfer_state = 84
+				transfer_state = 76
+				transfer_state = 83
+				transfer_state = 762
+				transfer_state = 82
+				transfer_state = 154
+				add_state_core = 84
+				add_state_core = 76
+				add_state_core = 83
+				add_state_core = 762
+				add_state_core = 82
+				add_state_core = 154
+				set_cosmetic_tag = TRA_roman_thema
+			}
+			BUL = {
+				set_autonomy = {
+					target = TRA
+					autonomy_state = autonomy_thema
+				}
+			}
+		}
+	}
+	BUL_roman_puppet_romania = {
+		allowed = {
+			original_tag = BUL
+		}
+		available = {
+			has_completed_focus = BUL_remaining_balkans
+			BUL = {
+				AND = {
+					controls_state = 81
+					controls_state = 46
+					controls_state = 79
+					controls_state = 80
+					controls_state = 78
+					controls_state = 853
+				}
+			}
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = BUL_remaining_balkans
+		}
+		remove_effect = {
+			ROM = {
+				transfer_state = 81
+				transfer_state = 46
+				transfer_state = 79
+				transfer_state = 80
+				transfer_state = 78
+				transfer_state = 853
+				add_state_core = 81
+				add_state_core = 46
+				add_state_core = 79
+				add_state_core = 80
+				add_state_core = 78
+				add_state_core = 853
+				load_focus_tree = generic_focus
+				set_cosmetic_tag = ROM_roman_thema
+			}
+			BUL = {
+				set_autonomy = {
+					target = ROM
+					autonomy_state = autonomy_thema
+				}
+			}
+			if = {
+				limit = {
+					BUL = {
+						AND = {
+							controls_state = 861
+							861 = {
+								NOT = {
+									is_core_of = BUL
+								}
+							}
+						}
+					}
+				}
+				861 = {
+					add_core_of = BUL
+					transfer_state_to = BUL
+				}
+			}
+		}
+	}
+	BUL_roman_puppet_serbia = {
+		allowed = {
+			original_tag = BUL
+		}
+		available = {
+			has_completed_focus = BUL_remaining_balkans
+			BUL = {
+				AND = {
+					controls_state = 102
+					controls_state = 103
+					controls_state = 788
+					controls_state = 789
+					controls_state = 1036
+					controls_state = 1035
+					controls_state = 1034
+					controls_state = 104
+					controls_state = 1039
+					controls_state = 45
+					controls_state = 985
+					controls_state = 750
+					controls_state = 1037
+					controls_state = 109
+					controls_state = 767
+					controls_state = 107
+				}
+			}
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = BUL_remaining_balkans
+		}
+		remove_effect = {
+			SER = {
+				transfer_state = 102
+				transfer_state = 103
+				transfer_state = 788
+				transfer_state = 789
+				transfer_state = 1036
+				transfer_state = 1035
+				transfer_state = 1034
+				transfer_state = 104
+				transfer_state = 1039
+				transfer_state = 45
+				transfer_state = 985
+				transfer_state = 750
+				transfer_state = 1037
+				transfer_state = 109
+				transfer_state = 767
+				transfer_state = 107
+				add_state_core = 102
+				add_state_core = 103
+				add_state_core = 788
+				add_state_core = 789
+				add_state_core = 1036
+				add_state_core = 1035
+				add_state_core = 1034
+				add_state_core = 104
+				add_state_core = 1039
+				add_state_core = 45
+				add_state_core = 985
+				add_state_core = 750
+				add_state_core = 1037
+				add_state_core = 109
+				add_state_core = 767
+				add_state_core = 107
+				load_focus_tree = generic_focus
+				set_cosmetic_tag = SER_roman_thema
+			}
+			BUL = {
+				set_autonomy = {
+					target = SER
+					autonomy_state = autonomy_thema
+				}
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								controls_state = 942
+								NOT = {
+									942 = {
+										is_core_of = BUL
+									}
+								}
+							}
+							AND = {
+								controls_state = 106
+								NOT = {
+									106 = {
+										is_core_of = BUL
+									}
+								}
+							}
+							AND = {
+								controls_state = 787
+								NOT = {
+									787 = {
+										is_core_of = BUL
+									}
+								}
+							}
+						}
+					}
+					add_state_core = 787
+					add_state_core = 106
+					add_state_core = 942
+				}
+			}
+		}
+	}
+	BUL_roman_give_serbia_italian_balkan_lands = {
+		allowed = {
+			original_tag = BUL
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = BUL_italy_france
+		}
+		available = {
+			has_completed_focus = BUL_italy_france
+			BUL = {
+				AND = {
+					controls_state = 917
+					controls_state = 736
+					controls_state = 770
+					controls_state = 163
+				}
+			}
+		}
+		remove_effect = {
+			SER = {
+				transfer_state = 917
+				transfer_state = 736
+				transfer_state = 770
+				transfer_state = 163
+				add_state_core = 917
+				add_state_core = 736
+				add_state_core = 770
+				add_state_core = 163
+			}
+		}
+	}
 	BUL_roman_create_faction = {
 		allowed = {
 			original_tag = BUL
@@ -1481,5 +1754,4 @@ BUL_roman_expand_panorth_expand_category = {
 			}
 		}
 	}
-
 }

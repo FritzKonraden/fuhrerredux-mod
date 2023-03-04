@@ -155,10 +155,10 @@ kaproni_bulgarski: "Kaproni Bulgarski"
 
 
 ## BALKAN EMPIRE FOCUS
-	BUL_empire_balkan: "A Balkan Empire"
+	BUL_empire_balkan: "United Balkans"
 	BUL_subjucate_balkans: "Subjugate the Balkans"
-	BUL_integrate_balkans: "Integrate the Balkans"
-	BUL_the_balkan_empire: "The Balkan Empire"
+	BUL_integrate_balkans: "Integrate the States"
+	BUL_the_balkan_empire: "The Balkan Federation"
 	BUL_the_balkan_spirit: "The Balkan Spirit"
 	BUL_balkan_decisions: "The Final Completion"
 ## ROMAN EMPIRE FOCUS 
@@ -259,8 +259,21 @@ kaproni_bulgarski: "Kaproni Bulgarski"
 	POR_roman_syntrofos: "Sintrofos ot Portugaliya"
 	SPR_north_iberia_syntrofos: "Sintrofos ot Severna Iberiya"
 	SPR_iberia_syntrofos: "Sintrofos ot Iberiya"
+	TRA_roman_thema: "Thema tis Transylvanikis"
+	ROM_roman_thema: "Thema tis Dakias"
+	SER_roman_thema: "Thema tis Serbikis"
 
-	## DECISIONS
+## DECISIONS
+
+	BUL_roman_expand_category_puppets_category: "Puppets"
+  BUL_roman_puppet_iraq: "Puppet Iraq"
+	BUL_roman_give_iraq_kuwait: "Give Kuwait to Iraq"
+	BUL_roman_puppet_egypt: "Puppet Egypt"
+	BUL_roman_give_egypt_libya: "Give Libya to Egypt"
+	BUL_roman_give_egypt_tynisia: "Give Tunisia to Egypt"
+	BUL_roman_puppet_north_italy: "Establish Sintrofos ot Italiya"
+	BUL_roman_puppet_south_italy: "Establish Katapanate of Italia"
+	BUL_roman_give_malta_south_italy: "Grant Malta to Katapanate of Italia"
 
 #IDEAS
 	BUL_fascist_support: "Bulgarian Fascists Coup"
