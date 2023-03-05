@@ -771,12 +771,7 @@ country_event = { # Fate of Sichuan
   is_triggered_only = yes
   immediate = {
     hidden_effect = {
-      if = {
-        limit = {
-          is_chinese_tag = no 
-        }
-        determine_ally_china = yes
-      } 
+      determine_ally_china = yes 
     }
   }
   option = { # Give to Allies
@@ -844,12 +839,7 @@ country_event = { # Fate of Shanxxi
 
   immediate = {
     hidden_effect = {
-      if = {
-        limit = {
-          is_chinese_tag = no 
-        }
-        determine_ally_china = yes
-      } 
+      determine_ally_china = yes 
     }
   }
 
@@ -1259,12 +1249,7 @@ country_event = { # Fate of Yunnan
 
   immediate = {
     hidden_effect = {
-      if = {
-        limit = {
-          is_chinese_tag = no 
-        }
-        determine_ally_china = yes
-      } 
+      determine_ally_china = yes 
     }
   }
 

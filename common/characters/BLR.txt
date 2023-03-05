@@ -1627,17 +1627,8 @@ characters = {
 		name = "Michal Vituska"
 		portraits = {
 			army = {
-        large = "gfx/leaders/BLR/Portrait_BLR_Michal_Vituska.png"
 				small = "gfx/interface/ministers/BLR/BLR_Michal_Vituska.png"
 			}
-		}
-    corps_commander = {
-			traits = { infantry_officer }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 1
-			logistics_skill = 3
 		}
 		advisor = {
 			cost = 150

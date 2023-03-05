@@ -7,12 +7,4 @@ spriteTypes = {
 		name = "GFX_special_autonomous_dependency_icon"
 		textureFile = "gfx/interface/autonomy/autonomy_special_autonomous_dependency_icon.png"
 	}
-	SpriteType = {
-		name = "GFX_autonomy_thema_icon"
-		texturefile = "gfx/interface/autonomy/autonomy_thema_icon.dds"
-	}
-	spriteType = {
-		name = "GFX_autonomy_syntrofos_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_syntrofos_icon.dds"
-	}
 }

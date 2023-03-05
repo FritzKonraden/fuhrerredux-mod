@@ -4,7 +4,7 @@ bookmarks = {
     desc = "FUHRERREDUX_DESC"
     date = 1936.1.1
     picture = GFX_select_date_1936
-    default_country = "GER"
+    default_country = "PHI"
     default = yes
 
     #### Majors
@@ -172,19 +172,6 @@ bookmarks = {
         ROM_the_general_elections
         ROM_loyalty_to_the_conducator
         ROM_preservation_of_greater_romania
-      }
-    }
-    "BUL" = {
-      history = "BUL_FUHRERREDUX_DESC"
-      ideology = national_populist
-      minor = yes
-      ideas = {
-        
-      }
-      focuses = {
-        BUL_pan_orthodoxism
-        BUL_the_balkan_spirit
-        BUL_proclaim_the_third_empire
       }
     }
     "GRE" = {

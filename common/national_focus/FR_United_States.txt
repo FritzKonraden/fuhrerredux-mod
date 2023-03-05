@@ -2471,28 +2471,8 @@ focus_tree = {
       FOCUS_FILTER_ECONOMIC_RECOVERY
     }
   }
-
-  # Lower the Income Tax
-  focus = {
-    id = USA_lower_the_income_tax
-    icon = GFX_DAH_Topke
-    x = 0
-    y = 2
-    cost = 6
-    ai_will_do = { factor = 200 }
-    prerequisite = { focus = USA_ensure_press_freedoms }
-    prerequisite = { focus = USA_banking_reforms }
-    relative_position_id = USA_ensure_press_freedoms
-    completion_reward = {
-      USA_decrease_effects_of_the_depression = yes
-    }
-    search_filters = {
-      FOCUS_FILTER_ECONOMIC_RECOVERY
-    }
-  }
-
-  # Private Partnerships
-  focus = {
+   # Private Partnerships
+   focus = {
     id = USA_private_partnerships
     icon = GFX_goal_collaborate_local_elites
     x = 0
@@ -2527,6 +2507,26 @@ focus_tree = {
     }
   }
 
+  # Lower the Income Tax
+  focus = {
+    id = USA_lower_the_income_tax
+    icon = GFX_DAH_Topke
+    x = 0
+    y = 2
+    cost = 6
+    ai_will_do = { factor = 200 }
+    prerequisite = { focus = USA_ensure_press_freedoms }
+    prerequisite = { focus = USA_banking_reforms }
+    relative_position_id = USA_ensure_press_freedoms
+    completion_reward = {
+      USA_decrease_effects_of_the_depression = yes
+    }
+    search_filters = {
+      FOCUS_FILTER_ECONOMIC_RECOVERY
+    }
+  }
+
+ 
   # Bureaucratic Reforms
   focus = {
     id = USA_bureaucratic_reforms

@@ -6,8 +6,6 @@ autonomy_dominion: "Dominion"
 autonomy_protectorate: "Protectorate"
 autonomy_puppet: "Puppet"
 special_autonomous_dependency: "Autonomous Dependency"
-autonomy_thema: "Thema"
-autonomy_syntrofos: "Syntrofos"
 
 ### Tooltips
 can_lower_autonomy_level: "Can lower autonomy level\n"

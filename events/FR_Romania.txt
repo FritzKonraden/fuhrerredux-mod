@@ -1957,9 +1957,7 @@ country_event = { # Accepted Faction Join
 
 	option = {
 		name = romania.39.a
-		trigger = {
-      FROM = { tag = FRA }
-    }
+		trigger = { tag = FRA }
 
 		FROM = {
 			add_to_faction = ROOT
@@ -1967,9 +1965,7 @@ country_event = { # Accepted Faction Join
 	}
 	option = {
 		name = romania.39.b
-		trigger = {
-      FROM = { tag = GER }
-    }
+		trigger = { tag = GER }
 
 		FROM = {
 			add_to_faction = ROOT
@@ -1977,9 +1973,7 @@ country_event = { # Accepted Faction Join
 	}
 	option = {
 		name = romania.39.c
-		trigger = {
-      FROM = { tag = SOV }
-    }
+		trigger = { tag = SOV }
 
 		FROM = {
 			add_to_faction = ROOT
@@ -3004,72 +2998,6 @@ country_event = {
 		reverse_add_opinion_modifier = {
 			target = ROM
 			modifier = ROM_cut_off_relations
-		}
-	}
-}
-
-#EVENTS FOR DOBRUDJA LOC NOT YET
-country_event = {
-	id = romania.10000
-	title = romania.10000.t
-	desc = romania.10000.d
-	is_triggered_only = yes
-	option = {
-		ai_chance = {
-			factor = 0
-		}
-		name = romania.10000.a 
-		77 = {
-			add_core_of = BUL 
-			transfer_state_to = BUL
-		}
-		BUL = {
-			country_event = {
-				id = bulgaria.3
-				days = 1
-			}
-		} 		
-	}
-	option = {
-		ai_chance = {
-			factor = 1
-		}
-		name = romania.10000.b 
-		BUL = {
-			country_event = {
-				id = bulgaria.4 
-				days = 1
-			}
-		}
-	}
-}
-
-country_event = {
-	id = romania.10001
-	title = romania.10001.t
-	desc = romania.10001.d
-	is_triggered_only = yes
-	
-	option = {
-		name = romania.10001.a 
-		77 = {
-			add_core_of = BUL 
-			transfer_state_to = BUL
-			BUL = {
-				country_event = {
-					id = bulgaria.5
-					days = 1
-				}
-			}
-		} 		
-	}
-	option = {
-		name = romania.10001.b 
-		BUL = {
-			country_event = {
-				id = bulgaria.6
-				days = 1
-			}
 		}
 	}
 }

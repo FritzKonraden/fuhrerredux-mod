@@ -14555,88 +14555,6 @@ focus_tree = {
 			}
         }
 	}
-
-	focus = {
-		id = GER_rural_investsments
-		icon = GFX_goal_KTG_Yeke_Trade
-		cost = 5
-		prerequisite = {
-			focus = GER_overhaul_rural_infrastructures
-		}
-		x = 0
-		y = 1
-		relative_position_id = GER_overhaul_rural_infrastructures
-		completion_reward = {
-    		61 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			
-	 		5 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			
-	 		50 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-	 		53  = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-	    }
-	}
-
-	focus = {
-		id = GER_for_the_republic
-		icon = GFX_goal_generic_demand_territory
-		cost = 3
-		prerequisite = {
-			focus = GER_new_german_economy
-		}
-		x = 2
-		y = 1
-		relative_position_id = GER_new_german_economy
-		completion_reward = {
-         	add_war_support = 0.05	
-	   	}
-	}
-
-	focus = {
-		id = GER_civil_service
-		icon = GFX_goal_Centralised_Government
-		cost = 5
-		prerequisite = {
-			focus = GER_for_the_republic
-		}
-		prerequisite = {
-			focus = GER_for_the_people
-		}
-		x = 0
-		y = 1
-		relative_position_id = GER_for_the_people
-		completion_reward = {
-      	  	add_ideas = GER_public_work_service 
-	   	}
-	}
-
 	focus = {
 		id = GER_overhaul_rural_infrastructures
 		icon = GFX_goal_generic_construct_infrastructure
@@ -14719,6 +14637,88 @@ focus_tree = {
 	     	}
 	   	}
   	}
+	focus = {
+		id = GER_rural_investsments
+		icon = GFX_goal_KTG_Yeke_Trade
+		cost = 5
+		prerequisite = {
+			focus = GER_overhaul_rural_infrastructures
+		}
+		x = 0
+		y = 1
+		relative_position_id = GER_overhaul_rural_infrastructures
+		completion_reward = {
+    		61 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+	 		5 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+	 		50 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+	 		53  = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+	    }
+	}
+
+	focus = {
+		id = GER_for_the_republic
+		icon = GFX_goal_generic_demand_territory
+		cost = 3
+		prerequisite = {
+			focus = GER_new_german_economy
+		}
+		x = 2
+		y = 1
+		relative_position_id = GER_new_german_economy
+		completion_reward = {
+         	add_war_support = 0.05	
+	   	}
+	}
+
+	focus = {
+		id = GER_civil_service
+		icon = GFX_goal_Centralised_Government
+		cost = 5
+		prerequisite = {
+			focus = GER_for_the_republic
+		}
+		prerequisite = {
+			focus = GER_for_the_people
+		}
+		x = 0
+		y = 1
+		relative_position_id = GER_for_the_people
+		completion_reward = {
+      	  	add_ideas = GER_public_work_service 
+	   	}
+	}
+
+	
 
 	focus = {
 		id = GER_nationalize_part_military_industry

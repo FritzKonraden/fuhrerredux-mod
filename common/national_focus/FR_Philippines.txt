@@ -596,13 +596,16 @@ focus_tree = {
     cost = 6
     available = {
       has_capitulated = no
-      has_government = authoritarian_democrat
+      has_country_leader = {
+        character = PHI_Emilio_Aguinaldo
+        ruling_only = yes
+      }
     }
     prerequisite = { focus = PHI_partido_progressista }
     relative_position_id = PHI_partido_progressista
     completion_reward = {
       set_politics = {
-        ruling_party = authoritarian_democrat
+        ruling_party = national_populist
         elections_allowed = no
       }
       swap_ideas = {
@@ -625,7 +628,10 @@ focus_tree = {
     cost = 6
     available = {
       has_capitulated = no
-      has_government = authoritarian_democrat
+      has_country_leader = {
+        character = PHI_Emilio_Aguinaldo
+        ruling_only = yes
+      }
     }
     prerequisite = { focus = PHI_partido_progressista }
     relative_position_id = PHI_partido_progressista
@@ -647,7 +653,10 @@ focus_tree = {
     cost = 6
     available = {
       has_capitulated = no
-      has_government = authoritarian_democrat
+      has_country_leader = {
+        character = PHI_Emilio_Aguinaldo
+        ruling_only = yes
+      }
     }
     prerequisite = { focus = PHI_promote_nationalism }
     relative_position_id = PHI_promote_nationalism
@@ -676,7 +685,10 @@ focus_tree = {
     cost = 6
     available = {
       has_capitulated = no
-      has_government = authoritarian_democrat
+      has_country_leader = {
+        character = PHI_Emilio_Aguinaldo
+        ruling_only = yes
+      }
     }
     prerequisite = { focus = PHI_promote_nationalism }
     relative_position_id = PHI_promote_nationalism
@@ -698,7 +710,10 @@ focus_tree = {
     cost = 6
     available = {
       has_capitulated = no
-      has_government = authoritarian_democrat
+      has_country_leader = {
+        character = PHI_Emilio_Aguinaldo
+        ruling_only = yes
+      }
     }
     prerequisite = { focus = PHI_for_the_public_good }
     prerequisite = { focus = PHI_silence_critics }
@@ -722,7 +737,10 @@ focus_tree = {
     cost = 6
     available = {
       has_capitulated = no
-      has_government = authoritarian_democrat
+      has_country_leader = {
+        character = PHI_Emilio_Aguinaldo
+        ruling_only = yes
+      }
     }
     prerequisite = { focus = PHI_strengthen_presidential_powers }
     relative_position_id = PHI_strengthen_presidential_powers
@@ -743,7 +761,10 @@ focus_tree = {
     cost = 6
     available = {
       has_capitulated = no
-      has_government = authoritarian_democrat
+      has_country_leader = {
+        character = PHI_Emilio_Aguinaldo
+        ruling_only = yes
+      }
     }
     prerequisite = { focus = PHI_progressive_taxation }
     relative_position_id = PHI_progressive_taxation
@@ -798,7 +819,10 @@ focus_tree = {
     available = {
       has_capitulated = no
       OR = {
-        has_government = authoritarian_democrat
+        has_country_leader = {
+          character = PHI_Emilio_Aguinaldo
+          ruling_only = yes
+        }
         has_government = valkist
       }
     }
@@ -831,7 +855,10 @@ focus_tree = {
     available = {
       has_capitulated = no
       OR = {
-        has_government = authoritarian_democrat
+        has_country_leader = {
+          character = PHI_Emilio_Aguinaldo
+          ruling_only = yes
+        }
         has_government = valkist
       }
     }
@@ -861,7 +888,10 @@ focus_tree = {
       has_capitulated = no
       OR = {
         has_government = valkist
-        has_government = authoritarian_democrat
+        has_country_leader = {
+          character = PHI_Emilio_Aguinaldo
+          ruling_only = yes
+        }
       }
     }
     prerequisite = { focus = PHI_agrarian_investments }

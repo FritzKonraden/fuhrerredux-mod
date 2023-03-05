@@ -20,10 +20,9 @@ state={
 	}
 
 	provinces={
-		1588 1645 4506 4592 4649 7526 7582 12485 
+		1588 1645 4506 4592 4649 7526 7582 7613 7767 7897 10379 12618 
 	}
 	manpower=1813878
 	buildings_max_level_factor=1.000
 	state_category=rural
-	local_supplies=0.000
 }
