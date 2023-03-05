@@ -1,4 +1,4 @@
-# # AI Ship Designs for Generic Nations. Ctrl+/ to uncomment
+## AI Ship Designs for Generic Nations. Ctrl+/ to uncomment
 
 # destroyers = {
 # 	category = naval

@@ -298,4 +298,4 @@ GYA = "countries/Indian.txt" # Guyana
 HAW = "countries/WestEuropean.txt" # Hawaii
 
 ### Others
-XXB = "countries/WestEuropean.txt" # GFX TWO?
+XXB = "countries/WestEuropean.txt" # GFX TWO

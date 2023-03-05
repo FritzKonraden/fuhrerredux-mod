@@ -1330,33 +1330,7 @@ focus_tree = {
       }
     }
   }
-  focus = {
-    id = ARB_invite_persia
-    icon = GFX_goal_ARB_approach_persia
-    x = 1
-    y = 1
-    cost = 6
-    available = {
-      PER = {
-        exists = yes
-        is_subject = no
-        NOT = { has_war_with = ARB }
-      }
-    }
-    bypass = {
-      PER = {
-        OR = {
-          is_subject_of = ROOT
-          is_in_faction_with = ROOT
-        }
-      }
-    }
-    prerequisite = { focus = ARB_our_northern_brothers }
-    relative_position_id = ARB_our_northern_brothers
-    completion_reward = {
-      PER = { country_event = arabia.25 }
-    }
-  }
+
   focus = {
     id = ARB_invite_kurdestan
     icon = GFX_goal_ARB_approach_kurdestan
@@ -1384,6 +1358,7 @@ focus_tree = {
       KUR = { country_event = arabia.25 }
     }
   }
+
   focus = {
     id = ARB_snatch_the_trucial_states
     icon = GFX_goal_generic_attack_trucial_states
@@ -1407,6 +1382,34 @@ focus_tree = {
     relative_position_id = ARB_invite_persia
     completion_reward = {
       unlock_decision_tooltip = ARB_operation_khnum
+    }
+  }
+  
+  focus = {
+    id = ARB_invite_persia
+    icon = GFX_goal_ARB_approach_persia
+    x = 1
+    y = 1
+    cost = 6
+    available = {
+      PER = {
+        exists = yes
+        is_subject = no
+        NOT = { has_war_with = ARB }
+      }
+    }
+    bypass = {
+      PER = {
+        OR = {
+          is_subject_of = ROOT
+          is_in_faction_with = ROOT
+        }
+      }
+    }
+    prerequisite = { focus = ARB_our_northern_brothers }
+    relative_position_id = ARB_our_northern_brothers
+    completion_reward = {
+      PER = { country_event = arabia.25 }
     }
   }
 

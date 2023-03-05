@@ -1,5 +1,36 @@
 ideas = {
   country = {
+	#Balkan Empire ideas
+	BUL_balkan_spirit = {
+		on_add = {
+			log = "[GetDateText]: [Root.GetName]: add idea BUL_balkan_spirit"
+		}
+		allowed = {
+			original_tag = BUL
+		}
+		removal_cost = -1
+		picture = GFX_idea_BUL_balkan_spirit
+		modifier = {
+			stability_factor = 0.1
+			war_support_factor = 0.1
+			conscription_factor = 0.1
+			command_power_gain_mult = 0.1
+			consumer_goods_factor = -0.05
+			political_power_factor = 0.1
+			monthly_population = 0.02
+			surrender_limit = 1.5
+			trade_opinion_factor = 0.05
+			guarantee_tension = 0.1
+			annex_cost_factor = 0.1
+			puppet_cost_factor = -0.1
+			offence = 0.05
+			defence = 0.15
+			resistance_damage_to_garrison = -0.1
+			resistance_growth = -0.2
+			compliance_gain = 0.05
+
+		}
+	}
     BUL_national_catastrophe = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BUL_national_catastrophe"}
 			allowed = {
@@ -499,10 +530,95 @@ ideas = {
 				resistance_damage_to_garrison = 0.5
 			}
 		}
+#GRECO-BULGARIAN EMPIRE IDEAS
+		BUL_fascist_support = {
+			picture = generic_fascism_drift_bonus
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_fascist_support"
+			}
+			modifier = {
+				national_populist_drift = 0.02
+			}
+		}
+		#Romania-bulgaria ideas
+		BUL_collectivist_support = {
+			picture = generic_communism_drift_bonus
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_collectivist_support"
+			}
+			targeted_modifier = {
+				tag = ROM
+			}
+			modifier = {
+				collectivist_drift = 0.02
+			}
+		}
+		BUL_libertarian_socialist_support = {
+			picture = generic_communism_drift_bonus
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_libertarian_socialist_support"
+			}
+			targeted_modifier = {
+				tag = ROM
+			}
+			modifier = {
+				libertarian_socialist_drift = 0.02
+			}
+		}
+		BUL_vanguardist_support = {
+			picture = generic_communism_drift_bonus
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_vanguardist_support"
+			}
+			targeted_modifier = {
+				tag = ROM
+			}
+			modifier = {
+				vanguardist_drift = 0.02
+			}
+		}
+		BUL_paternal_autocrat_support = {
+			picture = generic_communism_drift_bonus
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_paternal_autocrat_support"
+			}
+			targeted_modifier = {
+				tag = ROM
+			}
+			modifier = {
+				paternal_autocrat_drift = 0.02
+			}
+		}
+		BUL_authoritarian_democrat_support = {
+			picture = generic_communism_drift_bonus
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_authoritarian_democrat_support"
+			}
+			modifier = {
+				authoritarian_democrat_drift = 0.02
+			}
+		}
+		BUL_greco_bulgarian_culture = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_greco_bulgarian_culture"
+			}
+			modifier = {
+				weekly_manpower = 100
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				consumer_goods_factor = -0.3
+				compliance_gain = 0.025
+				resistance_growth = -0.05
+				stability_weekly_factor = 0.01
+				offence = 0.1
+				defence = 0.1
+				occupation_cost = -0.1
+				production_factory_max_efficiency_factor = 1
+				army_speed_factor = 0.2
+			}
+		}
 
-	}
-	
-		
+	}	
 	
 ##############
 # Companies

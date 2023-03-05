@@ -3743,6 +3743,22 @@ focus_tree = {
 			add_war_support = 0.1
 		}
 	}
+
+	# Green Agrarian Roots
+	focus = {
+		id = ROM_green_agriarian_roots
+		icon = GFX_IRE_farms
+		x = 0
+		y = 2
+		cost = 6
+		prerequisite = { focus = ROM_their_assets_do_not_matter }
+		prerequisite = { focus = ROM_green_welfare }
+		relative_position_id = ROM_their_assets_do_not_matter
+		completion_reward = {
+			add_ideas = ROM_legionary_agriculture
+		}
+	}
+
 	# Their Assets do not Matter
 	focus = {
 		id = ROM_their_assets_do_not_matter
@@ -3788,21 +3804,6 @@ focus_tree = {
 			}
 		}
 	}
-	# Green Agrarian Roots
-	focus = {
-		id = ROM_green_agriarian_roots
-		icon = GFX_IRE_farms
-		x = 0
-		y = 2
-		cost = 6
-		prerequisite = { focus = ROM_their_assets_do_not_matter }
-		prerequisite = { focus = ROM_green_welfare }
-		relative_position_id = ROM_their_assets_do_not_matter
-		completion_reward = {
-			add_ideas = ROM_legionary_agriculture
-		}
-	}
-
 
 	# Green Welfare
 	focus = {

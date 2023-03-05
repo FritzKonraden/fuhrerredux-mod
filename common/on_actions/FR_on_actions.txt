@@ -1,6 +1,6 @@
 on_actions = {
-	 on_startup = {
-		 effect = {
+	on_startup = {
+		effect = {
 			SOV = {
 				set_variable = { var = collectivization value = 2 }
 				clamp_variable = {
@@ -10,16 +10,16 @@ on_actions = {
 				}
 				SOV_set_collectivization_var = yes
 				add_offsite_building = { type = collectivization_idea level = collectivization }
-		   }
+		}
 			random_country = {
 				limit = {
 					exists = yes
 				}
 				country_event = gov.0
-		   }
+		}
 		}
 	}
-  on_startup = {
+    on_startup = {
 	    effect = {
 
 			if = {
@@ -50,7 +50,38 @@ on_actions = {
 	      	}
 	    }
 	}
-	
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = XSM
+						is_core_of = SIK
+						is_core_of = YUN
+						is_core_of = SCH
+						is_core_of = SHX
+						is_core_of = ZHI
+						is_core_of = MAN
+						is_core_of = CHI 
+					}
+				}
+				add_core_of = CHI 
+				add_core_of = MAN 
+				every_country = {
+					limit = {
+						or = {
+							tag = CHI 
+							tag = MAN 
+						}
+					}
+					remove_state_claim = PREV
+				}
+				ZHI = {
+					add_state_claim = PREV
+				} 
+			}
+		}
+	}
 	on_startup = {
 		effect = {
 			every_country = {

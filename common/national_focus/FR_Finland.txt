@@ -11,4 +11,5 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 830 }
 	shared_focus = FIN_finnish_defence_forces
 	shared_focus = FIN_end_of_silver_decade
+
 }

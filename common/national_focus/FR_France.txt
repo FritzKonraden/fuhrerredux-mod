@@ -610,7 +610,50 @@ focus_tree = {
 		}
   }	
 	# Military Takeover
-	
+	focus = {
+		id = fra_prov_govt
+		icon = GFX_goal_army_guy
+		x = 2
+		y = -1
+		cost = 2
+		ai_will_do = {
+			factor = 4000
+		}
+		available = {
+			has_capitulated = no
+			has_country_flag = fra_mil_dic
+			NOT = {
+				has_country_flag = fra_nuc_good
+			}
+		}
+		prerequisite = {
+			focus = fra_1936_election
+		}
+		relative_position_id = fra_africa_missionary
+		completion_reward = {
+			add_ideas = FRA_provisional
+			country_event = fra.11
+		}
+	}
+	# Provicional Elections
+	focus = {
+		id = fra_prov_election
+		icon = GFX_goal_constitutional_guarantees
+		x = 0
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 4000
+		}
+		prerequisite = {
+			focus = fra_prov_govt
+		}
+		relative_position_id = fra_prov_govt
+		completion_reward = {
+			remove_ideas = FRA_provisional
+			country_event = fra.12
+		}
+	}
 	# The SFIO
 	focus = {
 		id = fra_socdem_win
@@ -1318,50 +1361,6 @@ focus_tree = {
 		relative_position_id = fra_business_subsidy
 		completion_reward = {
 			add_political_power = 200
-		}
-	}
-	focus = {
-		id = fra_prov_govt
-		icon = GFX_goal_army_guy
-		x = 2
-		y = -1
-		cost = 2
-		ai_will_do = {
-			factor = 4000
-		}
-		available = {
-			has_capitulated = no
-			has_country_flag = fra_mil_dic
-			NOT = {
-				has_country_flag = fra_nuc_good
-			}
-		}
-		prerequisite = {
-			focus = fra_1936_election
-		}
-		relative_position_id = fra_africa_missionary
-		completion_reward = {
-			add_ideas = FRA_provisional
-			country_event = fra.11
-		}
-	}
-	# Provicional Elections
-	focus = {
-		id = fra_prov_election
-		icon = GFX_goal_constitutional_guarantees
-		x = 0
-		y = 1
-		cost = 2
-		ai_will_do = {
-			factor = 4000
-		}
-		prerequisite = {
-			focus = fra_prov_govt
-		}
-		relative_position_id = fra_prov_govt
-		completion_reward = {
-			remove_ideas = FRA_provisional
-			country_event = fra.12
 		}
 	}
 
