@@ -657,6 +657,64 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = bulexp.26
+	title = bulexp.26.t
+	desc = bulexp.26.d
+	is_triggered_only = yes
+	option = {
+		name = bulexp.26.a
+		BUL = {
+			give_guarantee = UKR
+			add_political_power = -100
+			diplomatic_relation = {
+				country = UKR
+				relation = non_aggression_pact
+			}
+			diplomatic_relation = {
+				country = UKR
+				relation = docking_rights
+			}
+			72 = {
+				transfer_state_to = BUL
+			}
+			137 = {
+				transfer_state_to = BUL
+			}
+			196 = {
+				transfer_state_to = BUL
+			}
+		}
+		UKR = {
+			add_political_power = 100
+		}
+	}
+
+}
+country_event = {
+	id = bulexp.27
+	title = bulexp.27.t
+	desc = bulexp.27.d
+	is_triggered_only = yes
+	option = {
+		name = bulexp.27.a
+		BUL = {
+			create_wargoal = {
+				target = UKR
+				type = take_state_focus
+				generator = {
+					137
+					72
+					196
+				}
+			}
+		}
+	}
+	option = {
+		name = bulexp.27.b
+	}
+
+}
 
 
 add_namespace = panorth
