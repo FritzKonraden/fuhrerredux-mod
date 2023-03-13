@@ -161,7 +161,7 @@ kaproni_bulgarski: "Kaproni Bulgarski"
 	BUL_the_balkan_empire: "The Balkan Federation"
 	BUL_the_balkan_spirit: "The Balkan Spirit"
 	BUL_balkan_decisions: "The Final Completion"
-## ROMAN EMPIRE FOCUS 
+### ROMAN EMPIRE FOCUS 
 	BUL_empire_greek_bulgarian: "A Roman Empire"
 	BUL_empire_greek_bulgarian_desc: "After the fall of the Byzantines, our Empire claimed the title of the Third Rome until the Turkish onslaught. Our Czars always protected the orthodox legacy of the Romans even during these trying times. Today we are among the most powerful Nations of the Balkans in a position to reunite the Orthodox world. After we threw off the Muslim tyrants together with our brothers in arms and faith we are bound by destiny to bring back what always belonged together, to reclaim and ascend to the throne in Constantinople, the beating heart of both of our cultures."
 	BUL_incite_uprising_gre: "Incite Uprsing in Greece"
@@ -176,26 +176,36 @@ kaproni_bulgarski: "Kaproni Bulgarski"
 	BUL_question_of_turkey_desc: "Now that we reduced Turkey to a fully Turkish rump state, the Question remains on what to do with them, we cant let them be there, as they will always be a thorn in our side and an open invitation for our enemies. While we need to have control over the area, full occupation could be a costly and unnecessary endeavour for our manpower which will be needed elsewhere. Alternatively we could set up a controllable puppet in [TUR.GetName], but this would mean that the land won't be directly occupied by us."
 	BUL_integrate_anatolia: "Integrate Anatolia"
 	BUL_integrate_anatolia_desc: "We will use the remaining orthodox population as the backbone of our reintegration process of Asia Minor. The Area has long been neglected and was under Turkish rule so it will be important to solidify our new order there forst before we advance further."
+	BUL_ally_russia: "An Alliance with Russia"
+	BUL_ally_russia_desc: "After we secured our dominance to the Balkans, we can finally look outwards, especially towards the Russians in the east who share a long friendship and deep cultural ties with our nation and people. An alliance with the Bear would certainly be beneficial for us and deter any western meddling or Muslim incursions into our sphere of influence."
+	BUL_italy_france: "Italians and French"
+	BUL_italy_france_desc: "With our nation finally united and the dominance of the Balkans in our grasps, we need to prevent the Latin powers from meddling in our affairs. It is an open secret, that the Italians lay claim to vast areas currently still under our influence, meanwhile their regime oppresses the Greeks in Magna Grecia. Aside from the Italians, the French also support our enemies in the Balkans and claim dominance over the Levant. Especially their holds in the Mediterranean pose next to the Italians the largest Threat to our goals. The continued imperialism of the Latins is a danger to our future and we need to preemptively strike it down."
+	BUL_pan_orthodoxism: "Pan-Orthodoxism"
+	BUL_pan_orthodoxism_desc: "Since the formation of our glorious State and the union between our people, it became evident, that our common faith has always bound us together and gave our nations a special standing among the western powers. The orthodox faith lead our people to greatness in the past and preserved our culture during the Turkish occupation. Today the true faith has united our glorious empire and will surely bring a golden future to all those part of this greater orthodox world"
+	BUL_greece_bulgaria_culture: "Greco-Bulgarian Culture"
+	BUL_greece_bulgaria_culture_desc: "Over time, it became evident, that our people are not that dissimilar from each other. Greeks and Bulgarians lived next to each other for millennia, following the same faith, fighting the same enemies and from time to time even serving the same emperors. Our people have learned from each other and also fought each other and all this formed them to become what they are today. If this Union of state has shown anything, then that together we are able to achieve marvellous things and after a unity in faith, an unity in state we need to also aim for a unity in culture, it is only the natural progression, as our history clearly shows."
+	BUL_remaining_balkans: "The Remaining Balkans"
+	BUL_remaining_balkans_desc: "After the unification of our empire, the states to our west eye us with suspicion and malice because we upset the delicate post war balance in this corner of the world. Obviously if diplomacy fails, we will need to make sure that these nations can not threaten our state, therefore we need to assert our dominance over the western Balkans, else we will sooner or later get stabbed in the back."
+	BUL_egypt_and_levant: "Egypt and Levant"
+	BUL_egypt_and_levant_desc: "It isn't only Italy's direct meddling in our affairs that is a threat to our sovereignty, the Levant is still occupied by Latin Imperialists and their puppets, while Egypt servers the British to dominate the Mediterranean. If we truly want to secure a independent, orthodox and free east, we need to dislodge our powers or else we will always be on a sever geopolitical disadvantage."
+	BUL_conquer_iberia: "Conquer Iberia"
+	BUL_conquer_iberia_desc: "To complete our dominance of the Mediterranean, Iberia, especially the south and the Balearic Islands needs to be wrestled from British and Spanish control. This will allow us to control the trade and ports on all major Mediterranean shipping lanes and establish political and economic dominance over the Mediterraneans, not dissimilar to the Greek colonies of old."
+	#end of the focuses :(
 
-
-
-
-
-
-	### DYNAMIC MODIFIERS
+### DYNAMIC MODIFIERS
 	BUL_expansion: "Bulgarian Expansion"
 	BUL_expansion_thrace: "Bulgarian Expansion"
 	BUL_expansion_dobrudja: "Bulgarian Expansion"
 
-	### OPINION MODIFIERS
+### OPINION MODIFIERS
 	BUL_south_dobrudja: "Opressor of Bulgars"
 
-	### TOOLTIPS
+### TOOLTIPS
 	1_bul_tt: "§G Any state that has the Bulgarian Expansion modifier,is in Macedonia and is owned by Bulgaris gets cored. Current states: §! "
 	2_bul_tt: "§R If [BUL.GetFlag][BUL.GetName] completed this focus, they won't be able to form: \n 'The Roman Empire of Greeks and Bulgars'! §! "
 	3_bul_tt: "§G All states that are in the Balkan Region, and are controlled by Bulgaria get cored. §!"
 	4_bul_tt: "Create Faction: §YGrego-Bulgarian Accord§! \n §Y [GRE.GetFlag][GRE.GetName]§! joins §Y [BUL.GetFlag][BUL.GetName]§!" 
-#"§G If [GRE.GetFlag][GRE.GetName]:§! \n §Y National Populist support §! §G >  40 §!: \n
+  #"§G If [GRE.GetFlag][GRE.GetName]:§! \n §Y National Populist support §! §G >  40 §!: \n
 	5_bul_tt: "Every state that [BUL.GetFlag][BUL.GetName] controls, that is in asia, is a core of Turkey and not a core of either Armenia, Georgia, French Levant or Kurdistan gets cored"
 	6_bul_tt: "§G [BUL.GetFlag][BUL.GetName] will get claims on every Balkan state.§!"
 	7_bul_tt: "§G [BUL.GetFlag][BUL.GetName] will core all Balkan states except Transylvania, and claim all Italian and Turkish original states §!"

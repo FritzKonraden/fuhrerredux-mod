@@ -1002,7 +1002,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BUL_integrate_anatolia
-		icon = none
+		icon = noni
 		cost = 2
 		x = -2
 		y = 1
