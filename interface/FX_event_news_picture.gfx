@@ -433,4 +433,9 @@ spriteTypes = {
 		name = "GFX_news_event_capture_sydney"
 		texturefile = "gfx/event_news_pictures/east_asia/news_event_capture_sydney.png"
 	}
+	# Bulgaria
+	spriteType = {
+		name = "GFX_news_event_slavic_union"
+		texturefile = "gfx/event_news_pictures/europe/news_event_BUL_slavic_empire.png"
+	}
 }

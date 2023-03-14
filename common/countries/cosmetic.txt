@@ -606,3 +606,7 @@ BUL_pan_orthodox = {
 	color = rgb{ 05 05  05 }
 	color_ui = rgb{ 05 05 05 }
 }
+BUL_slavic_union_UNIFIED = {
+	color = rgb{ 0 85 255}
+	color_ui = rgb{ 0 85 255}
+}

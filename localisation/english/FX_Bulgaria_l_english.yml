@@ -124,6 +124,32 @@ bulgaria.101.a: "Dissapointing."
 	bulgaria.14.e: "[TUR.GetName] is no more."
 
 
+##NEWS EVENTS
+ #slavic union formed
+	bulnewsexp.1.t: "The South Slavic Union has been formed"
+	bulnewsexp.1.d: "[This.GetNewspaperHeader]The Bulgarian government declares the unification of all the lands of the South Slavs uniting the South Slavic brethren and bringing them together to create a great state to defend them all, to rebuild this beautiful piece of land that we call home.\n\nLong live the Slavs from the Coast of Varna to The Julian Alps from Sofia to Belgrade to Zagreb, the Slavic people are finally united under one banner, truly a dream coming true."
+	bulnewsexp.1.a: "Finnaly, the Slavic Dream is fulfilled!"
+	bulnewsexp.1.b: "Intresting..."
+	bulnewsexp.1.c: "We must watch our back."
+ #balkan union formed
+	bulnewsexp.2.t: "Balkan Union has been formed"
+	bulnewsexp.2.d: "[This.GetNewspaperHeader]The Balkan Empire had been declared and formed from all the Balkan from the beautiful Greek beaches till the Great Transylvanian Alps, now the Balkans are a new emerging force that challenges all the powers of the world\n\nThe concept of a united Balkan nation isn't new as the first inception of this Idea appeared in Belgrade in the 1860s where Balkan intellectuals had discussed and rallied for it"
+	bulnewsexp.2.a: "After many struggles, the Balkan Union has been finally formed"
+	bulnewsexp.2.b: "Intresting..."
+	bulnewsexp.2.c: "Another Country Rising"
+ #romania-bulgarian union formed
+	bulnewsexp.3.t: "Romanian-Bulgarian Union has been formed"
+	bulnewsexp.3.d: "[This.GetNewspaperHeader]After years of hate and fight between Romanians and Bulgarians mostly about the problem of the Dobruja region, Bulgaria and Romania had set their differences aside and declared a union between the two countries to protect each other from external threats\n\nThis idea had historical precedents; Bulgarians and Romanians had lived together under the rule of the First Bulgarian Empire and under the Second Bulgarian Empire, established through the cooperation of Bulgarians and Vlachs whom are Romanian, and both were under the Ottoman Empire"
+	bulnewsexp.3.a: "We have finally united with the Romanians"
+	bulnewsexp.3.b: "Intresting..."
+	bulnewsexp.3.c: "A new union in the Balkans"
+ #greater bulgarian empire formed
+	bulnewsexp.4.t: "Bulgarian Empire's Greater Ambitions"
+	bulnewsexp.4.d: "[This.GetNewspaperHeader]Today the Bulgarian government declared the establishment of the Greater Bulgarian Empire after a fierce expansionist campaign across the Balkans. The Government declared their intentions to reclaim their place as the leading Balkan nation by the right of conquest and claims dating back to the initial establishment of the medieval Bulgar State.\n\nThe new state claims an area stretching from the Black Sea, to the Mediterranean coast and the Aegean Islands. Right now victory parades are held all over the nation as a show of strength and unity towards their new subjects and the larger world."
+	bulnewsexp.4.a: "We shall take anything we had, its time to expand."
+	bulnewsexp.4.b: "Intresting..."
+	bulnewsexp.4.c: "Bulgaria realised their Ambitions? We should be good with them."
+
 ### Companies
 bdz: "BDZ"
 su_kliment_ohridski: "SU Kliment Ohridski"
@@ -252,6 +278,13 @@ kaproni_bulgarski: "Kaproni Bulgarski"
 	MOL_balkan_union_UNIFIED_BUL: "AR Moldova"
 	MOL_balkan_union_UNIFIED_BUL_DEF: "The Autonomous Region of Moldova"
 	MOL_balkan_union_UNIFIED_BUL_ADJ: "Moldovan"
+	#Slavic Union
+	BUL_slavic_union_UNIFIED: "Slavic Union"
+	BUL_slavic_union_UNIFIED_adj: "Slavic"
+	BUL_slavic_union_UNIFIED_def: "The Slavic Union"
+	BUL_slavic_union_UNIFIED_valkist: "Slavic Empire"
+	BUL_slavic_union_UNIFIED_valkist_adj: "Slavic"
+	BUL_slavic_union_UNIFIED_valkist_def: "The Slavic Empire "
 	#PAN ORTHODOXISM
 	BUL_pan_orthodox: "Orthodox Empire"
 	BUL_pan_orthodox_DEF: "The Orthodox empire"
@@ -291,7 +324,8 @@ kaproni_bulgarski: "Kaproni Bulgarski"
 	BUL_authoritarian_democrat_support: "Authoritarian Democrat Support"
 
 #FLAGS
-	BUL_formed_roman_empire: "Has Formed the Roman Empire of Greeks and Bulgarians"
+	BUL_formed_roman_empire: "[ROOT.GetFlag][ROOT.GetName] Has Formed the Roman Empire of Greeks and Bulgarians"
+	BUL_formed_slavic_empire: "[ROOT.GetFlag][ROOT.GetName] Has Formed The Slavic Empire"
 
 # IDEAS
 #EXPANSION PATHS

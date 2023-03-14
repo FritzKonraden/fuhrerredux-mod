@@ -1,5 +1,5 @@
 # Originally made for Equestria at War, Yard1, original concept by Agatha (TWR dev team)
-
+# national will bulgarian header by thanasislanaras
 defined_text = { # Country
 	name = GetNewspaperHeader
 	text = {
@@ -25,6 +25,12 @@ defined_text = { # Country
 			}
 		}
 		localization_key = newspaper_asahi_shimbun
+	}
+	text = {
+		trigger = {
+			tag = BUL
+		}
+		localization_key = newspaper_national_will
 	}
     #keep this one without triggers and at the end as a fallback
 	text = {
