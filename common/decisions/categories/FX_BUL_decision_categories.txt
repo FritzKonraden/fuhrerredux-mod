@@ -46,3 +46,25 @@ BUL_roman_expand_panorth_expand_category = {
 		}
 	}
 }
+BUL_align_bulgaria_category = {
+	allowed = {
+		original_tag = BUL
+	}
+	visible = {
+		has_completed_focus = BUL_our_allies
+	}
+	icon = none
+	priority = 100
+	
+}
+# BUL_expansion_basic_picture_category = {
+# 	allowed = {
+# 		original_tag = BUL
+# 	}
+# 	available = {
+# 		has_completed_focus = BUL_man_the_guns
+# 	}
+# 	priority = 999
+# 	visible_when_empty = yes
+# 	scripted_gui = basic_expansion_path_gui
+# }

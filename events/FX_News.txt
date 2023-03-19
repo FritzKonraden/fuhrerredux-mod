@@ -869,13 +869,3 @@ news_event = { # Military Storms Houses of Parliament
 		name = fxnews.48.a
 	}
 }
-news_event = { #Balkan Union is formed
-	id = fxnews.49
-	title = fxnews.49.t
-	desc = {text = {fxnews.49.d}}
-	is_triggered_only = yes
-	major = yes
-	option = {
-	  name = fxnews.49.a
-	}
-}

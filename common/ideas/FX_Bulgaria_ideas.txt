@@ -47,10 +47,10 @@ ideas = {
 				tag = SER
 				attack_bonus_against = 0.1
 			}
-			targeted_modifier = {
-				tag = GRE
-				attack_bonus_against = 0.1
-			}
+			# targeted_modifier = {
+			# 	tag = GRE
+			# 	attack_bonus_against = 0.1
+			# }
 			targeted_modifier = {
 				tag = ROM
 				attack_bonus_against = 0.1
@@ -617,7 +617,62 @@ ideas = {
 				army_speed_factor = 0.2
 			}
 		}
-
+		#Starting National Spirits
+		BUL_spirit_unpopular_rule = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_spirit_unpopular_rule"
+			}
+			modifier = {
+				monthly_population = -0.02
+				war_support_factor = -0.1
+				stability_factor = -0.25
+				consumer_goods_factor = 0.3
+				stability_weekly_factor = -0.02
+				offence = -0.05
+				defence = -0.05
+				production_factory_efficiency_gain_factor = -0.3
+			}
+		}
+		BUL_spirit_greek_influence = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_spirit_greek_influence"
+			}
+			targeted_modifier = {
+				tag = GRE
+				attack_bonus_against = -0.3
+				defense_bonus_against = -0.3
+			}
+			modifier = {
+			}
+		}
+		BUL_spirit_imminent_communist_uprising = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_spirit_imminent_communist_uprising"
+			}
+			picture = GFX_generic_communism_drift_bonus
+			modifier = {
+				paternal_autocrat_drift = -0.01
+				vanguardist_drift = 0.01
+				libertarian_socialist_drift = 0.01
+				collectivist_drift = 0.02
+			}
+		}
+		BUL_spirit_imro = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_spirit_imminent_communist_uprising"
+			}
+			picture = GFX_idea_bul_imro
+			targeted_modifier = {
+				tag = GRE
+				trade_opinion_factor = -50
+				opinion_gain_monthly = -0.05
+			}
+			targeted_modifier = {
+				tag = SER
+				trade_opinion_factor = -50
+				opinion_gain_monthly = -0.05
+			}
+		}
 	}	
 	
 ##############

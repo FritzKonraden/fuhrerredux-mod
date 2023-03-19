@@ -2115,6 +2115,23 @@ spriteType = {
 		name = "GFX_goal_BUL_balkan_decisions"
 		textureFile = "gfx/interface/goals/BUL_balkan_decisions.png"
 	}
+	spriteType = {
+		name = "GFX_goal_BUL_balkan_hegemony"
+		textureFile = "gfx/interface/goals/focus_BUL_the_fate_of_the_balkans.png"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_balkan_diplomacy"
+		textureFile = "gfx/interface/goals/focus_generic_balkan_diplomacy.png"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_attack_hungary"
+		textureFile = "gfx/interface/goals/focus_attack_hungary.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_free_balkan_states"
+		textureFile = "gfx/interface/goals/focus_BUL_free_balkan_states.dds"
+	}
+
 #SpriteType = {
 		#name = "GFX_ENG_buckingham"
 		#texturefile = "gfx/interface/goals/ENG_buckingham.png"

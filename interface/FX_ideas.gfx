@@ -930,6 +930,10 @@ spriteTypes = {
 	name = "GFX_idea_BUL_balkan_spirit"
 	textureFile = "gfx/interface/ideas/ideas/BUL_balkan_spirit.png"
   }
+  spriteType = {
+	name = "GFX_idea_BUL_balkan_hegemony"
+	textureFile = "gfx/interface/ideas/ideas/idea_bul_the_fate_of_the_balkans.png"
+  }
 ############
 	# Generic Companies
 	############

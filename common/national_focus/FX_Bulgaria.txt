@@ -50,7 +50,7 @@ focus_tree = {
 		id = BUL_reclaim_peacefully
 		icon = GFX_goal_refugee_management
 		cost = 5
-		x = -2
+		x = -4
 		y = 1
 		relative_position_id = BUL_reclamation
 		prerequisite = {
@@ -67,22 +67,77 @@ focus_tree = {
 			focus = BUL_man_the_guns
 		}
 	}
+	# focus = {
+	# 	id = BUL_NO_SHIT_HERE_TOODALU
+	# 	icon = GFX_NO_ICON_FOR_YOU
+	# 	cost = 0
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = BUL_reclaim_peacefully
+	# 	prerequisite = {
+	# 		focus = BUL_reclaim_peacefully
+	# 	}
+	# 	allow_branch = {
+	# 		NOT = {
+	# 			has_completed_focus = BUL_man_the_guns
+	# 		}
+	# 	}
+	# 	completion_reward = {}
+	# }
+	#alliance branch
 	focus = {
-		id = BUL_NO_SHIT_HERE_TOODALU
-		icon = GFX_NO_ICON_FOR_YOU
+		id = BUL_our_allies
+		icon = none
 		cost = 0
 		x = 0
+		y = 2
+		relative_position_id = BUL_reclaim_peacefully
+		prerequisite = {
+			focus = BUL_reclaim_peacefully
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = BUL_align_bulgaria_category
+		}
+	}
+	#on our own
+	focus = {
+		id = BUL_on_our_own
+		icon = none
+		cost = 3
+		x = -2
 		y = 1
 		relative_position_id = BUL_reclaim_peacefully
 		prerequisite = {
 			focus = BUL_reclaim_peacefully
 		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = BUL_man_the_guns
-			}
+		mutually_exclusive = {
+			focus = BUL_with_balkans_brothers
 		}
-		completion_reward = {}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_request_land
+		icon = none
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = BUL_on_our_own
+		prerequisite = {
+			focus = BUL_on_our_own
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_integrate_controlled
+		icon = none
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = BUL_request_land
+		prerequisite = {
+			focus = BUL_request_land
+		}
+		completion_reward = { }
 	}
 	focus = {
 		id = BUL_man_the_guns
@@ -105,6 +160,86 @@ focus_tree = {
 		}
 		available = {
 			always = no
+		}
+	}
+	focus = {
+		id = BUL_with_balkans_brothers
+		icon = GFX_goal_BUL_free_balkan_states
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = BUL_reclaim_peacefully
+		prerequisite = {
+			focus = BUL_reclaim_peacefully
+		}
+		mutually_exclusive = {
+			focus = BUL_on_our_own
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_found_the_balkan_alliance
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_with_balkans_brothers
+		prerequisite = {
+			focus = BUL_with_balkans_brothers
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BUL_request_lands_balkan
+		icon = none 
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_found_the_balkan_alliance
+		prerequisite = {
+			focus = BUL_found_the_balkan_alliance
+		}
+		completion_reward = {
+			#
+		}
+	}
+	focus = {
+		id = BUL_balkan_hegemony
+		icon = GFX_goal_BUL_balkan_hegemony
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_request_lands_balkan
+		prerequisite = {
+			focus = BUL_request_lands_balkan
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_the_hungarian_problem
+		icon = GFX_goal_generic_attack_hungary
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_balkan_hegemony
+		prerequisite = {
+			focus = BUL_balkan_hegemony
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_diplomatic_decisions
+		icon = GFX_goal_generic_balkan_diplomacy
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_the_hungarian_problem
+		prerequisite = {
+			focus = BUL_the_hungarian_problem
+		}
+		completion_reward = {
+
 		}
 	}
 	focus = {
@@ -501,7 +636,7 @@ focus_tree = {
 		icon = none
 		cost = 3
 		x = 0
-		y = 2
+		y = 4
 		relative_position_id = BUL_proclaim_the_third_empire
 		prerequisite = {
 			focus = BUL_proclaim_the_third_empire
@@ -516,22 +651,39 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BUL_empire_bulgarian
-		icon = GFX_goal_refugee_management
+		id = BUL_a_bulgarian_empire
+		icon = none
+		cost = 0
+		x = -6
+		y = 1
 		relative_position_id = BUL_future_of_empire
 		prerequisite = {
 			focus = BUL_future_of_empire
 		}
-		mutually_exclusive = {			
-			focus = BUL_empire_greek_bulgarian
+		mutually_exclusive = {
 			focus = BUL_realise_balkan_ideals
+			focus = BUL_empire_greek_bulgarian
+		}
+		completion_reward = {
+			#none 
+		}
+	}
+	focus = {
+		id = BUL_empire_bulgarian
+		icon = GFX_goal_refugee_management
+		relative_position_id = BUL_a_bulgarian_empire
+		prerequisite = {
+			focus = BUL_a_bulgarian_empire
+		}
+		mutually_exclusive = {
+			focus = BUL_empire_volga
 		}
 		available = {
 			has_government = valkist
 			has_government = paternal_autocrat
 			has_government = authoritarian_democrat
 		}
-		x = -4
+		x = 2
 		y = 1
 	}
 	focus = {
@@ -620,6 +772,156 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = BUL_the_bulgarian_nation
+		icon = none 
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_empire_proclaim_greater_empire
+		prerequisite = {
+			focus = BUL_empire_proclaim_greater_empire
+		}
+		available = {
+			has_government = valkist
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = BUL_we_shall_expand
+		icon = none 
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_the_bulgarian_nation
+		prerequisite = {
+			focus = BUL_the_bulgarian_nation
+		}
+		available = {
+			has_government = valkist
+		}
+		completion_reward = {
+
+		}
+	}
+	#volga bulgaria
+	focus = {
+		id = BUL_empire_volga
+		icon = none
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = BUL_a_bulgarian_empire
+		prerequisite = {
+			focus = BUL_a_bulgarian_empire
+		}
+		mutually_exclusive = {
+			focus = BUL_empire_bulgarian
+		}
+		completion_reward = {
+			#nonw
+		}
+	}
+	focus = {
+		id = BUL_empire_natural_homeland
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_empire_volga
+		prerequisite = {
+			focus = BUL_empire_volga
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = BUL_empire_a_turkic_nation
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_empire_natural_homeland
+		prerequisite = {
+			focus = BUL_empire_natural_homeland
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BUL_empire_a_return_to_our_roots
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_empire_a_turkic_nation
+		prerequisite = {
+			focus = BUL_empire_a_turkic_nation
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BUL_the_ukrainian_massacre
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_empire_a_return_to_our_roots
+		prerequisite = {
+			focus = BUL_empire_a_return_to_our_roots
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = BUL_the_turkic_pact
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_the_ukrainian_massacre
+		prerequisite = {
+			focus = BUL_the_ukrainian_massacre
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BUL_empire_dennounce_slavism
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_the_turkic_pact
+		prerequisite = {
+			focus = BUL_the_turkic_pact
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BUL_empire_orthodoxise_turkey
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_empire_dennounce_slavism
+		prerequisite = {
+			focus = BUL_empire_dennounce_slavism
+		}
+		completion_reward = {
+
+		}
+	}
 	#GRECO-BULGARIAN EMPIRE FOCUSES HERE
 	focus = {
 		id = BUL_empire_greek_bulgarian
@@ -630,8 +932,8 @@ focus_tree = {
 			focus = BUL_future_of_empire
 		}
 		mutually_exclusive = {			
-			focus = BUL_empire_bulgarian
 			focus = BUL_realise_balkan_ideals
+			focus = BUL_a_bulgarian_empire
 		}
 		x = 6
 		y = 1
@@ -1279,8 +1581,8 @@ focus_tree = {
 		x = 0
 		y = 1
 		mutually_exclusive = {
-			focus = BUL_empire_bulgarian
 			focus = BUL_empire_greek_bulgarian
+			focus = BUL_a_bulgarian_empire
 		}
 		prerequisite = {
 			focus = BUL_future_of_empire
@@ -1468,7 +1770,33 @@ focus_tree = {
 			has_government = libertarian_socialist
 		}
 		completion_reward = {
-			#none
+			retire_ideology_leader = vanguardist
+			retire_ideology_leader = libertarian_socialist
+			retire_ideology_leader = collectivist
+			add_country_leader_role = {
+				character = BUL_Vasil_Kolarov
+				promote_leader = yes
+				country_leader = {
+					ideology = collectivist_subtype
+					expire = "1965.1.1"
+				}
+			}
+			add_country_leader_role = {
+				character = BUL_Vasil_Kolarov
+				promote_leader = yes
+				country_leader = {
+					ideology = vanguardist_subtype
+					expire = "1965.1.1"
+				}
+			}
+			add_country_leader_role = {
+				character = BUL_Vasil_Kolarov
+				promote_leader = yes
+				country_leader = {
+					ideology = libertarian_socialist_subtype
+					expire = "1965.1.1"
+				}
+			}
 		}
 	}
 	focus = {

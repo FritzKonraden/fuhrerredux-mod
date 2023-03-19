@@ -1,10 +1,10 @@
-add_namespace = bulgaria
-add_namespace = bulexp
-add_namespace = panorth
-add_namespace = bulexpbalkan
-add_namespace = bulexproman
-add_namespace = bulnews
-add_namespace = bulnewsexp
+add_namespace = bulgaria #norm
+add_namespace = bulexp #expansion
+add_namespace = panorth #pan-orthodoxy focus decisions
+add_namespace = bulexpbalkan #expansion balkan union
+add_namespace = bulexproman # expansion roman empire
+add_namespace = bulnews # bulgarian news
+add_namespace = bulnewsexp # bulgarian expansion news
 
 country_event = { # Join Stahlpakt
   id = bulgaria.100
@@ -895,6 +895,26 @@ country_event = {
 # 		}
 # 	}
 # }
+
+
+
+news_event = { # fra accepted bul to entente
+	id = bulnews.1
+	title = bulnews.1.t
+	desc = bulnews.1.d
+	is_triggered_only = yes
+	major = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	picture = none  #L
+	option = {
+		name = bulnews.1.a
+		FRA = {
+			add_to_faction = BUL
+		}
+	}
+}
 news_event = {
 	id = bulnewsexp.1
 	title = bulnewsexp.1.t
@@ -992,8 +1012,8 @@ news_event = {
 		}
 	}
 }
-news_event = {
-	id = bulnewsexp.4
+news_event = { #greater bul empire
+	id = bulnewsexp.4 
 	title = bulnewsexp.4.t
 	desc = bulnewsexp.4.d
 	is_triggered_only = yes
@@ -1001,10 +1021,10 @@ news_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	picture = GFX_news_event_assassination
+	picture = GFX_news_event_bulgarian_empire
 	trigger = {
 		BUL = {
-			has_global_flag = BUL_formed_romania_bulgarian_union
+			has_global_flag = BUL_formed_greater_bulgarian_empire
 		}
 	}
 	option = {
@@ -1023,6 +1043,35 @@ news_event = {
 		name = bulnewsexp.4.c
 		trigger = {
 			NOT = { tag = BUL } 
+		}
+	}
+}
+news_event = { # Third Bulgarian Empire formed
+	id = bulnewsexp.5
+	title = bulnewsexp.5.t
+	desc = bulnewsexp.5.d
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_news_event_bulgarian_empire
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	  	name = bulnewsexp.5.a
+	  	trigger = {
+			tag = BUL
+		}
+	}
+	option = {
+		name = bulnewsexp.5.b
+		trigger = {
+			NOT = { tag = BUL }
+		}
+	}
+	option = {
+		name = bulnewsexp.5.c
+		trigger = {
+			NOT = { tag = BUL }
 		}
 	}
 }
