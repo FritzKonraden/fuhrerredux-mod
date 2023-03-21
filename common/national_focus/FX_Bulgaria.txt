@@ -2178,18 +2178,78 @@ focus_tree = {
 		}
 		completion_reward = {}
 	}
+	#############################################################
+	#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	#--------------------POLITICAL TREE--------------------------
+	#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	#############################################################
+
+
+	###### ######   ######  
+	## 	   ##	   #      #
+	###### ##	   #      #
+	##     ##	   #      #
+	###### ######	#####
+
+
+
+	#POLITICAL TREE
+
+
+	focus = {
+		id = BUL_a_ruler_for_our_people
+		icon = none
+		cost = 5
+		x = 30
+		y = 3
+		completion_reward = {}
+	}
+	focus = {
+		id = BUL_to_pick_up_the_pieces
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_a_ruler_for_our_people
+		prerequisite = {
+			focus = BUL_a_ruler_for_our_people
+		}
+		completion_reward = {}
+	}
+	focus = {
+		id = BUL_the_workers_needs
+		icon = none
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = BUL_to_pick_up_the_pieces
+		prerequisite = {
+			focus = BUL_to_pick_up_the_pieces
+		}
+		completion_reward = {}
+	}
+	focus = {
+		id = BUL_restore_public_order
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_to_pick_up_the_pieces
+		prerequisite = {
+			focus = BUL_to_pick_up_the_pieces
+		}
+		completion_reward = {}
+	}
+	focus = {
+		id = BUL_invest_into_the_economy
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_to_pick_up_the_pieces
+		prerequisite = {
+			focus = BUL_to_pick_up_the_pieces
+		}
+		completion_reward = {}
+	}
 }
-
-
-#############################################################
-#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-#--------------------POLITICAL TREE--------------------------
-#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-#############################################################
-
-
-###### ######   ###
-## 	   ##
-###### ##
-##     ##
-###### ######
