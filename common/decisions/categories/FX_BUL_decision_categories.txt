@@ -57,14 +57,14 @@ BUL_align_bulgaria_category = {
 	priority = 100
 	
 }
-# BUL_expansion_basic_picture_category = {
-# 	allowed = {
-# 		original_tag = BUL
-# 	}
-# 	available = {
-# 		has_completed_focus = BUL_man_the_guns
-# 	}
-# 	priority = 999
-# 	visible_when_empty = yes
-# 	scripted_gui = basic_expansion_path_gui
-# }
+BUL_expansion_basic_picture_category = {
+	allowed = {
+		original_tag = BUL
+	}
+	available = {
+		has_completed_focus = BUL_man_the_guns
+	}
+	priority = 999
+	visible_when_empty = yes
+	scripted_gui = basic_expansion_path_gui
+}

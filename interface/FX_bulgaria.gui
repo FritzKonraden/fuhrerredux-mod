@@ -9,6 +9,14 @@ guiTypes = {
 			x = 0
 			y = 0
 		}
+		iconType = {
+			name = "BUL_bep_frame"
+			spriteType = "BUL_bep_frame"
+			position = {
+				x = 0
+				y = 0
+			}
+		}	
 		buttonType = {
 			name = "BUL_bep_vidin"
 			spriteType = "GFX_bep_BUL_vidin"
