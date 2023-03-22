@@ -22,6 +22,9 @@ focus_tree = {
 		x = 10
 		y = 0
 		cost = 2
+		available = {
+			has_completed_focus = BUL_reform_armed_forces
+		}
 		completion_reward = {
 			add_war_support = 0.05
 			add_political_power = 20
@@ -139,29 +142,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
-		id = BUL_man_the_guns
-		icon = GFX_goal_refugee_management
-		cost = 5
-		x = 2
-		y = 1
-		completion_reward = { 
-			add_stability = -0.05
-			add_war_support = 0.1
-			add_political_power = -50
-			army_experience = 10
-		}
-		relative_position_id = BUL_reclamation
-		prerequisite = {
-			focus = BUL_reclamation
-		}
-		mutually_exclusive = {
-			focus = BUL_reclaim_peacefully
-		}
-		available = {
-			always = no
-		}
-	}
+
 	focus = {
 		id = BUL_with_balkans_brothers
 		icon = GFX_goal_BUL_free_balkan_states
@@ -268,10 +249,33 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = BUL_man_the_guns
+		icon = GFX_goal_refugee_management
+		cost = 5
+		x = 4
+		y = 1
+		completion_reward = { 
+			add_stability = -0.05
+			add_war_support = 0.1
+			add_political_power = -50
+			army_experience = 10
+		}
+		relative_position_id = BUL_reclamation
+		prerequisite = {
+			focus = BUL_reclamation
+		}
+		mutually_exclusive = {
+			focus = BUL_reclaim_peacefully
+		}
+		available = {
+			always = no
+		}
+	}
+	focus = {
 		id = BUL_sabotage_serbia
 		icon = GFX_goal_refugee_management
 		cost = 5
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = BUL_man_the_guns
 		prerequisite = {
@@ -360,14 +364,15 @@ focus_tree = {
 		icon = GFX_goal_refugee_management
 		cost = 5
 		x = 2
-		y = 1
+		y = 0
 		relative_position_id = BUL_sabotage_serbia
 		completion_reward = { 
 			country_event = bulgaria.2
 		}
 		prerequisite = {
-			focus = BUL_sabotage_serbia
-			focus = BUL_question_of_thrace
+			# focus = BUL_sabotage_serbia
+			# focus = BUL_question_of_thrace
+			focus = BUL_man_the_guns
 		}
 		bypass = {
 			OR = {
@@ -400,16 +405,6 @@ focus_tree = {
 				}
 			}
 		}
-		bypass = {
-			if = {
-				limit = {
-					BUL = {
-						owns_state = 77
-						owns_state = 861
-					}
-				}
-			}
-		}
 	}
 	focus = {
 		id = BUL_integrate_macedonia
@@ -420,7 +415,7 @@ focus_tree = {
 		relative_position_id = BUL_retake_serbian_lands
 		cost = 5
 		x = 0
-		y = 1
+		y = 2
 		icon = GFX_goal_refugee_management
 		available = {
 			BUL = {
@@ -461,7 +456,7 @@ focus_tree = {
 			set_cosmetic_tag = BUL_third_empire
 			set_global_flag = BUL_formed_third_empire
 			country_event = bulgaria.9
-			news_event = fxnews.49
+			# news_event = fxnews.49
 		}
 	}
 	focus = {
@@ -469,7 +464,7 @@ focus_tree = {
 		icon = GFX_goal_refugee_management
 		cost = 5
 		x = 2
-		y = 0
+		y = 1
 		relative_position_id = BUL_man_the_guns
 		prerequisite = {
 			focus = BUL_man_the_guns
@@ -504,8 +499,8 @@ focus_tree = {
 		id = BUL_demand_thrace
 		icon = GFX_goal_refugee_management
 		cost = 5
-		x = 2
-		y = 0
+		x = 0
+		y = 1
 		relative_position_id = BUL_question_of_thrace
 		prerequisite = {
 			focus = BUL_question_of_thrace
@@ -537,8 +532,8 @@ focus_tree = {
 		id = BUL_integrate_thrace
 		icon = GFX_goal_refugee_management
 		cost = 5
-		x = 2
-		y = 0
+		x = 0
+		y = 2
 		relative_position_id = BUL_demand_thrace
 		prerequisite = {
 			focus = BUL_demand_thrace
@@ -582,11 +577,14 @@ focus_tree = {
 		id = BUL_demand_salonica
 		icon = GFX_goal_refugee_management
 		cost = 5
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = BUL_demand_thrace
 		prerequisite = {
 			focus = BUL_demand_thrace
+		}
+		prerequisite = {
+			focus = BUL_retake_serbian_lands
 		}
 		bypass = {
 			OR = {
@@ -2192,7 +2190,6 @@ focus_tree = {
 	###### ######	#####
 
 
-
 	#POLITICAL TREE
 
 
@@ -2229,6 +2226,18 @@ focus_tree = {
 		completion_reward = {}
 	}
 	focus = {
+		id = BUL_the_farmers_plight
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_the_workers_needs
+		prerequisite = {
+			focus = BUL_the_workers_needs
+		}
+		completion_reward = {}
+	}
+	focus = {
 		id = BUL_restore_public_order
 		icon = none
 		cost = 5
@@ -2241,15 +2250,265 @@ focus_tree = {
 		completion_reward = {}
 	}
 	focus = {
-		id = BUL_invest_into_the_economy
+		id = BUL_reform_armed_forces
 		icon = none
 		cost = 5
 		x = 0
+		y = 1
+		relative_position_id = BUL_restore_public_order
+		prerequisite = {
+			focus = BUL_restore_public_order
+		}
+		completion_reward = {
+			unlock_national_focus = BUL_expand_armed_forces
+		}
+	}
+	focus = {
+		id = BUL_invest_into_the_economy
+		icon = none
+		cost = 5
+		x = 2
 		y = 1
 		relative_position_id = BUL_to_pick_up_the_pieces
 		prerequisite = {
 			focus = BUL_to_pick_up_the_pieces
 		}
 		completion_reward = {}
+	}
+	focus = {
+		id = BUL_loyal_labour_unions
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_invest_into_the_economy
+		prerequisite = {
+			focus = BUL_invest_into_the_economy
+		}
+		completion_reward = {}
+	}
+	focus = {
+		id = BUL_nationalise_failing_businesses
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_reform_armed_forces
+		prerequisite = {
+			focus = BUL_loyal_labour_unions
+		}
+		prerequisite = {
+			focus = BUL_the_farmers_plight
+		}
+		prerequisite = {
+			focus = BUL_reform_armed_forces
+		}
+		completion_reward = {}
+	}
+	focus = {
+		id = BUL_implement_limited_social_walfare
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_nationalise_failing_businesses
+		prerequisite = {
+			focus = BUL_nationalise_failing_businesses
+		}
+		completion_reward = {}
+	}
+
+
+
+	#the peoples king
+	focus = {
+		id = BUL_the_peoples_king
+		icon = none
+		cost = 5
+		x = 30
+		y = 20
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_reconstruction
+		icon = none
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = BUL_the_peoples_king
+		prerequisite = {
+			focus = BUL_the_peoples_king
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_welfare_initiative
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_reconstruction
+		prerequisite = {
+			focus = BUL_reconstruction
+		}
+		completion_reward = { }
+	}
+	#police, firefighters
+	focus = {
+		id = BUL_expand_police_academy
+		icon = none
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = BUL_welfare_initiative
+		prerequisite = {
+			focus = BUL_welfare_initiative
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_modern_police_tech
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_expand_police_academy
+		prerequisite = {
+			focus = BUL_expand_police_academy
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_build_firefighter_bases
+		icon = none
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = BUL_welfare_initiative
+		prerequisite = {
+			focus = BUL_welfare_initiative
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_prepare_worst
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_build_firefighter_bases
+		prerequisite = {
+			focus = BUL_build_firefighter_bases
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_welfare_question
+		icon = none
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = BUL_welfare_initiative
+		prerequisite = {
+			focus = BUL_welfare_initiative
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_the_technology_of_medication
+		icon = none
+		cost = 5
+		x = 3
+		y = 1
+		relative_position_id = BUL_welfare_question
+		prerequisite = {
+			focus = BUL_welfare_question
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_medical_university_sofia
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_the_technology_of_medication
+		prerequisite = {
+			focus = BUL_the_technology_of_medication
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_create_hospitals
+		icon = none
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = BUL_the_technology_of_medication
+		prerequisite = {
+			focus = BUL_the_technology_of_medication
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_expand_hospitals
+		icon = none
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = BUL_the_technology_of_medication
+		prerequisite = {
+			focus = BUL_the_technology_of_medication
+		}
+		completion_reward = { }
+	}
+	#r&d
+	focus = {
+		id = BUL_reaserch_and_discovery
+		icon = none
+		cost = 5
+		x = -3
+		y = 1
+		relative_position_id = BUL_welfare_question
+		prerequisite = {
+			focus = BUL_welfare_question
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_medical_advances
+		icon = none
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = BUL_reaserch_and_discovery
+		prerequisite = {
+			focus = BUL_reaserch_and_discovery
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_new_technologies
+		icon = none
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = BUL_reaserch_and_discovery
+		prerequisite = {
+			focus = BUL_reaserch_and_discovery
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_taking_matters_to_our_hands
+		icon = none
+		cost = 5
+		x = 5
+		y = 1
+		relative_position_id = BUL_the_peoples_king
+		prerequisite = {
+			focus = BUL_the_peoples_king
+		}
+		completion_reward = { }
 	}
 }
