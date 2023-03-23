@@ -9,7 +9,7 @@ set_war_support = 0.5
 add_ideas = {
 	party_pop_0_10
 	limited_conscription
-	parliamentary_republic
+	military_junta
 	BUL_spirit_unpopular_rule
 	BUL_spirit_greek_influence
 	BUL_spirit_imminent_communist_uprising

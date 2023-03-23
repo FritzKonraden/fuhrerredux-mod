@@ -6,6 +6,7 @@ set_research_slots = 3
 set_stability = 0.35
 set_war_support = 0.25
 set_convoys = 150
+give_guarantee = BUL
 
 add_ideas = {
 	party_pop_0_40
@@ -47,6 +48,7 @@ if = {
 		}
 	}
 }
+
 
 if = {
   limit = { has_dlc = "No Step Back" }
