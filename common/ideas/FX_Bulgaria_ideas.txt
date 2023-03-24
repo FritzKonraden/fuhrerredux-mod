@@ -636,14 +636,22 @@ ideas = {
 		BUL_spirit_greek_influence = {
 			on_add = {
 				log = "[GetDateText]: [Root.GetName]: add idea BUL_spirit_greek_influence"
+				country_lock_all_division_template = yes
 			}
 			targeted_modifier = {
 				tag = GRE
 				attack_bonus_against = -0.3
 				defense_bonus_against = -0.3
+				consumer_goods_factor = -0.05
 			}
 			modifier = {
+				consumer_goods_factor = 0.05
 			}
+			on_remove = {
+				country_lock_all_division_template = no
+			}
+
+
 		}
 		BUL_spirit_imminent_communist_uprising = {
 			on_add = {
@@ -673,6 +681,7 @@ ideas = {
 				opinion_gain_monthly = -0.05
 			}
 		}
+
 	}	
 	
 ##############

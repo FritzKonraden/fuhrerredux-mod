@@ -68,3 +68,10 @@ BUL_expansion_basic_picture_category = {
 	visible_when_empty = yes
 	scripted_gui = basic_expansion_path_gui
 }
+BUL_bop_communists_vs_monarchists_category = {
+	allowed = {
+		original_tag = BUL
+	}
+	priority = 10000
+	visible_when_empty = yes
+}

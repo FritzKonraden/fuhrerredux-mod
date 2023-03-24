@@ -28,6 +28,9 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05
 			add_political_power = 20
+			set_power_balance = {
+				id = BUL_communist_vs_monarch_balance
+			}
 		}
 	}
 	focus = {
