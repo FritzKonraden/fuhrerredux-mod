@@ -1,0 +1,52 @@
+﻿
+l_english:
+  MAC_authoritarian_democrat: "Vasíleio Tis Makedonías"
+  MAC_authoritarian_democrat_ADJ: "Macedonian"
+  MAC_authoritarian_democrat_DEF: "To Vasíleio tou Alexándrou tou Méga"
+
+  MAC_paternal_autocrat: "Vasíleio Tis Makedonías"
+  MAC_paternal_autocrat_ADJ: "Macedonian"
+  MAC_paternal_autocrat_DEF: "To Vasíleio tou Alexándrou tou Méga"
+
+  MAC_national_populist: "Vasíleio Tis Makedonías"
+  MAC_national_populist_ADJ: "Macedonian"
+  MAC_national_populist_DEF: "To Vasíleio tou Alexándrou tou Méga"
+
+  MAC_valkist: "Vasíleio Tis Makedonías"
+  MAC_valkist_ADJ: "Macedonian"
+  MAC_valkist_DEF: "To Vasíleio tou Alexándrou tou Méga"
+
+  MAC_vanguardist: "Vasíleio Tis Makedonías"
+  MAC_vanguardist_ADJ: "Macedonian"
+  MAC_vvanguardist_DEF: "To Vasíleio tou Alexándrou tou Méga"
+
+  MAC_collectivist: "Vasíleio Tis Makedonías"
+  MAC_collectivist_ADJ: "Macedonian"
+  MAC_collectivist_democrat_DEF: "To Vasíleio tou Alexándrou tou Méga"
+
+  MAC_libertarian_socialist: "Vasíleio Tis Makedonías"
+  MAC_libertarian_socialist_ADJ: "Macedonian"
+  MAC_libertarian_socialist_DEF: "To Vasíleio tou Alexándrou tou Méga"
+
+  MAC_social_democrat: "Vasíleio Tis Makedonías"
+  MAC_social_democrat_ADJ: "Macedonian"
+  MAC_social_democrat_DEF: "To Vasíleio tou Alexándrou tou Méga"
+
+  MAC_social_liberal: "Vasíleio Tis Makedonías"
+  MAC_social_liberal_ADJ: "Macedonian"
+  MAC_social_liberal_DEF: "To Vasíleio tou Alexándrou tou Méga"
+
+  MAC_market_liberal: "Vasíleio Tis Makedonías"
+  MAC_market_liberal_ADJ: "Macedonian"
+  MAC_market_liberal_DEF: "To Vasíleio tou Alexándrou tou Méga"
+
+  MAC_social_conservative: "Vasíleio Tis Makedonías"
+  MAC_social_conservative_ADJ: "Macedonian"
+  MAC_social_conservative_DEF: "To Vasíleio tou Alexándrou tou Méga"
+
+  MAC_authoritarian_democrat_party: "Kómma tou Aléxandrou"
+  MAC_authoritarian_democrat_paty_long: "Kómma tou Aléxandrou, or Alexander's party, is as it suggests, the party of Alexander The Great."
+
+  super.1.t: "Alexander Has Returned"
+  super.1.d: "Alexander The Great, has returned to Greece"
+  super.1.a: "Alexander is the Goat."

@@ -6,10 +6,12 @@ state={
 	state_category = town
 
 	history={
-		owner = GRE
+		#owner = GRE modified for April fools update, uncomment with CNTRL + /  
 		victory_points = {
-			11818 5 
+			11818 17 #previously 10, modify accordingly
 		}
+		add_core_of = MAC
+		owner = MAC
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1

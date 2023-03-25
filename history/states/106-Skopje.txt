@@ -1,7 +1,7 @@
 
 state={
 	id=106
-	name="STATE_106"
+	name="STATE_106:1"
 	resources={
 		chromium=83.0
 		aluminium=23.0
@@ -10,7 +10,8 @@ state={
 
 	history={
 		add_core_of = MAC
-		owner = SER
+		owner = MAC
+		#owner = SER modified for April Fools Update
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

@@ -1,0 +1,71 @@
+characters = {
+	MAC_Alexander_The_Great = {
+		name = "Aléxandros O Mégas"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MAC/Portrait_MAC_Alexander_The_Great.png"
+			}
+			army = {
+				large = "gfx/leaders/MAC/Portrait_MAC_Alexander_The_Great.png"
+			}
+			navy = {
+			 	large = "gfx/leaders/MAC/Portrait_MAC_Alexander_The_Great.png"
+			 }
+		}
+		country_leader = {
+			ideology = authoritarian_democrat_subtype
+		}
+		country_leader = {
+			ideology = paternal_autocrat_subtype
+		}
+		country_leader = {
+			ideology = social_conservative_subtype
+		}
+		country_leader = {
+			ideology = social_democrat_subtype
+		}
+		country_leader = {
+			ideology = valkist_subtype
+		}
+		country_leader = {
+			ideology = national_populist_subtype
+		}
+		country_leader = {
+			ideology = collectivist_subtype
+		}
+		country_leader = {
+			ideology = libertarian_socialist_subtype
+		}
+		country_leader = {
+			ideology = vanguardist_subtype
+		}
+		country_leader = {
+			ideology = market_liberal_subtype
+		}
+		country_leader = {
+			ideology = social_liberal_subtype
+		}
+		field_marshal = {
+			skill = 10
+			attack_skill = 10
+			defense_skill = 10
+			planning_skill = 10
+			logistics_skill = 10
+		}
+		# navy_leader = {
+		# 	skill = 10
+		# 	attack_skill = 10
+		# 	defense_skill = 10
+		# 	maneuvering_skill = 10
+		# 	coordination_skill = 10
+		# }
+		gender = male
+		corps_commander = {
+			skill = 5
+			attack_skill = 10
+			defense_skill = 10
+			planning_skill = 10
+			logistics_skill = 10
+		}
+	}
+}

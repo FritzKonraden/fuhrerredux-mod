@@ -7,11 +7,13 @@ state={
 	}
 
 	history={
-		owner = GRE
+		#owner = GRE modified for April fools update, uncomment with CNTRL + /  
 		buildings = {
 			infrastructure = 2
 
 		}
+		add_core_of = MAC
+		owner = MAC
 		add_core_of = GRE
 		add_claim_by = BUL
 

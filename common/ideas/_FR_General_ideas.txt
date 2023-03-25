@@ -274,6 +274,35 @@ ideas = {
 				}
 			}
 		}
+		maceconian_economy = {
+			level = 1
+			cost = 1000
+			removal_cost = -1
+			cancel_if_invalid = no
+			available = {
+				original_tag = MAC
+			}
+			visible = {
+				original_tag = MAC
+			}
+			modifier = {
+				consumer_goods_factor = -1
+				conscription_factor = 1
+				production_speed_arms_factory_factor = 1
+				conversion_cost_civ_to_mil_factor = -1
+				conversion_cost_mil_to_civ_factor = -1
+				mobilization_speed = 1
+			}
+			ai_will_do = {
+				factor = 1000
+				modifier = {
+					factor = 0
+					NOT = {
+						original_tag = MAC
+					}
+				}
+			}
+		}
 	}
 
 	## This trade law is intentionally changed from the vanilla name to avoid hardcoded behavior.
@@ -413,6 +442,36 @@ ideas = {
 					is_in_faction = yes
 					has_war = yes
 				}
+			}
+		}
+		
+		macedonian_trade = {
+			level = 10
+			cost = 1000
+			removal_cost = -1
+			cancel_if_invalid = no
+			available = {
+				original_tag = BUL
+			}
+			ai_will_do = {
+				factor = 1000
+				modifier = {
+					factor = 0
+					NOT = {
+						original_tag = MAC
+					}
+				}
+			}
+			visible = {
+				original_tag = MAC
+			}
+			modifier = {
+				min_export = 0
+				industrial_capacity_factory = 1
+				industrial_capacity_dockyard = 1
+				production_speed_buildings_factor = 1
+				research_speed_factor = 1
+
 			}
 		}
 	}
@@ -652,6 +711,34 @@ ideas = {
 					factor = 0
 					manpower_per_military_factory >  5000
 				}
+			}
+		}
+		macedonian_legions = {
+			level = 1
+			cost = 1000
+			removal_cost = -1
+			cancel_if_invalid = no
+			available = {
+				original_tag = MAC
+			}
+			visible = {
+				original_tag = MAC
+			}
+			ai_will_do = {
+				factor = 1000
+				modifier = {
+					factor = 0
+					NOT = {
+						original_tag = MAC
+					}
+				}
+			}
+			modifier = {
+				conscription = 1
+				training_time_factor = -1
+				industrial_capacity_dockyard = 1
+				industrial_capacity_factory = 1
+				research_speed_factor = 1
 			}
 		}
 	}
