@@ -241,6 +241,11 @@ country_event = { # Fate of Hawaii
       remove_all_cores_and_claims_of_tags = yes
       HAW = {
         add_state_core = 629
+        add_state_core = 727
+				add_state_core = 642
+				add_state_core = 630
+				add_state_core = 631
+				add_state_core = 632
         drop_cosmetic_tag = yes
       }
     }

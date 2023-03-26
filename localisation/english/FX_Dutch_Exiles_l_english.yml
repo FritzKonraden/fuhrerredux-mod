@@ -104,6 +104,8 @@ KNE_military_refugees_desc: "A large part of the military fled the Netherlands t
 KNE_join_entente: "Join the [From.GetFactionName]"
 KNE_join_entente_desc: "In order to return to our home, we must align ourselves with France and defeat the illegitimate government in Amsterdam that is allied to Germany."
 KNE_invest_in_the_exiles: "Invest in [From.GetName]"
+KNE_return_of_the_queen: "Return of the Queen"
+KNE_return_of_the_queen_desc: "Amsterdam is now back in our hands, the capital and very heart of the Dutch Empire! At long last, we can restore the Kingdom of the Netherlands and the monarchy!"
 
 ### Events
 dutchexiles.100.t: "[From.GetName] Wants to Entry to the [Root.GetFactionName]"

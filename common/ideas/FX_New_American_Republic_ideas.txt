@@ -62,7 +62,6 @@ ideas = {
 			picture = generic_disjointed_gov
 			modifier = {
 				political_power_cost = 0.25
-				disabled_ideas = 1
 			}
 		}
 		NAR_illegitimate_government = {
