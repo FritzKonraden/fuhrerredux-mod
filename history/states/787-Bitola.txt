@@ -1,11 +1,11 @@
 state={
 	id=787
-	name="STATE_787:1"
+	name="STATE_787"
 
 	history={
-		add_core_of = MAC
-		owner = MAC
-		#owner = SER modified by april fools update
+		#add_core_of = MAC
+		owner = SER
+		#owner = MAC modified by april fools update
 		add_core_of = SER
 		buildings = {
 			infrastructure = 3

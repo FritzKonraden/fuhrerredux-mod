@@ -50,3 +50,10 @@ l_english:
   super.1.t: "Alexander Has Returned"
   super.1.d: "Alexander The Great, has returned to Greece"
   super.1.a: "Alexander is the Goat."
+
+  macedonia.1.t: "Alexander The Great has been spotted in Alexandria"
+  macedonia.1.d: "[This.GetNewspaperHeader]\nAn Alexandrian citizen was walking through the streets of Alexandria Egypt, when he stumbled upon a strange sight. In a small garden near the city center, he saw a man with long curly hair and a regal bearing, standing behind a bush with his back turned. The man appeared to be peeing, and the citizen was taken aback by the audacity of it all. As the citizen approached the bush, he realized with a shock that the man was none other than Alexander the Great, the famed conqueror and ruler of the ancient world. Alexander, for his part, seemed unfazed by the citizen's presence and continued to pee, as if it were the most natural thing in the world. The citizen simply stood there, watching as Alexander finished his business and then walked away, disappearing into the crowded streets of Alexandria."
+  macedonia.1.a: "What?"
+  macedonia.2.t: "Rumours about Alexander have been confirmed."
+  macedonia.2.d: "[This.GetNewspaperHeader]\nWhile Alexander was returning to his grave, after he had peed, he accidentaly woke up his legions, by trying to open his tomb's big door. He, unable to make his legions re-sleep, took them and ordered them to format as the Macedonian Phalanx. With the troops, he marched to Alexandria, the city that he found. The people were very confused, as to who this man was, and why he had troops with really long swords, and shields. He also was speaking a weird language, that the people couldn't understand. He, marched and, after a fierce fight with the city's armies, won. He named himself King of the Macedonian Empire, and annexed the city of Alexandria. "
+  macedonia.2.a: "What kind of scenario is this?"

@@ -1,0 +1,29 @@
+add_namespace = macedonia
+
+news_event = { #Alexander The Great spoted peeing in a bush, by a Alexandrian traveller
+	id = macedonia.1
+	title = macedonia.1.t
+	desc = macedonia.1.d 
+	is_triggered_only = yes
+	option = {
+		name = macedonia.1.a
+		news_event = {
+			id = macedonia.2
+			days = 10
+		}
+	}
+}
+news_event = { #Rumours have been confirmed, as Alexander was seen returning to his grave.
+	id = macedonia.2
+	title = macedonia.2.t
+	desc = macedonia.2.d 
+	is_triggered_only = yes
+	option = {
+		name = macedonia.2.a
+		447 = {
+			add_core_of = MAC
+			transfer_state_to = MAC
+		}
+		MAC = { set_country_flag = MACEDON_FORMED_SUPEREVENT }
+	}
+}

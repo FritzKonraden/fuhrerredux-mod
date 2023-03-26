@@ -1,0 +1,6 @@
+focus_tree = {
+	id = MAC_focus
+	country = {
+		
+	}
+}

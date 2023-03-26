@@ -64,16 +64,16 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		
-		buttonType = {
-			name = "menu_wiki_button"
-			position = { x = 16 y = 138}
-			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "MENU_BAR_GAME_WIKI"
-			buttonFont = "hoi_24header"
-			clicksound = click_default
-			oversound = ui_menu_over
-			web_link = ""
-		}
+		# buttonType = {
+		# 	name = "menu_wiki_button"
+		# 	position = { x = 16 y = 138}
+		# 	quadTextureSprite ="GFX_main_lobby_button"	
+		# 	buttonText = "MENU_BAR_GAME_WIKI"
+		# 	buttonFont = "hoi_24header"
+		# 	clicksound = click_default
+		# 	oversound = ui_menu_over
+		# 	web_link = ""
+		# }
 		
 		buttonType = {
 			name = "menu_resign_button"
@@ -155,7 +155,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "achievements_button"
-			position = { x = 259 y = 349 }
+			position = { x = 259 y = 389 }
 			quadTextureSprite ="achievements"
 			pdx_tooltip = "MENU_ACHIEVEMENTS"
 		}		
@@ -191,8 +191,7 @@ guiTypes = {
 			}
 		}		
 		
-		iconType =
-		{
+		iconType = {
 			name ="menu"
 			spriteType = "GFX_load_save_top_screen"
 			position = { x= 76 y = 63 }
@@ -200,16 +199,14 @@ guiTypes = {
 		}
 
 		
-		iconType =
-		{
+		iconType = {
 			name ="menu_bottom"
 			spriteType = "GFX_load_save_bottom"
 			position = { x= 76 y = 490 }
 			Orientation = "UPPER_LEFT"
 		}
 		
-		instantTextBoxType = 
-		{
+		instantTextBoxType = {
 			name = "saves_dirs"
 			position = { x = 10 y = 375 }
 			textureFile = ""
@@ -297,24 +294,21 @@ guiTypes = {
 		size = { width = 420 height = 500}
 		Orientation = center
 		
-		iconType =
-		{
+		iconType = {
 			name ="menu"
 			spriteType = "GFX_load_save_top_screen"
 			position = { x= 76 y = 60 }
 			Orientation = "UPPER_LEFT"
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="menu_bottom"
 			spriteType = "GFX_load_save_bottom_screen"
 			position = { x= 76 y = 446 }
 			Orientation = "UPPER_LEFT"
 		}
 			
-		instantTextBoxType = 
-		{
+		instantTextBoxType = {
 			name = "saves_dirs"
 			position = { x = 10 y = 375 }
 			textureFile = ""

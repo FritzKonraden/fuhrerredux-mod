@@ -4,20 +4,20 @@ bookmarks = {
     desc = "FUHRERREDUX_DESC"
     date = 1936.1.1
     picture = GFX_select_date_1936
-    default_country = "MAC"
+    default_country = "PHI"
     default = yes
 
     #### Majors
-    "MAC" = {
-      history = "MAC_FUHRERREDUX_DESC"
-      ideology = authoritarian_democrat
-      ideas = {
+    # "MAC" = {
+    #   history = "MAC_FUHRERREDUX_DESC"
+    #   ideology = authoritarian_democrat
+    #   ideas = {
         
-      }
-      focuses = {
+    #   }
+    #   focuses = {
         
-      }
-    }
+    #   }
+    # }
     "USA" = {
       history = "USA_FUHRERREDUX_DESC"
       ideology = market_liberal
@@ -116,9 +116,9 @@ bookmarks = {
         JAP_the_yamato
       }
     }
-    # "---" = { #Uncomment later
-    #   history = "OTHER_FUHRERREDUX_DESC"
-    # }
+    "---" = { #Uncomment later
+      history = "OTHER_FUHRERREDUX_DESC"
+    }
 
     ### Minors
     "HOL" = {
