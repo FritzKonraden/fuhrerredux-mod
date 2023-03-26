@@ -75,7 +75,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { }
+			traits = { trait_engineer fortress_buster }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 4
@@ -107,7 +107,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { }
+			traits = { career_officer }
 			skill = 1
 			attack_skill = 2
 			defense_skill = 4
@@ -123,7 +123,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { }
+			traits = { artillery_officer old_guard }
 			skill = 3
 			attack_skill = 1
 			defense_skill = 4
@@ -139,7 +139,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { }
+			traits = { trickster }
 			skill = 4
 			attack_skill = 3
 			defense_skill = 3
@@ -155,7 +155,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { }
+			traits = { trait_reckless trickster }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 4
@@ -171,7 +171,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { }
+			traits = { artillery_officer old_guard }
 			skill = 1
 			attack_skill = 3
 			defense_skill = 2
@@ -187,7 +187,7 @@ characters = {
 			}
 		}
 		navy_leader = {
-			traits = { }
+			traits = { seawolf }
 			skill = 1
 			attack_skill = 2
 			defense_skill = 4
@@ -203,7 +203,7 @@ characters = {
 			}
 		}
 		navy_leader = {
-			traits = { }
+			traits = { spotter }
 			skill = 2
 			attack_skill = 3
 			defense_skill = 1
@@ -219,7 +219,7 @@ characters = {
 			}
 		}
 		navy_leader = {
-			traits = { }
+			traits = { spotter }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 4
@@ -235,7 +235,7 @@ characters = {
 			}
 		}
 		navy_leader = {
-			traits = { }
+			traits = { blockade_runner }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 1

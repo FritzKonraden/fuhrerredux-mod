@@ -527,6 +527,7 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_british_strategy"
+			add_political_power = 100
 		}
 	}
 	
@@ -4298,6 +4299,7 @@ focus_tree = {
 						BLR = {
 							NOT = {
 								is_in_faction_with = GER
+								has_country_flag = BLR_konigsberg_gut
 							}
 						}
 					}
@@ -4336,6 +4338,7 @@ focus_tree = {
 						BLR = {
 							NOT = {
 								is_in_faction_with = GER
+								has_country_flag = BLR_konigsberg_gut
 							}
 						}
 					}

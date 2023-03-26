@@ -411,7 +411,7 @@ characters = {
 				ROOT = { clr_country_flag = PHI_Emilio_Aguinaldo_hog_npo_hired }
 			}
 			traits = {
-				national_populist
+				authoritarian_democrat
 				hog_old_general
 			}
 		}

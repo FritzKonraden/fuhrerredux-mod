@@ -562,6 +562,7 @@ country_event = { # Konigsberg Conference
 			}
 		}
 		
+		add_to_faction = FROM
 		FROM = {
 			set_country_flag = BLR_konigsberg_gut
 			country_event = { id = belarus.20 days = 2 }

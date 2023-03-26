@@ -962,6 +962,7 @@ USA_state_reintegration = {
   }
   USA_the_american_rebirth = {
     cost = 50
+    fire_only_once = yes
     available = {
       custom_trigger_tooltip = {
         tooltip = USA_recovered_territories_from_mexico_tt
@@ -986,7 +987,6 @@ USA_state_reintegration = {
         AND = {
           owns_state = 385 # Oregon
           owns_state = 386 # Washington
-          owns_state = 463 # Alaska
         }
       }
     }

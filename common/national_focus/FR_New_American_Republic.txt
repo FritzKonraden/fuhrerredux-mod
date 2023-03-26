@@ -731,6 +731,8 @@ focus_tree = {
 		prerequisite = { focus = NAR_cement_our_authority }
 		relative_position_id = NAR_cement_our_authority
 		completion_reward = {
+			add_political_power = 100
+			add_stability = -0.1
 			NAR_increase_suppression = yes
 		}
 	}
@@ -751,6 +753,8 @@ focus_tree = {
 		prerequisite = { focus = NAR_cement_our_authority }
 		relative_position_id = NAR_cement_our_authority
 		completion_reward = {
+			add_political_power = -100
+			add_stability = 0.1
 			NAR_decrease_suppression = yes
 		}
 	}
