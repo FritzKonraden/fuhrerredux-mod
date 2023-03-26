@@ -833,7 +833,6 @@ USA_state_reintegration = {
         391 392
     }
     target_trigger = { owns_state = FROM }
-
     visible = {
       NOT = { country_exists = CLB }
       FROM = {
@@ -862,7 +861,6 @@ USA_state_reintegration = {
         357 358 359 837 838 839 840 841
     }
     target_trigger = { owns_state = FROM }
-
     visible = {
       NOT = { country_exists = NEE }
       FROM = {
@@ -891,7 +889,6 @@ USA_state_reintegration = {
       843 396 394 393 369 360 261
     }
     target_trigger = { owns_state = FROM }
-
     visible = {
       NOT = { country_exists = NAR }
       FROM = {
@@ -920,7 +917,6 @@ USA_state_reintegration = {
       387
     }
     target_trigger = { owns_state = FROM }
-
     visible = {
       NOT = { country_exists = SNE }
       FROM = {

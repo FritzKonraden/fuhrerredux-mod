@@ -2540,7 +2540,7 @@ characters = {
 		advisor = {
 			cost = 150
 			slot = navy_chief
-			idea_token = USA_Harold_Rainsford_Stark_cnav
+			idea_token = USA_Thomas_Kinkaid_cnav
 			traits = {
 				cnav_power_projection_doctrine
 			}
