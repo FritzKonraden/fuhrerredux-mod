@@ -604,10 +604,6 @@ focus_tree = {
     prerequisite = { focus = PHI_partido_progressista }
     relative_position_id = PHI_partido_progressista
     completion_reward = {
-      set_politics = {
-        ruling_party = national_populist
-        elections_allowed = no
-      }
       swap_ideas = {
         remove_idea = presidential_republic
         add_idea = republican_dictatorship
