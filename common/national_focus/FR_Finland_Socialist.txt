@@ -11,6 +11,7 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 830 }
 	shared_focus = FIN_finnish_defence_forces
 	shared_focus = FIN_end_of_silver_decade
+	shared_focus = FIN_finlands_bold_opportunity
 	focus = {
 		id = FIN_aftermath_mantsala_uprising2
 		icon = GFX_focus_generic_support_the_left_right

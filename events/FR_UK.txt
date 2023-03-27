@@ -4,6 +4,7 @@
 ###########################
 
 add_namespace = uk
+add_namespace = uknews
 
 ###########################
 # - Opening Lore Event
