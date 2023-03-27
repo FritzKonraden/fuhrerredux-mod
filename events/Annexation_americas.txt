@@ -464,14 +464,6 @@ country_event = { # Fate of Oregon
     }
     set_temp_variable = { tag_to_release = ORE }
     release_targeted_tag = yes
-    hidden_effect = {
-      ORE = {
-        if = {
-          limit = { is_subject_of = ENG }
-          retire_character = ORE_Kenneth_Anderson
-        }
-      }
-    }
   }
 
   option = { # Occupy

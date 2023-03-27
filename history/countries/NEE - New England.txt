@@ -41,4 +41,3 @@ recruit_character = NEE_Willard_G_Wyman
 recruit_character = NEE_Lemuel_C_Shepherd_Jr
 recruit_character = NEE_Allan_Rockwell_McCann
 recruit_character = NEE_Edward_Ellsberg
-recruit_character = NEE_Thomas_Kinkaid

@@ -6671,11 +6671,19 @@
 		prerequisite = { focus = ENG_cape_cairo }
 		bypass = {
 			OR = {
-				ARB = { exists = NO }
+				ARB = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
 				has_war_with = ARB
 			}
 			OR = {
-				SAU = { exists = no }
+				SAU = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
 				has_war_with = SAU
 			}
 		}
@@ -6711,9 +6719,12 @@
 		prerequisite = { focus = ENG_cape_cairo }
 		bypass = {
 			OR = {
-				IRQ = { exists = NO }
+				IRQ = {
+					exists = no
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
 				has_war_with = IRQ
-				IRQ = { is_puppet_of = ENG }
 			}
 		}
 		x = 50
@@ -6748,10 +6759,12 @@
 		prerequisite = { focus = ENG_cape_cairo }
 		bypass = {
 			OR = {
-				PER = { exists = NO }
+				PER = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
 				has_war_with = PER
-				PER = { is_in_faction_with = ENG }
-				PER = { is_puppet_of = ENG }
 			}
 		}
 		x = 52
@@ -7097,11 +7110,12 @@
 		}
 		bypass = {
 			OR = {
-				SIA = { exists = NO }
-				has_war_with = SIA
 				SIA = {
-					is_puppet_of = ENG
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
 				}
+				has_war_with = SIA
 			}
 		}
 		x = 50
@@ -7258,7 +7272,11 @@
 		prerequisite = { focus = ENG_dip_siam }
 		bypass = {
 			OR = {
-				AFG = { exists = NO }
+				AFG = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
 				has_war_with = AFG
 			}
 		}
@@ -7293,7 +7311,11 @@
 		prerequisite = { focus = ENG_cape_singapore }
 		bypass = {
 			OR = {
-				SOV = { exists = NO }
+				SOV = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
 				has_war_with = SOV
 			}
 		}
@@ -7395,9 +7417,12 @@
 		prerequisite = { focus = ENG_london_conf }
 		bypass = {
 			OR = {
-				JAP = { exists = NO }
+				JAP = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
 				has_war_with = JAP
-				JAP = { is_in_faction_with = ENG }
 			}
 		}
 		x = 42
@@ -7428,10 +7453,12 @@
 		prerequisite = { focus = ENG_london_conf }
 		bypass = {
 			OR = {
-				POR = { exists = NO }
+				POR = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
 				has_war_with = POR
-				POR = { is_in_faction_with = ENG }
-				POR = { is_in_faction = yes }
 			}
 		}
 		x = 44
@@ -7461,10 +7488,12 @@
 		prerequisite = { focus = ENG_london_conf }
 		bypass = {
 			OR = {
-				BEL = { exists = NO }
-				has_war_with = BEL
-				BEL = { is_in_faction_with = ENG }
-				has_guaranteed = BEL
+				BEL = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+				has_war_with = BEL	
 			}
 		}
 		x = 46
@@ -7498,10 +7527,12 @@
 		}
 		bypass = {
 			OR = {
-				GRE = { exists = NO }
+				GRE = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
 				has_war_with = GRE
-				GRE = { is_in_faction_with = ENG }
-				GRE = { is_in_faction = yes }
 			}
 		}
 		x = 44

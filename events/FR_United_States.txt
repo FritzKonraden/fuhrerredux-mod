@@ -2702,7 +2702,7 @@ country_event = { # UK Seizes Cascadia, Puerto Rico, Alaska
 	option = {
 		name = usa.105.a
 		hidden_effect = {
-				add_stent = { id = usa.108 days = 2 } }
+			country_event = { id = usa.108 days = 2 }
 			ENG = { country_event = { id = usa.110 days = 2 } }
 		}
 	}
