@@ -1,6 +1,192 @@
 focus_tree = {
 	id = MAC_focus
 	country = {
-		
+		factor = 0
+		modifier = {
+			add = 69420
+			tag = MAC
+		}
+	}
+	continuous_focus_position = {
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = MAC_a_blast_from_past
+		icon = none
+		cost = 3
+		x = 10
+		y = 2
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			# will give event abt alexander's history
+		}
+	}
+	focus = {
+		id = MAC_rearm_our_legions
+		icon = none
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = MAC_a_blast_from_past
+		prerequisite = {
+			focus = MAC_a_blast_from_past
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			add_ideas = MAC_our_undefeatable_legions
+		}
+	}
+	focus = {
+		id = MAC_visit_greece
+		icon = none
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = MAC_rearm_our_legions
+		prerequisite = {
+			focus = MAC_rearm_our_legions
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			news_event = {
+				id = macedonia.3
+				days = 1
+				random_hours = 6
+			}
+		}
+	}
+	focus = {
+		id = MAC_on_path_to_war
+		icon = none
+		cost = 0
+		x = 0
+		y = 1
+		relative_position_id = MAC_visit_greece
+		prerequisite = {
+			focus = MAC_visit_greece
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = MAC_destroy_bulgaria
+		icon = none
+		cost = 0
+		x = -2
+		y = 1
+		relative_position_id = MAC_on_path_to_war
+		prerequisite = {
+			focus = MAC_on_path_to_war
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			MAC = {
+				every_state = {
+					limit = {
+						is_core_of = BUL
+					}
+					add_core_of = MAC
+				}
+				declare_war_on = {
+					target = BUL
+					type = annex_everything
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAC_dismantle_serbia
+		icon = none
+		cost = 0
+		x = 0
+		y = 1
+		relative_position_id = MAC_on_path_to_war
+		prerequisite = {
+			focus = MAC_on_path_to_war
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			MAC = {
+				add_state_core = 787
+				add_state_core = 106
+				add_state_core = 942
+				annex_country = {
+					target = SER
+				}
+			}
+			SER = {
+				every_state = {
+					limit = {
+						is_core_of = SER
+						NOT = {
+							state = 108
+							state = 941
+							state = 107
+							state = 1038
+							state = 931
+						}
+					}
+					remove_core_of = SER
+					add_claim_by = SER
+				}
+			}
+			MAC = {
+				set_autonomy = {
+					target = SER
+					autonomy_state = autonomy_puppet
+				}
+			}
+			SER = {
+				transfer_state = 108
+				transfer_state = 941
+				transfer_state = 107
+				transfer_state = 1038
+				transfer_state = 931
+			}
+			CRO = {
+				transfer_state = 767
+				transfer_state = 102
+				transfer_state = 103
+				transfer_state = 788
+				transfer_state = 789
+				# transfer_state = 1036
+				transfer_state = 109
+			}
+			MAC = {
+				set_autonomy = {
+					target = CRO
+					autonomy_state = autonomy_puppet
+				}
+			}
+			BOS = {
+				transfer_state = 788
+				transfer_state = 104
+				transfer_state = 1034
+				transfer_state = 1037
+				add_state_core = 1034
+				add_state_core = 1037
+			}
+			MAC = {
+				set_autonomy = {
+					target = BOS
+					autonomy_state = autonomy_puppet
+				}
+			}
+		}
 	}
 }

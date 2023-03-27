@@ -27,3 +27,103 @@ news_event = { #Rumours have been confirmed, as Alexander was seen returning to 
 		MAC = { set_country_flag = MACEDON_FORMED_SUPEREVENT }
 	}
 }
+news_event = { #Alexander visits greece
+	id = macedonia.3
+	title = macedonia.3.t
+	desc = macedonia.3.d 
+	is_triggered_only = yes
+	option = {
+		name = macedonia.3.a
+		if = {
+			limit = {
+				GRE = {
+					is_ai = no
+				}
+			}
+			GRE = {
+				country_event = macedonia.5
+			}
+		}
+	}
+}
+news_event = { #Alexander annexes greece
+	id = macedonia.4
+	title = macedonia.4.t
+	desc = macedonia.4.d 
+	is_triggered_only = yes
+	option = {
+		name = macedonia.4.a
+		if = {
+			limit = {
+				has_global_flag = GRE_accept_annex_MAC
+			}
+			MAC = {
+				change_tag_from = GRE
+			}
+			GRE = {
+				transfer_navy = {
+					target = MAC
+				}
+			}
+			MAC = {
+				annex_country = {
+					target = GRE
+					transfer_troops = yes
+				}
+				every_state = {
+					limit = {
+						is_core_of = GRE
+					}
+					add_core_of = MAC
+				}
+			}
+		}
+		else = {
+			GRE = {
+				transfer_navy = {
+					target = MAC
+				}
+			}
+			MAC = {
+				annex_country = {
+					target = GRE
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = macedonia.5
+	title = macedonia.5.t
+	desc = macedonia.5.d
+	is_triggered_only = yes
+	option = { #do you want to change tags when alexander conquers greece?
+		name = macedonia.5.a
+		set_global_flag = GRE_accept_annex_MAC
+		ai_chance = {
+			factor = 0
+		}
+		news_event = {
+			id = macedonia.4
+			days = 3
+			random_hours = 8
+		}
+	}
+	option = { 		#what?
+		name = macedonia.5.b
+		ai_chance = {
+			factor = 1000
+		}
+	}
+}
+news_event = { #Alexander goes to annex BUL
+	id = macedonia.6
+	title = macedonia.6.t
+	desc = macedonia.6.d 
+	is_triggered_only = yes
+	option = {
+		name = macedonia.6.a
+		
+	}
+}
