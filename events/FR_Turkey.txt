@@ -46,13 +46,8 @@ country_event = {
 
 	option = {
 		name = tur.2.a
-
 		custom_effect_tooltip = TUR_emergency_session_focus_unlocked_tt
-
-		kill_country_leader = yes
-
 		set_country_flag = TUR_assassination_of_the_sultan
-
 		if = {
 			limit = {
 				TUR = { 
@@ -465,7 +460,7 @@ country_event = {
 
 		remove_every_minister = yes
 		add_ideas = {
-			TUR_Mustafa_Fevzi_Pasa_hog_pau
+			TUR_Huseyin_Selahattin_Paşa_hog_pau
 			TUR_Fahrettin_Paşa_for_pau
 			TUR_Mehmed_Nuri_Bey_eco_pau
 			TUR_Mehmed_Recep_Paşa_sec_pau
@@ -1247,13 +1242,11 @@ country_event = {
 
 	option = {
 		name = tur.22.a
-
 		hidden_effect = {
 			remove_ideas_with_trait = head_of_government
 		}
-
 		add_ideas = {
-			TUR_Mustafa_Fevzi_Pasa_hog_pau
+			TUR_Huseyin_Selahattin_Paşa_hog_pau
 		}
 	}
 }

@@ -473,21 +473,19 @@ news_event = {
 			}
 		}
 		name = uknews.1.a
-		add_political_power = -50
 	}
 
 	option = {
 		trigger = {
-			NOT = { original_tag = CAN }
-			NOT = { original_tag = AST }
-			NOT = { original_tag = NZL }
-			NOT = { original_tag = SAF }
-			NOT = { original_tag = RAJ }
-			NOT = { original_tag = NFL }
+			NOT = { tag = CAN }
+			NOT = { tag = AST }
+			NOT = { tag = NZL }
+			NOT = { tag = SAF }
+			NOT = { tag = RAJ }
+			NOT = { tag = NFL }
 		}
 		name = uknews.1.b
-	}
-
+	}	
 }
 
 ####################

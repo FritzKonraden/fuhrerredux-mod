@@ -143,7 +143,6 @@ KNE = {
 }
 
 recruit_character = HOL_Izaak_Reynders
-recruit_character = HOL_Henri_Nicolas_Alfred_Swart
 recruit_character = HOL_Cornelis_van_Geelkerken
 recruit_character = HOL_Jan_Baars
 recruit_character = HOL_Willem_Bernard_Engelbrecht

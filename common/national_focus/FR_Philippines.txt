@@ -4267,7 +4267,7 @@ focus_tree = {
     completion_reward = {
       air_experience = 25
       add_equipment_to_stockpile = {
-        type = fighter_equipment
+        type = fighter_equipment_0
         amount = 100
         producer = USA
       }

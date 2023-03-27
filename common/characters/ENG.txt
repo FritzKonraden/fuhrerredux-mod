@@ -2367,7 +2367,7 @@ characters = {
     name = "Clement Armitage"
     portraits = {
       army = {
-        large = "gfx/leaders/ARB/Portrait_ENG_Clement_Armitage.png"
+        large = "gfx/leaders/ENG/Portrait_ENG_Clement_Armitage.png"
       }
     }
 		corps_commander = {

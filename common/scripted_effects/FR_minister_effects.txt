@@ -230,7 +230,7 @@ add_starting_ministers = {
       MAN_Zhang_Zuolin_hog_ade
       MAN_Wu_Jinglian_for_ade
       MAN_Pan_Fu_eco_ade
-      MAN_Ma_Zhanshan_sec_pau
+      MAN_Tang_Yulin_sec_pau
     }
   }
   # Mexico
