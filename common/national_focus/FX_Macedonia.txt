@@ -141,8 +141,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
-				GRE = {
-					exists = no
+				AND = {
+					GRE = {
+						exists = no
+					}
+					has_completed_focus = MAC_destroy_bulgaria
 				}
 				factor = 1000
 			}
@@ -253,8 +256,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
-				GRE = {
-					exists = no
+				AND = {
+					GRE = {
+						exists = no
+					}
+					has_completed_focus = MAC_dismantle_serbia
 				}
 				factor = 1000
 			}
@@ -275,6 +281,13 @@ focus_tree = {
 		id = MAC_to_west
 		icon = none
 		cost = 5
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_completed_focus = MAC_remove_kebab
+				factor = 1000
+			}
+		}
 		x = 0
 		y = 2
 		relative_position_id = MAC_destroy_bulgaria
@@ -302,7 +315,11 @@ focus_tree = {
 			focus = MAC_to_west
 		}
 		ai_will_do = {
-			factor = 1000
+			factor = 0
+			modifier = {
+				has_completed_focus = MAC_remove_kebab
+				factor = 10000
+			}
 		}
 		completion_reward = {
 			declare_war_on = {
@@ -345,7 +362,11 @@ focus_tree = {
 			focus = MAC_war_in_carpathians
 		}
 		ai_will_do = {
-			factor = 1000
+			factor = 10000
+			# modifier = {
+			# 	factor = 10000
+			# 	has_completed_focus = MAC_seize_arabia
+			# }
 		}
 		completion_reward = {
 			declare_war_on = {
@@ -449,7 +470,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = MAC_pillage_iberia
+		id = MAC_albion_must_submit
 		icon = none
 		cost = 5
 		x = 0
@@ -459,7 +480,43 @@ focus_tree = {
 			focus = MAC_attack_france
 		}
 		ai_will_do = {
-			factor = 1000
+			factor = 10000
+			# modifier = {
+			# 	has_completed_focus = MAC_the_way_to_india
+			# 	factor = 10000
+			# }
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ENG
+					}
+				}
+				add_core_of = MAC
+			}
+		}
+	}
+	focus = {
+		id = MAC_pillage_iberia
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = MAC_albion_must_submit
+		prerequisite = {
+			focus = MAC_albion_must_submit
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_completed_focus = MAC_the_way_to_china
+				factor = 10000
+			}
 		}
 		completion_reward = {
 			declare_war_on = {
@@ -525,39 +582,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = MAC_albion_must_submit
-		icon = none
-		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = MAC_pillage_iberia
-		prerequisite = {
-			focus = MAC_pillage_iberia
-		}
-		ai_will_do = {
-			factor = 1000
-		}
-		completion_reward = {
-			declare_war_on = {
-				target = ENG
-				type = annex_everything
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = ENG
-					}
-				}
-				add_core_of = MAC
-			}
-		}
-	}
-	focus = {
 		id = MAC_to_east
 		icon = none
 		cost = 5
 		x = 0
 		y = 2
+		ai_will_do = {
+			factor = 1000
+		}
 		relative_position_id = MAC_annex_albania
 		prerequisite = {
 			focus = MAC_dismantle_serbia
@@ -611,6 +643,7 @@ focus_tree = {
 				AND = {
 					has_completed_focus = MAC_attack_france
 					has_completed_focus = MAC_albion_must_submit
+					has_completed_focus = MAC_destroy_the_huns
 				}
 			}
 		}
@@ -659,12 +692,13 @@ focus_tree = {
 		x = 0
 		y = 1
 		ai_will_do = {
-			factor = 0
-			modifier = {
-				AND = {
-					has_completed_focus = MAC_attack_france
-				}
-			}
+			factor = 10000
+			# modifier = {
+			# 	AND = {
+			# 		has_completed_focus = MAC_attack_france
+			# 	}
+			# 	factor = 10000
+			# }
 		}
 		relative_position_id = MAC_seize_arabia
 		prerequisite = {
@@ -689,12 +723,13 @@ focus_tree = {
 		x = 0
 		y = 1
 		ai_will_do = {
-			factor = 0
-			modifier = {
-				AND = {
-					has_completed_focus = MAC_attack_france
-				}
-			}
+			factor = 1000
+			# modifier = {
+			# 	AND = {
+			# 		has_completed_focus = MAC_attack_france
+			# 	}
+			# 	factor = 1000
+			# }
 		}
 		relative_position_id = MAC_eliminate_iran
 		prerequisite = {
@@ -719,12 +754,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		ai_will_do = {
-			factor = 0
-			modifier = {
-				AND = {
-					has_completed_focus = MAC_attack_france
-				}
-			}
+			factor = 10000
+			# modifier = {
+			# 	AND = {
+			# 		has_completed_focus = MAC_attack_france
+			# 	}
+			# }
 		}
 		relative_position_id = MAC_the_way_to_india
 		prerequisite = {
@@ -783,8 +818,9 @@ focus_tree = {
 			factor = 0
 			modifier = {
 				AND = {
-					has_completed_focus = MAC_attack_france
+					has_completed_focus = MAC_pillage_iberia
 				}
+				factor = 10000
 			}
 		}
 		relative_position_id = MAC_the_way_to_china
@@ -824,7 +860,16 @@ focus_tree = {
 			focus = MAC_remove_russia
 		}
 		prerequisite = {
-			focus = MAC_albion_must_submit
+			focus = MAC_pillage_iberia
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1000000
+				has_completed_focus = MAC_pillage_iberia
+				has_completed_focus = MAC_remove_russia
+				
+			}
 		}
 		relative_position_id = MAC_albion_must_submit
 		completion_reward = {
@@ -847,6 +892,9 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = MAC_the_rest_of_the_world
+		}
+		ai_will_do = {
+			factor = 10000
 		}
 		relative_position_id = MAC_the_rest_of_the_world
 		completion_reward = {
