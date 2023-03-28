@@ -217,5 +217,21 @@ bookmarks = {
         PHI_on_our_own
       }
     }
+    "FIN" = {
+      history = "FIN_FUHRERREDUX_DESC"
+      ideology = social_liberal
+      minor = yes
+      ideas = {
+        FIN_winter_war
+        FIN_finland_marches_on_idea
+        FIN_silver_decade_idea
+      }
+      focuses = {
+        FIN_finlands_bold_opportunity
+        FIN_for_victory
+        FIN_declare_our_claims
+      }
+    }
+
   }
 }

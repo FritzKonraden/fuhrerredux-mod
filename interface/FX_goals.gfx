@@ -1851,4 +1851,37 @@ spriteTypes = {
 		name = "GFX_goal_SPA_Chairwoman_Ibarruri"
 		texturefile = "gfx/interface/goals/SPA_Chairwoman_Ibarruri.png"
 	}
+	#FINLAND WINTER WAR BRANCH
+	spriteType = {
+		name = "GFX_goal_FIN_attack_soviets"
+		textureFile = "gfx/interface/goals/FIN_attack_soviets.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FIN_integrate_karelia"
+		textureFile = "gfx/interface/goals/FIN_integrate_karelia.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FIN_aviation_training"
+		textureFile = "gfx/interface/goals/Aviation_training.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FIN_army_training"
+		textureFile = "gfx/interface/goals/FIN_expand_army.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FIN_winter_war"
+		textureFile = "gfx/interface/goals/FIN_winter_war.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FIN_preparing_economy"
+		textureFile = "gfx/interface/goals/FIN_preparing_economy.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FIN_construct_factories"
+		textureFile = "gfx/interface/goals/FIN_construct_factories.png"
+	}
+	spriteType = {
+		name = "GFX_goal_FIN_for_victory"
+		textureFile = "gfx/interface/goals/FIN_for_victory.png"
+	}
 }

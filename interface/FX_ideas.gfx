@@ -323,4 +323,9 @@ spriteTypes = {
 	  name = "GFX_idea_CLB_surounded"
 	  texturefile = "gfx/interface/ideas/ideas/CLB_surounded.png"
   }
+  #fin winter war
+  spriteType = {
+	name = "GFX_idea_FIN_winter_war" 
+	textureFile = "gfx/interface/ideas/ideas/FIN_winter_war.png" 
+  }
 }
