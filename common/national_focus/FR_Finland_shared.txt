@@ -2177,8 +2177,8 @@
 		id = FIN_finlands_bold_opportunity
 		icon = GFX_goal_FIN_integrate_karelia
 		cost = 3
-		x = 25
-		y = 2
+		x = 40
+		y = 3
 		available = {
 			AND = {
 				is_puppet = no
