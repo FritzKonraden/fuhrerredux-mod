@@ -18,6 +18,24 @@ ideas = {
 				army_bonus_air_superiority_factor = 0.5
 				army_fuel_capacity_factor = 100
 				army_fuel_consumption_factor = -100
+				attrition = -1
+				supply_consumption_factor = -1
+				breakthrough_factor = 10000
+				supply_factor = 10000
+			}
+		}
+		BUL_war_with_alexander = {
+			allowed = {
+				original_tag = BUL
+				MAC = {
+					has_completed_focus = MAC_rearm_our_legions
+				}
+			}
+			targeted_modifier = {
+				tag = BUL
+				breakthrough_factor = -1000
+				army_morale = -100
+				conscription = -100
 			}
 		}
 	}
