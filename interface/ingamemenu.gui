@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "ingamemenu"
 		position = { x = 0 y = 0 }	
-		size = { width = 320 height = 415}
+		size = { width = 320 height = 450}
 		Orientation = center
 		Origo = center		
 		fade_time = 500
@@ -64,20 +64,20 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 		
-		# buttonType = {
-		# 	name = "menu_wiki_button"
-		# 	position = { x = 16 y = 138}
-		# 	quadTextureSprite ="GFX_main_lobby_button"	
-		# 	buttonText = "MENU_BAR_GAME_WIKI"
-		# 	buttonFont = "hoi_24header"
-		# 	clicksound = click_default
-		# 	oversound = ui_menu_over
-		# 	web_link = ""
-		# }
+		buttonType = {
+			name = "menu_wiki_button"
+			position = { x = 16 y = 178}
+			quadTextureSprite ="GFX_main_lobby_button"	
+			buttonText = "MENU_BAR_GAME_WIKI"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+			web_link = ""
+		}
 		
 		buttonType = {
 			name = "menu_resign_button"
-			position = { x = 16 y = 178}
+			position = { x = 16 y = 218}
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_GAME_RESIGN"
 			buttonFont = "hoi_24header"
@@ -87,7 +87,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "menu_quit_button"
-			position = {  x = 16 y = 218 }
+			position = {  x = 16 y = 258 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_QUIT"
 			buttonFont = "hoi_24header"
@@ -97,7 +97,7 @@ guiTypes = {
 				
 		buttonType = {
 			name = "menu_close_button"
-			position = { x = 16 y = 300 }
+			position = { x = 16 y = 318 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonFont = "hoi_24header"
 			buttonText = "CLOSE"
@@ -114,7 +114,7 @@ guiTypes = {
 		## facebook etc.
 		ButtonType = {
 			name = "homepage_button"
-			position = { x = 79 y = 349 }
+			position = { x = 79 y = 375 }
 			quadTextureSprite ="homepage"
 			clicksound = click_default
 			pdx_tooltip = "FX_MENU_HOMEPAGE"
@@ -122,7 +122,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "forum_button"
-			position = { x = 119 y = 349 }
+			position = { x = 119 y = 375 }
 			quadTextureSprite ="forum"
 			clicksound = click_default
 			pdx_tooltip = "FX_MENU_FORUM"
@@ -130,7 +130,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "facebook_button"
-			position = { x = 159 y = 349 }
+			position = { x = 159 y = 375 }
 			quadTextureSprite ="facebook"
 			clicksound = click_default
 			pdx_tooltip = "FX_MENU_FACEBOOK"
@@ -138,7 +138,7 @@ guiTypes = {
 		}			
 		ButtonType = {
 			name = "twitter_button"
-			position = { x = 199 y = 349 }
+			position = { x = 199 y = 375 }
 			quadTextureSprite ="twitter"
 			#clicksound = click_default
 			pdx_tooltip = "FR_MENU_TWITTER"
