@@ -133,12 +133,13 @@ focus_tree = {
 		cost = 5
 		x = 29
 		y = 0
-		
+
 		available = {
-			always = no
-			custom_trigger_tooltip = { tooltip = unlocked_later  }
+			hidden_trigger = {
+				always = no
+			}
 		}
-		
+	
 		bypass = {
 			has_country_flag = BEA_continuation_of_british_rule_flag
 		}
@@ -149,6 +150,7 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEA_continuation_of_british_rule"
+			custom_effect_tooltip = BEA_continuation_of_british_rule_tt
 		}
 
 	}
@@ -160,8 +162,9 @@ focus_tree = {
 		y = 0
 		
 		available = {
-			always = no
-			custom_trigger_tooltip = { tooltip = unlocked_later  }
+			hidden_trigger = {
+				always = no
+			}
 		}
 		
 		bypass = {
@@ -174,6 +177,7 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEA_return_dutch_control"
+			custom_effect_tooltip = BEA_return_dutch_control_tt
 		}
 
 	}

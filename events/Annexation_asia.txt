@@ -430,7 +430,6 @@ country_event = { # Fate of Malaya
       remove_all_cores_and_claims_of_tags = yes
       MAL = {
         add_state_core = 336
-        add_state_core = 819
         add_state_core = 820
         add_state_core = 821
         add_state_core = 944

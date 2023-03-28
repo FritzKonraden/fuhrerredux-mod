@@ -75,7 +75,7 @@ set_convoys = 60
 set_stability = 0.35
 set_war_support = 0.30
 
-set_cosmetic_tag = CHI_fragmented
+set_cosmetic_tag = CHI_nanjing
 
 set_politics = {
 	ruling_party = authoritarian_democrat

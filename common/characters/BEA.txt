@@ -40,7 +40,7 @@ characters = {
 		}
 	}
 	BEA_JFC_Fuller = {
-		name = "JFC Fuller"
+		name = "John Frederick Charles Fuller"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/BEA/Portrait_BEA_JFC_Fuller.png"

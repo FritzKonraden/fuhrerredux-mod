@@ -37,33 +37,6 @@ characters = {
 			}
 		}
 	}
-	HOL_Henri_Nicolas_Alfred_Swart = {
-		name = "Henri Nicolas Alfred Swart"
-		portraits = {
-			civilian = {
-        large = "gfx/leaders/HOL/Portrait_HOL_Henri_Nicolas_Alfred_Swart.png"
-				small = "gfx/interface/ministers/HOL/HOL_Henri_Nicolas_Alfred_Swart.png"
-			}
-		}
-		advisor = {
-			cost = 150
-			slot = head_of_government
-			available = { 
-				hidden_trigger = { has_country_flag = HOL_Henri_Nicolas_Alfred_Swart_hog_pau_hired }
-			}
-			idea_token = HOL_Henri_Nicolas_Alfred_Swart_hog_pau
-			on_add = {
-				ROOT = { set_country_flag = HOL_Henri_Nicolas_Alfred_Swart_hog_pau_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = HOL_Henri_Nicolas_Alfred_Swart_hog_pau_hired }
-			}
-			traits = {
-				paternal_autocrat
-				hog_charismatic_charmer
-			}
-		}
-	}
 	HOL_Cornelis_van_Geelkerken = {
 		name = "Cornelis van Geelkerken"
 		portraits = {

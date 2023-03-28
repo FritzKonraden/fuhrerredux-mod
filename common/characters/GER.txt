@@ -473,7 +473,7 @@ characters = {
     name = "Maximilian von Weichs"
     portraits = {
 			army = {
-				large = "gfx/leaders/GER/Portrait_GER_Maximilian_von_Weichs.png"
+				large = "gfx/leaders/Generic/Portrait_Germany_Generic_land_5.png"
 			}
 		}
 		corps_commander = {
@@ -2176,25 +2176,25 @@ characters = {
 			}
 		}
 	}
-	GER_WIlli_Stoph = {
-		name = "WIlli Stoph"
+	GER_Willi_Stoph = {
+		name = "Willi Stoph"
 		portraits = {
 			civilian = {
-				small = "gfx/interface/ministers/GER/GER_WIlli_Stoph.png"
+				small = "gfx/interface/ministers/GER/GER_Willi_Stoph.png"
 			}
 		}
 		advisor = {
 			cost = 150
 			slot = economy_minister
 			available = { 
-				hidden_trigger = { has_country_flag = GER_WIlli_Stoph_eco_col_hired }
+				hidden_trigger = { has_country_flag = GER_Willi_Stoph_eco_col_hired }
 			}
-			idea_token = GER_WIlli_Stoph_eco_col
+			idea_token = GER_Willi_Stoph_eco_col
 			on_add = {
-				ROOT = { set_country_flag = GER_WIlli_Stoph_eco_col_hired }
+				ROOT = { set_country_flag = GER_Willi_Stoph_eco_col_hired }
 			}
 			on_remove = {
-				ROOT = { clr_country_flag = GER_WIlli_Stoph_eco_col_hired }
+				ROOT = { clr_country_flag = GER_Willi_Stoph_eco_col_hired }
 			}
 			traits = {
 				collectivist

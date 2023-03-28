@@ -1035,3 +1035,13 @@ is_xinjiang = {
 		state = 619
 	}
 }
+doesnt_have_socialist_party = {
+	NOT = {
+		OR = {
+			has_government = collectivist
+			has_government = libertarian_socialist
+			has_government = vanguardist
+		}
+	}
+	
+}

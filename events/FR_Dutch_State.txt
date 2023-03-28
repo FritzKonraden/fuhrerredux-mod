@@ -1830,7 +1830,7 @@ country_event = { # The Prince Assumes Complete Control
     }
     remove_every_minister = yes
     add_ideas = {
-      HOL_Henri_Nicolas_Alfred_Swart_hog_pau
+      HOL_Izaak_Reynders_hog_ade
       HOL_Jan_Baars_for_pau
       HOL_Henri_Johannes_ter_Hal_eco_pau
       HOL_Frederik_Carel_Gerretson_sec_pau
@@ -1867,7 +1867,7 @@ country_event = { # Prince Bernhard Assassinated!
       }
     }
     add_country_leader_role = {
-      character = HOL_Henri_Nicolas_Alfred_Swart
+      character = HOL_Izaak_Reynders
       promote_leader = yes
       country_leader = {
         ideology = paternal_autocrat_subtype
@@ -2123,7 +2123,7 @@ country_event = { # Fall of the Nationalist Government
         }
       }
       add_country_leader_role = {
-        character = HOL_Henri_Nicolas_Alfred_Swart
+        character = HOL_Izaak_Reynders
         promote_leader = yes
         country_leader = {
           ideology = paternal_autocrat_subtype

@@ -24,6 +24,7 @@ has_custom_ministers = {
     tag = JAP
     tag = MAN
     tag = MEX
+    tag = NAR
     tag = NOR
     tag = PER
     tag = PHI

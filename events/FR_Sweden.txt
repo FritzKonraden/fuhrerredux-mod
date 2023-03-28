@@ -366,7 +366,7 @@ country_event = {
 		}
 		remove_every_minister = yes
 		add_ideas = {
-			SWE_Fritiof_Domoe_hog_sco
+			SWE_Fritiof_Domo_hog_sco
 			SWE_Martin_Skoglund_for_sco
 			SWE_Goesta_Bagge_eco_sco
 			SWE_Carlos_Adlercreutz_sec_ade
@@ -393,7 +393,7 @@ country_event = {
 		}
 		remove_every_minister = yes
 		add_ideas = {
-			SWE_Fritiof_Domoe_hog_sco
+			SWE_Fritiof_Domo_hog_sco
 			SWE_Erik_von_Rosen_for_npo
 			SWE_Ernst_Trygger_eco_sco
 			SWE_Carlos_Adlercreutz_sec_ade
@@ -991,7 +991,7 @@ country_event = {
 		hidden_effect = {
 			remove_every_minister = yes
 			add_ideas = {
-				SWE_Fritiof_Domoe_hog_sco
+				SWE_Fritiof_Domo_hog_sco
 				SWE_Gustaf_Andersson_i_Rasjon_for_mli
 				SWE_Ernst_Trygger_eco_sco
 				SWE_Jarl_Hjalmarson_sec_sco

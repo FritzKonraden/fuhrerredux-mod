@@ -4,6 +4,7 @@
 ###########################
 
 add_namespace = uk
+add_namespace = uknews
 
 ###########################
 # - Opening Lore Event
@@ -10788,120 +10789,6 @@ country_event = {
 # - News-Worthy Events
 ###########################
 
-
-###########################
-# - Death of KGV
-###########################
-
-add_namespace = uknews
-
-#news_event = {
-	#id = uknews.1
-	#title = "A Peaceful Ending at Midnight"
-	#desc = uknews.1.d
-	#picture = GFX_news_event_generic_funeral
-	
-	#major = yes
-	
-	#trigger = {
-		#date > 1936.1.20
-		#NOT = { has_global_flag = gv_dead }
-		#NOT = { tag = ENG }
-	#}
-	
-	#mean_time_to_happen = {
-		#days = 1
-	#}
-	
-	#immediate = { set_global_flag = gv_dead }
-	
-	#option = {
-		#trigger = {
-			#OR = {
-				#tag = CAN
-				#tag = AST
-				#tag = NZL
-				#tag = SAF
-				#tag = RAJ
-			#}
-		#}
-		#name = "More than a King, a father of a great family"
-		#add_political_power = -50
-	#}
-	
-	#option = {
-		#trigger = {
-			#NOT = {
-				#AND = {
-					#tag = CAN
-					#tag = AST
-					#tag = NZL
-					#tag = SAF
-					#tag = RAJ
-				#}
-			#}
-		#}
-		#name = "A new King. A new Empire?"
-	#}
-	
-#}
-
-###########################
-# - London Stock Market Crash
-###########################
-
-#news_event = {
-	#id = uknews.2
-	#title = "London Stock Market Crash"
-	#desc = uknews.2.d
-	#picture = GFX_news_event_gathering_protest
-	
-	#major = yes
-	
-	#trigger = {
-		#ENG = { has_country_flag = black_wednesday }
-		#NOT = { has_global_flag = london_crash }
-		#NOT = { tag = ENG }
-	#}
-	
-	#mean_time_to_happen = {
-		#days = 1
-	#}
-	
-	#immediate = { set_global_flag = london_crash }
-	
-	#option = {
-		#trigger = {
-			#OR = {
-				#tag = CAN
-				#tag = AST
-				#tag = NZL
-				#tag = SAF
-				#tag = RAJ
-			#}
-		#}
-		#name = "This is sure to affect the entire Empire"
-		#add_political_power = -100
-	#}
-	
-	#option = {
-		#trigger = {
-			#NOT = {
-				#AND = {
-					#tag = CAN
-					#tag = AST
-					#tag = NZL
-					#tag = SAF
-					#tag = RAJ
-				#}
-			#}
-		#}
-		#name = "Unstable times ahead"
-	#}
-	
-#}
-
-
 news_event = {
 	id = uknews.3
 	immediate = {log = "[GetDateText]: [Root.GetName]: event uknews.3"}
@@ -11012,7 +10899,7 @@ news_event = {
 news_event = {
 	id = uknews.5
 	immediate = {log = "[GetDateText]: [Root.GetName]: event uknews.5"}
-    title = "Indian Rebellion of 1935"
+    title = uknews.5.t
     desc = uknews.5.d
     picture = GFX_news_event_kiev_ruins
 

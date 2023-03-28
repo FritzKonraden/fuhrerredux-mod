@@ -210,24 +210,24 @@ on_actions = {
         # Buenos Aires
         if = {
           limit = {
-            FROM.FROM = { state = 327 }
-            ROOT = { controls_province = 10265 }
+            FROM.FROM = { state = 278 }
+            ROOT = { controls_province = 12364 }
           }
           news_event = capture.25
         }
         # Rio de Janiero
         if = {
           limit = {
-            FROM.FROM = { state = 327 }
-            ROOT = { controls_province = 10265 }
+            FROM.FROM = { state = 500 }
+            ROOT = { controls_province = 10980 }
           }
           news_event = capture.26
         }
         # Santiago
         if = {
           limit = {
-            FROM.FROM = { state = 327 }
-            ROOT = { controls_province = 10265 }
+            FROM.FROM = { state = 279 }
+            ROOT = { controls_province = 650 }
           }
           news_event = capture.27
         }

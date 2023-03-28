@@ -2475,6 +2475,7 @@ country_event = { # New England Seceeds
 			}
 			NEE = {
 				load_oob = "NEE"
+				transfer_technology = yes 
 			}
 		}
   }
@@ -2542,7 +2543,10 @@ country_event = { # Midwest Seceeds
 					}
 				}
 			}
-			CLB = { load_oob = "CLB" }
+			CLB = { 
+				load_oob = "CLB"
+				transfer_technology = yes 
+			}
 		}
 	}
 
@@ -2605,7 +2609,10 @@ country_event = { # Rust Belt
 					}
 				}
 			}
-			NAR = { load_oob = "NAR" }
+			NAR = { 
+				load_oob = "NAR"
+				transfer_technology = yes 
+			}
 			set_nationality = {
 			  character = USA_George_S_Patton
 			  target_country = NAR
@@ -2657,6 +2664,13 @@ country_event = { # UK Seizes Cascadia, Puerto Rico, Alaska
 
 	immediate = {
 		hidden_effect = {
+			HAW = {
+				add_state_core = 727
+				add_state_core = 642
+				add_state_core = 630
+				add_state_core = 631
+				add_state_core = 632
+			}
 			every_owned_state = {
 				limit = {
 					OR = {
@@ -2665,10 +2679,17 @@ country_event = { # UK Seizes Cascadia, Puerto Rico, Alaska
 						state = 686
 						state = 463
 						state = 629
+						state = 727
+						state = 642
+						state = 630
+						state = 631
+						state = 632
+						state = 832
 					}
 				}
 				ENG = { transfer_state = PREV }
 				USA = {
+					add_state_claim = PREV
 					delete_unit = {
 						state = PREV
 						disband = no
@@ -3023,7 +3044,7 @@ country_event = { # Demand the Return of the Territories
 	option = {
 		name = usa.111.a
 		ai_chance = {
-			factor = 20
+			base = 100
 			modifier = {
 				tag = ENG
 				has_war_with = GER

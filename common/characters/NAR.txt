@@ -117,13 +117,12 @@ characters = {
 			}
 		}
 		field_marshal = {
-			traits = {
-			}
+			traits = { brilliant_strategist politically_connected }
 			skill = 2
-			attack_skill = 2
-			defense_skill = 4
-			planning_skill = 1
-			logistics_skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
 		}
 		advisor = {
 			cost = 150
@@ -139,16 +138,24 @@ characters = {
 		portraits = {
 			army = {
 				large = "gfx/leaders/NAR/Portrait_NAR_Jacob_L_Devers.png"
+				small = "gfx/interface/ministers/NAR/NAR_Jacob_L_Devers.png"
 			}
 		}
 		corps_commander = {
-			traits = {
-			}
+			traits = { artillery_officer trait_reckless artillery_specialist }
 			skill = 3
-			attack_skill = 3
-			defense_skill = 4
-			planning_skill = 1
-			logistics_skill = 4
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		advisor = {
+			cost = 150
+			slot = high_command
+			idea_token = NAR_Jacob_L_Devers_cos
+			traits = {
+				cos_school_of_fire_support
+			}
 		}
 	}
 	NAR_Matthew_Ridgway = {
@@ -156,16 +163,32 @@ characters = {
 		portraits = {
 			army = {
 				large = "gfx/leaders/NAR/Portrait_NAR_Matthew_Ridgway.png"
+				small = "gfx/interface/ministers/NAR/NAR_Matthew_Ridgway.png"
 			}
 		}
 		corps_commander = {
-			traits = {
-			}
+			traits = { inflexible_strategist trait_cautious commando }
 			skill = 4
 			attack_skill = 2
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 3
+		}
+		advisor = {
+			cost = 150
+			slot = high_command
+			idea_token = NAR_Matthew_Ridgway_cos
+			traits = {
+				cos_school_of_commando_operations
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = army_chief
+			idea_token = NAR_Matthew_Ridgway_carm
+			traits = {
+				carm_commando_doctrine
+			}
 		}
 	}
 	NAR_Bruce_C_Clarke = {
@@ -173,16 +196,24 @@ characters = {
 		portraits = {
 			army = {
 				large = "gfx/leaders/NAR/Portrait_NAR_Bruce_C_Clarke.png"
+				small = "gfx/interface/ministers/NAR/NAR_Bruce_C_Clarke.png"
 			}
 		}
 		corps_commander = {
-			traits = {
-			}
+			traits = { harsh_leader panzer_leader }
 			skill = 3
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 3
 			logistics_skill = 3
+		}
+		advisor = {
+			cost = 150
+			slot = army_chief
+			idea_token = NAR_Bruce_C_Clarke_carm
+			traits = {
+				carm_armoured_spearhead_doctrine
+			}
 		}
 	}
 	NAR_Fox_Conner = {
@@ -190,16 +221,24 @@ characters = {
 		portraits = {
 			army = {
 				large = "gfx/leaders/NAR/Portrait_NAR_Fox_Conner.png"
+				small = "gfx/interface/ministers/NAR/NAR_Fox_Conner.png"
 			}
 		}
 		corps_commander = {
-			traits = {
-			}
-			skill = 2
-			attack_skill = 1
+			traits = { old_guard politically_connected }
+			skill = 4
+			attack_skill = 3
 			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+		advisor = {
+			cost = 150
+			slot = army_chief
+			idea_token = NAR_Fox_Conner_carm
+			traits = {
+				carm_doctrine_of_autonomy
+			}
 		}
 	}
 	NAR_Arthur_L_Bristol = {
@@ -210,8 +249,7 @@ characters = {
 			}
 		}
 		navy_leader = {
-			traits = {
-			}
+			traits = { ironside navy_career_officer }
 			skill = 4
 			attack_skill = 4
 			defense_skill = 1
@@ -227,7 +265,7 @@ characters = {
 			}
 		}
 		navy_leader = {
-			traits = { }
+			traits = { old_guard_navy chief_engineer navy_career_officer }
 			skill = 2
 			attack_skill = 3
 			defense_skill = 4
@@ -244,7 +282,7 @@ characters = {
 			}
 		}
 		navy_leader = {
-			traits = { }
+			traits = { aviation_enthusiast superior_tactician }
 			skill = 1
 			attack_skill = 3
 			defense_skill = 1

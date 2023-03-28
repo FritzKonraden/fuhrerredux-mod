@@ -230,7 +230,7 @@ add_starting_ministers = {
       MAN_Zhang_Zuolin_hog_ade
       MAN_Wu_Jinglian_for_ade
       MAN_Pan_Fu_eco_ade
-      MAN_Ma_Zhanshan_sec_pau
+      MAN_Tang_Yulin_sec_pau
     }
   }
   # Mexico
@@ -248,7 +248,7 @@ add_starting_ministers = {
       NAR_Walter_C_Teagle_hog_pau
       NAR_William_Bell_Riley_for_pau
       NAR_Charles_Emil_Sorensen_eco_pau
-      NAR_Clare_Eugene_Hoffman_sec_pau
+      NAR_DW_Griffith_sec_pau
     }
   }
   # Norway

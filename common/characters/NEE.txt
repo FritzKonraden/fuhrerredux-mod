@@ -172,23 +172,4 @@ characters = {
 			coordination_skill = 1
 		}
 	}
-	NEE_Thomas_Kinkaid = {
-		name = "Thomas Kinkaid"
-		portraits = {
-			navy = {
-				large = "gfx/leaders/NEE/Portrait_NEE_Thomas_Kinkaid.png"
-			}
-		}
-		navy_leader = {
-			traits = {
-				spotter
-				superior_tactician
-			}
-			skill = 4
-			attack_skill = 4
-			defense_skill = 1
-			maneuvering_skill = 3
-			coordination_skill = 4
-		}
-	}
 }

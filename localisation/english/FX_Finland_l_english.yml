@@ -176,6 +176,8 @@ FIN_democracy_workplace_idea: "Workplace Democracy"
 FIN_strengthen_labour_unions_idea: "Workplace Democracy"
 
 FIN_finno_soviet_war_idea: "The Finno-Soviet War"
+FIN_winter_war_idea: "Winter War"
+FIN_winter_war_idea_desc: "With the Finnish struggle against the Russian Bear, they have figured that they must use their weather and terrain to their advantage in deadly battles of attrition."
 
 # Companies
 nokia: "Nokia"
@@ -469,6 +471,25 @@ FIN_decentralisation_power: "Decentralization of Power"
 FIN_decentralisation_power_desc: ""
 FIN_legacy_finnish_red: "Legacy of the Finnish Reds"
 FIN_legacy_finnish_red_desc: ""
+FIN_finlands_bold_opportunity: "Finlands Bold Opportunity"
+FIN_finlands_bold_opportunity_desc: "Seeing that the bear to our east is busy with the Germans, we use our opportunity before we lose our chance forever. With economy, military, and government reforms, we can become a power the Red Menace will never be able to subdue. A wolf they can never put down. The cleaning force to vanquish the great stain of the earth, the Soviet Union. Suomi shall rise!"
+FIN_strengthening_the_mannerheim_line: "Strengthening The Mannerheim Line"
+FIN_strengthening_the_mannerheim_line_desc: "With the Soviets right on our border, and our great city of Viipuri just out of the Russian hands, we must defend our heartland where our agriculture and industry lies. With an extended fortification program on the Mannerheim line, a fort line named after our great Carl Gustaf Emil Mannerheim, we will keep the forces of Mother Russia from ever making it to Helsinki."
+FIN_expanding_the_army: "Expanding the Army"
+FIN_expanding_the_army_desc: "Seeing the might of the Red Army with its uncountable amount of men, we have to input our own army reforms to help improve our armed forces and break the enemy morale. For you dont want to fight an enemy that is much more powerful and experienced than you. Seeing that your fight is futile and you will soon be overpowered and massacred by them."
+FIN_preparing_the_airforce: "Preparing the Airforce"
+FIN_preparing_the_airforce_desc: "With the Soviet Union in firm control of the skies, we have to assert ourselves before they blow us to dust. With extended air production, we will one day see our planes over Moscow rather than Soviets air junkies over Helsinki."
+FIN_construction_of_military_factories: "Construction of Military Factories"
+FIN_construction_of_military_factories_desc: "For production of equipment to feed and arm our men out in the fields, it is necessary to build the Finnish military industry up even more. By leasing out government funds to military production companies, we can give our men all they will need to fight well."
+FIN_preparing_the_economy: "Preparing the Economy"
+FIN_preparing_the_economy_desc: "Our economy compared to the power we are fighting is not the greatest, and we need it for our military. Sure we came our of our silver decade not long ago, but ever since the London Stock Market Crash, we have been thrown down the economic pillar as it collapsed under us. So it is needed for economic reforms and reduced government spending to put into our war machine so we can have an economy developed for war."
+FIN_winter_war: "Winter War"
+FIN_winter_war_desc: "By using the winter to our advantage, we can liquidify the Russian menace into the meat grinder. By that I mean wars of attrition. If the Russians freeze to death or get cut down by our winter trained skiiers, we can finally put an end to a true Russian army during the fourth season."
+FIN_declare_our_claims: "Declare our Claims"
+FIN_declare_our_claims_desc: "By declaring our claims to the Russians, we can alert the world of Finlands ambitions. The world can talk and squabble about us but we will power on. Finland will finally show its teeth."
+FIN_for_victory: "For Victory!"
+FIN_for_victory_desc: "We have done all needed precautions to assure that a war with the Soviet Union wouldn't be a full blown disaster. With our rifle and our skis, we can seperate the hammer and sickle forever. March on Moscow and tear their horrible regime apart. Occupy Murmansk and far beyond. Finland will forever be great! Hakkaa päälle!"
+
 
 
 ### Events ###
