@@ -4,6 +4,7 @@ ideas = {
 			allowed = {
 				has_completed_focus = MAC_rearm_our_legions
 			}
+			picture = "GFX_idea_MAC_macedonian_undefeatable_legions"
 			modifier = {
 				conscription = 0.35
 				army_morale = 1000

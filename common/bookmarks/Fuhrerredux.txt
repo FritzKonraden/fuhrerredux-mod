@@ -6,7 +6,6 @@ bookmarks = {
     picture = GFX_select_date_1936
     default_country = "PHI"
     default = yes
-
     #### Majors
     # "MAC" = {
     #   history = "MAC_FUHRERREDUX_DESC"
@@ -242,6 +241,5 @@ bookmarks = {
         FIN_declare_our_claims
       }
     }
-
   }
 }
