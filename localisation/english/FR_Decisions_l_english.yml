@@ -27,7 +27,17 @@ war_propaganda_against_warmonger:1 "War Propaganda Against [From.GetName]"
 war_propaganda_against_warmonger_desc: "The nation calls for every man, woman and child. A war like that of [From.GetName] could happen here as well."
 war_propaganda_against_warmonger_neighbor:1 "War Propaganda Against [From.GetName]"
 war_propaganda_against_warmonger_neighbor_desc: "Tomorrow [From.GetName] could be our enemy. We need YOU to defend your country TODAY!"
-
+war_propaganda_casualties: "Exhort Heroism"
+war_propaganda_casualties_desc: "Although the death toll rises, our people must be taught that only in battle are heroes forged."
+war_propaganda_convoys: "Encourage Frugality"
+war_propaganda_convoys_desc: "Even civilians can help win the war - by care and attention to our material usage, every gram of steel can be made twice as valuable to the war effort."
+war_propaganda_bombing: "Bolster Spirits"
+war_propaganda_bombing_desc: "Though bombs fall all around us, our brave workers soldier on. It is by this spirit that we will be victorious."
+war_support_during_war: "War Support"
+war_propaganda_radio_industry: "Radio Propaganda"
+war_propaganda_radio_industry_desc: "Technology has developed to a point where a significant proportion of our population has access to a home radio. State sponsored media is the perfect tool for stoking the war effort in the hearts of our people."
+war_propaganda_campaign_running: " Already running a war propaganda campaign"
+ 
 increase_popularity_vang: "Have [Root.GetLeader] hold a speech" #Might and Strength.
 increase_popularity_vang_desc: "Some may criticize us for advocating a strong state... Let them criticize! A strong state is the only way to achieve Karl Marx's envisionment of Socialism; we will go as far as necessary; and we will be sure the People are aware of that."
 increase_popularity_collie: "Popularize Marxist Literature" #Revolutionary and Orthodox.
@@ -52,17 +62,11 @@ increase_popularity_valkist: "Indoctrinate the Populace" #Revived and Radical.
 increase_popularity_valkist_desc: "The core principles of [Root.GetAdjective] Valkism must be instilled in the Population. Starting with the Youth and then moving onto the Old, we'll ensure their loyalty to [Root.GetName]."
 
 centralized_economic_planning: "Centralized Economic Planning"
-#centralized_economic_planning_desc: "In order to better coordinate our economy; we'll undertake initiate Centralized Economic planning."
 decentralized_economic_planning: "Decentralized Economic Planning"
-#decentralized_economic_planning_desc: "In order to promote self-management and self-reliability; we'll undertake various decentralized economic planning programmes."
 industrial_privatization: "Industrial Privatization"
-#industrial_privatization_desc: ""
-economic_regulation: "Regulate key Industries"
-#economic_regulation_desc: ""
+economic_regulation: "Pass Industrial Regulations"
 nationalize_key_industries: "Nationalize key Industries"
-#nationalize_key_industries_desc: ""
 nationalize_foreign_industries: "Nationalize foreign Industries"
-#nationalize_foreign_industries_desc: ""
 
 ##INDUSTRIAL DECISIONS##
 economic_demobilization: "Economic Demobilization"
@@ -104,6 +108,26 @@ cut_red_tape_desc: "Our nation is far too bureaucratic, to the point it's almost
 factory_comission_flag: "Has not already had a commission for a Factory"
 resources_exploited_flag: "Has not already been exploited for Resources"
 
+return_cores_to_ally: "Return [From.GetAdjective] Lands"
+return_cores_to_ally_desc: "The [Root.GetAdjective] government has been discussing what to do with the [From.GetAdjective] lands we currently occupy - land which we have no rightful claim to. Should we return the land to our [From.GetAdjective] allies?"
+return_cores_to_subject: "Return [From.GetAdjective] Lands"
+return_cores_to_subject_desc: "The [Root.GetAdjective] government has been discussing what to do with the [From.GetAdjective] lands we currently occupy - land which we have no rightful claim to. Should we return the land to our subjects in [From.GetNameDef]?"
+
 NO_GENERIC_STABILITY_DECISIONS: " Generic stability decisions disabled"
 NO_GENERIC_RESOURCE_DECISIONS: " Generic resource decisions disabled"
 NO_GENERIC_PROPAGANDA_DECISIONS: " Generic propaganda decisions disabled"
+
+decisions.3.t: "The [From.From.GetAdjective] Lands"
+decisions.3.d: "The [Root.GetAdjective] government has been discussing what to do with the [return_to.GetAdjective] lands we currently occupy - land which we have no rightful claim to. Should we return this land to them?"
+decisions.3.a: "Yes, return all land to them"
+FX_will_return_all: "All coastal or contiguous owned states which are [return_to.GetAdjective] cores or claims will be returned to §Y[return_to.GetNameDef]§!.\n\nNote this will §Rnot§! include states that are [Root.GetAdjective] §Yclaimed§! or §Ycore§! states."
+decisions.3.b: "Yes, return land to them... but keep the most vital states"
+FX_will_return_rest: "All coastal or contiguous owned states which are [return_to.GetAdjective] cores or claims will be returned to §Y[return_to.GetNameDef]§!.\n\nNote this will §Rnot§! include states that are [Root.GetAdjective] §Yclaimed§! or §Ycore§! states, nor will it include §Yvital§! states such as canals."
+decisions.3.c: "Return their core lands only"
+FX_will_return_cores: "All coastal or contiguous owned states which are [return_to.GetAdjective] cores will be returned to §Y[return_to.GetNameDef]§!.\n\nNote this will §Rnot§! include [Root.GetAdjective] §Yclaimed§! or §Ycore§! states, nor §Yvital§! states such as canals. Any [return_to.GetAdjective] §Yclaims§! will also be retained."
+decisions.3.e: "We will keep it all!"
+FX_will_not_return: "We will §Rnot§! return any of their lands, nor will we be asked to do so again."
+
+decisions.4.t: "[From.GetNameDefCap] Returns [Root.GetAdjective] Land"
+decisions.4.d: "Our allies in [From.GetNameDefCap] have returned some of our proper lands to us!"
+decisions.4.a: "Great!"
