@@ -1,4 +1,53 @@
-﻿#The HoI4 - Fuhrerreich team:
+﻿
+#Brought to you by the Fuhrerredux Team:
+
+#Trinity
+dax
+ToddHoward
+CaptainKaiczer
+
+#Talented Mod Team Members
+RAus
+thanasislanaras
+Pascal
+tmiklos
+The Dëtæīłêd Brëæd
+Fokeł
+Ahmed Pasha Al Said
+Crazy Green Hair Guy
+Maisel
+The Man Who Sold The World
+Thought_West
+9504
+ATonyAtLaw2021
+Autochrome
+Formula
+
+#Inactive Mod Team Members
+AmCath
+Steffplays123
+Angry Catholic
+JoeBidenWhatAreYouHiding
+ainsley
+Smigly
+Drowse
+Ghost Willy
+guerrillero
+Herobrana
+scipion34
+
+#Retired Members
+BobRossHD
+Lextzo
+Dej
+ainsley
+terroristguy
+Log
+David Lu
+
+#Thank you to the Fuhrerreich Team
+#For lettings us fork their mod
+#Of which we inherited:
 
 Darknight1342
 Jespertjee 
@@ -20,6 +69,136 @@ Raptor Jesus
 Hellbat
 Santander
 
+#Thank you to the Kaisserredux Team
+00matthew2000
+404NameNotFound
+about10balloons
+Alpha Simp
+AmCath
+AngryCatholic
+Avalon 
+Alonch
+Arvidus
+Big Agnar
+Bomber
+bchevy
+Brapiš
+cemeh
+Chaseair
+Chiang Kai-SWAG
+C. Kyle
+ClothCoat
+Eanred
+EmilianoZapata
+Eric_Crazy
+Fins_of_Finland
+Flameshot19
+Frelious
+Galaxi
+GamerDalaiLama66
+GamerShah
+gelurom
+General Doge
+Ghost Willy
+GoldenHat
+guneric
+HAKOPMNTE_DEDA
+Hain_Z
+Idlemancer
+Indyclone77
+Iranian Voodoo Doctor
+JewishBastard
+jocn
+JoeBidenWhatAreYouHiding
+Justyouraverage
+kaan
+Kakoopa 
+KaiserCharles
+LCPL Owen
+Lenin
+leol
+Log from Blammo!
+Logandp7
+Malidus
+Mladenov
+Mister R.K. Moskowien 
+MrCuba
+MrTomCruise
+Murphy
+Nickay
+New England
+O-K-I
+Oneven
+One Eyed Dragon 
+Ozmandiaz
+Pogge
+Providence
+Shimilu
+soclibdictator
+Todd Howard
+Tonitruant 
+Umerzaidi
+Vozhd
+Vlastelinum
+Waghlon
+Yaaaay
+Yaroslav007 
+Zapinus.
+
+#Thank you to the Kaissereich Team
+Adrianator2
+Alpinia
+Arvidus
+Asratius
+Augenis
+Blackfalcon501
+Carmain
+Chazem
+Conor
+DSFDarker
+El Daddy
+Flamefang
+Gaboemi
+Gideones
+Hamfast
+hildagrim
+Ido
+Igor050301
+JazzyHugh
+Jeankedezeehond
+Jonny BL
+KFateweaver
+Kennedy
+kergely
+Krčo
+Luwofe
+Matoro
+McOmghall
+~mw~ // miwaco
+NukeGaming
+OMD
+Owenomaly
+PPsyrius
+Pelmen
+RagnoStrangeros
+Rei VL
+Retrocognition
+Rnk
+Shiroe
+Starguard
+Story
+suzuha
+The Alpha Dog
+The Irredentista
+The Italian Jojo
+Vidyaország
+Zaddy-Chan
+Zimbabwe Salt Co.
+
+#Thank you to MnCnNn
+whom created the unit models that is integrated in this mod.
+
+
 #FR 0.3 "Latin Sisters" Credits:
 
 Darknight1342 - France rework
@@ -34,21 +213,10 @@ Steffplays123 - Spain and Afghanistan
 Arser - Bug fixes and 1.9.1 compatibility
 
 #Special Thanks:
-
 Chairman Meow
-The Kaiserreich team
 The New Order team
 The Spartakus team
 
-And to everyone who allowed FR to use their resources 
-
-#Our Generous Patrons:
-
-Revan
-DestinyHMX
-Cameron Newplain
-David Sirkin
-
 #And Most Of All:
 
-Thank You
+Thank You, the player

@@ -257,7 +257,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "career_profile_button"
-			position = { x = 10000 y = 10000 } #from KR: disabled, doesn't work with mods (originally 16,138)
+			position = { x = 16 y = 138 } #from KR: disabled, doesn't work with mods (originally 16,138) #From FX: enabled, works with mods
 			quadTextureSprite ="GFX_main_lobby_button"
 			buttonText = "MENU_BAR_CAREER_PROFILE"
 			buttonFont = "hoi_24header"
@@ -267,7 +267,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "credits_button"
-			position = { x = 16 y = 138 } #from KR: adjusted for career profile removal  (originally 16,178)
+			position = { x = 16 y = 178 } #from KR: adjusted for career profile removal  (originally 16,178) 
 			quadTextureSprite ="GFX_main_lobby_button"
 			buttonText = "FE_CREDITS"
 			buttonFont = "hoi_24header"
@@ -277,7 +277,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = 16 y = 178 } #from KR: adjusted for career profile removal  (originally 16,218)
+			position = { x = 16 y = 218 } #from KR: adjusted for career profile removal  (originally 16,218)
 			quadTextureSprite ="GFX_main_lobby_button"
 			buttonText = "Nudge!"
 			buttonFont = "hoi_24header"
