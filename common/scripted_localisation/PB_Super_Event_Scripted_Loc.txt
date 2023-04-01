@@ -7,6 +7,12 @@ defined_text = { #SUPER EVENT TITLES
 		}
 		localization_key = "GFX_SPEVNT_Alexander_The_Great"
 	}
+	# text = {
+	# 	trigger = {
+	# 		has_global_flag = MACEDON_CONQUERED_PERSIA_SUPEREVENT
+	# 	}
+	# 	localization_key = "GFX_SPEVNT_GFX_SPEVNT_Alexander_annexed_persia"
+	# }
 }
 
 defined_text = { #SUPER EVENT QUOTES
@@ -18,6 +24,12 @@ defined_text = { #SUPER EVENT QUOTES
 		}
 		localization_key = "GFX_SPEVNT_Alexander_The_Great_TEXT"
 	}
+	# text = {
+	# 	trigger = {
+	# 		has_global_flag = MACEDON_CONQUERED_PERSIA_SUPEREVENT
+	# 	}
+	# 	localization_key = "GFX_SPEVNT_Alexander_annexed_persia_TEXT"
+	# }
 }
 
 defined_text = { #SUPER EVENT REMARKS
@@ -29,6 +41,12 @@ defined_text = { #SUPER EVENT REMARKS
 		}
 		localization_key = "GFX_SPEVNT_Alexander_The_Great_REMARK"
 	}
+	# text = {
+	# 	trigger = {
+	# 		has_global_flag = MACEDON_CONQUERED_PERSIA_SUPEREVENT
+	# 	}
+	# 	localization_key = "GFX_SPEVNT_Alexander_annexed_persia_REMARK"
+	# }
 }
 
 defined_text = { #SUPER EVENT DESCS
@@ -40,6 +58,12 @@ defined_text = { #SUPER EVENT DESCS
 		}
 		localization_key = "GFX_SPEVNT_Alexander_The_Great_DESC"
 	}
+	# text = {
+	# 	trigger = {
+	# 		has_global_flag = MACEDON_CONQUERED_PERSIA_SUPEREVENT
+	# 	}
+	# 	localization_key = "GFX_SPEVNT_Alexander_annexed_persia_DESC"
+	# }
 }
 
 defined_text = { #ULTIMATE RADIO

@@ -9,7 +9,7 @@ news_event = { #Alexander The Great spoted peeing in a bush, by a Alexandrian tr
 		name = macedonia.1.a
 		news_event = {
 			id = macedonia.2
-			days = 10
+			days = 15
 		}
 	}
 }
@@ -25,6 +25,10 @@ news_event = { #Rumours have been confirmed, as Alexander was seen returning to 
 			transfer_state_to = MAC
 		}
 		MAC = { set_country_flag = MACEDON_FORMED_SUPEREVENT }
+		# news_event = {
+		# 	id = super.1
+		# 	days = 1
+		# }
 	}
 }
 news_event = { #Alexander visits greece
@@ -42,6 +46,26 @@ news_event = { #Alexander visits greece
 			}
 			GRE = {
 				country_event = macedonia.5
+			}
+		}
+		else = {
+			news_event = {
+				id = macedonia.4
+				days = 1
+				random_hours = 6
+			}
+			MAC = {
+				annex_country = {
+					target = GRE
+					transfer_troops = yes
+				}
+				every_state = {
+					limit = {
+						is_core_of = GRE
+					}
+					add_core_of = MAC
+				}
+				add_state_core = 765
 			}
 		}
 	}
@@ -76,6 +100,7 @@ news_event = { #Alexander annexes greece
 					}
 					add_core_of = MAC
 				}
+				add_state_core = 765
 			}
 		}
 		else = {
@@ -89,6 +114,13 @@ news_event = { #Alexander annexes greece
 					target = GRE
 					transfer_troops = yes
 				}
+				every_state = {
+					limit = {
+						is_core_of = GRE
+					}
+					add_core_of = MAC
+				}
+				add_state_core = 765
 			}
 		}
 	}
@@ -214,5 +246,68 @@ country_event = {
 				autonomy_state = autonomy_puppet
 			}
 		}
+	}
+}
+country_event = {
+	id = macedonia.8
+	title = macedonia.8.t
+	desc = macedonia.8.d
+	is_triggered_only = yes
+	option = {
+		name = macedonia.8.a
+	}
+}
+news_event = {
+	id = macedonia.9
+	title = macedonia.9.t
+	desc = macedonia.9.d
+	is_triggered_only = yes 
+	option = {
+		name = macedonia.9.a
+	}
+}
+country_event = {
+	id = macedonia.10
+	title = macedonia.10.a
+	desc = macedonia.10.d
+	is_triggered_only = yes
+	option = {
+		name = macedonia.10.a
+		set_country_leader_portrait = {
+			portrait = "GFX_portrait_MAC_Alexander_The_Great_Communist"
+		}
+		set_politics = {
+			ruling_party = collectivist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = -100
+		}
+		add_popularity = {
+			ideology = collectivist
+			popularity = 100
+		}
+	}
+	option = {
+		name = macedonia.10.b
+		set_country_leader_portrait = {
+			portrait = "GFX_portrait_MAC_Alexander_The_Great_Valkist"
+		}
+		set_politics = {
+			ruling_party = valkist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = -100
+		}
+		add_popularity = {
+			ideology = valkist
+			popularity = 100
+		}
+	}
+	option = {
+		name = macedonia.10.c
 	}
 }

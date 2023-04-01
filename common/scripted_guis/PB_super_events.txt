@@ -12,6 +12,9 @@ scripted_gui = {
 			Super_Event_Image_Alexander_The_Great_visible = {
 				has_global_flag = MACEDON_FORMED_SUPEREVENT
 			}
+			# Super_Event_Image_Alexander_Conquered_Persia_visible = {
+			# 	has_global_flag = MACEDON_CONQUERED_PERSIA_SUPEREVENT
+			# }
 		}
 		properties = {
 			Super_Event_Image_Default = {
@@ -29,6 +32,12 @@ scripted_gui = {
 					}
 					clr_country_flag = MACEDON_FORMED_SUPEREVENT
 				}
+				# if = {
+				# 	limit = {
+				# 		has_global_flag = MACEDON_CONQUERED_PERSIA_SUPEREVENT
+				# 	}
+				# 	clr_country_flag = MACEDON_CONQUERED_PERSIA_SUPEREVENT
+				# }
 
 			}
 		}

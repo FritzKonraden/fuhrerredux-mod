@@ -167,4 +167,30 @@ characters = {
 			logistics_skill = 10
 		}
 	}
+	# MAC_Alexander_The_Great_Communist = {
+	# 	portraits = {
+	# 		civilian = {
+	# 			large = "gfx/leaders/MAC/Portrait_MAC_Alexander_The_Great_Communist.png"
+	# 		}
+	# 	}
+	# 	country_leader = {
+	# 		ideology = collectivist_subtype
+	# 	}
+	# 	country_leader = {
+	# 		ideology = libertarian_socialist_subtype
+	# 	}
+	# 	country_leader = {
+	# 		ideology = vanguardist_subtype
+	# 	}
+	# }
+	# MAC_Alexander_The_Great_Valkist = {
+	# 	portraits = {
+	# 		civilian = {
+	# 			large = "gfx/leaders/MAC/Portrait_MAC_Alexander_The_Great_Valkist.png"
+	# 		}
+	# 	}
+	# 	country_leader = {
+	# 		ideology = valkist_subtype
+	# 	}
+	# }
 }

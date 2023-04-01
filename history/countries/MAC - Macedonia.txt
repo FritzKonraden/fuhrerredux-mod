@@ -246,5 +246,7 @@ set_popularities = {
 
 
 recruit_character = MAC_Alexander_The_Great
+recruit_character = MAC_Alexander_The_Great_Communist
+recruit_character = MAC_Alexander_The_Great_Valkist
 
 set_major = yes
