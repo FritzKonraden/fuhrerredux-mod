@@ -31,8 +31,4 @@ spriteTypes = {
     name = "GFX_decisions_cat_british_mandate"
     texturefile = "gfx/interface/decisions/decisions_categories/british_mandate.png"
   }
-  spriteType = {
-    name = "GFX_decisions_cat_macedonian_marriages"
-    texturefile = "gfx/interface/decisions/decisions_categories/macedonian_decisions.png"
-  }
 }

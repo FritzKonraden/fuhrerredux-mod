@@ -3,9 +3,8 @@ state={
 	name="STATE_787"
 
 	history={
-		#add_core_of = MAC
+		add_core_of = MAC
 		owner = SER
-		#owner = MAC modified by april fools update
 		add_core_of = SER
 		buildings = {
 			infrastructure = 3

@@ -328,8 +328,4 @@ spriteTypes = {
 	name = "GFX_idea_FIN_winter_war" 
 	textureFile = "gfx/interface/ideas/ideas/FIN_winter_war.png" 
   }
-  spriteType = {
-    name = "GFX_idea_MAC_macedonian_undefeatable_legions"
-    textureFile = "gfx/interface/ideas/MAC/government/MAC_idea_macedonian_legions.png"
-  }
 }

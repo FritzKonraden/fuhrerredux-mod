@@ -1064,7 +1064,3 @@ KMT = {
 	color = rgb { 248 198 0 }
 	color_ui = rgb { 255 198 0 }
 }
-MAC = {
-	color = rgb { 0 43 111 }
-	color_ui = rgb { 0 43 111 }
-}
