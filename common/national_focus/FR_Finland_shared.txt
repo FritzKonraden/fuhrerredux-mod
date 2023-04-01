@@ -2177,12 +2177,12 @@
 		id = FIN_finlands_bold_opportunity
 		icon = GFX_goal_FIN_integrate_karelia
 		cost = 3
-		x = 40
-		y = 3
+		x = 25
+		y = 2
 		available = {
 			AND = {
 				is_puppet = no
-				has_socialist_government = no
+				doesnt_have_socialist_party = yes
 				GER = {
 					has_war_with = SOV
 				}
@@ -2226,7 +2226,7 @@
 		y = 1
 		available = {
 			is_puppet = no
-			has_socialist_government = no
+			doesnt_have_socialist_party = yes
 			owns_state = 146
 		}
 		ai_will_do = {
@@ -2259,7 +2259,7 @@
 		relative_position_id = FIN_finlands_bold_opportunity
 		available = {
 			is_puppet = no
-			has_socialist_government = no
+			doesnt_have_socialist_party = yes
 		}
 		ai_will_do = {
 			factor = 10
@@ -2340,7 +2340,7 @@
 		relative_position_id = FIN_finlands_bold_opportunity
 		available = {
 			is_puppet = no
-			has_socialist_government = no
+			doesnt_have_socialist_party = yes
 		}
 		ai_will_do = {
 			factor = 10
@@ -2361,7 +2361,7 @@
 		relative_position_id = FIN_strengthening_the_mannerheim_line
 		available = {
 			is_puppet = no
-			has_socialist_government = no
+			doesnt_have_socialist_party = yes
 		}
 		ai_will_do = {
 			factor = 10
@@ -2412,7 +2412,7 @@
 		relative_position_id = FIN_preparing_the_economy
 		available = {
 			is_puppet = no
-			has_socialist_government = no
+			doesnt_have_socialist_party = yes
 		}
 		ai_will_do = {
 			factor = 10
@@ -2550,7 +2550,7 @@
 		relative_position_id = FIN_expanding_the_army
 		available = {
 			is_puppet = no
-			has_socialist_government = no
+			doesnt_have_socialist_party = yes
 		}
 		ai_will_do = {
 			factor = 10
@@ -2576,7 +2576,7 @@
 		y = 1
 		available = {
 			is_puppet = no
-			has_socialist_government = no
+			doesnt_have_socialist_party = yes
 		}
 		ai_will_do = {
 			factor = 10
@@ -2599,7 +2599,7 @@
 		relative_position_id = FIN_declare_our_claims 
 		available = {
 			is_puppet = no
-			has_socialist_government = no
+			doesnt_have_socialist_party = yes
 			country_exists = SOV
 		}
 		ai_will_do = {
