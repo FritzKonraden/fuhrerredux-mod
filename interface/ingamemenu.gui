@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "ingamemenu"
 		position = { x = 0 y = 0 }	
-		size = { width = 320 height = 450}
+		size = { width = 320 height = 415}
 		Orientation = center
 		Origo = center		
 		fade_time = 500
@@ -66,7 +66,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "menu_wiki_button"
-			position = { x = 16 y = 178}
+			position = { x = 16 y = 138}
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_GAME_WIKI"
 			buttonFont = "hoi_24header"
@@ -77,7 +77,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "menu_resign_button"
-			position = { x = 16 y = 218}
+			position = { x = 16 y = 178}
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_GAME_RESIGN"
 			buttonFont = "hoi_24header"
@@ -87,7 +87,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "menu_quit_button"
-			position = {  x = 16 y = 258 }
+			position = {  x = 16 y = 218 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_QUIT"
 			buttonFont = "hoi_24header"
@@ -97,7 +97,7 @@ guiTypes = {
 				
 		buttonType = {
 			name = "menu_close_button"
-			position = { x = 16 y = 318 }
+			position = { x = 16 y = 300 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonFont = "hoi_24header"
 			buttonText = "CLOSE"
@@ -114,7 +114,7 @@ guiTypes = {
 		## facebook etc.
 		ButtonType = {
 			name = "homepage_button"
-			position = { x = 79 y = 375 }
+			position = { x = 79 y = 349 }
 			quadTextureSprite ="homepage"
 			clicksound = click_default
 			pdx_tooltip = "FX_MENU_HOMEPAGE"
@@ -122,7 +122,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "forum_button"
-			position = { x = 119 y = 375 }
+			position = { x = 119 y = 349 }
 			quadTextureSprite ="forum"
 			clicksound = click_default
 			pdx_tooltip = "FX_MENU_FORUM"
@@ -130,7 +130,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "facebook_button"
-			position = { x = 159 y = 375 }
+			position = { x = 159 y = 349 }
 			quadTextureSprite ="facebook"
 			clicksound = click_default
 			pdx_tooltip = "FX_MENU_FACEBOOK"
@@ -138,7 +138,7 @@ guiTypes = {
 		}			
 		ButtonType = {
 			name = "twitter_button"
-			position = { x = 199 y = 375 }
+			position = { x = 199 y = 349 }
 			quadTextureSprite ="twitter"
 			#clicksound = click_default
 			pdx_tooltip = "FR_MENU_TWITTER"
@@ -155,7 +155,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "achievements_button"
-			position = { x = 259 y = 389 }
+			position = { x = 259 y = 349 }
 			quadTextureSprite ="achievements"
 			pdx_tooltip = "MENU_ACHIEVEMENTS"
 		}		
@@ -191,7 +191,8 @@ guiTypes = {
 			}
 		}		
 		
-		iconType = {
+		iconType =
+		{
 			name ="menu"
 			spriteType = "GFX_load_save_top_screen"
 			position = { x= 76 y = 63 }
@@ -199,14 +200,16 @@ guiTypes = {
 		}
 
 		
-		iconType = {
+		iconType =
+		{
 			name ="menu_bottom"
 			spriteType = "GFX_load_save_bottom"
 			position = { x= 76 y = 490 }
 			Orientation = "UPPER_LEFT"
 		}
 		
-		instantTextBoxType = {
+		instantTextBoxType = 
+		{
 			name = "saves_dirs"
 			position = { x = 10 y = 375 }
 			textureFile = ""
@@ -294,21 +297,24 @@ guiTypes = {
 		size = { width = 420 height = 500}
 		Orientation = center
 		
-		iconType = {
+		iconType =
+		{
 			name ="menu"
 			spriteType = "GFX_load_save_top_screen"
 			position = { x= 76 y = 60 }
 			Orientation = "UPPER_LEFT"
 		}
 		
-		iconType = {
+		iconType =
+		{
 			name ="menu_bottom"
 			spriteType = "GFX_load_save_bottom_screen"
 			position = { x= 76 y = 446 }
 			Orientation = "UPPER_LEFT"
 		}
 			
-		instantTextBoxType = {
+		instantTextBoxType = 
+		{
 			name = "saves_dirs"
 			position = { x = 10 y = 375 }
 			textureFile = ""

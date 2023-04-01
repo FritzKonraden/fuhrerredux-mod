@@ -94,7 +94,6 @@ LMK = "countries/EastEuropean.txt" # Lemko
 GRL = "countries/EastEuropean.txt" # Goralenland
 SLV = "countries/EastEuropean.txt" # Slovenia
 ZSR = "countries/EastEuropean.txt" # Zapadoslavian Socialist Republic
-FYR = "countries/EastEuropean.txt" # Fyrom
 
 ### North America
 USA = "countries/WestEuropean.txt" # United States
