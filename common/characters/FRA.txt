@@ -42,11 +42,11 @@ characters = {
 			traits = { }
 		}
 	}
-	FRA_Sebastien_Faure = {
-		name = "Sébastien Faure"
+	FRA_Pierre_Monatte = {
+		name = "Pierre_Monatte"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/FRA/Portrait_FRA_Sebastien_Faure.png"
+				large = "gfx/leaders/FRA/Portrait_FRA_Pierre_Monatte.png"
 			}
 		}
 		country_leader = {

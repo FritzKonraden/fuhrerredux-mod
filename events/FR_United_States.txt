@@ -2084,7 +2084,7 @@ country_event = { # American Advisors
   }
 }
 
-country_event = { # Demand African Territories 
+country_event = { # USA Proposes Alliance 
 	id = usa.67
 	title = usa.67.t
 	desc = usa.67.d
@@ -2094,107 +2094,7 @@ country_event = { # Demand African Territories
 	option = { # Accept
 		name = usa.67.a
 		ai_chance = {
-			base = 20
-			modifier = {
-				add = 10
-				has_war_with = GER
-			}
-			modifier = {
-				add = 10
-				has_war_with = SOV
-			}
-		}
-
-		every_owned_state = {
-			limit = {
-				is_on_continent = africa
-				NOT = { is_core_of = ROOT }
-			}
-			USA = { transfer_state = PREV }
-		}
-		if = {
-			limit = {
-				NFA = { is_subject_of = ROOT }
-			}
-			USA = {
-				puppet = NFA
-				set_nationality = {
-					character = USA_Arthur_Vandenberg
-					target_country = NFA
-				}
-			}
-			NFA = {
-				set_cosmetic_tag = NFA_USA
-				add_country_leader_role = {
-					character = USA_Arthur_Vandenberg
-					promote_leader = yes
-					country_leader = {
-						ideology = authoritarian_democrat_subtype
-					}
-				}
-				set_party_name = {
-					ideology = authoritarian_democrat
-					name = NFQ_american
-					long_name = NFQ_american_long
-				}
-			}
-		}
-		if = {
-			limit = {
-				NFQ = { is_subject_of = ROOT }
-			}
-			USA = {
-				puppet = NFQ
-				set_nationality = {
-					character = USA_Henry_Wilson_Temple
-					target_country = NFQ
-				}
-			}
-			NFQ = {
-				set_cosmetic_tag = NFQ_USA
-				add_country_leader_role = {
-					character = USA_Henry_Wilson_Temple
-					promote_leader = yes
-					country_leader = {
-						ideology = authoritarian_democrat_subtype
-					}
-				}
-				set_party_name = {
-					ideology = authoritarian_democrat
-					name = NFQ_american
-					long_name = NFQ_american_long
-				}
-			}
-		}
-		if = {
-			limit = {
-				MOR = { is_subject_of = ROOT }
-			}
-			USA = { puppet = MOR }
-		}
-		if = {
-			limit = {
-				LBA = { is_subject_of = ROOT }
-			}
-			USA = { puppet = LBA }
-		}
-		if = {
-			limit = {
-				ETH = { is_subject_of = ROOT }
-			}
-			USA = { puppet = ETH }
-		}
-		if = {
-			limit = {
-				EGY = { is_subject_of = ROOT }
-			}
-			USA = { puppet = EGY }
-		}
-		if = {
-			limit = {
-				COG = { is_subject_of = ROOT }
-			}
-			USA = { puppet = COG }
+			base = 200
 		}
 
 		FROM = {
@@ -2223,6 +2123,7 @@ country_event = { # Accepted
 	option = { # Accept
 		name = usa.68.a
 		add_war_support = 0.025
+		add_to_faction = FROM
 	}
 }
 
@@ -2233,17 +2134,9 @@ country_event = { # Refused
 	picture = GFX_report_event_us_panay_demands
 	is_triggered_only = yes
 
-	option = { # War
-		name = usa.69.a
-		declare_war_on = {
-			target = FROM
-			type = annex_everything
-		}
-	}
-
 	option = { # No War
 		name = usa.69.b
-		add_war_support = -0.025
+		add_political_power = -10
 	}
 }
 

@@ -745,3 +745,34 @@ USA_add_armour_variants = {
 		}
 	}
 }
+
+USA_start_irish_revolt = {
+  set_global_flag = irish_revolt_attempted
+  IRE = {
+    hidden_effect = {
+			transfer_state = 135
+			transfer_state = 134
+			transfer_state = 815
+			transfer_state = 816
+			load_oob = IRE_rising1
+			set_capital = { state = 135 }
+			set_stability = 0.5
+			set_cosmetic_tag = IRE_FREE
+      
+			ENG = {
+				declare_war_on = {
+					target = PREV
+					type = annex_everything
+				}
+				add_civil_war_target = PREV
+				hidden_effect = {
+					add_state_claim = 135
+					add_state_claim = 134
+					add_state_claim = 815
+					add_state_claim = 816
+				}
+			}
+    }
+    custom_effect_tooltip = USA_operation_irish_revolt_tt
+  }
+}

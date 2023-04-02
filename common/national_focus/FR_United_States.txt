@@ -68,7 +68,7 @@ focus_tree = {
     prerequisite = { focus = USA_last_minute_reforms }
     relative_position_id = USA_last_minute_reforms
     completion_reward = {
-      increase_ruling_party_popularity_by_5 = yes
+      USA_decrease_effects_of_the_depression = yes
       end_puppet = PHI
       set_country_flag = USA_recognized_filipino_independence
       PHI = {
@@ -206,7 +206,8 @@ focus_tree = {
     prerequisite = { focus = USA_liquidate_failing_companies }
     relative_position_id = USA_pass_the_economic_stimulus_bill
     completion_reward = {
-      USA_decrease_effects_of_the_depression = yes
+      increase_ruling_party_popularity_by_5 = yes
+      add_stability = 0.05
       hidden_effect = {
         country_event = { id = usa.30 days = 4 }
       }
@@ -3636,6 +3637,8 @@ focus_tree = {
           modifier = ROM_cut_off_relations
         }
       }
+
+      unlock_decision_tooltip = USA_propose_alliance_with_brazil
     }
   }
 
@@ -4059,28 +4062,28 @@ focus_tree = {
     }
   }
 
-  # African Decolonization
+  # Blood on the Emerald Isle
   focus = {
-    id = USA_african_decolonization
-    icon = GFX_goal_USA_eastern_dominance
+    id = USA_blood_on_the_emerald_isle
+    icon = GFX_IRE_peoples_army
     x = 1
     y = 1
     cost = 6
     available = {
-      OR = {
-        country_exists = NFA
-        country_exists = NFQ
-        LBA = {
-          exists = yes
-          is_subject = yes
+      country_exists = IRE
+      ENG = {
+        exists = yes
+        any_owned_state = {
+          is_core_of = IRE
         }
-        EGY = {
+      }
+    }
+    bypass = {
+      IRE = {
+        OR = {
           exists = yes
-          is_subject = yes
-        }
-        ETH = {
-          exists = yes
-          is_subject = yes
+          is_in_faction_with = ROOT
+          is_subject_of = ROOT
         }
       }
     }
@@ -4090,7 +4093,18 @@ focus_tree = {
     }
     relative_position_id = USA_avenge_1812
     completion_reward = {
-      custom_effect_tooltip = USA_african_decolonization_tt
+      custom_effect_tooltip = USA_blood_on_the_emerald_isle_tt
+
+      ENG = {
+        every_owned_state = {
+          limit = {
+            is_core_of = IRE
+            NOT = { is_core_of = ENG }
+          }
+
+          add_resistance = 20
+        }
+      }
     }
   }
 
@@ -4364,7 +4378,7 @@ focus_tree = {
     prerequisite = { 
       focus = USA_carribean_lake
     }
-    prerequisite = { focus = USA_african_decolonization }
+    prerequisite = { focus = USA_blood_on_the_emerald_isle }
     relative_position_id = USA_avenge_1812
     completion_reward = {
       638 = {

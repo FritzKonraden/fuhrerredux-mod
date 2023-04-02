@@ -410,7 +410,7 @@ PHI_anti_colonialist_crusade_cat = {
         limit = { has_dlc = "Together for Victory" }
         set_autonomy = {
           target = FROM
-          autonomy_state = special_autonomous_dependency
+          autonomy_state = autonomy_dominion
         }
       } 
       else = {
@@ -454,7 +454,7 @@ PHI_anti_colonialist_crusade_cat = {
         limit = { has_dlc = "Together for Victory" }
         set_autonomy = {
           target = FROM
-          autonomy_state = special_autonomous_dependency
+          autonomy_state = autonomy_dominion
         }
       } 
       else = {
@@ -498,7 +498,7 @@ PHI_anti_colonialist_crusade_cat = {
         limit = { has_dlc = "Together for Victory" }
         set_autonomy = {
           target = FROM
-          autonomy_state = special_autonomous_dependency
+          autonomy_state = autonomy_dominion
         }
       } 
       else = {

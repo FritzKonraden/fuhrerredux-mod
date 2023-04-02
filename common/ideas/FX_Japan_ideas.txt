@@ -1217,6 +1217,10 @@ ideas = {
 			traits = {
 				industrial_manufacturer
 			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+			}
 			research_bonus = {
 				industry = 0.1
 			}
