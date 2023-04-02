@@ -43,8 +43,27 @@ on_actions = {
 					}
 				}
 				news_event = {
-					id = macednia.9
+					id = macedonia.9
 					days = 1
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						tag = MAC
+					}
+					FROM = {
+						tag = EGY
+					}
+					FROM.FROM = {
+						state = 447
+					}
+				}
+				GRE = {
+					country_event = {
+						id = macedonia.5
+						days = 1
+					}
 				}
 			}
 		}

@@ -4,6 +4,7 @@ news_event = { #Alexander The Great spoted peeing in a bush, by a Alexandrian tr
 	id = macedonia.1
 	title = macedonia.1.t
 	desc = macedonia.1.d 
+	picture = "GFX_news_event_MAC_alexander_peed_alexandria"
 	is_triggered_only = yes
 	option = {
 		name = macedonia.1.a
@@ -17,6 +18,7 @@ news_event = { #Rumours have been confirmed, as Alexander was seen returning to 
 	id = macedonia.2
 	title = macedonia.2.t
 	desc = macedonia.2.d 
+	picture = "GFX_news_event_MAC_alexander_peed_alexandria"
 	is_triggered_only = yes
 	option = {
 		name = macedonia.2.a
@@ -35,94 +37,84 @@ news_event = { #Alexander visits greece
 	id = macedonia.3
 	title = macedonia.3.t
 	desc = macedonia.3.d 
+	picture = "GFX_news_event_MAC_alexander_king_greece"
 	is_triggered_only = yes
 	option = {
 		name = macedonia.3.a
-		if = {
-			limit = {
-				GRE = {
-					is_ai = no
-				}
-			}
-			GRE = {
-				country_event = macedonia.5
-			}
+		news_event = {
+			id = macedonia.4
+			days = 1
+			random_hours = 6
 		}
-		else = {
-			news_event = {
-				id = macedonia.4
-				days = 1
-				random_hours = 6
-			}
-			MAC = {
-				annex_country = {
-					target = GRE
-					transfer_troops = yes
-				}
-				every_state = {
-					limit = {
-						is_core_of = GRE
-					}
-					add_core_of = MAC
-				}
-				add_state_core = 765
-			}
-		}
+		# MAC = {
+		# 	annex_country = {
+		# 		target = GRE
+		# 		transfer_troops = yes
+		# 	}
+		# 	every_state = {
+		# 		limit = {
+		# 			is_core_of = GRE
+		# 		}
+		# 		add_core_of = MAC
+		# 	}
+		# 	add_state_core = 765
+		# }
 	}
 }
 news_event = { #Alexander annexes greece
 	id = macedonia.4
 	title = macedonia.4.t
-	desc = macedonia.4.d 
+	desc = macedonia.4.d
+	picture = "GFX_news_event_MAC_alexander_king_greece"
 	is_triggered_only = yes
 	option = {
 		name = macedonia.4.a
-		if = {
-			limit = {
-				has_global_flag = GRE_accept_annex_MAC
-			}
-			MAC = {
-				change_tag_from = GRE
-			}
-			GRE = {
-				transfer_navy = {
-					target = MAC
-				}
-			}
-			MAC = {
-				annex_country = {
-					target = GRE
-					transfer_troops = yes
-				}
-				every_state = {
-					limit = {
-						is_core_of = GRE
-					}
-					add_core_of = MAC
-				}
-				add_state_core = 765
+		# if = {
+		# 	limit = {
+		# 		has_global_flag = GRE_accept_annex_MAC
+		# 	}
+		# 	MAC = {
+		# 		change_tag_from = GRE
+		# 	}
+		GRE = {
+			transfer_navy = {
+				target = MAC
 			}
 		}
-		else = {
-			GRE = {
-				transfer_navy = {
-					target = MAC
-				}
+		MAC = {
+			annex_country = {
+				target = GRE
+				transfer_troops = yes
 			}
-			MAC = {
-				annex_country = {
-					target = GRE
-					transfer_troops = yes
+			every_state = {
+				limit = {
+					is_core_of = GRE
 				}
-				every_state = {
-					limit = {
-						is_core_of = GRE
-					}
-					add_core_of = MAC
-				}
-				add_state_core = 765
+				add_core_of = MAC
 			}
+			add_state_core = 765
 		}
+		# }
+		# else = {
+		# 	GRE = {
+		# 		transfer_navy = {
+		# 			target = MAC
+		# 		}
+		# 	}
+		# 	MAC = {
+		# 		annex_country = {
+		# 			target = GRE
+		# 			transfer_troops = yes
+		# 		}
+		# 		every_state = {
+		# 			limit = {
+		# 				is_core_of = GRE
+		# 			}
+		# 			add_core_of = MAC
+		# 		}
+		# 		add_state_core = 765
+		# 	}
+		# }
 	}
 }
 country_event = {
@@ -132,20 +124,30 @@ country_event = {
 	is_triggered_only = yes
 	option = { #do you want to change tags when alexander conquers greece?
 		name = macedonia.5.a
-		set_global_flag = GRE_accept_annex_MAC
+		# set_global_flag = GRE_accept_annex_MAC
+
 		ai_chance = {
 			factor = 0
 		}
-		news_event = {
-			id = macedonia.4
-			days = 3
-			random_hours = 8
+		# news_event = {
+		# 	id = macedonia.4
+		# 	days = 3
+		# 	random_hours = 8
+		# }
+		MAC = {
+			change_tag_from = GRE
 		}
 	}
 	option = { 		#what?
 		name = macedonia.5.b
 		ai_chance = {
 			factor = 1000
+		}
+		MAC = {
+			annex_country = {
+				target = GRE
+				transfer_troops = yes
+			}
 		}
 	}
 }
@@ -273,9 +275,13 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = macedonia.10.a
-		set_country_leader_portrait = {
-			portrait = "GFX_portrait_MAC_Alexander_The_Great_Communist"
+		ai_chance = {
+			factor = 0
 		}
+		# set_country_leader_portrait = {
+		# 	ideology = collectivist
+		# 	portrait = "GFX_portrait_MAC_Alexander_The_Great_Communist"
+		# }
 		set_politics = {
 			ruling_party = collectivist
 			elections_allowed = no
@@ -291,9 +297,13 @@ country_event = {
 	}
 	option = {
 		name = macedonia.10.b
-		set_country_leader_portrait = {
-			portrait = "GFX_portrait_MAC_Alexander_The_Great_Valkist"
+		ai_chance = {
+			factor = 0
 		}
+		# set_country_leader_portrait = {
+		# 	ideology = valkist
+		# 	portrait = "GFX_portrait_MAC_Alexander_The_Great_Valkist"
+		# }
 		set_politics = {
 			ruling_party = valkist
 			elections_allowed = no
@@ -309,5 +319,8 @@ country_event = {
 	}
 	option = {
 		name = macedonia.10.c
+		ai_chance = {
+			factor = 100
+		}
 	}
 }
