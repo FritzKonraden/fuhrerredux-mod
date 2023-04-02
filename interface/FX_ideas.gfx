@@ -330,6 +330,6 @@ spriteTypes = {
   }
   spriteType = {
     name = "GFX_idea_MAC_macedonian_undefeatable_legions"
-    textureFile = "gfx/interface/ideas/MAC/government/MAC_idea_macedonian_legions.png"
+    textureFile = "gfx/interface/ideas/MAC/MAC_idea_macedonian_legions.png"
   }
 }

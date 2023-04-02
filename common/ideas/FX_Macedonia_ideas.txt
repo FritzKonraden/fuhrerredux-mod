@@ -6,7 +6,7 @@ ideas = {
 			}
 			picture = "GFX_idea_MAC_macedonian_undefeatable_legions"
 			modifier = {
-				conscription = 0.35
+				conscription = 1
 				army_morale = 1000
 				army_armor_attack_factor = 0.5
 				army_artillery_attack_factor = 0.5
@@ -23,21 +23,40 @@ ideas = {
 				supply_consumption_factor = -1
 				breakthrough_factor = 10000
 				supply_factor = 10000
+				# training_time_army = -100
+				# training_time_factor = -1
+				training_time_army_factor = -0.90
+				land_doctrine_cost_factor = -1000
+				air_doctrine_cost_factor = -1000
+				naval_doctrine_cost_factor = -1000
+				production_factory_efficiency_gain_factor = 1000
+				production_factory_max_efficiency_factor = 1000
+				production_lack_of_resource_penalty_factor = -1000
+				# max_training = 0.01	
 			}
 		}
-		BUL_war_with_alexander = {
+		MAC_war_with_alexander = {
 			allowed = {
-				original_tag = BUL
 				MAC = {
 					has_completed_focus = MAC_rearm_our_legions
 				}
 			}
 			targeted_modifier = {
-				tag = BUL
+				tag = MAC
+				defense_bonus_against = -500
+				attack_bonus_against = -500
+			}
+			modifier = {
 				breakthrough_factor = -1000
 				army_morale = -100
 				conscription = -100
+				training_time_army = 1000
+				training_time_army_factor = 1000
+				training_time_factor = 1000
+				attrition = 10000
 			}
+
+			
 		}
 	}
 }
