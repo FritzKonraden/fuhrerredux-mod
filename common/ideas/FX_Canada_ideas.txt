@@ -774,7 +774,7 @@ ideas = {
 			research_bonus = {
 				electronics = 0.15
 			}
-			traits = { electronics_concern }
+			traits = { electronics_manufacturer }
 		}
 		polymer_corporation = {
 			picture = generic_industrial_concern_2
@@ -783,7 +783,7 @@ ideas = {
 				synth_resources = 0.1
 				industry = 0.05
 			}
-			traits = { refinery_concern }
+			traits = { chemical_producer }
 		}		
 	}
 	### Weapons Manufacturer
@@ -796,7 +796,7 @@ ideas = {
 			research_bonus = {
 				support_tech = 0.10
 			}
-			traits = { support_equipment_manufacturer }
+			traits = { infantry_equipment_producer_allround_0 }
 		}
 		small_arms_limited = {
 			picture = generic_infantry_equipment_manufacturer_1
@@ -804,7 +804,7 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
-			traits = { infantry_equipment_manufacturer }
+			traits = { infantry_equipment_producer_assualt_2 }
 		}
 	}
 	### Tank Manufacturer

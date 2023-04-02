@@ -3202,6 +3202,7 @@ country_event = {
 			load_OOB = ENG_rising_ulster
 		}
 		set_country_flag = ire_rising
+		set_global_flag = second_irb_rising
 		news_event = { id = uknews.6 }
 	}
 }
@@ -3345,14 +3346,6 @@ country_event = {
           traits = {}
         }
       }
-			add_country_leader_role = {
-        character = IRE_Edward_VIII
-        promote_leader = yes
-        country_leader = {
-          ideology = paternal_autocrat_subtype
-          traits = {}
-        }
-      }
 		}
 		remove_ideas = ENG_irb2
 	}
@@ -3442,14 +3435,6 @@ country_event = {
       }
       add_country_leader_role = {
         character = IRE_James_Matthew_Dillon
-        promote_leader = yes
-        country_leader = {
-          ideology = paternal_autocrat_subtype
-          traits = {}
-        }
-      }
-			add_country_leader_role = {
-        character = IRE_Edward_VIII
         promote_leader = yes
         country_leader = {
           ideology = paternal_autocrat_subtype

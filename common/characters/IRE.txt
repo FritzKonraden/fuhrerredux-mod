@@ -98,20 +98,4 @@ characters = {
 			}
 		}
 	}
-	IRE_Edward_VIII = {
-		name = "Edward VIII"
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/ENG/Portrait_ENG_Edward_VIII_fx.png"
-			}
-		}
-	}
-	IRE_Maurice_Gamelin = {
-		name = "Maurice Gamelin"
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/FRA/Portrait_FRA_Maurice_Gamelin_fx.png"
-			}
-		}
-	}
 }
