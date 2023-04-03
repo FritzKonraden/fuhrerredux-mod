@@ -4070,7 +4070,9 @@ focus_tree = {
     y = 1
     cost = 6
     available = {
-      country_exists = IRE
+      NOT = {
+        country_exists = IRE
+      }
       ENG = {
         exists = yes
         any_owned_state = {
