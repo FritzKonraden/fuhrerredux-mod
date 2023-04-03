@@ -1884,6 +1884,7 @@ spriteTypes = {
 		name = "GFX_goal_FIN_for_victory"
 		textureFile = "gfx/interface/goals/FIN_for_victory.png"
 	}
+	#macedonia meme path
 	spriteType = {
 		name = "GFX_goal_MAC_path_to_war"
 		textureFile = "gfx/interface/goals/MAC_path_to_war.png"

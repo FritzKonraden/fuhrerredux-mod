@@ -18,7 +18,7 @@ focus_tree = {
 		x = 10
 		y = 2
 		ai_will_do = {
-			factor = 1000
+			factor = 0
 		}
 		completion_reward = {
 			country_event = {
@@ -46,9 +46,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = MAC_our_undefeatable_legions
-			hidden_effect = {
-				country_event = macedonia.10
-			}
 		}
 	}
 	focus = {
@@ -87,7 +84,7 @@ focus_tree = {
 	focus = {
 		id = MAC_on_path_to_war
 		icon = GFX_goal_MAC_path_to_war
-		cost = 0
+		cost = 5
 		x = 0
 		y = 1
 		relative_position_id = MAC_visit_greece
@@ -98,7 +95,15 @@ focus_tree = {
 			factor = 1000
 		}
 		completion_reward = {
-			
+			# hidden_effect = {
+			# 	load_oob = "Legion"
+			# }
+			# 731 = {
+			# 	create_unit = {
+			# 		division = "name = \"Legion\" division_template = \"Legion\" start_experience_factor = 1\" start_equipment_factor = 1"
+			# 		owner = MAC
+			# 	}
+			# }
 		}
 	}
 	focus = {
@@ -142,12 +147,15 @@ focus_tree = {
 				}
 			}
 			unlock_decision_tooltip = MAC_marry_egypt
+			hidden_effect = {
+				country_event = macedonia.10
+			}
 		}
 	}
 	focus = {
 		id = MAC_destroy_bulgaria
 		icon = GFX_goal_MAC_destroy_bulgaria
-		cost = 0
+		cost = 5
 		x = -2
 		y = 1
 		relative_position_id = MAC_retake_egypt
@@ -176,12 +184,17 @@ focus_tree = {
 					type = annex_everything
 				}
 			}
+			hidden_effect = {
+				BUL = {
+					add_ideas = MAC_war_with_alexander
+				}
+			}
 		}
 	}
 	focus = {
 		id = MAC_dismantle_serbia
 		icon = GFX_goal_MAC_dismantle_serbia
-		cost = 0
+		cost = 5
 		x = 0
 		y = 1
 		relative_position_id = MAC_retake_egypt
@@ -277,6 +290,11 @@ focus_tree = {
 				}
 				add_core_of = MAC
 			}
+			hidden_effect = {
+				SER = {
+					add_ideas = MAC_war_with_alexander
+				}
+			}
 		}
 	}
 	# focus = {
@@ -293,6 +311,40 @@ focus_tree = {
 	# 		country_event = macedonia.7
 	# 	}
 	# }
+	focus = {
+		id = MAC_annex_albania
+		icon = GFX_goal_MAC_annex_albania
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = MAC_retake_egypt
+		}
+		relative_position_id = MAC_retake_egypt
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				AND = {
+					GRE = {
+						exists = no
+					}
+					has_completed_focus = MAC_dismantle_serbia
+				}
+				factor = 1000
+			}
+		}
+		completion_reward = {
+			MAC = {
+				annex_country = {
+					target = ALB
+				}
+				add_state_core = 44
+				add_state_core = 765
+				add_state_core = 796
+				transfer_state = 796
+			}
+		}
+	}
 	focus = {
 		id = MAC_castrate_the_pretenders
 		icon = GFX_goal_MAC_castrate_the_pretenders
@@ -325,39 +377,13 @@ focus_tree = {
 				}
 				add_core_of = MAC
 			}
-		}
-	}
-	focus = {
-		id = MAC_annex_albania
-		icon = GFX_goal_MAC_annex_albania
-		cost = 5
-		x = 2
-		y = 1
-		prerequisite = {
-			focus = MAC_retake_egypt
-		}
-		relative_position_id = MAC_retake_egypt
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				AND = {
-					GRE = {
-						exists = no
-					}
-					has_completed_focus = MAC_dismantle_serbia
-				}
-				factor = 1000
+			ITA = {
+				leave_faction = yes
 			}
-		}
-		completion_reward = {
-			MAC = {
-				annex_country = {
-					target = ALB
+			hidden_effect = {
+				ITA = {
+					add_ideas = MAC_war_with_alexander
 				}
-				add_state_core = 44
-				add_state_core = 765
-				add_state_core = 796
-				transfer_state = 796
 			}
 		}
 	}
@@ -480,6 +506,11 @@ focus_tree = {
 			# 	}
 			# 	add_core_of = MAC
 			# }
+			hidden_effect = {
+				GER = {
+					add_ideas = MAC_war_with_alexander
+				}
+			}
 		}
 	}
 	focus = {
@@ -701,6 +732,28 @@ focus_tree = {
 			focus = MAC_to_east
 		}
 		completion_reward = {
+			ISR = {
+				OVERLORD = {
+					set_autonomy = {
+						target = ISR
+						autonomy_state = autonomy_free
+					}
+				}
+			}
+			IRQ = {
+				OVERLORD = {
+					set_autonomy = {
+						target = IRQ
+						autonomy_state = autonomy_free
+					}
+				}
+			}
+			IRQ = {
+				leave_faction = yes
+			}
+			ISR = {
+				leave_faction = yes
+			}
 			declare_war_on = {
 				target = TUR
 				type = annex_everything
@@ -760,6 +813,21 @@ focus_tree = {
 			focus = MAC_remove_kebab
 		}
 		completion_reward = {
+			if = {
+				limit = {
+					ARB = {
+						is_puppet = yes
+					}
+				}
+				ARB = {
+					OVERLORD = {
+						set_autonomy = {
+							target = ARB
+							autonomy_state = autonomy_free
+						}
+					}
+				}
+			}
 			declare_war_on = {
 				target = YEM
 				type = annex_everything
@@ -874,9 +942,31 @@ focus_tree = {
 			focus = MAC_eliminate_iran
 		}
 		completion_reward = {
-			declare_war_on = {
-				target = RAJ
-				type = annex_everything
+			if = {
+				limit = {
+					RAJ = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = RAJ
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					RAJ = {
+						is_subject = yes
+					}
+				}
+				RAJ = {
+					OVERLORD = {
+						set_autonomy = {
+							target = RAJ
+							autonomy_state = autonomy_free
+						}
+					}
+				}
 			}
 			declare_war_on = {
 				target = NEP
@@ -885,6 +975,149 @@ focus_tree = {
 			declare_war_on = {
 				target = BHU
 				type = annex_everything
+			}
+			if = {
+				limit = {
+					IND = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = IND
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					PUN = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = PUN
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					KAS = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = KAS
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					BAL = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = BAL
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					RJH = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = RJH
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					BOM = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = BOM
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					HYD = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = HYD
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					ORI = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = ORI
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					BIH = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = BIH
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					INC = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = INC
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					MDR = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = MDR
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					MYS = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = MYS
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					TRV = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = TRV
+					type = annex_everything
+				}
 			}
 			# every_state = {
 			# 	limit = {

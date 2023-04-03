@@ -1,6 +1,7 @@
 MAC_marriage_decisions = {
 	MAC_marry_egypt = {
 		days_remove = 15
+		fire_only_once = yes
 		visible = {
 			has_completed_focus = MAC_retake_egypt
 		}
@@ -22,6 +23,7 @@ MAC_marriage_decisions = {
 		visible = {
 			has_completed_focus = MAC_destroy_the_huns
 		}
+		fire_only_once = yes
 		available = {
 			has_completed_focus = MAC_destroy_the_huns
 			GER = {
@@ -60,6 +62,7 @@ MAC_marriage_decisions = {
 		visible = {
 			has_completed_focus = MAC_war_in_carpathia
 		}
+		fire_only_once = yes
 		available = {
 			has_completed_focus = MAC_war_in_carpathia
 			ROM = {
@@ -94,6 +97,7 @@ MAC_marriage_decisions = {
 		visible = {
 			has_completed_focus = MAC_attack_france
 		}
+		fire_only_once = yes
 		available = {
 			has_completed_focus = MAC_attack_france
 			FRA = {
@@ -113,6 +117,7 @@ MAC_marriage_decisions = {
 						is_core_of = NFA
 						is_core_of = TUN
 						is_core_of = MOR
+						is_core_of = RHI
 					}
 				}
 				add_core_of = MAC
@@ -124,6 +129,7 @@ MAC_marriage_decisions = {
 		visible = {
 			has_completed_focus = MAC_albion_must_submit
 		}
+		fire_only_once = yes
 		available = {
 			has_completed_focus = MAC_albion_must_submit
 			ENG = {
@@ -149,6 +155,7 @@ MAC_marriage_decisions = {
 		visible = {
 			has_completed_focus = MAC_pillage_iberia
 		}
+		fire_only_once = yes
 		available = {
 			has_completed_focus = MAC_pillage_iberia
 			POR = {
@@ -191,6 +198,7 @@ MAC_marriage_decisions = {
 		visible = {
 			has_completed_focus = MAC_remove_kebab
 		}
+		fire_only_once = yes
 		available = {
 			has_completed_focus = MAC_remove_kebab
 			TUR = {
@@ -229,6 +237,7 @@ MAC_marriage_decisions = {
 		visible = {
 			has_completed_focus = MAC_seize_arabia
 		}
+		fire_only_once = yes
 		available = {
 			has_completed_focus = MAC_seize_arabia
 			ARB = {
@@ -259,6 +268,7 @@ MAC_marriage_decisions = {
 		visible = {
 			has_completed_focus = MAC_eliminate_iran
 		}
+		fire_only_once = yes
 		available = {
 			has_completed_focus = MAC_eliminate_iran
 			PER = {
@@ -281,6 +291,7 @@ MAC_marriage_decisions = {
 		visible = {
 			has_completed_focus = MAC_the_way_to_india
 		}
+		fire_only_once = yes
 		available = {
 			has_completed_focus = MAC_the_way_to_india
 			RAJ = {
@@ -292,6 +303,9 @@ MAC_marriage_decisions = {
 			NEP = {
 				exists = no
 			}
+			IND = {
+				exists = no
+			}
 		}
 		remove_effect = {
 			every_state = {
@@ -300,6 +314,19 @@ MAC_marriage_decisions = {
 						is_core_of = RAJ
 						is_core_of = NEP
 						is_core_of = BHU
+						is_core_of = IND
+						is_core_of = PUN
+						is_core_of = KAS
+						is_core_of = BAL
+						is_core_of = RJH
+						is_core_of = BOM
+						is_core_of = HYD
+						is_core_of = ORI
+						is_core_of = BIH
+						is_core_of = INC
+						is_core_of = MDR
+						is_core_of = MYS
+						is_core_of = TRV
 					}
 				}
 				add_core_of = MAC
@@ -308,6 +335,7 @@ MAC_marriage_decisions = {
 	}
 	MAC_marry_chinese = {
 		days_remove = 15
+		fire_only_once = yes
 		visible = {
 			has_completed_focus = MAC_the_way_to_china
 		}
@@ -362,6 +390,7 @@ MAC_marriage_decisions = {
 	}
 	MAC_marry_russian = {
 		days_remove = 15
+		fire_only_once = yes
 		visible = {
 			has_completed_focus = MAC_remove_russia
 		}
@@ -395,6 +424,7 @@ MAC_marriage_decisions = {
 MAC_take_land_decisions = {
 	MAC_war_caucasus = {
 		days_remove = 10
+		fire_only_once = yes
 		visible = {
 			has_completed_Focus = MAC_remove_russia
 		}
@@ -464,6 +494,7 @@ MAC_take_land_decisions = {
 	}
 	MAC_war_central_asia = {
 		days_remove = 10
+		fire_only_once = yes
 		visible = {
 			has_completed_Focus = MAC_remove_russia
 		}
@@ -505,6 +536,7 @@ MAC_take_land_decisions = {
 	}
 	MAC_war_americas = {
 		days_remove = 10
+		fire_only_once = yes
 		visible = {
 			has_completed_Focus = MAC_remove_russia
 		}
@@ -554,6 +586,30 @@ MAC_take_land_decisions = {
 				declare_war_on = {
 					target = MEX
 					type = annex_everything
+				}
+			}
+		}
+	}
+	MAC_annex_egypt = {
+		days_remove = 1
+		available = {
+			original_tag = MAC
+			EGY = {
+				exists = yes
+			}
+		}
+		fire_only_once = yes
+		remove_effect = {
+			if = {
+				limit = {
+					EGY = {
+						exists = yes
+					}
+				}
+				MAC = {
+					annex_country = {
+						target = EGY
+					}
 				}
 			}
 		}
