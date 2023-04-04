@@ -24,9 +24,4 @@ spriteTypes = {
 		texturefile = "gfx/interface/newspaper_headers/Asahi_Shimbun_newspaper_header.dds"
 		legacy_lazy_load = no
 	}
-	spriteType = {
-		name = "GFX_national_will_newspaper_header"
-		texturefile = "gfx/interface/newspaper_headers/National_will_newspaper_header.dds"
-		legacy_lazy_load = no
-	}
 }

@@ -15817,27 +15817,3 @@ country_event = {
 		name = "I love democracy"
 	}
 }
-
-add_namespace = ukcyp
-
-#events used by bulgaria
-#made by thanasislanaras
-#in loving memory of BobRossHD
-country_event = {
-	id = ukcyp.69420
-	title = "Bulgaria asks for Cyprus"
-	desc = ukcyp.69420.d
-	fire_only_once = yes
-	option = { #yes
-		name = "YES"
-		BUL = {
-			country_event = bulexp.22 
-		}
-	}
-	option = { #no
-		name = "NO"
-		BUL = {
-			country_event = bulexp.23
-		}
-	}
-}

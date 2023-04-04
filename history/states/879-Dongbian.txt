@@ -1,7 +1,10 @@
 
 state={
 	id=879
-	name="STATE_879"
+	name="STATE_879" # Andond
+	manpower = 800675
+	
+	state_category = rural
 
 	history={
 		owner = MAN
@@ -10,16 +13,10 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-
 		}
-
 	}
 
 	provinces={
-		800 861 945 3839 3888 3949 3970 6804 6860 6868 6905 6910 6981 9759 9803 9841 9848 11781 11850 
+		861 800 927 945 946 3888 3932 3949 3970 6860 6868 6905 6910 6947 6981 9759 9803 9841 9848 9866 9883 11781 11823 11850
 	}
-	manpower=800675
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

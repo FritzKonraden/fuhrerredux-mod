@@ -12,17 +12,14 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 			arms_factory = 1
-
 		}
 		add_core_of = CHI
-
 	}
 
 	provinces={
-		4125 4480 7665 10377 10517 12017 12053 12310 12378 
+		4125 10377 12053 12378 
 	}
 	manpower=28293700
 	buildings_max_level_factor=1.000
 	state_category=town
-	local_supplies=0.000
 }

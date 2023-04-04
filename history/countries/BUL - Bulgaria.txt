@@ -9,11 +9,7 @@ set_war_support = 0.5
 add_ideas = {
 	party_pop_0_10
 	limited_conscription
-	military_junta
-	BUL_spirit_unpopular_rule
-	BUL_spirit_greek_influence
-	BUL_spirit_imminent_communist_uprising
-	BUL_national_catastrophe
+	parliamentary_republic
 }
 
 set_technology = {
@@ -23,7 +19,7 @@ set_technology = {
 	tech_engineers = 1
 	motorised_infantry = 1
 	fuel_silos = 1
-  	basic_train = 1
+  basic_train = 1
 }
 
 if = {
@@ -66,23 +62,23 @@ if = {
 }
 
 set_politics = {	
-	ruling_party = paternal_autocrat
+	ruling_party = national_populist
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-  vanguardist = 15
-  collectivist = 15
-  libertarian_socialist = 15
-  social_democrat = 1
+  vanguardist = 1
+  collectivist = 4
+  libertarian_socialist = 2
+  social_democrat = 2
   social_liberal = 6
   market_liberal = 3
-  social_conservative = 14
-  authoritarian_democrat = 10
-  paternal_autocrat = 11
-  national_populist = 10
+  social_conservative = 18
+  authoritarian_democrat = 23
+  paternal_autocrat = 9
+  national_populist = 32
   valkist = 0
 }
 

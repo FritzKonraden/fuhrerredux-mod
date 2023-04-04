@@ -716,7 +716,6 @@ PHI_anti_colonialist_crusade_cat = {
     }
     visible = { 
       is_in_faction = yes
-      has_socialist_government = yes
       FROM = {
         NOT = { is_in_faction_with = ROOT }
       }
@@ -747,7 +746,6 @@ PHI_anti_colonialist_crusade_cat = {
       }
     }
     visible = { 
-      has_socialist_government = no
       is_in_faction = yes
       FROM = {
         NOT = { is_in_faction_with = ROOT }

@@ -1,5 +1,4 @@
 
-
 focus_tree = {
 	id = FR_Finland
 	country = {

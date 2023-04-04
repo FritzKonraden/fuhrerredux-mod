@@ -63,6 +63,15 @@ scripted_gui = {
 		window_name = "coalition_container"
 		visible = { has_coalition = yes }
 	}
+	puppet_faction_name = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "puppet_faction_name_container"
+
+		ai_enabled = {
+			always = no
+		}
+	}
 
 	power_balance_button_disabled = {
 		context_type = player_context

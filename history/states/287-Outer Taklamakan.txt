@@ -1,7 +1,10 @@
 
 state={
 	id=287
-	name="STATE_287"
+	name="STATE_287" # Taklamakan
+	manpower = 478000
+	
+	state_category = pastoral
 
 	history={
 		owner = SIK
@@ -14,10 +17,6 @@ state={
 	}
 
 	provinces={
-		1698 1943 2074 4947 4973 5736 10315 10911 
+		1698 1943 2074 4947 4973 10315 10911 5736
 	}
-	manpower=478000
-	buildings_max_level_factor=1.000
-	state_category=pastoral
-	local_supplies=0.000
 }

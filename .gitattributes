@@ -1,3 +1,2 @@
 * text=auto
 *.csv text eol=crlf
-*.png binary

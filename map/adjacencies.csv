@@ -134,7 +134,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
 7452;7678;;-1;-1;-1;-1;-1;DARDANELLES_STRAIT;Dardanelles
-849;9887;sea;7678;-1;-1;-1;-1;;Dardanelles-Strait	
+849;9887;sea;7678;-1;-1;-1;-1;;Dardanelles-Strait
+11735;13260;sea;5786;-1;-1;-1;-1;;Istria-Zara	
+13260;11901;sea;5786;-1;-1;-1;-1;;Istria-Zara	
 11755;3868;sea;5838;-1;-1;-1;-1;;Trogir Brac-Strait
 10825;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
 10825;8029;impassable;-1;-1;-1;-1;-1;;Himalayas

@@ -1,10 +1,11 @@
-
 state={
 	id=566
-	name="STATE_566"
+	name="STATE_566" #Irktusk
+	
+	state_category = rural
 	resources={
-		steel=20.000
-		aluminium=7.000
+		steel=20.0
+		aluminium=7.0
 	}
 
 	history={
@@ -23,10 +24,8 @@ state={
 	}
 
 	provinces={
-		1707 1727 1810 1829 4797 4815 7838 10524 10543 10596 10661 12525 12540 12647 13152 
+		1707 1727 1762 1810 1829 4797 4815 7838 10524 10543 10596 10661 12525 12540 12647 13152 
 	}
 	manpower=755237
 	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

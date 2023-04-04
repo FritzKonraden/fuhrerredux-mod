@@ -1,4 +1,3 @@
-
 state={
 	id=799
 	name="STATE_799"
@@ -6,26 +5,23 @@ state={
 	history={
 		owner = POL
 		victory_points = {
-			9427 10 
+			9427 10
 		}
 		victory_points = {
-			417 1 
+			417 1
 		}
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 1
-
 		}
 		add_core_of = POL
-
 	}
 
 	provinces={
-		417 6464 9412 9427 11398 11413 
+		6464 9427 417 442 3410 9412 11398 11413 
 	}
 	manpower=1534900
 	buildings_max_level_factor=1.000
 	state_category=city
-	local_supplies=0.000
 }

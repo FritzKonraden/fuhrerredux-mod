@@ -1,9 +1,0 @@
-{
-    "hoi4ModUtilities.modFile": "c:\\Users\\thana\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\bulgaria-fx\\descriptor.mod",
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 0,
-    "debug.console.acceptSuggestionOnEnter": "on",
-    "[hoi4]": {
-        "editor.acceptSuggestionOnEnter": "on"
-    }
-}

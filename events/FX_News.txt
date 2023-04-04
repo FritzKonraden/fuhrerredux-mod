@@ -1,6 +1,5 @@
 # News Events
 # created by: dax0102
-# bulgarian ones by thanasislanaras
 
 add_namespace = fxnews
 
