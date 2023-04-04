@@ -893,6 +893,9 @@ country_event = { # Operation Merdeka
 
   option = { # Greenlight the operation...
     name = philippines.35.a
+    ai_chance = {
+      base = 200
+    }
     add_political_power = 30
     hidden_effect = {
       country_event = { id = philippines.36 days = 30 }
@@ -900,6 +903,12 @@ country_event = { # Operation Merdeka
   }
   option = { # It's too risky...
     name = philippines.35.b
+    trigger = {
+      is_ai = no
+    }
+    ai_chance = {
+      base = 0
+    }
     increase_ruling_party_popularity_by_5 = yes
   }
 }

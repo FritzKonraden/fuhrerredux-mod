@@ -3,6 +3,19 @@ ideas = {
 	country = {
 	
 	# ### Start and Event ### #
+
+		BEA_insulindian_revolution = {
+			allowed = { original_tag = BEA }
+			available = {
+				has_war_with = INS
+			}
+			picture = chi_war_of_resistance3
+			modifier = {
+				ai_join_ally_desire_factor = -5000
+				ai_call_ally_desire_factor = -5000
+				surrender_limit = -0.2
+			}
+		}
 	
 		BEA_disputes_between_british_and_dutch_idea = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BEA_disputes_between_british_and_dutch_idea"}
