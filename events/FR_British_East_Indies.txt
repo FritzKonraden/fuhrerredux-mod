@@ -409,24 +409,24 @@ country_event = {
 country_event = {
 	id = bei.13
 	immediate = {log = "[GetDateText]: [Root.GetName]: event bei.13"}
-    title = bei.13.t
-    desc = bei.13.d
-    #picture = NOR_black_monday_2
+	title = bei.13.t
+	desc = bei.13.d
+	#picture = NOR_black_monday_2
 
-    trigger = {
-        original_tag = BEA
+	trigger = {
+		original_tag = BEA
 		date > 1936.12.1
 		has_stability < 0.05
-    }
+	}
 	
-    fire_only_once = yes
+  fire_only_once = yes
 
-    option = {
-        name = bei.13.a
-		BEA = {
-			add_political_power = -15
-			add_stability = 0.03
-		}
+  option = {
+    name = bei.13.a
+
+		add_political_power = -15
+		add_stability = 0.03
+		
 		hidden_effect = {
 			set_global_flag = insulindian_uprising
 			INS = {
@@ -435,34 +435,23 @@ country_event = {
 				transfer_state = 672
 				transfer_state = 790
 				load_oob = INS
-				declare_war_on = { target = BEA type = annex_everything }
+				
+				ROOT = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+					add_ideas = BEA_insulindian_revolution
+				}
+
 				change_tag_from = BEA
 			}
-			673 = {
-				add_claim_by = INS
-			}
-			668 = {
-				add_claim_by = INS
-			}
-			669 = {
-				add_claim_by = INS
-			}
-			721 = {
-				add_claim_by = INS
-			}
-			846 = {
-				add_claim_by = INS
-			}
-			848 = {
-				add_claim_by = INS
-			}			
-			every_state = {
+			every_owned_state = {
 				limit = {
 					is_core_of = BEA
 				}
-				THIS = {
-					add_core_of = INS
-				}
+				add_core_of = INS
+				add_claim_by = INS
 			}
 			news_event = {
 				id = worldnews.130 days = 1
@@ -478,10 +467,10 @@ country_event = {
 			is_ai = no
 		}
     name = bei.13.b
-		BEA = {
-			add_political_power = -15
-			add_stability = 0.03
-		}
+
+		add_political_power = -15
+		add_stability = 0.03
+		
 		hidden_effect = {
 			INS = {
 				set_province_controller = 1342
@@ -489,64 +478,49 @@ country_event = {
 				transfer_state = 672
 				transfer_state = 790
 				load_oob = INS
-				declare_war_on = { target = BEA type = annex_everything }
 			}
-			673 = {
-				add_claim_by = INS
+			declare_war_on = {
+				target = INS
+				type = annex_everything
 			}
-			668 = {
-				add_claim_by = INS
-			}
-			669 = {
-				add_claim_by = INS
-			}
-			721 = {
-				add_claim_by = INS
-			}
-			846 = {
-				add_claim_by = INS
-			}
-			848 = {
-				add_claim_by = INS
-			}			
-			every_state = {
+			add_ideas = BEA_insulindian_revolution
+			every_owned_state = {
 				limit = {
 					is_core_of = BEA
 				}
-				THIS = {
-					add_core_of = INS
-				}
+				add_core_of = INS
+				add_claim_by = INS
 			}
 			news_event = {
 				id = worldnews.130 days = 1
 			}
 		}
-    }
+  }
 }
 
 country_event = {
 	id = bei.14
 	immediate = {log = "[GetDateText]: [Root.GetName]: event bei.14"}
-    title = bei.14.t
-    desc = bei.14.d
-    #picture = NOR_black_monday_2
+	title = bei.14.t
+	desc = bei.14.d
+	#picture = NOR_black_monday_2
 
-    trigger = {
-        original_tag = BEA
+	trigger = {
+		original_tag = BEA
 		date > 1938.1.1
 		has_stability > 0.05
 		NOT = { has_country_flag = BEA_political_troubles_flag }
-    }
-	
-    fire_only_once = yes
+	}
 
-    option = {
-        name = bei.14.a
+	fire_only_once = yes
+
+	option = {
+		name = bei.14.a
 		set_country_flag = BEA_continuation_of_british_rule_flag
 		PHI = {
-				country_event = { id = philippines.47 days = 90 }
-			}
-    }
+			country_event = { id = philippines.47 days = 90 }
+		}
+	}
 }
 
 country_event = {
@@ -671,7 +645,7 @@ country_event = {
 				}
 			}
 		}
-    }
+  }
 }
 
 country_event = {

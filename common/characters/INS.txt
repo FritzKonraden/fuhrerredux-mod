@@ -298,6 +298,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = authoritarian_democrat_subtype
+			desc = POLTICS_SUKARNO_DESC
 			traits = { }
 		}
 		advisor = {
