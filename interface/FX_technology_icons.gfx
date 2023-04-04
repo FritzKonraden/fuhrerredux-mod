@@ -1359,7 +1359,7 @@ spriteTypes = {
 	### Tanks
 	SpriteType = {
 		name = "GFX_ENG_gwtank_medium"
-		texturefile = "gfx/interface/technologies/UOB/ENG_gwtank.png"
+		texturefile = "gfx/interface/technologies/United_Kingdom/ENG_gwtank.png"
 	}
 	SpriteType = {
 		name = "GFX_ENG_basic_light_tank_medium"
@@ -5511,7 +5511,7 @@ spriteTypes = {
 	### Tanks
 	SpriteType = {
 		name = "GFX_RAJ_gwtank_medium"
-		texturefile = "gfx/interface/technologies/UOB/ENG_gwtank.png"
+		texturefile = "gfx/interface/technologies/United_Kingdom/ENG_gwtank.png"
 	}
 	SpriteType = {
 		name = "GFX_RAJ_basic_light_tank_medium"
