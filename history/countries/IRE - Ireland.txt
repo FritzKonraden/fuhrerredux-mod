@@ -43,4 +43,3 @@ recruit_character = IRE_James_Larkin
 recruit_character = IRE_William_Norton
 recruit_character = IRE_Michael_Costello
 recruit_character = IRE_James_Matthew_Dillon
-recruit_character = IRE_Edward_VIII
