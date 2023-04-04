@@ -2,18 +2,22 @@
 state={
 	id=1023
 	name="STATE_1023"
+
 	history={
 		owner = CHI
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = CHI
+
 	}
 
 	provinces={
-		10517 7665 12310 12017 4480
+		4896 7101 7201 7279 7434 10006 10335 10822 
 	}
 	manpower=1400350
 	buildings_max_level_factor=1.000
 	state_category=town
+	local_supplies=0.000
 }

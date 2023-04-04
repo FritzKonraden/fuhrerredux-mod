@@ -1,0 +1,26 @@
+add_namespace = armenia
+country_event = { 
+	id = armenia.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event armenia.1"}
+	title = "[BUL.GetName] invites us to the Pan-Orthodox Union"
+	desc = "[BUL.GetName] invites us to join the Pan-Orthodox Alliance, which if we decide to join, will help us get ownership of Azerbaijan and Kurdistan, as they have promised. What should we do?"
+	is_triggered_only = yes
+	option = { # sure
+		name = "An alliance with our friends, with added benefits? Count me In!"
+		BUL = {
+			country_event = panorth.5
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	option = { # no
+		name = "Who gives a fuck?"
+		BUL = {
+			country_event = panorth.6
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

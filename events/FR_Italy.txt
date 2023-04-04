@@ -16588,3 +16588,35 @@ country_event = { # Italy - police fail to take over state
 		name = italib.1.a
 	}
 }
+
+##@
+# Events used so Bulgaria can take albania
+##@
+country_event = {
+	id = ita.10000
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event ita.10000"
+	}
+	title = ita.10000.t
+	desc = ita.10000.d 
+	is_triggered_only = yes 
+	option = { #accept
+		name = ita.10000.a
+		release = ALB
+		BUL = {
+			transfer_state = 44
+			transfer_state = 796
+			diplomatic_relation = {
+				country = ITA
+				relation = docking_rights
+			}
+			country_event = bulexp.20
+		}
+	}
+	option = {
+		name = ita.10000.b
+		BUL = {
+			country_event = bulexp.21
+		}
+	}
+}

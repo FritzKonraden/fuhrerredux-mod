@@ -2321,3 +2321,30 @@ country_event = { #Gerzel Baazov writes a nice book
 		add_political_power = 10
 	}
 }
+#events used by bulgaria
+#made by thanasislanaras
+country_event = { 
+	id = ge.69420
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ge.69420"}
+	title = "[BUL.GetName] invites us to the Pan Orthodox Alliance"
+	desc = "[BUL.GetName] invited us to join their faction. They promised a guarantee on us, and land of the [GOR.GetName]. What should we do?"
+	is_triggered_only = yes
+	option = { # sure
+		name = "Sure, lets do join their alliance"
+		BUL = {
+			country_event = panorth.7
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	option = { # no
+		name = "Who gives a fuck?"
+		BUL = {
+			country_event = panorth.8
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

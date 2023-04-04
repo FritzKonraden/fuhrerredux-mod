@@ -11,7 +11,7 @@ default = {
 			Percy Reginald Richard Robert Russell Stanley Thomas Wallace Adrian Agustin Alvaro Otto
 			Andre Antonio Bernardo Emiliano Emilio Enrique Ernesto Felipe Felix Francisco Scott Kyle
 			Gabriel Gregorio Jerome Achille Adolphe Alphonse Hans Karl Hermann Fritz Anton Walter
-			Antoine Armand Charles Daniel Maxime Alexei Andrei Anton Boris }
+			Antoine Armand Charles Daniel Maxime Alexei Andrei Anton Boris Hitler }
 		surnames = { }
 		callsigns = { }
 	}
@@ -24,7 +24,7 @@ default = {
 			Moresby Mundy Napier Plummer Ragland Schneider Fischer Meyer Weber Schulz Wagner Hartmann Schmidt Hoffmann Malenkov Nikitin Ostrovsky Pavlov
 			Romanov Rozhestvensky Keller Schuster Mackenzie Bergmann Dundas Fisher French Ford Grenfell Murphy Hamilton Grantson Sherman Ross Harris Clarke
 			Cleburne Hood Bancroft Breckenridge Bragg Baxter Hill Ewell Morgan Armistead Semmes Steele Smith Hampton Wheeler Thompson Iverson Jackson }
-	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Turtle" "Pebbles" "Sunshine" "Sunset" "Demon" "Perfect" "Bad Pilot" "Definitely shouldn't be an Ace" "Probably Suicidal" }
+	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Turtle" "Pebbles" "Sunshine" "Sunset" "Demon" "Perfect" "Bad Pilot" "Definitely shouldn't be an Ace" "Probably Suicidal" "Lives with his mom" }
 }
  
 ###############################################################
