@@ -5,3 +5,4 @@ descriptor.mod
 *.md
 readme.md
 .gitattributes
+.vscode/settings.json

@@ -1,0 +1,77 @@
+BUL_expansion_paths_balkan_category = {
+	allowed = {
+		original_tag = BUL
+		has_completed_focus = BUL_empire_balkan
+	}
+	icon = GFX_decision_category_power_struggle
+	priority = 100
+	visible = {
+		original_tag = BUL
+		BUL = {
+			OR = {
+				has_completed_focus = BUL_balkan_decisions
+			}
+		}
+	}
+}
+BUL_roman_expand_category_puppets_category = {
+	allowed = {
+		original_tag = BUL
+	}
+	available = {
+		has_completed_focus = BUL_remaining_balkans
+	}
+	icon = none
+	priority = 150
+	visible = {
+		original_tag = BUL
+		BUL = {
+			has_completed_focus = BUL_remaining_balkans
+		}
+	}
+}
+BUL_roman_expand_panorth_expand_category = {
+	allowed = {
+		original_tag = BUL
+	}
+	available = {
+		has_completed_focus = BUL_pan_orthodoxism
+	}
+	icon = none
+	priority = 75
+	visible = {
+		original_tag = BUL
+		BUL = {
+			has_completed_focus = BUL_pan_orthodoxism
+		}
+	}
+}
+BUL_align_bulgaria_category = {
+	allowed = {
+		original_tag = BUL
+	}
+	visible = {
+		has_completed_focus = BUL_our_allies
+	}
+	icon = none
+	priority = 100
+	
+}
+BUL_expansion_basic_picture_category = {
+	allowed = {
+		original_tag = BUL
+	}
+	available = {
+		has_completed_focus = BUL_man_the_guns
+	}
+	priority = 999
+	visible_when_empty = yes
+	scripted_gui = basic_expansion_path_gui
+}
+BUL_bop_communists_vs_monarchists_category = {
+	allowed = {
+		original_tag = BUL
+	}
+	priority = 10000
+	visible_when_empty = yes
+}

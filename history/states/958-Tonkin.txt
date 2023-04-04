@@ -1,13 +1,10 @@
+
 state={
 	id=958
 	name="STATE_958"
-	manpower = 6528000
-	
-	state_category = city
-	
 	resources={
-		chromium=5.0
-		tungsten=25.0
+		chromium=5.000
+		tungsten=25.000
 	}
 
 	history={
@@ -20,15 +17,21 @@ state={
 		buildings = {
 			1185 = {
 				naval_base = 1
+
 			}
 			infrastructure = 3
 			industrial_complex = 4
 			air_base = 3
+
 		}
 
 	}
 
 	provinces={
-		1185 10129 10103 12075 4075 4119 12048 1073 12008 1157 7093 9948 12065 7518 7015
+		1073 1157 1185 4075 4119 4529 7015 7093 7518 9948 10075 10103 10129 12008 12048 12065 12075 12319 
 	}
+	manpower=6528000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

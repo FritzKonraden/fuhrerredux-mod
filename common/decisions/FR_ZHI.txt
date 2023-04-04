@@ -521,8 +521,6 @@ ZHI_alliances = {
 ZHI_china = {
 	zhi_form_china = {
 
-
-
 	icon = GFX_generic_nationalism
 
 		visible = {
@@ -555,6 +553,15 @@ ZHI_china = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision zhi_form_china"
 			set_cosmetic_tag = ZHI_CHI
+			every_state = {
+				limit = {
+					is_controlled_chinese_region = yes
+					NOT = {
+						is_core_of = PREV
+					}
+				}
+				add_core_of = PREV
+			}
 		}
 	}
 }

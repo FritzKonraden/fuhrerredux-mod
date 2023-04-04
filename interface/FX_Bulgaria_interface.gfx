@@ -1,0 +1,29 @@
+#EventPics
+SpriteTypes = {
+		# News Events
+		spriteType = { 
+			name = "GFX_news_event_slavic_union"
+			texturefile = "gfx/event_news_pictures/europe/news_event_BUL_slavic_empire.png"
+		}
+		spriteType = { 
+			name = "GFX_news_event_bulgarian_empire"
+			texturefile = "gfx/event_news_pictures/europe/news_event_BUL_bulgarian_empire.png"
+		}
+		#custom gui
+		spriteType = {
+			name = "GFX_bep_BUL_sofia"
+			textureFile = "gfx/interface/decisions/BUL-BEP/sofia.dds"
+		}
+		spriteType = {
+			name = "GFX_bep_BUL_vidin"
+			textureFile = "gfx/interface/decisions/BUL-BEP/vidin.dds"
+		}
+		spriteType = {
+			name = "GFX_bep_BUL_plovdiv"
+			textureFile = "gfx/interface/decisions/BUL-BEP/plovdiv.dds"
+		}
+		spriteType = {
+			name = "BUL_bep_frame"
+			textureFile = "gfx/interface/decisions/BUL-BEP/Frame.dds"
+		}
+}

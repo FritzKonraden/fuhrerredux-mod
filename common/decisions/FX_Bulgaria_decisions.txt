@@ -1,35 +1,1844 @@
 foreign_politics = {
-  BUL_join_stahlpakt = {
-    allowed = { original_tag = BUL }
-    available = {
-      FROM = {
-        has_socialist_government = no
-      }
-    }
-    visible = {
-      date > 1938.1.1
-      ROM = {
-        NOT = {
-          owns_state = 853
-          owns_state = 78
-        }
-      }
-    }
-    target_trigger = {
-      FROM = {
-        tag = GER
-      }
-    }
-    cost = 50
-    icon = GFX_decision_eng_trade_unions_support
-    fire_only_once = yes
-    ai_will_do = {
-      factor = 800
-    }
-    complete_effect = {
-      FROM = {
-        country_event = { id = bulgaria.100 days = 2 }
-      }
-    }
-  }
+	BUL_join_stahlpakt = {
+		allowed = { original_tag = BUL }
+		available = {
+			FROM = {
+				has_socialist_government = no
+			}
+		}
+		visible = {
+			date > 1938.1.1
+			ROM = {
+				NOT = {
+					owns_state = 853
+					owns_state = 78
+				}
+			}
+		}
+		target_trigger = {
+			FROM = {
+				tag = GER
+			}
+		}
+		cost = 50
+		icon = GFX_decision_eng_trade_unions_support
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 800
+		}
+		complete_effect = {
+			FROM = {
+				country_event = { id = bulgaria.100 days = 2 }
+			}
+		}
+	}
 }
+BUL_align_bulgaria_category = {
+	BUL_join_entente = {
+		visible = {
+			has_completed_focus = BUL_our_allies
+		}
+		available = {
+			has_completed_focus = BUL_our_allies
+			OR = {
+				has_opinion = {
+					target = FRA
+					value > 79
+				}
+				has_opinion = {
+					target = ITA
+					value > 79
+				}
+			}
+		}
+		allowed = {
+			BUL = {
+				OR = {
+					has_government = social_democrat
+					has_government = paternal_autocrat
+					has_government = authoritarian_democrat
+					
+				}
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		remove_effect = {
+			FRA = {
+				country_event = {
+					id = fra.5006
+					days = 1
+				}
+			}
+		}
+	}
+}
+#Expansion Paths Decisions
+BUL_expansion_paths_balkan_category = {
+	BUL_puppet_transylvania_BALKAN = {
+		icon = GFX_decision_generic_army_support
+		cost = 30
+		allowed = {
+			original_tag = BUL
+			BUL = {
+				OR = {
+					controls_state = 84
+					controls_state = 76
+					controls_state = 762
+					controls_state = 83
+					controls_state = 154
+				}
+				has_completed_focus = BUL_balkan_decisions
+				
+			}
+		}
+		visible = {
+			has_completed_focus = BUL_empire_balkan
+		}
+		fire_only_once = yes
+		remove_effect = {
+			BUL = {
+				set_autonomy = {
+					target = TRA
+					autonomy_state = autonomy_integrated_puppet
+				}
+			}
+			TRA = {
+				add_state_core = 84
+				add_state_core = 76
+				add_state_core = 762
+				add_state_core = 83
+				add_state_core = 154
+				set_cosmetic_tag = TRA_balkan_union_BUL
+			}
+			BUL = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 84
+							state = 76
+							state = 762
+							state = 83
+							state = 154
+						}
+						
+					}
+					transfer_state_to = TRA
+				}	
+			}
+		}
+	}
+	BUL_cede_slavic_transylvania = {
+		icon = GFX_decision_category_power_struggle
+		fire_only_once = yes
+		cost = 10
+		allowed = {
+			original_tag = BUL
+			BUL = {
+				OR = {
+					controls_state = 82
+					controls_state = 750
+				}
+			}
+			TRA = {
+				exists = yes
+				is_puppet_of = BUL
+			}
+		}
+		visible = {
+			BUL = {
+				has_completed_focus = BUL_balkan_decisions
+			}
+		}
+		remove_effect = {
+			TRA = {
+				add_state_core = 82
+				add_state_core = 750
+			}
+			BUL = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 82
+							state = 750
+						}
+						
+					}
+					transfer_state_to = TRA
+				}
+			}
+		}
+	}
+	BUL_puppet_romania = {
+		icon = GFX_decision_eng_trade_unions_support
+		fire_only_once = yes
+		cost = 10
+		allowed = {
+			original_tag = BUL
+			BUL = {
+				OR = {
+					controls_state = 81
+					controls_state = 46
+					controls_state = 79
+					controls_state = 80
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = BUL_balkan_decisions
+		}
+		remove_effect = {
+			BUL = {
+				set_autonomy = {
+					target = ROM
+					autonomy_state = autonomy_integrated_puppet
+				}
+			}
+			ROM = {
+				add_state_core = 46
+				add_state_core = 79
+				add_state_core = 81
+				add_state_core = 80
+				set_cosmetic_tag = ROM_balkan_union_BUL
+			}
+			BUL = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 46
+							state = 79
+							state = 81
+							state = 80
+						}
+					}
+					transfer_state_to = ROM
+				}
+			}
+		}
+	}
+	BUL_give_moldova_romania = {
+		icon = GFX_decision_generic_construction
+		fire_only_once = yes
+		cost = 10
+		allowed = {
+			original_tag = BUL
+			ROM = {
+				exists = yes
+				is_puppet_of = BUL
+			}
+			BUL = {
+				OR = {
+					controls_state = 78
+					controls_state = 853
+				}
+				
+			}
+		}
+		visible = {
+			has_completed_focus = BUL_balkan_decisions
+		}
+		remove_effect = {
+			ROM = {
+				add_state_core = 78
+				add_state_core = 853
+			}
+			BUL = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 78
+							state = 853
+						}
+					}
+					transfer_state_to = ROM
+				}
+			}
+		}
+	}
+	BUL_puppet_moldova = {
+		icon = GFX_decision_generic_construction
+		fire_only_once = yes
+		cost = 10
+		allowed = {
+			original_tag = BUL
+			BUL = {
+				OR = {
+					controls_state = 78
+					controls_state = 853
+				}
+				NOT = {
+					ROM = {
+						OR = {
+							controls_state = 78
+							controls_state = 853
+						}
+					}
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = BUL_balkan_decisions
+		}
+		remove_effect = {
+			BUL = {
+				set_autonomy = {
+					target = MOL
+					autonomy_state = autonomy_integrated_puppet
+				}
+			}
+			MOL = {
+				add_state_core = 78
+				add_state_core = 853
+				set_cosmetic_tag = MOL_balkan_union_BUL
+			}
+			BUL = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 78
+							state = 853
+						}
+					}
+					transfer_state_to = MOL
+				}
+			}
+			
+		}
+	}
+	BUL_take_crimea = {
+		icon = GFX_decision_category_power_struggle
+		fire_only_once = yes
+		cost = 75
+		allowed = {
+			original_tag = BUL
+			UKR = {
+				has_opinion = {
+					target = BUL
+					value > 90
+				}
+				exists = yes
+			}
+		}
+		visible = {
+			has_completed_focus = BUL_balkan_decisions
+		}
+		remove_effect = {
+			UKR = {
+				country_event = ukraine.10000
+			}
+		}
+	}
+	BUL_choose_capital = {
+		icon = GFX_decision_category_power_struggle
+		fire_only_once = yes
+		cost = 10
+		allowed = {
+			original_tag = BUL
+		}
+		visible = {
+			has_completed_focus = BUL_balkan_decisions
+		}
+		remove_effect = {
+			country_event = bulgaria.12
+		}
+	}
+	BUL_cyprus_issue = {
+		icon = none
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			original_tag = BUL
+			has_completed_focus = BUL_balkan_decisions
+			183 = {
+				is_owned_by = ENG
+			}
+			ENG = {
+				has_opinion = {
+					target = BUL
+					value > 75
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = BUL_balkan_decisions
+		}
+		remove_effect = {
+			ENG = {
+				country_event = ukcyp.69420
+			}
+		}
+	}
+}
+
+
+BUL_integrate_states_category = {
+	BUL_byz_integrate_serbia = {
+		fire_only_once = yes
+		cost = 50
+		allowed = {
+			original_tag = BUL
+			has_cosmetic_tag = BUL_byzantium
+		}
+		visible = {
+			any_owned_state = {
+				is_core_of = SER
+				is_owned_by = BUL
+			}
+		}
+		remove_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = SER
+					is_controlled_by = BUL
+				}
+				add_core_of = BUL
+			}
+		}
+	}
+	BUL_byz_integrate_north_epirus = {
+		icon = GFX_decision_category_power_struggle
+		cost = 10
+		allowed = {
+			original_tag = BUL
+			owns_state = 765
+			NOT = {
+				765 = {
+					is_core_of = BUL
+				}
+			}
+		}
+		visible = {
+			original_tag = BUL
+			owns_state = 765
+			NOT = {
+				765 = {
+					is_core_of = BUL
+				}
+			}
+		}
+		remove_effect = {
+			add_state_core = 765
+		}
+	}
+	BUL_byz_integrate_romania = {
+		cost = 50
+		fire_only_once = yes
+		allowed = {
+			original_tag = BUL
+			any_owned_state = {
+				is_core_of = ROM
+				is_controlled_by = BUL
+				NOT = {
+					state = 76
+					state = 84
+					state = 164
+					state = 762
+					state = 83
+				}
+			}
+		}
+		visible = {
+			original_tag = BUL
+			any_owned_state = {
+				is_core_of = ROM
+				is_controlled_by = BUL
+				is_romanian_state_no_transylvania = yes
+			}
+		}
+		remove_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = ROM
+					is_controlled_by = BUL
+					is_romanian_state_no_transylvania = yes
+				}
+				add_core_of = BUL
+			}
+		}
+	}
+	BUL_byz_force_hungary = {
+		cost = 200
+		allowed = {
+			original_tag = BUL
+		}
+		visible = {
+			original_tag = BUL
+			has_cosmetic_tag = BUL_byzantine
+			
+		}
+	}
+}
+BUL_roman_expand_category_puppets_category = {
+	BUL_roman_puppet_iraq = {
+		allowed = {
+			original_tag = BUL
+		}
+		available = {
+			AND = {
+				original_tag = BUL
+				has_global_flag = BUL_formed_roman_empire
+				BUL = {
+					AND = {
+						controls_state = 675
+						controls_state = 291
+						controls_state = 676
+					}
+				}
+				has_completed_focus = BUL_egypt_and_levant
+			}
+		}
+		visible = {
+			original_tag = BUL
+			has_global_flag = BUL_formed_roman_empire
+			has_completed_focus = BUL_egypt_and_levant
+		}
+		cost = 0
+		fire_only_once = yes
+		remove_effect = {
+			291 = {
+				transfer_state_to = IRQ
+				add_core_of = IRQ
+				remove_claim_by = BUL
+			}
+			675 = {
+				transfer_state_to = IRQ
+				add_core_of = IRQ
+				remove_claim_by = BUL
+			}
+			676 = {
+				transfer_state_to = IRQ
+				add_core_of = IRQ
+				remove_claim_by = BUL
+			}
+			BUL = {
+				set_autonomy = {
+					target = IRQ
+					autonomy_state = autonomy_thema
+				}
+			}
+			IRQ = {
+				load_focus_tree = generic_focus
+				set_cosmetic_tag = IRQ_roman_thema
+			}
+		}
+	}
+	BUL_roman_give_iraq_kuwait = {
+		allowed = {
+			original_tag = BUL
+		}
+		visible = {
+			AND = {
+				original_tag = BUL
+				has_global_flag = BUL_formed_roman_empire
+				has_completed_focus = BUL_egypt_and_levant
+				IRQ = {
+					is_subject_of = BUL
+				}
+			}
+		}
+		available = {
+			AND = {
+				original_tag = BUL
+				has_global_flag = BUL_formed_roman_empire
+				has_completed_focus = BUL_egypt_and_levant
+				656 = {
+					is_controlled_by = BUL
+				}
+				IRQ = {
+					AND = {
+						OR = {
+							controls_state = 675
+							controls_state = 291
+						}
+						has_autonomy_state = autonomy_thema
+						is_subject_of = BUL
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		remove_effect = {
+			656 = {
+				transfer_state_to = IRQ
+				add_core_of = IRQ
+				remove_claim_by = BUL
+			}
+		}
+	}
+	BUL_roman_puppet_egypt = {
+		fire_only_once = yes
+		allowed = {
+			original_tag = BUL
+		}
+		visible = {
+			has_completed_focus = BUL_egypt_and_levant
+		}
+		available = {
+			BUL = {
+				AND = {
+					controls_state = 456
+					controls_state = 457
+					controls_state = 446
+					controls_state = 452
+					controls_state = 453
+				}
+			}
+		}
+		remove_effect = {
+			BUL = {
+				every_owned_state = {
+					limit = {
+						is_core_of = EGY
+						NOT = {
+							state = 813 
+							state = 447
+						}
+					}
+					transfer_state_to = EGY
+					add_core_of = EGY
+					remove_claim_by = BUL
+				}
+			}
+			EGY = {
+				set_cosmetic_tag = EGY_roman_thema
+				load_focus_tree = generic_focus
+			}
+			BUL = {
+				set_autonomy = {
+					target = EGY
+					autonomy_state = autonomy_thema
+				}
+				add_state_core = 813
+				add_state_core = 447
+			}
+		}
+	}
+	BUL_roman_give_egypt_libya = {
+		fire_only_once = yes
+		allowed = {
+			original_tag = BUL
+		}
+		visible = {
+			has_completed_focus = BUL_egypt_and_levant
+			EGY = {
+				is_subject_of = BUL
+			}
+		}
+		available = {
+			BUL = {
+				AND = {
+					controls_state = 769
+					controls_state = 273
+					controls_state = 663
+					controls_state = 449
+					controls_state = 662
+					controls_state = 661
+					controls_state = 448
+				}
+			}
+			EGY = {
+				has_autonomy_state = autonomy_thema
+				is_subject_of = BUL
+			}
+		}
+		remove_effect = {
+			BUL = {
+				every_owned_state = {
+					limit = {
+						is_core_of = LBA
+						NOT = { 
+							state = 450
+							state = 451
+						}
+					}
+					transfer_state_to = EGY
+					add_core_of = EGY
+					remove_claim_by = BUL
+				}
+			}
+			EGY = {
+				set_cosmetic_tag = EGY_roman_north_africa_thema	
+			}
+			BUL = {
+				add_state_core = 450
+				add_state_core = 451
+			}
+		}
+	}
+	BUL_roman_give_egypt_tynisia = {
+		fire_only_once = yes
+		allowed = {
+			original_tag = BUL
+		}
+		visible = {
+			has_completed_focus = BUL_egypt_and_levant
+		}
+		available = {
+			BUL = {
+				AND = {
+					controls_state = 458
+					controls_state = 665
+					has_global_flag = BUL_formed_roman_empire
+				}
+			}
+			EGY = {
+				has_autonomy_state = autonomy_thema
+				is_subject_of = BUL
+			}
+			
+		}
+		remove_effect = {
+			BUL = {
+				every_owned_state = {
+					limit = {
+						is_core_of = TUN
+						NOT = { 
+							state = 458
+						}
+					}
+					transfer_state_to = EGY
+					add_core_of = EGY
+					remove_claim_by = BUL
+				}
+			}
+			BUL = {
+				add_state_core = 458
+			}
+		}
+	}
+	BUL_roman_puppet_north_italy = {
+		fire_only_once = yes
+		allowed = {
+			original_tag = BUL
+		}
+		visible = {
+			has_completed_focus = BUL_italy_france
+		}
+		available = {
+			BUL = {
+				AND = {
+					has_global_flag = BUL_formed_roman_empire
+					controls_state = 158
+					controls_state = 159
+					controls_state = 161
+					controls_state = 162
+					controls_state = 2
+					controls_state = 852
+					controls_state = 851
+					controls_state = 114
+					controls_state = 160
+					controls_state = 774
+					controls_state = 39
+					controls_state = 157
+					controls_state = 39
+					controls_state = 968
+				}
+			}
+			NOT = {
+				ITA = {
+					is_subject_of = BUL
+				}
+			}
+		}
+		remove_effect = {
+			BUL = {
+				every_owned_state = {
+					limit = {
+						is_core_of = ITA
+						NOT = { 
+							state = 115
+							state = 114
+							state = 850
+							state = 117
+							state = 156
+							state = 849
+							state = 736
+							state = 770
+							state = 917
+							state = 768
+						}
+					}
+					transfer_state_to = ITA
+					add_core_of = ITA
+					remove_claim_by = BUL
+				}
+				add_state_core = 115
+				add_state_core = 114
+				add_state_core = 850
+				add_state_core = 117
+				add_state_core = 156
+				add_state_core = 849
+				add_state_core = 736
+				add_state_core = 770
+				add_state_core = 917
+				add_state_core = 768
+				set_autonomy = {
+					target = ITA
+					autonomy_state = autonomy_syntrofos
+				}
+			}
+			ITA = {
+				load_focus_tree = generic_focus
+				set_cosmetic_tag = ITA_north_syntrofos
+				add_state_core = 39
+				transfer_state = 39
+			}
+		}
+	}
+	BUL_roman_puppet_south_italy = {
+		fire_only_once = yes
+		allowed = {
+			original_tag = BUL
+		}
+		visible = {
+			has_completed_focus = BUL_italy_france
+		}
+		available = {
+			BUL = {
+				AND = {
+					has_global_flag = BUL_formed_roman_empire
+					controls_state = 115
+					controls_state = 850
+					controls_state = 156
+					controls_state = 117
+					controls_state = 849
+				}
+			}
+		}
+		remove_effect = {
+			BUL = {
+				every_owned_state = {
+					limit = {
+						AND = {
+							is_core_of = ITA
+							OR = {
+								state = 115
+								state = 850
+								state = 156
+								state = 117
+								state = 849
+							}
+						}
+					}
+					transfer_state_to = UPC
+					add_core_of = UPC
+					remove_claim_by = BUL
+				}
+				set_autonomy = {
+					target = UPC
+					autonomy_state = autonomy_thema
+				}
+			}
+			UPC = {
+				load_focus_tree = generic_focus
+				set_cosmetic_tag = ITA_south_thema
+			}
+		}
+	}
+	BUL_roman_give_malta_south_italy = {
+		fire_only_once = yes
+		allowed = {
+			original_tag = BUL
+		}
+		visible = {
+			has_completed_focus = BUL_italy_france
+			UPC = {
+				is_puppet_of = BUL
+			}
+		}
+		available = {
+			BUL = {
+				AND = {
+					has_global_flag = BUL_formed_roman_empire
+					controls_state = 116
+				}
+			}
+			UPC = {
+				is_puppet_of = BUL
+			}
+		}
+		remove_effect = {
+			BUL = {
+				116 = {
+					transfer_state_to = UPC
+					add_core_of = UPC
+					remove_claim_by = BUL
+				}
+			}
+		}
+	}
+	BUL_roman_give_egypt_eritrea = {
+		fire_only_once = yes
+		allowed = {
+			original_tag = BUL
+		}
+		visible = {
+			AND = {
+				has_completed_focus = BUL_italy_france
+				EGY = {
+					is_puppet_of = BUL
+				}
+			}
+			
+		}
+		available = {
+			BUL = {
+				AND = {
+					has_global_flag = BUL_formed_roman_empire
+					controls_state = 550
+					controls_state = 559
+				}
+			}
+			EGY = {
+				is_puppet_of = BUL
+			}
+		}
+		remove_effect = {
+			550 = {
+				transfer_state_to = EGY
+				add_core_of = EGY
+				remove_claim_by = BUL
+			}
+			559 = {
+				transfer_state_to = EGY
+				add_core_of = EGY
+				remove_claim_by = BUL
+			}
+		}
+	}
+	BUL_roman_puppet_france = {
+		fire_only_once = yes
+		allowed = {
+			original_tag = BUL
+		}
+		visible = {
+			has_completed_focus = BUL_italy_france
+		}
+		available = {
+			BUL = {
+				AND = {
+					has_global_flag = BUL_formed_roman_empire
+					controls_state = 14
+					controls_state = 990
+					controls_state = 23
+					controls_state = 1017
+					controls_state = 19
+					controls_state = 1015
+					controls_state = 31
+					controls_state = 1016
+					controls_state = 22
+					controls_state = 25
+					controls_state = 33
+					controls_state = 24
+					controls_state = 30
+					controls_state = 15
+					controls_state = 989
+					controls_state = 743
+					controls_state = 749
+					controls_state = 16
+					controls_state = 18
+					controls_state = 27
+					controls_state = 20
+					controls_state = 1004
+					controls_state = 32
+					controls_state = 735
+					controls_state = 17
+					controls_state = 747
+					controls_state = 28
+					controls_state = 868
+					controls_state = 26
+					controls_state = 29
+				}
+			}
+		}
+		remove_effect = {
+			BUL = {
+				every_owned_state = {
+					limit = {
+						AND = {
+							is_core_of = FRA
+							OR = {
+								state = 14 #
+								state = 990 #
+								state = 23 # 
+								state = 1017 #
+								state = 19 # 
+								state = 1015 #
+								state = 31 #
+								state = 1016 #
+								state = 22 #
+								state = 25 #
+								state = 33 #
+								state = 24 #
+								state = 30 #
+								state = 15 #
+								state = 989 #
+								state = 743 #
+								state = 749 #
+								state = 16 #
+								state = 18  #
+								state = 27 #
+								state = 20 #
+								state = 1004 #
+								state = 32 #
+								state = 735 #
+								state = 17 #
+								state = 747 #
+								state = 28 #
+								state = 868 #
+								state = 26 #
+								state = 29 #
+							}
+						}
+					}
+					transfer_state_to = FRA
+					add_core_of = FRA
+					remove_claim_by = BUL
+				}
+				set_autonomy = {
+					target = FRA
+					autonomy_state = autonomy_syntrofos
+				}
+				add_state_core = 21
+				add_state_core = 748
+			}
+			FRA = {
+				load_focus_tree = generic_focus
+				set_cosmetic_tag = FRA_roman_syntrofos
+				if = {
+					limit = {
+						RHI = {
+							is_puppet_of = FRA
+						}
+					}
+					release = RHI
+				}
+				if = {
+					limit = {
+						controls_state = 981
+					}
+					RHI = {
+						transfer_state = 981
+						add_state_core = 981
+					}
+				}
+			}
+			BUL = {
+				if = {
+					limit = {
+						controls_state = 981
+					}
+					RHI = {
+						transfer_state = 981
+						add_state_core = 981
+					}
+				}
+			}
+		}
+	}
+	BUL_roman_give_egypt_french_territories = {
+		fire_only_once = yes
+		allowed = {
+			original_tag = BUL
+		}
+		visible = {
+			has_completed_focus = BUL_italy_france
+		}
+		available = {
+			BUL = {
+				AND = {
+					has_global_flag = BUL_formed_roman_empire
+					controls_state = 513
+					controls_state = 459
+					controls_state = 460
+				}
+			}
+			EGY = {
+				is_puppet_of = BUL
+			}
+		}
+		remove_effect = {
+			BUL = {
+				every_owned_state = {
+					limit = {
+						AND = {
+							OR = {
+								is_on_continent = africa
+								is_on_continent = north_africa
+							}
+							NOT = {
+								state = 458
+							}
+							is_french_colonial_claim = yes
+						}
+					}
+					transfer_state_to = EGY
+					add_core_of = EGY
+					remove_claim_by = BUL
+				}
+				if = {
+					limit = {
+						controls_state = 817
+					}
+					817 = {
+						transfer_state_to = EGY
+						add_core_of = EGY
+						remove_claim_by = BUL
+					}
+				}
+				if = {
+					limit = {
+						has_cosmetic_tag = EGY_roman_thema
+					}
+					set_cosmetic_tag = EGY_roman_north_africa_thema
+				}
+			}
+		}
+	}
+	BUL_roman_core_stuff = {
+		fire_only_once = yes
+		allowed = {
+			original_tag = BUL
+		}
+		visible = {
+			has_completed_focus = BUL_italy_france
+		}
+		available = {
+			BUL = {
+				AND = {
+					has_global_flag = BUL_formed_roman_empire
+					controls_state = 458
+					controls_state = 451
+					controls_state = 450
+					controls_state = 447
+					controls_state = 813
+					controls_state = 183
+					controls_state = 345
+					controls_state = 1030
+					controls_state = 114
+					controls_state = 768
+					controls_state = 1
+					controls_state = 290
+					controls_state = 897
+					controls_state = 118
+					controls_state = 177
+					
+				}
+			}
+		}
+		remove_effect = {
+			BUL = {
+				add_state_core = 458
+				add_state_core = 451
+				add_state_core = 450
+				add_state_core = 447
+				add_state_core = 813
+				add_state_core = 183
+				add_state_core = 345
+				add_state_core = 1030
+				add_state_core = 114
+				add_state_core = 768
+				add_state_core = 1
+				add_state_core = 290
+				add_state_core = 897
+				add_state_core = 118
+				add_state_core = 177
+				if = {
+					limit = {
+						has_cosmetic_tag = EGY_roman_thema
+					}
+					set_cosmetic_tag = EGY_roman_north_africa_thema
+				}
+			}
+		}
+	}
+	BUL_roman_puppet_north_spain = {
+		fire_only_once = yes
+		allowed = {
+			original_tag = BUL
+		}
+		visible = {
+			has_completed_focus = BUL_conquer_iberia
+		}
+		available = {
+			BUL = {
+				AND = {
+					has_global_flag = BUL_formed_roman_empire
+					# OR = {
+						# 	SPF = { exists = no } 
+						# 	SPM = { exists = no } 
+						# 	SPR = { exists = no } 
+						# 	SPA = { exists = no } 
+						# }
+						controls_state = 171
+						controls_state = 174
+						controls_state = 176
+						controls_state = 1006
+						controls_state = 172
+						controls_state = 166
+						controls_state = 1005
+						controls_state = 165
+						controls_state = 854
+						controls_state = 167
+						controls_state = 175
+						controls_state = 41
+						controls_state = 170
+						controls_state = 833
+					}
+				}
+			}
+			remove_effect = {
+				BUL = {
+					every_owned_state = {
+						limit = {
+							OR = {
+								is_core_of = SPR
+								state = 833
+							}
+							
+							NOT = { 
+								state = 169
+								state = 834
+								state = 173
+								state = 118
+								state = 177
+								state = 168
+							}
+						}
+						transfer_state_to = SPR
+						add_core_of = SPR
+						remove_claim_by = BUL
+					}
+					add_state_core = 177
+					add_state_core = 169
+					add_state_core = 834
+					add_state_core = 118
+					add_state_core = 168
+					set_autonomy = {
+						target = SPR
+						autonomy_state = autonomy_syntrofos
+					}
+				}
+				SPR = {
+					load_focus_tree = generic_focus
+					set_cosmetic_tag = SPR_north_syntrofos
+				}
+			}
+		}
+		BUL_roman_puppet_south_iberia = {
+			fire_only_once = yes
+			allowed = {
+				original_tag = BUL
+			}
+			visible = {
+				has_completed_focus = BUL_conquer_iberia
+			}
+			available = {
+				BUL = {
+					AND = {
+						has_global_flag = BUL_formed_roman_empire
+						# SPF = { exists = no } 
+						# SPM = { exists = no } 
+						# SPR = { exists = no } 
+						# SPA = { exists = no } 
+						controls_state = 169
+						controls_state = 834
+						controls_state = 173
+						controls_state = 168
+						controls_state = 998
+						controls_state = 179
+					}
+				}
+			}
+			remove_effect = {
+				BUL = {
+					every_owned_state = {
+						limit = {
+							OR = {
+								state = 169
+								state = 834
+								state = 173
+								state = 168
+								state = 998
+								state = 179
+							}
+						}
+						transfer_state_to = SPF
+						add_core_of = SPF
+						remove_claim_by = BUL
+					}
+					set_autonomy = {
+						target = SPF
+						autonomy_state = autonomy_thema
+					}
+				}
+				SPF = {
+					load_focus_tree = generic_focus
+					set_cosmetic_tag = SPF_south_iberia_thema
+				}
+			}
+		}
+		BUL_roman_puppet_north_portugal = {
+			fire_only_once = yes
+			allowed = {
+				original_tag = BUL
+			}
+			visible = {
+				has_completed_focus = BUL_conquer_iberia
+			}
+			available = {
+				BUL = {
+					AND = {
+						has_global_flag = BUL_formed_roman_empire
+						POR = { exists = no }
+						controls_state = 112
+						controls_state = 999
+						controls_state = 1001
+						controls_state = 181
+						controls_state = 1000
+						controls_state = 180
+						controls_state = 697
+					}
+				}
+			}
+			remove_effect = {
+				BUL = {
+					every_owned_state = {
+						limit = {
+							OR = {
+								state = 112
+								state = 999
+								state = 1001
+								state = 181
+								state = 1000
+								state = 180
+								state = 697
+							}
+						}
+						transfer_state_to = POR
+						add_core_of = POR
+						remove_claim_by = BUL
+					}
+					set_autonomy = {
+						target = POR
+						autonomy_state = autonomy_syntrofos
+					}
+				}
+				POR = {
+					load_focus_tree = generic_focus
+					set_cosmetic_tag = POR_roman_syntrofos
+				}
+			}
+		}
+		BUL_roman_puppet_north_iberia = {
+			fire_only_once = yes
+			allowed = {
+				original_tag = BUL
+			}
+			visible = {
+				has_completed_focus = BUL_conquer_iberia
+			}
+			available = {
+				BUL = {
+					AND = {
+						has_global_flag = BUL_formed_roman_empire
+						# SPF = { exists = no } 
+						# SPM = { exists = no } 
+						# SPR = { exists = no } 
+						# SPA = { exists = no }
+						# POR = { exists = no }
+						controls_state = 112
+						controls_state = 999
+						controls_state = 1001
+						controls_state = 181
+						controls_state = 1000
+						controls_state = 180
+						controls_state = 697
+						controls_state = 171
+						controls_state = 174
+						controls_state = 176
+						controls_state = 1006
+						controls_state = 172
+						controls_state = 166
+						controls_state = 1005
+						controls_state = 165
+						controls_state = 854
+						controls_state = 167
+						controls_state = 175
+						controls_state = 41
+						controls_state = 170
+						controls_state = 833
+						
+					}
+				}
+			}
+			remove_effect = {
+				BUL = {
+					every_owned_state = {
+						limit = {
+							OR = {
+								state = 112
+								state = 999
+								state = 1001
+								state = 181
+								state = 1000
+								state = 180
+								state = 697
+								state = 171
+								state = 174
+								state = 176
+								state = 1006
+								state = 172
+								state = 166
+								state = 1005
+								state = 165
+								state = 854
+								state = 167
+								state = 175
+								state = 41
+								state = 170
+								state = 833
+								
+							}
+						}
+						transfer_state_to = SPR
+						add_core_of = SPR
+						remove_claim_by = BUL
+					}
+					set_autonomy = {
+						target = SPR
+						autonomy_state = autonomy_syntrofos
+					}
+				}
+				SPR = {
+					load_focus_tree = generic_focus
+					set_cosmetic_tag = SPR_north_iberia_syntrofos
+				}
+			}
+		}
+		BUL_roman_puppet_iberia = {
+			fire_only_once = yes
+			allowed = {
+				original_tag = BUL
+			}
+			visible = {
+				has_completed_focus = BUL_conquer_iberia
+			}
+			available = {
+				BUL = {
+					AND = {
+						has_global_flag = BUL_formed_roman_empire
+						SPF = { exists = no } 
+						SPM = { exists = no } 
+						SPR = { exists = no } 
+						SPA = { exists = no }
+						POR = { exists = no}
+						controls_state = 112 #
+						controls_state = 833 #
+						controls_state = 999 #
+						controls_state = 1001 #
+						controls_state = 181 #
+						controls_state = 1000 #
+						controls_state = 180 #
+						controls_state = 697 #
+						controls_state = 171 #
+						controls_state = 174 #
+						controls_state = 176 #
+						controls_state = 1006 #
+						controls_state = 172 #
+						controls_state = 166 #
+						controls_state = 1005 # 
+						controls_state = 165 #
+						controls_state = 854 #
+						controls_state = 167 #
+						controls_state = 175 #
+						controls_state = 41 #
+						controls_state = 170 #
+						controls_state = 169 #
+						controls_state = 834 #
+						controls_state = 173 #
+						controls_state = 168 #
+						controls_state = 998 #
+						controls_state = 179 #
+						controls_state = 167 #
+						
+					}
+				}
+			}
+			remove_effect = {
+				BUL = {
+					every_owned_state = {
+						limit = {
+							OR = {
+								is_core_of = SPR
+								is_core_of = POR
+								is_core_of = SPA
+								is_core_of = SPM
+								is_core_of = SPF
+								state = 169
+								state = 834
+								state = 173
+								state = 168
+								state = 998
+								state = 179
+								state = 833
+							}
+						}
+						transfer_state_to = SPR
+						add_core_of = SPR
+						remove_claim_by = BUL
+					}
+					set_autonomy = {
+						target = SPR
+						autonomy_state = autonomy_syntrofos
+					}
+				}
+				SPR = {
+					load_focus_tree = generic_focus
+					set_cosmetic_tag = SPR_iberia_syntrofos
+				}
+			}
+		}
+		BUL_roman_puppet_transylvania = {
+			allowed = {
+				original_tag = BUL
+			}
+			available = {
+				AND = {
+					controls_state = 84
+					controls_state = 76
+					controls_state = 82
+					controls_state = 83
+					controls_state = 762
+					controls_state = 154
+				}
+			}
+			visible = {
+				has_completed_focus = BUL_remaining_balkans
+			}
+			fire_only_once = yes
+			remove_effect = {
+				TRA = {
+					transfer_state = 84
+					transfer_state = 76
+					transfer_state = 83
+					transfer_state = 762
+					transfer_state = 82
+					transfer_state = 154
+					add_state_core = 84
+					add_state_core = 76
+					add_state_core = 83
+					add_state_core = 762
+					add_state_core = 82
+					add_state_core = 154
+					set_cosmetic_tag = TRA_roman_thema
+				}
+				BUL = {
+					set_autonomy = {
+						target = TRA
+						autonomy_state = autonomy_thema
+					}
+				}
+			}
+		}
+		BUL_roman_puppet_romania = {
+			allowed = {
+				original_tag = BUL
+			}
+			available = {
+				has_completed_focus = BUL_remaining_balkans
+				BUL = {
+					AND = {
+						controls_state = 81
+						controls_state = 46
+						controls_state = 79
+						controls_state = 80
+						controls_state = 78
+						controls_state = 853
+					}
+				}
+			}
+			fire_only_once = yes
+			visible = {
+				has_completed_focus = BUL_remaining_balkans
+			}
+			remove_effect = {
+				ROM = {
+					transfer_state = 81
+					transfer_state = 46
+					transfer_state = 79
+					transfer_state = 80
+					transfer_state = 78
+					transfer_state = 853
+					add_state_core = 81
+					add_state_core = 46
+					add_state_core = 79
+					add_state_core = 80
+					add_state_core = 78
+					add_state_core = 853
+					load_focus_tree = generic_focus
+					set_cosmetic_tag = ROM_roman_thema
+				}
+				BUL = {
+					set_autonomy = {
+						target = ROM
+						autonomy_state = autonomy_thema
+					}
+				}
+				if = {
+					limit = {
+						BUL = {
+							AND = {
+								controls_state = 861
+								861 = {
+									NOT = {
+										is_core_of = BUL
+									}
+								}
+							}
+						}
+					}
+					861 = {
+						add_core_of = BUL
+						transfer_state_to = BUL
+					}
+				}
+			}
+		}
+		BUL_roman_puppet_serbia = {
+			allowed = {
+				original_tag = BUL
+			}
+			available = {
+				has_completed_focus = BUL_remaining_balkans
+				BUL = {
+					AND = {
+						controls_state = 102
+						controls_state = 103
+						controls_state = 788
+						controls_state = 789
+						controls_state = 1036
+						controls_state = 1035
+						controls_state = 1034
+						controls_state = 104
+						controls_state = 1039
+						controls_state = 45
+						controls_state = 985
+						controls_state = 750
+						controls_state = 1037
+						controls_state = 109
+						controls_state = 767
+						controls_state = 107
+					}
+				}
+			}
+			fire_only_once = yes
+			visible = {
+				has_completed_focus = BUL_remaining_balkans
+			}
+			remove_effect = {
+				SER = {
+					transfer_state = 102
+					transfer_state = 103
+					transfer_state = 788
+					transfer_state = 789
+					transfer_state = 1036
+					transfer_state = 1035
+					transfer_state = 1034
+					transfer_state = 104
+					transfer_state = 1039
+					transfer_state = 45
+					transfer_state = 985
+					transfer_state = 750
+					transfer_state = 1037
+					transfer_state = 109
+					transfer_state = 767
+					transfer_state = 107
+					add_state_core = 102
+					add_state_core = 103
+					add_state_core = 788
+					add_state_core = 789
+					add_state_core = 1036
+					add_state_core = 1035
+					add_state_core = 1034
+					add_state_core = 104
+					add_state_core = 1039
+					add_state_core = 45
+					add_state_core = 985
+					add_state_core = 750
+					add_state_core = 1037
+					add_state_core = 109
+					add_state_core = 767
+					add_state_core = 107
+					load_focus_tree = generic_focus
+					set_cosmetic_tag = SER_roman_thema
+				}
+				BUL = {
+					set_autonomy = {
+						target = SER
+						autonomy_state = autonomy_thema
+					}
+					if = {
+						limit = {
+							OR = {
+								AND = {
+									controls_state = 942
+									NOT = {
+										942 = {
+											is_core_of = BUL
+										}
+									}
+								}
+								AND = {
+									controls_state = 106
+									NOT = {
+										106 = {
+											is_core_of = BUL
+										}
+									}
+								}
+								AND = {
+									controls_state = 787
+									NOT = {
+										787 = {
+											is_core_of = BUL
+										}
+									}
+								}
+							}
+						}
+						add_state_core = 787
+						add_state_core = 106
+						add_state_core = 942
+					}
+				}
+			}
+		}
+		BUL_roman_give_serbia_italian_balkan_lands = {
+			allowed = {
+				original_tag = BUL
+			}
+			fire_only_once = yes
+			visible = {
+				has_completed_focus = BUL_italy_france
+			}
+			available = {
+				has_completed_focus = BUL_italy_france
+				BUL = {
+					AND = {
+						controls_state = 917
+						controls_state = 736
+						controls_state = 770
+						controls_state = 163
+					}
+				}
+			}
+			remove_effect = {
+				SER = {
+					transfer_state = 917
+					transfer_state = 736
+					transfer_state = 770
+					transfer_state = 163
+					add_state_core = 917
+					add_state_core = 736
+					add_state_core = 770
+					add_state_core = 163
+				}
+			}
+		}
+		BUL_roman_create_faction = {
+			allowed = {
+				original_tag = BUL
+			}
+			available = {
+				AND = {
+					EGY = {
+						is_puppet_of = BUL
+					}
+					IRQ = {
+						is_puppet_of = BUL
+					}
+					BUL = {
+						NOT = {
+							is_in_faction = yes
+						}
+					}
+				}
+			}
+			remove_effect = {
+				BUL = {
+					create_faction = "Roman Imperial Alliance"
+				}
+			}
+		}
+		BUL_roman_ask_for_crimea = {
+			allowed = {
+				original_tag = BUL
+			}
+			available = {
+				UKR = {
+					is_subject = no
+				}
+			}
+			visible = {
+				has_completed_focus = BUL_italy_france
+			}
+			remove_effect = {
+				UKR = {
+					country_event = ukraine.10002
+				}
+			}
+		}
+		BUL_roman_ask_for_crimea = {
+			allowed = {
+				original_tag = BUL
+			}
+			available = {
+				BUL = {
+					AND = {
+						controls_state = 72
+						controls_state = 137
+						controls_state = 196
+					}
+				}
+			}
+			visible = {
+				BUL = {
+					AND = {
+						controls_state = 72
+						controls_state = 137
+						controls_state = 196
+					}
+				}
+			}
+			remove_effect = {
+				
+			}
+		}
+	}
+	BUL_roman_expand_panorth_expand_category = {
+		BUL_panorth_help_armenia_kurdistan = {
+			fire_only_once = yes
+			allowed = {
+				original_tag = BUL
+			}
+			visible = {
+				ARM = {
+					is_in_faction_with = BUL
+				}
+			}
+			available = {
+				ARM = {
+					any_neighbor_country = {
+						tag = KUR
+					}
+				}
+				BUL = {has_completed_focus = BUL_pan_orthodoxism}
+			}
+			remove_effect = {
+				KUR = {
+					country_event = kur.1
+				}
+			}
+		}
+	}

@@ -1,3 +1,4 @@
+
 state={
 	id=1018
 	name="STATE_1018"
@@ -7,13 +8,16 @@ state={
 		add_core_of = MON
 		buildings = {
 			infrastructure = 1
+
 		}
+
 	}
-	
+
 	provinces={
-		1725 1728 1791 1834 4697 4882 7676 7717 7881 12579 12649 12675
+		1791 1834 4697 4882 12579 12649 12675 
 	}
 	manpower=358943
 	buildings_max_level_factor=1.000
 	state_category=pastoral
+	local_supplies=0.000
 }
