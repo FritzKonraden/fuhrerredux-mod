@@ -15,35 +15,35 @@ units = {
 	division = {
 		name = "NMÖO Division 1 - Baranya"
 		location = 9643
-		division_template = "Transylvanian Militia" 
+		division_template = "NMÖO Division" 
 		start_experience_factor = 0.04
 		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "NMÖO Division 2 - Pest"
 		location = 9690
-		division_template = "Transylvanian Militia" 
+		division_template = "NMÖO Division" 
 		start_experience_factor = 0.04
 		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "NMÖO Division 3 - Tolna"
 		location = 3680
-		division_template = "Transylvanian Militia" 
+		division_template = "NMÖO Division" 
 		start_experience_factor = 0.04
 		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "NMÖO Division 4 - Bács-Kiskun"
 		location = 11625
-		division_template = "Transylvanian Militia" 
+		division_template = "NMÖO Division" 
 		start_experience_factor = 0.04
 		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "NMÖO Division 5 - Veszprém"
 		location = 3683
-		division_template = "Transylvanian Militia" 
+		division_template = "NMÖO Division" 
 		start_experience_factor = 0.04
 		start_equipment_factor = 0.7
 	}
